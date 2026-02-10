@@ -44,6 +44,15 @@ python scripts/clt_inference.py \
 
 Requires model weights from [HuggingFace](https://huggingface.co/LongshenOu/lyric-trans-en2zh).
 
+## Data
+
+English lyrics from [brunokreiner/genius-lyrics](https://huggingface.co/datasets/brunokreiner/genius-lyrics) (~481K songs from Genius, with artist/title/language metadata). Stored in `data/`.
+
+```bash
+# Download
+uvx --from huggingface_hub hf download brunokreiner/genius-lyrics --repo-type dataset --local-dir data/genius-lyrics
+```
+
 ## Dependencies
 
 - `phonemizer` - IPA conversion via espeak

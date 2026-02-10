@@ -76,7 +76,7 @@ def translate(
     if rhymes is None:
         rhymes = [1] * n
     if boundaries is None:
-        boundaries = [[0] * l for l in lengths]
+        boundaries = [[0] * length for length in lengths]
 
     tokenizer.src_lang = "en_XX"
     tokenizer.tgt_lang = "zh_CN"
