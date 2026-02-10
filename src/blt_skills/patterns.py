@@ -59,9 +59,7 @@ def get_syllable_patterns(lines: list[str], language: str) -> list[list[int]]:
     return patterns
 
 
-def analyze_pattern_alignment(
-    target_pattern: list[int], current_pattern: list[int]
-) -> dict:
+def analyze_pattern_alignment(target_pattern: list[int], current_pattern: list[int]) -> dict:
     """Analyze alignment between target and current syllable patterns.
 
     Args:
@@ -78,8 +76,7 @@ def analyze_pattern_alignment(
             "similarity": 0.0 if target_pattern != current_pattern else 1.0,
             "differences": [],
             "suggestions": [],
-            "total_syllables_match": sum(target_pattern or [])
-            == sum(current_pattern or []),
+            "total_syllables_match": sum(target_pattern or []) == sum(current_pattern or []),
         }
 
     target_total = sum(target_pattern)
@@ -93,12 +90,14 @@ def analyze_pattern_alignment(
         current_val = current_pattern[i] if i < len(current_pattern) else 0
         diff = current_val - target_val
         if diff != 0:
-            differences.append({
-                "word_position": i,
-                "target_syllables": target_val,
-                "current_syllables": current_val,
-                "difference": diff,
-            })
+            differences.append(
+                {
+                    "word_position": i,
+                    "target_syllables": target_val,
+                    "current_syllables": current_val,
+                    "difference": diff,
+                }
+            )
 
     suggestions = []
     if not exact_match:
@@ -145,9 +144,7 @@ def analyze_pattern_alignment(
     )
 
     similarity = (
-        (position_similarity * 0.5)
-        + (length_similarity * 0.25)
-        + (total_similarity * 0.25)
+        (position_similarity * 0.5) + (length_similarity * 0.25) + (total_similarity * 0.25)
     )
 
     return {
@@ -226,11 +223,7 @@ def score_syllable_patterns(
         if total_syllables_error == 0
         else max(0.0, 1.0 - (total_syllables_error / target_total))
     )
-    overall_score = (
-        (exact_match_rate * 0.4)
-        + (average_similarity * 0.3)
-        + (syllable_score * 0.3)
-    )
+    overall_score = (exact_match_rate * 0.4) + (average_similarity * 0.3) + (syllable_score * 0.3)
 
     return {
         "overall_score": max(0.0, min(1.0, overall_score)),

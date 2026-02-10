@@ -1,6 +1,7 @@
 """CLI for syllable counting."""
 
 import sys
+
 from blt_skills import count_syllables
 
 if __name__ == "__main__":

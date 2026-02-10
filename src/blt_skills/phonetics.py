@@ -45,9 +45,7 @@ def phonemize_text(text: str, lang: str) -> str:
             try:
                 from phonemizer import phonemize
 
-                return phonemize(
-                    text, language=lang.split("-")[0], backend="espeak", strip=True
-                )
+                return phonemize(text, language=lang.split("-")[0], backend="espeak", strip=True)
             except Exception:
                 pass
         logging.debug("Could not phonemize text for language %s: %s", lang, e)
@@ -71,9 +69,7 @@ def text_to_ipa(text: str, language: str) -> str:
     return phonemize_text(cleaned, language)
 
 
-def calculate_ipa_similarity(
-    ipa1: str, ipa2: str, is_chinese: bool = False
-) -> float:
+def calculate_ipa_similarity(ipa1: str, ipa2: str, is_chinese: bool = False) -> float:
     """Calculate phonetic similarity between two IPA strings.
 
     Args:

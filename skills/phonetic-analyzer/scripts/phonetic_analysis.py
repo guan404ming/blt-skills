@@ -1,7 +1,8 @@
 """CLI for phonetic analysis."""
 
 import sys
-from blt_skills import text_to_ipa, calculate_ipa_similarity
+
+from blt_skills import calculate_ipa_similarity, text_to_ipa
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:

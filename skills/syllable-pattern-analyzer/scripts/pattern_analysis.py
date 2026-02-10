@@ -1,6 +1,7 @@
 """CLI for syllable pattern analysis."""
 
 import sys
+
 from blt_skills import get_syllable_patterns
 
 if __name__ == "__main__":
@@ -12,4 +13,4 @@ if __name__ == "__main__":
     lines = sys.argv[2:]
     patterns = get_syllable_patterns(lines, lang)
     for i, (line, pattern) in enumerate(zip(lines, patterns), 1):
-        print(f"Line {i}: {pattern} (total: {sum(pattern)}) - \"{line}\"")
+        print(f'Line {i}: {pattern} (total: {sum(pattern)}) - "{line}"')

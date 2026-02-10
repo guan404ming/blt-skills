@@ -2,6 +2,7 @@
 
 import json
 import sys
+
 from blt_skills import verify_all_constraints
 
 if __name__ == "__main__":

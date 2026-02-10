@@ -24,25 +24,8 @@ Requires Python 3.11+ and espeak (for phonemizer).
 brew install espeak-ng
 
 # Install pkg
-uv sync
+uv sync --all-extras
 ```
-
-## CLT Baseline
-
-A minimal inference script for the [Controllable Lyric Translation](https://arxiv.org/abs/2305.16816) (Ou et al., ACL 2023) baseline model.
-
-```bash
-# Install with CLT dependencies (torch + transformers)
-uv pip install -e ".[clt]"
-
-# Run inference
-python scripts/clt_inference.py \
-    --lines "There's only one song left for you" "Get me off the streets of this city" \
-    --lengths 12 9 \
-    --rhymes 1 1
-```
-
-Requires model weights from [HuggingFace](https://huggingface.co/LongshenOu/lyric-trans-en2zh).
 
 ## Data
 
@@ -53,6 +36,21 @@ English lyrics from [brunokreiner/genius-lyrics](https://huggingface.co/datasets
 uvx --from huggingface_hub hf download brunokreiner/genius-lyrics --repo-type dataset --local-dir data/genius-lyrics
 ```
 
+## Benchmark
+
+Benchmark translation methods on random songs from genius-lyrics. All scripts share the same interface (`-n`, `--seed`, `--lines-per-song`, `-o`).
+
+```bash
+# Run both methods and generate comparison
+uv run scripts/run_bench.py -n 5
+
+# Run individually
+uv run scripts/run_cc.py -n 5 --model sonnet
+uv run scripts/run_clt.py -n 5 --device cpu
+```
+
+Outputs `results.json` and `report.md` in the output directory (`data/bench/` by default).
+
 ## Dependencies
 
 - `phonemizer` - IPA conversion via espeak
@@ -60,4 +58,5 @@ uvx --from huggingface_hub hf download brunokreiner/genius-lyrics --repo-type da
 - `panphon` - IPA phonetic similarity
 - `jieba` - Chinese word segmentation
 - `pydantic` - data models
-- `torch`, `transformers`, `sentencepiece` - CLT baseline only (optional, `pip install -e ".[clt]"`)
+- `torch`, `transformers`, `sentencepiece` - CLT baseline only (optional, `uv sync --extra clt`)
+- `ruff` - linting and formatting (optional, `uv sync --extra dev`)

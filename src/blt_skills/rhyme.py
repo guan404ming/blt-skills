@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 
-from .phonetics import normalize_language_code, phonemize_text, IPA_VOWEL_PATTERN
+from .phonetics import IPA_VOWEL_PATTERN, normalize_language_code, phonemize_text
 
 
 def extract_rhyme_ending(text: str, language: str) -> str:
@@ -26,7 +26,7 @@ def extract_rhyme_ending(text: str, language: str) -> str:
         return ""
 
     if language == "cmn":
-        from pypinyin import pinyin, Style
+        from pypinyin import Style, pinyin
 
         finals = pinyin(text, style=Style.FINALS, strict=False)
         if finals and finals[-1]:

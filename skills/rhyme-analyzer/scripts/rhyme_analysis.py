@@ -1,7 +1,8 @@
 """CLI for rhyme analysis."""
 
 import sys
-from blt_skills import extract_rhyme_ending, check_rhyme
+
+from blt_skills import check_rhyme, extract_rhyme_ending
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:

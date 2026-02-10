@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 
-from .phonetics import normalize_language_code, phonemize_text, IPA_DIPHTHONG_PATTERN
+from .phonetics import IPA_DIPHTHONG_PATTERN, normalize_language_code, phonemize_text
 
 
 def count_syllables(text: str, language: str) -> int:

@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
+from .patterns import analyze_pattern_alignment, get_syllable_patterns
+from .rhyme import check_rhyme, extract_rhyme_ending
 from .syllables import count_syllables
-from .rhyme import extract_rhyme_ending, check_rhyme
-from .patterns import get_syllable_patterns, analyze_pattern_alignment
 
 
 def verify_all_constraints(
@@ -45,16 +45,12 @@ def verify_all_constraints(
         if not patterns_match:
             alignments = []
             total_similarity = 0.0
-            for i, (actual, target) in enumerate(
-                zip(syllable_patterns, target_patterns)
-            ):
+            for i, (actual, target) in enumerate(zip(syllable_patterns, target_patterns)):
                 alignment = analyze_pattern_alignment(target, actual)
                 alignments.append((i, alignment))
                 total_similarity += alignment["similarity"]
 
-            pattern_similarity_score = (
-                total_similarity / len(alignments) if alignments else 0.0
-            )
+            pattern_similarity_score = total_similarity / len(alignments) if alignments else 0.0
 
             pattern_feedback = _build_pattern_feedback_fuzzy(alignments)
             if pattern_feedback:
@@ -64,32 +60,22 @@ def verify_all_constraints(
                     severity = "Pattern close (minor adjustments needed):"
                 else:
                     severity = "CRITICAL: Pattern mismatch:"
-                feedback_parts.append(
-                    f"{severity}\n\n" + "\n\n".join(pattern_feedback)
-                )
+                feedback_parts.append(f"{severity}\n\n" + "\n\n".join(pattern_feedback))
 
     # Syllable counts (second priority)
     if not syllables_match:
         mismatches = _build_syllable_feedback(syllables, target_syllables)
         if mismatches:
-            feedback_parts.append(
-                "Syllable count mismatches:\n" + "\n".join(mismatches)
-            )
+            feedback_parts.append("Syllable count mismatches:\n" + "\n".join(mismatches))
 
     # Rhyme scheme (lowest priority)
     rhymes_valid = True
     if rhyme_scheme:
-        rhymes_valid, rhyme_issues = _check_rhyme_scheme(
-            rhyme_endings, rhyme_scheme, language
-        )
+        rhymes_valid, rhyme_issues = _check_rhyme_scheme(rhyme_endings, rhyme_scheme, language)
         if rhyme_issues:
             feedback_parts.append("Rhyme issues:\n" + "\n".join(rhyme_issues))
 
-    feedback = (
-        "\n\n".join(feedback_parts)
-        if feedback_parts
-        else "All constraints satisfied!"
-    )
+    feedback = "\n\n".join(feedback_parts) if feedback_parts else "All constraints satisfied!"
 
     result = {
         "syllables": syllables,
@@ -113,13 +99,9 @@ def _build_syllable_feedback(actual: list[int], target: list[int]) -> list[str]:
         if act != tgt:
             diff = act - tgt
             if diff > 0:
-                mismatches.append(
-                    f"Line {i + 1}: {act} syllables (need {diff} fewer)"
-                )
+                mismatches.append(f"Line {i + 1}: {act} syllables (need {diff} fewer)")
             else:
-                mismatches.append(
-                    f"Line {i + 1}: {act} syllables (need {abs(diff)} more)"
-                )
+                mismatches.append(f"Line {i + 1}: {act} syllables (need {abs(diff)} more)")
     return mismatches
 
 
@@ -153,8 +135,7 @@ def _check_rhyme_scheme(
         return True, []
     if len(rhyme_endings) != len(rhyme_scheme):
         return False, [
-            f"Rhyme scheme length mismatch: expected {len(rhyme_scheme)}, "
-            f"got {len(rhyme_endings)}"
+            f"Rhyme scheme length mismatch: expected {len(rhyme_scheme)}, got {len(rhyme_endings)}"
         ]
 
     rhyme_groups: dict[str, list[int]] = {}
