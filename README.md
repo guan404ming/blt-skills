@@ -21,13 +21,28 @@ Requires Python 3.11+ and espeak (for phonemizer).
 
 ```bash
 # Install espeak
-sudo apt install espeak-ng
+brew install espeak-ng
 
-# Symlink an existing venv or create one
-ln -s /path/to/existing/.venv .venv
-# or
+# Install pkg
 uv sync
 ```
+
+## CLT Baseline
+
+A minimal inference script for the [Controllable Lyric Translation](https://arxiv.org/abs/2305.16816) (Ou et al., ACL 2023) baseline model.
+
+```bash
+# Install with CLT dependencies (torch + transformers)
+uv pip install -e ".[clt]"
+
+# Run inference
+python scripts/clt_inference.py \
+    --lines "There's only one song left for you" "Get me off the streets of this city" \
+    --lengths 12 9 \
+    --rhymes 1 1
+```
+
+Requires model weights from [HuggingFace](https://huggingface.co/LongshenOu/lyric-trans-en2zh).
 
 ## Dependencies
 
@@ -36,3 +51,4 @@ uv sync
 - `panphon` - IPA phonetic similarity
 - `jieba` - Chinese word segmentation
 - `pydantic` - data models
+- `torch`, `transformers`, `sentencepiece` - CLT baseline only (optional, `pip install -e ".[clt]"`)
