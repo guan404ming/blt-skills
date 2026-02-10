@@ -1,0 +1,20 @@
+[project]
+name = "blt-skills"
+version = "0.1.0"
+description = "Agent Skills for lyrics translation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "phonemizer>=3.3.0",
+    "pypinyin>=0.55.0",
+    "panphon>=0.22.2",
+    "jieba>=0.42.1",
+    "pydantic>=2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/blt_skills"]
