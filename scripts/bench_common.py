@@ -2,22 +2,32 @@
 
 import csv
 import json
+import re
 import sys
+import threading
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
-# Skill usage counter
+# Skill usage counter (thread-safe)
 
 skill_counter: Counter = Counter()
+_counter_lock = threading.Lock()
 
 
 def reset_skill_counter():
-    skill_counter.clear()
+    with _counter_lock:
+        skill_counter.clear()
 
 
 def get_skill_counts():
-    return dict(skill_counter)
+    with _counter_lock:
+        return dict(skill_counter)
+
+
+def _inc(skill, n=1):
+    with _counter_lock:
+        skill_counter[skill] += n
 
 
 # Metric calculations
@@ -119,6 +129,42 @@ def sample_songs(csv_path, n, seed, lines_per_song, words_per_line):
     return songs
 
 
+def sample_ou_test(source_path, n, seed, lines_per_song):
+    """Sample n test cases from Ou et al. 2023 lyric-trans en-zh test split.
+
+    Each case is a window of `lines_per_song` consecutive non-empty lines from
+    ``data_parallel/test.source``. Window starting indices are sampled with the
+    given seed so the same n + seed always produces the same songs, matching
+    the protocol described in the paper's phase_ablation_results.md.
+    """
+    import random
+
+    with open(source_path, encoding="utf-8") as f:
+        all_lines = [ln.strip() for ln in f if ln.strip()]
+
+    max_start = len(all_lines) - lines_per_song
+    if max_start < 0:
+        return []
+
+    rng = random.Random(seed)
+    starts = rng.sample(range(max_start + 1), min(n, max_start + 1))
+    starts.sort()
+
+    songs = []
+    for i, start in enumerate(starts, 1):
+        window = all_lines[start : start + lines_per_song]
+        songs.append(
+            {
+                "id": f"ou_{i:03d}",
+                "source_lines": window,
+                "source_lang": "en-us",
+                "target_lang": "cmn",
+                "metadata": {"artist": "ou-test", "test_start_line": start},
+            }
+        )
+    return songs
+
+
 # Shared CLI setup
 
 
@@ -135,28 +181,60 @@ def make_parser(description):
     parser.add_argument(
         "-o", "--output-dir", default="data/bench", help="Output directory (default: data/bench)"
     )
+    parser.add_argument(
+        "--dataset",
+        choices=("ou", "genius"),
+        default="ou",
+        help="Dataset: 'ou' (Ou 2023 en-zh test split, matches the paper) "
+        "or 'genius' (random English lyric chunks). Default: ou.",
+    )
     return parser
 
 
 def load_songs(args):
     script_dir = Path(__file__).resolve().parent
-    data_csv = script_dir.parent / "data" / "genius-lyrics" / "english_lyrics_some_with_genres.csv"
-    if not data_csv.exists():
-        print(f"Error: dataset not found at {data_csv}", file=sys.stderr)
-        print(
-            "Download with: uvx --from huggingface_hub hf download brunokreiner/genius-lyrics "
-            "--repo-type dataset --local-dir data/genius-lyrics",
-            file=sys.stderr,
+    repo_root = script_dir.parent
+    dataset = getattr(args, "dataset", "ou")
+
+    if dataset == "ou":
+        source_path = (
+            repo_root / "data" / "lyric-trans" / "datasets" / "data_parallel" / "test.source"
         )
-        sys.exit(1)
+        if not source_path.exists():
+            print(f"Error: Ou test split not found at {source_path}", file=sys.stderr)
+            print(
+                "Download with: uvx --from huggingface_hub hf download "
+                "LongshenOu/lyric-trans-en2zh-data --repo-type dataset "
+                "--local-dir data/lyric-trans && cd data/lyric-trans && unzip -q datasets.zip",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        sample_fn = lambda: sample_ou_test(  # noqa: E731
+            str(source_path), args.n, args.seed, args.lines_per_song
+        )
+    elif dataset == "genius":
+        data_csv = repo_root / "data" / "genius-lyrics" / "english_lyrics_some_with_genres.csv"
+        if not data_csv.exists():
+            print(f"Error: genius dataset not found at {data_csv}", file=sys.stderr)
+            print(
+                "Download with: uvx --from huggingface_hub hf download "
+                "brunokreiner/genius-lyrics --repo-type dataset --local-dir data/genius-lyrics",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        sample_fn = lambda: sample_songs(  # noqa: E731
+            str(data_csv), args.n, args.seed, args.lines_per_song, args.words_per_line
+        )
+    else:  # pragma: no cover - argparse already restricts
+        raise ValueError(f"unknown dataset: {dataset}")
 
     method = getattr(args, "bench_method", "all")
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     outdir = Path(args.output_dir) / f"{ts}_{method}"
     outdir.mkdir(parents=True, exist_ok=True)
 
-    print(f"Sampling {args.n} songs (seed={args.seed})...", file=sys.stderr)
-    songs = sample_songs(str(data_csv), args.n, args.seed, args.lines_per_song, args.words_per_line)
+    print(f"Sampling {args.n} songs from {dataset} (seed={args.seed})...", file=sys.stderr)
+    songs = sample_fn()
     if len(songs) < args.n:
         print(f"Warning: only got {len(songs)} songs", file=sys.stderr)
 
@@ -176,8 +254,8 @@ def evaluate_song(song, translations):
     src_lang = song["source_lang"]
     tgt_lang = song["target_lang"]
 
-    skill_counter["syllable-counter"] += len(lines) + len(translations)
-    skill_counter["rhyme-analyzer"] += 2
+    _inc("syllable-counter", len(lines) + len(translations))
+    _inc("rhyme-analyzer", 2)
 
     src_syl = [count_syllables(line, src_lang) for line in lines]
     src_rhyme = detect_rhyme_scheme(lines, src_lang)
@@ -309,9 +387,9 @@ def save_results(results, method_name, songs, seed, outdir, skill_counts=None):
 def extract_constraints(lines, lang):
     from blt_skills import count_syllables, detect_rhyme_scheme, get_syllable_patterns
 
-    skill_counter["syllable-counter"] += len(lines)
-    skill_counter["rhyme-analyzer"] += 1
-    skill_counter["syllable-pattern-analyzer"] += 1
+    _inc("syllable-counter", len(lines))
+    _inc("rhyme-analyzer")
+    _inc("syllable-pattern-analyzer")
     return {
         "syllables": [count_syllables(line, lang) for line in lines],
         "rhyme_scheme": detect_rhyme_scheme(lines, lang),
@@ -319,10 +397,30 @@ def extract_constraints(lines, lang):
     }
 
 
-def parse_translations(text, expected_count):
-    import re
+def parse_single_line(text):
+    """Strip leading numbering, surrounding quotes, and parenthetical tails from a one-line response."""
+    if not text:
+        return ""
+    for raw in text.strip().splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        m = re.match(r"^\d+[\.\)]\s*(.+)$", line)
+        if m:
+            line = m.group(1).strip()
+        if (line.startswith('"') and line.endswith('"')) or (
+            line.startswith("'") and line.endswith("'")
+        ):
+            line = line[1:-1]
+        line = re.split(r"\s*[\(（]", line)[0].strip()
+        line = re.split(r"\s+[-—]\s+", line)[0].strip()
+        if line:
+            return line
+    return ""
 
-    translations = []
+
+def parse_translations(text, expected_count):
+    translations: list[str] = []
     for line in text.strip().split("\n"):
         m = re.match(r"\d+[\.\)]\s*(.+)", line.strip())
         if m:
@@ -340,17 +438,49 @@ def parse_translations(text, expected_count):
     return None
 
 
-def call_claude(prompt, model=None):
+CLAUDE_EFFORT: str | None = None  # set by run_cc.py from --effort, applied per call
+
+
+def call_claude(prompt, model=None, timeout=300, retries=2, effort=None):
+    """Call claude CLI with retry-on-empty-output and short backoff."""
     import subprocess
+    import time as _time
 
     cmd = ["claude", "-p", prompt]
     if model:
         cmd.extend(["--model", model])
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
-    if result.returncode != 0:
-        print(f"claude error: {result.stderr}", file=sys.stderr)
-        return None
-    return result.stdout.strip()
+    eff = effort or CLAUDE_EFFORT
+    if eff:
+        cmd.extend(["--effort", eff])
+
+    for attempt in range(retries + 1):
+        try:
+            result = subprocess.run(
+                cmd, capture_output=True, text=True, timeout=timeout
+            )
+        except subprocess.TimeoutExpired:
+            print(f"claude timeout after {timeout}s (attempt {attempt + 1})", file=sys.stderr)
+            _time.sleep(2 + attempt * 3)
+            continue
+        except (OSError, subprocess.SubprocessError) as exc:
+            print(f"claude subprocess error: {exc} (attempt {attempt + 1})", file=sys.stderr)
+            _time.sleep(2 + attempt * 3)
+            continue
+        if result.returncode != 0:
+            err = result.stderr.strip() or result.stdout.strip()
+            print(
+                f"claude rc={result.returncode} (attempt {attempt + 1}): {err[:300]}",
+                file=sys.stderr,
+            )
+            _time.sleep(2 + attempt * 3)
+            continue
+        out = result.stdout.strip()
+        if out:
+            return out
+        # Empty stdout but rc=0 — treat as transient and retry
+        print(f"claude empty stdout (attempt {attempt + 1})", file=sys.stderr)
+        _time.sleep(2 + attempt * 3)
+    return None
 
 
 def translate_with_claude(lines, source_lang, target_lang, constraints, model=None):
@@ -390,7 +520,7 @@ NO explanations, NO annotations, NO syllable counts. Example format:
             print(f"  Could not parse {n} lines from output", file=sys.stderr)
             continue
 
-        skill_counter["syllable-counter"] += len(translations)
+        _inc("syllable-counter", len(translations))
         actual = [count_syllables(t, target_lang) for t in translations]
         mismatches = [
             (i, actual[i], target_syls[i]) for i in range(n) if actual[i] != target_syls[i]
@@ -415,6 +545,271 @@ Each Chinese character = 1 syllable (strip punctuation).
 
 Keep the other lines unchanged. Return ONLY ALL {n} lines numbered, NO explanations:
 {chr(10).join(f"{i + 1}. {translations[i]}" for i in range(n))}"""
+
+    return translations
+
+
+# Multi-phase Claude orchestration (mirrors the Qwen pipeline used in the paper)
+
+
+def _phase0_vanilla(lines, source_lang, target_lang, model, stats):
+    """Vanilla baseline: plain translation prompt, no constraints, no skills."""
+    import time as _time
+
+    n = len(lines)
+    src_block = chr(10).join(f"{i + 1}. {line}" for i, line in enumerate(lines))
+    prompt = f"""Translate the following {n} song lyric lines from {source_lang} to {target_lang}.
+
+Source lines:
+{src_block}
+
+Output exactly {n} translated lines, numbered 1-{n}. No explanations, no annotations.
+"""
+    t0 = _time.time()
+    output = call_claude(prompt, model=model)
+    stats["phase0_time_s"] = stats.get("phase0_time_s", 0.0) + (_time.time() - t0)
+    stats["phase0_calls"] = stats.get("phase0_calls", 0) + 1
+    if output is None:
+        return None
+    return parse_translations(output, n)
+
+
+def _phase1(lines, source_lang, target_lang, constraints, model, stats):
+    """Phase 1: single-call initial translation with all three constraints exposed."""
+    import time as _time
+
+    target_syls = constraints["syllables"]
+    rhyme = constraints["rhyme_scheme"]
+    patterns = constraints["patterns"]
+    n = len(lines)
+    src_block = chr(10).join(f"{i + 1}. {line}" for i, line in enumerate(lines))
+
+    prompt = f"""Translate ALL {n} lines from {source_lang} to {target_lang} while meeting THREE musical constraints.
+
+Source lines:
+{src_block}
+
+CONSTRAINT 1: SYLLABLE COUNTS (MUST MATCH EXACTLY) per line: {target_syls}
+CONSTRAINT 2: RHYME SCHEME (preserve grouping): {rhyme}
+CONSTRAINT 3: SYLLABLE PATTERNS per line: {patterns}
+
+Notes:
+- For Chinese: each character = 1 syllable; strip punctuation when counting.
+- Preserve poetic meaning and emotional impact.
+
+Output exactly {n} translated lines, numbered 1-{n}. No explanations, no annotations.
+"""
+    t0 = _time.time()
+    output = call_claude(prompt, model=model)
+    stats["phase1_time_s"] = stats.get("phase1_time_s", 0.0) + (_time.time() - t0)
+    stats["phase1_calls"] = stats.get("phase1_calls", 0) + 1
+    if output is None:
+        return None
+    return parse_translations(output, n)
+
+
+def _phase2_refine_line(src_line, current, target_syl, target_lang, model, max_iter, stats):
+    """Phase 2: refine a single line until syllable count matches or budget exhausted.
+
+    Returns the closest attempt found (smallest |actual - target|).
+    """
+    import time as _time
+
+    from blt_skills import count_syllables
+
+    best = current
+    best_actual = count_syllables(best, target_lang)
+    _inc("syllable-counter")
+    if best_actual == target_syl:
+        return best
+    best_diff = abs(best_actual - target_syl)
+
+    for _ in range(max_iter):
+        delta = target_syl - best_actual
+        action = (
+            f"add {delta} syllable(s)" if delta > 0 else f"remove {-delta} syllable(s)"
+        )
+        prompt = f"""Adjust this translation to have EXACTLY {target_syl} syllables.
+Focus ONLY on syllable count. Minimize meaning changes.
+
+Original: "{src_line}"
+Current:  "{best}"
+Current syllables: {best_actual}/{target_syl}
+Action: {action}
+
+STRATEGIES:
+- If too long: remove adjectives, use shorter words, merge concepts
+- If too short: add descriptive words, use longer characters
+
+Output ONLY the adjusted translation. No quotes, no explanations.
+"""
+        t0 = _time.time()
+        out = call_claude(prompt, model=model)
+        stats["phase2_time_s"] = stats.get("phase2_time_s", 0.0) + (_time.time() - t0)
+        stats["phase2_calls"] = stats.get("phase2_calls", 0) + 1
+        if out is None:
+            continue
+        cand = parse_single_line(out)
+        if not cand:
+            continue
+        cand_actual = count_syllables(cand, target_lang)
+        _inc("syllable-counter")
+        diff = abs(cand_actual - target_syl)
+        if diff < best_diff:
+            best = cand
+            best_actual = cand_actual
+            best_diff = diff
+        if best_diff == 0:
+            return best
+    return best
+
+
+def _phase3_refine_pattern(src_line, current, target_pattern, target_lang, model, threshold, stats):
+    """Phase 3: refine word-level distribution if pattern similarity below threshold.
+
+    Accept revision only if: similarity strictly improves AND total syllable count is preserved.
+    """
+    import time as _time
+
+    from blt_skills import count_syllables, get_syllable_patterns
+    from blt_skills.patterns import analyze_pattern_alignment
+
+    cur_pattern = get_syllable_patterns([current], target_lang)[0]
+    _inc("syllable-pattern-analyzer")
+    align = analyze_pattern_alignment(target_pattern, cur_pattern)
+    if align.get("matches") or align.get("similarity", 0.0) >= threshold:
+        stats["phase3_skipped"] = stats.get("phase3_skipped", 0) + 1
+        return current
+
+    suggestions = align.get("suggestions") or []
+    suggest_block = "\n".join(f"- {s}" for s in suggestions) if suggestions else "- (none)"
+    target_total = sum(target_pattern)
+
+    prompt = f"""Adjust the word distribution in this translation WITHOUT changing total syllable count.
+
+Original line:        "{src_line}"
+Current translation:  "{current}"
+Current pattern:      {cur_pattern} (total: {sum(cur_pattern)} syllables)
+Target pattern:       {list(target_pattern)} (total: {target_total} syllables)
+
+Adjustments needed:
+{suggest_block}
+
+Keep total syllable count at {target_total}. Adjust word choice to match the target pattern.
+Output ONLY the adjusted translation. No quotes, no explanations.
+"""
+    t0 = _time.time()
+    out = call_claude(prompt, model=model)
+    stats["phase3_time_s"] = stats.get("phase3_time_s", 0.0) + (_time.time() - t0)
+    stats["phase3_calls"] = stats.get("phase3_calls", 0) + 1
+    if out is None:
+        stats["phase3_failed_call"] = stats.get("phase3_failed_call", 0) + 1
+        return current
+    cand = parse_single_line(out)
+    if not cand:
+        stats["phase3_failed_parse"] = stats.get("phase3_failed_parse", 0) + 1
+        return current
+
+    cur_total = count_syllables(current, target_lang)
+    cand_total = count_syllables(cand, target_lang)
+    _inc("syllable-counter", 2)
+    if cand_total != cur_total:
+        stats["phase3_rejected_syl"] = stats.get("phase3_rejected_syl", 0) + 1
+        return current  # rejected: would break Phase 2's match
+
+    cand_pattern = get_syllable_patterns([cand], target_lang)[0]
+    _inc("syllable-pattern-analyzer")
+    cand_align = analyze_pattern_alignment(target_pattern, cand_pattern)
+    if cand_align.get("similarity", 0.0) > align.get("similarity", 0.0):
+        stats["phase3_accepted"] = stats.get("phase3_accepted", 0) + 1
+        return cand
+    stats["phase3_rejected_sim"] = stats.get("phase3_rejected_sim", 0) + 1
+    return current
+
+
+def translate_with_claude_phases(
+    lines,
+    source_lang,
+    target_lang,
+    constraints,
+    model=None,
+    phases=3,
+    max_iter_p2=10,
+    p3_threshold=0.8,
+    metrics_out=None,
+):
+    """Multi-phase Claude orchestration matching the paper's pipeline.
+
+    phases=0 -> Vanilla baseline (plain translate prompt, no constraints, no skills).
+    phases=1 -> Phase 1 only (skill-aware initial translation).
+    phases=2 -> Phase 1 + per-line syllable refinement.
+    phases=3 -> Phase 1+2+3 (also per-line pattern refinement).
+
+    If ``metrics_out`` is a mutable dict it is filled with phase-level timing,
+    LLM call counts, post-phase syllable match counts, and Phase 3 outcome
+    breakdown (accepted / rejected_syl / rejected_sim / skipped).
+    """
+    from blt_skills import count_syllables
+
+    n = len(lines)
+    target_syls = constraints["syllables"]
+    target_patterns = constraints.get("patterns") or [[s] for s in target_syls]
+    stats = metrics_out if metrics_out is not None else {}
+
+    if phases == 0:
+        translations = _phase0_vanilla(lines, source_lang, target_lang, model, stats)
+        if translations is None:
+            return None
+        if len(translations) < n:
+            translations = list(translations) + [""] * (n - len(translations))
+        return translations[:n]
+
+    translations = _phase1(lines, source_lang, target_lang, constraints, model, stats)
+    if translations is None:
+        return None
+    if len(translations) < n:
+        translations = list(translations) + [""] * (n - len(translations))
+    translations = translations[:n]
+
+    actual = [count_syllables(t, target_lang) for t in translations]
+    _inc("syllable-counter", n)
+    stats["phase1_match"] = sum(1 for a, t in zip(actual, target_syls) if a == t)
+
+    if phases <= 1:
+        return translations
+
+    for i in range(n):
+        translations[i] = _phase2_refine_line(
+            lines[i],
+            translations[i],
+            target_syls[i],
+            target_lang,
+            model,
+            max_iter_p2,
+            stats,
+        )
+
+    actual = [count_syllables(t, target_lang) for t in translations]
+    _inc("syllable-counter", n)
+    stats["phase2_match"] = sum(1 for a, t in zip(actual, target_syls) if a == t)
+
+    if phases <= 2:
+        return translations
+
+    for i in range(n):
+        translations[i] = _phase3_refine_pattern(
+            lines[i],
+            translations[i],
+            target_patterns[i],
+            target_lang,
+            model,
+            p3_threshold,
+            stats,
+        )
+
+    actual = [count_syllables(t, target_lang) for t in translations]
+    _inc("syllable-counter", n)
+    stats["phase3_match"] = sum(1 for a, t in zip(actual, target_syls) if a == t)
 
     return translations
 
