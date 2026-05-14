@@ -337,9 +337,9 @@
 \citation{gao-etal-2023-pal}
 \citation{wei-etal-2022-chain}
 \def\@LN@column{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Skill framework overview. Phase~1 translates all lines using an internal tool-use loop that invokes the IPA skills. Phase~2 refines each line sequentially (up to 10 attempts per line); the dotted arrow shows the orchestration loop that iterates through lines. Phase~3 is a single pass that uses the \texttt  {syllable-pattern-analyzer} skill output to guide pattern refinement without a retry loop.}}{4}{figure.caption.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Skill framework overview. Phase~1 translates all lines using an internal tool-use loop that invokes the IPA skills. Phase~2 refines each line sequentially (up to 10 attempts per line); the dotted arrow shows the orchestration loop that iterates through lines. The dashed Phase~3 pass is an opt-in pattern-refinement stage; it is not part of the default pipeline (see Appendix~\ref {app:phase3}).}}{4}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:framework}{{1}{4}{Skill framework overview. Phase~1 translates all lines using an internal tool-use loop that invokes the IPA skills. Phase~2 refines each line sequentially (up to 10 attempts per line); the dotted arrow shows the orchestration loop that iterates through lines. Phase~3 is a single pass that uses the \texttt {syllable-pattern-analyzer} skill output to guide pattern refinement without a retry loop}{figure.caption.1}{}}
+\newlabel{fig:framework}{{1}{4}{Skill framework overview. Phase~1 translates all lines using an internal tool-use loop that invokes the IPA skills. Phase~2 refines each line sequentially (up to 10 attempts per line); the dotted arrow shows the orchestration loop that iterates through lines. The dashed Phase~3 pass is an opt-in pattern-refinement stage; it is not part of the default pipeline (see Appendix~\ref {app:phase3})}{figure.caption.1}{}}
 \@LN{274}{3}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}IPA as Universal Phonetic Interface}{4}{subsection.4.1}\protected@file@percent }
 \@LN{275}{3}
@@ -399,6 +399,7 @@
 \citation{low-2005-pentathlon}
 \citation{yao-etal-2023-react}
 \citation{low-2005-pentathlon}
+\citation{kim-etal-2023-computational}
 \def\@LN@column{1}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Example constraint extraction from English source lyrics. Syllable counts are computed via IPA vowel nuclei; patterns via space-based word segmentation.}}{5}{table.caption.3}\protected@file@percent }
 \newlabel{tab:constraints-example}{{2}{5}{Example constraint extraction from English source lyrics. Syllable counts are computed via IPA vowel nuclei; patterns via space-based word segmentation}{table.caption.3}{}}
@@ -461,7 +462,7 @@
 \@LN{373}{4}
 \@LN{374}{4}
 \@LN{375}{4}
-\@writefile{toc}{\contentsline {paragraph}{Phase 3: Syllable Pattern Refinement.}{5}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Priority, rhyme handling, and termination.}{5}{section*.6}\protected@file@percent }
 \@LN{376}{4}
 \@LN{377}{4}
 \@LN{378}{4}
@@ -476,10 +477,10 @@
 \@LN{387}{4}
 \@LN{388}{4}
 \@LN{389}{4}
-\@writefile{toc}{\contentsline {paragraph}{Priority and termination.}{5}{section*.7}\protected@file@percent }
 \@LN{390}{4}
 \@LN{391}{4}
 \@LN{392}{4}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Worked Example}{5}{subsection.4.5}\protected@file@percent }
 \@LN{393}{4}
 \@LN{394}{4}
 \@LN{395}{4}
@@ -490,6 +491,8 @@
 \@LN{400}{4}
 \@LN{401}{4}
 \@LN{402}{4}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Evaluation Metrics}{5}{section.5}\protected@file@percent }
+\newlabel{sec:eval}{{5}{5}{Evaluation Metrics}{section.5}{}}
 \@LN{403}{4}
 \@LN{404}{4}
 \@LN{405}{4}
@@ -497,15 +500,14 @@
 \@LN{407}{4}
 \@LN{408}{4}
 \@LN{409}{4}
-\@LN{410}{4}
-\citation{kim-etal-2023-computational}
 \citation{levenshtein-1966}
 \citation{hubert-arabie-1985}
 \citation{ou-etal-2023-songs}
 \def\@LN@column{1}
+\@LN{410}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Syllable Error Rate (SER)}{6}{subsection.5.1}\protected@file@percent }
 \@LN{411}{5}
 \@LN{412}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Worked Example}{6}{subsection.4.5}\protected@file@percent }
 \@LN{413}{5}
 \@LN{414}{5}
 \@LN{415}{5}
@@ -521,17 +523,15 @@
 \@LN{425}{5}
 \@LN{426}{5}
 \@LN{427}{5}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Evaluation Metrics}{6}{section.5}\protected@file@percent }
-\newlabel{sec:eval}{{5}{6}{Evaluation Metrics}{section.5}{}}
 \@LN{428}{5}
 \@LN{429}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Syllable Count Relative Error (SCRE)}{6}{subsection.5.2}\protected@file@percent }
 \@LN{430}{5}
 \@LN{431}{5}
 \@LN{432}{5}
 \@LN{433}{5}
 \@LN{434}{5}
 \@LN{435}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Syllable Error Rate (SER)}{6}{subsection.5.1}\protected@file@percent }
 \@LN{436}{5}
 \@LN{437}{5}
 \@LN{438}{5}
@@ -544,6 +544,7 @@
 \@LN{445}{5}
 \@LN{446}{5}
 \@LN{447}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Adjusted Rand Index (ARI)}{6}{subsection.5.3}\protected@file@percent }
 \@LN{448}{5}
 \@LN{449}{5}
 \@LN{450}{5}
@@ -551,10 +552,9 @@
 \@LN{452}{5}
 \@LN{453}{5}
 \@LN{454}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Syllable Count Relative Error (SCRE)}{6}{subsection.5.2}\protected@file@percent }
 \@LN{455}{5}
-\@LN{456}{5}
 \def\@LN@column{2}
+\@LN{456}{5}
 \@LN{457}{5}
 \@LN{458}{5}
 \@LN{459}{5}
@@ -571,9 +571,11 @@
 \@LN{470}{5}
 \@LN{471}{5}
 \@LN{472}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Adjusted Rand Index (ARI)}{6}{subsection.5.3}\protected@file@percent }
 \@LN{473}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Experiments}{6}{section.6}\protected@file@percent }
+\newlabel{sec:experiments}{{6}{6}{Experiments}{section.6}{}}
 \@LN{474}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Setup}{6}{subsection.6.1}\protected@file@percent }
 \@LN{475}{5}
 \@LN{476}{5}
 \@LN{477}{5}
@@ -586,6 +588,7 @@
 \@LN{484}{5}
 \@LN{485}{5}
 \@LN{486}{5}
+\@writefile{toc}{\contentsline {paragraph}{Implementation.}{6}{section*.7}\protected@file@percent }
 \@LN{487}{5}
 \@LN{488}{5}
 \@LN{489}{5}
@@ -598,15 +601,15 @@
 \@LN{496}{5}
 \@LN{497}{5}
 \@LN{498}{5}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Experiments}{6}{section.6}\protected@file@percent }
-\newlabel{sec:experiments}{{6}{6}{Experiments}{section.6}{}}
 \@LN{499}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Setup}{6}{subsection.6.1}\protected@file@percent }
-\@LN{500}{5}
-\@LN{501}{5}
 \citation{ou-etal-2023-songs}
 \citation{ou-etal-2023-songs}
 \def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Phase ablation and baseline comparison ($\text  {en} \rightarrow \text  {cmn}$, $n{=}100$). Bold = best overall; underline = best among BLT variants.}}{7}{table.caption.9}\protected@file@percent }
+\newlabel{tab:ablation}{{3}{7}{Phase ablation and baseline comparison ($\text {en} \rightarrow \text {cmn}$, $n{=}100$). Bold = best overall; underline = best among BLT variants}{table.caption.9}{}}
+\@LN{500}{6}
+\@LN{501}{6}
+\@writefile{toc}{\contentsline {paragraph}{Conditions.}{7}{section*.8}\protected@file@percent }
 \@LN{502}{6}
 \@LN{503}{6}
 \@LN{504}{6}
@@ -617,7 +620,6 @@
 \@LN{509}{6}
 \@LN{510}{6}
 \@LN{511}{6}
-\@writefile{toc}{\contentsline {paragraph}{Implementation.}{7}{section*.8}\protected@file@percent }
 \@LN{512}{6}
 \@LN{513}{6}
 \@LN{514}{6}
@@ -628,12 +630,13 @@
 \@LN{519}{6}
 \@LN{520}{6}
 \@LN{521}{6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Results and Phase Ablation}{7}{subsection.6.2}\protected@file@percent }
 \@LN{522}{6}
 \@LN{523}{6}
+\@writefile{toc}{\contentsline {paragraph}{Phase~2 is the critical stage.}{7}{section*.10}\protected@file@percent }
 \@LN{524}{6}
 \@LN{525}{6}
 \@LN{526}{6}
-\@writefile{toc}{\contentsline {paragraph}{Conditions.}{7}{section*.9}\protected@file@percent }
 \@LN{527}{6}
 \@LN{528}{6}
 \@LN{529}{6}
@@ -642,6 +645,8 @@
 \@LN{532}{6}
 \@LN{533}{6}
 \@LN{534}{6}
+\def\@LN@column{2}
+\@writefile{toc}{\contentsline {paragraph}{Phase~3 over-rhymes and does not help.}{7}{section*.11}\protected@file@percent }
 \@LN{535}{6}
 \@LN{536}{6}
 \@LN{537}{6}
@@ -652,15 +657,11 @@
 \@LN{542}{6}
 \@LN{543}{6}
 \@LN{544}{6}
+\@writefile{toc}{\contentsline {paragraph}{Comparison with CLT.}{7}{section*.12}\protected@file@percent }
 \@LN{545}{6}
-\def\@LN@column{2}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Phase ablation and baseline comparison ($\text  {en} \rightarrow \text  {cmn}$, $n{=}100$). Bold = best overall; underline = best among BLT variants.}}{7}{table.caption.10}\protected@file@percent }
-\newlabel{tab:ablation}{{3}{7}{Phase ablation and baseline comparison ($\text {en} \rightarrow \text {cmn}$, $n{=}100$). Bold = best overall; underline = best among BLT variants}{table.caption.10}{}}
 \@LN{546}{6}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Results and Phase Ablation}{7}{subsection.6.2}\protected@file@percent }
 \@LN{547}{6}
 \@LN{548}{6}
-\@writefile{toc}{\contentsline {paragraph}{Phase~2 is the critical stage.}{7}{section*.11}\protected@file@percent }
 \@LN{549}{6}
 \@LN{550}{6}
 \@LN{551}{6}
@@ -672,7 +673,6 @@
 \@LN{557}{6}
 \@LN{558}{6}
 \@LN{559}{6}
-\@writefile{toc}{\contentsline {paragraph}{Phase~3 trades syllable accuracy for rhyme.}{7}{section*.12}\protected@file@percent }
 \@LN{560}{6}
 \@LN{561}{6}
 \@LN{562}{6}
@@ -680,6 +680,8 @@
 \@LN{564}{6}
 \@LN{565}{6}
 \@LN{566}{6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Multi-Orchestrator Ablation}{7}{subsection.6.3}\protected@file@percent }
+\newlabel{sec:orchestrator-ablation}{{6.3}{7}{Multi-Orchestrator Ablation}{subsection.6.3}{}}
 \@LN{567}{6}
 \@LN{568}{6}
 \@LN{569}{6}
@@ -687,11 +689,11 @@
 \@LN{571}{6}
 \@LN{572}{6}
 \@LN{573}{6}
-\@writefile{toc}{\contentsline {paragraph}{Comparison with CLT.}{7}{section*.13}\protected@file@percent }
 \@LN{574}{6}
 \@LN{575}{6}
 \@LN{576}{6}
 \@LN{577}{6}
+\@writefile{toc}{\contentsline {paragraph}{Findings.}{7}{section*.14}\protected@file@percent }
 \@LN{578}{6}
 \@LN{579}{6}
 \@LN{580}{6}
@@ -699,25 +701,32 @@
 \@LN{582}{6}
 \@LN{583}{6}
 \@LN{584}{6}
-\@LN{585}{6}
+\citation{ou-etal-2023-songs}
+\citation{hokamp-liu-2017-lexically,post-vilar-2018-fast}
+\citation{ren-etal-2020-deepsinger}
+\citation{yao-etal-2023-react,gao-etal-2023-pal,schick-etal-2023-toolformer}
 \def\@LN@column{1}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Multi-orchestrator ablation on Ou 2023 en$\rightarrow $zh test split (seed=42, $n{=}100$ for all rows). \textbf  {LLM}: mean LLM calls per case across all phases (Vanilla = 1 call by construction). \textbf  {Time}: mean wall-clock seconds per case. Qwen3-30B numbers reproduced from Table~\ref {tab:ablation}.}}{8}{table.caption.14}\protected@file@percent }
-\newlabel{tab:orchestrator}{{4}{8}{Multi-orchestrator ablation on Ou 2023 en$\rightarrow $zh test split (seed=42, $n{=}100$ for all rows). \textbf {LLM}: mean LLM calls per case across all phases (Vanilla = 1 call by construction). \textbf {Time}: mean wall-clock seconds per case. Qwen3-30B numbers reproduced from Table~\ref {tab:ablation}}{table.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Multi-orchestrator ablation on Ou 2023 en$\rightarrow $zh test split (seed=42, $n{=}100$ for all rows). \textbf  {LLM}: mean LLM calls per case across all phases (Vanilla = 1 call by construction). \textbf  {Time}: mean wall-clock seconds per case. Qwen3-30B numbers reproduced from Table~\ref {tab:ablation}.}}{8}{table.caption.13}\protected@file@percent }
+\newlabel{tab:orchestrator}{{4}{8}{Multi-orchestrator ablation on Ou 2023 en$\rightarrow $zh test split (seed=42, $n{=}100$ for all rows). \textbf {LLM}: mean LLM calls per case across all phases (Vanilla = 1 call by construction). \textbf {Time}: mean wall-clock seconds per case. Qwen3-30B numbers reproduced from Table~\ref {tab:ablation}}{table.caption.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Qualitative example: English-to-Chinese translation of the opening lines of \emph  {Let It Go}. ``Syll.''\ is the actual character count; ``Tgt''\ is the source syllable count that the translation should match. BLT Skills matches 3/4 targets; the Base LLM matches 0/4.}}{8}{table.caption.15}\protected@file@percent }
+\newlabel{tab:qualitative}{{5}{8}{Qualitative example: English-to-Chinese translation of the opening lines of \emph {Let It Go}. ``Syll.''\ is the actual character count; ``Tgt''\ is the source syllable count that the translation should match. BLT Skills matches 3/4 targets; the Base LLM matches 0/4}{table.caption.15}{}}
+\@LN{585}{7}
 \@LN{586}{7}
 \@LN{587}{7}
 \@LN{588}{7}
 \@LN{589}{7}
 \@LN{590}{7}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Qualitative Analysis}{8}{subsection.6.4}\protected@file@percent }
 \@LN{591}{7}
 \@LN{592}{7}
 \@LN{593}{7}
 \@LN{594}{7}
 \@LN{595}{7}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Multi-Orchestrator Ablation}{8}{subsection.6.3}\protected@file@percent }
-\newlabel{sec:orchestrator-ablation}{{6.3}{8}{Multi-Orchestrator Ablation}{subsection.6.3}{}}
 \@LN{596}{7}
 \@LN{597}{7}
+\def\@LN@column{2}
 \@LN{598}{7}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{8}{section.7}\protected@file@percent }
 \@LN{599}{7}
 \@LN{600}{7}
 \@LN{601}{7}
@@ -728,7 +737,6 @@
 \@LN{606}{7}
 \@LN{607}{7}
 \@LN{608}{7}
-\@writefile{toc}{\contentsline {paragraph}{Findings.}{8}{section*.15}\protected@file@percent }
 \@LN{609}{7}
 \@LN{610}{7}
 \@LN{611}{7}
@@ -741,9 +749,6 @@
 \@LN{618}{7}
 \@LN{619}{7}
 \@LN{620}{7}
-\def\@LN@column{2}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Qualitative example: English-to-Chinese translation of the opening lines of \emph  {Let It Go}. ``Syll.''\ is the actual character count; ``Tgt''\ is the source syllable count that the translation should match. BLT Skills matches 3/4 targets; the Base LLM matches 0/4.}}{8}{table.caption.16}\protected@file@percent }
-\newlabel{tab:qualitative}{{5}{8}{Qualitative example: English-to-Chinese translation of the opening lines of \emph {Let It Go}. ``Syll.''\ is the actual character count; ``Tgt''\ is the source syllable count that the translation should match. BLT Skills matches 3/4 targets; the Base LLM matches 0/4}{table.caption.16}{}}
 \@LN{621}{7}
 \@LN{622}{7}
 \@LN{623}{7}
@@ -759,7 +764,6 @@
 \@LN{633}{7}
 \@LN{634}{7}
 \@LN{635}{7}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Qualitative Analysis}{8}{subsection.6.4}\protected@file@percent }
 \@LN{636}{7}
 \@LN{637}{7}
 \@LN{638}{7}
@@ -772,18 +776,28 @@
 \@LN{645}{7}
 \@LN{646}{7}
 \@LN{647}{7}
-\@LN{648}{7}
-\@LN{649}{7}
-\@LN{650}{7}
-\citation{cho-etal-2025-mavl}
 \citation{ou-etal-2023-songs}
-\citation{hokamp-liu-2017-lexically,post-vilar-2018-fast}
-\citation{ren-etal-2020-deepsinger}
-\citation{yao-etal-2023-react,gao-etal-2023-pal,schick-etal-2023-toolformer}
+\bibdata{custom}
+\bibcite{bernard-titeux-2021-phonemizer}{{1}{2021}{{Bernard and Titeux}}{{}}}
+\bibcite{chen-etal-2025-ipa-translation}{{2}{2025}{{Chen et~al.}}{{Chen, Dong, Yang, Xie, and Hao}}}
+\bibcite{chen-teufel-2024-scansion}{{3}{2024}{{Chen and Teufel}}{{}}}
+\bibcite{cho-etal-2025-mavl}{{4}{2025}{{Cho et~al.}}{{Cho, Kim, Lee, and Yu}}}
+\bibcite{franzon-2008-choices}{{5}{2008}{{Franzon}}{{}}}
+\bibcite{gao-etal-2023-pal}{{6}{2023}{{Gao et~al.}}{{Gao, Madaan, Zhou, Alon, Liu, Yang, Callan, and Neubig}}}
+\bibcite{ghazvininejad-etal-2018-neural}{{7}{2018}{{Ghazvininejad et~al.}}{{Ghazvininejad, Choi, and Knight}}}
+\bibcite{ghazvininejad-etal-2016-generating}{{8}{2016}{{Ghazvininejad et~al.}}{{Ghazvininejad, Shi, Choi, and Knight}}}
+\bibcite{guo-etal-2022-automatic}{{9}{2022}{{Guo et~al.}}{{Guo, Zhang, Zhang, He, Zhang, Xie, and Boyd-Graber}}}
+\bibcite{hokamp-liu-2017-lexically}{{10}{2017}{{Hokamp and Liu}}{{}}}
+\bibcite{hopkins-kiela-2017-automatically}{{11}{2017}{{Hopkins and Kiela}}{{}}}
+\bibcite{hubert-arabie-1985}{{12}{1985}{{Hubert and Arabie}}{{}}}
+\bibcite{jiao-etal-2023-chatgpt}{{13}{2023}{{Jiao et~al.}}{{Jiao, Wang, Huang, Wang, Shi, and Tu}}}
+\bibcite{kim-etal-2024-kpop}{{14}{2024}{{Kim et~al.}}{{Kim, Jung, Jeong, and Nam}}}
+\bibcite{kim-etal-2023-computational}{{15}{2023}{{Kim et~al.}}{{Kim, Watanabe, Goto, and Nam}}}
 \def\@LN@column{1}
+\@LN{648}{8}
+\@LN{649}{8}
+\@LN{650}{8}
 \@LN{651}{8}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Discussion and Future Directions}{9}{subsection.6.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Training-free versus supervised.}{9}{section*.17}\protected@file@percent }
 \@LN{652}{8}
 \@LN{653}{8}
 \@LN{654}{8}
@@ -792,6 +806,7 @@
 \@LN{657}{8}
 \@LN{658}{8}
 \@LN{659}{8}
+\@writefile{toc}{\contentsline {paragraph}{Ethical considerations.}{9}{section*.17}\protected@file@percent }
 \@LN{660}{8}
 \@LN{661}{8}
 \@LN{662}{8}
@@ -799,7 +814,6 @@
 \@LN{664}{8}
 \@LN{665}{8}
 \@LN{666}{8}
-\@writefile{toc}{\contentsline {paragraph}{Phase~3 and the accuracy--rhyme trade-off.}{9}{section*.18}\protected@file@percent }
 \@LN{667}{8}
 \@LN{668}{8}
 \@LN{669}{8}
@@ -809,7 +823,6 @@
 \@LN{673}{8}
 \@LN{674}{8}
 \@LN{675}{8}
-\@writefile{toc}{\contentsline {paragraph}{Broader evaluation.}{9}{section*.19}\protected@file@percent }
 \@LN{676}{8}
 \@LN{677}{8}
 \@LN{678}{8}
@@ -823,7 +836,6 @@
 \@LN{686}{8}
 \@LN{687}{8}
 \@LN{688}{8}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{9}{section.7}\protected@file@percent }
 \@LN{689}{8}
 \@LN{690}{8}
 \@LN{691}{8}
@@ -833,9 +845,9 @@
 \@LN{695}{8}
 \@LN{696}{8}
 \@LN{697}{8}
+\def\@LN@column{2}
 \@LN{698}{8}
 \@LN{699}{8}
-\def\@LN@column{2}
 \@LN{700}{8}
 \@LN{701}{8}
 \@LN{702}{8}
@@ -886,26 +898,27 @@
 \@LN{747}{8}
 \@LN{748}{8}
 \@LN{749}{8}
-\citation{ou-etal-2023-songs}
-\bibdata{custom}
-\bibcite{bernard-titeux-2021-phonemizer}{{1}{2021}{{Bernard and Titeux}}{{}}}
-\bibcite{chen-etal-2025-ipa-translation}{{2}{2025}{{Chen et~al.}}{{Chen, Dong, Yang, Xie, and Hao}}}
-\bibcite{chen-teufel-2024-scansion}{{3}{2024}{{Chen and Teufel}}{{}}}
-\bibcite{cho-etal-2025-mavl}{{4}{2025}{{Cho et~al.}}{{Cho, Kim, Lee, and Yu}}}
-\bibcite{franzon-2008-choices}{{5}{2008}{{Franzon}}{{}}}
-\bibcite{gao-etal-2023-pal}{{6}{2023}{{Gao et~al.}}{{Gao, Madaan, Zhou, Alon, Liu, Yang, Callan, and Neubig}}}
-\bibcite{ghazvininejad-etal-2018-neural}{{7}{2018}{{Ghazvininejad et~al.}}{{Ghazvininejad, Choi, and Knight}}}
-\bibcite{ghazvininejad-etal-2016-generating}{{8}{2016}{{Ghazvininejad et~al.}}{{Ghazvininejad, Shi, Choi, and Knight}}}
-\bibcite{guo-etal-2022-automatic}{{9}{2022}{{Guo et~al.}}{{Guo, Zhang, Zhang, He, Zhang, Xie, and Boyd-Graber}}}
-\bibcite{hokamp-liu-2017-lexically}{{10}{2017}{{Hokamp and Liu}}{{}}}
-\bibcite{hopkins-kiela-2017-automatically}{{11}{2017}{{Hopkins and Kiela}}{{}}}
-\bibcite{hubert-arabie-1985}{{12}{1985}{{Hubert and Arabie}}{{}}}
-\bibcite{jiao-etal-2023-chatgpt}{{13}{2023}{{Jiao et~al.}}{{Jiao, Wang, Huang, Wang, Shi, and Tu}}}
-\bibcite{kim-etal-2024-kpop}{{14}{2024}{{Kim et~al.}}{{Kim, Jung, Jeong, and Nam}}}
-\bibcite{kim-etal-2023-computational}{{15}{2023}{{Kim et~al.}}{{Kim, Watanabe, Goto, and Nam}}}
+\@LN{750}{8}
+\@LN{751}{8}
+\bibcite{lau-etal-2018-deep}{{16}{2018}{{Lau et~al.}}{{Lau, Cohn, Baldwin, Brooke, and Hammond}}}
+\bibcite{levenshtein-1966}{{17}{1966}{{Levenshtein}}{{}}}
+\bibcite{liang-etal-2024-xai}{{18}{2024}{{Liang et~al.}}{{Liang, Ma, Doshi-Velez, Lim, and Wang}}}
+\bibcite{low-2005-pentathlon}{{19}{2005}{{Low}}{{}}}
+\bibcite{low-2022-translating}{{20}{2022}{{Low}}{{}}}
+\bibcite{mortensen-etal-2016-panphon}{{21}{2016}{{Mortensen et~al.}}{{Mortensen, Littell, Bharadwaj, Goyal, Dyer, and Levin}}}
+\bibcite{ou-etal-2023-songs}{{22}{2023{a}}{{Ou et~al.}}{{Ou, Ma, Kan, and Wang}}}
+\bibcite{ou-etal-2023-loaf}{{23}{2023{b}}{{Ou et~al.}}{{Ou, Ma, and Wang}}}
+\bibcite{post-vilar-2018-fast}{{24}{2018}{{Post and Vilar}}{{}}}
+\bibcite{ren-etal-2025-lyricar}{{25}{2025}{{Ren et~al.}}{{Ren, Zeng, Wu, and Liang}}}
+\bibcite{ren-etal-2020-deepsinger}{{26}{2020}{{Ren et~al.}}{{Ren, Tan, Qin, Luan, Zhao, and Liu}}}
+\bibcite{schick-etal-2023-toolformer}{{27}{2023}{{Schick et~al.}}{{Schick, Dwivedi-Yu, Dess{\`i}, Raileanu, Lomeli, Hambro, Zettlemoyer, Cancedda, and Scialom}}}
+\bibcite{wei-etal-2022-chain}{{28}{2022}{{Wei et~al.}}{{Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le, and Zhou}}}
+\bibcite{yao-etal-2023-react}{{29}{2023}{{Yao et~al.}}{{Yao, Zhao, Yu, Du, Shafran, Narasimhan, and Cao}}}
+\bibcite{ye-etal-2024-sing}{{30}{2024}{{Ye et~al.}}{{Ye, Li, and Xu}}}
+\bibcite{yoo-etal-2025-elmi}{{31}{2025}{{Yoo et~al.}}{{Yoo, Truong, and Kim}}}
+\bibcite{yu-etal-2025-songglm}{{32}{2025}{{Yu et~al.}}{{Yu, Wu, Xu, Zhang, Wu, Ma, and Zhang}}}
+\bibcite{zhao-etal-2025-reffly}{{33}{2025}{{Zhao et~al.}}{{Zhao, Li, Tian, and Peng}}}
 \def\@LN@column{1}
-\@LN{750}{9}
-\@LN{751}{9}
 \@LN{752}{9}
 \@LN{753}{9}
 \@LN{754}{9}
@@ -917,7 +930,6 @@
 \@LN{760}{9}
 \@LN{761}{9}
 \@LN{762}{9}
-\@writefile{toc}{\contentsline {paragraph}{Ethical considerations.}{10}{section*.21}\protected@file@percent }
 \@LN{763}{9}
 \@LN{764}{9}
 \@LN{765}{9}
@@ -955,7 +967,6 @@
 \@LN{797}{9}
 \@LN{798}{9}
 \@LN{799}{9}
-\def\@LN@column{2}
 \@LN{800}{9}
 \@LN{801}{9}
 \@LN{802}{9}
@@ -965,6 +976,7 @@
 \@LN{806}{9}
 \@LN{807}{9}
 \@LN{808}{9}
+\def\@LN@column{2}
 \@LN{809}{9}
 \@LN{810}{9}
 \@LN{811}{9}
@@ -1011,35 +1023,20 @@
 \@LN{852}{9}
 \@LN{853}{9}
 \@LN{854}{9}
-\bibcite{lau-etal-2018-deep}{{16}{2018}{{Lau et~al.}}{{Lau, Cohn, Baldwin, Brooke, and Hammond}}}
-\bibcite{levenshtein-1966}{{17}{1966}{{Levenshtein}}{{}}}
-\bibcite{liang-etal-2024-xai}{{18}{2024}{{Liang et~al.}}{{Liang, Ma, Doshi-Velez, Lim, and Wang}}}
-\bibcite{low-2005-pentathlon}{{19}{2005}{{Low}}{{}}}
-\bibcite{low-2022-translating}{{20}{2022}{{Low}}{{}}}
-\bibcite{mortensen-etal-2016-panphon}{{21}{2016}{{Mortensen et~al.}}{{Mortensen, Littell, Bharadwaj, Goyal, Dyer, and Levin}}}
-\bibcite{ou-etal-2023-songs}{{22}{2023{a}}{{Ou et~al.}}{{Ou, Ma, Kan, and Wang}}}
-\bibcite{ou-etal-2023-loaf}{{23}{2023{b}}{{Ou et~al.}}{{Ou, Ma, and Wang}}}
-\bibcite{post-vilar-2018-fast}{{24}{2018}{{Post and Vilar}}{{}}}
-\bibcite{ren-etal-2025-lyricar}{{25}{2025}{{Ren et~al.}}{{Ren, Zeng, Wu, and Liang}}}
-\bibcite{ren-etal-2020-deepsinger}{{26}{2020}{{Ren et~al.}}{{Ren, Tan, Qin, Luan, Zhao, and Liu}}}
-\bibcite{schick-etal-2023-toolformer}{{27}{2023}{{Schick et~al.}}{{Schick, Dwivedi-Yu, Dess{\`i}, Raileanu, Lomeli, Hambro, Zettlemoyer, Cancedda, and Scialom}}}
-\bibcite{wei-etal-2022-chain}{{28}{2022}{{Wei et~al.}}{{Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le, and Zhou}}}
-\bibcite{yao-etal-2023-react}{{29}{2023}{{Yao et~al.}}{{Yao, Zhao, Yu, Du, Shafran, Narasimhan, and Cao}}}
-\bibcite{ye-etal-2024-sing}{{30}{2024}{{Ye et~al.}}{{Ye, Li, and Xu}}}
-\bibcite{yoo-etal-2025-elmi}{{31}{2025}{{Yoo et~al.}}{{Yoo, Truong, and Kim}}}
-\bibcite{yu-etal-2025-songglm}{{32}{2025}{{Yu et~al.}}{{Yu, Wu, Xu, Zhang, Wu, Ma, and Zhang}}}
-\bibcite{zhao-etal-2025-reffly}{{33}{2025}{{Zhao et~al.}}{{Zhao, Li, Tian, and Peng}}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Prompt Templates}{10}{appendix.A}\protected@file@percent }
+\newlabel{app:prompts}{{A}{10}{Prompt Templates}{appendix.A}{}}
+\@LN{855}{9}
+\@LN{856}{9}
+\@LN{857}{9}
+\@LN{858}{9}
+\@LN{859}{9}
+\@LN{860}{9}
+\@LN{861}{9}
+\@LN{862}{9}
+\@LN{863}{9}
 \def\@LN@column{1}
-\@LN{855}{10}
-\@LN{856}{10}
-\@LN{857}{10}
-\@LN{858}{10}
-\@LN{859}{10}
-\@LN{860}{10}
-\@LN{861}{10}
-\@LN{862}{10}
-\@LN{863}{10}
 \@LN{864}{10}
+\@writefile{toc}{\contentsline {paragraph}{System prompt (all phases, from \texttt  {lyrics-translator/SKILL.md}).}{11}{section*.19}\protected@file@percent }
 \@LN{865}{10}
 \@LN{866}{10}
 \@LN{867}{10}
@@ -1059,6 +1056,7 @@
 \@LN{881}{10}
 \@LN{882}{10}
 \@LN{883}{10}
+\@writefile{toc}{\contentsline {paragraph}{Phase~1: Initial translation.}{11}{section*.20}\protected@file@percent }
 \@LN{884}{10}
 \@LN{885}{10}
 \@LN{886}{10}
@@ -1080,6 +1078,7 @@
 \@LN{902}{10}
 \@LN{903}{10}
 \@LN{904}{10}
+\@writefile{toc}{\contentsline {paragraph}{Phase~2: Syllable refinement.}{11}{section*.21}\protected@file@percent }
 \@LN{905}{10}
 \@LN{906}{10}
 \@LN{907}{10}
@@ -1087,7 +1086,6 @@
 \@LN{909}{10}
 \@LN{910}{10}
 \@LN{911}{10}
-\def\@LN@column{2}
 \@LN{912}{10}
 \@LN{913}{10}
 \@LN{914}{10}
@@ -1099,10 +1097,14 @@
 \@LN{920}{10}
 \@LN{921}{10}
 \@LN{922}{10}
+\def\@LN@column{2}
 \@LN{923}{10}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Skill Algorithms}{11}{appendix.B}\protected@file@percent }
+\newlabel{app:tools}{{B}{11}{Skill Algorithms}{appendix.B}{}}
 \@LN{924}{10}
 \@LN{925}{10}
 \@LN{926}{10}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}\texttt  {syllable-counter}}{11}{subsection.B.1}\protected@file@percent }
 \@LN{927}{10}
 \@LN{928}{10}
 \@LN{929}{10}
@@ -1133,9 +1135,9 @@
 \@LN{954}{10}
 \@LN{955}{10}
 \@LN{956}{10}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}\texttt  {rhyme-analyzer}}{11}{subsection.B.2}\protected@file@percent }
+\newlabel{app:tools-rhyme}{{B.2}{11}{\texttt {rhyme-analyzer}}{subsection.B.2}{}}
 \@LN{957}{10}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Prompt Templates}{11}{appendix.A}\protected@file@percent }
-\newlabel{app:prompts}{{A}{11}{Prompt Templates}{appendix.A}{}}
 \@LN{958}{10}
 \@LN{959}{10}
 \@LN{960}{10}
@@ -1144,12 +1146,12 @@
 \@LN{963}{10}
 \@LN{964}{10}
 \@LN{965}{10}
+\@LN{966}{10}
+\@LN{967}{10}
+\@LN{968}{10}
+\@LN{969}{10}
+\citation{mortensen-etal-2016-panphon}
 \def\@LN@column{1}
-\@LN{966}{11}
-\@writefile{toc}{\contentsline {paragraph}{System prompt (all phases, from \texttt  {lyrics-translator/SKILL.md}).}{12}{section*.23}\protected@file@percent }
-\@LN{967}{11}
-\@LN{968}{11}
-\@LN{969}{11}
 \@LN{970}{11}
 \@LN{971}{11}
 \@LN{972}{11}
@@ -1166,10 +1168,11 @@
 \@LN{983}{11}
 \@LN{984}{11}
 \@LN{985}{11}
-\@writefile{toc}{\contentsline {paragraph}{Phase~1: Initial translation.}{12}{section*.24}\protected@file@percent }
 \@LN{986}{11}
 \@LN{987}{11}
 \@LN{988}{11}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}\texttt  {syllable-pattern-\allowbreak  {}analyzer}}{12}{subsection.B.3}\protected@file@percent }
+\newlabel{app:tools-pattern}{{B.3}{12}{\texttt {syllable-pattern-\allowbreak {}analyzer}}{subsection.B.3}{}}
 \@LN{989}{11}
 \@LN{990}{11}
 \@LN{991}{11}
@@ -1188,8 +1191,9 @@
 \@LN{1004}{11}
 \@LN{1005}{11}
 \@LN{1006}{11}
-\@writefile{toc}{\contentsline {paragraph}{Phase~2: Syllable refinement.}{12}{section*.25}\protected@file@percent }
 \@LN{1007}{11}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Hyperparameters}{12}{appendix.C}\protected@file@percent }
+\newlabel{app:hyperparams}{{C}{12}{Hyperparameters}{appendix.C}{}}
 \@LN{1008}{11}
 \@LN{1009}{11}
 \@LN{1010}{11}
@@ -1198,18 +1202,25 @@
 \@LN{1013}{11}
 \@LN{1014}{11}
 \@LN{1015}{11}
+\def\@LN@column{2}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Hyperparameters for all experiments.}}{12}{table.caption.22}\protected@file@percent }
+\newlabel{tab:hyperparams}{{6}{12}{Hyperparameters for all experiments}{table.caption.22}{}}
 \@LN{1016}{11}
 \@LN{1017}{11}
 \@LN{1018}{11}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Extended Qualitative Examples}{12}{appendix.D}\protected@file@percent }
+\newlabel{app:examples}{{D}{12}{Extended Qualitative Examples}{appendix.D}{}}
 \@LN{1019}{11}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Success Case: Exact Constraint Match}{12}{subsection.D.1}\protected@file@percent }
 \@LN{1020}{11}
 \@LN{1021}{11}
 \@LN{1022}{11}
 \@LN{1023}{11}
 \@LN{1024}{11}
-\def\@LN@column{2}
-\@writefile{toc}{\contentsline {paragraph}{Phase~3: Pattern refinement.}{12}{section*.26}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Success case ($\text  {en} \rightarrow \text  {cmn}$). ``P1'' and ``P2'' show syllable counts after Phase~1 and Phase~2 respectively. Phase~2 corrects line~2 from 8 to 7 syllables.}}{12}{table.caption.23}\protected@file@percent }
+\newlabel{tab:ex-success}{{7}{12}{Success case ($\text {en} \rightarrow \text {cmn}$). ``P1'' and ``P2'' show syllable counts after Phase~1 and Phase~2 respectively. Phase~2 corrects line~2 from 8 to 7 syllables}{table.caption.23}{}}
 \@LN{1025}{11}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}Failure Case: Persistent Mismatch}{12}{subsection.D.2}\protected@file@percent }
 \@LN{1026}{11}
 \@LN{1027}{11}
 \@LN{1028}{11}
@@ -1220,55 +1231,58 @@
 \@LN{1033}{11}
 \@LN{1034}{11}
 \@LN{1035}{11}
-\@LN{1036}{11}
-\@LN{1037}{11}
-\@LN{1038}{11}
-\@LN{1039}{11}
-\@LN{1040}{11}
-\@LN{1041}{11}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Skill Algorithms}{12}{appendix.B}\protected@file@percent }
-\newlabel{app:tools}{{B}{12}{Skill Algorithms}{appendix.B}{}}
-\@LN{1042}{11}
-\@LN{1043}{11}
-\@LN{1044}{11}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}\texttt  {syllable-counter}}{12}{subsection.B.1}\protected@file@percent }
-\@LN{1045}{11}
-\@LN{1046}{11}
-\@LN{1047}{11}
-\@LN{1048}{11}
-\@LN{1049}{11}
-\@LN{1050}{11}
-\@LN{1051}{11}
-\@LN{1052}{11}
-\@LN{1053}{11}
-\@LN{1054}{11}
-\@LN{1055}{11}
-\@LN{1056}{11}
-\@LN{1057}{11}
-\@LN{1058}{11}
-\@LN{1059}{11}
-\@LN{1060}{11}
-\@LN{1061}{11}
-\@LN{1062}{11}
-\@LN{1063}{11}
-\@LN{1064}{11}
-\@LN{1065}{11}
-\@LN{1066}{11}
-\@LN{1067}{11}
-\@LN{1068}{11}
-\@LN{1069}{11}
-\@LN{1070}{11}
-\@LN{1071}{11}
-\@LN{1072}{11}
-\@LN{1073}{11}
-\@LN{1074}{11}
-\@LN{1075}{11}
-\@LN{1076}{11}
-\citation{mortensen-etal-2016-panphon}
+\citation{ou-etal-2023-songs}
 \def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Failure case ($\text  {en} \rightarrow \text  {cmn}$). Line~4 targets 8 syllables; Phase~2 reduces from 9 to 7 but overshoots, and subsequent attempts oscillate between 7 and 9 without hitting 8.}}{13}{table.caption.24}\protected@file@percent }
+\newlabel{tab:ex-failure}{{8}{13}{Failure case ($\text {en} \rightarrow \text {cmn}$). Line~4 targets 8 syllables; Phase~2 reduces from 9 to 7 but overshoots, and subsequent attempts oscillate between 7 and 9 without hitting 8}{table.caption.24}{}}
+\@LN{1036}{12}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Phase~3 Pattern Refinement}{13}{appendix.E}\protected@file@percent }
+\newlabel{app:phase3}{{E}{13}{Phase~3 Pattern Refinement}{appendix.E}{}}
+\@LN{1037}{12}
+\@LN{1038}{12}
+\@LN{1039}{12}
+\@LN{1040}{12}
+\@writefile{toc}{\contentsline {paragraph}{Design.}{13}{section*.25}\protected@file@percent }
+\@LN{1041}{12}
+\@LN{1042}{12}
+\@LN{1043}{12}
+\@LN{1044}{12}
+\@LN{1045}{12}
+\@LN{1046}{12}
+\@LN{1047}{12}
+\@LN{1048}{12}
+\@LN{1049}{12}
+\@LN{1050}{12}
+\@LN{1051}{12}
+\@LN{1052}{12}
+\@LN{1053}{12}
+\@writefile{toc}{\contentsline {paragraph}{Prompt template.}{13}{section*.26}\protected@file@percent }
+\@LN{1054}{12}
+\@LN{1055}{12}
+\@LN{1056}{12}
+\@LN{1057}{12}
+\@LN{1058}{12}
+\@LN{1059}{12}
+\@LN{1060}{12}
+\@LN{1061}{12}
+\@LN{1062}{12}
+\@LN{1063}{12}
+\@LN{1064}{12}
+\@LN{1065}{12}
+\@LN{1066}{12}
+\@writefile{toc}{\contentsline {paragraph}{Over-rhyming finding.}{13}{section*.27}\protected@file@percent }
+\@LN{1067}{12}
+\@LN{1068}{12}
+\@LN{1069}{12}
+\@LN{1070}{12}
+\@LN{1071}{12}
+\@LN{1072}{12}
+\@LN{1073}{12}
+\@LN{1074}{12}
+\@LN{1075}{12}
+\def\@LN@column{2}
+\@LN{1076}{12}
 \@LN{1077}{12}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}\texttt  {rhyme-analyzer}}{13}{subsection.B.2}\protected@file@percent }
-\newlabel{app:tools-rhyme}{{B.2}{13}{\texttt {rhyme-analyzer}}{subsection.B.2}{}}
 \@LN{1078}{12}
 \@LN{1079}{12}
 \@LN{1080}{12}
@@ -1281,6 +1295,7 @@
 \@LN{1087}{12}
 \@LN{1088}{12}
 \@LN{1089}{12}
+\@writefile{toc}{\contentsline {paragraph}{Illustrative example.}{13}{section*.28}\protected@file@percent }
 \@LN{1090}{12}
 \@LN{1091}{12}
 \@LN{1092}{12}
@@ -1289,191 +1304,64 @@
 \@LN{1095}{12}
 \@LN{1096}{12}
 \@LN{1097}{12}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Phase~3 rhyme effect on one favourable case. Source scheme $AABB$; Phase~2 output has no rhyme structure ($ABCD$, ARI $= -0.20$); Phase~3 partially restores it ($AABC$, ARI $= 0.33$).}}{13}{table.caption.29}\protected@file@percent }
+\newlabel{tab:ex-rhyme}{{9}{13}{Phase~3 rhyme effect on one favourable case. Source scheme $AABB$; Phase~2 output has no rhyme structure ($ABCD$, ARI $= -0.20$); Phase~3 partially restores it ($AABC$, ARI $= 0.33$)}{table.caption.29}{}}
 \@LN{1098}{12}
+\@writefile{toc}{\contentsline {section}{\numberline {F}CLT Baseline Details}{13}{appendix.F}\protected@file@percent }
+\newlabel{app:clt}{{F}{13}{CLT Baseline Details}{appendix.F}{}}
 \@LN{1099}{12}
 \@LN{1100}{12}
 \@LN{1101}{12}
 \@LN{1102}{12}
 \@LN{1103}{12}
+\@writefile{toc}{\contentsline {paragraph}{Constraint encoding.}{13}{section*.30}\protected@file@percent }
 \@LN{1104}{12}
 \@LN{1105}{12}
 \@LN{1106}{12}
 \@LN{1107}{12}
 \@LN{1108}{12}
 \@LN{1109}{12}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}\texttt  {syllable-pattern-\allowbreak  {}analyzer}}{13}{subsection.B.3}\protected@file@percent }
-\newlabel{app:tools-pattern}{{B.3}{13}{\texttt {syllable-pattern-\allowbreak {}analyzer}}{subsection.B.3}{}}
 \@LN{1110}{12}
 \@LN{1111}{12}
 \@LN{1112}{12}
-\@LN{1113}{12}
-\@LN{1114}{12}
-\@LN{1115}{12}
-\@LN{1116}{12}
-\@LN{1117}{12}
-\@LN{1118}{12}
-\@LN{1119}{12}
-\@LN{1120}{12}
-\def\@LN@column{2}
-\@LN{1121}{12}
-\@LN{1122}{12}
-\@LN{1123}{12}
-\@LN{1124}{12}
-\@LN{1125}{12}
-\@LN{1126}{12}
-\@LN{1127}{12}
-\@LN{1128}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {C}Hyperparameters}{13}{appendix.C}\protected@file@percent }
-\newlabel{app:hyperparams}{{C}{13}{Hyperparameters}{appendix.C}{}}
-\@LN{1129}{12}
-\@LN{1130}{12}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Hyperparameters for all experiments.}}{13}{table.caption.27}\protected@file@percent }
-\newlabel{tab:hyperparams}{{6}{13}{Hyperparameters for all experiments}{table.caption.27}{}}
-\@LN{1131}{12}
-\@LN{1132}{12}
-\@LN{1133}{12}
-\@LN{1134}{12}
-\@LN{1135}{12}
-\@LN{1136}{12}
-\@LN{1137}{12}
-\@LN{1138}{12}
-\@LN{1139}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {D}Extended Qualitative Examples}{13}{appendix.D}\protected@file@percent }
-\newlabel{app:examples}{{D}{13}{Extended Qualitative Examples}{appendix.D}{}}
-\@LN{1140}{12}
-\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Success Case: Exact Constraint Match}{13}{subsection.D.1}\protected@file@percent }
-\@LN{1141}{12}
-\@LN{1142}{12}
-\@LN{1143}{12}
-\@LN{1144}{12}
-\@LN{1145}{12}
-\@LN{1146}{12}
-\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}Failure Case: Persistent Mismatch}{13}{subsection.D.2}\protected@file@percent }
-\@LN{1147}{12}
-\@LN{1148}{12}
-\@LN{1149}{12}
-\@LN{1150}{12}
-\@LN{1151}{12}
 \def\@LN@column{1}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Success case ($\text  {en} \rightarrow \text  {cmn}$). ``P1'' and ``P2'' show syllable counts after Phase~1 and Phase~2 respectively. Phase~2 corrects line~2 from 8 to 7 syllables.}}{14}{table.caption.28}\protected@file@percent }
-\newlabel{tab:ex-success}{{7}{14}{Success case ($\text {en} \rightarrow \text {cmn}$). ``P1'' and ``P2'' show syllable counts after Phase~1 and Phase~2 respectively. Phase~2 corrects line~2 from 8 to 7 syllables}{table.caption.28}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Failure case ($\text  {en} \rightarrow \text  {cmn}$). Line~4 targets 8 syllables; Phase~2 reduces from 9 to 7 but overshoots, and subsequent attempts oscillate between 7 and 9 without hitting 8.}}{14}{table.caption.29}\protected@file@percent }
-\newlabel{tab:ex-failure}{{8}{14}{Failure case ($\text {en} \rightarrow \text {cmn}$). Line~4 targets 8 syllables; Phase~2 reduces from 9 to 7 but overshoots, and subsequent attempts oscillate between 7 and 9 without hitting 8}{table.caption.29}{}}
-\@LN{1152}{13}
-\@LN{1153}{13}
-\@LN{1154}{13}
-\@LN{1155}{13}
-\@LN{1156}{13}
-\@LN{1157}{13}
-\@writefile{toc}{\contentsline {subsection}{\numberline {D.3}Phase~3 Effect on Rhyme}{14}{subsection.D.3}\protected@file@percent }
-\@LN{1158}{13}
-\@LN{1159}{13}
-\@LN{1160}{13}
-\@LN{1161}{13}
-\@LN{1162}{13}
-\@LN{1163}{13}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Phase~3 rhyme effect. Source scheme $AABB$; Phase~2 output has no rhyme structure ($ABCD$, ARI $= -0.20$); Phase~3 partially restores it ($AABC$, ARI $= 0.33$).}}{14}{table.caption.30}\protected@file@percent }
-\newlabel{tab:ex-rhyme}{{9}{14}{Phase~3 rhyme effect. Source scheme $AABB$; Phase~2 output has no rhyme structure ($ABCD$, ARI $= -0.20$); Phase~3 partially restores it ($AABC$, ARI $= 0.33$)}{table.caption.30}{}}
-\@LN{1164}{13}
-\@writefile{toc}{\contentsline {section}{\numberline {E}Per-Test-Case Ablation Results}{14}{appendix.E}\protected@file@percent }
-\newlabel{app:pertest}{{E}{14}{Per-Test-Case Ablation Results}{appendix.E}{}}
-\@LN{1165}{13}
-\@LN{1166}{13}
-\@LN{1167}{13}
+\@writefile{toc}{\contentsline {paragraph}{Reported metrics.}{14}{section*.31}\protected@file@percent }
+\@LN{1113}{13}
+\@LN{1114}{13}
+\@LN{1115}{13}
+\@LN{1116}{13}
+\@LN{1117}{13}
+\@LN{1118}{13}
+\@LN{1119}{13}
+\@LN{1120}{13}
+\@LN{1121}{13}
+\@LN{1122}{13}
+\@writefile{toc}{\contentsline {paragraph}{Inference time.}{14}{section*.32}\protected@file@percent }
+\@LN{1123}{13}
+\@LN{1124}{13}
+\@LN{1125}{13}
+\@LN{1126}{13}
+\@LN{1127}{13}
+\@LN{1128}{13}
+\@LN{1129}{13}
+\@LN{1130}{13}
+\@LN{1131}{13}
+\@LN{1132}{13}
+\@LN{1133}{13}
+\@LN{1134}{13}
+\@LN{1135}{13}
+\@LN{1136}{13}
+\@LN{1137}{13}
+\@LN{1138}{13}
+\@writefile{toc}{\contentsline {paragraph}{Key differences from BLT.}{14}{section*.33}\protected@file@percent }
+\@LN{1139}{13}
+\@LN{1140}{13}
+\@LN{1141}{13}
+\@LN{1142}{13}
+\@LN{1143}{13}
+\@LN{1144}{13}
+\@LN{1145}{13}
+\@LN{1146}{13}
+\@LN{1147}{13}
 \def\@LN@column{2}
-\@LN{1168}{13}
-\@LN{1169}{13}
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Per-quintile SER and SCRE across ablation conditions ($n{=}30$, sorted by Phase~1+2 SCRE). Quintiles 1--5 (easiest) achieve near-perfect scores after Phase~2; quintiles 26--30 (hardest) retain residual errors.}}{14}{table.caption.31}\protected@file@percent }
-\newlabel{tab:pertest}{{10}{14}{Per-quintile SER and SCRE across ablation conditions ($n{=}30$, sorted by Phase~1+2 SCRE). Quintiles 1--5 (easiest) achieve near-perfect scores after Phase~2; quintiles 26--30 (hardest) retain residual errors}{table.caption.31}{}}
-\@LN{1170}{13}
-\@LN{1171}{13}
-\@LN{1172}{13}
-\@LN{1173}{13}
-\@LN{1174}{13}
-\@LN{1175}{13}
-\@LN{1176}{13}
-\@LN{1177}{13}
-\@LN{1178}{13}
-\@writefile{toc}{\contentsline {section}{\numberline {F}Error Analysis}{14}{appendix.F}\protected@file@percent }
-\newlabel{app:errors}{{F}{14}{Error Analysis}{appendix.F}{}}
-\@LN{1179}{13}
-\@LN{1180}{13}
-\@writefile{toc}{\contentsline {paragraph}{Oscillation (40\% of failures).}{14}{section*.32}\protected@file@percent }
-\@LN{1181}{13}
-\@LN{1182}{13}
-\@LN{1183}{13}
-\@LN{1184}{13}
-\@LN{1185}{13}
-\@LN{1186}{13}
-\@writefile{toc}{\contentsline {paragraph}{Semantic collapse (25\% of failures).}{14}{section*.33}\protected@file@percent }
-\@LN{1187}{13}
-\@LN{1188}{13}
-\@LN{1189}{13}
-\@LN{1190}{13}
-\@LN{1191}{13}
-\@LN{1192}{13}
-\@writefile{toc}{\contentsline {paragraph}{Tool miscounting (15\% of failures).}{14}{section*.34}\protected@file@percent }
-\@LN{1193}{13}
-\@LN{1194}{13}
-\@LN{1195}{13}
-\@LN{1196}{13}
-\@LN{1197}{13}
-\@LN{1198}{13}
-\@LN{1199}{13}
-\@writefile{toc}{\contentsline {paragraph}{Repetition (10\% of failures).}{14}{section*.35}\protected@file@percent }
-\@LN{1200}{13}
-\@LN{1201}{13}
-\citation{ou-etal-2023-songs}
-\def\@LN@column{1}
-\@LN{1202}{14}
-\@LN{1203}{14}
-\@LN{1204}{14}
-\@writefile{toc}{\contentsline {paragraph}{Constraint interference (10\% of failures).}{15}{section*.36}\protected@file@percent }
-\@LN{1205}{14}
-\@LN{1206}{14}
-\@LN{1207}{14}
-\@LN{1208}{14}
-\@LN{1209}{14}
-\@LN{1210}{14}
-\@LN{1211}{14}
-\@LN{1212}{14}
-\@writefile{toc}{\contentsline {section}{\numberline {G}CLT Baseline Details}{15}{appendix.G}\protected@file@percent }
-\newlabel{app:clt}{{G}{15}{CLT Baseline Details}{appendix.G}{}}
-\@LN{1213}{14}
-\@LN{1214}{14}
-\@LN{1215}{14}
-\@LN{1216}{14}
-\@LN{1217}{14}
-\@writefile{toc}{\contentsline {paragraph}{Constraint encoding.}{15}{section*.37}\protected@file@percent }
-\@LN{1218}{14}
-\@LN{1219}{14}
-\@LN{1220}{14}
-\@LN{1221}{14}
-\@LN{1222}{14}
-\@LN{1223}{14}
-\@LN{1224}{14}
-\@LN{1225}{14}
-\@LN{1226}{14}
-\@writefile{toc}{\contentsline {paragraph}{Reported metrics.}{15}{section*.38}\protected@file@percent }
-\@LN{1227}{14}
-\@LN{1228}{14}
-\@LN{1229}{14}
-\@LN{1230}{14}
-\@LN{1231}{14}
-\@LN{1232}{14}
-\@LN{1233}{14}
-\@LN{1234}{14}
-\@LN{1235}{14}
-\@LN{1236}{14}
-\@writefile{toc}{\contentsline {paragraph}{Key differences from BLT.}{15}{section*.39}\protected@file@percent }
-\@LN{1237}{14}
-\@LN{1238}{14}
-\@LN{1239}{14}
-\@LN{1240}{14}
-\@LN{1241}{14}
-\@LN{1242}{14}
-\@LN{1243}{14}
-\@LN{1244}{14}
-\@LN{1245}{14}
-\def\@LN@column{2}
-\gdef \@abspage@last{15}
+\gdef \@abspage@last{14}
