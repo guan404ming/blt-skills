@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.12)  13 MAY 2026 20:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.12)  20 MAY 2026 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,130 +1072,151 @@ local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 76.
+(Font)              scaled to size 10.95pt on input line 78.
  [2]
 LaTeX Font Info:    Trying to load font information for T3+ptm on input line 10
-4.
+6.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/tipa/t3ptm.fd
 File: t3ptm.fd 2001/12/31 TIPA font definitions
 ) [3]
-Underfull \hbox (badness 4899) in paragraph at lines 213--215
+Underfull \hbox (badness 4899) in paragraph at lines 211--213
 \T1/ptm/m/n/10.95 (+20) The or-ches-tra-tor has ac-cess to a suite of
  []
 
 
-Underfull \hbox (badness 5064) in paragraph at lines 213--215
+Underfull \hbox (badness 5064) in paragraph at lines 211--213
 \T1/ptm/m/n/10.95 (+20) Agent Skills (Ta-ble [][]1[][]), each pack-aged as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 \T1/ptm/m/n/10.95 (+20) a \T1/zi4/m/n/10.95 SKILL.md \T1/ptm/m/n/10.95 (+20) de
 -scrip-tion plus a de-ter-min-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 \T1/ptm/m/n/10.95 (+20) is-tic ver-i-fi-ca-tion script. The four IPA-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 \T1/ptm/m/n/10.95 (+20) based an-a-lytic skills (\T1/zi4/m/n/10.95 syllable-cou
 nter\T1/ptm/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 \T1/zi4/m/n/10.95 phonetic-analyzer\T1/ptm/m/n/10.95 (+20) , \T1/zi4/m/n/10.95 
 rhyme-analyzer\T1/ptm/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 \T1/zi4/m/n/10.95 syllable-pattern-analyzer\T1/ptm/m/n/10.95 (+20) ) wrap func-
 
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 213--215
+Underfull \hbox (badness 3240) in paragraph at lines 211--213
 \T1/ptm/m/n/10.95 (+20) ([][]Gao et al.[][], [][]2023[][]); \T1/zi4/m/n/10.95 l
 yrics-validator \T1/ptm/m/n/10.95 (+20) and
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 3679) in paragraph at lines 224--225
+Underfull \hbox (badness 3679) in paragraph at lines 222--223
 []\T1/ptm/m/n/9 (+20) Convert text to IPA via eS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []\T1/zi4/m/n/9 syllable-pattern-
  []
 
 
-Underfull \hbox (badness 5771) in paragraph at lines 227--228
+Underfull \hbox (badness 5771) in paragraph at lines 225--226
 []\T1/ptm/m/n/9 (+20) Validate all three con-straints
  []
 
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 231.
+(Font)              scaled to size 10.0pt on input line 229.
 
-Underfull \hbox (badness 1430) in paragraph at lines 235--240
+Underfull \hbox (badness 1430) in paragraph at lines 233--238
 \T1/ptm/m/n/10.95 (+20) ing the or-ches-tra-tor to in-spect pho-netic re-al-
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 235--240
+Underfull \hbox (badness 1226) in paragraph at lines 233--238
 \T1/ptm/m/n/10.95 (+20) iza-tions and rea-son about which syl-la-bles to
  []
 
-
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
- [4]
-Underfull \hbox (badness 1092) in paragraph at lines 271--273
+[4]
+Underfull \hbox (badness 1092) in paragraph at lines 269--271
 \T1/ptm/m/n/10.95 (+20) Translation pro-ceeds through two phases, en-
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 289--293
+Underfull \hbox (badness 1194) in paragraph at lines 287--290
  []\T1/ptm/b/n/10.95 (+20) Priority, rhyme han-dling, and ter-mi-na-tion.[]
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
 [][][][][]$\T1/zi4/m/n/9 https : / / huggingface . co / datasets / LongshenOu /
 
  []
 
-
-Underfull \hbox (badness 6708) in paragraph at lines 358--362
+[6]
+Underfull \hbox (badness 6708) in paragraph at lines 388--391
  []\T1/ptm/b/n/10.95 (+20) Implementation.[] \T1/ptm/m/n/10.95 (+20) The frame-
 work is im-ple-
  []
 
-[6]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-66.
- (/Users/wchiu/Library/texmf/tex/latex/psnfss/ts1ptm.fd
+95.
+(/Users/wchiu/Library/texmf/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (10.61359pt too wide) in paragraph at lines 421--437
+Underfull \hbox (badness 1622) in paragraph at lines 397--398
+[]\T1/ptm/b/n/10.95 (+20) CLT \T1/ptm/m/n/10.95 (+20) ([][]Ou et al.[][], [][]2
+023a[][]): A su-per-vised
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 419--422
+ []\T1/ptm/b/n/10.95 (+20) CCVO cross-validates the gain.[] \T1/ptm/m/n/10.95 (
++20) On the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--422
+\T1/ptm/m/n/10.95 (+20) singability-correlated CCVO met-ric (Ÿ[][]5.4[][]),
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 419--422
+\T1/ptm/m/n/10.95 (+20) Vanilla across all three or-ches-tra-tors (Haiku
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--422
+\T1/ptm/m/n/10.95 (+20) 0.468$\OMS/cmsy/m/n/10.95 !$\T1/ptm/m/n/10.95 (+20) 0.3
+66, Son-net 0.480$\OMS/cmsy/m/n/10.95 !$\T1/ptm/m/n/10.95 (+20) 0.368, Opus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--422
+\T1/ptm/m/n/10.95 (+20) 0.485$\OMS/cmsy/m/n/10.95 !$\T1/ptm/m/n/10.95 (+20) 0.3
+64), with the per-case stan-dard
+ []
+
+
+Overfull \hbox (11.26973pt too wide) in paragraph at lines 432--445
  [][] 
  []
 
-[7] (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -1205,7 +1226,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 )
 LaTeX Font Info:    Trying to load font information for C70+bsmi on input line 
-466.
+468.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fd
 File: c70bsmi.fd 2021/10/16 4.8.5
@@ -1255,74 +1276,57 @@ File: UTF8.enc 2021/10/16 4.8.5
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 1210) in paragraph at lines 484--486
+Underfull \hbox (badness 1210) in paragraph at lines 486--488
 \T1/ptm/m/n/10.95 (+20) We pre-sented a frame-work for lyrics trans-la-
  []
 
 
-Underfull \vbox (badness 6445) has occurred while \output is active []
+Underfull \vbox (badness 7081) has occurred while \output is active []
 
 
-Underfull \vbox (badness 6445) has occurred while \output is active []
+Underfull \vbox (badness 7081) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 487--489
-[]\T1/ptm/m/n/10.95 (+20) A phase ab-la-tion on English-to-Chinese
+ [8]
+(./acl_latex.bbl [9] [10])
+Underfull \hbox (badness 2781) in paragraph at lines 518--520
+\T1/ptm/m/n/10.95 (+20) We pro-vide the full prompt tem-plates used
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 487--489
-\T1/ptm/m/n/10.95 (+20) ($\OML/cmm/m/it/10.95 n[]\OT1/cmr/m/n/10.95 100$\T1/ptm
-/m/n/10.95 (+20) ) shows it-er-a-tive syl-la-ble re-fine-ment
+Underfull \hbox (badness 1776) in paragraph at lines 518--520
+\T1/ptm/m/n/10.95 (+20) de-scribed in Ÿ[][]4.4[][]. All prompts live in-side
  []
 
-
-Underfull \hbox (badness 2495) in paragraph at lines 487--489
-\T1/ptm/m/n/10.95 (+20) (86.0% SCRE re-duc-tion), and an ad-di-tional
- []
-
-
-Underfull \hbox (badness 2772) in paragraph at lines 487--489
-\T1/ptm/m/n/10.95 (+20) base-line ([][]Ou et al.[][], [][]2023a[][]), BLT pre-s
-erves
- []
-
-
-Underfull \hbox (badness 2119) in paragraph at lines 487--489
-\T1/ptm/m/n/10.95 (+20) task-specific train-ing and, un-like con-strained
- []
-
-[8] (./acl_latex.bbl [9])
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 10.95pt on input line 519.
+(Font)              scaled to size 10.95pt on input line 522.
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--519
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
  []\T1/ptm/b/n/10.95 (+20) System prompt (all phases, from
  []
 
-[10]
-Underfull \hbox (badness 1715) in paragraph at lines 521--531
+
+Underfull \hbox (badness 1715) in paragraph at lines 524--534
 \T1/zi4/m/n/9 - lyrics-validator: verify a line
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--544
+Underfull \hbox (badness 10000) in paragraph at lines 541--547
 \T1/zi4/m/n/9 CONSTRAINT 2: RHYME SCHEME:
  []
 
 
-Underfull \hbox (badness 5175) in paragraph at lines 538--544
+Underfull \hbox (badness 5175) in paragraph at lines 541--547
 \T1/zi4/m/n/9 CONSTRAINT 3: SYLLABLE PATTERNS:
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 538--544
+Underfull \hbox (badness 1210) in paragraph at lines 541--547
 \T1/zi4/m/n/9 Output exactly $\OML/cmm/m/it/9 N$ \T1/zi4/m/n/9 translated lines
 ,
  []
 
-
-Underfull \hbox (badness 2142) in paragraph at lines 550--560
+[11]
+Underfull \hbox (badness 2142) in paragraph at lines 553--563
 \T1/zi4/m/n/9 syllable count. Minimize meaning
  []
 
@@ -1332,50 +1336,29 @@ File: UTF8.enc 2021/10/16 4.8.5
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 7963) in paragraph at lines 601--602
+Underfull \hbox (badness 7963) in paragraph at lines 604--605
 []\T1/ptm/m/n/10.95 (+20) Pair-level rhyme judg-ments in-side the
  []
 
-[11]
-Underfull \hbox (badness 1264) in paragraph at lines 617--618
+
+Underfull \hbox (badness 1264) in paragraph at lines 620--621
 []\T1/ptm/m/it/10.95 (+20) Total sim-i-lar-ity \T1/ptm/m/n/10.95 (+20) (weight 
 0.25): $\OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^@
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 619--620
+Underfull \hbox (badness 6978) in paragraph at lines 622--623
 []\T1/ptm/m/n/10.95 (+20) Return the weighted sum, clipped to
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [12]
-Underfull \hbox (badness 3590) in paragraph at lines 730--736
-\T1/zi4/m/n/9 translation without changing total
+Overfull \hbox (22.60374pt too wide) in paragraph at lines 636--657
+ [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--736
-\T1/zi4/m/n/9 Adjustments needed: {per-word
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Missing character: There is no ^^W in font bsmiu54!
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
 [13] [14
 
 ] (./acl_latex.aux)
@@ -1384,14 +1367,14 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `acl_latex.out' has not changed.
-(rerunfilecheck)             Checksum: 5DAC4FA9CFE9A61A52CD90FD1D2DE092;6269.
+(rerunfilecheck)             Checksum: 7F9904792DC9AEE2B2C5BF3AC7905CC2;5911.
  ) 
 Here is how much of TeX's memory you used:
- 29693 strings out of 467525
- 535506 string characters out of 5418982
- 972829 words of memory out of 5000000
- 57340 multiletter control sequences out of 15000+600000
- 728253 words of font info for 488 fonts, out of 8000000 for 9000
+ 29640 strings out of 467525
+ 534496 string characters out of 5418982
+ 973689 words of memory out of 5000000
+ 57315 multiletter control sequences out of 15000+600000
+ 726890 words of font info for 479 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,15n,94p,1006b,1127s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
@@ -1401,54 +1384,49 @@ u/bsmiu4e.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmi
 u4f.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu50.pf
 b></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu52.pfb></us
 r/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu53.pfb></usr/loca
-l/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu54.pfb></usr/local/texl
-ive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu55.pfb></usr/local/texlive/20
-26/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu57.pfb></usr/local/texlive/2026/tex
-mf-dist/fonts/type1/arphic/bsmiu/bsmiu59.pfb></usr/local/texlive/2026/texmf-dis
-t/fonts/type1/arphic/bsmiu/bsmiu5b.pfb></usr/local/texlive/2026/texmf-dist/font
-s/type1/arphic/bsmiu/bsmiu5c.pfb></usr/local/texlive/2026/texmf-dist/fonts/type
-1/arphic/bsmiu/bsmiu5d.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arph
-ic/bsmiu/bsmiu5e.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsm
-iu/bsmiu66.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsm
-iu6b.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu6d.p
-fb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu73.pfb></u
-sr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu76.pfb></usr/loc
-al/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu77.pfb></usr/local/tex
-live/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7c.pfb></usr/local/texlive/2
-026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7d.pfb></usr/local/texlive/2026/te
-xmf-dist/fonts/type1/arphic/bsmiu/bsmiu7f.pfb></usr/local/texlive/2026/texmf-di
-st/fonts/type1/arphic/bsmiu/bsmiu80.pfb></usr/local/texlive/2026/texmf-dist/fon
-ts/type1/arphic/bsmiu/bsmiu81.pfb></usr/local/texlive/2026/texmf-dist/fonts/typ
-e1/arphic/bsmiu/bsmiu82.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arp
-hic/bsmiu/bsmiu88.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bs
-miu/bsmiu89.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bs
-miu8d.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu90.
-pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu95.pfb></
-usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu96.pfb></usr/lo
-cal/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu97.pfb></Users/wchiu/
-Library/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/wchiu/Library/t
-exmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/wchiu/Library/texmf/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></Users/wchiu/Library/texmf/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfonts/cm/cm
-mi9.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-Users/wchiu/Library/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/wchiu
-/Library/texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/wchiu/Library/te
-xmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/wchiu/Library/texmf/fonts
-/type1/public/amsfonts/cm/cmsy6.pfb></Users/wchiu/Library/texmf/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfon
-ts/cm/cmsy9.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfonts/symbols
-/msam10.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
-></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
-al/texlive/2026/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texliv
-e/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/tex
-mf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2026/texmf-dist/f
-onts/type1/public/tipa/xipa10.pfb>
-Output written on acl_latex.pdf (14 pages, 471208 bytes).
+l/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu57.pfb></usr/local/texl
+ive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu59.pfb></usr/local/texlive/20
+26/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5b.pfb></usr/local/texlive/2026/tex
+mf-dist/fonts/type1/arphic/bsmiu/bsmiu5c.pfb></usr/local/texlive/2026/texmf-dis
+t/fonts/type1/arphic/bsmiu/bsmiu5d.pfb></usr/local/texlive/2026/texmf-dist/font
+s/type1/arphic/bsmiu/bsmiu5e.pfb></usr/local/texlive/2026/texmf-dist/fonts/type
+1/arphic/bsmiu/bsmiu66.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arph
+ic/bsmiu/bsmiu6b.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsm
+iu/bsmiu73.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsm
+iu76.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu77.p
+fb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7c.pfb></u
+sr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7d.pfb></usr/loc
+al/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7f.pfb></usr/local/tex
+live/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu80.pfb></usr/local/texlive/2
+026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu81.pfb></usr/local/texlive/2026/te
+xmf-dist/fonts/type1/arphic/bsmiu/bsmiu82.pfb></usr/local/texlive/2026/texmf-di
+st/fonts/type1/arphic/bsmiu/bsmiu88.pfb></usr/local/texlive/2026/texmf-dist/fon
+ts/type1/arphic/bsmiu/bsmiu89.pfb></usr/local/texlive/2026/texmf-dist/fonts/typ
+e1/arphic/bsmiu/bsmiu8d.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arp
+hic/bsmiu/bsmiu90.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bs
+miu/bsmiu95.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bs
+miu96.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu97.
+pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Use
+rs/wchiu/Library/texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/wchiu/
+Library/texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/wchiu/Library/t
+exmf/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/wchiu/Library/texmf/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></Users/wchiu/Library/texmf/fonts/type1/pub
+lic/amsfonts/cm/cmmi9.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></Users/wchiu/Library/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Us
+ers/wchiu/Library/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/wchiu/
+Library/texmf/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Users/wchiu/Library/te
+xmf/fonts/type1/public/amsfonts/symbols/msam10.pfb></Users/wchiu/Library/texmf/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2026/texmf-d
+ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/u
+rw/times/utmbi8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pf
+b></usr/local/texlive/2026/texmf-dist/fonts/type1/public/tipa/xipa10.pfb>
+Output written on acl_latex.pdf (14 pages, 441520 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 751 compressed objects within 8 object streams
- 140 named destinations out of 1000 (max. 500000)
- 79797 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 882 PDF objects out of 1000 (max. 8388607)
+ 729 compressed objects within 8 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 79777 words of extra memory for PDF output out of 89155 (max. 10000000)
 

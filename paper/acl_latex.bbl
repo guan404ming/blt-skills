@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Bernard and Titeux(2021)}]{bernard-titeux-2021-phonemizer}
@@ -133,6 +133,14 @@ Qihao Liang, Xichu Ma, Finale Doshi-Velez, Brian Lim, and Ye~Wang. 2024.
 \newblock In \emph{Proceedings of the 33rd International Joint Conference on
   Artificial Intelligence}, pages 7877--7885.
 
+\bibitem[{Liu et~al.(2026)Liu, Sakai, and Watanabe}]{liu-etal-2026-towards}
+Hanze Liu, Yusuke Sakai, and Taro Watanabe. 2026.
+\newblock \href {https://aclanthology.org/2026.eacl-srw.42/} {Towards singable
+  lyrics translation using large language models}.
+\newblock In \emph{Proceedings of the 19th Conference of the European Chapter
+  of the Association for Computational Linguistics: Student Research Workshop},
+  pages 544--554.
+
 \bibitem[{Low(2005)}]{low-2005-pentathlon}
 Peter Low. 2005.
 \newblock The pentathlon approach to translating songs.
@@ -200,6 +208,13 @@ Timo Schick, Jane Dwivedi-Yu, Roberto Dess{\`i}, Roberta Raileanu, Maria
 \newblock Toolformer: Language models can teach themselves to use tools.
 \newblock In \emph{Advances in Neural Information Processing Systems},
   volume~36.
+
+\bibitem[{{\v S}t{\v e}p{\'a}nkov{\'a} and Rosa(2025)}]{stepankova-rosa-2025}
+Anna {\v S}t{\v e}p{\'a}nkov{\'a} and Rudolf Rosa. 2025.
+\newblock \href {https://aclanthology.org/2025.nlp4dh-1.11/} {Song lyrics
+  adaptations: Computational interpretation of the pentathlon principle}.
+\newblock In \emph{Proceedings of the 5th International Conference on Natural
+  Language Processing for Digital Humanities}.
 
 \bibitem[{Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le,
   and Zhou}]{wei-etal-2022-chain}

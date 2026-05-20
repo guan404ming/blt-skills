@@ -188,6 +188,12 @@ def make_parser(description):
         help="Dataset: 'ou' (Ou 2023 en-zh test split, matches the paper) "
         "or 'genius' (random English lyric chunks). Default: ou.",
     )
+    parser.add_argument(
+        "--target-lang",
+        default=None,
+        help="Override target language for all sampled songs (e.g. 'ja'). "
+        "Default: the per-dataset target ('cmn' for ou/genius).",
+    )
     return parser
 
 
@@ -237,6 +243,11 @@ def load_songs(args):
     songs = sample_fn()
     if len(songs) < args.n:
         print(f"Warning: only got {len(songs)} songs", file=sys.stderr)
+    tgt_override = getattr(args, "target_lang", None)
+    if tgt_override:
+        for s in songs:
+            s["target_lang"] = tgt_override
+        print(f"Overriding target_lang -> {tgt_override}", file=sys.stderr)
 
     songs_path = outdir / "test_songs.json"
     with open(songs_path, "w", encoding="utf-8") as f:

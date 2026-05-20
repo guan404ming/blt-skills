@@ -59,7 +59,9 @@ To our knowledge, this is the first framework to package IPA-based phonetic anal
 Theoretical accounts treat song translation as balancing singability, sense, naturalness, rhythm, and rhyme \citep{low-2005-pentathlon,franzon-2008-choices,low-2022-translating}.
 Computationally, prior work has formalized singable lyric translation as constrained sequence-to-sequence learning \citep{ou-etal-2023-songs}, addressed tonal-language constraints \citep{guo-etal-2022-automatic}, applied constrained decoding to neural poetry \citep{ghazvininejad-etal-2018-neural}, modeled musical features during generation \citep{ye-etal-2024-sing}, and used curriculum reinforcement learning \citep{ren-etal-2025-lyricar}.
 Related directions include melody-constrained lyric editing \citep{zhao-etal-2025-reffly}, structural constraints in melody-to-lyric generation \citep{ou-etal-2023-loaf}, multilingual datasets and evaluation \citep{cho-etal-2025-mavl,kim-etal-2023-computational,kim-etal-2024-kpop}, scansion-based and prosody-aware lyric generation \citep{chen-teufel-2024-scansion,liang-etal-2024-xai,yu-etal-2025-songglm}, and multimodal singability \citep{yoo-etal-2025-elmi}.
-These approaches rely on specialized fine-tuning, constrained decoding, or reinforcement learning; our work instead augments a general-purpose LLM with IPA verification skills, requiring no task-specific training.
+Closest to our setting, \citet{liu-etal-2026-towards} study zero-shot prompting strategies for singable lyric translation on a new en/zh/jp dataset, comparing seven prompts of increasing complexity (including verification-guided and multi-round refinement) and finding that moderate complexity is sufficient.
+Their refinement step asks the LLM to count syllables \emph{within} the prompt; we instead expose syllable counting as a deterministic external skill, which keeps line-level counts exact rather than approximate (\S\ref{sec:orchestrator-ablation}).
+These approaches rely on specialized fine-tuning, constrained decoding, reinforcement learning, or prompt-only verification; our work instead augments a general-purpose LLM with IPA verification skills, requiring no task-specific training.
 We position BLT Skills against three reference points: structurally constrained singable lyric translators that learn constraint satisfaction from parallel data \citep{ou-etal-2023-songs,guo-etal-2022-automatic,ren-etal-2025-lyricar}; controlled-poetry and prosody-aware generators that handle meter and rhyme inside the model \citep{ghazvininejad-etal-2018-neural,chen-teufel-2024-scansion,liang-etal-2024-xai}; and benchmark-oriented evaluation efforts \citep{kim-etal-2023-computational,cho-etal-2025-mavl}.
 Our scope is narrower and more pragmatic: a training-free skill suite whose contribution is the \emph{external} IPA-verification interface and its multi-phase use, rather than a new generation model or a new dataset.
 We therefore do not retrain or evaluate against most of these systems but compare directly to the supervised constraint-token baseline that is closest in task setting (\citealp{ou-etal-2023-songs}; \S\ref{sec:experiments}).
@@ -175,28 +177,24 @@ Figure~\ref{fig:framework} overviews the skill orchestration architecture.
 \node[phase, below=1.0cm of p1] (p2) {Phase 2: Refine\\Line $i$};
 \node[tool, right=1.2cm of p2] (t2) {syllable\\-counter};
 \node[check, below=0.8cm of p2] (c2) {all lines\\done?};
-\node[phase, dashed, below=0.8cm of c2] (p3) {Phase 3: Pattern\\Refinement (opt-in)};
-\node[tool, dashed, right=1.2cm of p3] (t3) {pattern\\-analyzer};
-\node[box, below=of p3] (out) {Translated Lyrics};
+\node[box, below=0.8cm of c2] (out) {Translated Lyrics};
 
 % Vertical flow
 \draw[->] (src) -- (ext);
 \draw[->] (ext) -- (p1);
 \draw[->] (p1) -- (p2);
 \draw[->] (p2) -- (c2);
-\draw[->, dashed] (c2) -- node[right, font=\scriptsize] {yes} (p3);
-\draw[->, dashed] (p3) -- (out);
+\draw[->] (c2) -- node[right, font=\scriptsize] {yes} (out);
 
-% Skill interactions: bidirectional invocation for Phases 1--2, one-way analysis for Phase 3
+% Skill interactions: bidirectional invocation for both phases
 \draw[<->] (p1) -- node[above, font=\scriptsize] {invoke} (t1);
 \draw[<->] (p2) -- (t2);
-\draw[<-, dashed] (p3) -- (t3);
 
 % Phase 2 graph-level loop (per-line iteration)
 \draw[->, densely dotted] (c2.west) -- ++(-0.8,0) node[above, font=\scriptsize] {no} |- (p2.west);
 
 \end{tikzpicture}
-\caption{Skill framework overview. Phase~1 translates all lines using an internal tool-use loop that invokes the IPA skills. Phase~2 refines each line sequentially (up to 10 attempts per line); the dotted arrow shows the orchestration loop that iterates through lines. The dashed Phase~3 pass is an opt-in pattern-refinement stage; it is not part of the default pipeline (see Appendix~\ref{app:phase3}).}
+\caption{Skill framework overview. Phase~1 translates all lines using an internal tool-use loop that invokes the IPA skills. Phase~2 refines each line sequentially (up to 10 attempts per line); the dotted arrow shows the orchestration loop that iterates through lines.}
 \label{fig:framework}
 \end{figure}
 
@@ -287,8 +285,7 @@ This phase is critical because even a single syllable mismatch can make a line u
 
 \paragraph{Priority, rhyme handling, and termination.}
 The two-phase design prioritizes syllable counts (the hardest constraint), then exits.
-Rhyme is monitored throughout via \texttt{rhyme-analyzer} and \texttt{lyrics-validator} but receives no dedicated refinement phase: rhyme violations are generally less disruptive to singability than syllable mismatches \citep{low-2005-pentathlon}, and our ablation (\S\ref{sec:experiments}, Table~\ref{tab:ablation}) shows that a third syllable-pattern refinement phase actually degrades ARI by introducing rhyme structure absent from the source (Appendix~\ref{app:phase3} reports the design, prompt, and over-rhyming finding in full).
-We therefore adopt Phase~1+2 as the framework and treat phase~3 as an opt-in ablation studied separately.
+Rhyme is monitored throughout via \texttt{rhyme-analyzer} and \texttt{lyrics-validator} but receives no dedicated refinement phase: rhyme violations are generally less disruptive to singability than syllable mismatches \citep{low-2005-pentathlon}.
 The process terminates after Phase~2 with a final \texttt{lyrics-validator} pass.
 
 \subsection{Worked Example}
@@ -345,104 +342,109 @@ Crucially, ARI is robust to label permutation: a source with scheme $AABB$ and a
 Together, SER, SCRE, and ARI cover the structural dimensions of singable translation.
 They do not measure semantic fidelity or naturalness and are complementary to standard MT metrics such as BLEU and COMET.
 
+\subsection{CCVO Distance}
+\label{sec:ccvo}
+
+To cross-validate our results against an external singability proxy, we additionally report Consonant Cluster and Vowel Openness Distance (CCVO; \citealp{stepankova-rosa-2025}).
+Each line is encoded into a label string in which each syllable contributes a cluster marker ($C$ if combined coda$+$onset consonants $\geq 3$, else $N$) and a vowel-openness marker ($OO$ open, $VO$ mid, $VV$ close); a final cluster marker is appended.
+CCVO between source and translation is the per-line normalized Levenshtein distance, averaged across lines.
+Lower is better.
+We adopt CCVO because, in the meta-evaluation of \citet{liu-etal-2026-towards} across six translation directions among Chinese, Japanese, and English, it is the strongest automatic predictor of human Mean Opinion Score on singable lyric translation ($r = 0.838$, $p < 0.001$), substantially above rhythm distance ($r = -0.161$, n.s.), COMET ($r = -0.755$), and Sentence-BERT ($r = -0.437$).
+Our English encoder reproduces the reference implementation's output exactly on the published examples; Chinese syllabification uses pypinyin-derived IPA per character.
+
 \section{Experiments}
 \label{sec:experiments}
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}lccccrr@{}}
+\toprule
+\textbf{Orchestrator} & \textbf{SER} $\downarrow$ & \textbf{SCRE} $\downarrow$ & \textbf{ARI} $\uparrow$ & \textbf{CCVO} $\downarrow$ & \textbf{LLM} & \textbf{Time} \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Vanilla (no skills, single prompt)}} \\
+Haiku 4.5    & 0.814 & 0.245 & 0.306 & 0.468 & 1.0 & 51.3 \\
+Sonnet 4.6   & 0.810 & 0.251 & 0.229 & 0.480 & 1.0 & 24.2 \\
+Opus 4.7     & 0.824 & 0.282 & 0.264 & 0.485 & 1.0 & 7.5 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Default pipeline (Phase 1+2)}} \\
+Haiku 4.5    & \textbf{0.000} & \textbf{0.000} & \textbf{0.767} & 0.366 & 1.3 & 94.6 \\
+Sonnet 4.6   & 0.002 & 0.0001 & 0.729 & 0.368 & 1.2 & 121.8 \\
+Opus 4.7     & 0.002 & 0.0001 & 0.733 & \textbf{0.364} & 1.4 & 32.1 \\
+\bottomrule
+\end{tabular}
+\caption{Multi-orchestrator ablation on Ou 2023 en$\rightarrow$zh test split (seed=42, $n{=}100$ for all rows; Vanilla CCVO computed on the subset of cases that returned non-empty translations). \textbf{LLM}: mean LLM calls per case (Vanilla = 1 call by construction). \textbf{Time}: median wall-clock seconds per case (robust to API rate-limit outliers).}
+\label{tab:orchestrator}
+\end{table*}
 
 \subsection{Setup}
 
 We evaluate on English-to-Chinese ($\text{en} \rightarrow \text{cmn}$) song translation using 100 test cases (5 lines each) from the publicly available test split of the parallel lyric corpus released by \citet{ou-etal-2023-songs}.\footnote{\url{https://huggingface.co/datasets/LongshenOu/lyric-trans-en2zh-data}}
 The dataset covers pop, ballad, rock, and musical-theatre genres.
+To probe language-pair generalization, we additionally run the framework on English-to-Spanish ($\text{en} \rightarrow \text{es}$) and English-to-Japanese ($\text{en} \rightarrow \text{ja}$) with Haiku ($n{=}30$ each, same English source lines retargeted to the new output language); for Spanish, syllabification uses \texttt{pyphen} before IPA conversion, and for Japanese, syllable counting uses mora counts via \texttt{pykakasi} after kanji-to-kana normalization with a kana-to-IPA mapping for CCVO.
 Our open-source release (Apache-2.0) ships the full Skill suite (six \texttt{SKILL.md} directories with their verification scripts), the IPA tool implementations, and evaluation scripts under the \texttt{blt-skills} repository, enabling reproduction on any user-supplied lyrics in any language pair supported by eSpeak-NG.
 
 \paragraph{Implementation.}
 The framework is implemented as Agent Skills: each phase is encoded as procedural instructions in the orchestrating \texttt{lyrics-translator} \texttt{SKILL.md}, which references the five sub-skills (\S\ref{sec:tools}) and invokes their verification scripts as needed.
-For LLM inference, we evaluate Qwen3-30B (4-bit quantized) served locally via Ollama as a representative open-weight orchestrator.
-The same Skill suite is directly compatible with frontier models that support the Agent Skills interface (e.g., Claude via Claude Code), and supplementary Claude-orchestrated runs are reported in our open-source benchmark scripts.\footnote{See \texttt{scripts/run\_cc.py} and \texttt{scripts/run\_bench.py} in the released code.}
+For LLM inference, we evaluate three Claude orchestrators, Haiku~4.5, Sonnet~4.6, and Opus~4.7, invoked via the Claude Code CLI with \texttt{--effort medium}; the Skill suite is identical across orchestrators.
 The IPA verification scripts are exposed to the orchestrator through each skill's \texttt{SKILL.md} description.
 
 \paragraph{Conditions.}
-We conduct a phase ablation study alongside a supervised baseline:
+We compare three conditions on the Ou 2023 en$\rightarrow$zh test split (seed=42, $n{=}100$):
 \begin{itemize}
-    \item \textbf{Phase~1 only}: Initial translation with IPA skill access but no iterative refinement.
-    \item \textbf{Phase~1+2}: Adds line-by-line syllable count refinement (up to 10 iterations per line).
-    \item \textbf{Phase~1+2+3} (full BLT Skills): Adds syllable pattern refinement after syllable counts are matched.
-    \item \textbf{CLT} \citep{ou-etal-2023-songs}: A supervised mBART model fine-tuned with explicit length, rhyme, and word-boundary constraint tokens. This represents a task-specific training approach and serves as an upper bound for constraint satisfaction.
+    \item \textbf{Vanilla}: Single-prompt translation with no skills, providing a baseline for what a frontier LLM produces without IPA-based verification.
+    \item \textbf{Phase~1+2} (full BLT Skills): Initial translation followed by line-by-line syllable-count refinement (up to 10 iterations per line), using the full Skill suite.
+    \item \textbf{CLT} \citep{ou-etal-2023-songs}: A supervised mBART baseline fine-tuned with explicit length, rhyme, and word-boundary constraint tokens. This represents a task-specific training approach and serves as an upper bound for syllable-count accuracy.
 \end{itemize}
-All BLT conditions use the same Qwen3-30B orchestrator and the same Skill suite; CLT uses its own fine-tuned checkpoint.
-We report SER, SCRE, and ARI as defined in \S\ref{sec:eval}.
+We report SER, SCRE, ARI, and CCVO as defined in \S\ref{sec:eval}.
 
-\subsection{Results and Phase Ablation}
-
-Table~\ref{tab:ablation} presents the results of the phase ablation study.
-
-\begin{table}[t]
-\centering
-\small
-\begin{tabular}{@{}lccc@{}}
-\toprule
-\textbf{Method} & \textbf{SER} $\downarrow$ & \textbf{SCRE} $\downarrow$ & \textbf{ARI} $\uparrow$ \\
-\midrule
-Phase 1 only         & 0.8343 & 0.2076 & 0.3133 \\
-Phase 1+2            & \underline{0.2151} & \underline{0.0291} & \textbf{0.3623} \\
-Phase 1+2+3 (full)   & 0.3132 & 0.0457 & 0.2951 \\
-\midrule
-CLT \citep{ou-etal-2023-songs} & \textbf{0.0860} & \textbf{0.0142} & 0.0015 \\
-\bottomrule
-\end{tabular}
-\caption{Phase ablation and baseline comparison ($\text{en} \rightarrow \text{cmn}$, $n{=}100$). Bold = best overall; underline = best among BLT variants.}
-\label{tab:ablation}
-\end{table}
-
-\paragraph{Phase~2 is the critical stage.}
-Adding syllable refinement reduces SER by 74.2\% (0.83$\to$0.22) and SCRE by 86.0\% (0.21$\to$0.03), confirming that iterative skill-verified refinement, not merely skill access during initial generation, drives constraint satisfaction.
-The cost is a 4.8$\times$ increase in inference time (7.0\,s $\to$ 33.5\,s per test case on a single NVIDIA RTX~3090; timings include all phases up to and including the indicated phase).
-This latency remains practical for offline lyric translation, where constraint satisfaction outweighs speed.
-
-\paragraph{Phase~3 over-rhymes and does not help.}
-An optional Phase~3 pattern-refinement pass (full description in Appendix~\ref{app:phase3}) actively hurts every metric on this benchmark: SER and SCRE rise by 45.6\% and 57.0\% as adjusting word boundaries disrupts syllable counts Phase~2 had matched, and ARI drops by 18.6\% (0.36$\to$0.30) because the rewrite tends to introduce same-final endings absent from the source.
-We therefore adopt \textbf{Phase~1+2 as the default} and do not run Phase~3 unless explicitly requested.
-
-\paragraph{Comparison with CLT.}
-The supervised CLT baseline achieves strong syllable accuracy (SCRE 0.014) through explicit constraint tokens and task-specific fine-tuning.
-However, its ARI is near zero (0.002), indicating that its constraint mechanism does not preserve rhyme structure.
-We stress that this ARI gap is not an artifact of permissive rhyme detection: the scheme builder used to compute ARI requires \emph{exact} ending equality (Appendix~\ref{app:tools-rhyme}, step~2), the same strict criterion applied to both BLT and CLT outputs, so the near-zero ARI for CLT reflects a genuine lack of inter-line rhyme structure (e.g., $AABB$ vs.\ $ABAB$) rather than a thresholding artifact.
-The best BLT variant (Phase~1+2) achieves substantially higher ARI (0.36 vs.\ 0.002) while requiring no task-specific training, only IPA skills and a general-purpose LLM.
-CLT is also limited to the single language pair it was trained on, whereas BLT operates on any language pair supported by Phonemizer's eSpeak-NG backend, covering over 100 languages without retraining.
-
-\subsection{Multi-Orchestrator Ablation}
+\subsection{Results}
 \label{sec:orchestrator-ablation}
 
-We replicate the pipeline with three Claude orchestrators (Haiku~4.5, Sonnet~4.6, Opus~4.7) on the Ou 2023 en$\rightarrow$zh test split (seed=42, $n{=}100$), under a \emph{vanilla} single-prompt condition and the full Phase~1+2+3 pipeline used for the Qwen3-30B run in Table~\ref{tab:ablation}; we include Phase~3 here so each orchestrator runs the same pipeline as Qwen3-30B and to surface the same over-rhyming behaviour identified in \S\ref{sec:experiments} (Appendix~\ref{app:phase3}).
-Each Claude call uses \texttt{--effort medium} via the Claude Code CLI; other hyperparameters match Appendix~\ref{app:hyperparams}.
+\paragraph{Findings.}
+Vanilla Claude SER stays at 0.81--0.82 across the three orchestrators, confirming that without the IPA skill suite even a frontier LLM cannot honor syllable counts.
+Under the Phase~1+2 pipeline, all three Claude orchestrators reach near-perfect syllable accuracy: Haiku achieves $\text{SER}{=}\text{SCRE}{=}0$ on every case, while Sonnet and Opus each miss a single line out of 500 ($\text{SER}{=}0.002$).
+The Vanilla$\to$Phase~1+2 transition reduces SER by more than 99\% and SCRE by more than 99.9\%, confirming that iterative skill-verified refinement, not merely better translation, drives constraint satisfaction.
+ARI is high and stable across orchestrators (0.73--0.77), two to three orders of magnitude above CLT's 0.002.
+Average LLM calls per case stay between 1.2 and 1.4, since most lines satisfy syllable constraints in the initial pass and only a small fraction require Phase~2 refinement.
+Concurrent prompt-only verification studies report rhythm-distance gains but cannot drive syllable error to zero because the model still counts within the prompt \citep{liu-etal-2026-towards}; deterministic IPA-counter calls remove that bottleneck.
+
+\paragraph{Comparison with CLT.}
+The supervised CLT baseline achieves strong syllable accuracy (SCRE 0.014) through explicit constraint tokens and task-specific fine-tuning, but its ARI is near zero (0.002), indicating that its constraint mechanism does not preserve rhyme structure.
+We stress that this ARI gap is not an artifact of permissive rhyme detection: the scheme builder used to compute ARI requires \emph{exact} ending equality (Appendix~\ref{app:tools-rhyme}, step~2), the same strict criterion applied to both BLT and CLT outputs, so the near-zero ARI for CLT reflects a genuine lack of inter-line rhyme structure (e.g., $AABB$ vs.\ $ABAB$) rather than a thresholding artifact.
+The best BLT variant (Haiku Phase~1+2) achieves substantially higher ARI (0.77 vs.\ 0.002) while requiring no task-specific training, only IPA skills and a general-purpose LLM.
+CLT is also limited to the single language pair it was trained on, whereas BLT operates on any language pair supported by Phonemizer's eSpeak-NG backend, covering over 100 languages without retraining.
+
+\paragraph{CCVO cross-validates the gain.}
+On the singability-correlated CCVO metric (\S\ref{sec:ccvo}), Phase~1+2 reduces distance by 22--25\% over Vanilla across all three orchestrators (Haiku 0.468$\to$0.366, Sonnet 0.480$\to$0.368, Opus 0.485$\to$0.364), with the per-case standard deviation also dropping more than twofold (0.11--0.15$\to$0.05).
+The three orchestrators converge to within $0.005$ of each other under Phase~1+2, indicating that the gain is a pipeline effect rather than a model-specific artifact.
+This addresses a key concern raised by \citet{liu-etal-2026-towards}, who report that rhythm-distance gains do not correlate with human Mean Opinion Score ($r = -0.161$), whereas CCVO does ($r = 0.838$): the syllable-counter pipeline drives SER to zero \emph{and} concurrently improves the singability proxy validated against human judgment.
+
+\paragraph{Cross-lingual generalization.}
+The unchanged Phase~1+2 pipeline transfers to two further target languages with Haiku as orchestrator (Table~\ref{tab:cross-lingual}), requiring only an eSpeak-NG language-code swap plus, for Japanese, a one-line mora counter; no skill, prompt, or refinement-loop change.
+On English-to-Spanish, Phase~1+2 reaches $\text{SER}{=}\text{SCRE}{=}0$ on all 30 cases and lifts ARI from 0.093 to 0.634, since Spanish, like Chinese, has rich structural end-rhyme.
+On English-to-Japanese, SER falls 93\% and CCVO 64\% over Vanilla, with 26 of 30 cases at $\text{SER}{=}\text{SCRE}{=}0$; the residual comes from three off-by-one mora cases and one empty orchestrator response.
+Japanese Vanilla ARI is near zero (0.032), reflecting the well-known scarcity of structural end-rhyme in Japanese pop lyrics rather than a pipeline failure.
 
 \begin{table}[t]
 \centering
 \small
-\begin{tabular}{@{}lcccrr@{}}
+\begin{tabular}{@{}lccccr@{}}
 \toprule
-\textbf{Orchestrator} & \textbf{SER} $\downarrow$ & \textbf{SCRE} $\downarrow$ & \textbf{ARI} $\uparrow$ & \textbf{LLM} & \textbf{Time} \\
+\textbf{Condition} & \textbf{SER} $\downarrow$ & \textbf{SCRE} $\downarrow$ & \textbf{ARI} $\uparrow$ & \textbf{CCVO} $\downarrow$ & \textbf{Time} \\
 \midrule
-\multicolumn{6}{@{}l}{\emph{Vanilla (no skills, single prompt; $n{=}100$)}} \\
-Haiku 4.5    & 0.872 & 0.350 & 0.196 & 1.0 & 11.0 \\
-Sonnet 4.6   & 0.860 & 0.277 & 0.171 & 1.0 & 5.9 \\
-Opus 4.7     & 0.880 & 0.303 & 0.185 & 1.0 & 6.3 \\
+\multicolumn{6}{@{}l}{\emph{English-to-Spanish (en$\rightarrow$es)}} \\
+Vanilla    & 0.882 & 0.368 & 0.093 & 0.517 & 7.2 \\
+Phase~1+2  & \textbf{0.000} & \textbf{0.000} & \textbf{0.634} & \textbf{0.333} & 147.4 \\
 \midrule
-\multicolumn{6}{@{}l}{\emph{Full pipeline (Phase 1+2+3)}} \\
-Qwen3-30B    & 0.313 & 0.046 & 0.295 & --  & 33.5 \\
-Haiku 4.5    & \textbf{0.000} & \textbf{0.000} & 0.509 & 5.5 & 501.7 \\
-Sonnet 4.6   & 0.002 & 0.001 & 0.653 & 5.2 & 180.9 \\
-Opus 4.7     & \textbf{0.000} & \textbf{0.000} & \textbf{0.693} & 5.3 & 94.6 \\
+\multicolumn{6}{@{}l}{\emph{English-to-Japanese (en$\rightarrow$ja)}} \\
+Vanilla    & 0.987 & 0.894 & 0.032 & 0.974 & 12.3 \\
+Phase~1+2  & \textbf{0.073} & \textbf{0.041} & \textbf{0.177} & \textbf{0.346} & 163.2 \\
 \bottomrule
 \end{tabular}
-\caption{Multi-orchestrator ablation on Ou 2023 en$\rightarrow$zh test split (seed=42, $n{=}100$ for all rows). \textbf{LLM}: mean LLM calls per case across all phases (Vanilla = 1 call by construction). \textbf{Time}: mean wall-clock seconds per case. Qwen3-30B numbers reproduced from Table~\ref{tab:ablation}.}
-\label{tab:orchestrator}
+\caption{Cross-lingual generalization (Haiku, $n{=}30$ each, same Ou 2023 English source lines retargeted to the new output language). \textbf{Time}: median wall-clock seconds per case.}
+\label{tab:cross-lingual}
 \end{table}
-
-\paragraph{Findings.}
-Vanilla Claude's SER (0.86--0.88) is indistinguishable from Qwen3-30B Phase~1's 0.83 (Table~\ref{tab:ablation}), confirming that without the IPA skill suite even a frontier LLM cannot honor syllable counts.
-Under Phase~1+2+3, Haiku and Opus achieve $\text{SER}{=}\text{SCRE}{=}0$ on every case, with Sonnet at a single 4/5 near-miss (SER 0.002).
-ARI rises sharply with orchestrator capability (Opus 0.693, Sonnet 0.653, Haiku 0.509), all far above Qwen3-30B's 0.295 and CLT's 0.002.
-Wall-clock latency follows the inverse ordering (Opus 94.6s, Sonnet 180.9s, Haiku 501.7s).
 
 \subsection{Qualitative Analysis}
 
@@ -484,17 +486,18 @@ The Base LLM overshoots every target (7--9 characters), whereas BLT Skills, guid
 We presented a framework for lyrics translation that preserves musical constraints through Agent Skills, formalizing three constraints (syllable counts, rhyme schemes, syllable patterns) with IPA-based extraction and verification, and structuring translation as a two-phase orchestration over composable Skills that prioritizes syllable counts while monitoring rhyme throughout.
 The proposed SER, SCRE, and ARI metrics complement standard translation quality evaluation.
 
-A phase ablation on English-to-Chinese ($n{=}100$) shows iterative syllable refinement (Phase~2) drives the majority of improvement (86.0\% SCRE reduction), and an additional pattern-refinement pass (Appendix~\ref{app:phase3}) over-rhymes and is left opt-in; we therefore adopt Phase~1+2 as the default.
-Compared with a supervised baseline \citep{ou-etal-2023-songs}, BLT preserves rhyme structure (ARI 0.36 vs.\ 0.002) without task-specific training and, unlike constrained decoding \citep{hokamp-liu-2017-lexically,post-vilar-2018-fast}, remains language-agnostic; future work targets the accuracy gap through stronger LLMs and integration with singing voice synthesis \citep{ren-etal-2020-deepsinger}.
+Multi-orchestrator experiments on English-to-Chinese ($n{=}100$) with three Claude models show that the Phase~1+2 pipeline reduces SER by more than 99\% over a vanilla single-prompt baseline, confirming that iterative skill-verified refinement, not the LLM alone, drives constraint satisfaction.
+The same pipeline transfers to English-to-Spanish and English-to-Japanese with only an eSpeak-NG language-code swap, reaching $\text{SER}{=}\text{SCRE}{=}0$ on Spanish and a 93\% SER reduction on Japanese ($n{=}30$ each), demonstrating that the framework is language-pair agnostic in practice as well as design.
+Compared with a supervised baseline \citep{ou-etal-2023-songs}, BLT preserves rhyme structure (ARI 0.73--0.77 vs.\ 0.002) without task-specific training and, unlike constrained decoding \citep{hokamp-liu-2017-lexically,post-vilar-2018-fast}, remains language-agnostic; future work targets broader cross-lingual coverage and integration with singing voice synthesis \citep{ren-etal-2020-deepsinger}.
 
 \section*{Limitations}
 
 Our approach has several limitations.
 First, the framework's correctness depends on Phonemizer / eSpeak-NG for IPA transcription, which has uneven quality across languages; we do not provide an intrinsic evaluation of syllable-counting or rhyme-detection accuracy.
-Second, the framework lacks a dedicated rhyme refinement phase; our opt-in Phase~3 pattern-refinement pass (Appendix~\ref{app:phase3}) over-rhymes rather than improves rhyme alignment, so we leave it out of the default pipeline.
-Third, our evaluation covers only English-to-Chinese ($n{=}100$) with a single LLM; although the framework is language-agnostic in principle, we have not validated it on other language pairs.
-Fourth, the supervised CLT baseline substantially outperforms BLT on syllable metrics, indicating that the agent approach has room to improve on constraint satisfaction; the current advantage is in rhyme preservation and language-pair flexibility rather than raw accuracy.
-Fifth, the multi-phase refinement loop introduces latency (33.5\,s for Qwen3-30B Phase~1+2+3 on a single RTX~3090 and 94.6--501.7\,s for the Claude orchestrators via the API, vs.\ 1.4\,s for CLT on Apple Silicon MPS per test case), which may limit practical deployment.
+Second, the framework lacks a dedicated rhyme refinement phase: rhyme is monitored throughout but not explicitly rewritten.
+Third, our main evaluation is English-to-Chinese ($n{=}100$) with three Claude orchestrators; cross-lingual validation covers en$\rightarrow$es and en$\rightarrow$ja ($n{=}30$ each, Haiku only), and broader coverage across language pairs and orchestrators is left to future work.
+Fourth, the supervised CLT baseline substantially outperforms BLT on syllable metrics in absolute terms, although the Phase~1+2 pipeline reaches near-perfect SER and SCRE; the current advantage of BLT over CLT is in rhyme preservation and language-pair flexibility.
+Fifth, the iterative Phase~2 refinement introduces latency (median 32--122\,s for the Claude orchestrators via the API, vs.\ 1.4\,s for CLT on Apple Silicon MPS per test case), which may limit practical deployment.
 Sixth, our metrics measure structural constraint preservation but not semantic fidelity or naturalness; a complete evaluation requires human judgments.
 Finally, the technical approach of invoking deterministic phonetic skills from an orchestrating LLM applies established patterns \citep{yao-etal-2023-react,gao-etal-2023-pal,schick-etal-2023-toolformer} to a new domain; the primary contribution is the formalization of musical constraints and the IPA-based Skill suite rather than a novel agent architecture.
 
@@ -512,7 +515,7 @@ As with any high-fidelity translation tool, BLT Skills could in principle be use
 \section{Prompt Templates}
 \label{app:prompts}
 
-We provide the full prompt templates used in each phase of the two-phase orchestration described in \S\ref{sec:loop} (the opt-in Phase~3 prompt is reproduced in Appendix~\ref{app:phase3}).
+We provide the full prompt templates used in each phase of the two-phase orchestration described in \S\ref{sec:loop}.
 All prompts live inside \texttt{skills/lyrics-translator/SKILL.md} (and the phase-specific sub-skill descriptions); the orchestrating LLM loads them when the parent skill is invoked, and reads each sub-skill's \texttt{SKILL.md} when the corresponding tool is needed.
 
 \paragraph{System prompt (all phases, from \texttt{lyrics-translator/SKILL.md}).}
@@ -634,18 +637,15 @@ Table~\ref{tab:hyperparams} lists all hyperparameters used in the experiments.
 \toprule
 \textbf{Category} & \textbf{Parameter} & \textbf{Value} \\
 \midrule
-Model & LLM & Qwen3-30B \\
-Model & Quantization & Q4\_K\_M \\
-Model & Temperature & 0.7 \\
+Model & Orchestrator & Claude (Haiku/Sonnet/Opus) \\
+Model & Interface & Claude Code CLI \\
+Model & Reasoning effort & \texttt{medium} \\
 \midrule
 Phase~1 & Max skill invocations & 10 \\
 Phase~1 & Skill set & All 6 skills \\
 \midrule
 Phase~2 & Max attempts / line & 10 \\
 Phase~2 & Skill calls / attempt & 5 \\
-\midrule
-Phase~3 & Pattern threshold & 0.8 \\
-Phase~3 & Accept condition & $\text{sim}' > \text{sim}$ \\
 \midrule
 Orchestr. & Recursion limit & 50 \\
 Orchestr. & Max lines / test & 5 \\
@@ -657,10 +657,6 @@ Segment. & Chinese & HanLP \\
 \caption{Hyperparameters for all experiments.}
 \label{tab:hyperparams}
 \end{table}
-
-The pattern threshold of 0.8 was chosen empirically: values below 0.6 indicate poor alignment, 0.6--0.8 indicate minor mismatches, and $\geq$0.8 indicates acceptable alignment for singing.
-Phase~3 accepts a revised translation only if it strictly improves pattern similarity \emph{and} maintains the correct total syllable count; otherwise the revision is discarded.
-
 
 \section{Extended Qualitative Examples}
 \label{app:examples}
@@ -713,58 +709,6 @@ Line~3 requires 9 syllables but the agent converges on 8 after exhausting 10 att
 
 This oscillation pattern, where the agent alternates between undershooting and overshooting, accounts for many Phase~2 failures, particularly when the target count falls between two ``natural'' translation lengths.
 
-\section{Phase~3 Pattern Refinement}
-\label{app:phase3}
-
-Phase~3 is an opt-in third stage that operates after Phase~2 has matched syllable counts.
-We describe its design, prompt, and the over-rhyming behaviour that motivates leaving it out of the default pipeline.
-
-\paragraph{Design.}
-After syllable counts are matched, the orchestrator refines word-level syllable distributions.
-For each line, \texttt{syllable-pattern-analyzer} compares the current pattern against the target and returns the similarity score (Eq.~\ref{eq:patsim}), per-word differences, and natural-language suggestions (e.g., ``split the first word into shorter components'').
-For each line whose similarity is below the threshold ($0.8$ by default), the orchestrator generates a revised translation; the revision is accepted only if it strictly improves pattern similarity \emph{and} preserves the total syllable count, otherwise it is reverted to the Phase~2 output.
-
-\paragraph{Prompt template.}
-\begin{quote}
-\small\ttfamily
-Adjust the word distribution in this translation without changing total syllable count.\\[4pt]
-Current pattern: \{current\} (total: $s$ syllables)\\
-Target pattern: \{target\} (total: $s$ syllables)\\[4pt]
-Adjustments needed: \{per-word suggestions\}\\[4pt]
-Keep total syllable count at $s$. Adjust word choice to match the target pattern.\\[4pt]
-Output ONLY the adjusted translation.
-\end{quote}
-
-\paragraph{Over-rhyming finding.}
-On an apples-to-apples comparison of Phase~1+2 against Phase~1+2+3 over the same 50 cases of the Ou en$\rightarrow$zh test split (Haiku 4.5, seed 42), Phase~3 degrades mean ARI from $0.691$ to $0.538$ (10 cases better, 22 same, 18 worse) while preserving SER and SCRE at zero, at $4.4\times$ the LLM calls and $4.0\times$ the wall-clock time.
-Inspecting per-case outputs, the regressions are not random sampling noise: the rewrites repeatedly introduce same-final line endings that are absent from the source, for example ending consecutive lines with sentence-final particles \begin{CJK}{UTF8}{bsmi}吧/吗/啊\end{CJK} or repeating a single pinyin final (e.g.\ \begin{CJK}{UTF8}{bsmi}海\end{CJK} (\textipa{ai}) at lines~1 and~5 of a song whose source has no $\text{A}\dots\text{A}$ pattern).
-Rhyme that does not match the source reduces ARI even though it sounds rhyming, which surfaces a limitation of the current Phase~3 prompt: it optimizes pattern similarity in isolation, with no signal about the source rhyme structure that the rewrite should preserve.
-A conservative fix, such as conditioning the rewrite on the source rhyme labels or requiring the rewrite to keep each line's pinyin final unchanged, is a natural direction for future work.
-
-\paragraph{Illustrative example.}
-Table~\ref{tab:ex-rhyme} shows a case where Phase~3 instead \emph{improves} rhyme alignment; such cases exist but are outweighed by regressions in aggregate.
-The source has scheme $AABB$; after Phase~2, the translation has $ABCD$ (no rhymes preserved); Phase~3's pattern adjustments happen to produce line endings that restore partial rhyme structure ($AABC$).
-
-\begin{table}[h]
-\centering
-\small
-\begin{tabular}{@{}clcc@{}}
-\toprule
-\textbf{L} & \textbf{Source} & \textbf{Rhyme (P2)} & \textbf{Rhyme (P3)} \\
-\midrule
-1 & silver \emph{light} & A & A \\
-2 & purest \emph{white} & B & A \\
-3 & world \emph{below} & C & B \\
-4 & to \emph{blow} & D & C \\
-\midrule
-& Scheme: & $ABCD$ & $AABC$ \\
-& ARI: & $-0.20$ & $0.33$ \\
-\bottomrule
-\end{tabular}
-\caption{Phase~3 rhyme effect on one favourable case. Source scheme $AABB$; Phase~2 output has no rhyme structure ($ABCD$, ARI $= -0.20$); Phase~3 partially restores it ($AABC$, ARI $= 0.33$).}
-\label{tab:ex-rhyme}
-\end{table}
-
 \section{CLT Baseline Details}
 \label{app:clt}
 
@@ -782,8 +726,8 @@ However, ARI~$= 0.002$, indicating that CLT's rhyme tokens enforce line-level rh
 
 \paragraph{Inference time.}
 On a 30-case sample of the en$\to$zh test split, CLT averages 1.4\,s per case (median 1.5\,s, range 0.6--1.9\,s) on Apple Silicon MPS with \texttt{num\_beams=5} and \texttt{max\_length=36}.
-This places CLT roughly an order of magnitude faster than Qwen3-30B Phase~1+2+3 (33.5\,s on RTX~3090; Table~\ref{tab:ablation}) and two orders of magnitude faster than the Claude orchestrators (94.6--501.7\,s via API; Table~\ref{tab:orchestrator}).
-The gap is intrinsic to the architectures: CLT is a 600M-parameter mBART decoded once per song with constrained beam search, whereas the BLT pipeline issues multiple LLM calls per line (mean 5.2--5.5 calls per case).
+This places CLT one to two orders of magnitude faster than the Claude orchestrators under the Phase~1+2 pipeline (median 32--122\,s via API; Table~\ref{tab:orchestrator}).
+The gap is intrinsic to the architectures: CLT is a 600M-parameter mBART decoded once per song with constrained beam search, whereas the BLT pipeline issues multiple LLM calls per case when Phase~2 refinement is triggered.
 Hardware comparison is therefore approximate; even on identical hardware CLT would remain substantially faster.
 
 \paragraph{Key differences from BLT.}

@@ -3,12 +3,53 @@
 from __future__ import annotations
 
 import logging
+import os
 import re
+import threading
+from pathlib import Path
 
 import panphon.distance
 from pypinyin import lazy_pinyin
 
 _ft = panphon.distance.Distance()
+
+
+def _ensure_espeak_library() -> None:
+    """Locate libespeak-ng and expose it to phonemizer if not already set."""
+    if os.environ.get("PHONEMIZER_ESPEAK_LIBRARY"):
+        return
+    candidates = [
+        "/opt/homebrew/lib/libespeak-ng.dylib",
+        "/opt/homebrew/lib/libespeak-ng.1.dylib",
+        "/usr/local/lib/libespeak-ng.dylib",
+        "/usr/local/lib/libespeak-ng.1.dylib",
+        "/usr/lib/x86_64-linux-gnu/libespeak-ng.so.1",
+        "/usr/lib/libespeak-ng.so.1",
+    ]
+    for path in candidates:
+        if Path(path).exists():
+            os.environ["PHONEMIZER_ESPEAK_LIBRARY"] = path
+            return
+
+
+_ensure_espeak_library()
+
+# Espeak is not thread-safe; serialize all phonemize calls behind one lock and
+# reuse one EspeakBackend per language to avoid repeated init deadlocks.
+_backend_cache: dict[str, object] = {}
+_backend_lock = threading.Lock()
+
+
+def _phonemize_via_backend(text: str, lang: str) -> str:
+    from phonemizer.backend import EspeakBackend
+
+    with _backend_lock:
+        be = _backend_cache.get(lang)
+        if be is None:
+            be = EspeakBackend(lang)
+            _backend_cache[lang] = be
+        return be.phonemize([text], strip=True)[0]
+
 
 IPA_VOWEL_PATTERN = (
     r"[iɪeɛæaäɑɒɔoʊuʉɨəɜɞʌyøœɶɐɚɝɯ]"
@@ -35,20 +76,16 @@ def normalize_language_code(lang: str) -> str:
 
 
 def phonemize_text(text: str, lang: str) -> str:
-    """Convert text to IPA using phonemizer with fallback."""
+    """Convert text to IPA via a cached, lock-protected EspeakBackend."""
     try:
-        from phonemizer import phonemize
-
-        return phonemize(text, language=lang, backend="espeak", strip=True)
+        return _phonemize_via_backend(text, lang)
     except Exception as e:
         if "-" in lang:
             try:
-                from phonemizer import phonemize
-
-                return phonemize(text, language=lang.split("-")[0], backend="espeak", strip=True)
+                return _phonemize_via_backend(text, lang.split("-")[0])
             except Exception:
                 pass
-        logging.debug("Could not phonemize text for language %s: %s", lang, e)
+        logging.warning("Could not phonemize text for language %s: %s; using raw text", lang, e)
         return text
 
 
