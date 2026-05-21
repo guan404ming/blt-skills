@@ -585,8 +585,12 @@ Output exactly {n} translated lines, numbered 1-{n}. No explanations, no annotat
     return parse_translations(output, n)
 
 
-def _phase1(lines, source_lang, target_lang, constraints, model, stats):
-    """Phase 1: single-call initial translation with all three constraints exposed."""
+def _phase1(lines, source_lang, target_lang, constraints, model, stats, show_rhyme_pattern=True):
+    """Phase 1: single-call initial translation.
+
+    With ``show_rhyme_pattern=True`` (default) all three constraints are exposed;
+    with ``False`` only syllable counts are given (syllable-counter-only ablation).
+    """
     import time as _time
 
     target_syls = constraints["syllables"]
@@ -595,14 +599,21 @@ def _phase1(lines, source_lang, target_lang, constraints, model, stats):
     n = len(lines)
     src_block = chr(10).join(f"{i + 1}. {line}" for i, line in enumerate(lines))
 
-    prompt = f"""Translate ALL {n} lines from {source_lang} to {target_lang} while meeting THREE musical constraints.
+    if show_rhyme_pattern:
+        constraint_block = f"""CONSTRAINT 1: SYLLABLE COUNTS (MUST MATCH EXACTLY) per line: {target_syls}
+CONSTRAINT 2: RHYME SCHEME (preserve grouping): {rhyme}
+CONSTRAINT 3: SYLLABLE PATTERNS per line: {patterns}"""
+        intro = "while meeting THREE musical constraints"
+    else:
+        constraint_block = f"""CONSTRAINT: SYLLABLE COUNTS (MUST MATCH EXACTLY) per line: {target_syls}"""
+        intro = "while matching the target syllable counts"
+
+    prompt = f"""Translate ALL {n} lines from {source_lang} to {target_lang} {intro}.
 
 Source lines:
 {src_block}
 
-CONSTRAINT 1: SYLLABLE COUNTS (MUST MATCH EXACTLY) per line: {target_syls}
-CONSTRAINT 2: RHYME SCHEME (preserve grouping): {rhyme}
-CONSTRAINT 3: SYLLABLE PATTERNS per line: {patterns}
+{constraint_block}
 
 Notes:
 - For Chinese: each character = 1 syllable; strip punctuation when counting.
@@ -617,6 +628,63 @@ Output exactly {n} translated lines, numbered 1-{n}. No explanations, no annotat
     if output is None:
         return None
     return parse_translations(output, n)
+
+
+def _prompt_only_verifier(lines, source_lang, target_lang, constraints, model, rounds, stats):
+    """Prompt-only multi-round verifier baseline: the LLM self-counts and self-refines
+    in-prompt for a fixed number of rounds, with NO external syllable-counter gating.
+    Isolates whether the gain comes from iteration alone vs. deterministic tool calls."""
+    import time as _time
+
+    target_syls = constraints["syllables"]
+    n = len(lines)
+    src_block = chr(10).join(f"{i + 1}. {line}" for i, line in enumerate(lines))
+
+    prompt = f"""Translate ALL {n} lines from {source_lang} to {target_lang} matching the target syllable counts.
+
+Source lines:
+{src_block}
+
+Target syllable counts per line: {target_syls}
+- For Chinese: each character = 1 syllable; strip punctuation when counting.
+- Count the syllables of each line yourself and make sure they match exactly.
+- Preserve poetic meaning and emotional impact.
+
+Output exactly {n} translated lines, numbered 1-{n}. No explanations, no annotations.
+"""
+    t0 = _time.time()
+    output = call_claude(prompt, model=model)
+    stats["pv_time_s"] = stats.get("pv_time_s", 0.0) + (_time.time() - t0)
+    stats["pv_calls"] = stats.get("pv_calls", 0) + 1
+    if output is None:
+        return None
+    translations = parse_translations(output, n)
+    if translations is None:
+        return None
+
+    for _ in range(rounds):
+        cur_block = chr(10).join(f"{i + 1}. {translations[i]}" for i in range(n))
+        prompt = f"""Check each translated line and fix any whose syllable count does not match the target.
+Count the syllables of each line carefully yourself (Chinese: 1 character = 1 syllable, ignore punctuation).
+
+Target syllable counts per line: {target_syls}
+
+Current translations:
+{cur_block}
+
+Revise only the lines that are off-count; keep correct lines unchanged and preserve meaning.
+Output exactly {n} translated lines, numbered 1-{n}. No explanations, no annotations.
+"""
+        t0 = _time.time()
+        out = call_claude(prompt, model=model)
+        stats["pv_time_s"] = stats.get("pv_time_s", 0.0) + (_time.time() - t0)
+        stats["pv_calls"] = stats.get("pv_calls", 0) + 1
+        if out is None:
+            continue
+        revised = parse_translations(out, n)
+        if revised is not None:
+            translations = revised
+    return translations
 
 
 def _phase2_refine_line(src_line, current, target_syl, target_lang, model, max_iter, stats):
@@ -748,6 +816,7 @@ def translate_with_claude_phases(
     max_iter_p2=10,
     p3_threshold=0.8,
     metrics_out=None,
+    ablation="none",
 ):
     """Multi-phase Claude orchestration matching the paper's pipeline.
 
@@ -775,7 +844,20 @@ def translate_with_claude_phases(
             translations = list(translations) + [""] * (n - len(translations))
         return translations[:n]
 
-    translations = _phase1(lines, source_lang, target_lang, constraints, model, stats)
+    if ablation == "prompt-verify":
+        translations = _prompt_only_verifier(
+            lines, source_lang, target_lang, constraints, model, max_iter_p2, stats
+        )
+        if translations is None:
+            return None
+        if len(translations) < n:
+            translations = list(translations) + [""] * (n - len(translations))
+        return translations[:n]
+
+    show_rp = ablation != "sc-only"
+    translations = _phase1(
+        lines, source_lang, target_lang, constraints, model, stats, show_rhyme_pattern=show_rp
+    )
     if translations is None:
         return None
     if len(translations) < n:

@@ -64,6 +64,7 @@ def process_song(song, args, partial_dir):
         max_iter_p2=args.max_iter_p2,
         p3_threshold=args.p3_threshold,
         metrics_out=metrics,
+        ablation=args.ablation,
     )
     elapsed = time.time() - t0
 
@@ -127,6 +128,14 @@ def main():
         choices=("low", "medium", "high", "xhigh", "max"),
         default=None,
         help="Claude reasoning effort level passed to `claude --effort`",
+    )
+    parser.add_argument(
+        "--ablation",
+        choices=("none", "sc-only", "prompt-verify"),
+        default="none",
+        help="Ablation condition: 'sc-only' (Phase 1 exposes only syllable counts, "
+        "no rhyme/pattern) or 'prompt-verify' (multi-round in-prompt self-verification, "
+        "no external counter). Default: none (full pipeline).",
     )
     parser.add_argument(
         "--resume",
