@@ -13,8 +13,10 @@ import time
 
 from bench_common import (
     clt_translate,
+    derive_clt_bad_words,
     evaluate_song,
     load_clt_bad_words,
+    load_clt_constraints,
     load_clt_model,
     load_songs,
     make_parser,
@@ -38,21 +40,32 @@ def main():
     mp = args.model_path or "LongshenOu/lyric-trans-en2zh"
     print(f"Loading CLT model from {mp}...", file=sys.stderr)
     model, tokenizer = load_clt_model(mp, args.device)
-    bad_words_ids = load_clt_bad_words()
+    bad_words_ids = load_clt_bad_words() or derive_clt_bad_words(tokenizer)
+    print(f"bad_words: {len(bad_words_ids or [])} control tokens suppressed", file=sys.stderr)
+
+    # CLT's native per-line constraints (length, rhyme, word boundary) from the dataset.
+    clt_len, clt_rhy, clt_bnd = load_clt_constraints()
 
     results = []
     for song in songs:
         sid = song["id"]
         artist = song["metadata"]["artist"]
         src_syl = [count_syllables(line, song["source_lang"]) for line in song["source_lines"]]
-        print(f"{sid} ({artist}): src_syl={src_syl}", file=sys.stderr)
+        start = song["metadata"]["test_start_line"]
+        n = len(song["source_lines"])
+        lengths = clt_len[start:start + n]
+        rhymes = clt_rhy[start:start + n]
+        boundaries = clt_bnd[start:start + n]
+        print(f"{sid} ({artist}): src_syl={src_syl} clt_len={lengths}", file=sys.stderr)
 
         t0 = time.time()
         translations = clt_translate(
             model,
             tokenizer,
             song["source_lines"],
-            src_syl,
+            lengths,
+            rhymes=rhymes,
+            boundaries=boundaries,
             bad_words_ids=bad_words_ids,
             device=args.device,
         )

@@ -944,6 +944,42 @@ def load_clt_bad_words(path=None):
     return [[i] for i in ids]
 
 
+def load_clt_constraints(repo_root=None):
+    """Load CLT's native per-line constraints (length, rhyme class, word boundary)
+    from the Ou 2023 dataset, parallel-filtered to non-empty source lines so the
+    indices match those produced by ``sample_ou_test``. Returns three lists
+    aligned by filtered line index: lengths[int], rhymes[int], boundaries[list[int]]."""
+    root = Path(repo_root) if repo_root else Path(__file__).resolve().parent.parent
+    base = root / "data" / "lyric-trans" / "datasets" / "data_parallel"
+    src = (base / "test.source").read_text(encoding="utf-8").splitlines()
+    con = (base / "constraints" / "source" / "test.target").read_text(encoding="utf-8").splitlines()
+    bnd = (base / "constraints" / "source" / "test_boundary.target").read_text(encoding="utf-8").splitlines()
+
+    lengths, rhymes, boundaries = [], [], []
+    for s, c, b in zip(src, con, bnd):
+        if not s.strip():
+            continue
+        parts = c.split("\t")
+        lengths.append(int(parts[0]))
+        rhymes.append(int(parts[1]) if len(parts) > 1 else 1)
+        boundaries.append([int(ch) for ch in b.strip()])
+    return lengths, rhymes, boundaries
+
+
+def derive_clt_bad_words(tokenizer):
+    """Derive the bad-words list (control tokens that must not appear in output)
+    directly from the tokenizer's added vocab. Used when the external
+    bad_word_list.json is unavailable; without it the constraint tokens
+    (len_*, rhy_*, str_*, boundary_*, <pref>, </pref>, <brk>) leak into the
+    decoded text and inflate syllable counts."""
+    import re
+
+    vocab = tokenizer.get_vocab()
+    pat = re.compile(r"(len_|rhy_|str_|boundary_|<pref>|</pref>|<brk>)")
+    bad = [tid for tok, tid in vocab.items() if pat.match(tok) or "DEACTIVATED" in tok.upper()]
+    return [[tid] for tid in sorted(set(bad))]
+
+
 def clt_translate(
     model,
     tokenizer,

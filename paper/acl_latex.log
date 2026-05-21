@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.12)  21 MAY 2026 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.12)  21 MAY 2026 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,95 +846,95 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 (./acl_latex.aux)
 \openout1 = `acl_latex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 24.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 24
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 30.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 30
 .
  (/usr/local/texlive/2026/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -995,18 +995,18 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 30.
 (./acl_latex.out) (./acl_latex.out)
 \@outlinefile=\write4
 \openout4 = `acl_latex.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 24.
-Package microtype Info: Applying patch `item' on input line 24.
-Package microtype Info: Applying patch `toc' on input line 24.
-Package microtype Info: Applying patch `eqnum' on input line 24.
-Package microtype Info: Applying patch `footnote' on input line 24.
-Package microtype Info: Applying patch `verbatim' on input line 24.
-LaTeX Info: Redefining \microtypesetup on input line 24.
+LaTeX Info: Redefining \microtypecontext on input line 30.
+Package microtype Info: Applying patch `item' on input line 30.
+Package microtype Info: Applying patch `toc' on input line 30.
+Package microtype Info: Applying patch `eqnum' on input line 30.
+Package microtype Info: Applying patch `footnote' on input line 30.
+Package microtype Info: Applying patch `verbatim' on input line 30.
+LaTeX Info: Redefining \microtypesetup on input line 30.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1029,13 +1029,13 @@ tim
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 25
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 31
 .
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
 
 (/Users/wchiu/Library/texmf/tex/latex/amsfonts/umsa.fd
@@ -1044,7 +1044,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 
 (/Users/wchiu/Library/texmf/tex/latex/amsfonts/umsb.fd
@@ -1053,164 +1053,224 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 45
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 91
 .
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 45.
+(Font)              scaled to size 9.0pt on input line 91.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1137) in paragraph at lines 59--65
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/
+local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+
+]
+Underfull \hbox (badness 1137) in paragraph at lines 105--111
 \T1/ptm/m/n/10.95 (+20) tonal-language con-straints ([][]Guo et al.[][], [][]20
 22[][]),
  []
 
-[1{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
-ocal/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}
-
-
-
-{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 74.
-LaTeX Font Info:    Trying to load font information for T3+ptm on input line 10
-2.
-
+(Font)              scaled to size 10.95pt on input line 120.
+[2{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
+LaTeX Font Info:    Trying to load font information for T3+ptm on input line 14
+8.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/tipa/t3ptm.fd
 File: t3ptm.fd 2001/12/31 TIPA font definitions
-) [2] [3]
-Underfull \hbox (badness 4899) in paragraph at lines 207--209
+) [3]
+Underfull \hbox (badness 4899) in paragraph at lines 213--215
 \T1/ptm/m/n/10.95 (+20) The or-ches-tra-tor has ac-cess to a suite of
  []
 
 
-Underfull \hbox (badness 5064) in paragraph at lines 207--209
+Underfull \hbox (badness 5064) in paragraph at lines 213--215
 \T1/ptm/m/n/10.95 (+20) Agent Skills (Ta-ble [][]1[][]), each pack-aged as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 \T1/ptm/m/n/10.95 (+20) a \T1/zi4/m/n/10.95 SKILL.md \T1/ptm/m/n/10.95 (+20) de
 -scrip-tion plus a de-ter-min-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 \T1/ptm/m/n/10.95 (+20) is-tic ver-i-fi-ca-tion script. The four IPA-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 \T1/ptm/m/n/10.95 (+20) based an-a-lytic skills (\T1/zi4/m/n/10.95 syllable-cou
 nter\T1/ptm/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 \T1/zi4/m/n/10.95 phonetic-analyzer\T1/ptm/m/n/10.95 (+20) , \T1/zi4/m/n/10.95 
 rhyme-analyzer\T1/ptm/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 \T1/zi4/m/n/10.95 syllable-pattern-analyzer\T1/ptm/m/n/10.95 (+20) ) wrap func-
 
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 207--209
+Underfull \hbox (badness 3240) in paragraph at lines 213--215
 \T1/ptm/m/n/10.95 (+20) ([][]Gao et al.[][], [][]2023[][]); \T1/zi4/m/n/10.95 l
 yrics-validator \T1/ptm/m/n/10.95 (+20) and
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 218--219
+Underfull \hbox (badness 3679) in paragraph at lines 224--225
 []\T1/ptm/m/n/9 (+20) Convert text to IPA via eS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 []\T1/zi4/m/n/9 syllable-pattern-
  []
 
 
-Underfull \hbox (badness 5771) in paragraph at lines 221--222
+Underfull \hbox (badness 5771) in paragraph at lines 227--228
 []\T1/ptm/m/n/9 (+20) Validate all three con-straints
  []
 
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 225.
+(Font)              scaled to size 10.0pt on input line 231.
 
-Underfull \hbox (badness 1430) in paragraph at lines 229--234
+Underfull \hbox (badness 1430) in paragraph at lines 235--240
 \T1/ptm/m/n/10.95 (+20) ing the or-ches-tra-tor to in-spect pho-netic re-al-
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 229--234
+Underfull \hbox (badness 1226) in paragraph at lines 235--240
 \T1/ptm/m/n/10.95 (+20) iza-tions and rea-son about which syl-la-bles to
  []
 
 [4]
-Underfull \hbox (badness 1092) in paragraph at lines 265--267
+Underfull \hbox (badness 1092) in paragraph at lines 271--273
 \T1/ptm/m/n/10.95 (+20) Translation pro-ceeds through two phases, en-
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 283--286
+Underfull \hbox (badness 1194) in paragraph at lines 289--292
  []\T1/ptm/b/n/10.95 (+20) Priority, rhyme han-dling, and ter-mi-na-tion.[]
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 378--378
+Underfull \hbox (badness 10000) in paragraph at lines 384--384
 [][][][][]$\T1/zi4/m/n/9 https : / / huggingface . co / datasets / LongshenOu /
 
  []
 
-[6]
-Underfull \hbox (badness 6708) in paragraph at lines 384--387
+
+Underfull \hbox (badness 6708) in paragraph at lines 390--393
  []\T1/ptm/b/n/10.95 (+20) Implementation.[] \T1/ptm/m/n/10.95 (+20) The frame-
 work is im-ple-
  []
 
+[6]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-91.
-(/Users/wchiu/Library/texmf/tex/latex/psnfss/ts1ptm.fd
+97.
+ (/Users/wchiu/Library/texmf/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 1622) in paragraph at lines 393--394
+Underfull \hbox (badness 1622) in paragraph at lines 399--400
 []\T1/ptm/b/n/10.95 (+20) CLT \T1/ptm/m/n/10.95 (+20) ([][]Ou et al.[][], [][]2
 023a[][]): A su-per-vised
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 393--394
+Underfull \hbox (badness 2401) in paragraph at lines 399--400
 \T1/ptm/m/n/10.95 (+20) length, rhyme, and word-boundary con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
+Underfull \hbox (badness 10000) in paragraph at lines 415--417
  []\T1/ptm/b/n/10.95 (+20) CCVO cross-validates the gain.[] \T1/ptm/m/n/10.95 (
 +20) On the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
+Underfull \hbox (badness 10000) in paragraph at lines 415--417
 \T1/ptm/m/n/10.95 (+20) singability-correlated CCVO met-ric (Ÿ[][]5.4[][]),
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 413--415
-\T1/ptm/m/it/10.95 (+20) and \T1/ptm/m/n/10.95 (+20) im-proves the human-valida
-ted singa-bil-ity
+Underfull \hbox (badness 2418) in paragraph at lines 415--417
+\T1/ptm/m/n/10.95 (+20) Vanilla across all three or-ches-tra-tors, which
  []
 
-[7] (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+[7]
+<figs/ablation.pdf, id=428, 238.5644pt x 167.6739pt>
+File: figs/ablation.pdf Graphic file (type pdf)
+<use figs/ablation.pdf>
+Package pdftex.def Info: figs/ablation.pdf  used on input line 429.
+(pdftex.def)             Requested size: 219.08614pt x 153.98297pt.
+
+Underfull \vbox (badness 1107) has occurred while \output is active []
+
+
+Underfull \vbox (badness 1107) has occurred while \output is active []
+
+ [8 <./figs/ablation.pdf>] (./acl_latex.bbl [9] [10])
+Underfull \hbox (badness 2781) in paragraph at lines 501--503
+\T1/ptm/m/n/10.95 (+20) We pro-vide the full prompt tem-plates used
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 501--503
+\T1/ptm/m/n/10.95 (+20) de-scribed in Ÿ[][]4.4[][]. All prompts live in-side
+ []
+
+LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
+(Font)              scaled to size 10.95pt on input line 505.
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
+ []\T1/ptm/b/n/10.95 (+20) System prompt (all phases, from
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 507--517
+\T1/zi4/m/n/9 - lyrics-validator: verify a line
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--530
+\T1/zi4/m/n/9 CONSTRAINT 2: RHYME SCHEME:
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 524--530
+\T1/zi4/m/n/9 CONSTRAINT 3: SYLLABLE PATTERNS:
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 524--530
+\T1/zi4/m/n/9 Output exactly $\OML/cmm/m/it/9 N$ \T1/zi4/m/n/9 translated lines
+,
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 536--546
+\T1/zi4/m/n/9 syllable count. Minimize meaning
+ []
+
+[11] (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -1220,7 +1280,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 )
 LaTeX Font Info:    Trying to load font information for C70+bsmi on input line 
-485.
+583.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fd
 File: c70bsmi.fd 2021/10/16 4.8.5
@@ -1228,145 +1288,91 @@ File: c70bsmi.fd 2021/10/16 4.8.5
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fdx
 File: c70bsmi.fdx 2021/10/16 4.8.5
 )
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Underfull \hbox (badness 1210) in paragraph at lines 503--506
-\T1/ptm/m/n/10.95 (+20) We pre-sented a frame-work for lyrics trans-la-
- []
-
-[8]
-Underfull \vbox (badness 3108) has occurred while \output is active []
-
-
-Underfull \vbox (badness 3108) has occurred while \output is active []
-
-
-(./acl_latex.bbl [9] [10])
-Underfull \hbox (badness 2781) in paragraph at lines 532--534
-\T1/ptm/m/n/10.95 (+20) We pro-vide the full prompt tem-plates used
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 532--534
-\T1/ptm/m/n/10.95 (+20) de-scribed in Ÿ[][]4.4[][]. All prompts live in-side
- []
-
-LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 10.95pt on input line 536.
-
-Underfull \hbox (badness 10000) in paragraph at lines 536--536
- []\T1/ptm/b/n/10.95 (+20) System prompt (all phases, from
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 538--548
-\T1/zi4/m/n/9 - lyrics-validator: verify a line
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 555--561
-\T1/zi4/m/n/9 CONSTRAINT 2: RHYME SCHEME:
- []
-
-
-Underfull \hbox (badness 5175) in paragraph at lines 555--561
-\T1/zi4/m/n/9 CONSTRAINT 3: SYLLABLE PATTERNS:
- []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 555--561
-\T1/zi4/m/n/9 Output exactly $\OML/cmm/m/it/9 N$ \T1/zi4/m/n/9 translated lines
-,
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 567--577
-\T1/zi4/m/n/9 syllable count. Minimize meaning
- []
-
-[11] (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Underfull \hbox (badness 7963) in paragraph at lines 618--619
+Underfull \hbox (badness 7963) in paragraph at lines 587--588
 []\T1/ptm/m/n/10.95 (+20) Pair-level rhyme judg-ments in-side the
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 636--637
+Underfull \hbox (badness 1264) in paragraph at lines 605--606
 []\T1/ptm/m/it/10.95 (+20) Total sim-i-lar-ity \T1/ptm/m/n/10.95 (+20) (weight 
 0.25): $\OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^@
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 638--639
+Underfull \hbox (badness 6978) in paragraph at lines 607--608
 []\T1/ptm/m/n/10.95 (+20) Return the weighted sum, clipped to
  []
 
 [12]
-Underfull \hbox (badness 1122) in paragraph at lines 665--670
+Underfull \hbox (badness 1122) in paragraph at lines 634--639
 \T1/ptm/m/n/10.95 (+20) transcription choice rather than ran-dom er-ror.
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
 
-Underfull \vbox (badness 5064) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 5064) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 797--801
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 771--775
  []\T1/ptm/b/n/10.95 (+20) Cross-lingual rhyme (en$\OMS/cmsy/m/n/10.95 !$\T1/pt
 m/b/n/10.95 (+20) ja).[] \T1/ptm/m/n/10.95 (+20) The low
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 797--801
+Underfull \hbox (badness 1082) in paragraph at lines 771--775
 \T1/ptm/m/n/10.95 (+20) of five vow-els and leave no proper-substring
  []
 
@@ -1376,16 +1382,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `acl_latex.out' has not changed.
-(rerunfilecheck)             Checksum: CE12E2B81489236B3D07194664E06094;6409.
+(rerunfilecheck)             Checksum: 94AD8685A3C29903C827F000525253BD;6066.
  ) 
 Here is how much of TeX's memory you used:
- 29672 strings out of 467525
- 534847 string characters out of 5418982
- 972633 words of memory out of 5000000
- 57322 multiletter control sequences out of 15000+600000
- 727505 words of font info for 490 fonts, out of 8000000 for 9000
+ 29700 strings out of 467525
+ 535323 string characters out of 5418982
+ 970835 words of memory out of 5000000
+ 57344 multiletter control sequences out of 15000+600000
+ 728022 words of font info for 495 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,15n,94p,1006b,1127s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,15n,94p,1006b,1071s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
 a-zi4b.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/inconsolata/I
 nconsolata-zi4r.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/arphic/bsmi
@@ -1433,10 +1439,10 @@ w/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/ut
 mbi8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/loc
 al/texlive/2026/texmf-dist/fonts/type1/public/tipa/xipa10.pfb>
-Output written on acl_latex.pdf (14 pages, 455041 bytes).
+Output written on acl_latex.pdf (14 pages, 477381 bytes).
 PDF statistics:
- 883 PDF objects out of 1000 (max. 8388607)
- 728 compressed objects within 8 object streams
- 144 named destinations out of 1000 (max. 500000)
- 79793 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 898 PDF objects out of 1000 (max. 8388607)
+ 737 compressed objects within 8 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 79790 words of extra memory for PDF output out of 89155 (max. 10000000)
 
