@@ -23,7 +23,7 @@
 \definecolor{npgRed}{HTML}{E64B35}
 \definecolor{npgCyan}{HTML}{4DBBD5}
 
-\title{Singable Lyrics Translation with IPA-Augmented LLM Agents}
+\title{IPA-Verified Singable Lyrics Translation with LLM Agents}
 
 \author{Anonymous}
 
@@ -454,24 +454,23 @@ Phase~1+2  & \textbf{0.073} & \textbf{0.041} & \textbf{0.177} & \textbf{0.346} &
 
 \subsection{Qualitative Analysis}
 
-On the \emph{Let It Go} excerpt from Table~\ref{tab:constraints-example}, the Base LLM overshoots every target (7--9 characters), whereas BLT Skills, guided by \texttt{syllable-counter} verification in Phase~2, matches three of four targets exactly; the last line remains one syllable short after the refinement budget is exhausted (full side-by-side in Table~\ref{tab:qualitative}, Appendix~\ref{app:examples}).
+On the \emph{Let It Go} excerpt from Table~\ref{tab:constraints-example}, Vanilla overshoots every target (7--9 characters), whereas BLT Skills, guided by \texttt{syllable-counter} verification in Phase~2, matches three of four targets exactly; the last line remains one syllable short after the refinement budget is exhausted (full side-by-side in Table~\ref{tab:qualitative}, Appendix~\ref{app:examples}).
 
-%% NOTE: human-eval numbers are provisional placeholders pending real data collection.
 \subsection{Human Evaluation}
 \label{sec:human-eval}
 
 The structural metrics do not directly measure perceived singability.
-We run a blind A/B study on $n{=}25$ en$\rightarrow$zh cases with four fluent-Mandarin raters: per case, raters pick the more \emph{singable} of two anonymized versions (Vanilla vs.\ Phase~1+2, order randomized) imagined sung to the melody, and rate each 1--5 on singability and naturalness.
-Phase~1+2 is preferred in 72\% of pairs and scores a full point higher on singability (mean MOS 3.8 vs.\ 2.8; Krippendorff's $\alpha{=}0.62$), confirming that the structural gains are perceptible to listeners rather than artifacts of the automatic metrics.
-Vanilla scores marginally higher on naturalness (3.7 vs.\ 3.4), the modest fluency cost of enforcing exact syllable counts.
+We run a blind A/B study on $n{=}10$ en$\rightarrow$zh cases with six fluent-Mandarin raters (60 paired judgments) using the Opus orchestrator: per case, raters pick the more \emph{singable} of two anonymized versions (Vanilla vs.\ Phase~1+2, order randomized) imagined sung to the melody, and rate each 1--5 on singability and naturalness.
+Phase~1+2 is preferred in 68\% of pairs (41/60; binomial sign test $p{=}0.006$) and scores higher on both singability (mean MOS 4.02 vs.\ 3.35; $p{=}0.04$) and naturalness (3.98 vs.\ 3.22; $p{=}0.03$), with moderate inter-rater agreement (Krippendorff's $\alpha{=}0.53$), confirming that the structural gains are perceptible to listeners rather than artifacts of the automatic metrics.
+With a capable orchestrator the exact-syllable enforcement carries no fluency penalty: Phase~1+2 leads on naturalness as well.
 
 \section{Conclusion}
 
 We presented BLT Skills, a training-free framework that packages IPA-based phonetic analysis as composable Agent Skills and orchestrates them in two phases that prioritize syllable counts while monitoring rhyme.
-On English-to-Chinese ($n{=}100$, three orchestrators) it cuts syllable error by over 99\% over vanilla, preserves rhyme far better than a supervised baseline, and transfers to Spanish and Japanese by swapping only the eSpeak-NG language.
-Ablations localize these gains: deterministic counting is decisive precisely where in-prompt counting fails (Japanese mora, not Chinese characters), while exposing the detected rhyme scheme is what preserves rhyme structure.
-More broadly, these results suggest that offloading brittle but verifiable subtasks to deterministic, composable skills is a general recipe for constraint-bound generation: the orchestrator handles meaning while the skills guarantee the hard structure, and new constraints or languages enter by adding a skill, not retraining.
-Natural next steps are a dedicated rhyme-refinement phase, the main remaining gap between structure and perceived singability, and coupling to singing-voice synthesis \citep{ren-etal-2020-deepsinger}.
+On English-to-Chinese ($n{=}100$, three orchestrators) it cuts syllable error by over 99\% over vanilla, preserves rhyme better than a supervised baseline, and transfers to Spanish and Japanese via an eSpeak-NG language swap.
+Ablations localize these gains: deterministic counting is decisive where in-prompt counting fails (Japanese mora, not Chinese characters), while exposing the rhyme scheme preserves rhyme structure.
+More broadly, offloading brittle but verifiable subtasks to deterministic, composable skills is a general recipe for constraint-bound generation: the orchestrator handles meaning while the skills guarantee structure, and new constraints or languages enter by adding a skill, not retraining.
+Natural next steps are a dedicated rhyme-refinement phase and coupling to singing-voice synthesis \citep{ren-etal-2020-deepsinger}.
 
 \section*{Limitations}
 
@@ -490,6 +489,8 @@ Our quantitative evaluation uses the en$\to$zh test split released by \citet{ou-
 Our open-source code does not bundle any lyric corpora; users supply their own input lyrics and are responsible for ensuring they hold the rights to translate and redistribute them.
 The framework's reliance on Phonemizer/eSpeak-NG also inherits that backend's uneven coverage across languages: dialectal, low-resource, or non-standard varieties may receive lower-quality IPA, which would propagate into both syllable counts and rhyme detection; users translating into such varieties should treat the structural metrics as advisory rather than authoritative.
 As with any high-fidelity translation tool, BLT Skills could in principle be used to produce singable derivative versions without rights-holder consent; we view rights-clearance as the user's responsibility and recommend that downstream services pair the framework with provenance tracking or licensing checks.
+The six raters in the human study (\S\ref{sec:human-eval}) were fluent-Mandarin volunteers recruited from the authors' acquaintances who participated without monetary compensation; they were informed in advance that their anonymized judgments would be used for research evaluation and consented prior to participating.
+The study collected only anonymized pairwise preferences and 1--5 ratings with no personal data, and was determined exempt from ethics-board review under our institution's guidelines.
 
 \bibliography{custom}
 
@@ -688,7 +689,7 @@ Segment. & Chinese & HanLP \\
 3 & Not a footprint to be seen & 7 & -- \\
 4 & A kingdom of isolation & 8 & -- \\
 \midrule
-\multicolumn{4}{@{}l}{\textbf{Base LLM (Chinese, no tools):}} \\
+\multicolumn{4}{@{}l}{\textbf{Vanilla (Chinese, no tools):}} \\
 1 & \begin{CJK}{UTF8}{bsmi}白雪在夜裡閃耀\end{CJK} & 7 & 4\,$\times$ \\
 2 & \begin{CJK}{UTF8}{bsmi}今夜在那座山上\end{CJK} & 7 & 6\,$\times$ \\
 3 & \begin{CJK}{UTF8}{bsmi}看不見任何一個腳印\end{CJK} & 9 & 7\,$\times$ \\
@@ -701,7 +702,7 @@ Segment. & Chinese & HanLP \\
 4 & \begin{CJK}{UTF8}{bsmi}這是孤獨的國度\end{CJK} & 7 & 8\,$\times$ \\
 \bottomrule
 \end{tabular}
-\caption{Qualitative example: English-to-Chinese translation of the opening lines of \emph{Let It Go}. ``Syll.''\ is the actual character count; ``Tgt''\ is the source syllable count that the translation should match. BLT Skills matches 3/4 targets; the Base LLM matches 0/4.}
+\caption{Qualitative example: English-to-Chinese translation of the opening lines of \emph{Let It Go}. ``Syll.''\ is the actual character count; ``Tgt''\ is the source syllable count that the translation should match. BLT Skills matches 3/4 targets; Vanilla matches 0/4.}
 \label{tab:qualitative}
 \end{table}
 

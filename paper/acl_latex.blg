@@ -12,36 +12,36 @@ Database file #1: custom.bib
 You've used 35 entries,
             3764 wiz_defined-function locations,
             934 strings with 14513 characters,
-and the built_in function-call counts, 29430 in all, are:
-= -- 2567
-> -- 1417
+and the built_in function-call counts, 29395 in all, are:
+= -- 2565
+> -- 1418
 < -- 31
 + -- 571
 - -- 426
-* -- 1934
-:= -- 4173
+* -- 1933
+:= -- 4172
 add.period$ -- 142
 call.type$ -- 35
-change.case$ -- 374
+change.case$ -- 372
 chr.to.int$ -- 38
 cite$ -- 35
-duplicate$ -- 1838
-empty$ -- 2099
+duplicate$ -- 1832
+empty$ -- 2093
 format.name$ -- 536
-if$ -- 6471
+if$ -- 6463
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 401
+missing$ -- 399
 newline$ -- 179
 num.names$ -- 144
-pop$ -- 1095
+pop$ -- 1087
 preamble$ -- 1
 purify$ -- 281
 quote$ -- 0
-skip$ -- 1523
+skip$ -- 1526
 stack$ -- 0
 substring$ -- 1129
-swap$ -- 1034
+swap$ -- 1031
 text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0

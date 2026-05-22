@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a blind A/B human-evaluation sheet for singability.
 
-Pairs Vanilla vs Phase 1+2 (Haiku, en->zh) translations for a sample of cases,
+Pairs Vanilla vs Phase 1+2 (Opus, en->zh) translations for a sample of cases,
 randomizes left/right per case, and writes two files:
   - human_eval_sheet.csv : what raters see (no condition labels)
   - human_eval_key.csv   : A/B -> condition mapping + case ids (kept separate)
@@ -18,8 +18,8 @@ import random
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-VANILLA = "data/bench/ou_haiku_vanilla_v2"
-P1P2 = "data/bench/ou_haiku_p1p2_v2"
+VANILLA = "data/bench/ou_opus_vanilla_v2"
+P1P2 = "data/bench/ou_opus_p1p2_v2"
 
 
 def load_run(pat):
