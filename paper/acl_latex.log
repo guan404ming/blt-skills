@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.12)  22 MAY 2026 18:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.12)  23 MAY 2026 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1172,63 +1172,46 @@ Underfull \hbox (badness 1194) in paragraph at lines 289--292
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 384--384
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
 [][][][][]$\T1/zi4/m/n/9 https : / / huggingface . co / datasets / LongshenOu /
 
  []
 
-
-Underfull \hbox (badness 6708) in paragraph at lines 390--393
+[6]
+Underfull \hbox (badness 6708) in paragraph at lines 391--394
  []\T1/ptm/b/n/10.95 (+20) Implementation.[] \T1/ptm/m/n/10.95 (+20) The frame-
 work is im-ple-
  []
 
-[6]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-97.
- (/Users/wchiu/Library/texmf/tex/latex/psnfss/ts1ptm.fd
+98.
+(/Users/wchiu/Library/texmf/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 1622) in paragraph at lines 399--400
+Underfull \hbox (badness 1622) in paragraph at lines 400--401
 []\T1/ptm/b/n/10.95 (+20) CLT \T1/ptm/m/n/10.95 (+20) ([][]Ou et al.[][], [][]2
 023a[][]): A su-per-vised
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 399--400
+Underfull \hbox (badness 2401) in paragraph at lines 400--401
 \T1/ptm/m/n/10.95 (+20) length, rhyme, and word-boundary con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--417
+Underfull \hbox (badness 10000) in paragraph at lines 416--418
  []\T1/ptm/b/n/10.95 (+20) CCVO cross-validates the gain.[] \T1/ptm/m/n/10.95 (
 +20) On the
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--417
-\T1/ptm/m/n/10.95 (+20) singability-correlated CCVO met-ric (Ÿ[][]5.4[][]),
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 415--417
-\T1/ptm/m/n/10.95 (+20) Vanilla across all three or-ches-tra-tors, which
- []
-
 [7]
-<figs/ablation.pdf, id=428, 238.5644pt x 167.6739pt>
+<figs/ablation.pdf, id=432, 238.5644pt x 167.6739pt>
 File: figs/ablation.pdf Graphic file (type pdf)
 <use figs/ablation.pdf>
-Package pdftex.def Info: figs/ablation.pdf  used on input line 429.
+Package pdftex.def Info: figs/ablation.pdf  used on input line 430.
 (pdftex.def)             Requested size: 219.08614pt x 153.98297pt.
-
-Underfull \vbox (badness 1107) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1107) has occurred while \output is active []
-
  [8 <./figs/ablation.pdf>] (./acl_latex.bbl [9]
-Underfull \hbox (badness 2799) in paragraph at lines 190--194
+Underfull \hbox (badness 2799) in paragraph at lines 199--203
 \T1/ptm/m/n/10 (+20) con-trol-lable lyric trans-la-tion.  \T1/ptm/m/it/10 (+20)
  arXiv preprint
  []
@@ -1256,23 +1239,23 @@ Underfull \hbox (badness 1715) in paragraph at lines 508--518
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--531
+Underfull \hbox (badness 10000) in paragraph at lines 524--530
 \T1/zi4/m/n/9 CONSTRAINT 2: RHYME SCHEME:
  []
 
 
-Underfull \hbox (badness 5175) in paragraph at lines 525--531
+Underfull \hbox (badness 5175) in paragraph at lines 524--530
 \T1/zi4/m/n/9 CONSTRAINT 3: SYLLABLE PATTERNS:
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 525--531
+Underfull \hbox (badness 1210) in paragraph at lines 524--530
 \T1/zi4/m/n/9 Output exactly $\OML/cmm/m/it/9 N$ \T1/zi4/m/n/9 translated lines
 ,
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 537--547
+Underfull \hbox (badness 2142) in paragraph at lines 536--546
 \T1/zi4/m/n/9 syllable count. Minimize meaning
  []
 
@@ -1286,7 +1269,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 )
 LaTeX Font Info:    Trying to load font information for C70+bsmi on input line 
-584.
+582.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fd
 File: c70bsmi.fd 2021/10/16 4.8.5
@@ -1294,28 +1277,27 @@ File: c70bsmi.fd 2021/10/16 4.8.5
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fdx
 File: c70bsmi.fdx 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 7963) in paragraph at lines 588--589
+Underfull \hbox (badness 7963) in paragraph at lines 586--587
 []\T1/ptm/m/n/10.95 (+20) Pair-level rhyme judg-ments in-side the
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 606--607
+Underfull \hbox (badness 1264) in paragraph at lines 604--605
 []\T1/ptm/m/it/10.95 (+20) Total sim-i-lar-ity \T1/ptm/m/n/10.95 (+20) (weight 
 0.25): $\OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^@
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 608--609
+Underfull \hbox (badness 6978) in paragraph at lines 606--607
 []\T1/ptm/m/n/10.95 (+20) Return the weighted sum, clipped to
  []
 
 [12]
-Underfull \hbox (badness 1122) in paragraph at lines 635--640
-\T1/ptm/m/n/10.95 (+20) transcription choice rather than ran-dom er-ror.
- []
+Underfull \vbox (badness 7203) has occurred while \output is active []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 7203) has occurred while \output is active []
+
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -1365,27 +1347,17 @@ File: UTF8.enc 2021/10/16 4.8.5
 (/usr/local/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 5064) has occurred while \output is active []
-
-
-Underfull \vbox (badness 5064) has occurred while \output is active []
-
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 772--776
+Underfull \hbox (badness 10000) in paragraph at lines 768--772
  []\T1/ptm/b/n/10.95 (+20) Cross-lingual rhyme (en$\OMS/cmsy/m/n/10.95 !$\T1/pt
 m/b/n/10.95 (+20) ja).[] \T1/ptm/m/n/10.95 (+20) The low
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 772--776
+Underfull \hbox (badness 1082) in paragraph at lines 768--772
 \T1/ptm/m/n/10.95 (+20) of five vow-els and leave no proper-substring
  []
 
@@ -1398,11 +1370,11 @@ Package rerunfilecheck Info: File `acl_latex.out' has not changed.
 (rerunfilecheck)             Checksum: 94AD8685A3C29903C827F000525253BD;6066.
  ) 
 Here is how much of TeX's memory you used:
- 29703 strings out of 467525
- 535350 string characters out of 5418982
- 970829 words of memory out of 5000000
- 57344 multiletter control sequences out of 15000+600000
- 728247 words of font info for 497 fonts, out of 8000000 for 9000
+ 29686 strings out of 467525
+ 535313 string characters out of 5418982
+ 970906 words of memory out of 5000000
+ 57347 multiletter control sequences out of 15000+600000
+ 727147 words of font info for 483 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,15n,94p,1006b,1071s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
@@ -1452,10 +1424,10 @@ w/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/ut
 mbi8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/loc
 al/texlive/2026/texmf-dist/fonts/type1/public/tipa/xipa10.pfb>
-Output written on acl_latex.pdf (14 pages, 477861 bytes).
+Output written on acl_latex.pdf (14 pages, 478017 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 738 compressed objects within 8 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 902 PDF objects out of 1000 (max. 8388607)
+ 741 compressed objects within 8 object streams
+ 143 named destinations out of 1000 (max. 500000)
  79790 words of extra memory for PDF output out of 89155 (max. 10000000)
 

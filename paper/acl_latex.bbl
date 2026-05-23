@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Bernard and Titeux(2021)}]{bernard-titeux-2021-phonemizer}
@@ -28,7 +28,16 @@ Woohyun Cho, Youngmin Kim, Sunghyun Lee, and Youngjae Yu. 2025.
 \newblock {MAVL}: A multilingual audio-video lyrics dataset for animated song
   translation.
 \newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
-  Natural Language Processing}.
+  Natural Language Processing}, pages 13640--13668.
+
+\bibitem[{Ding et~al.(2025)Ding, Liu, Dong, Zhang, Qian, Huang, He, Lin, and
+  Wang}]{ding-etal-2025-songcomposer}
+Shuangrui Ding, Zihan Liu, Xiaoyi Dong, Pan Zhang, Rui Qian, Junhao Huang,
+  Conghui He, Dahua Lin, and Jiaqi Wang. 2025.
+\newblock {SongComposer}: A large language model for lyric and melody
+  generation in song composition.
+\newblock In \emph{Proceedings of the 63rd Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 7108--7127.
 
 \bibitem[{Franzon(2008)}]{franzon-2008-choices}
 Johan Franzon. 2008.
@@ -51,7 +60,7 @@ Marjan Ghazvininejad, Yejin Choi, and Kevin Knight. 2018.
 \newblock Neural poetry translation.
 \newblock In \emph{Proceedings of the 2018 Conference of the North {A}merican
   Chapter of the Association for Computational Linguistics: Human Language
-  Technologies, Volume 2 (Short Papers)}.
+  Technologies, Volume 2 (Short Papers)}, pages 67--71.
 
 \bibitem[{Ghazvininejad et~al.(2016)Ghazvininejad, Shi, Choi, and
   Knight}]{ghazvininejad-etal-2016-generating}
@@ -63,11 +72,11 @@ Marjan Ghazvininejad, Xing Shi, Yejin Choi, and Kevin Knight. 2016.
 
 \bibitem[{Guo et~al.(2022)Guo, Zhang, Zhang, He, Zhang, Xie, and
   Boyd-Graber}]{guo-etal-2022-automatic}
-Fenfei Guo, Chen Zhang, Zhirui Zhang, Qixin He, Kecheng Zhang, Jun Xie, and
+Fenfei Guo, Chen Zhang, Zhirui Zhang, Qixin He, Kejun Zhang, Jun Xie, and
   Jordan Boyd-Graber. 2022.
 \newblock Automatic song translation for tonal languages.
 \newblock In \emph{Findings of the Association for Computational Linguistics:
-  ACL 2022}.
+  ACL 2022}, pages 729--743.
 
 \bibitem[{Hokamp and Liu(2017)}]{hokamp-liu-2017-lexically}
 Chris Hokamp and Qun Liu. 2017.
@@ -210,11 +219,11 @@ Timo Schick, Jane Dwivedi-Yu, Roberto Dess{\`i}, Roberta Raileanu, Maria
   volume~36.
 
 \bibitem[{{\v S}t{\v e}p{\'a}nkov{\'a} and Rosa(2025)}]{stepankova-rosa-2025}
-Anna {\v S}t{\v e}p{\'a}nkov{\'a} and Rudolf Rosa. 2025.
+Barbora {\v S}t{\v e}p{\'a}nkov{\'a} and Rudolf Rosa. 2025.
 \newblock \href {https://aclanthology.org/2025.nlp4dh-1.11/} {Song lyrics
   adaptations: Computational interpretation of the pentathlon principle}.
 \newblock In \emph{Proceedings of the 5th International Conference on Natural
-  Language Processing for Digital Humanities}.
+  Language Processing for Digital Humanities}, pages 117--128.
 
 \bibitem[{Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le,
   and Zhou}]{wei-etal-2022-chain}
@@ -239,7 +248,7 @@ Zhuorui Ye, Jinhan Li, and Rongwu Xu. 2024.
 \newblock \href {https://aclanthology.org/2024.findings-emnlp.315/} {Sing it,
   narrate it: Quality musical lyrics translation}.
 \newblock In \emph{Findings of the Association for Computational Linguistics:
-  EMNLP 2024}.
+  EMNLP 2024}, pages 5498--5520.
 
 \bibitem[{Yoo et~al.(2025)Yoo, Truong, and Kim}]{yoo-etal-2025-elmi}
 Suhyeon Yoo, Khai~N. Truong, and Young-Ho Kim. 2025.
@@ -255,7 +264,7 @@ Jiaxing Yu, Xinda Wu, Yunfei Xu, Tieyao Zhang, Songruoyao Wu, Le~Ma, and Kejun
 \newblock {SongGLM}: Lyric-to-melody generation with {2D} alignment encoding
   and multi-task pre-training.
 \newblock In \emph{Proceedings of the 39th AAAI Conference on Artificial
-  Intelligence}.
+  Intelligence}, pages 25742--25750.
 
 \bibitem[{Zhao et~al.(2025)Zhao, Li, Tian, and Peng}]{zhao-etal-2025-reffly}
 Songyan Zhao, Bingxuan Li, Yufei Tian, and Nanyun Peng. 2025.
