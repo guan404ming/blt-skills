@@ -1,0 +1,45 @@
+{
+  "id": "ou_048",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    9,
+    5,
+    7
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    9,
+    5,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我要换心",
+    "期待一个缘",
+    "我知道不能躲开这事",
+    "睁大眼睛光",
+    "我要移山河水流"
+  ],
+  "time_seconds": 118.78,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 118.775,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

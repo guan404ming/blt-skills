@@ -1,0 +1,44 @@
+{
+  "id": "ou_019",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.1442857142857143,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    6,
+    14,
+    5,
+    4
+  ],
+  "tgt_syl": [
+    5,
+    6,
+    15,
+    7,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCD",
+  "match": "2/5",
+  "translations": [
+    "衣類無し",
+    "二人だけよ",
+    "話したくないことばかりですの",
+    "寒すぎるから",
+    "君へです"
+  ],
+  "time_seconds": 49.23,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 15,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 49.23,
+    "phase1_calls": 1,
+    "phase1_match": 2
+  }
+}

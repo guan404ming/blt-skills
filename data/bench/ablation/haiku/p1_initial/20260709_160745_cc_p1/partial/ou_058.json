@@ -1,0 +1,45 @@
+{
+  "id": "ou_058",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    10,
+    9,
+    9,
+    11
+  ],
+  "tgt_syl": [
+    7,
+    10,
+    9,
+    9,
+    11
+  ],
+  "src_rhyme": "ABCDB",
+  "tgt_rhyme": "ABCDB",
+  "match": "5/5",
+  "translations": [
+    "我的手伸向苍天",
+    "去接住从苍天降下的雨",
+    "却不是雨落在我手中",
+    "是她眼中滑落的眼泪",
+    "也不是苍穹酝酿的那暴雨"
+  ],
+  "time_seconds": 158.49,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 115,
+    "rhyme-analyzer": 17,
+    "syllable-pattern-analyzer": 5
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 158.486,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

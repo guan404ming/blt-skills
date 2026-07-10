@@ -1,0 +1,45 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    7,
+    13,
+    9,
+    4,
+    6
+  ],
+  "tgt_syl": [
+    7,
+    13,
+    9,
+    4,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBAB",
+  "match": "5/5",
+  "translations": [
+    "想像してな",
+    "涙を集めて家へ持つ",
+    "一人の時に泣く",
+    "泣くんだ",
+    "今泣いてる"
+  ],
+  "time_seconds": 105.85,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 65,
+    "rhyme-analyzer": 9,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 105.846,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

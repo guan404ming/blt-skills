@@ -1,0 +1,45 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.375,
+  "src_syl": [
+    6,
+    9,
+    7,
+    2,
+    9
+  ],
+  "tgt_syl": [
+    6,
+    9,
+    7,
+    2,
+    9
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABACB",
+  "match": "5/5",
+  "translations": [
+    "恩典消我忧心",
+    "何等宝贵的恩典显现",
+    "初次我心信之新",
+    "第三",
+    "主已应许好处永在天"
+  ],
+  "time_seconds": 153.58,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 153.582,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

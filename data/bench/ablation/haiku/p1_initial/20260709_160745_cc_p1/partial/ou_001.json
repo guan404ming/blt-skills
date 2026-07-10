@@ -1,0 +1,45 @@
+{
+  "id": "ou_001",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.022023809523809522,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    21,
+    12,
+    14,
+    8,
+    16
+  ],
+  "tgt_syl": [
+    20,
+    12,
+    14,
+    8,
+    17
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAB",
+  "match": "3/5",
+  "translations": [
+    "我与你亲爱的靠近美好的善良感受快乐分享来",
+    "祈祷为了众生和平祝福春云",
+    "啊哦呀啊呀呀的贝珍珠白贝吹声",
+    "彩虹吻天空中开来",
+    "啊哦呀啊呀呀的人心快乐愤怒悲伤喜云"
+  ],
+  "time_seconds": 229.86,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 115,
+    "rhyme-analyzer": 17,
+    "syllable-pattern-analyzer": 5
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 229.855,
+    "phase1_calls": 1,
+    "phase1_match": 3
+  }
+}

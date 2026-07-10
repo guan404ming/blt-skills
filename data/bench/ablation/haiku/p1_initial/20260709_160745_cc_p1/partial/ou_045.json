@@ -1,0 +1,45 @@
+{
+  "id": "ou_045",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    15,
+    23,
+    17,
+    15,
+    14
+  ],
+  "tgt_syl": [
+    15,
+    23,
+    17,
+    15,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "多少表面的美好时光已然匆匆而逝",
+    "我的愿望是你在演奏弦乐器时能有一个欣赏你的观众",
+    "我的愿望是你拥有一个倾诉秘密的知己",
+    "我的愿望是我们在来世能再次相逢",
+    "我愿化作你那乌黑秀发中的几缕"
+  ],
+  "time_seconds": 77.34,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 77.337,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

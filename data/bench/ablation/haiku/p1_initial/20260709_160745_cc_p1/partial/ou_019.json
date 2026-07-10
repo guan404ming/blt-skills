@@ -1,0 +1,45 @@
+{
+  "id": "ou_019",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    13,
+    7,
+    8,
+    14
+  ],
+  "tgt_syl": [
+    8,
+    13,
+    7,
+    8,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我听说虎穴在此地",
+    "我们自小就没再提起那些往年",
+    "我心永远在山中",
+    "此般焚烧日子极累",
+    "革命的风在山岭间吹过呼啸起伏"
+  ],
+  "time_seconds": 149.74,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 149.74,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ou_024",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.03636363636363636,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    12,
+    11,
+    11,
+    13
+  ],
+  "tgt_syl": [
+    11,
+    12,
+    12,
+    12,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "3/5",
+  "translations": [
+    "君の好きな人の僕",
+    "人生を生き直せたら",
+    "君への愛は変わらない",
+    "君の愛は代わりません",
+    "別人とは生きられないや"
+  ],
+  "time_seconds": 237.54,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 115,
+    "rhyme-analyzer": 17,
+    "syllable-pattern-analyzer": 5
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 237.534,
+    "phase1_calls": 1,
+    "phase1_match": 3
+  }
+}

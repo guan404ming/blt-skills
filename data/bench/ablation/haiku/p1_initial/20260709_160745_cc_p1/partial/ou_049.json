@@ -1,0 +1,45 @@
+{
+  "id": "ou_049",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.07700501253132833,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    12,
+    14,
+    16,
+    19
+  ],
+  "tgt_syl": [
+    17,
+    11,
+    15,
+    14,
+    19
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "你搬进来住我的破旧房子几天没踏出来",
+    "你学会打扫家务还会做饭",
+    "你容得了我的脾气让我能像个男人",
+    "我很生气砸玻璃杯踢坏房间的墙",
+    "让你哭了好几天没接电话又不理就这样丢弃"
+  ],
+  "time_seconds": 152.68,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 152.674,
+    "phase1_calls": 1,
+    "phase1_match": 1
+  }
+}

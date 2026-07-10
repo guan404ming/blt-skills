@@ -1,0 +1,45 @@
+{
+  "id": "ou_054",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    3,
+    10,
+    12,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    3,
+    10,
+    12,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "凝视千重冰层闪闪的光",
+    "封印时",
+    "而新的生命悄然被温柔",
+    "冬日最平凡的雪景却最美妙",
+    "这一刻最伟大的永恒之歌"
+  ],
+  "time_seconds": 125.74,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 125.738,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

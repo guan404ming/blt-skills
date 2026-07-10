@@ -1,0 +1,45 @@
+{
+  "id": "ou_013",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.08205128205128205,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    12,
+    12,
+    6,
+    13
+  ],
+  "tgt_syl": [
+    9,
+    13,
+    15,
+    6,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "敬敬圣开在佛前殿堂",
+    "淤泥不为风月所沾不为睡眠云",
+    "花开无言花落无言清香远溅无语间",
+    "你我三生缘情",
+    "来到你身边既不早也不晚时刻里"
+  ],
+  "time_seconds": 127.03,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 127.03,
+    "phase1_calls": 1,
+    "phase1_match": 2
+  }
+}

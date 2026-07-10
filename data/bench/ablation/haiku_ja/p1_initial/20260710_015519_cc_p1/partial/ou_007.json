@@ -1,0 +1,45 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.025,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    22,
+    11,
+    8,
+    15
+  ],
+  "tgt_syl": [
+    13,
+    22,
+    11,
+    9,
+    15
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "AAAAA",
+  "match": "4/5",
+  "translations": [
+    "夜の砂漠は赤くなった",
+    "誰が千年の寂しさから解いてくれるのか",
+    "翼にあなたが見えた",
+    "ろうそくが光った",
+    "風の中にあなたを聞きました"
+  ],
+  "time_seconds": 117.82,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 117.809,
+    "phase1_calls": 1,
+    "phase1_match": 4
+  }
+}

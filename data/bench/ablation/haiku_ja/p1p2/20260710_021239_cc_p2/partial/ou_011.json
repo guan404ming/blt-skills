@@ -1,0 +1,48 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.4117647058823529,
+  "src_syl": [
+    8,
+    13,
+    8,
+    7,
+    7
+  ],
+  "tgt_syl": [
+    8,
+    13,
+    8,
+    7,
+    7
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCBB",
+  "match": "5/5",
+  "translations": [
+    "心に留まろよ",
+    "母さんのために歌いたい",
+    "母の顔見えず",
+    "いつも愛しい",
+    "話しかけない"
+  ],
+  "time_seconds": 326.23,
+  "phases": 2,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 141,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 5,
+  "phase_metrics": {
+    "phase1_time_s": 114.1,
+    "phase1_calls": 1,
+    "phase1_match": 3,
+    "phase2_time_s": 212.123,
+    "phase2_calls": 4,
+    "phase2_match": 5
+  }
+}

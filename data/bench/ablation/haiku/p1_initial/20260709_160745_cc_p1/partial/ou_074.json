@@ -1,0 +1,45 @@
+{
+  "id": "ou_074",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    12,
+    11,
+    11,
+    13
+  ],
+  "tgt_syl": [
+    11,
+    12,
+    11,
+    11,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCAC",
+  "match": "5/5",
+  "translations": [
+    "我也是你众多甜心的一个",
+    "如果我必须重新活一遍人生",
+    "我会像从前那样永远爱你",
+    "你的爱是无人能够替代的",
+    "我无法想象和别人生活在一起"
+  ],
+  "time_seconds": 93.2,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 93.201,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ou_075",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    7,
+    7,
+    15,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    7,
+    7,
+    15,
+    8
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "在你未遗憾前",
+    "因为人生太短促",
+    "没光阴去虚度年",
+    "有层伪装掩盖眼影中秘密心事难明",
+    "身上的伤痕在警告"
+  ],
+  "time_seconds": 172.58,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 172.579,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

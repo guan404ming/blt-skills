@@ -1,0 +1,45 @@
+{
+  "id": "ou_055",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    7,
+    7,
+    5,
+    12
+  ],
+  "tgt_syl": [
+    5,
+    7,
+    7,
+    5,
+    12
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "你令我自豪",
+    "现在你让我想起",
+    "我从未随那风去",
+    "就让它自流",
+    "让它把我带向我梦想之地好"
+  ],
+  "time_seconds": 124.21,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 124.208,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ou_082",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    13,
+    9,
+    4,
+    6
+  ],
+  "tgt_syl": [
+    7,
+    13,
+    9,
+    4,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你别想我会那样",
+    "我绝不会把眼泪全都包起回家",
+    "然后我独自在家哭泣",
+    "我在此哭",
+    "我此刻在流泪"
+  ],
+  "time_seconds": 86.29,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 86.288,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

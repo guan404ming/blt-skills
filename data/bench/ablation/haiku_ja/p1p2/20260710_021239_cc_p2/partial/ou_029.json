@@ -1,0 +1,48 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    7,
+    13,
+    9,
+    4,
+    6
+  ],
+  "tgt_syl": [
+    7,
+    13,
+    9,
+    4,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCAC",
+  "match": "5/5",
+  "translations": [
+    "そと思うなよ",
+    "涙全部持ってくなんて",
+    "一人の時泣こう",
+    "いまやろ",
+    "今泣いてる"
+  ],
+  "time_seconds": 142.01,
+  "phases": 2,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 62,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 2,
+  "phase_metrics": {
+    "phase1_time_s": 125.581,
+    "phase1_calls": 1,
+    "phase1_match": 4,
+    "phase2_time_s": 16.417,
+    "phase2_calls": 1,
+    "phase2_match": 5
+  }
+}

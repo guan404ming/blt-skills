@@ -1,0 +1,48 @@
+{
+  "id": "ou_022",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    8,
+    13,
+    13,
+    15,
+    11
+  ],
+  "tgt_syl": [
+    8,
+    13,
+    13,
+    15,
+    11
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCCA",
+  "match": "5/5",
+  "translations": [
+    "ずっとそばにいて",
+    "彼女に愛をあげて抱けよ",
+    "大事に彼女を抱きたいぜ",
+    "彼女はいつも君をいたわるだ",
+    "本気で女を愛せ"
+  ],
+  "time_seconds": 491.02,
+  "phases": 2,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 154,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 7,
+  "phase_metrics": {
+    "phase1_time_s": 163.764,
+    "phase1_calls": 1,
+    "phase1_match": 0,
+    "phase2_time_s": 327.197,
+    "phase2_calls": 6,
+    "phase2_match": 5
+  }
+}

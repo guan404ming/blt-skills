@@ -1,0 +1,45 @@
+{
+  "id": "ou_063",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    7,
+    7,
+    15,
+    7
+  ],
+  "tgt_syl": [
+    9,
+    7,
+    7,
+    15,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "变成呼啸的暴雪纷飞",
+    "我心中有着荒野",
+    "如同往日的誓言",
+    "融成光从深不可测的地方浮现而出",
+    "睁开你那双眼睛"
+  ],
+  "time_seconds": 40.66,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 35,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 40.658,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

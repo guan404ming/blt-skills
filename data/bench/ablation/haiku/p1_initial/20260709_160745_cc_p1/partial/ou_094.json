@@ -1,0 +1,45 @@
+{
+  "id": "ou_094",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    24,
+    7,
+    11,
+    12,
+    20
+  ],
+  "tgt_syl": [
+    24,
+    7,
+    11,
+    12,
+    20
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACC",
+  "match": "5/5",
+  "translations": [
+    "一天一月我们在一起一年问这何不似永远的承诺光芒呢",
+    "同一屋顶下我们",
+    "我们为未来作诗篇歌唱呢",
+    "在这温暖房间里我慢慢发现",
+    "相遇本来就是某种命运怎不值得好好铭记纪念"
+  ],
+  "time_seconds": 87.73,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 87.731,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

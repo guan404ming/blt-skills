@@ -1,0 +1,45 @@
+{
+  "id": "ou_057",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    12,
+    11,
+    9,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    12,
+    11,
+    9,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你知道规则没人会理解",
+    "又一个哭哭啼啼孩子的故事",
+    "守护秘密层层叠叠往深处",
+    "我们不想再次被伤害",
+    "但你根本藏不住易碎的心"
+  ],
+  "time_seconds": 95.02,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 95.016,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

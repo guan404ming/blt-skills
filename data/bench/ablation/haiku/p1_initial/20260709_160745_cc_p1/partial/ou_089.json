@@ -1,0 +1,45 @@
+{
+  "id": "ou_089",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    9,
+    6,
+    9,
+    18
+  ],
+  "tgt_syl": [
+    8,
+    9,
+    6,
+    9,
+    18
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABCD",
+  "match": "5/5",
+  "translations": [
+    "他是否微笑看己功",
+    "造福特先生造化汝中",
+    "硬我意志似铁",
+    "装载吾心智慧之弹匣",
+    "身体欲动心已至意魂既陷于激烈交战无宁"
+  ],
+  "time_seconds": 136.19,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 136.191,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

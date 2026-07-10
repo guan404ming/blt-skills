@@ -1,0 +1,45 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    17,
+    8,
+    9,
+    10,
+    12
+  ],
+  "tgt_syl": [
+    17,
+    8,
+    9,
+    10,
+    12
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCDC",
+  "match": "5/5",
+  "translations": [
+    "连绵的群山脚下花儿绽放着五彩的芬芳",
+    "什么样节奏最摇摆",
+    "哪一首歌最为欢乐呢",
+    "弯曲河流出自天上故乡",
+    "缤纷的色彩流向那大海去了"
+  ],
+  "time_seconds": 109.42,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 109.424,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

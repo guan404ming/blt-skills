@@ -1,0 +1,45 @@
+{
+  "id": "ou_002",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    13,
+    10,
+    7,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    13,
+    10,
+    7,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "一种我们从未有过的体验感悟",
+    "云间的自由向我们开放",
+    "而世界伴你同行",
+    "在你光中我心明",
+    "何其不可思议"
+  ],
+  "time_seconds": 74.07,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 35,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 74.066,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

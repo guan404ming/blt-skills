@@ -1,0 +1,48 @@
+{
+  "id": "ou_025",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.13793103448275862,
+  "src_syl": [
+    3,
+    6,
+    11,
+    13,
+    8
+  ],
+  "tgt_syl": [
+    3,
+    6,
+    11,
+    13,
+    8
+  ],
+  "src_rhyme": "AAABA",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "貝子",
+    "貝女よ",
+    "謎深き貝女よ",
+    "全て不安がゆっくり去る",
+    "貝女去りて"
+  ],
+  "time_seconds": 360.87,
+  "phases": 2,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 148,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 7,
+  "phase_metrics": {
+    "phase1_time_s": 119.696,
+    "phase1_calls": 1,
+    "phase1_match": 0,
+    "phase2_time_s": 241.136,
+    "phase2_calls": 6,
+    "phase2_match": 5
+  }
+}

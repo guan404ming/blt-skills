@@ -1,0 +1,48 @@
+{
+  "id": "ou_010",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    16,
+    3,
+    4,
+    3,
+    3
+  ],
+  "tgt_syl": [
+    16,
+    3,
+    4,
+    3,
+    3
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "時来たり機会掴め人生で",
+    "欲しい",
+    "在りたし",
+    "満ちる",
+    "必須"
+  ],
+  "time_seconds": 204.01,
+  "phases": 2,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 90,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 2,
+  "phase_metrics": {
+    "phase1_time_s": 121.683,
+    "phase1_calls": 1,
+    "phase1_match": 4,
+    "phase2_time_s": 82.322,
+    "phase2_calls": 1,
+    "phase2_match": 5
+  }
+}

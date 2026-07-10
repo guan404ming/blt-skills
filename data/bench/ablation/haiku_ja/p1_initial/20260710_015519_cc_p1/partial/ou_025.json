@@ -1,0 +1,45 @@
+{
+  "id": "ou_025",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.4911421911421911,
+  "ari": -0.25,
+  "src_syl": [
+    3,
+    6,
+    11,
+    13,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    8,
+    17,
+    14,
+    12
+  ],
+  "src_rhyme": "AAABA",
+  "tgt_rhyme": "AAAAB",
+  "match": "0/5",
+  "translations": [
+    "貝娘ね",
+    "怖れるな貝ね",
+    "謎めく身体よ我が貝娘ね",
+    "不安をすべてそろそろ去りね",
+    "そろそろ歩く貝娘"
+  ],
+  "time_seconds": 87.78,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 87.776,
+    "phase1_calls": 1,
+    "phase1_match": 0
+  }
+}

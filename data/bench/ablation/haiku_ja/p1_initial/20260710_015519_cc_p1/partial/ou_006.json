@@ -1,0 +1,45 @@
+{
+  "id": "ou_006",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.07777777777777777,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    12,
+    12,
+    6,
+    13
+  ],
+  "tgt_syl": [
+    11,
+    14,
+    12,
+    6,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABABC",
+  "match": "3/5",
+  "translations": [
+    "仏に清く光り",
+    "泥より汚れず清きかな",
+    "咲きて落ちる言葉ぞなき",
+    "また君へや",
+    "君に来たるは遅からずぞ"
+  ],
+  "time_seconds": 153.06,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 153.061,
+    "phase1_calls": 1,
+    "phase1_match": 3
+  }
+}

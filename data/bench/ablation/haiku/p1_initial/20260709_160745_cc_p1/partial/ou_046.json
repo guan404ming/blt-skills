@@ -1,0 +1,45 @@
+{
+  "id": "ou_046",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    8,
+    19,
+    21,
+    12
+  ],
+  "tgt_syl": [
+    19,
+    8,
+    19,
+    21,
+    12
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "肉体的世界让流民在许多苦难中痛苦地挣扎",
+    "泪痕使得皱纹滋长",
+    "我已不记得我的家在何处但你仍在等我回来",
+    "我希望再次见到那位学生和身体强健的少女依旧",
+    "我希望能再次见到那垂杨柳"
+  ],
+  "time_seconds": 145.35,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 145.351,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

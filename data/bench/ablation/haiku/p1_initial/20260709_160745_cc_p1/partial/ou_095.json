@@ -1,0 +1,45 @@
+{
+  "id": "ou_095",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    5,
+    5,
+    7,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    7,
+    6,
+    6
+  ],
+  "src_rhyme": "ABCBC",
+  "tgt_rhyme": "ABCBD",
+  "match": "5/5",
+  "translations": [
+    "死是永恒的",
+    "掷骰子出去",
+    "冒险莽撞的心鸣",
+    "赌注无处可去",
+    "半期待和心声"
+  ],
+  "time_seconds": 135.43,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 135.431,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

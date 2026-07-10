@@ -1,0 +1,45 @@
+{
+  "id": "ou_043",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    14,
+    11,
+    7,
+    9
+  ],
+  "tgt_syl": [
+    13,
+    14,
+    11,
+    7,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "长如一条大路般展,丑似蛤蟆样",
+    "美如吊挂的精美画框闪闪亮亮映",
+    "强似家族般我很强我想坚",
+    "亮若日轻如戏开",
+    "硬如铁钉般大如鲸壮"
+  ],
+  "time_seconds": 108.77,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 108.765,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

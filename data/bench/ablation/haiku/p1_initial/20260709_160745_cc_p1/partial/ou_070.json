@@ -1,0 +1,45 @@
+{
+  "id": "ou_070",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    15,
+    11,
+    9,
+    7
+  ],
+  "tgt_syl": [
+    9,
+    15,
+    11,
+    9,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "给她翅膀让她自由飞",
+    "当你发现自己无助躺在她温暖怀抱",
+    "你知道爱一个女人有多深",
+    "爱一个女人要讲出去",
+    "她真的要被珍视"
+  ],
+  "time_seconds": 135.82,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 95,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 135.817,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ou_015",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    9,
+    7,
+    9,
+    13,
+    12
+  ],
+  "tgt_syl": [
+    9,
+    7,
+    9,
+    13,
+    12
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCBA",
+  "match": "5/5",
+  "translations": [
+    "千年之后我将不再来",
+    "我早已不在人间",
+    "无法深深握紧你的手",
+    "也不能再温柔地吻你眉头之间",
+    "请别只为我等到千年之后来"
+  ],
+  "time_seconds": 98.45,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 98.447,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

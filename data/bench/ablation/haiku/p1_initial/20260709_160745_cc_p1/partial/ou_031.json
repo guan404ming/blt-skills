@@ -1,0 +1,45 @@
+{
+  "id": "ou_031",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    5,
+    4,
+    6,
+    8
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    4,
+    6,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "俯视看这些",
+    "明亮城市灯",
+    "莫再等待",
+    "我们在此必留",
+    "幽灵嚎叫重新出现"
+  ],
+  "time_seconds": 75.43,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 75.431,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

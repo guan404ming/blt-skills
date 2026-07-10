@@ -1,0 +1,44 @@
+{
+  "id": "ou_100",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    19,
+    17,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    19,
+    17,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "只凭直觉的力量来追梦",
+    "追求不是为他人",
+    "投一块石子倾听水花在湖面飞溅呈现的声响",
+    "打破那湖面之上日常既有的平静与寂寥",
+    "提早的筹划"
+  ],
+  "time_seconds": 96.01,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 30,
+    "rhyme-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 96.013,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

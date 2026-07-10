@@ -1,0 +1,44 @@
+{
+  "id": "ou_093",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    8,
+    5,
+    6,
+    18,
+    9
+  ],
+  "tgt_syl": [
+    8,
+    5,
+    6,
+    18,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "这不是爱也不是恨",
+    "只是无所谓",
+    "我已忘了你呀",
+    "笑声在校园里我踩空摔倒在地上地上地上",
+    "我本应该留在你身旁"
+  ],
+  "time_seconds": 44.96,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 15,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 44.956,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

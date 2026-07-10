@@ -1,0 +1,45 @@
+{
+  "id": "ou_065",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    9,
+    11,
+    6,
+    14
+  ],
+  "tgt_syl": [
+    7,
+    9,
+    11,
+    6,
+    14
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "我们心里都是真",
+    "现在你的心情也受伤",
+    "躺在床上孤独深夜念你伤",
+    "我需要你宝贝",
+    "我找你直到我的心瞎掉看不见你"
+  ],
+  "time_seconds": 130.25,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 115,
+    "rhyme-analyzer": 17,
+    "syllable-pattern-analyzer": 5
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 130.248,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

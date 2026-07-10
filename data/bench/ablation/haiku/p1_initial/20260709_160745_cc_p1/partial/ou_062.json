@@ -1,0 +1,45 @@
+{
+  "id": "ou_062",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    6,
+    14,
+    5,
+    4
+  ],
+  "tgt_syl": [
+    5,
+    6,
+    14,
+    5,
+    4
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "赤身无衣衫",
+    "只有你和我呢",
+    "我真的没有什么想告诉你关于没",
+    "因为它太冷",
+    "为你此地"
+  ],
+  "time_seconds": 74.24,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 74.241,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

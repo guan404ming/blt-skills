@@ -1,0 +1,47 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    13,
+    22,
+    11,
+    8,
+    15
+  ],
+  "tgt_syl": [
+    13,
+    22,
+    11,
+    8,
+    15
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCAC",
+  "match": "5/5",
+  "translations": [
+    "砂漠夕暮れ紅く染まる",
+    "千年の孤独から私を解く者がいるか",
+    "翼に君を見る夜",
+    "その灯火巡る",
+    "風に君聞く両極回転"
+  ],
+  "time_seconds": 169.16,
+  "phases": 2,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 48,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 2,
+  "phase_metrics": {
+    "phase1_time_s": 155.864,
+    "phase1_calls": 1,
+    "phase1_match": 4,
+    "phase2_time_s": 13.295,
+    "phase2_calls": 1,
+    "phase2_match": 5
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ou_001",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    10,
+    7,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    13,
+    10,
+    7,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "初めての感動に満ちて",
+    "雲に咲く自由かな",
+    "君と一緒に",
+    "君と輝く",
+    "信じられん"
+  ],
+  "time_seconds": 400.19,
+  "phases": 2,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 171,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 7,
+  "phase_metrics": {
+    "phase1_time_s": 157.357,
+    "phase1_calls": 1,
+    "phase1_match": 0,
+    "phase2_time_s": 242.826,
+    "phase2_calls": 6,
+    "phase2_match": 5
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ou_006",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.782608695652174,
+  "src_syl": [
+    8,
+    6,
+    10,
+    7,
+    9
+  ],
+  "tgt_syl": [
+    8,
+    6,
+    10,
+    7,
+    9
+  ],
+  "src_rhyme": "ABABB",
+  "tgt_rhyme": "ABCBB",
+  "match": "5/5",
+  "translations": [
+    "奇异恩典何其甘香",
+    "救赎我这个人",
+    "我曾失落已获救恩光芒",
+    "曾瞎子如今真人",
+    "我锁链已断得自由身"
+  ],
+  "time_seconds": 135.41,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 135.412,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

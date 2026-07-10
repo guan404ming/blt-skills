@@ -10,4 +10,7 @@ wheels/
 .venv
 
 # project specific
-/data
+/data/lyric-trans
+
+# source lyrics (Ou et al. 2023, third-party licensed)
+data/bench/**/test_songs.json

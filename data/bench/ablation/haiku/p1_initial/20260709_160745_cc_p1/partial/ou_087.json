@@ -1,0 +1,45 @@
+{
+  "id": "ou_087",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    19,
+    16,
+    12,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    19,
+    16,
+    12,
+    8,
+    10
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "我想问你一些问题，假如我们能坦诚地讲真言",
+    "看着镜子时你心中何感？你感到骄傲吗？",
+    "你能看着我眼睛说出理由来？",
+    "让我讲述辛苦工作",
+    "最低薪却要抚养小孩来"
+  ],
+  "time_seconds": 229.9,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 175,
+    "rhyme-analyzer": 26,
+    "syllable-pattern-analyzer": 8
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 229.897,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

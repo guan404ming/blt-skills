@@ -1,0 +1,45 @@
+{
+  "id": "ou_023",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.013333333333333332,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    7,
+    14,
+    15,
+    18,
+    14
+  ],
+  "tgt_syl": [
+    7,
+    14,
+    14,
+    18,
+    14
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCA",
+  "match": "4/5",
+  "translations": [
+    "君のゲームに",
+    "われは誰かと常の問いかけ",
+    "われは誰かと常に問いかけ",
+    "われは誰かで君を定めし権威と",
+    "あなたが誰かで安全なし"
+  ],
+  "time_seconds": 121.03,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 35,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 121.025,
+    "phase1_calls": 1,
+    "phase1_match": 4
+  }
+}

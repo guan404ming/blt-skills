@@ -1,0 +1,45 @@
+{
+  "id": "ou_023",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    10,
+    9,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    3,
+    10,
+    9,
+    6,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "似太阳",
+    "把你的温暖传给所有人",
+    "我问你为何人都会死",
+    "你说皆是规划",
+    "滑下那深蓝海"
+  ],
+  "time_seconds": 122.88,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 122.88,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}

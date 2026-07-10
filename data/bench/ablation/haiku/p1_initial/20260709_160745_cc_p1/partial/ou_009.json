@@ -1,0 +1,45 @@
+{
+  "id": "ou_009",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    12,
+    8,
+    9,
+    13,
+    15
+  ],
+  "tgt_syl": [
+    12,
+    8,
+    9,
+    13,
+    15
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABACB",
+  "match": "5/5",
+  "translations": [
+    "一加一当你算不对的时候呀",
+    "就等于三呢是对的",
+    "两个普通的少年想法",
+    "这些歌词只能代表我们两人哩",
+    "不明白音乐真的没什么值得羞耻呢"
+  ],
+  "time_seconds": 181.89,
+  "phases": 1,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 75,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase1_time_s": 181.893,
+    "phase1_calls": 1,
+    "phase1_match": 5
+  }
+}
