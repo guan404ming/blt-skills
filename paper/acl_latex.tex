@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 
-\usepackage[review]{acl}
+\usepackage[final]{acl}
 
 \usepackage{times}
 \usepackage{latexsym}
@@ -25,7 +25,9 @@
 
 \title{IPA-Verified Singable Lyrics Translation with LLM Agents}
 
-\author{Anonymous}
+\author{Guan-Ming Chiu \\
+  AFFILIATION \\
+  \texttt{guanmingchiu@gmail.com}}
 
 \begin{document}
 \maketitle
@@ -88,7 +90,7 @@ A fundamental obstacle is that \emph{counting syllables, detecting rhyme, and an
 
 We address this by exposing IPA-based phonetic analysis as a suite of Agent Skills, where each capability is packaged as a directory of natural-language instructions plus deterministic scripts that the orchestrating LLM discovers and invokes during translation \citep{yao-etal-2023-react}.
 Unlike supervised approaches, the framework requires no parallel lyric corpora, supports any language pair via eSpeak-NG, and scales with LLM capability.
-Our framework is open-source for reproducibility and practical use.\footnote{Code and Skills available at \url{https://github.com/anonymous} (anonymized for review).}
+Our framework is open-source for reproducibility and practical use.\footnote{Code and Skills available at \url{https://github.com/guan404ming/blt-skills}.}
 
 Our contributions are:
 \begin{enumerate}
