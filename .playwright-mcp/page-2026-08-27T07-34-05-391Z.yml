@@ -1,0 +1,17 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - text: 
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /
+          - strong [ref=e7]: OpenReview
+          - text: .net
+        - search [ref=e8]:
+          - generic [ref=e9]:
+            - textbox "term" [ref=e10]:
+              - /placeholder: Search articles, authors and reviews...
+            - generic: 
+      - link "Login" [ref=e12] [cursor=pointer]:
+        - /url: /login
+  - alert [ref=e13]

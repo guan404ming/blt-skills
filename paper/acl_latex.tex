@@ -46,7 +46,7 @@ Translating song lyrics while preserving singability requires satisfying musical
 We present a framework that exposes IPA-based phonetic analysis as a suite of composable Agent Skills, each defined by a natural-language description plus deterministic verification scripts that the orchestrating LLM invokes on demand.
 The agent extracts constraints from source lyrics, then translates through a multi-phase process, calling skills to verify syllable counts and rhyme and iteratively refine syllable-count mismatches.
 We formalize the three musical constraints, describe the IPA skill suite and agent architecture, and propose three evaluation metrics: Syllable Error Rate (SER), Syllable Count Relative Error (SCRE), and Adjusted Rand Index (ARI).
-Experiments with three Claude orchestrators show that the agent-invoked skills cut syllable error by 99\% and lift rhyme-scheme preservation to near-perfect (ARI 0.99) on completed items (87--98\% and ARI 0.89--0.99 on all items, with all lost items scored as failures), substantially above both single-prompt translation and a supervised baseline, while requiring no task-specific training and no parallel corpora, and transferring to Spanish and Japanese targets with only a small language-specific syllabification adapter.
+Ablation experiments across three frontier orchestrators confirm that tool-verified translation dramatically improves constraint satisfaction and preserves rhyme structure substantially better than a supervised baseline, while requiring no task-specific training and no parallel corpora, and transferring to Spanish and Japanese targets with only a small language-specific syllabification adapter.
 \end{abstract}
 
 \section{Introduction}
