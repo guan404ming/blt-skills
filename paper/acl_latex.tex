@@ -380,12 +380,14 @@ Vanilla & Haiku 4.5  & 100 & 0.790 & 0.216 & 0.343 & 0.414 & 1 & 14.8 \\
 Vanilla & Sonnet 5   & 100 & 0.788 & 0.220 & 0.261 & 0.417 & 1 & 7.3 \\
 Vanilla & Opus 5     & 87 & 0.802 & 0.209 & 0.279 & 0.409 & 1 & 10.6 \\
 \midrule
+Prompt-only & Haiku 4.5 & 100 & 0.234 & 0.032 & 0.518 & 0.322 & 3 & 67.3 \\
+\midrule
 BLT & Haiku 4.5  & 96 & 0.008 & 0.003 & 0.990 & 0.320 & 18 & 106.6 \\
 BLT & Sonnet 5   & 99 & 0.008 & 0.002 & 0.996 & 0.325 & 9 & 71.0 \\
 BLT & Opus 5     & 89 & \textbf{0.000} & \textbf{0.000} & \textbf{1.000} & 0.314 & 8 & 63.4 \\
 \bottomrule
 \end{tabular}
-\caption{Main results on the Ou 2023 en$\rightarrow$zh test windows ($n{=}100$ items, 5 lines each; orchestrators \texttt{claude-haiku-4-5-20251001}, \texttt{claude-sonnet-5}, \texttt{claude-opus-5}). $n$ is the number of items that produced output: BLT lost 3 / 1 / 11 items (Haiku / Sonnet / Opus) to the API content filter and one Haiku item to an unparsable reply; Opus Vanilla declined 13 items as copyrighted. Scoring lost items as fully unmatched gives BLT SER 0.048 / 0.018 / 0.110 and ARI 0.950 / 0.986 / 0.890 (Vanilla SER 0.790 / 0.788 / 0.828). CLT \citep{ou-etal-2023-songs} receives the same per-line syllable targets as BLT as its length tokens, plus the dataset's own rhyme and boundary tokens. \textbf{Turns}: median assistant turns per item; \textbf{Time}: median wall-clock seconds per item (CLT on Apple Silicon MPS, LLMs via API). Human A/B study (\S\ref{sec:human-eval}, Opus, $n{=}10$): BLT preferred in 93\% of 60 judgments, 10 of 10 items.}
+\caption{Main results on the Ou 2023 en$\rightarrow$zh test windows ($n{=}100$ items, 5 lines each; orchestrators \texttt{claude-haiku-4-5-20251001}, \texttt{claude-sonnet-5}, \texttt{claude-opus-5}). $n$ is the number of items that produced output: Prompt-only denies every tool, so the orchestrator self-counts \citep{liu-etal-2026-towards}. BLT lost 3 / 1 / 11 items (Haiku / Sonnet / Opus) to the API content filter and one Haiku item to an unparsable reply; Opus Vanilla declined 13 items as copyrighted. Scoring lost items as fully unmatched gives BLT SER 0.048 / 0.018 / 0.110 and ARI 0.950 / 0.986 / 0.890 (Vanilla SER 0.790 / 0.788 / 0.828). CLT \citep{ou-etal-2023-songs} receives the same per-line syllable targets as BLT as its length tokens, plus the dataset's own rhyme and boundary tokens. \textbf{Turns}: median assistant turns per item; \textbf{Time}: median wall-clock seconds per item (CLT on Apple Silicon MPS, LLMs via API). Human A/B study (\S\ref{sec:human-eval}, Opus, $n{=}10$): BLT preferred in 93\% of 60 judgments, 10 of 10 items.}
 \label{tab:orchestrator}
 \end{table*}
 
@@ -435,7 +437,7 @@ Japanese also costs the most agent effort (median 44 turns, 265\,s), because kan
 
 \paragraph{Component ablation.}
 To isolate each gain, we run three skill variants with Haiku on the same items (Figure~\ref{fig:ablation}): a \emph{prompt-only} variant with all tools denied, whose \texttt{SKILL.md} tells the agent to count syllables and judge rhyme in its own reasoning, reproducing the verification-guided prompting of \citet{liu-etal-2026-towards}; a \emph{counter-only} variant that keeps \texttt{syllable-counter} but never extracts or checks the rhyme scheme; and the \emph{Phase~1 only} variant of the next paragraph.
-Prompt-only self-verification helps over Vanilla (SER 0.234 vs.\ 0.790) but leaves 66 of 100 items imperfect and rhyme near chance (ARI 0.518) because the model's own counts are wrong; the deterministic counter alone drives SER to 0.006 (counter-only, 98 of 100 exact).
+Prompt-only self-verification leaves 66 of 100 items imperfect and rhyme well short of BLT because the model's own counts are wrong; the deterministic counter alone drives SER to 0.006 (counter-only, 98 of 100 exact).
 Withholding the rhyme scheme costs nothing on syllables but collapses ARI to 0.250 (0.048 on rhymed sources), so exposing the detected scheme and validating against it is what preserves rhyme.
 
 \paragraph{Phase ablation.}
