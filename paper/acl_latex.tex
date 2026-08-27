@@ -8,6 +8,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage{inconsolata}
+\usepackage{array}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -218,21 +219,21 @@ For phonetic distance computation, we use PanPhon \citep{mortensen-etal-2016-pan
 \label{sec:tools}
 
 The orchestrator has access to a suite of Agent Skills (Table~\ref{tab:tools}), each packaged as a \texttt{SKILL.md} description plus a deterministic verification script.
-The four IPA-based analytic skills (\texttt{syllable-counter}, \texttt{phonetic-analyzer}, \texttt{rhyme-analyzer}, \texttt{syllable-pattern-analyzer}) wrap functions that provide capabilities the LLM cannot reliably perform through text generation alone \citep{gao-etal-2023-pal}; \texttt{lyrics-validator} and \texttt{lyrics-translator} sit on top to compose them.
+Four of them are IPA-based analytic skills that wrap functions providing capabilities the LLM cannot reliably perform through text generation alone \citep{gao-etal-2023-pal}; \texttt{lyrics-validator} and \texttt{lyrics-translator} sit on top to compose them.
 
 \begin{table}[t]
 \centering
 \small
-\begin{tabular}{@{}p{3.0cm}p{4.2cm}@{}}
+\begin{tabular}{@{}p{3.2cm}>{\raggedright\arraybackslash}p{4.0cm}@{}}
 \toprule
 \textbf{Skill} & \textbf{Description} \\
 \midrule
-\texttt{syllable-counter} & Count syllables via IPA vowel nuclei (or character count for Chinese) \\
+\texttt{syllable-counter} & Count syllables via IPA vowel nuclei (characters for Chinese) \\
 \texttt{phonetic-analyzer} & Convert text to IPA via eSpeak~NG and compute phonetic similarity \\
 \texttt{rhyme-analyzer} & Detect the rhyme scheme by comparing IPA endings \\
 \texttt{syllable-pattern-\allowbreak{}analyzer} & Compare target vs.\ current syllable patterns with structured feedback \\
-\texttt{lyrics-validator} & Validate syllable counts and rhyme scheme jointly on a translated line set (patterns optional) \\
-\texttt{lyrics-translator} & Top-level orchestration skill coordinating the five sub-skills above through the multi-phase loop in \S\ref{sec:loop} \\
+\texttt{lyrics-validator} & Validate syllable counts and rhyme scheme on a line set (patterns optional) \\
+\texttt{lyrics-translator} & Top-level skill coordinating the five sub-skills through the loop in \S\ref{sec:loop} \\
 \bottomrule
 \end{tabular}
 \caption{Agent Skills exposed to the orchestrating LLM\@. Each skill is a directory with a \texttt{SKILL.md} description plus deterministic verification scripts; all skills accept a language parameter for language-specific processing.}
@@ -240,7 +241,7 @@ The four IPA-based analytic skills (\texttt{syllable-counter}, \texttt{phonetic-
 \end{table}
 
 The \texttt{syllable-counter} skill is the most frequently invoked: given a text string and language code, it converts to IPA and returns an integer syllable count (\S\ref{sec:syllable-count}).
-The \texttt{phonetic-analyzer} skill exposes the raw IPA transcription, allowing the orchestrator to inspect phonetic realizations and reason about which syllables to modify, a form of chain-of-thought reasoning \citep{wei-etal-2022-chain} grounded in phonetic observation.
+The \texttt{phonetic-analyzer} skill exposes the raw IPA transcription, letting the orchestrator inspect phonetic realizations and reason about which syllables to modify \citep{wei-etal-2022-chain}.
 The \texttt{rhyme-analyzer} skill analyzes the IPA endings of a set of lines and returns the rhyme scheme (e.g., ``$AABB$''), ensuring judgments are phonetic rather than orthographic.
 The \texttt{syllable-pattern-analyzer} skill compares a target syllable pattern against the current one, returning the similarity score (Equation~\ref{eq:patsim}), per-word differences, and natural-language suggestions for improvement.
 All skills are discovered by the orchestrating LLM through their \texttt{SKILL.md} descriptions and invoked via the host's tool-use interface.
