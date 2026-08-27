@@ -42,13 +42,13 @@ Expose the skills to Claude Code, then run the agent benchmark on the Ou et al. 
 
 ```bash
 ln -s ../skills .claude/skills
-uv run scripts/run_agent.py -n 100 --model haiku --workers 4
-uv run scripts/run_agent.py -n 30 --model haiku --target-lang ja
-uv run scripts/run_vanilla.py -n 100 --model haiku --workers 4   # single-prompt baseline
-uv run scripts/run_agent.py -n 100 --model haiku --skill lyrics-translator-prompt-only --disallowed-tools Bash,Agent,Task
+uv run scripts/run_agent.py -n 100 --model claude-haiku-4-5-20251001 --workers 4
+uv run scripts/run_agent.py -n 30 --model claude-haiku-4-5-20251001 --target-lang ja
+uv run scripts/run_agent.py -n 100 --model claude-haiku-4-5-20251001 --skill none   # tool-free single-prompt baseline
+uv run scripts/run_agent.py -n 100 --model claude-haiku-4-5-20251001 --skill lyrics-translator-prompt-only --disallowed-tools Bash,Agent,Task
 ```
 
-Each agent item is one `claude -p` call that receives only the source lines; the trace of every tool call is saved under `data/bench/<run>/traces/`. Evaluate and score with:
+Each item is one `claude -p` call that receives only the source lines (pass exact model IDs; aliases such as `opus` move between model versions); the trace of every tool call is saved under `data/bench/<run>/traces/`, and `--skill none` denies every tool for the baseline. Evaluate and score with:
 
 ```bash
 uv run scripts/eval_fixed.py --songs <run>/test_songs.json --out data/bench/final.json vanilla=<vanilla_run>/partial agent=<run>/partial
