@@ -114,10 +114,9 @@ To our knowledge, this is the first framework to package IPA-based phonetic anal
 
 Theoretical accounts treat song translation as balancing singability, sense, naturalness, rhythm, and rhyme \citep{low-2005-pentathlon,franzon-2008-choices,low-2022-translating}.
 Computationally, prior work spans constrained sequence-to-sequence learning \citep{ou-etal-2023-songs}, tonal-language constraints \citep{guo-etal-2022-automatic}, constrained decoding for poetry \citep{ghazvininejad-etal-2018-neural}, musical-feature modeling \citep{ye-etal-2024-sing}, curriculum reinforcement learning \citep{ren-etal-2025-lyricar}, melody-constrained editing \citep{zhao-etal-2025-reffly}, melody-to-lyric generation \citep{ou-etal-2023-loaf}, joint lyric--melody generation \citep{ding-etal-2025-songcomposer}, multilingual datasets and evaluation \citep{cho-etal-2025-mavl,kim-etal-2023-computational,kim-etal-2024-kpop}, scansion- and prosody-aware generation \citep{chen-teufel-2024-scansion,liang-etal-2024-xai,yu-etal-2025-songglm}, and multimodal singability \citep{yoo-etal-2025-elmi}.
-Closest to our setting, \citet{liu-etal-2026-towards} study zero-shot prompting strategies for singable lyric translation on a new en/zh/jp dataset, comparing seven prompts of increasing complexity (including verification-guided and multi-round refinement) and finding that moderate complexity is sufficient.
+Closest to our setting, \citet{liu-etal-2026-towards} compare zero-shot prompting strategies for singable lyric translation, including verification-guided and multi-round refinement.
 Their refinement step asks the LLM to count syllables \emph{within} the prompt; we instead expose syllable counting as a deterministic external skill, which keeps line-level counts exact rather than approximate (\S\ref{sec:orchestrator-ablation}).
-These approaches rely on specialized fine-tuning, constrained decoding, reinforcement learning, or prompt-only verification; we instead augment a general-purpose LLM with \emph{external} IPA-verification skills, requiring no task-specific training, no new model, and no new dataset.
-We therefore compare directly to the supervised constraint-token baseline closest in task setting (\citealp{ou-etal-2023-songs}; \S\ref{sec:experiments}) rather than retraining the others.
+These approaches rely on fine-tuning, constrained decoding, reinforcement learning, or prompt-only verification; we instead augment a general-purpose LLM with \emph{external} IPA-verification skills and compare to the supervised constraint-token baseline closest in task setting (\citealp{ou-etal-2023-songs}; \S\ref{sec:experiments}).
 
 \subsection{Constrained Text Generation}
 
@@ -126,14 +125,12 @@ These methods enforce constraints at the decoding level or learn them implicitly
 
 \subsection{Tool-Augmented Language Models}
 
-Prior work has shown that LLMs can be trained or prompted to invoke external tools \citep{schick-etal-2023-toolformer}, interleave reasoning with tool calls \citep{yao-etal-2023-react}, and offload computation to program execution \citep{gao-etal-2023-pal}, the latter directly relevant here since syllable counting is unreliable in text generation but deterministic via IPA tools.
+LLMs can be trained or prompted to invoke external tools \citep{schick-etal-2023-toolformer}, interleave reasoning with tool calls \citep{yao-etal-2023-react}, and offload computation to program execution \citep{gao-etal-2023-pal}; syllable counting is unreliable in text generation but deterministic via IPA tools.
 More recently, frontier LLM platforms have introduced \emph{Agent Skills}: capabilities packaged as a directory with a natural-language description (\texttt{SKILL.md}) plus optional helper scripts loaded on demand; we adopt this design to factor phonetic analysis into independent, reusable skills.
-While LLMs achieve strong general translation quality \citep{jiao-etal-2023-chatgpt}, they do not address musical or structural constraints.
 
 \subsection{Phonetic Resources}
 
-Our skill suite builds on Phonemizer \citep{bernard-titeux-2021-phonemizer} for text-to-IPA conversion and PanPhon \citep{mortensen-etal-2016-panphon} for phonetic distance computation; both are described in \S\ref{sec:framework}.
-Concurrently, \citet{chen-etal-2025-ipa-translation} use IPA as an intermediary for LLM translation of spoken-only languages; though aimed at low-resource preservation rather than musical constraints, they share our insight that IPA offers a language-agnostic phonetic interface for LLMs.
+Our skill suite builds on Phonemizer \citep{bernard-titeux-2021-phonemizer} for text-to-IPA conversion and PanPhon \citep{mortensen-etal-2016-panphon} for phonetic distance (\S\ref{sec:framework}); \citet{chen-etal-2025-ipa-translation} likewise use IPA as a language-agnostic interface for LLM translation of spoken-only languages.
 
 \section{Musical Constraints in Lyrics Translation}
 \label{sec:constraints}
@@ -386,17 +383,9 @@ Vanilla & Opus 4.7   & 92 & 0.746 & 0.185 & 0.318 & 0.412 & 1 & 10.5 \\
 BLT & Haiku 4.5  & 96 & 0.008 & 0.003 & 0.990 & 0.320 & 18 & 106.6 \\
 BLT & Sonnet 4.6 & 99 & 0.008 & 0.002 & 0.996 & 0.325 & 9 & 71.0 \\
 BLT & Opus 4.7   & 89 & \textbf{0.000} & \textbf{0.000} & \textbf{1.000} & 0.314 & 8 & 63.4 \\
-\midrule
-\multicolumn{9}{@{}l}{\emph{All 100 items, refused items scored as fully unmatched}} \\
-Vanilla & Haiku 4.5  & 100 & 0.442 & 0.142 & 0.668 & -- & 1 & -- \\
-Vanilla & Sonnet 4.6 & 100 & 0.458 & 0.137 & 0.569 & -- & 1 & -- \\
-Vanilla & Opus 4.7   & 100 & 0.766 & 0.250 & 0.293 & -- & 1 & -- \\
-BLT & Haiku 4.5  & 100 & 0.048 & 0.043 & 0.950 & -- & 18 & -- \\
-BLT & Sonnet 4.6 & 100 & \textbf{0.018} & \textbf{0.012} & \textbf{0.986} & -- & 9 & -- \\
-BLT & Opus 4.7   & 100 & 0.110 & 0.110 & 0.890 & -- & 8 & -- \\
 \bottomrule
 \end{tabular}
-\caption{Main results on the Ou 2023 en$\rightarrow$zh test windows ($n{=}100$ items, 5 lines each). $n$ is the number of items that produced output: the API content filter refused 3 / 2 / 8 Vanilla items and 4 / 1 / 11 BLT items (Haiku / Sonnet / Opus) on every attempt. CLT \citep{ou-etal-2023-songs} receives the same per-line syllable targets as BLT as its length tokens, plus the dataset's own rhyme and boundary tokens. \textbf{Turns}: median assistant turns per item; \textbf{Time}: median wall-clock seconds per item (CLT on Apple Silicon MPS, LLMs via API). Human A/B study (\S\ref{sec:human-eval}, $n{=}10$): BLT preferred in 68\% of 60 judgments, 8 of 10 cases.}
+\caption{Main results on the Ou 2023 en$\rightarrow$zh test windows ($n{=}100$ items, 5 lines each). $n$ is the number of items that produced output: the API content filter refused 3 / 2 / 8 Vanilla items and 4 / 1 / 11 BLT items (Haiku / Sonnet / Opus) on every attempt; scoring refused items as fully unmatched gives BLT SER 0.048 / 0.018 / 0.110 and ARI 0.950 / 0.986 / 0.890 (Vanilla SER 0.442 / 0.458 / 0.766). CLT \citep{ou-etal-2023-songs} receives the same per-line syllable targets as BLT as its length tokens, plus the dataset's own rhyme and boundary tokens. \textbf{Turns}: median assistant turns per item; \textbf{Time}: median wall-clock seconds per item (CLT on Apple Silicon MPS, LLMs via API). Human A/B study (\S\ref{sec:human-eval}, $n{=}10$): BLT preferred in 68\% of 60 judgments, 8 of 10 cases.}
 \label{tab:orchestrator}
 \end{table*}
 
@@ -430,7 +419,7 @@ We report SER, SCRE, ARI, and CCVO as defined in \S\ref{sec:eval}.
 Given the correct targets in its prompt, Vanilla Haiku already matches 58\% of lines (SER 0.425), since counting Chinese characters is easy in-prompt; BLT reduces the residual error by 98\% to SER 0.008 (476 of 480 lines exact, 93 of 96 items perfect) and SCRE 0.003 (Table~\ref{tab:orchestrator}).
 Rhyme moves further: ARI rises from 0.688 to 0.990, because the agent runs \texttt{lyrics-validator} on its draft and rewrites lines that break the detected scheme.
 On the 42 items whose source actually rhymes (at least one repeated label), BLT scores ARI 0.977 versus 0.623 for Vanilla and 0.029 for CLT; the remaining 54 unrhymed items are trivially satisfiable and all three systems score higher there (1.000, 0.741, 0.719).
-Sonnet behaves the same way (SER 0.008, ARI 0.996, 95 of 99 items perfect) in half the turns, because it batches lines into single script calls, and Opus reaches SER 0 and ARI 1.0 on all 89 items it completed; Opus Vanilla, by contrast, is the worst single-prompt system (SER 0.746), so the skills matter most for the orchestrator that least honors in-prompt targets. The cost is 18 / 9 / 8 assistant turns (Haiku / Sonnet / Opus) and a median 107 / 71 / 63\,s per item versus one call for Vanilla (Appendix~\ref{app:analysis}).
+Sonnet behaves the same way (SER 0.008, ARI 0.996) in half the turns by batching lines into single script calls, and Opus reaches SER 0 and ARI 1.0 on all 89 items it completed, although Opus Vanilla is the worst single-prompt system (SER 0.746): the skills matter most for the orchestrator that least honors in-prompt targets. The cost is 18 / 9 / 8 assistant turns (Haiku / Sonnet / Opus) and a median 107 / 71 / 63\,s per item versus one call for Vanilla (Appendix~\ref{app:analysis}; worked examples in Appendix~\ref{app:examples}).
 
 \paragraph{Comparison with CLT.}
 CLT, given the same syllable targets as length tokens, matches 72\% of lines exactly and overshoots by one syllable on most of the rest (SER 0.284, SCRE 0.033), so its length control is approximate rather than exact; its ARI of 0.422 (0.029 on rhymed items) shows that its rhyme token does not transfer the source scheme. BLT beats it on every structural metric without task-specific training.
@@ -446,7 +435,7 @@ Japanese also costs the most agent effort (median 44 turns, 265\,s), because kan
 
 \paragraph{Component ablation.}
 To isolate each gain, we run three skill variants with Haiku on the same items (Figure~\ref{fig:ablation}): a \emph{prompt-only} variant with all tools denied, whose \texttt{SKILL.md} tells the agent to count syllables and judge rhyme in its own reasoning, reproducing the verification-guided prompting of \citet{liu-etal-2026-towards}; a \emph{counter-only} variant that keeps \texttt{syllable-counter} but never extracts or checks the rhyme scheme; and the \emph{Phase~1 only} variant of the next paragraph.
-Prompt-only self-verification helps over Vanilla (SER 0.234 vs.\ 0.425) but leaves two thirds of the items imperfect (34 of 100 exact) and rhyme at chance (ARI 0.518), because the model's own counts are wrong; giving it the deterministic counter drives SER to 0.006 (counter-only, 98 of 100 exact).
+Prompt-only self-verification helps over Vanilla (SER 0.234 vs.\ 0.425) but leaves 66 of 100 items imperfect and rhyme near chance (ARI 0.518), because the model's own counts are wrong; the deterministic counter alone drives SER to 0.006 (counter-only, 98 of 100 exact).
 Withholding the rhyme scheme costs nothing on syllables but collapses ARI to 0.250 (0.048 on rhymed sources), so exposing the detected scheme and validating against it is what preserves rhyme.
 
 \paragraph{Phase ablation.}
@@ -455,30 +444,9 @@ It already reaches SER 0.040 and 81 of 96 items perfect, so skill-extracted targ
 Rhyme tells the opposite story: Phase~1 alone scores ARI 0.612, below Vanilla (0.688), and the jump to 0.990 comes from the final \texttt{lyrics-validator} pass and its one rhyme rewrite, so verified refinement, not constraint-aware drafting, is what preserves the scheme.
 
 \paragraph{Semantic cost.}
-Table~\ref{tab:semantic} scores the Haiku systems against the gold translations of \citet{ou-etal-2023-songs} with COMET-22 \citep{rei-etal-2022-comet} and BLEU \citep{papineni-etal-2002-bleu}.
-Meeting the constraints costs Haiku 0.034 COMET relative to Vanilla (paired over the 93 items both systems completed, 95\% bootstrap CI $[0.022, 0.046]$) and 5.7 BLEU; the stronger orchestrators pay less for the same constraint satisfaction: 0.014 COMET for Sonnet (CI $[0.006, 0.023]$) and 0.020 for Opus (CI $[0.012, 0.028]$, paired over 82 items).
-Among the constrained systems, BLT beats CLT on COMET ($+0.045$, CI $[0.032, 0.059]$) as well as on every structural metric; CLT scores higher on BLEU but lower on COMET, which we read as surface n-gram overlap with the reference distribution it was trained on.
-
-\begin{table}[t]
-\centering
-\small
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{@{}lcccc@{}}
-\toprule
-\textbf{System} & \textbf{COMET-22} $\uparrow$ & \textbf{BLEU} $\uparrow$ & \textbf{SER} $\downarrow$ & \textbf{ARI} $\uparrow$ \\
-\midrule
-CLT              & 0.706 & 17.7 & 0.284 & 0.422 \\
-Vanilla (Haiku)  & 0.773 & \textbf{20.7} & 0.425 & 0.688 \\
-BLT (Haiku)      & 0.741 & 15.0 & \textbf{0.008} & 0.990 \\
-Vanilla (Sonnet) & \textbf{0.790} & 19.7 & 0.447 & 0.580 \\
-BLT (Sonnet)     & 0.779 & 18.7 & 0.008 & 0.996 \\
-Vanilla (Opus)   & 0.781 & \textbf{21.8} & 0.746 & 0.318 \\
-BLT (Opus)       & 0.752 & 16.6 & \textbf{0.000} & \textbf{1.000} \\
-\bottomrule
-\end{tabular}
-\caption{Semantic fidelity vs.\ structural constraints (en$\rightarrow$zh, 100 items / 500 lines, gold references from \citet{ou-etal-2023-songs}). COMET and BLEU are over all 500 lines with refused items scored as empty (Haiku: 15 Vanilla and 20 BLT lines; Sonnet: 10 and 5; Opus: 40 and 55); SER and ARI are over completed items as in Table~\ref{tab:orchestrator}. BLEU uses \texttt{sacrebleu} with the \texttt{zh} tokenizer.}
-\label{tab:semantic}
-\end{table}
+Table~\ref{tab:semantic} (Appendix~\ref{app:analysis}) scores the systems against the gold translations of \citet{ou-etal-2023-songs} with COMET-22 \citep{rei-etal-2022-comet} and BLEU \citep{papineni-etal-2002-bleu}.
+Meeting the constraints costs Haiku 0.034 COMET relative to Vanilla (paired over the 93 items both completed, 95\% CI $[0.022, 0.046]$) and 5.7 BLEU; stronger orchestrators pay less: 0.014 for Sonnet (CI $[0.006, 0.023]$) and 0.020 for Opus (CI $[0.012, 0.028]$).
+Among the constrained systems, BLT beats CLT on COMET ($+0.045$, CI $[0.032, 0.059]$) as well as on every structural metric; CLT scores higher on BLEU but lower on COMET, reflecting n-gram overlap with the references it was trained on.
 
 \begin{figure}[t]
 \centering
@@ -508,23 +476,19 @@ BLT ($n{=}30$)     & \textbf{0.013} & \textbf{0.003} & \textbf{0.615} & \textbf{
 \label{tab:cross-lingual}
 \end{table}
 
-\subsection{Qualitative Analysis}
-
-On the \emph{Let It Go} excerpt (Table~\ref{tab:constraints-example}), Vanilla overshoots every target (7--9 characters), whereas BLT matches three of four exactly via Phase~2 counter checks, with the last line one syllable short after the refinement budget is exhausted (Table~\ref{tab:qualitative}).
-
 \subsection{Human Evaluation}
 \label{sec:human-eval}
 
 The structural metrics do not directly measure perceived singability.
 We run a blind A/B study on $n{=}10$ en$\rightarrow$zh cases with six fluent-Mandarin raters (60 judgments, Opus~4.7 outputs): raters pick the more \emph{singable} of two anonymized versions (Vanilla vs.\ BLT, randomized) and rate each 1--5 on singability and naturalness.
-Over the 60 judgments BLT is preferred in 68\% (41/60) and scores higher on singability (mean MOS 4.02 vs.\ 3.35; bootstrap 95\% CI of the difference $[+0.03, +1.30]$) and naturalness (3.98 vs.\ 3.22; CI $[+0.08, +1.43]$), with moderate agreement (Krippendorff's $\alpha{=}0.53$). These judgments are not independent (six raters $\times$ ten cases): at the case level BLT wins 8 of 10 cases (sign test $p{=}0.11$), and a two-way cluster bootstrap over raters and cases gives CIs that include zero ($[-0.80, +2.02]$ for singability). The study therefore supports the direction of the effect but is too small to establish it; raters judged text only (no audio), so it measures perceived textual singability.
+BLT is preferred in 68\% of the 60 judgments (41/60) and scores higher on singability (MOS 4.02 vs.\ 3.35; bootstrap 95\% CI of the difference $[+0.03, +1.30]$) and naturalness (3.98 vs.\ 3.22; CI $[+0.08, +1.43]$), with moderate agreement (Krippendorff's $\alpha{=}0.53$). Judgments are not independent (six raters $\times$ ten cases): at the case level BLT wins 8 of 10 (sign test $p{=}0.11$) and a two-way cluster bootstrap over raters and cases includes zero ($[-0.80, +2.02]$ for singability), so the study supports the direction of the effect but is too small to establish it; raters judged text only, so it measures perceived textual singability.
 
 \section{Conclusion}
 
 We presented BLT Skills, a training-free framework that packages IPA-based phonetic analysis as composable Agent Skills, orchestrated in two phases that prioritize syllable counts while monitoring rhyme.
 On English-to-Chinese ($n{=}100$) it cuts syllable error by 98\% over single-prompt translation (SER 0.008) and lifts rhyme-scheme preservation to ARI 0.99, far above a supervised baseline (0.42), and transfers to Spanish and Japanese.
-Ablations show deterministic counting is decisive where in-prompt counting fails, while exposing the rhyme scheme preserves rhyme structure.
-Offloading verifiable subtasks to deterministic, composable skills is a general recipe for constraint-bound generation; natural next steps include rhyme refinement and singing-voice synthesis \citep{ren-etal-2020-deepsinger}.
+Ablations show that the deterministic counter fixes syllables and the exposed, validated rhyme scheme fixes rhyme.
+Offloading verifiable subtasks to deterministic, composable skills is a general recipe for constraint-bound generation; a dedicated rhyme-refinement phase is the natural next step.
 
 \section*{Limitations}
 
@@ -834,6 +798,27 @@ BLT (Opus) & 8 & 2.6 & 1.0 & 0.297 & 63 \\
 \end{tabular}
 \caption{Per-item cost of the en$\rightarrow$zh runs, from the agent traces: median assistant turns, mean \texttt{syllable-counter} (Cnt.) and \texttt{lyrics-validator} (Val.) calls, mean API cost in USD, and median wall-clock seconds.}
 \label{tab:tool-usage}
+\end{table}
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{System} & \textbf{COMET-22} $\uparrow$ & \textbf{BLEU} $\uparrow$ & \textbf{SER} $\downarrow$ & \textbf{ARI} $\uparrow$ \\
+\midrule
+CLT              & 0.706 & 17.7 & 0.284 & 0.422 \\
+Vanilla (Haiku)  & 0.773 & \textbf{20.7} & 0.425 & 0.688 \\
+BLT (Haiku)      & 0.741 & 15.0 & \textbf{0.008} & 0.990 \\
+Vanilla (Sonnet) & \textbf{0.790} & 19.7 & 0.447 & 0.580 \\
+BLT (Sonnet)     & 0.779 & 18.7 & 0.008 & 0.996 \\
+Vanilla (Opus)   & 0.781 & \textbf{21.8} & 0.746 & 0.318 \\
+BLT (Opus)       & 0.752 & 16.6 & \textbf{0.000} & \textbf{1.000} \\
+\bottomrule
+\end{tabular}
+\caption{Semantic fidelity vs.\ structural constraints (en$\rightarrow$zh, 100 items / 500 lines, gold references from \citet{ou-etal-2023-songs}). COMET and BLEU are over all 500 lines with refused items scored as empty (Haiku: 15 Vanilla and 20 BLT lines; Sonnet: 10 and 5; Opus: 40 and 55); SER and ARI are over completed items as in Table~\ref{tab:orchestrator}. BLEU uses \texttt{sacrebleu} with the \texttt{zh} tokenizer.}
+\label{tab:semantic}
 \end{table}
 
 \paragraph{Metric sensitivity.}
