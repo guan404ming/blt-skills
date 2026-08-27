@@ -1,0 +1,89 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "5/5",
+  "translations": [
+    "我想忘记但无法忘记这段往事呢",
+    "就等漆黑夜晚来",
+    "去梦见曾爱过的她呀",
+    "放开后我再握你手",
+    "每次我都选择原谅和忍耐"
+  ],
+  "time_seconds": 68.48,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.057996700000000005,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 7773,
+      "cache_read_input_tokens": 142567,
+      "output_tokens": 5630,
+      "output_tokens_details": {
+        "thinking_tokens": 4544
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7773,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 4208,
+          "cache_read_input_tokens": 30703,
+          "cache_creation_input_tokens": 479,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 479
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想忘记但无法忘记这段往事呢\n2. 就等漆黑夜晚来\n3. 去梦见曾爱过的她呀\n4. 放开后我再握你手\n5. 每次我都选择原谅和忍耐",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

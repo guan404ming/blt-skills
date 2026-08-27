@@ -1,0 +1,87 @@
+{
+  "id": "ou_003",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    7,
+    9,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    7,
+    9,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "自由去探索",
+    "星海和清晨时光",
+    "别害怕睁开你的双眼",
+    "有太多等你去寻",
+    "深呼吸并放松"
+  ],
+  "time_seconds": 63.64,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.3091645,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 17167,
+      "cache_read_input_tokens": 204649,
+      "output_tokens": 1404,
+      "output_tokens_details": {
+        "thinking_tokens": 316
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17167,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 62,
+          "cache_read_input_tokens": 32747,
+          "cache_creation_input_tokens": 323,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 323
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 自由去探索\n2. 星海和清晨时光\n3. 别害怕睁开你的双眼\n4. 有太多等你去寻\n5. 深呼吸并放松",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

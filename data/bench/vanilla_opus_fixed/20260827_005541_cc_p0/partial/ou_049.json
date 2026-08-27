@@ -1,0 +1,43 @@
+{
+  "id": "ou_049",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.13987437399202104,
+  "ari": 0.0,
+  "src_syl": [
+    17,
+    11,
+    15,
+    14,
+    18
+  ],
+  "tgt_syl": [
+    18,
+    13,
+    17,
+    17,
+    16
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABAAC",
+  "match": "0/5",
+  "translations": [
+    "你搬进我那间破旧的屋子，好几天没出过门",
+    "你学会了洗衣服，也学会了做饭",
+    "你顺着我的脾气，让我觉得自己像个男人",
+    "我发起火来，摔碎一只杯子，砸坏房间的门",
+    "让你哭了好几天，不接电话，就那样走了"
+  ],
+  "time_seconds": 9.91,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 9.912,
+    "phase0_calls": 1
+  }
+}

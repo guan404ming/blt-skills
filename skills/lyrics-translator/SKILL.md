@@ -5,96 +5,77 @@ description: Translate lyrics while preserving musical constraints (syllable cou
 
 # Lyrics Translator
 
-Translate lyrics between languages while preserving syllable counts, rhyme scheme, and word-level syllable patterns so the translation remains singable.
+Translate lyrics between languages so the translation stays singable. Never count syllables or judge rhyme yourself. Always run the sub-skill scripts and use their output.
 
 ## Workflow
 
-Follow this 3-phase pipeline. Use the sub-skill scripts to verify at each step.
+### Step 0: Extract Constraints
 
-### Phase 1: Extract Constraints
+Run these on the source lines before you translate:
 
-Before translating, analyze the source lyrics to extract targets:
-
-1. Count syllables per line:
+1. Syllable count per line:
    ```bash
    python skills/syllable-counter/scripts/count_syllables.py "<line>" "<source_lang>"
    ```
-
-2. Get syllable patterns (word-level distribution):
+2. Rhyme scheme:
+   ```bash
+   python skills/rhyme-analyzer/scripts/rhyme_analysis.py --scheme "<source_lang>" "<line1>" "<line2>" ...
+   ```
+3. Word-level syllable pattern:
    ```bash
    python skills/syllable-pattern-analyzer/scripts/pattern_analysis.py "<source_lang>" "<line1>" "<line2>" ...
    ```
 
-3. Detect rhyme scheme:
-   ```python
-   from rhyme_analysis import detect_rhyme_scheme
-   scheme = detect_rhyme_scheme(lines, source_lang)
-   ```
+Record the target syllable counts, the rhyme scheme, and the patterns.
 
-Record the target syllable counts, patterns, and rhyme scheme.
+### Phase 1: Initial Translation
 
-### Phase 2: Initial Translation
-
-Translate all lines at once, considering all 3 constraints:
+Translate all lines at once:
 
 - Each line must have EXACTLY the target syllable count.
-- Lines sharing a rhyme label must rhyme in the target language.
-- Word-level syllable distribution should match the target pattern.
-- Maintain poetic quality and emotional impact.
+- Lines that share a rhyme label must rhyme in the target language. Lines with different labels must not rhyme.
+- Keep the word-level syllable pattern close to the source when possible.
+- Keep the meaning and the emotion of the source.
 
-Key rules for Chinese targets:
-- Each Chinese character = 1 syllable.
-- Strip all punctuation when counting.
+Rules for Chinese targets: one Han character is one syllable. Write only Han characters. Do not mix Latin letters or digits into a line.
 
-### Phase 3: Iterative Refinement
+### Phase 2: Syllable Refinement
 
-For each line, verify and refine:
+For each translated line:
 
-1. **Check syllable count**:
+1. Count its syllables:
    ```bash
    python skills/syllable-counter/scripts/count_syllables.py "<translation>" "<target_lang>"
    ```
-
-2. If count is wrong, adjust the translation:
-   - Too long: remove adjectives, use shorter words, merge concepts.
-   - Too short: add descriptive words, use longer alternatives.
-   - Re-check after each adjustment. Repeat up to 10 times.
-
-3. **Check syllable patterns**:
-   ```bash
-   python skills/syllable-pattern-analyzer/scripts/pattern_analysis.py "<target_lang>" "<translated_line>"
-   ```
-   - Skip refinement if average pattern similarity is already >75%.
-   - Only accept pattern changes that improve similarity by >15%.
-
-4. **Verify rhyme preservation** after pattern adjustments using the rhyme-analyzer.
+2. If the count differs from the target, rewrite the line:
+   - Too long: remove modifiers, use shorter words, merge concepts.
+   - Too short: add descriptive words, use longer words.
+   - Count again after each rewrite. Stop after 10 attempts and keep the closest attempt.
 
 ### Final Validation
 
-Run the full validator on all translated lines:
+Run the validator on all lines. Pass the target counts as a JSON list of integers and the recorded scheme:
 
 ```bash
-python skills/lyrics-validator/scripts/validate.py "<target_lang>" '<target_syllables_json>' "<line1>" "<line2>" ...
+python skills/lyrics-validator/scripts/validate.py "<target_lang>" '[10, 9, 6, 6, 5]' "<line1>" "<line2>" ... --rhyme ABCCD
 ```
+
+If `syllables_match` is false, return to Phase 2 for the failing lines. If `rhymes_valid` is false, try one rewrite of the failing lines that keeps the syllable counts, then count again.
 
 ## Output Format
 
-Present the final translation as:
+Return only the final translation:
 
 ```
 1. <translated line 1>
 2. <translated line 2>
 ...
-
-Syllable accuracy: X/Y lines match
-Pattern similarity: X%
-Rhyme scheme: <scheme>
 ```
 
 ## Sub-Skills Used
 
 - [syllable-counter](../syllable-counter/SKILL.md) - count syllables
-- [rhyme-analyzer](../rhyme-analyzer/SKILL.md) - rhyme detection
+- [rhyme-analyzer](../rhyme-analyzer/SKILL.md) - rhyme endings and schemes
 - [syllable-pattern-analyzer](../syllable-pattern-analyzer/SKILL.md) - word rhythm patterns
 - [lyrics-validator](../lyrics-validator/SKILL.md) - constraint verification
 - [phonetic-analyzer](../phonetic-analyzer/SKILL.md) - IPA and phonetic similarity
@@ -102,4 +83,3 @@ Rhyme scheme: <scheme>
 ## Configuration Reference
 
 See [references/config.md](references/config.md) for language codes and defaults.
-See [references/graph-pipeline.md](references/graph-pipeline.md) for pipeline architecture details.

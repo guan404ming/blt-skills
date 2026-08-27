@@ -1,0 +1,44 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.3516666666666667,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    5,
+    8,
+    6,
+    2,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    9,
+    8,
+    3,
+    8
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABCDB",
+  "match": "1/5",
+  "translations": [
+    "恩典抚平我心中恐惧;",
+    "那恩典显得何等珍贵,",
+    "正是我初信主之时!",
+    "第三节:",
+    "主已应许赐福与我,"
+  ],
+  "time_seconds": 12.12,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 12.12,
+    "phase0_calls": 1
+  }
+}

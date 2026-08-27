@@ -1,0 +1,44 @@
+{
+  "id": "ou_039",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "tgt_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我怎样活，没了你的前景",
+    "谁能代替你让我吻你晚上",
+    "你怎能突然松开我的手啊",
+    "你怎能说\"我已不爱你\"",
+    "原来也不过是一个短暂幸福的虚假承诺"
+  ],
+  "time_seconds": 86.41,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 86.413,
+    "phase0_calls": 1
+  }
+}

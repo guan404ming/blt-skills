@@ -1,0 +1,88 @@
+{
+  "id": "ou_044",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    12,
+    4,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    7,
+    12,
+    4,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我整夜想着你呢",
+    "如今我已经记不清你的容颜",
+    "你是感觉",
+    "写在夏夜风里",
+    "青春是永不归来的水"
+  ],
+  "time_seconds": 92.41,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 29,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.086363,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 13891,
+      "cache_read_input_tokens": 250830,
+      "output_tokens": 6686,
+      "output_tokens_details": {
+        "thinking_tokens": 4681
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13891,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 127,
+          "cache_read_input_tokens": 36942,
+          "cache_creation_input_tokens": 358,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 358
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我整夜想着你呢\n2. 如今我已经记不清你的容颜\n3. 你是感觉\n4. 写在夏夜风里\n5. 青春是永不归来的水",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

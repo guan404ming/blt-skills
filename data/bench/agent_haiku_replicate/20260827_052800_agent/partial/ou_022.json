@@ -1,0 +1,90 @@
+{
+  "id": "ou_022",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    8,
+    7,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    3,
+    8,
+    7,
+    4,
+    3
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "安静吧",
+    "我年轻天真我欢欣",
+    "告诉我让我相信",
+    "抱我抱我",
+    "远离开"
+  ],
+  "time_seconds": 149.12,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 30,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.08708529999999999,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 9568,
+      "cache_read_input_tokens": 292233,
+      "output_tokens": 7730,
+      "output_tokens_details": {
+        "thinking_tokens": 5628
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9568,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 182,
+          "cache_read_input_tokens": 37876,
+          "cache_creation_input_tokens": 323,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 323
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 安静吧\n2. 我年轻天真我欢欣\n3. 告诉我让我相信\n4. 抱我抱我\n5. 远离开",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

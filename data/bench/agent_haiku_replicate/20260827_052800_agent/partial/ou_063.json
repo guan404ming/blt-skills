@@ -1,0 +1,90 @@
+{
+  "id": "ou_063",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    7,
+    7,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    7,
+    7,
+    15,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "转变成呼啸的风雪",
+    "心中的野蛮荒地",
+    "如那往日的誓言",
+    "融入光亮从深不可测的地底界浮现",
+    "睁开你眼睛"
+  ],
+  "time_seconds": 107.2,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 45,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 20
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 17,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 23,
+    "cost_usd": 0.12025759999999999,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 16166,
+      "cache_read_input_tokens": 441276,
+      "output_tokens": 8738,
+      "output_tokens_details": {
+        "thinking_tokens": 5741
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16166,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 161,
+          "cache_read_input_tokens": 39144,
+          "cache_creation_input_tokens": 431,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 431
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 转变成呼啸的风雪\n2. 心中的野蛮荒地\n3. 如那往日的誓言\n4. 融入光亮从深不可测的地底界浮现\n5. 睁开你眼睛",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_075",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "会后悔的",
+    "因为人生很短",
+    "没时间浪费它",
+    "眼影上有伪装遮掩迷人的光采",
+    "身体的痕迹在警告我"
+  ],
+  "time_seconds": 58.07,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 28,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "lyrics-validator": 1
+    },
+    "num_turns": 19,
+    "cost_usd": 0.062287300000000004,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 10528,
+      "cache_read_input_tokens": 210813,
+      "output_tokens": 4018,
+      "output_tokens_details": {
+        "thinking_tokens": 1931
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10528,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 97,
+          "cache_read_input_tokens": 33481,
+          "cache_creation_input_tokens": 456,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 456
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 会后悔的\n2. 因为人生很短\n3. 没时间浪费它\n4. 眼影上有伪装遮掩迷人的光采\n5. 身体的痕迹在警告我",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

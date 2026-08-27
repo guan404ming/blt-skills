@@ -1,0 +1,90 @@
+{
+  "id": "ou_028",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    6,
+    6,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    6,
+    6,
+    5,
+    5
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "No digas",
+    "Seamos amigos,",
+    "Así no son cosas",
+    "El fin es el fin.",
+    "No lo pienses tú"
+  ],
+  "time_seconds": 202.41,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 47,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 21
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "rhyme-analyzer": 4,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 24,
+    "cost_usd": 0.2073578,
+    "usage": {
+      "input_tokens": 116,
+      "cache_creation_input_tokens": 27199,
+      "cache_read_input_tokens": 550288,
+      "output_tokens": 19563,
+      "output_tokens_details": {
+        "thinking_tokens": 16819
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27199,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 106,
+          "cache_read_input_tokens": 50099,
+          "cache_creation_input_tokens": 509,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 509
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. No digas\n2. Seamos amigos,\n3. Así no son cosas\n4. El fin es el fin.\n5. No lo pienses tú",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_009",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    9,
+    11,
+    15
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    9,
+    11,
+    15
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "一加一若是算错该怎样",
+    "等于三这是真的",
+    "两个平凡少年心里话",
+    "这些歌词只能代表你和我",
+    "听不懂音乐根本没什么好丢脸啦呀"
+  ],
+  "time_seconds": 89.71,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 43,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 23
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 19,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 26,
+    "cost_usd": 0.0906795,
+    "usage": {
+      "input_tokens": 100,
+      "cache_creation_input_tokens": 13020,
+      "cache_read_input_tokens": 382295,
+      "output_tokens": 5262,
+      "output_tokens_details": {
+        "thinking_tokens": 2349
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13020,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 126,
+          "cache_read_input_tokens": 35967,
+          "cache_creation_input_tokens": 462,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 462
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 一加一若是算错该怎样\n2. 等于三这是真的\n3. 两个平凡少年心里话\n4. 这些歌词只能代表你和我\n5. 听不懂音乐根本没什么好丢脸啦呀",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

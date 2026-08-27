@@ -1,0 +1,43 @@
+{
+  "id": "ou_100",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.3185714285714286,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    16,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    6,
+    6,
+    12,
+    9,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "只凭直觉去追",
+    "追 不为任何人",
+    "抛一颗石头 听溅起的水花声",
+    "打破湖面平静的安宁",
+    "提前定好的计划"
+  ],
+  "time_seconds": 7.11,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 7.112,
+    "phase0_calls": 1
+  }
+}

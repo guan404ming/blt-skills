@@ -1,0 +1,89 @@
+{
+  "id": "ou_035",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "tgt_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你打包行李把墙上照片拿好",
+    "当我问你想知道还要多久",
+    "你说世界疯狂已崩裂",
+    "夏已尽叶子纷纷往下飘",
+    "又是个冬天就要来临"
+  ],
+  "time_seconds": 101.81,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 15,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0626526,
+    "usage": {
+      "input_tokens": 34,
+      "cache_creation_input_tokens": 2776,
+      "cache_read_input_tokens": 119566,
+      "output_tokens": 9022,
+      "output_tokens_details": {
+        "thinking_tokens": 7978
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2776,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 7635,
+          "cache_read_input_tokens": 30874,
+          "cache_creation_input_tokens": 567,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 567
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Looking at the constraints extracted:\n\n**Syllable counts:** 12, 11, 9, 10, 9  \n**Rhyme scheme:** ABCAD (lines 1&4 must rhyme)  \n**Word-level patterns:** as shown above\n\nNow translating all 5 lines with exact syllable counts, rhyme matching, and meaning preserved:\n\n```\n1. 你打包行李把墙上照片拿好\n2. 当我问你想知道还要多久\n3. 你说世界疯狂已崩裂\n4. 夏已尽叶子纷纷往下飘\n5. 又是个冬天就要来临\n```",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

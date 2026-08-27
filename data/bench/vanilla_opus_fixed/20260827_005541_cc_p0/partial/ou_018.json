@@ -1,0 +1,44 @@
+{
+  "id": "ou_018",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.1773015873015873,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    11,
+    12,
+    18,
+    13,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCD",
+  "match": "0/5",
+  "translations": [
+    "我曾把青春翻落进她怀里",
+    "我也曾把琴弦拨进盛夏深处",
+    "若它动了你的心，就让宇宙的牵引带你前往",
+    "逆着光行走，任由风雨落在身上",
+    "一段短短的路，走走停停"
+  ],
+  "time_seconds": 12.28,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 12.28,
+    "phase0_calls": 1
+  }
+}

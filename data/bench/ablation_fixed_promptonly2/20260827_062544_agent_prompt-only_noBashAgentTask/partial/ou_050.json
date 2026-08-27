@@ -1,0 +1,85 @@
+{
+  "id": "ou_050",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.08035239614186981,
+  "ari": 0.0,
+  "src_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "tgt_syl": [
+    19,
+    19,
+    23,
+    16,
+    22
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCBB",
+  "match": "1/5",
+  "translations": [
+    "相处比相爱难；我们都试过。你如王者，我非皇后",
+    "我们去北潭划那天鹅船，但你却说你晕了船呢",
+    "我们去阳明山赏那美丽的夜景，你说真的非常非常美呀",
+    "我们去看五月天演唱，你感动到流泪了",
+    "我们一起度过的日子，感觉还是昨天，依然在我眼前呢"
+  ],
+  "time_seconds": 66.33,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.05353830000000001,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5694,
+      "cache_read_input_tokens": 43503,
+      "output_tokens": 7556,
+      "output_tokens_details": {
+        "thinking_tokens": 7221
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5694,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 7059,
+          "cache_read_input_tokens": 24074,
+          "cache_creation_input_tokens": 1049,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1049
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 相处比相爱难；我们都试过。你如王者，我非皇后\n2. 我们去北潭划那天鹅船，但你却说你晕了船呢\n3. 我们去阳明山赏那美丽的夜景，你说真的非常非常美呀\n4. 我们去看五月天演唱，你感动到流泪了\n5. 我们一起度过的日子，感觉还是昨天，依然在我眼前呢",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

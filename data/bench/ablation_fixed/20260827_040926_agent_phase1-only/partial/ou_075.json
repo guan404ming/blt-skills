@@ -1,0 +1,89 @@
+{
+  "id": "ou_075",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "再想后悔",
+    "人生很短促啦",
+    "没时间去后悔",
+    "眼影上铺满伪装的迷人气质哦",
+    "身上的纹路在警告呢"
+  ],
+  "time_seconds": 128.31,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 15,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0918806,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 7923,
+      "cache_read_input_tokens": 173176,
+      "output_tokens": 11733,
+      "output_tokens_details": {
+        "thinking_tokens": 10801
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7923,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 10182,
+          "cache_read_input_tokens": 30868,
+          "cache_creation_input_tokens": 464,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 464
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "提取完成。约束：\n- 音节数：4, 6, 6, 13, 9\n- 韵律：ABACD\n- 模式：[1,1,1,1], [2,1,1,1,1], [1,1,1,1,1,1], [1,1,3,2,1,2,1,2], [1,1,1,1,2,1,2]\n\n---\n\n1. 再想后悔\n2. 人生很短促啦\n3. 没时间去后悔\n4. 眼影上铺满伪装的迷人气质哦\n5. 身上的纹路在警告呢",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

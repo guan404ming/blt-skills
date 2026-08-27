@@ -1,0 +1,44 @@
+{
+  "id": "ou_008",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    7,
+    11,
+    7,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    7,
+    11,
+    7,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "每一滴雨都变成歌",
+    "从开头直到末尾",
+    "结果超越了我们的掌控力",
+    "我们爱中的差别",
+    "仍不能穿透"
+  ],
+  "time_seconds": 124.94,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 100,
+    "rhyme-analyzer": 20,
+    "syllable-pattern-analyzer": 6
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 124.941,
+    "phase0_calls": 1
+  }
+}

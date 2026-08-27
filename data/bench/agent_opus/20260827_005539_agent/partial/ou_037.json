@@ -1,0 +1,88 @@
+{
+  "id": "ou_037",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    3,
+    5,
+    12,
+    12
+  ],
+  "tgt_syl": [
+    4,
+    3,
+    5,
+    12,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "在人行道",
+    "通往哪",
+    "夜夜去那边",
+    "他有我喜欢的那种男孩气息",
+    "我是建筑师正描绘着那蓝图"
+  ],
+  "time_seconds": 58.35,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 10,
+    "cost_usd": 0.3081895,
+    "usage": {
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 13350,
+      "cache_read_input_tokens": 275199,
+      "output_tokens": 1480,
+      "output_tokens_details": {
+        "thinking_tokens": 276
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13350,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 67,
+          "cache_read_input_tokens": 33107,
+          "cache_creation_input_tokens": 410,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 410
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 在人行道\n2. 通往哪\n3. 夜夜去那边\n4. 他有我喜欢的那种男孩气息\n5. 我是建筑师正描绘着那蓝图",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

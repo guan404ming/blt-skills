@@ -1,0 +1,88 @@
+{
+  "id": "ou_087",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    16,
+    14,
+    13,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    16,
+    14,
+    13,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "我想问你一些问题若我们能坦诚相谈",
+    "你看镜子感到什么你为此骄傲吗",
+    "你能看我眼睛告诉我为什么吗",
+    "让我说说辛苦工作",
+    "最低工资养个孩子在路上"
+  ],
+  "time_seconds": 54.49,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.05615699999999999,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 10022,
+      "cache_read_input_tokens": 177310,
+      "output_tokens": 3666,
+      "output_tokens_details": {
+        "thinking_tokens": 1846
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10022,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 129,
+          "cache_read_input_tokens": 33018,
+          "cache_creation_input_tokens": 413,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 413
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想问你一些问题若我们能坦诚相谈\n2. 你看镜子感到什么你为此骄傲吗\n3. 你能看我眼睛告诉我为什么吗\n4. 让我说说辛苦工作\n5. 最低工资养个孩子在路上",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

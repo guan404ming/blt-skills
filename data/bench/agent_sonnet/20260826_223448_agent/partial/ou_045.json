@@ -1,0 +1,87 @@
+{
+  "id": "ou_045",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "tgt_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "许多肤浅的美好时光都匆匆逝去",
+    "愿你弹奏你的弦乐器时身边总会有听众陪伴",
+    "愿你身边有人能倾听你的心事",
+    "愿我们在来生还能再次重逢再相见",
+    "我愿意化为你几缕漆黑的秀发"
+  ],
+  "time_seconds": 69.62,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.157465,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 15766,
+      "cache_read_input_tokens": 295615,
+      "output_tokens": 3525,
+      "output_tokens_details": {
+        "thinking_tokens": 1855
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15766,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 124,
+          "cache_read_input_tokens": 46450,
+          "cache_creation_input_tokens": 703,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 703
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 许多肤浅的美好时光都匆匆逝去\n2. 愿你弹奏你的弦乐器时身边总会有听众陪伴\n3. 愿你身边有人能倾听你的心事\n4. 愿我们在来生还能再次重逢再相见\n5. 我愿意化为你几缕漆黑的秀发",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

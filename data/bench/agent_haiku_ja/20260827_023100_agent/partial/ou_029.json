@@ -1,0 +1,90 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "思うなよ",
+    "涙まとめて帰ろう",
+    "泣かないでいてね",
+    "泣き続き",
+    "泣きぐせが"
+  ],
+  "time_seconds": 689.31,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 262,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 125
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 105,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 18
+    },
+    "num_turns": 128,
+    "cost_usd": 0.8949359,
+    "usage": {
+      "input_tokens": 1019,
+      "cache_creation_input_tokens": 50041,
+      "cache_read_input_tokens": 6282049,
+      "output_tokens": 33126,
+      "output_tokens_details": {
+        "thinking_tokens": 21081
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 50041,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 398,
+          "cache_read_input_tokens": 72844,
+          "cache_creation_input_tokens": 606,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 606
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Validator unable to reconcile lines 4-5 phonetically after exhaustive attempts. Submitting final translations based on best syllable+rhyme feasible set:\n\n1. 思うなよ\n2. 涙まとめて帰ろう\n3. 泣かないでいてね\n4. 泣き続き\n5. 泣きぐせが",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

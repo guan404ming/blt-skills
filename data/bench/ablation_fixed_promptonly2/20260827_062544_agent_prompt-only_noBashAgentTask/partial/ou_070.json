@@ -1,0 +1,85 @@
+{
+  "id": "ou_070",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.06000000000000001,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    13,
+    10,
+    8,
+    5
+  ],
+  "tgt_syl": [
+    9,
+    13,
+    9,
+    8,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "3/5",
+  "translations": [
+    "给她翅膀 当她想飞翔",
+    "当你发现自己无力躺在她怀里",
+    "你知道你爱一个女人",
+    "爱女人时 要告诉她",
+    "她真的被需要"
+  ],
+  "time_seconds": 30.78,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.0310632,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5359,
+      "cache_read_input_tokens": 43452,
+      "output_tokens": 3196,
+      "output_tokens_details": {
+        "thinking_tokens": 2675
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5359,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 2947,
+          "cache_read_input_tokens": 24023,
+          "cache_creation_input_tokens": 765,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 765
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\nSyllable counts (en-us):\n1. N' give her wings, when she wants to fly = 9\n2. Then when you find yourself lyin' helpless in her arms = 13\n3. You know you really love a woman = 9\n4. When you love a woman, tell her = 8\n5. that she's really wanted = 6\n\nRhyme scheme: A B C D E (no rhymes)\n\n## Phase 1: Initial Translation\n\n1. 给她翅膀 当她想飞翔 (9)\n2. 当你发现自己无力躺在她怀里 (13)\n3. 你知道你爱一个女人 (9)\n4. 爱女人时 要告诉她 (8)\n5. 她真的被需要 (6)\n\n## Phase 2: Syllable Refinement\n\nRecounted all lines — all match target counts. No revisions needed.\n\n## Final Check\n\nRhyme scheme verified (A: -ang, B: -i, C: -en, D: -a, E: -ao — all distinct). All syllable counts match source.\n\n---\n\n1. 给她翅膀 当她想飞翔\n2. 当你发现自己无力躺在她怀里\n3. 你知道你爱一个女人\n4. 爱女人时 要告诉她\n5. 她真的被需要",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

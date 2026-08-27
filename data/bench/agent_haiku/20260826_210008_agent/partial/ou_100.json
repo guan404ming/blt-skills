@@ -1,0 +1,88 @@
+{
+  "id": "ou_100",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    16,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    16,
+    15,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "仅凭直觉奔向前方去冲",
+    "追逐只为自己心",
+    "投一块石头听水花飞溅的回响声传来",
+    "打破湖面平凡寂静的如镜般喧响声",
+    "提前定计划"
+  ],
+  "time_seconds": 138.69,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 46,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 26
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 22,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 29,
+    "cost_usd": 0.12915819999999997,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 17888,
+      "cache_read_input_tokens": 442592,
+      "output_tokens": 9803,
+      "output_tokens_details": {
+        "thinking_tokens": 6493
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17888,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 155,
+          "cache_read_input_tokens": 40816,
+          "cache_creation_input_tokens": 481,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 481
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 仅凭直觉奔向前方去冲\n2. 追逐只为自己心\n3. 投一块石头听水花飞溅的回响声传来\n4. 打破湖面平凡寂静的如镜般喧响声\n5. 提前定计划",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

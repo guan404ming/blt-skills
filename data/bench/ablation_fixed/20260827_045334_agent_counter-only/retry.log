@@ -1,0 +1,24 @@
+agent model=haiku effort=medium workers=3 n=100
+[start ] ou_015
+[start ] ou_028
+[start ] ou_029
+[done  ] ou_029 SER=0.000 ARI=0.615 match=5/5 turns=14 scripts=11 cost=$0.051 time=48s
+[done  ] ou_015 SER=0.000 ARI=0.138 match=5/5 turns=14 scripts=11 cost=$0.052 time=50s
+[start ] ou_052
+[start ] ou_057
+[done  ] ou_028 SER=0.000 ARI=0.000 match=5/5 turns=14 scripts=11 cost=$0.051 time=51s
+[start ] ou_080
+[done  ] ou_080 SER=0.000 ARI=-0.111 match=5/5 turns=14 scripts=11 cost=$0.040 time=48s
+[start ] ou_088
+[done  ] ou_052 SER=0.000 ARI=0.000 match=5/5 turns=16 scripts=12 cost=$0.076 time=69s
+[done  ] ou_057 SER=0.000 ARI=0.000 match=5/5 turns=26 scripts=23 cost=$0.066 time=87s
+[done  ] ou_088 SER=0.000 ARI=1.000 match=5/5 turns=15 scripts=35 cost=$0.127 time=158s
+
+Saved data/bench/ablation_fixed/20260827_045334_agent_counter-only/results.json
+Saved data/bench/ablation_fixed/20260827_045334_agent_counter-only/report.md
+{
+  "avg_ser": 0.006,
+  "avg_scre": 0.0021,
+  "avg_ari": 0.2505,
+  "avg_time": 65.88
+}

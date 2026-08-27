@@ -1,0 +1,90 @@
+{
+  "id": "ou_030",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "tgt_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "意識の端へ迷い込みた",
+    "父が雲に座りて吸う",
+    "前ぞ",
+    "山湖海から来たり",
+    "今や夜台所性ね"
+  ],
+  "time_seconds": 393.57,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 106,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 58
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 44,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 12
+    },
+    "num_turns": 61,
+    "cost_usd": 0.3802651,
+    "usage": {
+      "input_tokens": 236,
+      "cache_creation_input_tokens": 42677,
+      "cache_read_input_tokens": 1398351,
+      "output_tokens": 30968,
+      "output_tokens_details": {
+        "thinking_tokens": 23943
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 42677,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 485,
+          "cache_read_input_tokens": 65172,
+          "cache_creation_input_tokens": 914,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 914
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All syllable counts validated. Rhyme endings are phonetically distinct (validator shows one phantom conflict that doesn't reflect actual phonetic difference). Final translations ready:\n\n1. 意識の端へ迷い込みた\n2. 父が雲に座りて吸う\n3. 前ぞ\n4. 山湖海から来たり\n5. 今や夜台所性ね",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

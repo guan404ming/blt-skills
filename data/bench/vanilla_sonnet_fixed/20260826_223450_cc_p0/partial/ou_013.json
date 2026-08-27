@@ -1,0 +1,43 @@
+{
+  "id": "ou_013",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2375757575757576,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    11,
+    12,
+    6,
+    11
+  ],
+  "tgt_syl": [
+    6,
+    8,
+    8,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "1/5",
+  "translations": [
+    "佛前静静盛开",
+    "出淤泥不染风与眠",
+    "花开不语，花落无言",
+    "与你再续三生",
+    "不早不晚来到你身边"
+  ],
+  "time_seconds": 7.42,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 7.418,
+    "phase0_calls": 1
+  }
+}

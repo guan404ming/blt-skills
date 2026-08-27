@@ -1,0 +1,87 @@
+{
+  "id": "ou_006",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    6,
+    8,
+    6,
+    8
+  ],
+  "tgt_syl": [
+    8,
+    6,
+    8,
+    6,
+    8
+  ],
+  "src_rhyme": "ABABB",
+  "tgt_rhyme": "ABABB",
+  "match": "5/5",
+  "translations": [
+    "奇異恩典何等甘甜",
+    "救我卑微性命",
+    "我曾迷失如今得見",
+    "曾盲目今看清",
+    "鎖鏈盡斷我一身輕"
+  ],
+  "time_seconds": 86.96,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.3583795,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 15113,
+      "cache_read_input_tokens": 245489,
+      "output_tokens": 3377,
+      "output_tokens_details": {
+        "thinking_tokens": 1878
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15113,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 73,
+          "cache_read_input_tokens": 34946,
+          "cache_creation_input_tokens": 334,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 334
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 奇異恩典何等甘甜\n2. 救我卑微性命\n3. 我曾迷失如今得見\n4. 曾盲目今看清\n5. 鎖鏈盡斷我一身輕",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

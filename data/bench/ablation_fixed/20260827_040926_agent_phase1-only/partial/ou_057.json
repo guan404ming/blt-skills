@@ -1,0 +1,89 @@
+{
+  "id": "ou_057",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    12,
+    8,
+    9,
+    9
+  ],
+  "tgt_syl": [
+    9,
+    12,
+    8,
+    9,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "5/5",
+  "translations": [
+    "你知道交易没人在乎",
+    "又一个需要爱孩子伤心故事",
+    "藏住秘密盖好好好",
+    "我们不需要再割割割",
+    "但你无法藏一颗玻璃"
+  ],
+  "time_seconds": 117.45,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 21,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.062079699999999995,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 2570,
+      "cache_read_input_tokens": 237867,
+      "output_tokens": 6617,
+      "output_tokens_details": {
+        "thinking_tokens": 5552
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2570,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 5417,
+          "cache_read_input_tokens": 30771,
+          "cache_creation_input_tokens": 617,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 617
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Extracting constraints from source lines in en-us:\n\n**Syllable counts extracted:**\n- Line 1: 9 syllables\n- Line 2: 12 syllables\n- Line 3: 8 syllables\n- Line 4: 9 syllables\n- Line 5: 9 syllables\n\n**Rhyme scheme:** ABCDE (no rhymes required)\n\n**Word-level patterns:**\n- Line 1: [1, 1, 1, 1, 1, 1, 1, 1, 1]\n- Line 2: [1, 3, 2, 1, 1, 2, 1, 1]\n- Line 3: [1, 1, 1, 2, 1, 1, 1]\n- Line 4: [1, 1, 1, 3, 1, 1, 1]\n- Line 5: [1, 1, 1, 1, 1, 1, 1, 1, 1]\n\n---\n\n## Phase 1 Translation\n\n1. 你知道交易没人在乎\n2. 又一个需要爱孩子伤心故事\n3. 藏住秘密盖好好好\n4. 我们不需要再割割割\n5. 但你无法藏一颗玻璃",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

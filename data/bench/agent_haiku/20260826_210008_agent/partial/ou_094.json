@@ -1,0 +1,88 @@
+{
+  "id": "ou_094",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    20,
+    7,
+    10,
+    11,
+    20
+  ],
+  "tgt_syl": [
+    20,
+    7,
+    10,
+    11,
+    20
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "一天一个月 我们已相处好一年 这就像永远的缘",
+    "屋顶之下 我们起",
+    "在写着诗 关于我们的圆",
+    "在这温暖房间 我逐渐觉悟",
+    "相遇其实就是妙缘分 多值得好好庆贺这两个人"
+  ],
+  "time_seconds": 199.21,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 40,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 19,
+    "cost_usd": 0.19479310000000005,
+    "usage": {
+      "input_tokens": 148,
+      "cache_creation_input_tokens": 24016,
+      "cache_read_input_tokens": 649081,
+      "output_tokens": 16341,
+      "output_tokens_details": {
+        "thinking_tokens": 14172
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24016,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 174,
+          "cache_read_input_tokens": 46956,
+          "cache_creation_input_tokens": 469,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 469
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 一天一个月 我们已相处好一年 这就像永远的缘\n2. 屋顶之下 我们起\n3. 在写着诗 关于我们的圆\n4. 在这温暖房间 我逐渐觉悟\n5. 相遇其实就是妙缘分 多值得好好庆贺这两个人",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

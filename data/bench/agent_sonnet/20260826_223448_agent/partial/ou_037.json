@@ -1,0 +1,88 @@
+{
+  "id": "ou_037",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    3,
+    5,
+    12,
+    12
+  ],
+  "tgt_syl": [
+    4,
+    3,
+    5,
+    12,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "人行道上",
+    "通向哪",
+    "每晚都过去",
+    "他有我喜欢那男孩般的样子",
+    "我是建筑师我正在画着方案"
+  ],
+  "time_seconds": 97.7,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 21,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 4
+    },
+    "num_turns": 14,
+    "cost_usd": 0.21921279999999999,
+    "usage": {
+      "input_tokens": 26,
+      "cache_creation_input_tokens": 16581,
+      "cache_read_input_tokens": 569884,
+      "output_tokens": 3886,
+      "output_tokens_details": {
+        "thinking_tokens": 1967
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16581,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 76,
+          "cache_read_input_tokens": 47657,
+          "cache_creation_input_tokens": 311,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 311
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass. Final translation.\n\n1. 人行道上\n2. 通向哪\n3. 每晚都过去\n4. 他有我喜欢那男孩般的样子\n5. 我是建筑师我正在画着方案",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

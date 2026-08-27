@@ -1,0 +1,88 @@
+{
+  "id": "ou_034",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.3157894736842105,
+  "src_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "tgt_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "src_rhyme": "ABBAC",
+  "tgt_rhyme": "AABCA",
+  "match": "5/5",
+  "translations": [
+    "我说我爱你",
+    "我只想你明白我心意",
+    "当我握你的手",
+    "因为我想要",
+    "我生在疑惑的世界里"
+  ],
+  "time_seconds": 73.06,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 33,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 17
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 16,
+      "lyrics-validator": 1
+    },
+    "num_turns": 20,
+    "cost_usd": 0.061807499999999994,
+    "usage": {
+      "input_tokens": 84,
+      "cache_creation_input_tokens": 5427,
+      "cache_read_input_tokens": 312745,
+      "output_tokens": 3919,
+      "output_tokens_details": {
+        "thinking_tokens": 1821
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5427,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 98,
+          "cache_read_input_tokens": 33541,
+          "cache_creation_input_tokens": 535,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 535
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我说我爱你\n2. 我只想你明白我心意\n3. 当我握你的手\n4. 因为我想要\n5. 我生在疑惑的世界里",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

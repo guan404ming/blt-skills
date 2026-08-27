@@ -1,0 +1,88 @@
+{
+  "id": "ou_073",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "src_rhyme": "ABBCB",
+  "tgt_rhyme": "ABBCB",
+  "match": "5/5",
+  "translations": [
+    "你身上迷人香气让我深深沉醉",
+    "带走我的一切我只需要拥有你",
+    "我能去哪里",
+    "其他男人们的目光",
+    "我愿意将我的一切给你"
+  ],
+  "time_seconds": 66.92,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.2979125,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 13861,
+      "cache_read_input_tokens": 210415,
+      "output_tokens": 2161,
+      "output_tokens_details": {
+        "thinking_tokens": 1095
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13861,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 76,
+          "cache_read_input_tokens": 33691,
+          "cache_creation_input_tokens": 337,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 337
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你身上迷人香气让我深深沉醉\n2. 带走我的一切我只需要拥有你\n3. 我能去哪里\n4. 其他男人们的目光\n5. 我愿意将我的一切给你",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

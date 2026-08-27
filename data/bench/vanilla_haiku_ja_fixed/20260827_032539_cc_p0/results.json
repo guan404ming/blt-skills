@@ -1,0 +1,1325 @@
+{
+  "method": "cc-skills-p0",
+  "date": "2026-08-27T04:09:26.093214",
+  "n": 30,
+  "seed": 42,
+  "avg_ser": 0.47333333333333333,
+  "avg_scre": 0.4318097643097642,
+  "avg_ari": 0.41002178649237475,
+  "avg_time": 254.52599999999995,
+  "results": [
+    {
+      "id": "ou_001",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        9,
+        6,
+        6,
+        5
+      ],
+      "tgt_syl": [
+        10,
+        9,
+        6,
+        6,
+        5
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "初めて知る想いを",
+        "空にただ自由ね",
+        "そして君に",
+        "光り君に",
+        "無いのです"
+      ],
+      "time_seconds": 182.87,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 182.873,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_002",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        7,
+        9,
+        7,
+        6
+      ],
+      "tgt_syl": [
+        5,
+        7,
+        9,
+        7,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABACD",
+      "match": "5/5",
+      "translations": [
+        "探索へ",
+        "星と朝日に",
+        "瞳を見開いて",
+        "未知で満ちてる",
+        "落ち着きなよ"
+      ],
+      "time_seconds": 157.27,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 157.269,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_003",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.8666666666666666,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        4,
+        4,
+        12,
+        12
+      ],
+      "tgt_syl": [
+        7,
+        5,
+        6,
+        18,
+        19
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCD",
+      "match": "0/5",
+      "translations": [
+        "心ときめく",
+        "運命だ",
+        "ああ、一緒に",
+        "もう疲れた？両手を伸ばしてくれない？",
+        "抱きたいなら、なぜ握りこぶしを握るの？"
+      ],
+      "time_seconds": 14.73,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 14.726,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_004",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.6051515151515152,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        10,
+        12,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        16,
+        9,
+        17,
+        16,
+        21
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCB",
+      "match": "0/5",
+      "translations": [
+        "準備はいいか? 時間は戻らない",
+        "理由なく飛びたい",
+        "世界の果てがどんなに寂しくても",
+        "確実に君の側に僕がいる",
+        "前に言ったように、どんなに広い世界でも"
+      ],
+      "time_seconds": 13.54,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 13.54,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_005",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        14,
+        7,
+        9,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        14,
+        7,
+        9,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "忘れたいけど忘れられない",
+        "暗夜待つだけ",
+        "かつての想いかな",
+        "君手握りぬる",
+        "許し忍ぶる毎度と"
+      ],
+      "time_seconds": 895.94,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 175,
+        "rhyme-analyzer": 35,
+        "syllable-pattern-analyzer": 11
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 895.94,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_006",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.6463636363636364,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        11,
+        12,
+        6,
+        11
+      ],
+      "tgt_syl": [
+        13,
+        19,
+        19,
+        13,
+        16
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABACB",
+      "match": "0/5",
+      "translations": [
+        "仏の前で静かに咲く",
+        "泥より出でて風と眠りに汚されず",
+        "言葉なく花咲き言葉なく花散る",
+        "そしてまたあなたと三生に",
+        "あなたへ来て早からず遅からず"
+      ],
+      "time_seconds": 13.35,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 13.345,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_007",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        11,
+        18,
+        10,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        11,
+        18,
+        10,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "砂漠は赤く沈めり",
+        "千年の孤独を解く誰かはいるか",
+        "翼の中映りて",
+        "蝋燭灯りて",
+        "風で両極回りぬ"
+      ],
+      "time_seconds": 238.41,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 238.411,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_008",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.7132539682539681,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        14,
+        15,
+        14,
+        8
+      ],
+      "tgt_syl": [
+        17,
+        17,
+        34,
+        22,
+        13
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABBB",
+      "match": "0/5",
+      "translations": [
+        "俺は青春を彼女に投げていた",
+        "夏の最盛期に弦を弾いていた",
+        "それが君の心を動かすなら、宇宙的なつながりがそこへ導く",
+        "光に逆らって歩き、要素に打たれている",
+        "短い道、起きては止まる"
+      ],
+      "time_seconds": 22.32,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 22.317,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_009",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        2,
+        3,
+        3,
+        2,
+        5
+      ],
+      "tgt_syl": [
+        2,
+        3,
+        3,
+        2,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "もし",
+        "ずっと",
+        "思う",
+        "君",
+        "あのすべて"
+      ],
+      "time_seconds": 237.34,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 237.34,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_010",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 0.0,
+      "src_syl": [
+        14,
+        3,
+        4,
+        3,
+        3
+      ],
+      "tgt_syl": [
+        14,
+        3,
+        4,
+        3,
+        3
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "5/5",
+      "translations": [
+        "チャンスをつかもう常に今ね",
+        "欲しい",
+        "今ここ",
+        "満ちて",
+        "満たす"
+      ],
+      "time_seconds": 187.89,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 187.891,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_011",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        9,
+        10,
+        7,
+        6,
+        6
+      ],
+      "tgt_syl": [
+        9,
+        10,
+        7,
+        6,
+        6
+      ],
+      "src_rhyme": "ABCDD",
+      "tgt_rhyme": "ABCDD",
+      "match": "5/5",
+      "translations": [
+        "ずっと心にいる",
+        "ママへうたいたいのよ",
+        "見ぬ母のため",
+        "愛してたな",
+        "話さぬかな"
+      ],
+      "time_seconds": 187.7,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 187.698,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_012",
+      "artist": "ou-test",
+      "ser": 0.2,
+      "scre": 0.05,
+      "ari": 0.0,
+      "src_syl": [
+        11,
+        8,
+        11,
+        12,
+        8
+      ],
+      "tgt_syl": [
+        11,
+        8,
+        11,
+        12,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDB",
+      "match": "4/5",
+      "translations": [
+        "心に美しい雲",
+        "食べ飲みに君と",
+        "民謡歌い続ける",
+        "空の最高な姿勢ね",
+        "ヨラホラント"
+      ],
+      "time_seconds": 249.24,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 249.241,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_013",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.5683333333333334,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "tgt_syl": [
+        9,
+        9,
+        9,
+        10,
+        11
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCBD",
+      "match": "0/5",
+      "translations": [
+        "暗い夜の中で",
+        "星が空を照らす",
+        "自由に飛ぶ彼ら",
+        "あなたと私のよう",
+        "みんな時々寂しい"
+      ],
+      "time_seconds": 16.01,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 16.01,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_014",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        9,
+        6,
+        5,
+        9
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABBAC",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 83.11,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 83.112,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_015",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        1,
+        3,
+        4,
+        5
+      ],
+      "tgt_syl": [
+        13,
+        1,
+        3,
+        4,
+        5
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "ボスが僕をクビにしてもね",
+        "木",
+        "石よ",
+        "強いよ",
+        "エマリーだ"
+      ],
+      "time_seconds": 563.05,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 563.046,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_016",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.5596520146520146,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        16,
+        13,
+        7,
+        15
+      ],
+      "tgt_syl": [
+        16,
+        18,
+        22,
+        12,
+        25
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCA",
+      "match": "0/5",
+      "translations": [
+        "月は川のロマンチックな瞳",
+        "一人杯を挙げ、柳の簾が開く",
+        "この人生に敬意を払い、春風の外に",
+        "花はまだしおれていない",
+        "ああ、我らの冒険が始まってからもう何年だ"
+      ],
+      "time_seconds": 627.83,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 627.826,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_017",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.1777777777777776,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        12,
+        8,
+        9,
+        9
+      ],
+      "tgt_syl": [
+        17,
+        26,
+        20,
+        19,
+        20
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDA",
+      "match": "0/5",
+      "translations": [
+        "あなたはわかってた、誰も気にしない",
+        "またもう一人泣きついてくる、涙話を握ってた",
+        "あなたの秘密をかくして、かくしてかくして",
+        "もう一つの傷もいらない、傷も傷も",
+        "けれどあなたはガラスの心は隠せない"
+      ],
+      "time_seconds": 51.6,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 51.605,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_018",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.396153846153846,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        8,
+        13,
+        4,
+        8
+      ],
+      "tgt_syl": [
+        15,
+        21,
+        29,
+        3,
+        23
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCD",
+      "match": "0/5",
+      "translations": [
+        "私たちは泳ぎに行きました",
+        "太陽の炎が私の肌を焼きました",
+        "だからこそ、私たちは一緒にプールに行くことはありません",
+        "二度と",
+        "その場所には数え切れないほどの列があります"
+      ],
+      "time_seconds": 621.09,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 621.093,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_019",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        5,
+        13,
+        4,
+        3
+      ],
+      "tgt_syl": [
+        4,
+        5,
+        13,
+        4,
+        3
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "シャツなし",
+        "君だけだ",
+        "何も君に言いたくないね",
+        "冷え込む",
+        "その子"
+      ],
+      "time_seconds": 205.33,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 205.332,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_020",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        7,
+        11,
+        5,
+        11
+      ],
+      "tgt_syl": [
+        6,
+        7,
+        11,
+        5,
+        11
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABBCD",
+      "match": "5/5",
+      "translations": [
+        "何かいいな",
+        "調子悪いね",
+        "淋し晩ベッドいてね",
+        "君欲しい",
+        "ずっと君を探してる"
+      ],
+      "time_seconds": 547.88,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 547.88,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_021",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.8822222222222221,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        7,
+        9,
+        6,
+        9
+      ],
+      "tgt_syl": [
+        13,
+        14,
+        18,
+        10,
+        22
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAABA",
+      "match": "0/5",
+      "translations": [
+        "黙ったままの時はあるか",
+        "毎日を前へ進む時は",
+        "アイシャドウと口紅の時間があるか",
+        "髪をカールする時",
+        "ハイストリートでショッピングする時間があるか"
+      ],
+      "time_seconds": 52.97,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 52.968,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_022",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        8,
+        10,
+        12,
+        12,
+        10
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 373.72,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 373.715,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_023",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        13,
+        15,
+        14,
+        15
+      ],
+      "tgt_syl": [
+        6,
+        13,
+        15,
+        14,
+        15
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABBCD",
+      "match": "5/5",
+      "translations": [
+        "ゲーム外す",
+        "私は誰かといつ自問",
+        "私は誰かと他人の期待",
+        "誰かと権威なき定義かね",
+        "誰も自分ならずば静かかも"
+      ],
+      "time_seconds": 846.3,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 100,
+        "rhyme-analyzer": 20,
+        "syllable-pattern-analyzer": 6
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 846.302,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_024",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        10,
+        11,
+        11,
+        10
+      ],
+      "tgt_syl": [
+        9,
+        10,
+        11,
+        11,
+        10
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "君の恋人です",
+        "もう一度生きるぞか",
+        "君愛す今もずっと",
+        "あなたの愛は無二もの",
+        "あなただけ生きたまえ"
+      ],
+      "time_seconds": 262.51,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 262.507,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_025",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        3,
+        7,
+        10,
+        13,
+        7
+      ],
+      "tgt_syl": [
+        3,
+        7,
+        10,
+        13,
+        7
+      ],
+      "src_rhyme": "AAABA",
+      "tgt_rhyme": "AAABA",
+      "match": "5/5",
+      "translations": [
+        "貝子",
+        "静かに貝子",
+        "謎めいた、あの貝子",
+        "不安がゆっくり歩き去る",
+        "歩きぬ、貝子"
+      ],
+      "time_seconds": 155.17,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 155.169,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_026",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.1099999999999999,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        8,
+        6,
+        5,
+        8
+      ],
+      "tgt_syl": [
+        6,
+        12,
+        15,
+        9,
+        14
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCC",
+      "match": "0/5",
+      "translations": [
+        "成長する",
+        "もし逃げたら救われるか?",
+        "いつあなたが消えるか分からない",
+        "言ってくれ、待てない",
+        "速く学んでいて、戻れない"
+      ],
+      "time_seconds": 372.61,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 80,
+        "rhyme-analyzer": 16,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 372.607,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_027",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.2464102564102564,
+      "ari": 0.4117647058823529,
+      "src_syl": [
+        12,
+        5,
+        4,
+        13,
+        3
+      ],
+      "tgt_syl": [
+        20,
+        11,
+        11,
+        21,
+        9
+      ],
+      "src_rhyme": "ABCAD",
+      "tgt_rhyme": "ABAAC",
+      "match": "0/5",
+      "translations": [
+        "その場に立ってて何も言えない顔してる",
+        "でもその顔知ってるよ",
+        "そしてここに俺がいる",
+        "俺に来るのが分かってることに身構えてる",
+        "なんてもったいない"
+      ],
+      "time_seconds": 25.45,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 25.454,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_028",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        3,
+        6,
+        6,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        3,
+        6,
+        6,
+        5,
+        5
+      ],
+      "src_rhyme": "ABACD",
+      "tgt_rhyme": "ABACD",
+      "match": "5/5",
+      "translations": [
+        "言うな",
+        "気づいている",
+        "そうはいかな",
+        "終わりだと",
+        "してはいけ"
+      ],
+      "time_seconds": 213.9,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 213.897,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_029",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        11,
+        8,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        5,
+        11,
+        8,
+        5,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "思うなよ",
+        "涙持ち帰りません",
+        "誰も知らないで",
+        "今ここに",
+        "泣きました"
+      ],
+      "time_seconds": 198.61,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 45,
+        "rhyme-analyzer": 9,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 198.611,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_030",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.1323076923076925,
+      "ari": 0.0,
+      "src_syl": [
+        13,
+        12,
+        3,
+        10,
+        13
+      ],
+      "tgt_syl": [
+        19,
+        26,
+        7,
+        27,
+        26
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCB",
+      "match": "0/5",
+      "translations": [
+        "私の意識の境界に到達して",
+        "雲の縁に座る父が煙草を吸っているのが見える",
+        "いつものように",
+        "山から、川から、湖から、海からやってくる者たち",
+        "今は夜と台所とセックスに限定されている"
+      ],
+      "time_seconds": 18.04,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 18.039,
+        "phase0_calls": 1
+      }
+    }
+  ],
+  "skill_counts": {
+    "syllable-counter": 450,
+    "rhyme-analyzer": 90,
+    "syllable-pattern-analyzer": 30
+  }
+}

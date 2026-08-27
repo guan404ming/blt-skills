@@ -1,0 +1,89 @@
+{
+  "id": "ou_054",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.10666666666666666,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    3,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    10,
+    4,
+    11,
+    11,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "3/5",
+  "translations": [
+    "凝視千層冰封寒意無窮",
+    "凍結時光",
+    "卻有新的生命靜靜被孕育",
+    "冬日最平凡的雪景蕭條美",
+    "此刻最偉大的奇蹟漸次綻放"
+  ],
+  "time_seconds": 66.3,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0564063,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 7724,
+      "cache_read_input_tokens": 142543,
+      "output_tokens": 5332,
+      "output_tokens_details": {
+        "thinking_tokens": 4286
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7724,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 3872,
+          "cache_read_input_tokens": 30694,
+          "cache_creation_input_tokens": 439,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 439
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 凝視千層冰封寒意無窮\n2. 凍結時光\n3. 卻有新的生命靜靜被孕育\n4. 冬日最平凡的雪景蕭條美\n5. 此刻最偉大的奇蹟漸次綻放",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

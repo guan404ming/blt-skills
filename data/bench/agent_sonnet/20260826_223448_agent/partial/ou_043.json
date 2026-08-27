@@ -1,0 +1,88 @@
+{
+  "id": "ou_043",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    13,
+    12,
+    7,
+    9
+  ],
+  "tgt_syl": [
+    11,
+    13,
+    12,
+    7,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "像道路一样长，丑得像蟾蜍",
+    "美丽得像挂在墙壁上的一幅画",
+    "像家人般坚强，想多强就多强",
+    "亮如白昼，轻如戏",
+    "硬得像钉，壮得像巨鲸"
+  ],
+  "time_seconds": 132.26,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 38,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 20
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 20,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 23,
+    "cost_usd": 0.24630200000000002,
+    "usage": {
+      "input_tokens": 40,
+      "cache_creation_input_tokens": 5896,
+      "cache_read_input_tokens": 915190,
+      "output_tokens": 3960,
+      "output_tokens_details": {
+        "thinking_tokens": 947
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5896,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 114,
+          "cache_read_input_tokens": 48516,
+          "cache_creation_input_tokens": 350,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 350
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints check. 呈翻译结果:\n\n1. 像道路一样长，丑得像蟾蜍\n2. 美丽得像挂在墙壁上的一幅画\n3. 像家人般坚强，想多强就多强\n4. 亮如白昼，轻如戏\n5. 硬得像钉，壮得像巨鲸",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ou_052",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.4140934065934066,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    16,
+    13,
+    7,
+    15
+  ],
+  "tgt_syl": [
+    8,
+    9,
+    7,
+    3,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDC",
+  "match": "0/5",
+  "translations": [
+    "月是河的浪漫眼眸",
+    "我独举杯盏，柳帘卷开",
+    "敬此生，春风拂面",
+    "花未衰",
+    "啊，冒险之初已经多年"
+  ],
+  "time_seconds": 10.28,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 10.279,
+    "phase0_calls": 1
+  }
+}

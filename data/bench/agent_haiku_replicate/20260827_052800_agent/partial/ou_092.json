@@ -1,0 +1,90 @@
+{
+  "id": "ou_092",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "tgt_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "我只是害怕我会深深爱上你",
+    "我不敢让自己走太近",
+    "我害怕我自己没有足够给你",
+    "爱你也同样需要许多的力量",
+    "也许某天我就无法控制住在乎"
+  ],
+  "time_seconds": 106.1,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 38,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.12218549999999999,
+    "usage": {
+      "input_tokens": 140,
+      "cache_creation_input_tokens": 14802,
+      "cache_read_input_tokens": 554665,
+      "output_tokens": 7395,
+      "output_tokens_details": {
+        "thinking_tokens": 5379
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14802,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 204,
+          "cache_read_input_tokens": 37871,
+          "cache_creation_input_tokens": 340,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 340
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我只是害怕我会深深爱上你\n2. 我不敢让自己走太近\n3. 我害怕我自己没有足够给你\n4. 爱你也同样需要许多的力量\n5. 也许某天我就无法控制住在乎",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

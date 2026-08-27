@@ -1,0 +1,88 @@
+{
+  "id": "ou_026",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    8,
+    7,
+    8,
+    16
+  ],
+  "tgt_syl": [
+    10,
+    8,
+    7,
+    8,
+    16
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "在众人互相拥挤的群中",
+    "就是令我失望的她",
+    "当我们急忙掠过",
+    "我看不见你的脸庞",
+    "所以在路上我幻想着我们相聚的时刻"
+  ],
+  "time_seconds": 91.42,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 41,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.1058624,
+    "usage": {
+      "input_tokens": 140,
+      "cache_creation_input_tokens": 12775,
+      "cache_read_input_tokens": 539974,
+      "output_tokens": 5235,
+      "output_tokens_details": {
+        "thinking_tokens": 3146
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12775,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 111,
+          "cache_read_input_tokens": 35740,
+          "cache_creation_input_tokens": 444,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 444
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 在众人互相拥挤的群中\n2. 就是令我失望的她\n3. 当我们急忙掠过\n4. 我看不见你的脸庞\n5. 所以在路上我幻想着我们相聚的时刻",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

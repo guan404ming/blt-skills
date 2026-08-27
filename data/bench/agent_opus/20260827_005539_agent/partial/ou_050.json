@@ -1,0 +1,87 @@
+{
+  "id": "ou_050",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "tgt_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "相處比相愛還難我們試過你是王我卻不是后",
+    "我們一起去碧潭划那天鵝船你卻說你暈船",
+    "我們一起上陽明山去看那夜景你說那真的好美好美",
+    "我們去看五月天演唱會你感動哭",
+    "一起走過的那些日子彷彿就在昨天還在眼前"
+  ],
+  "time_seconds": 64.15,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.3153145,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 14535,
+      "cache_read_input_tokens": 212239,
+      "output_tokens": 2551,
+      "output_tokens_details": {
+        "thinking_tokens": 955
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14535,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 129,
+          "cache_read_input_tokens": 34285,
+          "cache_creation_input_tokens": 417,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 417
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 相處比相愛還難我們試過你是王我卻不是后\n2. 我們一起去碧潭划那天鵝船你卻說你暈船\n3. 我們一起上陽明山去看那夜景你說那真的好美好美\n4. 我們去看五月天演唱會你感動哭\n5. 一起走過的那些日子彷彿就在昨天還在眼前",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ou_089",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABCD",
+  "match": "5/5",
+  "translations": [
+    "他可会笑而自傲",
+    "造福特的他把你造",
+    "淬硬我意志之甲",
+    "把智慧填入弹匣中",
+    "身尚未启程心已先抵达我之心神正陷于交战"
+  ],
+  "time_seconds": 100.51,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.37824500000000005,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 15816,
+      "cache_read_input_tokens": 245010,
+      "output_tokens": 3900,
+      "output_tokens_details": {
+        "thinking_tokens": 2471
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15816,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 81,
+          "cache_read_input_tokens": 34122,
+          "cache_creation_input_tokens": 1861,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1861
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 他可会笑而自傲\n2. 造福特的他把你造\n3. 淬硬我意志之甲\n4. 把智慧填入弹匣中\n5. 身尚未启程心已先抵达我之心神正陷于交战",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

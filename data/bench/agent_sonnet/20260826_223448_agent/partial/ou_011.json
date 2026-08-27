@@ -1,0 +1,88 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我想要忘记 但终究还是无法忘记",
+    "只等到黑夜降临",
+    "梦见曾经爱过的女孩",
+    "松手 我再牵你的手",
+    "每一次我选择原谅与坚忍"
+  ],
+  "time_seconds": 66.18,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.13938260000000002,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 15045,
+      "cache_read_input_tokens": 250193,
+      "output_tokens": 2914,
+      "output_tokens_details": {
+        "thinking_tokens": 1343
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15045,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 92,
+          "cache_read_input_tokens": 45482,
+          "cache_creation_input_tokens": 950,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 950
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 我想要忘记 但终究还是无法忘记\n2. 只等到黑夜降临\n3. 梦见曾经爱过的女孩\n4. 松手 我再牵你的手\n5. 每一次我选择原谅与坚忍",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

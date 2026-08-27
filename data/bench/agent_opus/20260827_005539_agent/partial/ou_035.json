@@ -1,0 +1,87 @@
+{
+  "id": "ou_035",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "tgt_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "你装好行囊摘下墙上的照片",
+    "当我问起你这一去要多久",
+    "你说疯狂世界已崩塌",
+    "夏日已尽落叶飘满眼前",
+    "又一个冬天正在路上"
+  ],
+  "time_seconds": 113.77,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.18294799999999997,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 3896,
+      "cache_read_input_tokens": 188906,
+      "output_tokens": 1979,
+      "output_tokens_details": {
+        "thinking_tokens": 1146
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 3896,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 85,
+          "cache_read_input_tokens": 33703,
+          "cache_creation_input_tokens": 322,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 322
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你装好行囊摘下墙上的照片\n2. 当我问起你这一去要多久\n3. 你说疯狂世界已崩塌\n4. 夏日已尽落叶飘满眼前\n5. 又一个冬天正在路上",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

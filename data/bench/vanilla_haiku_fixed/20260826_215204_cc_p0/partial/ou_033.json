@@ -1,0 +1,44 @@
+{
+  "id": "ou_033",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.21666666666666665,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    6,
+    6,
+    6,
+    8,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    9,
+    8,
+    10,
+    8
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCDD",
+  "match": "2/5",
+  "translations": [
+    "星辰点亮天空",
+    "我们看他们自由飞翔",
+    "那就像你和我一样",
+    "每个人有时都感到孤独",
+    "但我愿意走千里路"
+  ],
+  "time_seconds": 8.89,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 8.893,
+    "phase0_calls": 1
+  }
+}

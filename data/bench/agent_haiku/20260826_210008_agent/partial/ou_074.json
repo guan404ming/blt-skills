@@ -1,0 +1,88 @@
+{
+  "id": "ou_074",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    10,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    11,
+    11,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我也是你的甜蜜爱人",
+    "若我再活一次我的人生",
+    "我会像以前一样永远爱你",
+    "你的爱是谁都无法代替的",
+    "我无法想象和别人生活"
+  ],
+  "time_seconds": 70.08,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 26,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.05183300000000001,
+    "usage": {
+      "input_tokens": 50,
+      "cache_creation_input_tokens": 6257,
+      "cache_read_input_tokens": 187090,
+      "output_tokens": 4112,
+      "output_tokens_details": {
+        "thinking_tokens": 2465
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6257,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 121,
+          "cache_read_input_tokens": 34521,
+          "cache_creation_input_tokens": 403,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 403
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我也是你的甜蜜爱人\n2. 若我再活一次我的人生\n3. 我会像以前一样永远爱你\n4. 你的爱是谁都无法代替的\n5. 我无法想象和别人生活",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

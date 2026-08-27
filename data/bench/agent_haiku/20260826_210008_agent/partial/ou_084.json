@@ -1,0 +1,88 @@
+{
+  "id": "ou_084",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    8,
+    3,
+    4,
+    4
+  ],
+  "tgt_syl": [
+    6,
+    8,
+    3,
+    4,
+    4
+  ],
+  "src_rhyme": "ABCBD",
+  "tgt_rhyme": "ABCBD",
+  "match": "5/5",
+  "translations": [
+    "挺难以形容的",
+    "是啦确实我觉得对",
+    "当他裸",
+    "他让你醉",
+    "他凶恶吗"
+  ],
+  "time_seconds": 90.67,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0830058,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 13794,
+      "cache_read_input_tokens": 211728,
+      "output_tokens": 6837,
+      "output_tokens_details": {
+        "thinking_tokens": 5011
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13794,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 127,
+          "cache_read_input_tokens": 36827,
+          "cache_creation_input_tokens": 376,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 376
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 挺难以形容的\n2. 是啦确实我觉得对\n3. 当他裸\n4. 他让你醉\n5. 他凶恶吗",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

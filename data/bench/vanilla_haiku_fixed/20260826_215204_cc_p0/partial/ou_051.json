@@ -1,0 +1,44 @@
+{
+  "id": "ou_051",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.14615384615384616,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    12,
+    11,
+    13,
+    12
+  ],
+  "tgt_syl": [
+    13,
+    10,
+    11,
+    10,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "可惜他们的空杯在月光下静坐",
+    "他们在漫漫春秋里漂泊",
+    "被爱的人离开世界最匆匆",
+    "少年清风吹入似霜的发",
+    "幸好有人行遍冷暖"
+  ],
+  "time_seconds": 27.47,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 70,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 27.466,
+    "phase0_calls": 1
+  }
+}

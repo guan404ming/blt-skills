@@ -1,0 +1,88 @@
+{
+  "id": "ou_098",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "tgt_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "友谊是个誓言坚定如诺亚方舟",
+    "我只是望着大海",
+    "等待着永恒眼中泪光朦胧",
+    "这些年里我买了车表相机",
+    "但我发现有东西金钱买不到"
+  ],
+  "time_seconds": 52.23,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 17,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.131994,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 14473,
+      "cache_read_input_tokens": 250790,
+      "output_tokens": 2392,
+      "output_tokens_details": {
+        "thinking_tokens": 862
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14473,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 93,
+          "cache_read_input_tokens": 45516,
+          "cache_creation_input_tokens": 344,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 344
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All check pass.\n\n1. 友谊是个誓言坚定如诺亚方舟\n2. 我只是望着大海\n3. 等待着永恒眼中泪光朦胧\n4. 这些年里我买了车表相机\n5. 但我发现有东西金钱买不到",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

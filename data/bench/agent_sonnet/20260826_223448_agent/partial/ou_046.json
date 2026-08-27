@@ -1,0 +1,88 @@
+{
+  "id": "ou_046",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    7,
+    15,
+    18,
+    10
+  ],
+  "tgt_syl": [
+    19,
+    7,
+    15,
+    18,
+    10
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "这肉身凡世让离散之人受尽了千般艰辛苦难",
+    "泪痕纵横皱纹起",
+    "我已忘了家在何方但你却仍在等待",
+    "愿能再次遇见那书生与那习武健美的女郎",
+    "愿能再次看到那棵垂杨"
+  ],
+  "time_seconds": 88.5,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 15,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 6,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 9,
+    "cost_usd": 0.17708780000000002,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 16601,
+      "cache_read_input_tokens": 340659,
+      "output_tokens": 4252,
+      "output_tokens_details": {
+        "thinking_tokens": 2500
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16601,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 123,
+          "cache_read_input_tokens": 46900,
+          "cache_creation_input_tokens": 1088,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1088
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass. Final translation:\n\n1. 这肉身凡世让离散之人受尽了千般艰辛苦难\n2. 泪痕纵横皱纹起\n3. 我已忘了家在何方但你却仍在等待\n4. 愿能再次遇见那书生与那习武健美的女郎\n5. 愿能再次看到那棵垂杨",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

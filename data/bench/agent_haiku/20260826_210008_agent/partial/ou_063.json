@@ -1,0 +1,88 @@
+{
+  "id": "ou_063",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    7,
+    7,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    7,
+    7,
+    15,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "化作漫天呼嚎暴雪",
+    "我心深处的荒野",
+    "似曾许下的誓言",
+    "融入光芒，从深不可测的深渊中浮现",
+    "睁开你眼睛"
+  ],
+  "time_seconds": 110.12,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 34,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 17
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 20,
+    "cost_usd": 0.10016939999999999,
+    "usage": {
+      "input_tokens": 84,
+      "cache_creation_input_tokens": 14885,
+      "cache_read_input_tokens": 321404,
+      "output_tokens": 7635,
+      "output_tokens_details": {
+        "thinking_tokens": 5078
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14885,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 196,
+          "cache_read_input_tokens": 37936,
+          "cache_creation_input_tokens": 358,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 358
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 化作漫天呼嚎暴雪\n2. 我心深处的荒野\n3. 似曾许下的誓言\n4. 融入光芒，从深不可测的深渊中浮现\n5. 睁开你眼睛",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

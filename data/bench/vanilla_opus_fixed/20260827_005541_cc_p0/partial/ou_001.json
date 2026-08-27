@@ -1,0 +1,44 @@
+{
+  "id": "ou_001",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.13725490196078433,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    12,
+    11,
+    6,
+    17
+  ],
+  "tgt_syl": [
+    19,
+    16,
+    11,
+    6,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "3/5",
+  "translations": [
+    "讓我們靠近美麗的善意，感受並分享快樂時光",
+    "為所有的和平祈禱，我們深深感恩，感恩",
+    "啊，喔，啊，喔，啊，潔白海螺吹響",
+    "彩虹親吻天空",
+    "啊，喔，啊，喔，啊，誰在喜、怒、哀、樂"
+  ],
+  "time_seconds": 7.64,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 7.638,
+    "phase0_calls": 1
+  }
+}

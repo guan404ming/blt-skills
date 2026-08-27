@@ -1,0 +1,87 @@
+{
+  "id": "ou_086",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "tgt_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "src_rhyme": "ABCCC",
+  "tgt_rhyme": "ABCCC",
+  "match": "5/5",
+  "translations": [
+    "啃完肉骨头后",
+    "摇尾巴",
+    "点头对我",
+    "亲爱总统先生请你来陪陪我",
+    "假装我们只是两个人你并不高过我"
+  ],
+  "time_seconds": 59.61,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.27930900000000003,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 13309,
+      "cache_read_input_tokens": 209948,
+      "output_tokens": 1647,
+      "output_tokens_details": {
+        "thinking_tokens": 664
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13309,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 71,
+          "cache_read_input_tokens": 33171,
+          "cache_creation_input_tokens": 305,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 305
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 啃完肉骨头后\n2. 摇尾巴\n3. 点头对我\n4. 亲爱总统先生请你来陪陪我\n5. 假装我们只是两个人你并不高过我",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

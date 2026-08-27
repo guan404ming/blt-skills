@@ -1,0 +1,44 @@
+{
+  "id": "ou_050",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.17458039036986403,
+  "ari": 0.0,
+  "src_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "tgt_syl": [
+    21,
+    16,
+    15,
+    18,
+    18
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCD",
+  "match": "0/5",
+  "translations": [
+    "相處比相愛還難，我們都努力過；你是王，但我不是后",
+    "我們去碧潭划天鵝船，你卻說你會暈船",
+    "我們去陽明山看夜景，你說真的好美",
+    "我們去看五月天的演唱會，你感動到掉眼淚",
+    "一起走過的日子彷彿就在昨天，還歷歷在目"
+  ],
+  "time_seconds": 12.65,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 12.651,
+    "phase0_calls": 1
+  }
+}

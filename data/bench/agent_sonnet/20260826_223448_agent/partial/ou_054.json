@@ -1,0 +1,86 @@
+{
+  "id": "ou_054",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    3,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    10,
+    3,
+    11,
+    11,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "凝望千层冰雪堆叠眼前",
+    "封时光",
+    "然而新生命正静静地滋长",
+    "隆冬里最平凡普通的雪景",
+    "此时此刻最伟大的奇迹"
+  ],
+  "time_seconds": 85.57,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 15,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      ".claude": 6,
+      "2>": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.154985,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 14946,
+      "cache_read_input_tokens": 338345,
+      "output_tokens": 2750,
+      "output_tokens_details": {
+        "thinking_tokens": 1110
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14946,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 89,
+          "cache_read_input_tokens": 45942,
+          "cache_creation_input_tokens": 391,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 391
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 凝望千层冰雪堆叠眼前\n2. 封时光\n3. 然而新生命正静静地滋长\n4. 隆冬里最平凡普通的雪景\n5. 此时此刻最伟大的奇迹",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

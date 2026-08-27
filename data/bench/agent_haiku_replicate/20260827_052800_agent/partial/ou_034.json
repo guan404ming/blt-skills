@@ -1,0 +1,90 @@
+{
+  "id": "ou_034",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "tgt_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "src_rhyme": "ABBAC",
+  "tgt_rhyme": "ABBAC",
+  "match": "5/5",
+  "translations": [
+    "跟你说我爱",
+    "我想让你能明白我说",
+    "当我握你手说",
+    "那就是我爱",
+    "我们生在怀疑的世界"
+  ],
+  "time_seconds": 188.26,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 42,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 14,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.1540242,
+    "usage": {
+      "input_tokens": 130,
+      "cache_creation_input_tokens": 16538,
+      "cache_read_input_tokens": 527932,
+      "output_tokens": 13605,
+      "output_tokens_details": {
+        "thinking_tokens": 11549
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16538,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 95,
+          "cache_read_input_tokens": 44869,
+          "cache_creation_input_tokens": 314,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 314
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 跟你说我爱\n2. 我想让你能明白我说\n3. 当我握你手说\n4. 那就是我爱\n5. 我们生在怀疑的世界",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

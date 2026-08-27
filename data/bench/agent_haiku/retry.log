@@ -1,0 +1,39 @@
+agent model=haiku effort=medium workers=3 n=100
+[start ] ou_043
+[start ] ou_047
+[start ] ou_057
+[retry ] ou_047 attempt 1 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_057 attempt 1 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_043 attempt 1 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_043 attempt 2 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_057 attempt 2 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_047 attempt 2 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_043 attempt 3 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_047 attempt 3 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_057 attempt 3 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_043 attempt 4 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_043 parse failed: 
+[done  ] ou_043 SER=1.000 ARI=0.000 match=0/5 turns=1 scripts=0 cost=$0.000 time=67s
+[start ] ou_061
+[retry ] ou_057 attempt 4 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_057 parse failed: 
+[done  ] ou_057 SER=1.000 ARI=0.000 match=0/5 turns=8 scripts=5 cost=$0.014 time=95s
+[start ] ou_068
+[retry ] ou_047 attempt 4 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_047 parse failed: 
+[done  ] ou_047 SER=1.000 ARI=0.000 match=0/5 turns=5 scripts=5 cost=$0.017 time=96s
+[start ] ou_099
+[retry ] ou_099 attempt 1 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_068 parse failed: 
+[done  ] ou_068 SER=1.000 ARI=0.000 match=0/5 turns=14 scripts=11 cost=$0.065 time=69s
+[done  ] ou_099 SER=0.000 ARI=1.000 match=5/5 turns=18 scripts=15 cost=$0.067 time=92s
+[done  ] ou_061 SER=0.000 ARI=1.000 match=5/5 turns=16 scripts=13 cost=$0.113 time=125s
+
+Saved data/bench/agent_haiku/20260826_210008_agent/results.json
+Saved data/bench/agent_haiku/20260826_210008_agent/report.md
+{
+  "avg_ser": 0.048,
+  "avg_scre": 0.0426,
+  "avg_ari": 0.9503,
+  "avg_time": 114.2
+}

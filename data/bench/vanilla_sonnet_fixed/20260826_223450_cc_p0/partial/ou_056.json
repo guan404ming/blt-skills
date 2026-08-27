@@ -1,0 +1,44 @@
+{
+  "id": "ou_056",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    10,
+    8,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    10,
+    8,
+    6,
+    6
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "你让我相信",
+    "宝贝你让我懂活着意义",
+    "我不再想躲藏匿迹",
+    "越来越加疯狂",
+    "摇滚金粉女郎"
+  ],
+  "time_seconds": 75.92,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 75.924,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ou_047",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.04,
+  "ari": 0.375,
+  "src_syl": [
+    10,
+    10,
+    14,
+    6,
+    7
+  ],
+  "tgt_syl": [
+    12,
+    10,
+    14,
+    6,
+    7
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABBCC",
+  "match": "4/5",
+  "translations": [
+    "黑白分明的念头都向我低头",
+    "当我穿过那无光的长廊",
+    "我虽软弱 你却像天使守在我身旁",
+    "悲伤呼唤我名",
+    "我知万物都无定"
+  ],
+  "time_seconds": 21.61,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 21.611,
+    "phase0_calls": 1
+  }
+}

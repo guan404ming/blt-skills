@@ -1,0 +1,88 @@
+{
+  "id": "ou_086",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.17647058823529413,
+  "src_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "tgt_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "src_rhyme": "ABCCC",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "吃完了肉骨头",
+    "摇尾巴",
+    "向我点头",
+    "尊敬的总统先生请与我散步",
+    "假装我们只是两人你不比我高贵的"
+  ],
+  "time_seconds": 70.13,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 30,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0825777,
+    "usage": {
+      "input_tokens": 124,
+      "cache_creation_input_tokens": 9942,
+      "cache_read_input_tokens": 453697,
+      "output_tokens": 3440,
+      "output_tokens_details": {
+        "thinking_tokens": 2054
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9942,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 152,
+          "cache_read_input_tokens": 32988,
+          "cache_creation_input_tokens": 363,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 363
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 吃完了肉骨头\n2. 摇尾巴\n3. 向我点头\n4. 尊敬的总统先生请与我散步\n5. 假装我们只是两人你不比我高贵的",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

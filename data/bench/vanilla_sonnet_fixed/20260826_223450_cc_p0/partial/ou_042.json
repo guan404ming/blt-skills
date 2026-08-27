@@ -1,0 +1,43 @@
+{
+  "id": "ou_042",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我们发现已太晚",
+    "泪水滴落我们心间",
+    "我们的相遇如此完美",
+    "我仍记得分别的时刻",
+    "紧紧拉着彼此多么舍不得与彼此分离"
+  ],
+  "time_seconds": 56.2,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 56.201,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_090",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.17647058823529413,
+  "src_syl": [
+    14,
+    18,
+    11,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    14,
+    18,
+    11,
+    9,
+    10
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCBB",
+  "match": "5/5",
+  "translations": [
+    "在这条寂静的街道上我望着月亮",
+    "我忘了是雨还是泪突然落在我的脸上啊啊",
+    "我心呢喃但什么都听不到",
+    "早上我总是在微笑啊",
+    "夜来临时我就睡不着啊"
+  ],
+  "time_seconds": 57.02,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 26,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 14
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "lyrics-validator": 1
+    },
+    "num_turns": 17,
+    "cost_usd": 0.0591102,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 10450,
+      "cache_read_input_tokens": 178132,
+      "output_tokens": 4069,
+      "output_tokens_details": {
+        "thinking_tokens": 1967
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10450,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 151,
+          "cache_read_input_tokens": 33418,
+          "cache_creation_input_tokens": 441,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 441
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 在这条寂静的街道上我望着月亮\n2. 我忘了是雨还是泪突然落在我的脸上啊啊\n3. 我心呢喃但什么都听不到\n4. 早上我总是在微笑啊\n5. 夜来临时我就睡不着啊",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

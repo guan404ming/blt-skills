@@ -1,0 +1,43 @@
+{
+  "id": "ou_017",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.1777777777777776,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    12,
+    8,
+    9,
+    9
+  ],
+  "tgt_syl": [
+    17,
+    26,
+    20,
+    19,
+    20
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDA",
+  "match": "0/5",
+  "translations": [
+    "あなたはわかってた、誰も気にしない",
+    "またもう一人泣きついてくる、涙話を握ってた",
+    "あなたの秘密をかくして、かくしてかくして",
+    "もう一つの傷もいらない、傷も傷も",
+    "けれどあなたはガラスの心は隠せない"
+  ],
+  "time_seconds": 51.6,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 51.605,
+    "phase0_calls": 1
+  }
+}

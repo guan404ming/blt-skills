@@ -1,0 +1,44 @@
+{
+  "id": "ou_097",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.20769230769230768,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "tgt_syl": [
+    8,
+    14,
+    4,
+    10,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "1/5",
+  "translations": [
+    "抵达我意识的边界",
+    "我看见父亲坐在云的边沿上抽烟。",
+    "一如从前。\"",
+    "那些来自山川湖海的人",
+    "如今却囿于昼夜、厨房与性。"
+  ],
+  "time_seconds": 16.38,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 16.385,
+    "phase0_calls": 1
+  }
+}

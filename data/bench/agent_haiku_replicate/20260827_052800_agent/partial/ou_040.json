@@ -1,0 +1,90 @@
+{
+  "id": "ou_040",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    4,
+    9,
+    9,
+    8
+  ],
+  "tgt_syl": [
+    4,
+    4,
+    9,
+    9,
+    8
+  ],
+  "src_rhyme": "AABAA",
+  "tgt_rhyme": "AABAA",
+  "match": "5/5",
+  "translations": [
+    "我怎么做",
+    "你怎么做",
+    "我要环游世界七大地",
+    "我想要掌控你生活过",
+    "我想知道你想法过"
+  ],
+  "time_seconds": 218.0,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 29,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 10
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 3,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 13,
+    "cost_usd": 0.18830819999999998,
+    "usage": {
+      "input_tokens": 100,
+      "cache_creation_input_tokens": 25753,
+      "cache_read_input_tokens": 437722,
+      "output_tokens": 18586,
+      "output_tokens_details": {
+        "thinking_tokens": 16992
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25753,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 131,
+          "cache_read_input_tokens": 48828,
+          "cache_creation_input_tokens": 334,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 334
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我怎么做\n2. 你怎么做\n3. 我要环游世界七大地\n4. 我想要掌控你生活过\n5. 我想知道你想法过",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

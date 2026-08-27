@@ -1,0 +1,87 @@
+{
+  "id": "ou_096",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    15,
+    4,
+    6,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    15,
+    4,
+    6,
+    6,
+    9
+  ],
+  "src_rhyme": "ABBBC",
+  "tgt_rhyme": "ABBBC",
+  "match": "5/5",
+  "translations": [
+    "我从心底祝福你，但为什么我哭了呢？",
+    "我烹海鲜",
+    "烹海鲜炒海鲜",
+    "我喜欢吃海鲜",
+    "喜欢做喜欢炸小小鱼"
+  ],
+  "time_seconds": 44.37,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 18,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "skills": 11
+    },
+    "num_turns": 14,
+    "cost_usd": 0.046330500000000004,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 9042,
+      "cache_read_input_tokens": 143925,
+      "output_tokens": 2762,
+      "output_tokens_details": {
+        "thinking_tokens": 1227
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9042,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 161,
+          "cache_read_input_tokens": 32077,
+          "cache_creation_input_tokens": 374,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 374
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我从心底祝福你，但为什么我哭了呢？\n2. 我烹海鲜\n3. 烹海鲜炒海鲜\n4. 我喜欢吃海鲜\n5. 喜欢做喜欢炸小小鱼",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

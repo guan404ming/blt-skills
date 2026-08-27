@@ -1,0 +1,86 @@
+{
+  "id": "ou_028",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "永远留在我的心里面",
+    "妈妈我想为你唱我爱你",
+    "我从没见过母亲",
+    "但我一直爱她",
+    "从未开口对她"
+  ],
+  "time_seconds": 69.51,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.32740549999999996,
+    "usage": {
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 13896,
+      "cache_read_input_tokens": 276161,
+      "output_tokens": 2011,
+      "output_tokens_details": {
+        "thinking_tokens": 669
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13896,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 65,
+          "cache_read_input_tokens": 33696,
+          "cache_creation_input_tokens": 367,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 367
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 永远留在我的心里面\n2. 妈妈我想为你唱我爱你\n3. 我从没见过母亲\n4. 但我一直爱她\n5. 从未开口对她",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

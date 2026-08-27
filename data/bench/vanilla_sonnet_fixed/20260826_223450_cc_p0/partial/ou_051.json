@@ -1,0 +1,43 @@
+{
+  "id": "ou_051",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.17715617715617718,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    12,
+    11,
+    13,
+    12
+  ],
+  "tgt_syl": [
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AABCD",
+  "match": "0/5",
+  "translations": [
+    "空杯月下留，可惜无人问",
+    "春秋茫茫走，浪迹天涯任",
+    "情深缘浅去，最是留不住",
+    "少年轻风扇，吹入白发新",
+    "幸得有人在，寒暑共相寻"
+  ],
+  "time_seconds": 5.71,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 5.714,
+    "phase0_calls": 1
+  }
+}

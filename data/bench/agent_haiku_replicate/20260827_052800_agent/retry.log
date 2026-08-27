@@ -1,0 +1,40 @@
+agent model=haiku effort=medium workers=3 n=100
+[start ] ou_021
+[start ] ou_047
+[start ] ou_057
+[retry ] ou_057 attempt 1 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_021 attempt 1 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_047 attempt 1 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_057 attempt 2 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_047 attempt 2 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_057 attempt 3 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_057 attempt 4 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_057 parse failed: 
+[done  ] ou_057 SER=1.000 ARI=0.000 match=0/5 turns=1 scripts=0 cost=$0.000 time=22s
+[start ] ou_061
+[retry ] ou_061 attempt 1 failed: API Error: Output blocked by content filtering policy
+[done  ] ou_021 SER=0.000 ARI=1.000 match=5/5 turns=17 scripts=14 cost=$0.070 time=96s
+[start ] ou_066
+[retry ] ou_066 attempt 1 failed: API Error: Output blocked by content filtering policy
+[done  ] ou_061 SER=0.000 ARI=1.000 match=5/5 turns=16 scripts=13 cost=$0.063 time=101s
+[start ] ou_068
+[retry ] ou_068 attempt 1 failed: API Error: Output blocked by content filtering policy
+[done  ] ou_047 SER=0.000 ARI=1.000 match=5/5 turns=20 scripts=17 cost=$0.127 time=139s
+[start ] ou_099
+[retry ] ou_068 attempt 2 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_068 attempt 3 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_068 attempt 4 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_068 parse failed: 
+[done  ] ou_068 SER=1.000 ARI=0.000 match=0/5 turns=1 scripts=0 cost=$0.000 time=41s
+[retry ] ou_099 attempt 1 failed: API Error: Output blocked by content filtering policy
+[done  ] ou_066 SER=0.000 ARI=1.000 match=5/5 turns=19 scripts=16 cost=$0.080 time=96s
+[done  ] ou_099 SER=0.000 ARI=1.000 match=5/5 turns=18 scripts=15 cost=$0.068 time=111s
+
+Saved data/bench/ablation_fixed_promptonly/20260827_052800_agent/results.json
+Saved data/bench/ablation_fixed_promptonly/20260827_052800_agent/report.md
+{
+  "avg_ser": 0.024,
+  "avg_scre": 0.0211,
+  "avg_ari": 0.9703,
+  "avg_time": 102.8
+}

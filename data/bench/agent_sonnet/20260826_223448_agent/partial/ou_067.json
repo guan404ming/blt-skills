@@ -1,0 +1,89 @@
+{
+  "id": "ou_067",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    4,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    4,
+    4,
+    6,
+    6,
+    5
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCDC",
+  "match": "5/5",
+  "translations": [
+    "回头张望",
+    "摘她皇冠",
+    "你说这条河流",
+    "寻找入海之路",
+    "而我似河流"
+  ],
+  "time_seconds": 82.65,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 17,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      ".claude": 1,
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.16458920000000002,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 15668,
+      "cache_read_input_tokens": 338226,
+      "output_tokens": 3424,
+      "output_tokens_details": {
+        "thinking_tokens": 2135
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15668,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 58,
+          "cache_read_input_tokens": 46707,
+          "cache_creation_input_tokens": 348,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 348
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 回头张望\n2. 摘她皇冠\n3. 你说这条河流\n4. 寻找入海之路\n5. 而我似河流",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

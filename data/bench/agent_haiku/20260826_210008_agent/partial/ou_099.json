@@ -1,0 +1,88 @@
+{
+  "id": "ou_099",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    11,
+    2,
+    8,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    11,
+    2,
+    8,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你是我最好最好朋友",
+    "现在该做个三重的连接了",
+    "灯灭",
+    "在这个黑暗的地方",
+    "很难把一切讲清楚"
+  ],
+  "time_seconds": 91.77,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 30,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.0671176,
+    "usage": {
+      "input_tokens": 66,
+      "cache_creation_input_tokens": 7519,
+      "cache_read_input_tokens": 256086,
+      "output_tokens": 5281,
+      "output_tokens_details": {
+        "thinking_tokens": 3135
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7519,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 90,
+          "cache_read_input_tokens": 35854,
+          "cache_creation_input_tokens": 331,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 331
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你是我最好最好朋友\n2. 现在该做个三重的连接了\n3. 灯灭\n4. 在这个黑暗的地方\n5. 很难把一切讲清楚",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

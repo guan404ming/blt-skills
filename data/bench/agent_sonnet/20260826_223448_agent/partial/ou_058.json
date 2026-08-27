@@ -1,0 +1,87 @@
+{
+  "id": "ou_058",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDB",
+  "tgt_rhyme": "ABCDB",
+  "match": "5/5",
+  "translations": [
+    "我雙手伸向天空",
+    "接住那從天而降的雨滂",
+    "落在我手中的不是雨",
+    "是她眼中滴落的淚",
+    "而天空之中醞釀的不是浪"
+  ],
+  "time_seconds": 124.8,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 9
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 5,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 12,
+    "cost_usd": 0.22161580000000003,
+    "usage": {
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 18972,
+      "cache_read_input_tokens": 397509,
+      "output_tokens": 6619,
+      "output_tokens_details": {
+        "thinking_tokens": 4784
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 18972,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 84,
+          "cache_read_input_tokens": 49803,
+          "cache_creation_input_tokens": 556,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 556
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All checks pass.\n\n1. 我雙手伸向天空\n2. 接住那從天而降的雨滂\n3. 落在我手中的不是雨\n4. 是她眼中滴落的淚\n5. 而天空之中醞釀的不是浪",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

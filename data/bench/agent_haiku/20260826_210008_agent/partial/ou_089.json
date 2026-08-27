@@ -1,0 +1,88 @@
+{
+  "id": "ou_089",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABCD",
+  "match": "5/5",
+  "translations": [
+    "他工作完必然好",
+    "造他的人造汝之宝",
+    "硬化我意志之铠",
+    "装填智慧之弹匣中",
+    "身体启程我的心已先到；我的思想已投入战斗"
+  ],
+  "time_seconds": 119.67,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 17
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 20,
+    "cost_usd": 0.1080851,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 16550,
+      "cache_read_input_tokens": 288291,
+      "output_tokens": 9216,
+      "output_tokens_details": {
+        "thinking_tokens": 6885
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16550,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 196,
+          "cache_read_input_tokens": 38661,
+          "cache_creation_input_tokens": 1298,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1298
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 他工作完必然好\n2. 造他的人造汝之宝\n3. 硬化我意志之铠\n4. 装填智慧之弹匣中\n5. 身体启程我的心已先到；我的思想已投入战斗",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

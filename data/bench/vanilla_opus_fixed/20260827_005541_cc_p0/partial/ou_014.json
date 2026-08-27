@@ -1,0 +1,44 @@
+{
+  "id": "ou_014",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.15746031746031744,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    9,
+    14,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    11,
+    11,
+    12,
+    9,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "1/5",
+  "translations": [
+    "过了这个村就没这个店了",
+    "你也明白，我说的意思你懂",
+    "我真的真的好想亲亲你的脸",
+    "就在深圳的那个街角；",
+    "我们那时候啊，随风漂泊流浪；"
+  ],
+  "time_seconds": 11.75,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 11.751,
+    "phase0_calls": 1
+  }
+}

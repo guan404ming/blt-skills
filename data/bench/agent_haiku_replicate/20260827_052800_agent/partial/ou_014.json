@@ -1,0 +1,90 @@
+{
+  "id": "ou_014",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    9,
+    14,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    9,
+    9,
+    14,
+    9,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "这家店不过村子外面",
+    "你都明白我想说的话",
+    "我真的真的非常想亲吻你的脸庞",
+    "就在深圳的街角那里",
+    "我们那时就像风一样飘"
+  ],
+  "time_seconds": 75.31,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 25,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0722532,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 12303,
+      "cache_read_input_tokens": 211122,
+      "output_tokens": 5295,
+      "output_tokens_details": {
+        "thinking_tokens": 3272
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12303,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 232,
+          "cache_read_input_tokens": 35343,
+          "cache_creation_input_tokens": 369,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 369
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 这家店不过村子外面\n2. 你都明白我想说的话\n3. 我真的真的非常想亲吻你的脸庞\n4. 就在深圳的街角那里\n5. 我们那时就像风一样飘",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_010",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    15,
+    16,
+    19,
+    19,
+    18
+  ],
+  "tgt_syl": [
+    15,
+    16,
+    19,
+    19,
+    18
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "不懂音乐并非什么值得羞愧的事情",
+    "真正懂音乐的人也未必个个都是神仙",
+    "这么多首歌曲说到底也不过是四个和弦组成",
+    "有些歌曲多年以来已经成为音乐学校的教材",
+    "市场里卖菜的阿姨其实是一位海外音乐家"
+  ],
+  "time_seconds": 56.33,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.13170600000000002,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 15084,
+      "cache_read_input_tokens": 206200,
+      "output_tokens": 3011,
+      "output_tokens_details": {
+        "thinking_tokens": 1422
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15084,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 134,
+          "cache_read_input_tokens": 46082,
+          "cache_creation_input_tokens": 389,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 389
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Validated. Result:\n\n1. 不懂音乐并非什么值得羞愧的事情\n2. 真正懂音乐的人也未必个个都是神仙\n3. 这么多首歌曲说到底也不过是四个和弦组成\n4. 有些歌曲多年以来已经成为音乐学校的教材\n5. 市场里卖菜的阿姨其实是一位海外音乐家",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

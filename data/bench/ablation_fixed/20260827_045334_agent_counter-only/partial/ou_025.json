@@ -1,0 +1,88 @@
+{
+  "id": "ou_025",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    14,
+    3,
+    4,
+    3,
+    3
+  ],
+  "tgt_syl": [
+    14,
+    3,
+    4,
+    3,
+    3
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCC",
+  "match": "5/5",
+  "translations": [
+    "你必须把握能把握的每个机会啊",
+    "我要的",
+    "在此时刻",
+    "要满足",
+    "我所需"
+  ],
+  "time_seconds": 50.25,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 18,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.051935300000000004,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 9830,
+      "cache_read_input_tokens": 144563,
+      "output_tokens": 3555,
+      "output_tokens_details": {
+        "thinking_tokens": 2207
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9830,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 89,
+          "cache_read_input_tokens": 32812,
+          "cache_creation_input_tokens": 427,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 427
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你必须把握能把握的每个机会啊\n2. 我要的\n3. 在此时刻\n4. 要满足\n5. 我所需",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

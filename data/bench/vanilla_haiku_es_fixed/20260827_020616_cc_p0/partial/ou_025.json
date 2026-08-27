@@ -1,0 +1,44 @@
+{
+  "id": "ou_025",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "tgt_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "src_rhyme": "AAABA",
+  "tgt_rhyme": "AAABA",
+  "match": "5/5",
+  "translations": [
+    "Mi perla",
+    "No tengas miedo, perla",
+    "Cuerpo misterioso, bella perla",
+    "Que vaya lentamente toda la ansiedad",
+    "Camina lento, perla"
+  ],
+  "time_seconds": 110.76,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 110.757,
+    "phase0_calls": 1
+  }
+}

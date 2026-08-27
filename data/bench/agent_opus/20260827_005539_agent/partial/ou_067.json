@@ -1,0 +1,87 @@
+{
+  "id": "ou_067",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    4,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    4,
+    4,
+    6,
+    6,
+    5
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCDC",
+  "match": "5/5",
+  "translations": [
+    "头颅转动",
+    "来夺她冠",
+    "你说那条河流",
+    "终寻到入海路",
+    "而我似河流"
+  ],
+  "time_seconds": 59.18,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.27920350000000005,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 13258,
+      "cache_read_input_tokens": 210107,
+      "output_tokens": 1660,
+      "output_tokens_details": {
+        "thinking_tokens": 623
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13258,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 50,
+          "cache_read_input_tokens": 33113,
+          "cache_creation_input_tokens": 312,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 312
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 头颅转动\n2. 来夺她冠\n3. 你说那条河流\n4. 终寻到入海路\n5. 而我似河流",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

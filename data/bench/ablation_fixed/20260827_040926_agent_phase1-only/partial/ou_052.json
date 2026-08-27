@@ -1,0 +1,89 @@
+{
+  "id": "ou_052",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    16,
+    13,
+    7,
+    15
+  ],
+  "tgt_syl": [
+    10,
+    16,
+    13,
+    7,
+    15
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "月是河流浪漫的眼眸光",
+    "我独举杯柳岸帷幕轻轻展开我的梦想",
+    "向这生命敬礼春风吹过窗前柳",
+    "花儿未有凋零时",
+    "啊多少年来冒险开始时光飞逝梦去"
+  ],
+  "time_seconds": 86.4,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 18,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0759398,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 7892,
+      "cache_read_input_tokens": 262748,
+      "output_tokens": 6761,
+      "output_tokens_details": {
+        "thinking_tokens": 5735
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7892,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 5437,
+          "cache_read_input_tokens": 30764,
+          "cache_creation_input_tokens": 537,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 537
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 月是河流浪漫的眼眸光\n2. 我独举杯柳岸帷幕轻轻展开我的梦想\n3. 向这生命敬礼春风吹过窗前柳\n4. 花儿未有凋零时\n5. 啊多少年来冒险开始时光飞逝梦去",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

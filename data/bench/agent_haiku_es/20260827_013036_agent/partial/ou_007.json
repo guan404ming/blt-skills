@@ -1,0 +1,90 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    18,
+    10,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    11,
+    18,
+    10,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "5/5",
+  "translations": [
+    "Entonces el cielo se vuelve rojo",
+    "¿Hay alguien quién pueda liberarme de mil años de soledad?",
+    "Te veo en alas de la noche",
+    "Danzando en tibia noche",
+    "Te oigo en el viento que gira"
+  ],
+  "time_seconds": 208.24,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 47,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 18
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 21,
+    "cost_usd": 0.20782419999999996,
+    "usage": {
+      "input_tokens": 164,
+      "cache_creation_input_tokens": 24412,
+      "cache_read_input_tokens": 750962,
+      "output_tokens": 16748,
+      "output_tokens_details": {
+        "thinking_tokens": 14569
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24412,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 143,
+          "cache_read_input_tokens": 47066,
+          "cache_creation_input_tokens": 755,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 755
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Entonces el cielo se vuelve rojo\n2. ¿Hay alguien quién pueda liberarme de mil años de soledad?\n3. Te veo en alas de la noche\n4. Danzando en tibia noche\n5. Te oigo en el viento que gira",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

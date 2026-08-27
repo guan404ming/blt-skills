@@ -1,0 +1,87 @@
+{
+  "id": "ou_080",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "tgt_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "你站那里 一脸茫然说不出来",
+    "我却认得脸",
+    "而我在此",
+    "我努力撑住 因为我知道它要来",
+    "真浪费"
+  ],
+  "time_seconds": 78.99,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 9,
+    "cost_usd": 0.167375,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 15745,
+      "cache_read_input_tokens": 342215,
+      "output_tokens": 3592,
+      "output_tokens_details": {
+        "thinking_tokens": 2254
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15745,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 75,
+          "cache_read_input_tokens": 46820,
+          "cache_creation_input_tokens": 312,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 312
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints satisfied.\n\n1. 你站那里 一脸茫然说不出来\n2. 我却认得脸\n3. 而我在此\n4. 我努力撑住 因为我知道它要来\n5. 真浪费",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

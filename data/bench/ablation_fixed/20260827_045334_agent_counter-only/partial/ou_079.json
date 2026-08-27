@@ -1,0 +1,88 @@
+{
+  "id": "ou_079",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "没有惊喜",
+    "我们都理解",
+    "记忆来去往返",
+    "躲进雨中的老火车站台",
+    "怀想无情的人生紧紧握住我指尖"
+  ],
+  "time_seconds": 52.27,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 23,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 12
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "lyrics-validator": 1
+    },
+    "num_turns": 15,
+    "cost_usd": 0.0498723,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 9083,
+      "cache_read_input_tokens": 175443,
+      "output_tokens": 2822,
+      "output_tokens_details": {
+        "thinking_tokens": 1281
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9083,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 115,
+          "cache_read_input_tokens": 32050,
+          "cache_creation_input_tokens": 442,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 442
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 没有惊喜\n2. 我们都理解\n3. 记忆来去往返\n4. 躲进雨中的老火车站台\n5. 怀想无情的人生紧紧握住我指尖",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

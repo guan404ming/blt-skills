@@ -1,0 +1,88 @@
+{
+  "id": "ou_064",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    23,
+    27,
+    4,
+    5,
+    6
+  ],
+  "tgt_syl": [
+    23,
+    27,
+    4,
+    5,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我想每個早晨與夜晚都看見你我想看見你所有的表情",
+    "我想穿越所有平行時空宇宙與你永遠緊緊相連跨越過去和未來",
+    "你已瘋了",
+    "這是我犯下",
+    "寶貝我已離去"
+  ],
+  "time_seconds": 126.03,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 28,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 9,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 16,
+    "cost_usd": 0.24611580000000002,
+    "usage": {
+      "input_tokens": 30,
+      "cache_creation_input_tokens": 17094,
+      "cache_read_input_tokens": 668649,
+      "output_tokens": 4395,
+      "output_tokens_details": {
+        "thinking_tokens": 1669
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17094,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 109,
+          "cache_read_input_tokens": 48074,
+          "cache_creation_input_tokens": 407,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 407
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 我想每個早晨與夜晚都看見你我想看見你所有的表情\n2. 我想穿越所有平行時空宇宙與你永遠緊緊相連跨越過去和未來\n3. 你已瘋了\n4. 這是我犯下\n5. 寶貝我已離去",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

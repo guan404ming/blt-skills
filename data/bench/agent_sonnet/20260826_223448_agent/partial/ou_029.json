@@ -1,0 +1,88 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    16,
+    8,
+    9,
+    8,
+    9
+  ],
+  "tgt_syl": [
+    16,
+    8,
+    9,
+    8,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "在连绵群山的脚下百花朵朵盛开绽放",
+    "什么节奏最为摇摆",
+    "哪首歌是最快乐一首",
+    "弯曲河流来自天上",
+    "缤纷五彩流向大海去"
+  ],
+  "time_seconds": 61.68,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 6,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.1332092,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 15077,
+      "cache_read_input_tokens": 205706,
+      "output_tokens": 3174,
+      "output_tokens_details": {
+        "thinking_tokens": 1796
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15077,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 96,
+          "cache_read_input_tokens": 46105,
+          "cache_creation_input_tokens": 359,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 359
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 在连绵群山的脚下百花朵朵盛开绽放\n2. 什么节奏最为摇摆\n3. 哪首歌是最快乐一首\n4. 弯曲河流来自天上\n5. 缤纷五彩流向大海去",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

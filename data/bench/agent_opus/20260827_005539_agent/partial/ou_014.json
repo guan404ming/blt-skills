@@ -1,0 +1,87 @@
+{
+  "id": "ou_014",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    9,
+    14,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    9,
+    9,
+    14,
+    9,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "过了这个村就没这店",
+    "你懂的你明白我在说",
+    "我真的真的好想亲一亲你的脸颊",
+    "就在深圳的那个街角",
+    "当年的我们随着风飘荡"
+  ],
+  "time_seconds": 69.65,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.30761000000000005,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 13733,
+      "cache_read_input_tokens": 242750,
+      "output_tokens": 1953,
+      "output_tokens_details": {
+        "thinking_tokens": 710
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13733,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 80,
+          "cache_read_input_tokens": 33537,
+          "cache_creation_input_tokens": 363,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 363
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 过了这个村就没这店\n2. 你懂的你明白我在说\n3. 我真的真的好想亲一亲你的脸颊\n4. 就在深圳的那个街角\n5. 当年的我们随着风飘荡",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

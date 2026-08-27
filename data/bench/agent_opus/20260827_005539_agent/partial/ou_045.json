@@ -1,0 +1,89 @@
+{
+  "id": "ou_045",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "tgt_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "多少浮华的美好时光都匆匆而过",
+    "愿你弹起那把弦琴的时候总有人在旁静聆听",
+    "愿你有一个可以倾诉心事的人",
+    "愿我们能在来生里再一次重逢相见",
+    "我愿化作你乌黑长发中的几缕"
+  ],
+  "time_seconds": 62.14,
+  "model": "opus",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.21892900000000004,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 4107,
+      "cache_read_input_tokens": 254108,
+      "output_tokens": 2029,
+      "output_tokens_details": {
+        "thinking_tokens": 738
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 4107,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 113,
+          "cache_read_input_tokens": 33673,
+          "cache_creation_input_tokens": 349,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 349
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 多少浮华的美好时光都匆匆而过\n2. 愿你弹起那把弦琴的时候总有人在旁静聆听\n3. 愿你有一个可以倾诉心事的人\n4. 愿我们能在来生里再一次重逢相见\n5. 我愿化作你乌黑长发中的几缕",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

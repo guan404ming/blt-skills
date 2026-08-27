@@ -1,0 +1,87 @@
+{
+  "id": "ou_001",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    12,
+    11,
+    6,
+    17
+  ],
+  "tgt_syl": [
+    19,
+    12,
+    11,
+    6,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "让我们靠近那美丽善良感受分享这快乐时光",
+    "为和平祈祷心怀感恩又感恩",
+    "啊哦啊哦啊珍珠白螺吹响",
+    "彩虹吻遍天空",
+    "啊哦啊哦啊是谁快乐又愤怒又悲伤欢喜"
+  ],
+  "time_seconds": 71.57,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 4
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 7,
+    "cost_usd": 0.162611,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 21772,
+      "cache_read_input_tokens": 242495,
+      "output_tokens": 2700,
+      "output_tokens_details": {
+        "thinking_tokens": 1125
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21772,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 127,
+          "cache_read_input_tokens": 45821,
+          "cache_creation_input_tokens": 383,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 383
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All checks pass.\n\n1. 让我们靠近那美丽善良感受分享这快乐时光\n2. 为和平祈祷心怀感恩又感恩\n3. 啊哦啊哦啊珍珠白螺吹响\n4. 彩虹吻遍天空\n5. 啊哦啊哦啊是谁快乐又愤怒又悲伤欢喜",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

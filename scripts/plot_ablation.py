@@ -24,23 +24,24 @@ mpl.rcParams.update({
 })
 
 # Nature NPG qualitative palette
-NPG = {"blue": "#3C5488", "cyan": "#4DBBD5", "teal": "#00A087", "coral": "#E64B35"}
+NPG = {"blue": "#3C5488", "cyan": "#4DBBD5", "teal": "#00A087", "coral": "#E64B35", "brown": "#7E6148"}
 
-conditions = ["Vanilla", "Prompt-only verifier", "Syllable-counter only", "Full (Phase 1+2)"]
-colors = [NPG["blue"], NPG["cyan"], NPG["teal"], NPG["coral"]]
+conditions = ["Vanilla", "Prompt-only", "Phase 1 only", "Counter-only", "Full (BLT)"]
+colors = [NPG["blue"], NPG["cyan"], NPG["teal"], NPG["coral"], NPG["brown"]]
 
-groups = ["zh SER↓", "zh ARI↑", "ja SER↓"]
+groups = ["zh SER↓", "zh ARI↑"]
 # values[condition][group]; np.nan = no data (sc-only on ja)
 values = {
-    "Vanilla":               [0.814, 0.306, 0.987],
-    "Prompt-only verifier":  [0.000, 0.296, 0.593],
-    "Syllable-counter only": [0.002, 0.324, np.nan],
-    "Full (Phase 1+2)":      [0.000, 0.767, 0.073],
+    "Vanilla":       [0.425, 0.688],
+    "Prompt-only":   [0.234, 0.518],
+    "Phase 1 only":  [0.040, 0.612],
+    "Counter-only":  [0.006, 0.250],
+    "Full (BLT)":    [0.008, 0.990],
 }
 
 n_groups = len(groups)
 n_cond = len(conditions)
-bar_w = 0.20
+bar_w = 0.16
 x = np.arange(n_groups)
 
 fig, ax = plt.subplots(figsize=(3.3, 2.35))

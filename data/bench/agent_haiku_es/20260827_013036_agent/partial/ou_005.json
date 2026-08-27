@@ -1,0 +1,90 @@
+{
+  "id": "ou_005",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "Quiero olvido mas no logro olvido al fin",
+    "Espera la noche ya",
+    "soñar en la chica del ayer",
+    "Deja que tomes lo que es",
+    "cada vez que debo yo vivir todo"
+  ],
+  "time_seconds": 281.26,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 108,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 45
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 38,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 5
+    },
+    "num_turns": 48,
+    "cost_usd": 0.3092583999999999,
+    "usage": {
+      "input_tokens": 380,
+      "cache_creation_input_tokens": 25426,
+      "cache_read_input_tokens": 1798014,
+      "output_tokens": 15645,
+      "output_tokens_details": {
+        "thinking_tokens": 10755
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25426,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 217,
+          "cache_read_input_tokens": 48509,
+          "cache_creation_input_tokens": 326,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 326
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Quiero olvido mas no logro olvido al fin\n2. Espera la noche ya\n3. soñar en la chica del ayer\n4. Deja que tomes lo que es\n5. cada vez que debo yo vivir todo",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

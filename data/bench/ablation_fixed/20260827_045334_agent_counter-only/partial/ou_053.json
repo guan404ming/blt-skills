@@ -1,0 +1,88 @@
+{
+  "id": "ou_053",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    7,
+    15,
+    11,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    7,
+    15,
+    11,
+    14,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBBC",
+  "match": "5/5",
+  "translations": [
+    "花儿还没有凋落",
+    "啊自从我们冒险开始已有许多年了",
+    "房间里的蜡烛都已熄灭了",
+    "醉酒梦幻中我突然忘记说什么了",
+    "在那柳树的河岸边"
+  ],
+  "time_seconds": 61.59,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 29,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.0739525,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 9521,
+      "cache_read_input_tokens": 393975,
+      "output_tokens": 3081,
+      "output_tokens_details": {
+        "thinking_tokens": 1566
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9521,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 156,
+          "cache_read_input_tokens": 32575,
+          "cache_creation_input_tokens": 355,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 355
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 花儿还没有凋落\n2. 啊自从我们冒险开始已有许多年了\n3. 房间里的蜡烛都已熄灭了\n4. 醉酒梦幻中我突然忘记说什么了\n5. 在那柳树的河岸边",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

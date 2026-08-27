@@ -1,0 +1,88 @@
+{
+  "id": "ou_080",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "tgt_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "站在那里看起不知说什么事",
+    "我知这面孔",
+    "我在这里",
+    "做好准备迎接要来的事情发生",
+    "太浪费"
+  ],
+  "time_seconds": 47.55,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.039683300000000005,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 4241,
+      "cache_read_input_tokens": 149523,
+      "output_tokens": 3241,
+      "output_tokens_details": {
+        "thinking_tokens": 1778
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 4241,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 100,
+          "cache_read_input_tokens": 32515,
+          "cache_creation_input_tokens": 376,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 376
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 站在那里看起不知说什么事\n2. 我知这面孔\n3. 我在这里\n4. 做好准备迎接要来的事情发生\n5. 太浪费",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

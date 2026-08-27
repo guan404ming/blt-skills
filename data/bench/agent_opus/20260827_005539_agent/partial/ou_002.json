@@ -1,0 +1,87 @@
+{
+  "id": "ou_002",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "5/5",
+  "translations": [
+    "从未体会过的那种感受",
+    "云端自由正无限延伸",
+    "世界与你同在",
+    "有你世界光彩",
+    "多不可思议"
+  ],
+  "time_seconds": 72.7,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.3427555,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 18140,
+      "cache_read_input_tokens": 205221,
+      "output_tokens": 2347,
+      "output_tokens_details": {
+        "thinking_tokens": 1455
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 18140,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 59,
+          "cache_read_input_tokens": 33748,
+          "cache_creation_input_tokens": 295,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 295
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 从未体会过的那种感受\n2. 云端自由正无限延伸\n3. 世界与你同在\n4. 有你世界光彩\n5. 多不可思议",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_002",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "5/5",
+  "translations": [
+    "一个从未有的奇异体验",
+    "云中的自由正在绽开",
+    "世界伴你悠悠",
+    "我的光因你有",
+    "不可思议啊"
+  ],
+  "time_seconds": 134.25,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 36,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 18
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 3
+    },
+    "num_turns": 21,
+    "cost_usd": 0.11736570000000002,
+    "usage": {
+      "input_tokens": 92,
+      "cache_creation_input_tokens": 16882,
+      "cache_read_input_tokens": 366847,
+      "output_tokens": 9365,
+      "output_tokens_details": {
+        "thinking_tokens": 6659
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16882,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 87,
+          "cache_read_input_tokens": 39953,
+          "cache_creation_input_tokens": 338,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 338
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 一个从未有的奇异体验\n2. 云中的自由正在绽开\n3. 世界伴你悠悠\n4. 我的光因你有\n5. 不可思议啊",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

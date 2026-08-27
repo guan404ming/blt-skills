@@ -1,0 +1,89 @@
+{
+  "id": "ou_030",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "tgt_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "你是我心中最美丽白云啊",
+    "我将你陪在酒与食",
+    "永远唱最绚烂的民俗歌声",
+    "这是整片天空最绚烂的姿态",
+    "呦啦啦呃啦呗唉唉"
+  ],
+  "time_seconds": 77.33,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 16,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0628172,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 8104,
+      "cache_read_input_tokens": 143252,
+      "output_tokens": 6448,
+      "output_tokens_details": {
+        "thinking_tokens": 4999
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8104,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 4818,
+          "cache_read_input_tokens": 30926,
+          "cache_creation_input_tokens": 587,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 587
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "**Phase 1: Initial Translation**\n\nConstraints extracted:\n- Line 1: 11 syllables, rhyme A (ɑːɹt), pattern [1, 1, 1, 1, 3, 1, 1, 1, 1]\n- Line 2: 8 syllables, rhyme B (aɪn), pattern [1, 1, 1, 1, 1, 1, 1, 1]\n- Line 3: 11 syllables, rhyme C (ɚ), pattern [1, 1, 1, 3, 1, 1, 3]\n- Line 4: 12 syllables, rhyme D (aɪ), pattern [1, 1, 1, 3, 2, 1, 1, 1, 1]\n- Line 5: 8 syllables, rhyme E (eɪ), pattern [2, 1, 1, 1, 1, 1, 1]\n\nAll lines have distinct rhymes (ABCDE scheme).\n\nTranslating to cmn with exact syllable counts:\n\n1. 你是我心中最美丽白云啊\n2. 我将你陪在酒与食\n3. 永远唱最绚烂的民俗歌声\n4. 这是整片天空最绚烂的姿态\n5. 呦啦啦呃啦呗唉唉",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

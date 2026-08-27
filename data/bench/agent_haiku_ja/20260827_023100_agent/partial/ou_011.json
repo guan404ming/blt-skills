@@ -1,0 +1,90 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "AABCC",
+  "match": "5/5",
+  "translations": [
+    "心にずっとそこ",
+    "君に歌う愛すよ",
+    "母のこと知る",
+    "好き続けた",
+    "会わずにいた"
+  ],
+  "time_seconds": 214.67,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 51,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 26
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 17,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 7
+    },
+    "num_turns": 29,
+    "cost_usd": 0.1876468,
+    "usage": {
+      "input_tokens": 116,
+      "cache_creation_input_tokens": 25198,
+      "cache_read_input_tokens": 503898,
+      "output_tokens": 17349,
+      "output_tokens_details": {
+        "thinking_tokens": 13611
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25198,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 1031,
+          "cache_read_input_tokens": 47334,
+          "cache_creation_input_tokens": 1273,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1273
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Validation complete. All constraints satisfied.\n\n1. 心にずっとそこ\n2. 君に歌う愛すよ\n3. 母のこと知る\n4. 好き続けた\n5. 会わずにいた",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

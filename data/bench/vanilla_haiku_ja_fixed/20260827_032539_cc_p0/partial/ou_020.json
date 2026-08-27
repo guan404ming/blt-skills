@@ -1,0 +1,44 @@
+{
+  "id": "ou_020",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "tgt_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "何かいいな",
+    "調子悪いね",
+    "淋し晩ベッドいてね",
+    "君欲しい",
+    "ずっと君を探してる"
+  ],
+  "time_seconds": 547.88,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 70,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 547.88,
+    "phase0_calls": 1
+  }
+}

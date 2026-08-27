@@ -1,0 +1,88 @@
+{
+  "id": "ou_015",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "tgt_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "因为在一千年之后",
+    "我将不再在这世上",
+    "我无法握你掌心",
+    "也再也无法轻柔地吻你前额",
+    "请你不要等到一千年之后"
+  ],
+  "time_seconds": 77.93,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 10,
+    "cost_usd": 0.159991,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 15916,
+      "cache_read_input_tokens": 297545,
+      "output_tokens": 3679,
+      "output_tokens_details": {
+        "thinking_tokens": 2085
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15916,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 79,
+          "cache_read_input_tokens": 46984,
+          "cache_creation_input_tokens": 319,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 319
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 因为在一千年之后\n2. 我将不再在这世上\n3. 我无法握你掌心\n4. 也再也无法轻柔地吻你前额\n5. 请你不要等到一千年之后",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

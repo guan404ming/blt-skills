@@ -1,0 +1,90 @@
+{
+  "id": "ou_012",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "tgt_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "Las nubes más bellas en mi corazón",
+    "Te tengo con vino y pan",
+    "Cantar folklore brillante por siempre",
+    "La postura bella de todo el cielo",
+    "Coro Yo la la he la bei"
+  ],
+  "time_seconds": 124.28,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 60,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 25
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 26,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 28,
+    "cost_usd": 0.14169380000000004,
+    "usage": {
+      "input_tokens": 220,
+      "cache_creation_input_tokens": 13378,
+      "cache_read_input_tokens": 886828,
+      "output_tokens": 5207,
+      "output_tokens_details": {
+        "thinking_tokens": 2454
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13378,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 109,
+          "cache_read_input_tokens": 36346,
+          "cache_creation_input_tokens": 441,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 441
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Las nubes más bellas en mi corazón\n2. Te tengo con vino y pan\n3. Cantar folklore brillante por siempre\n4. La postura bella de todo el cielo\n5. Coro Yo la la he la bei",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

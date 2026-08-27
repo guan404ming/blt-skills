@@ -1,0 +1,88 @@
+{
+  "id": "ou_073",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "src_rhyme": "ABBCB",
+  "tgt_rhyme": "ABBCB",
+  "match": "5/5",
+  "translations": [
+    "你身上最迷人的香气令我着迷",
+    "拿走我所拥有的一切我只要汝",
+    "我该如何处",
+    "别的男人们的视线",
+    "我愿意把所有的都给汝"
+  ],
+  "time_seconds": 119.66,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 23,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 8,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.23562960000000002,
+    "usage": {
+      "input_tokens": 22,
+      "cache_creation_input_tokens": 18579,
+      "cache_read_input_tokens": 496848,
+      "output_tokens": 6190,
+      "output_tokens_details": {
+        "thinking_tokens": 4066
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 18579,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 88,
+          "cache_read_input_tokens": 49620,
+          "cache_creation_input_tokens": 346,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 346
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass. Final:\n\n1. 你身上最迷人的香气令我着迷\n2. 拿走我所拥有的一切我只要汝\n3. 我该如何处\n4. 别的男人们的视线\n5. 我愿意把所有的都给汝",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

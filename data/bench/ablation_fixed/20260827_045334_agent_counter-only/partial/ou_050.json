@@ -1,0 +1,88 @@
+{
+  "id": "ou_050",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "tgt_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AAAAA",
+  "match": "5/5",
+  "translations": [
+    "相处比相爱更难，我们都尝试过。你是王，我不是。",
+    "我们去碧潭坐着天鹅船，但你说你总是晕船。",
+    "我们一起去阳明山看美丽的夜景，你说真的非常漂亮。",
+    "我们看五月天演唱会，你感动哭了。",
+    "我们共同的日子仿佛昨日，依然浮现在眼眸里。"
+  ],
+  "time_seconds": 67.68,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 28,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.0851659,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 11037,
+      "cache_read_input_tokens": 401989,
+      "output_tokens": 4557,
+      "output_tokens_details": {
+        "thinking_tokens": 2889
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11037,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 180,
+          "cache_read_input_tokens": 34009,
+          "cache_creation_input_tokens": 437,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 437
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 相处比相爱更难，我们都尝试过。你是王，我不是。\n2. 我们去碧潭坐着天鹅船，但你说你总是晕船。\n3. 我们一起去阳明山看美丽的夜景，你说真的非常漂亮。\n4. 我们看五月天演唱会，你感动哭了。\n5. 我们共同的日子仿佛昨日，依然浮现在眼眸里。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ou_079",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.03333333333333333,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    5,
+    10,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "4/5",
+  "translations": [
+    "没有惊喜",
+    "我们都懂得",
+    "回忆来又去",
+    "躲雨在老旧火车站停留",
+    "回忆往事无情绪紧握我的手指尖"
+  ],
+  "time_seconds": 61.05,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.052606700000000006,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 7580,
+      "cache_read_input_tokens": 142227,
+      "output_tokens": 4636,
+      "output_tokens_details": {
+        "thinking_tokens": 3506
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7580,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 3302,
+          "cache_read_input_tokens": 30566,
+          "cache_creation_input_tokens": 423,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 423
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Constraints extracted:\n\n**Syllable counts:** 4, 5, 6, 10, 14  \n**Rhyme scheme:** ABCDE (all unique)  \n**Word patterns:** [1,1,2], [1,1,3], [3,1,1,1], [1,1,1,1,1,1,1,2,1], [2,2,1,2,3,1,1,2]\n\n---\n\n## Phase 1 Translation\n\n1. 没有惊喜\n2. 我们都懂得\n3. 回忆来又去\n4. 躲雨在老旧火车站停留\n5. 回忆往事无情绪紧握我的手指尖",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

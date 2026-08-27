@@ -1,0 +1,88 @@
+{
+  "id": "ou_002",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我们未曾有过的新体验",
+    "天空中的自由是开放",
+    "世界与你同在",
+    "我世界你闪耀",
+    "真难以置信"
+  ],
+  "time_seconds": 48.32,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.047992799999999995,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 9242,
+      "cache_read_input_tokens": 143898,
+      "output_tokens": 3015,
+      "output_tokens_details": {
+        "thinking_tokens": 1593
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9242,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 95,
+          "cache_read_input_tokens": 32257,
+          "cache_creation_input_tokens": 394,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 394
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我们未曾有过的新体验\n2. 天空中的自由是开放\n3. 世界与你同在\n4. 我世界你闪耀\n5. 真难以置信",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ou_093",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "不是爱不是恨",
+    "这只是冷漠",
+    "我忘了你就",
+    "你在学校操场上我摔倒时你笑个不停",
+    "我本该为你守护你"
+  ],
+  "time_seconds": 100.51,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 115,
+    "rhyme-analyzer": 23,
+    "syllable-pattern-analyzer": 7
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 100.51,
+    "phase0_calls": 1
+  }
+}

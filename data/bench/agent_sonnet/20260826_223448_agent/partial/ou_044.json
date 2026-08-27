@@ -1,0 +1,88 @@
+{
+  "id": "ou_044",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    12,
+    4,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    7,
+    12,
+    4,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我想你了一整夜",
+    "如今我连你的脸庞都记不清",
+    "你是感觉",
+    "写在夏夜风里",
+    "青春是永不回头的水"
+  ],
+  "time_seconds": 60.0,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 15,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 10,
+    "cost_usd": 0.1566536,
+    "usage": {
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 14437,
+      "cache_read_input_tokens": 381398,
+      "output_tokens": 2259,
+      "output_tokens_details": {
+        "thinking_tokens": 801
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14437,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 69,
+          "cache_read_input_tokens": 45507,
+          "cache_creation_input_tokens": 317,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 317
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All good.\n\n1. 我想你了一整夜\n2. 如今我连你的脸庞都记不清\n3. 你是感觉\n4. 写在夏夜风里\n5. 青春是永不回头的水",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

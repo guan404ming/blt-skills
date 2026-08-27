@@ -1,0 +1,90 @@
+{
+  "id": "ou_021",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    9,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    9,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "¿Hay tiempo para callar y bajar?",
+    "Por seguir con tu día",
+    "¿Hay tiempo para kohl y carmín?",
+    "Hora de rizar bien",
+    "¿Hay tiempo de ir de paseo?"
+  ],
+  "time_seconds": 106.23,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 36,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0800481,
+    "usage": {
+      "input_tokens": 116,
+      "cache_creation_input_tokens": 6567,
+      "cache_read_input_tokens": 445731,
+      "output_tokens": 4445,
+      "output_tokens_details": {
+        "thinking_tokens": 2927
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6567,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 122,
+          "cache_read_input_tokens": 34948,
+          "cache_creation_input_tokens": 435,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 435
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. ¿Hay tiempo para callar y bajar?\n2. Por seguir con tu día\n3. ¿Hay tiempo para kohl y carmín?\n4. Hora de rizar bien\n5. ¿Hay tiempo de ir de paseo?",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

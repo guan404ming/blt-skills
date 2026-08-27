@@ -1,0 +1,88 @@
+{
+  "id": "ou_053",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    15,
+    11,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    7,
+    15,
+    11,
+    14,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "花儿还没有枯萎",
+    "啊自从我们冒险开始已经过许多年",
+    "房间四周的蜡烛渐渐熄灭",
+    "醉里梦里我忽然忘记该说些什么",
+    "就在杨柳树的岸旁"
+  ],
+  "time_seconds": 68.95,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.3154235,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 14387,
+      "cache_read_input_tokens": 211467,
+      "output_tokens": 2630,
+      "output_tokens_details": {
+        "thinking_tokens": 1295
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14387,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 96,
+          "cache_read_input_tokens": 34170,
+          "cache_creation_input_tokens": 384,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 384
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 花儿还没有枯萎\n2. 啊自从我们冒险开始已经过许多年\n3. 房间四周的蜡烛渐渐熄灭\n4. 醉里梦里我忽然忘记该说些什么\n5. 就在杨柳树的岸旁",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

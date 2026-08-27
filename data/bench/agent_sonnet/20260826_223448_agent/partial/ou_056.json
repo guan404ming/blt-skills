@@ -1,0 +1,88 @@
+{
+  "id": "ou_056",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    10,
+    8,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    10,
+    8,
+    6,
+    6
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "你让我相信",
+    "你让我懂得为何要绽放",
+    "我已经不想再躲藏",
+    "更疯了更疯了",
+    "唱吧金粉女子"
+  ],
+  "time_seconds": 84.38,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.1410226,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 15710,
+      "cache_read_input_tokens": 206213,
+      "output_tokens": 3692,
+      "output_tokens_details": {
+        "thinking_tokens": 2446
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15710,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 70,
+          "cache_read_input_tokens": 46743,
+          "cache_creation_input_tokens": 354,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 354
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "验证过。\n\n1. 你让我相信\n2. 你让我懂得为何要绽放\n3. 我已经不想再躲藏\n4. 更疯了更疯了\n5. 唱吧金粉女子",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

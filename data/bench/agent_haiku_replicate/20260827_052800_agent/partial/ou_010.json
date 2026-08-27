@@ -1,0 +1,90 @@
+{
+  "id": "ou_010",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    15,
+    16,
+    19,
+    19,
+    18
+  ],
+  "tgt_syl": [
+    15,
+    16,
+    19,
+    19,
+    18
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "不懂音乐这件事没什么需要羞愧啦",
+    "那些真的懂音乐的人并不一定就是神",
+    "这么多歌曲说到底就是由那四个和弦组成的",
+    "有些歌曲已成为了音乐学校长年的教学教材",
+    "菜市场卖菜的阿姨还有那海外来的音乐家"
+  ],
+  "time_seconds": 114.53,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 40,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 20
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 3
+    },
+    "num_turns": 23,
+    "cost_usd": 0.12042930000000002,
+    "usage": {
+      "input_tokens": 100,
+      "cache_creation_input_tokens": 17112,
+      "cache_read_input_tokens": 399453,
+      "output_tokens": 9232,
+      "output_tokens_details": {
+        "thinking_tokens": 5865
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17112,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 157,
+          "cache_read_input_tokens": 38902,
+          "cache_creation_input_tokens": 1619,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1619
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不懂音乐这件事没什么需要羞愧啦\n2. 那些真的懂音乐的人并不一定就是神\n3. 这么多歌曲说到底就是由那四个和弦组成的\n4. 有些歌曲已成为了音乐学校长年的教学教材\n5. 菜市场卖菜的阿姨还有那海外来的音乐家",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

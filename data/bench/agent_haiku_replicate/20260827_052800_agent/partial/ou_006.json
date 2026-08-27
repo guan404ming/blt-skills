@@ -1,0 +1,90 @@
+{
+  "id": "ou_006",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    6,
+    8,
+    6,
+    8
+  ],
+  "tgt_syl": [
+    8,
+    6,
+    8,
+    6,
+    8
+  ],
+  "src_rhyme": "ABABB",
+  "tgt_rhyme": "ABABB",
+  "match": "5/5",
+  "translations": [
+    "奇妙恩典何等甘甜",
+    "拯救我这般人",
+    "我曾迷失如今已见",
+    "曾是瞎眼今人",
+    "我的捆绑已彻断根"
+  ],
+  "time_seconds": 155.06,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 65,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 23
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 18,
+      "rhyme-analyzer": 3,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 26,
+    "cost_usd": 0.17410090000000003,
+    "usage": {
+      "input_tokens": 204,
+      "cache_creation_input_tokens": 18609,
+      "cache_read_input_tokens": 838739,
+      "output_tokens": 10561,
+      "output_tokens_details": {
+        "thinking_tokens": 7691
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 18609,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 133,
+          "cache_read_input_tokens": 41597,
+          "cache_creation_input_tokens": 421,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 421
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 奇妙恩典何等甘甜\n2. 拯救我这般人\n3. 我曾迷失如今已见\n4. 曾是瞎眼今人\n5. 我的捆绑已彻断根",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

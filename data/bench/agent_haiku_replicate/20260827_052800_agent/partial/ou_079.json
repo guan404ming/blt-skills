@@ -1,0 +1,90 @@
+{
+  "id": "ou_079",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "没有惊喜",
+    "我们都明白",
+    "回忆时来时去",
+    "躲在破旧的老站台雨中",
+    "怀念无感的人生握紧我的十指啊"
+  ],
+  "time_seconds": 63.7,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.06716180000000001,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 11549,
+      "cache_read_input_tokens": 209638,
+      "output_tokens": 4608,
+      "output_tokens_details": {
+        "thinking_tokens": 2676
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11549,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 129,
+          "cache_read_input_tokens": 34496,
+          "cache_creation_input_tokens": 462,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 462
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 没有惊喜\n2. 我们都明白\n3. 回忆时来时去\n4. 躲在破旧的老站台雨中\n5. 怀念无感的人生握紧我的十指啊",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

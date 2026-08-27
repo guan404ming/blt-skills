@@ -1,0 +1,85 @@
+{
+  "id": "ou_092",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.4117647058823529,
+  "src_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "tgt_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACA",
+  "match": "5/5",
+  "translations": [
+    "我只是害怕我会深深爱上你",
+    "我不敢让自己靠太近",
+    "我害怕我没有什么好给予你",
+    "爱你也需要许多勇气和胆量",
+    "也许某一天我就无法控制自己"
+  ],
+  "time_seconds": 54.94,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.0458937,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5709,
+      "cache_read_input_tokens": 43457,
+      "output_tokens": 6022,
+      "output_tokens_details": {
+        "thinking_tokens": 5396
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5709,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 5419,
+          "cache_read_input_tokens": 24028,
+          "cache_creation_input_tokens": 1110,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1110
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "### Step 0: Extract Constraints\n\nSyllable counts (en-us):\n1. I'm on-ly a-fraid I will fall in love with you = 12\n2. I dare not let my-self get too close = 9\n3. I'm a-fraid I don't have e-nough to of-fer you = 12\n4. Lov-ing you al-so re-quires a lot of cour-age = 12\n5. Per-haps some day I won't be a-ble to stop my-self = 13\n\nRhyme scheme:\n- Line 1 (you) = A\n- Line 2 (close) = B\n- Line 3 (you) = A\n- Line 4 (courage) = C\n- Line 5 (myself) = D\n\n### Phase 1: Initial Translation\n\n1. 我只是害怕我会深深爱上你 (12 characters, ends 你)\n2. 我不敢让自己靠太近 (9 characters, ends 近)\n3. 我害怕我没有什么好给予你 (12 characters, ends 你)\n4. 爱你也需要许多勇气和胆量 (12 characters, ends 量)\n5. 也许某一天我就无法控制自己 (13 characters, ends 己)\n\n### Phase 2 & Final Check\n\nSyllable recount: all verified ✓\nRhyme scheme: 1–A, 2–B, 3–A, 4–C, 5–D ✓\n\n---\n\n1. 我只是害怕我会深深爱上你\n2. 我不敢让自己靠太近\n3. 我害怕我没有什么好给予你\n4. 爱你也需要许多勇气和胆量\n5. 也许某一天我就无法控制自己",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

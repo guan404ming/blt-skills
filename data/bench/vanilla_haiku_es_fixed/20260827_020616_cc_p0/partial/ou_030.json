@@ -1,0 +1,43 @@
+{
+  "id": "ou_030",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "tgt_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "Llegando a los límites de mi consciencia",
+    "Veo mi padre en la nube fumando",
+    "de antes.",
+    "Quienes vienen de ríos y lagos",
+    "Confinados a noche, cocina y pasión."
+  ],
+  "time_seconds": 144.22,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 20,
+    "rhyme-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 144.223,
+    "phase0_calls": 1
+  }
+}

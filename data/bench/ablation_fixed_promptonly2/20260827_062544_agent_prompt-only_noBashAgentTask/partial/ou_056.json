@@ -1,0 +1,85 @@
+{
+  "id": "ou_056",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.04,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    10,
+    8,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    6,
+    10,
+    8,
+    6,
+    6
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "4/5",
+  "translations": [
+    "你给了我信心",
+    "你让我看清生活的模样",
+    "我不想再继续躲藏",
+    "疯狂到了极端",
+    "金色尘埃女人"
+  ],
+  "time_seconds": 88.57,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.0616374,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5759,
+      "cache_read_input_tokens": 43444,
+      "output_tokens": 9151,
+      "output_tokens_details": {
+        "thinking_tokens": 8368
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5759,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 8489,
+          "cache_read_input_tokens": 24015,
+          "cache_creation_input_tokens": 1173,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1173
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\nSyllable counts:\n- Line 1: \"And (1) you (1) made (1) me (1) be-lieve (2)\" = **6 syllables**\n- Line 2: \"Ba-by (2) you (1) showed (1) me (1) what (1) liv-in' (2) is (1) for (1)\" = **10 syllables**\n- Line 3: \"I (1) don't (1) wan-na (2) hide (1) an-y-more (3)\" = **8 syllables**\n- Line 4: \"Cra-zi-er (3) cra-zi-er (3)\" = **6 syllables**\n- Line 5: \"Rock (1) on (1) gold (1) dust (1) wo-man (2)\" = **6 syllables**\n\nRhyme scheme:\n- Line 1: \"believe\" (-ieve) = A\n- Line 2: \"for\" (-or) = B\n- Line 3: \"more\" (-or, rhymes with for) = B\n- Line 4: \"crazier\" (-ier) = C\n- Line 5: \"woman\" (-an) = D\n\nScheme: **ABBCD** (lines 2 & 3 must rhyme; others stand alone)\n\n## Phase 1: Initial Translation\n\n1. 你给了我信心 (You gave me confidence) — 6 syllables, ends -xin\n2. 你让我看清生活的模样 (You let me see what life looks like) — 10 syllables, ends -yang\n3. 我不想再继续躲藏 (I don't want to keep hiding) — 8 syllables, ends -cang\n4. 疯狂到了极端 (Craziness reaches extremes) — 6 syllables, ends -duan\n5. 金色尘埃女人 (Golden dust woman) — 6 syllables, ends -ren\n\n## Phase 2: Syllable Refinement\n\nRecounting all lines — all match target counts exactly. No refinement needed.\n\n## Final Check\n\nSyllables verified ✓. Rhyme scheme: lines 2 & 3 both end -ang (rhyme verified ✓); other lines different sounds ✓.\n\n---\n\n1. 你给了我信心\n2. 你让我看清生活的模样\n3. 我不想再继续躲藏\n4. 疯狂到了极端\n5. 金色尘埃女人",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

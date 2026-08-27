@@ -1,0 +1,44 @@
+{
+  "id": "ou_052",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.17978937728937727,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    16,
+    13,
+    7,
+    15
+  ],
+  "tgt_syl": [
+    9,
+    11,
+    12,
+    6,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCAD",
+  "match": "0/5",
+  "translations": [
+    "月是江河浪漫的眼睛",
+    "我独自举杯，柳帘轻轻分开",
+    "敬这一生，也敬春风里的天地",
+    "花还未曾凋零",
+    "啊，闯荡启程至今已过多年"
+  ],
+  "time_seconds": 9.39,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 9.388,
+    "phase0_calls": 1
+  }
+}

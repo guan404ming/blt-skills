@@ -1,0 +1,88 @@
+{
+  "id": "ou_027",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    13,
+    12,
+    8,
+    7
+  ],
+  "tgt_syl": [
+    6,
+    13,
+    12,
+    8,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我真的很愛你",
+    "我直到此刻才對你說出這句話",
+    "媽我要告訴你我找到真愛了",
+    "她就像你年輕時候",
+    "你生我的那一天"
+  ],
+  "time_seconds": 46.28,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.11434940000000002,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 13756,
+      "cache_read_input_tokens": 204327,
+      "output_tokens": 1844,
+      "output_tokens_details": {
+        "thinking_tokens": 618
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13756,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 73,
+          "cache_read_input_tokens": 44813,
+          "cache_creation_input_tokens": 330,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 330
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我真的很愛你\n2. 我直到此刻才對你說出這句話\n3. 媽我要告訴你我找到真愛了\n4. 她就像你年輕時候\n5. 你生我的那一天",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

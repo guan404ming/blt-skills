@@ -1,0 +1,88 @@
+{
+  "id": "ou_090",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    18,
+    11,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    14,
+    18,
+    11,
+    9,
+    10
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "5/5",
+  "translations": [
+    "在不再喧闹的街上我抬头望月亮",
+    "我已忘记那忽然滑落脸庞的是雨还是眼泪",
+    "心在低语可我一点没听清",
+    "早晨我总带着笑清醒",
+    "为何一到夜里就睡不着"
+  ],
+  "time_seconds": 63.59,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.3064835,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 14165,
+      "cache_read_input_tokens": 211377,
+      "output_tokens": 2363,
+      "output_tokens_details": {
+        "thinking_tokens": 1048
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14165,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 100,
+          "cache_read_input_tokens": 33970,
+          "cache_creation_input_tokens": 362,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 362
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 在不再喧闹的街上我抬头望月亮\n2. 我已忘记那忽然滑落脸庞的是雨还是眼泪\n3. 心在低语可我一点没听清\n4. 早晨我总带着笑清醒\n5. 为何一到夜里就睡不着",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

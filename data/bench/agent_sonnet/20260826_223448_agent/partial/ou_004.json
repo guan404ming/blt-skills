@@ -1,0 +1,88 @@
+{
+  "id": "ou_004",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    4,
+    4,
+    12,
+    12
+  ],
+  "tgt_syl": [
+    2,
+    4,
+    4,
+    12,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "悸動",
+    "命中注定",
+    "喔在一起",
+    "你累了嗎願意伸出你的雙手",
+    "若你想要擁抱為何緊握雙拳"
+  ],
+  "time_seconds": 67.9,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 6,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.1430824,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 20838,
+      "cache_read_input_tokens": 197402,
+      "output_tokens": 2023,
+      "output_tokens_details": {
+        "thinking_tokens": 781
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20838,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 74,
+          "cache_read_input_tokens": 44935,
+          "cache_creation_input_tokens": 335,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 335
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Passed all checks.\n\n1. 悸動\n2. 命中注定\n3. 喔在一起\n4. 你累了嗎願意伸出你的雙手\n5. 若你想要擁抱為何緊握雙拳",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

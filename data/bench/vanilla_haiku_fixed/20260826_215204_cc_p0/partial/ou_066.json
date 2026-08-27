@@ -1,0 +1,44 @@
+{
+  "id": "ou_066",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    9,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    9,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "有没有时候要低眉不言",
+    "继续你的每一日",
+    "有没有时候化妆涂红",
+    "烫卷自己头发",
+    "有没有时候去街购物"
+  ],
+  "time_seconds": 152.51,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 130,
+    "rhyme-analyzer": 26,
+    "syllable-pattern-analyzer": 8
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 152.511,
+    "phase0_calls": 1
+  }
+}

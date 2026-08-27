@@ -1,0 +1,88 @@
+{
+  "id": "ou_095",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    5,
+    6,
+    5,
+    4
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    6,
+    5,
+    4
+  ],
+  "src_rhyme": "ABCBD",
+  "tgt_rhyme": "ABCBD",
+  "match": "5/5",
+  "translations": [
+    "死是永远的",
+    "投掷骰子来",
+    "冒着危险的事",
+    "赌注太高来",
+    "半梦与愿"
+  ],
+  "time_seconds": 95.87,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 22,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.08063970000000001,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 13361,
+      "cache_read_input_tokens": 211127,
+      "output_tokens": 6549,
+      "output_tokens_details": {
+        "thinking_tokens": 4966
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13361,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 229,
+          "cache_read_input_tokens": 36350,
+          "cache_creation_input_tokens": 420,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 420
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 死是永远的\n2. 投掷骰子来\n3. 冒着危险的事\n4. 赌注太高来\n5. 半梦与愿",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

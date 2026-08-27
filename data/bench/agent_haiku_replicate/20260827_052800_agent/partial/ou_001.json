@@ -1,0 +1,90 @@
+{
+  "id": "ou_001",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    12,
+    11,
+    6,
+    17
+  ],
+  "tgt_syl": [
+    19,
+    12,
+    11,
+    6,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "让我们走近美丽善良，感受分享快乐的每一天",
+    "祈祷天下和平，我们感恩感谢",
+    "啊，哦，啊，哦，啊，洁白海螺吹响",
+    "彩虹亲吻天空",
+    "啊，哦，啊，哦，啊，谁快乐，谁愤怒，谁悲伤，谁欢喜"
+  ],
+  "time_seconds": 102.93,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 17
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 14,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 20,
+    "cost_usd": 0.1011563,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 15994,
+      "cache_read_input_tokens": 257103,
+      "output_tokens": 8678,
+      "output_tokens_details": {
+        "thinking_tokens": 5922
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15994,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 207,
+          "cache_read_input_tokens": 38682,
+          "cache_creation_input_tokens": 721,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 721
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 让我们走近美丽善良，感受分享快乐的每一天\n2. 祈祷天下和平，我们感恩感谢\n3. 啊，哦，啊，哦，啊，洁白海螺吹响\n4. 彩虹亲吻天空\n5. 啊，哦，啊，哦，啊，谁快乐，谁愤怒，谁悲伤，谁欢喜",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ou_094",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    20,
+    7,
+    10,
+    11,
+    20
+  ],
+  "tgt_syl": [
+    20,
+    7,
+    10,
+    11,
+    20
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "一天一月相伴已经一年这难道不像是永远不变",
+    "在同一个屋檐下",
+    "我们正写着未来的诗篇",
+    "在这温暖房间我慢慢懂得",
+    "我们的相遇其实是一种命中注定多么值得铭记"
+  ],
+  "time_seconds": 73.05,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 10,
+    "cost_usd": 0.36163799999999996,
+    "usage": {
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 14889,
+      "cache_read_input_tokens": 279316,
+      "output_tokens": 2920,
+      "output_tokens_details": {
+        "thinking_tokens": 1495
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14889,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 100,
+          "cache_read_input_tokens": 34435,
+          "cache_creation_input_tokens": 621,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 621
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 一天一月相伴已经一年这难道不像是永远不变\n2. 在同一个屋檐下\n3. 我们正写着未来的诗篇\n4. 在这温暖房间我慢慢懂得\n5. 我们的相遇其实是一种命中注定多么值得铭记",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

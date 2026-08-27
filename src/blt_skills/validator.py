@@ -156,4 +156,14 @@ def _check_rhyme_scheme(
                         f"don't rhyme"
                     )
 
+    firsts = {label: rhyme_endings[idx[0]] for label, idx in rhyme_groups.items()}
+    labels = list(firsts)
+    for a_i, a in enumerate(labels):
+        for b in labels[a_i + 1 :]:
+            if check_rhyme(firsts[a], firsts[b], language):
+                rhymes_valid = False
+                issues.append(
+                    f"Groups '{a}' and '{b}' should not rhyme but share ending "
+                    f"'{firsts[a]}' / '{firsts[b]}'"
+                )
     return rhymes_valid, issues

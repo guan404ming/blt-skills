@@ -1,0 +1,44 @@
+{
+  "id": "ou_034",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.09555555555555556,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "tgt_syl": [
+    5,
+    9,
+    7,
+    6,
+    10
+  ],
+  "src_rhyme": "ABBAC",
+  "tgt_rhyme": "ABCAD",
+  "match": "2/5",
+  "translations": [
+    "说声我爱你",
+    "我只想要你能够明白",
+    "当我牵起你的手",
+    "是因为我愿意",
+    "我们都生在疑惑的世间"
+  ],
+  "time_seconds": 9.3,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 9.299,
+    "phase0_calls": 1
+  }
+}

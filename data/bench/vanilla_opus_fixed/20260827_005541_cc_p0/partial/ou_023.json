@@ -1,0 +1,43 @@
+{
+  "id": "ou_023",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.06857142857142857,
+  "ari": 0.2857142857142857,
+  "src_syl": [
+    3,
+    7,
+    7,
+    8,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    7,
+    8,
+    8,
+    6
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABBB",
+  "match": "3/5",
+  "translations": [
+    "像太阳",
+    "温暖照亮每一方",
+    "我问你为何人会死",
+    "你说我们都被设计",
+    "滑入那大海里"
+  ],
+  "time_seconds": 14.45,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 14.451,
+    "phase0_calls": 1
+  }
+}

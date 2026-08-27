@@ -1,0 +1,44 @@
+{
+  "id": "ou_080",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "tgt_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "呆呆地站在那里猜不出话来",
+    "我却认得脸",
+    "我就在这",
+    "我早已经准备好迎接即将到来",
+    "真可惜"
+  ],
+  "time_seconds": 76.2,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 76.2,
+    "phase0_calls": 1
+  }
+}

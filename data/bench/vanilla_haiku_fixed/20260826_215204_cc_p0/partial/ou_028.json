@@ -1,0 +1,44 @@
+{
+  "id": "ou_028",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.1422222222222222,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    8,
+    11,
+    7,
+    7,
+    8
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "AABBC",
+  "match": "1/5",
+  "translations": [
+    "会永远留在我心里",
+    "妈妈，我想为你唱歌，我爱你",
+    "我从未见过妈妈",
+    "但我一直爱着她",
+    "我从未和她说过话"
+  ],
+  "time_seconds": 42.71,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 42.715,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ou_004",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    10,
+    12,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    10,
+    12,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "¿Estás listo? Tiempo no regresa",
+    "Quiero volar sin causa ni razón",
+    "No importa cuán solo esté el mundo",
+    "Siempre conmigo estarás",
+    "Dijimos que el ancho no es verdad"
+  ],
+  "time_seconds": 149.85,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 70,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 149.848,
+    "phase0_calls": 1
+  }
+}

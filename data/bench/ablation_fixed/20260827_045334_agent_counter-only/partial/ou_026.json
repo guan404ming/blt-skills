@@ -1,0 +1,88 @@
+{
+  "id": "ou_026",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    8,
+    7,
+    8,
+    16
+  ],
+  "tgt_syl": [
+    10,
+    8,
+    7,
+    8,
+    16
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "拥挤的人群紧紧相互靠",
+    "那个女孩令我失望",
+    "我们匆匆擦身过",
+    "我无法辨清你面容",
+    "所以在路上我幻想我们再次重逢相聚"
+  ],
+  "time_seconds": 81.34,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 37,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "lyrics-validator": 1
+    },
+    "num_turns": 18,
+    "cost_usd": 0.1003953,
+    "usage": {
+      "input_tokens": 140,
+      "cache_creation_input_tokens": 11460,
+      "cache_read_input_tokens": 533353,
+      "output_tokens": 4800,
+      "output_tokens_details": {
+        "thinking_tokens": 3008
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11460,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 114,
+          "cache_read_input_tokens": 34525,
+          "cache_creation_input_tokens": 344,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 344
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 拥挤的人群紧紧相互靠\n2. 那个女孩令我失望\n3. 我们匆匆擦身过\n4. 我无法辨清你面容\n5. 所以在路上我幻想我们再次重逢相聚",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

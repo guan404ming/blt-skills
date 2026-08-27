@@ -1,0 +1,88 @@
+{
+  "id": "ou_075",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "免得傷悲",
+    "因為生命短暫",
+    "沒有時間浪費",
+    "迷人的眼影上面蒙著一層偽裝",
+    "身體上的紋路在警告"
+  ],
+  "time_seconds": 76.08,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 7,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.14890979999999998,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 15672,
+      "cache_read_input_tokens": 250639,
+      "output_tokens": 3607,
+      "output_tokens_details": {
+        "thinking_tokens": 1958
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15672,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 79,
+          "cache_read_input_tokens": 45759,
+          "cache_creation_input_tokens": 1300,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1300
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 免得傷悲\n2. 因為生命短暫\n3. 沒有時間浪費\n4. 迷人的眼影上面蒙著一層偽裝\n5. 身體上的紋路在警告",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

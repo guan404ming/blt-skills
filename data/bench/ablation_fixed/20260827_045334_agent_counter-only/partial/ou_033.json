@@ -1,0 +1,88 @@
+{
+  "id": "ou_033",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    6,
+    6,
+    6,
+    8,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    6,
+    6,
+    8,
+    8
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCBD",
+  "match": "5/5",
+  "translations": [
+    "星星照亮天空",
+    "看他们飞翔去",
+    "那就像你和我",
+    "每个人都感到孤独",
+    "但我愿为你走千里"
+  ],
+  "time_seconds": 56.75,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.05523530000000001,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 10243,
+      "cache_read_input_tokens": 144803,
+      "output_tokens": 4045,
+      "output_tokens_details": {
+        "thinking_tokens": 2579
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10243,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 116,
+          "cache_read_input_tokens": 33254,
+          "cache_creation_input_tokens": 398,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 398
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 星星照亮天空\n2. 看他们飞翔去\n3. 那就像你和我\n4. 每个人都感到孤独\n5. 但我愿为你走千里",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

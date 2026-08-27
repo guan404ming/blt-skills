@@ -1,0 +1,43 @@
+{
+  "id": "ou_008",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.7132539682539681,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    17,
+    17,
+    34,
+    22,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AABBB",
+  "match": "0/5",
+  "translations": [
+    "俺は青春を彼女に投げていた",
+    "夏の最盛期に弦を弾いていた",
+    "それが君の心を動かすなら、宇宙的なつながりがそこへ導く",
+    "光に逆らって歩き、要素に打たれている",
+    "短い道、起きては止まる"
+  ],
+  "time_seconds": 22.32,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 22.317,
+    "phase0_calls": 1
+  }
+}

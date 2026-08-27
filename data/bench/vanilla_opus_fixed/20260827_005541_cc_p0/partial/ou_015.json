@@ -1,0 +1,43 @@
+{
+  "id": "ou_015",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.16493506493506493,
+  "ari": 0.13793103448275862,
+  "src_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "tgt_syl": [
+    7,
+    7,
+    8,
+    9,
+    9
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABAAA",
+  "match": "0/5",
+  "translations": [
+    "因为一千年以后",
+    "我已不在这世上",
+    "无法再紧握你的手",
+    "也无法轻吻你的额头",
+    "请别等到一千年以后"
+  ],
+  "time_seconds": 5.49,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 5.494,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ou_001",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.06818181818181819,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    12,
+    11,
+    6,
+    17
+  ],
+  "tgt_syl": [
+    19,
+    15,
+    12,
+    6,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "3/5",
+  "translations": [
+    "让我们靠近美丽的善良，感受分享快乐的日子",
+    "为所有和平祈祷，我们深深感恩，感恩",
+    "啊，哦，啊，哦，啊，珍珠白贝壳吹响",
+    "彩虹吻过天空",
+    "啊，哦，啊，哦，啊，谁欢喜谁愤怒谁悲伤谁欢乐"
+  ],
+  "time_seconds": 16.74,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 16.742,
+    "phase0_calls": 1
+  }
+}

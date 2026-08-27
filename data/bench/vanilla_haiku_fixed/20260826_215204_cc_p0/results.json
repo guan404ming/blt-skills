@@ -1,0 +1,4393 @@
+{
+  "method": "cc-skills-p0",
+  "date": "2026-08-26T22:19:50.221684",
+  "n": 100,
+  "seed": 42,
+  "avg_ser": 0.442,
+  "avg_scre": 0.1416463857834433,
+  "avg_ari": 0.6677629134150872,
+  "avg_time": 65.33769999999998,
+  "results": [
+    {
+      "id": "ou_001",
+      "artist": "ou-test",
+      "ser": 0.4,
+      "scre": 0.06818181818181819,
+      "ari": 1.0,
+      "src_syl": [
+        19,
+        12,
+        11,
+        6,
+        17
+      ],
+      "tgt_syl": [
+        19,
+        15,
+        12,
+        6,
+        17
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "3/5",
+      "translations": [
+        "让我们靠近美丽的善良，感受分享快乐的日子",
+        "为所有和平祈祷，我们深深感恩，感恩",
+        "啊，哦，啊，哦，啊，珍珠白贝壳吹响",
+        "彩虹吻过天空",
+        "啊，哦，啊，哦，啊，谁欢喜谁愤怒谁悲伤谁欢乐"
+      ],
+      "time_seconds": 16.74,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 16.742,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_002",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        9,
+        6,
+        6,
+        5
+      ],
+      "tgt_syl": [
+        10,
+        9,
+        6,
+        6,
+        5
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "我们从未体验过的经历",
+        "云里的自由开放给人",
+        "与世界同步前",
+        "我心为你而现",
+        "不可思议呀"
+      ],
+      "time_seconds": 149.51,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 115,
+        "rhyme-analyzer": 23,
+        "syllable-pattern-analyzer": 7
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 149.514,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_003",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        7,
+        9,
+        7,
+        6
+      ],
+      "tgt_syl": [
+        5,
+        7,
+        9,
+        7,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "自由去探索",
+        "繁星与晨光之海",
+        "别害怕打开你的眼睛",
+        "有这么多要发现",
+        "深呼吸放松心"
+      ],
+      "time_seconds": 68.34,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 68.337,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_004",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        2,
+        4,
+        4,
+        12,
+        12
+      ],
+      "tgt_syl": [
+        2,
+        4,
+        4,
+        12,
+        12
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "翻动",
+        "注定如此",
+        "啊共一心",
+        "你现在累吗要不要伸出双手",
+        "若要拥抱为何偏要握紧双拳"
+      ],
+      "time_seconds": 74.84,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 74.839,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_005",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        10,
+        12,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        10,
+        10,
+        12,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "你准备好吗？时间永远飞",
+        "我想飞翔无需任何理由",
+        "不管世界的尽头有多么孤独",
+        "你会永远在我身边",
+        "我们曾说过不管世界多宽"
+      ],
+      "time_seconds": 87.85,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 87.85,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_006",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.325,
+      "ari": -0.08695652173913043,
+      "src_syl": [
+        8,
+        6,
+        8,
+        6,
+        8
+      ],
+      "tgt_syl": [
+        8,
+        9,
+        9,
+        9,
+        12
+      ],
+      "src_rhyme": "ABABB",
+      "tgt_rhyme": "ABAAC",
+      "match": "1/5",
+      "translations": [
+        "奇异恩典，何等甘甜",
+        "拯救了我这样的罪人",
+        "我曾迷失，如今已寻见",
+        "曾是盲人，如今能看见",
+        "我的锁链已断裂，我已得自由"
+      ],
+      "time_seconds": 16.3,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 16.296,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_007",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.3516666666666667,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        8,
+        6,
+        2,
+        8
+      ],
+      "tgt_syl": [
+        9,
+        9,
+        8,
+        3,
+        8
+      ],
+      "src_rhyme": "ABACC",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "恩典消解了我的畏惧",
+        "那恩典显得何等珍贵",
+        "初次信仰的时刻啊",
+        "第三节：",
+        "主曾向我应许美善"
+      ],
+      "time_seconds": 10.63,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 10.627,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_008",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        8,
+        7,
+        11,
+        7,
+        5
+      ],
+      "tgt_syl": [
+        8,
+        7,
+        11,
+        7,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "每一滴雨都变成歌",
+        "从开头直到末尾",
+        "结果超越了我们的掌控力",
+        "我们爱中的差别",
+        "仍不能穿透"
+      ],
+      "time_seconds": 124.94,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 100,
+        "rhyme-analyzer": 20,
+        "syllable-pattern-analyzer": 6
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 124.941,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_009",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        7,
+        9,
+        11,
+        15
+      ],
+      "tgt_syl": [
+        10,
+        7,
+        9,
+        11,
+        15
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "一加一的答案你是算错",
+        "等于三本就是对",
+        "两个平凡少年的声音",
+        "这歌词只代表我们两个人",
+        "不懂得音乐其实没有什么好羞愧的"
+      ],
+      "time_seconds": 135.33,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 100,
+        "rhyme-analyzer": 20,
+        "syllable-pattern-analyzer": 6
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 135.332,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_010",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.2017982456140351,
+      "ari": 1.0,
+      "src_syl": [
+        15,
+        16,
+        19,
+        19,
+        18
+      ],
+      "tgt_syl": [
+        11,
+        11,
+        16,
+        17,
+        15
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "不懂音乐没什么好羞愧的",
+        "懂音乐的人不一定是神仙",
+        "很多歌曲归根结底只由四个和弦组成",
+        "有些歌曲多年来一直是音乐学校的教材",
+        "菜市场卖菜的阿姨，一位海外音乐家"
+      ],
+      "time_seconds": 11.83,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 11.825,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_011",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        14,
+        7,
+        9,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        14,
+        7,
+        9,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "我想忘掉它，但最后我还是做不到",
+        "只等黑夜来临时",
+        "去梦想曾经爱过的她",
+        "放手，我又握你的手",
+        "每次我选择去原谅与坚强"
+      ],
+      "time_seconds": 134.09,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 134.085,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_012",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.12136363636363637,
+      "ari": 0.0,
+      "src_syl": [
+        8,
+        8,
+        11,
+        8,
+        10
+      ],
+      "tgt_syl": [
+        8,
+        9,
+        13,
+        8,
+        7
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABBCD",
+      "match": "2/5",
+      "translations": [
+        "我试着去忍受伤痛",
+        "却还是放不开这份爱",
+        "你的心已离得太远，再也回不来",
+        "莱生愿为一朵莲花",
+        "静静生开在佛前"
+      ],
+      "time_seconds": 17.44,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 17.44,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_013",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.2145454545454545,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        11,
+        12,
+        6,
+        11
+      ],
+      "tgt_syl": [
+        7,
+        10,
+        8,
+        5,
+        9
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABBCB",
+      "match": "0/5",
+      "translations": [
+        "静静升开在佛前",
+        "出淤泥而不为风梦所染",
+        "花开无言，花落无言",
+        "又是你三生",
+        "来到你身边不早不晚"
+      ],
+      "time_seconds": 31.43,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 31.426,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_014",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        9,
+        9,
+        14,
+        9,
+        10
+      ],
+      "tgt_syl": [
+        9,
+        9,
+        14,
+        9,
+        10
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "过了村子店就会消失",
+        "你明白我在说什么啦",
+        "我真的很想在你脸上来亲吻你呢",
+        "就在深圳街角那地点",
+        "我们的模样随风飘散中"
+      ],
+      "time_seconds": 117.15,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 117.149,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_015",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        8,
+        8,
+        7,
+        12,
+        11
+      ],
+      "tgt_syl": [
+        8,
+        8,
+        7,
+        12,
+        11
+      ],
+      "src_rhyme": "ABCDA",
+      "tgt_rhyme": "ABCDA",
+      "match": "5/5",
+      "translations": [
+        "因为千年之后来啊",
+        "我已将不再在世界",
+        "我握不了你的手",
+        "也不能温柔吻你额头依旧了",
+        "所以别等到千年之后吧啦"
+      ],
+      "time_seconds": 133.41,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 133.414,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_016",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        11,
+        18,
+        10,
+        8
+      ],
+      "tgt_syl": [
+        13,
+        11,
+        18,
+        10,
+        8
+      ],
+      "src_rhyme": "ABCDD",
+      "tgt_rhyme": "ABCDD",
+      "match": "5/5",
+      "translations": [
+        "当所有的人都早已经忘记了我",
+        "荒漠的黄昏已变成了红色",
+        "有没有人能把我从千年的孤独中解救出来",
+        "在夜晚的翅膀中看见你",
+        "绕烛光温暖我心迷"
+      ],
+      "time_seconds": 104.09,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 104.093,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_017",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        11,
+        18,
+        10,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        11,
+        18,
+        10,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "那时沙漠暮色渐已泛红光",
+        "有没有人能够帮我摆脱千年孤独的枷锁呢",
+        "我看见你在夜翅中舞来",
+        "烛光温暖环绕摇来",
+        "我在风中听见你两极旋转"
+      ],
+      "time_seconds": 157.7,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 160,
+        "rhyme-analyzer": 32,
+        "syllable-pattern-analyzer": 10
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 157.698,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_018",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.1765079365079365,
+      "ari": 1.0,
+      "src_syl": [
+        9,
+        14,
+        15,
+        14,
+        8
+      ],
+      "tgt_syl": [
+        8,
+        10,
+        18,
+        10,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "我把青春坠入了她",
+        "我也拨动琴弦投向盛夏",
+        "若这触动你的心，就让宇宙的牵引带你前往",
+        "逆光而行，让元素击打我",
+        "一条短路，起起停停"
+      ],
+      "time_seconds": 22.65,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 22.651,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_019",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.3467282717282717,
+      "ari": 1.0,
+      "src_syl": [
+        7,
+        11,
+        7,
+        8,
+        13
+      ],
+      "tgt_syl": [
+        8,
+        17,
+        9,
+        11,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "我听说那儿有虎穴",
+        "自从我们还是小孩以来就没再谈过这个",
+        "我的心底是个山里人",
+        "这刀耕火种的生活很艰难",
+        "革命之风吹过山间"
+      ],
+      "time_seconds": 26.0,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 25.999,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_020",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        2,
+        3,
+        3,
+        2,
+        5
+      ],
+      "tgt_syl": [
+        2,
+        3,
+        3,
+        2,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "但若",
+        "你仍能",
+        "停下想",
+        "想我",
+        "想起所有事"
+      ],
+      "time_seconds": 61.16,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 61.162,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_021",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        5,
+        7,
+        6,
+        8
+      ],
+      "tgt_syl": [
+        6,
+        5,
+        7,
+        6,
+        8
+      ],
+      "src_rhyme": "ABAAC",
+      "tgt_rhyme": "ABAAC",
+      "match": "5/5",
+      "translations": [
+        "你留在我身边",
+        "你是我全部",
+        "这不是爱的牵连",
+        "就留在我身边",
+        "为何我总是太感伤"
+      ],
+      "time_seconds": 123.64,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 190,
+        "rhyme-analyzer": 38,
+        "syllable-pattern-analyzer": 12
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 123.639,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_022",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.21666666666666665,
+      "ari": 0.0,
+      "src_syl": [
+        3,
+        8,
+        7,
+        4,
+        3
+      ],
+      "tgt_syl": [
+        3,
+        6,
+        7,
+        6,
+        2
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCDE",
+      "match": "2/5",
+      "translations": [
+        "静下来",
+        "我年轻，我天真",
+        "告诉我，我会相信",
+        "带我走，带我走",
+        "远方"
+      ],
+      "time_seconds": 11.11,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 11.109,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_023",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.15428571428571428,
+      "ari": 0.0,
+      "src_syl": [
+        3,
+        7,
+        7,
+        8,
+        5
+      ],
+      "tgt_syl": [
+        3,
+        9,
+        9,
+        8,
+        4
+      ],
+      "src_rhyme": "AABCD",
+      "tgt_rhyme": "ABCDE",
+      "match": "2/5",
+      "translations": [
+        "像太阳",
+        "把温暖散播给每个人",
+        "我问你为什么人会死",
+        "你说我们都有宿命",
+        "滑入大海"
+      ],
+      "time_seconds": 10.13,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 10.126,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_024",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.2661538461538461,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        7,
+        13,
+        7,
+        7
+      ],
+      "tgt_syl": [
+        11,
+        10,
+        10,
+        9,
+        9
+      ],
+      "src_rhyme": "ABCDD",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "男孩与男孩相遇是件美事",
+        "那是他开口说的第一句",
+        "真的很老套，有时逗我笑",
+        "那是他说的第一句话",
+        "我只是皱眉摇了摇头"
+      ],
+      "time_seconds": 23.26,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 23.261,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_025",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        14,
+        3,
+        4,
+        3,
+        3
+      ],
+      "tgt_syl": [
+        14,
+        3,
+        4,
+        3,
+        3
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "你要趁机会出现时立即把握住它",
+        "我想要",
+        "要在这里",
+        "要充满",
+        "我都需"
+      ],
+      "time_seconds": 69.88,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 115,
+        "rhyme-analyzer": 23,
+        "syllable-pattern-analyzer": 7
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 69.878,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_026",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.15214285714285714,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        8,
+        7,
+        8,
+        16
+      ],
+      "tgt_syl": [
+        9,
+        10,
+        9,
+        8,
+        14
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "1/5",
+      "translations": [
+        "在互相拥挤的人群中",
+        "是那个让我失望的女孩",
+        "当我们匆匆擦肩而过",
+        "我看不清你的面容",
+        "所以我在路上幻想着我们的重聚"
+      ],
+      "time_seconds": 7.1,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 7.097,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_027",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.23076923076923075,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        13,
+        12,
+        8,
+        7
+      ],
+      "tgt_syl": [
+        5,
+        15,
+        16,
+        12,
+        7
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "我非常爱你",
+        "直到这一刻，我从未对你说过这些话",
+        "妈妈，我必须告诉你，我找到了我的真爱",
+        "她看起来就像你年轻的时候",
+        "你生我的那一天"
+      ],
+      "time_seconds": 14.28,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 14.278,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_028",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.1422222222222222,
+      "ari": -0.15384615384615385,
+      "src_syl": [
+        9,
+        10,
+        7,
+        6,
+        6
+      ],
+      "tgt_syl": [
+        8,
+        11,
+        7,
+        7,
+        8
+      ],
+      "src_rhyme": "ABCDD",
+      "tgt_rhyme": "AABBC",
+      "match": "1/5",
+      "translations": [
+        "会永远留在我心里",
+        "妈妈，我想为你唱歌，我爱你",
+        "我从未见过妈妈",
+        "但我一直爱着她",
+        "我从未和她说过话"
+      ],
+      "time_seconds": 42.71,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 42.715,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_029",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.2013888888888889,
+      "ari": 0.6153846153846154,
+      "src_syl": [
+        16,
+        8,
+        9,
+        8,
+        9
+      ],
+      "tgt_syl": [
+        9,
+        7,
+        6,
+        8,
+        8
+      ],
+      "src_rhyme": "ABCAD",
+      "tgt_rhyme": "ABCAB",
+      "match": "1/5",
+      "translations": [
+        "在连绵山麓花朵绽放",
+        "什么节奏最摇摆",
+        "哪首歌最欢乐",
+        "蜿蜒河流来自天堂",
+        "五彩缤纷流向大海"
+      ],
+      "time_seconds": 15.54,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 15.544,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_030",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        11,
+        8,
+        11,
+        12,
+        8
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 11.26,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 11.264,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_031",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        5,
+        4,
+        4,
+        7
+      ],
+      "tgt_syl": [
+        5,
+        5,
+        4,
+        4,
+        7
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "低头看那些",
+        "亮蓝城市灯",
+        "不会等待",
+        "我们留下",
+        "怨灵又来复现了"
+      ],
+      "time_seconds": 106.71,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 106.706,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_032",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "tgt_syl": [
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "暗夜深深中",
+        "星辰闪烁光芒",
+        "我们看他们飞",
+        "就像你和我飞",
+        "人人有时都感孤独"
+      ],
+      "time_seconds": 138.07,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 115,
+        "rhyme-analyzer": 23,
+        "syllable-pattern-analyzer": 7
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 138.067,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_033",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.21666666666666665,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        6,
+        6,
+        6,
+        8,
+        8
+      ],
+      "tgt_syl": [
+        6,
+        9,
+        8,
+        10,
+        8
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCDD",
+      "match": "2/5",
+      "translations": [
+        "星辰点亮天空",
+        "我们看他们自由飞翔",
+        "那就像你和我一样",
+        "每个人有时都感到孤独",
+        "但我愿意走千里路"
+      ],
+      "time_seconds": 8.89,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 8.893,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_034",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.10222222222222221,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        9,
+        6,
+        5,
+        9
+      ],
+      "tgt_syl": [
+        4,
+        9,
+        6,
+        6,
+        10
+      ],
+      "src_rhyme": "ABBAC",
+      "tgt_rhyme": "ABCDE",
+      "match": "2/5",
+      "translations": [
+        "说我爱你",
+        "我想要的只是你明白",
+        "当我握你的手",
+        "那是因为我想",
+        "我们都生在疑虑的世界"
+      ],
+      "time_seconds": 19.23,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 19.233,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_035",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        12,
+        11,
+        9,
+        10,
+        9
+      ],
+      "tgt_syl": [
+        12,
+        11,
+        9,
+        10,
+        9
+      ],
+      "src_rhyme": "ABCAD",
+      "tgt_rhyme": "ABCAD",
+      "match": "5/5",
+      "translations": [
+        "你收拾行李从墙上取下照片",
+        "当我问你觉得你还要多久",
+        "你说这世界已然崩溃",
+        "夏已过树叶飘零如纸片",
+        "又一个冬天即将来临"
+      ],
+      "time_seconds": 145.97,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 145.969,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_036",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        1,
+        3,
+        4,
+        5
+      ],
+      "tgt_syl": [
+        13,
+        1,
+        3,
+        4,
+        5
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "如果老板炒我或我猫爬树上面",
+        "树",
+        "木棍石",
+        "伤不了皮",
+        "噢艾玛丽噢"
+      ],
+      "time_seconds": 94.85,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 94.853,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_037",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.15,
+      "ari": 0.0,
+      "src_syl": [
+        4,
+        3,
+        5,
+        12,
+        12
+      ],
+      "tgt_syl": [
+        5,
+        4,
+        5,
+        13,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCD",
+      "match": "1/5",
+      "translations": [
+        "在人行道上",
+        "通往何方",
+        "每晚去那里",
+        "他有我喜欢的那种男孩气外表",
+        "我是建筑师，我在描绘蓝图"
+      ],
+      "time_seconds": 15.24,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 15.238,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_038",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        3,
+        5,
+        12,
+        12,
+        5
+      ],
+      "tgt_syl": [
+        3,
+        5,
+        12,
+        12,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "引向哪",
+        "夜夜去那里",
+        "他少年样貌就是我爱的男人",
+        "我是建筑师绘制心中的蓝图",
+        "没人能明白"
+      ],
+      "time_seconds": 93.25,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 93.245,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_039",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        11,
+        11,
+        9,
+        17
+      ],
+      "tgt_syl": [
+        10,
+        11,
+        11,
+        9,
+        17
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "我怎样活，没了你的前景",
+        "谁能代替你让我吻你晚上",
+        "你怎能突然松开我的手啊",
+        "你怎能说\"我已不爱你\"",
+        "原来也不过是一个短暂幸福的虚假承诺"
+      ],
+      "time_seconds": 86.41,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 86.413,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_040",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        4,
+        9,
+        9,
+        8
+      ],
+      "tgt_syl": [
+        4,
+        4,
+        9,
+        9,
+        8
+      ],
+      "src_rhyme": "AABAA",
+      "tgt_rhyme": "AABAA",
+      "match": "5/5",
+      "translations": [
+        "没办法呀",
+        "我怎样呀",
+        "周游各地和七大海口",
+        "我想利用你虐待你呀",
+        "我要了解你内心呀"
+      ],
+      "time_seconds": 211.14,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 175,
+        "rhyme-analyzer": 35,
+        "syllable-pattern-analyzer": 11
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 211.138,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_041",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        9,
+        5,
+        11,
+        12,
+        20
+      ],
+      "tgt_syl": [
+        9,
+        5,
+        11,
+        12,
+        20
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "你能再说一遍你就会",
+        "永远爱我吧",
+        "似那最爱我的你永远无碍",
+        "我还记得沿途美丽的风景去",
+        "行路多艰难记忆就多深刻永远都难以忘掉心中"
+      ],
+      "time_seconds": 121.8,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 121.803,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_042",
+      "artist": "ou-test",
+      "ser": 0.4,
+      "scre": 0.19186507936507935,
+      "ari": 1.0,
+      "src_syl": [
+        7,
+        8,
+        9,
+        9,
+        16
+      ],
+      "tgt_syl": [
+        9,
+        7,
+        8,
+        9,
+        9
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "但我们察觉得太晚了",
+        "泪水就这样坠落",
+        "我们相遇如此完美",
+        "我记得，那分别的瞬间",
+        "彼此拉扯，舍不得分离"
+      ],
+      "time_seconds": 22.92,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 22.921,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_043",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.2127983127983128,
+      "ari": 1.0,
+      "src_syl": [
+        11,
+        13,
+        12,
+        7,
+        9
+      ],
+      "tgt_syl": [
+        9,
+        7,
+        10,
+        8,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "长如大道，丑如癞蛤蟆",
+        "美如墙上的画框",
+        "强如家庭，坚强如我所愿",
+        "明如白昼，轻如游戏",
+        "坚如钉子，壮如鲸鱼"
+      ],
+      "time_seconds": 13.02,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 13.019,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_044",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.2126984126984127,
+      "ari": 0.0,
+      "src_syl": [
+        7,
+        12,
+        4,
+        6,
+        9
+      ],
+      "tgt_syl": [
+        9,
+        12,
+        6,
+        7,
+        10
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "1/5",
+      "translations": [
+        "我一整夜都在想念你",
+        "如今我甚至记不得你的脸了",
+        "你是一种感觉",
+        "写在夏夜的风里",
+        "青春是永不回头的流水"
+      ],
+      "time_seconds": 10.05,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 10.054,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_045",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        14,
+        19,
+        13,
+        15,
+        13
+      ],
+      "tgt_syl": [
+        14,
+        19,
+        13,
+        15,
+        13
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "多少浅薄美好时光已经悄悄溜走",
+        "我的愿望是希望你在演奏弦乐器时能有观众",
+        "我愿望是你有人可以倾诉心事",
+        "我愿望是我们能够在下一世再相逢",
+        "我愿化作你黑发里轻轻绽开香"
+      ],
+      "time_seconds": 91.03,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 91.032,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_046",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        19,
+        7,
+        15,
+        18,
+        10
+      ],
+      "tgt_syl": [
+        19,
+        7,
+        15,
+        18,
+        10
+      ],
+      "src_rhyme": "ABCDD",
+      "tgt_rhyme": "ABCDD",
+      "match": "5/5",
+      "translations": [
+        "这肉欲世界让漂泊游子为无数的艰苦而奋斗",
+        "泪痕催皱纹遍布",
+        "我不再记得家在何处 而你仍在等待",
+        "我的愿望是再见到那位学生与强壮女孩啊",
+        "我想再看见那些柳树啊"
+      ],
+      "time_seconds": 122.23,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 130,
+        "rhyme-analyzer": 26,
+        "syllable-pattern-analyzer": 8
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 122.234,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_047",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.27714285714285714,
+      "ari": -0.15384615384615385,
+      "src_syl": [
+        10,
+        10,
+        14,
+        6,
+        7
+      ],
+      "tgt_syl": [
+        9,
+        10,
+        13,
+        9,
+        12
+      ],
+      "src_rhyme": "ABACC",
+      "tgt_rhyme": "ABBCD",
+      "match": "1/5",
+      "translations": [
+        "黑白思想都向我屈服",
+        "我走过他们无光的走廊",
+        "虽然我脆弱，你如天使伴我身旁",
+        "当悲伤呼唤我的名字",
+        "我知道没有什么会保持不变"
+      ],
+      "time_seconds": 24.15,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 24.149,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_048",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.24,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        5,
+        8,
+        4,
+        6
+      ],
+      "tgt_syl": [
+        5,
+        6,
+        10,
+        6,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "我需要改变",
+        "等待一个机会",
+        "我知道我无法置身事外",
+        "睁开你的眼睛",
+        "我会移动山峰"
+      ],
+      "time_seconds": 11.63,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 11.63,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_049",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.11058144469909177,
+      "ari": 0.0,
+      "src_syl": [
+        17,
+        11,
+        15,
+        14,
+        18
+      ],
+      "tgt_syl": [
+        18,
+        10,
+        17,
+        17,
+        17
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABAAC",
+      "match": "0/5",
+      "translations": [
+        "你搬进了我破旧的房子，几天都没有出过门",
+        "你学会了洗衣服和做饭",
+        "你迁就我的脾气，让我觉得自己像个男人",
+        "我生气了，摔碎了玻璃杯，砸坏了房间的门",
+        "让你哭了好几天，不接电话就这样离开了"
+      ],
+      "time_seconds": 11.79,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 11.79,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_050",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.18134730766309715,
+      "ari": 0.0,
+      "src_syl": [
+        19,
+        18,
+        22,
+        14,
+        19
+      ],
+      "tgt_syl": [
+        21,
+        16,
+        15,
+        17,
+        22
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCBD",
+      "match": "0/5",
+      "translations": [
+        "相处比爱更难；我们都试过。你是国王，但我不是皇后",
+        "我们去碧潭坐天鹅船，但你说你晕船了",
+        "我们去阳明山看夜景，你说真的很美",
+        "我们去看五月天的演唱会，你感动得哭了",
+        "我们一起度过的日子感觉仿佛是昨天，依然历历在目"
+      ],
+      "time_seconds": 29.41,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 29.413,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_051",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.14615384615384616,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        12,
+        11,
+        13,
+        12
+      ],
+      "tgt_syl": [
+        13,
+        10,
+        11,
+        10,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "2/5",
+      "translations": [
+        "可惜他们的空杯在月光下静坐",
+        "他们在漫漫春秋里漂泊",
+        "被爱的人离开世界最匆匆",
+        "少年清风吹入似霜的发",
+        "幸好有人行遍冷暖"
+      ],
+      "time_seconds": 27.47,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 27.466,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_052",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.4140934065934066,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        16,
+        13,
+        7,
+        15
+      ],
+      "tgt_syl": [
+        8,
+        9,
+        7,
+        3,
+        9
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDC",
+      "match": "0/5",
+      "translations": [
+        "月是河的浪漫眼眸",
+        "我独举杯盏，柳帘卷开",
+        "敬此生，春风拂面",
+        "花未衰",
+        "啊，冒险之初已经多年"
+      ],
+      "time_seconds": 10.28,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 10.279,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_053",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        7,
+        15,
+        11,
+        14,
+        8
+      ],
+      "tgt_syl": [
+        7,
+        15,
+        11,
+        14,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "花儿尚未曾凋落",
+        "啊呀多年已逝自我辈冒险初始年月",
+        "蜡烛于此室四周渐渐熄灭",
+        "醉梦间我蓦然忘却了说什么话言",
+        "在柳树河畔的地方"
+      ],
+      "time_seconds": 74.63,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 100,
+        "rhyme-analyzer": 20,
+        "syllable-pattern-analyzer": 6
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 74.629,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_054",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.29757575757575755,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        3,
+        11,
+        11,
+        10
+      ],
+      "tgt_syl": [
+        5,
+        4,
+        13,
+        8,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "0/5",
+      "translations": [
+        "看着千层冰",
+        "封禁时光",
+        "而新的生命正在悄悄地被滋养",
+        "冬日最平凡的雪景",
+        "此刻最伟大的奇迹"
+      ],
+      "time_seconds": 17.62,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 17.618,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_055",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.465,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        4,
+        4,
+        8,
+        4,
+        10
+      ],
+      "tgt_syl": [
+        6,
+        7,
+        7,
+        7,
+        12
+      ],
+      "src_rhyme": "ABCDA",
+      "tgt_rhyme": "ABCDD",
+      "match": "0/5",
+      "translations": [
+        "为你感到骄傲",
+        "现在你让我想起",
+        "我从未随风而去",
+        "就让它自然流淌",
+        "让它把我带到它想去的地方"
+      ],
+      "time_seconds": 19.69,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 19.692,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_056",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        10,
+        8,
+        6,
+        6
+      ],
+      "tgt_syl": [
+        5,
+        10,
+        8,
+        6,
+        6
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABBCD",
+      "match": "5/5",
+      "translations": [
+        "你让我相信",
+        "你给我看了生活真谛呢",
+        "我不再想躲起来呢",
+        "更疯狂，更疯狂",
+        "摇滚，金尘女神"
+      ],
+      "time_seconds": 88.16,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 88.157,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_057",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.25555555555555554,
+      "ari": 1.0,
+      "src_syl": [
+        9,
+        12,
+        8,
+        9,
+        9
+      ],
+      "tgt_syl": [
+        9,
+        16,
+        12,
+        12,
+        10
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "你知道规则，没人在乎",
+        "又是个讨人烦的孩子，握着悲伤的故事",
+        "把秘密藏起来，藏起来，藏起来",
+        "我们不需要再受伤，受伤，受伤",
+        "但你藏不了玻璃做的心"
+      ],
+      "time_seconds": 36.59,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 36.591,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_058",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        7,
+        10,
+        9,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        7,
+        10,
+        9,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCDB",
+      "tgt_rhyme": "ABCDB",
+      "match": "5/5",
+      "translations": [
+        "我伸双手向天来",
+        "去接住苍穹间落下的恩",
+        "但落在我掌里非雨般",
+        "是她眼睛滑下的泪",
+        "而非源自苍穹中的暴风恩"
+      ],
+      "time_seconds": 149.94,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 130,
+        "rhyme-analyzer": 26,
+        "syllable-pattern-analyzer": 8
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 149.937,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_059",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        5,
+        8,
+        13,
+        4
+      ],
+      "tgt_syl": [
+        10,
+        5,
+        8,
+        13,
+        4
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "然后她说你对我讲的话",
+        "我俩去游泳",
+        "太阳火焰烧伤肌肤",
+        "这就是我们永不会再去泳池啊",
+        "再也不会"
+      ],
+      "time_seconds": 134.04,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 145,
+        "rhyme-analyzer": 29,
+        "syllable-pattern-analyzer": 9
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 134.037,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_060",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.21153846153846154,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        8,
+        13,
+        4,
+        8
+      ],
+      "tgt_syl": [
+        5,
+        11,
+        17,
+        5,
+        9
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "我们去游泳",
+        "骄阳似火灼伤了我的皮肤",
+        "这就是我们再也不会一起去泳池的原因",
+        "永远都不会",
+        "那地方有无数排座椅"
+      ],
+      "time_seconds": 16.77,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 16.771,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_061",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.20881895881895884,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        11,
+        9,
+        9,
+        12
+      ],
+      "tgt_syl": [
+        14,
+        14,
+        11,
+        11,
+        15
+      ],
+      "src_rhyme": "ABBBC",
+      "tgt_rhyme": "ABBBC",
+      "match": "0/5",
+      "translations": [
+        "眼前所见皆虚妄，知者缄口不言语",
+        "万物已失灵魂卖，献与勇敢新世界",
+        "勇敢新世界，在勇敢新世界",
+        "在勇敢新世界，勇敢新世界",
+        "龙王陨落皇后将凋，救赎何处天地间"
+      ],
+      "time_seconds": 42.22,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 42.221,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_062",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        5,
+        13,
+        4,
+        3
+      ],
+      "tgt_syl": [
+        4,
+        5,
+        13,
+        4,
+        3
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "赤膊无衣",
+        "只有你和我",
+        "没有什么我真想告诉你的没有",
+        "因为很冷",
+        "给你吧"
+      ],
+      "time_seconds": 91.1,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 91.101,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_063",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.17357142857142857,
+      "ari": 1.0,
+      "src_syl": [
+        8,
+        7,
+        7,
+        15,
+        5
+      ],
+      "tgt_syl": [
+        7,
+        6,
+        7,
+        9,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "化作呼啸的暴雪",
+        "我心中的荒野",
+        "如同过去的誓言",
+        "融入光芒，从深渊浮起",
+        "睁开你的眼睛"
+      ],
+      "time_seconds": 10.28,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 10.282,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_064",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.3177616747181965,
+      "ari": 0.0,
+      "src_syl": [
+        23,
+        27,
+        4,
+        5,
+        6
+      ],
+      "tgt_syl": [
+        21,
+        22,
+        3,
+        7,
+        10
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "我想每天早晚都见到你，我想看到你的每一个表情。",
+        "我想穿越每一条平行线，与你在过去和未来紧密相连。",
+        "你疯了。",
+        "这就是我做过的。",
+        "亲爱的，我现在已经离开。"
+      ],
+      "time_seconds": 12.24,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 12.243,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_065",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.19281385281385283,
+      "ari": 0.0,
+      "src_syl": [
+        6,
+        7,
+        11,
+        5,
+        11
+      ],
+      "tgt_syl": [
+        7,
+        8,
+        7,
+        6,
+        10
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "我们之間有美好",
+        "你現在感到不對勁",
+        "躺在床上孤獨夜",
+        "我需要你寶貝",
+        "我一直找你直到心已盲"
+      ],
+      "time_seconds": 17.51,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 17.506,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_066",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        7,
+        9,
+        6,
+        9
+      ],
+      "tgt_syl": [
+        10,
+        7,
+        9,
+        6,
+        9
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "有没有时候要低眉不言",
+        "继续你的每一日",
+        "有没有时候化妆涂红",
+        "烫卷自己头发",
+        "有没有时候去街购物"
+      ],
+      "time_seconds": 152.51,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 130,
+        "rhyme-analyzer": 26,
+        "syllable-pattern-analyzer": 8
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 152.511,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_067",
+      "artist": "ou-test",
+      "ser": 0.4,
+      "scre": 0.10666666666666666,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        4,
+        6,
+        6,
+        5
+      ],
+      "tgt_syl": [
+        4,
+        4,
+        6,
+        8,
+        4
+      ],
+      "src_rhyme": "ABCDC",
+      "tgt_rhyme": "ABCDC",
+      "match": "3/5",
+      "translations": [
+        "众人回首",
+        "夺走王冠",
+        "你说这是河流",
+        "寻得通往大海的路",
+        "如同河流"
+      ],
+      "time_seconds": 19.79,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 19.794,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_068",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.3537490287490287,
+      "ari": 1.0,
+      "src_syl": [
+        11,
+        13,
+        8,
+        2,
+        9
+      ],
+      "tgt_syl": [
+        17,
+        15,
+        9,
+        3,
+        13
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "我被解雇了，我的座驾都是无钥匙启动的",
+        "康普顿，我即将获得这座城市的钥匙",
+        "百达翡丽如海，原谅我",
+        "【第二段】",
+        "哈哈哈，我一直在把它们卖出去"
+      ],
+      "time_seconds": 39.19,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 39.187,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_069",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.3581818181818182,
+      "ari": 0.0,
+      "src_syl": [
+        11,
+        7,
+        10,
+        7,
+        6
+      ],
+      "tgt_syl": [
+        10,
+        9,
+        8,
+        12,
+        9
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABACA",
+      "match": "0/5",
+      "translations": [
+        "我从远处听见雷鸣隆隆——",
+        "如同生命的呐喊一样。",
+        "它化作大雨冲洗着——",
+        "我已斩断与灰色过去的联系，",
+        "以及那美丽的葡萄酒——"
+      ],
+      "time_seconds": 22.48,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 22.476,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_070",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.23876068376068377,
+      "ari": 1.0,
+      "src_syl": [
+        9,
+        13,
+        10,
+        8,
+        5
+      ],
+      "tgt_syl": [
+        10,
+        17,
+        12,
+        11,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "给她翅膀，当她想要飞翔",
+        "然后当你发现自己无助地躺在她的怀里",
+        "你就知道你真的爱一个女人",
+        "当你爱一个女人，要告诉她",
+        "她真的被需要"
+      ],
+      "time_seconds": 51.53,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 51.53,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_071",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.056666666666666664,
+      "ari": 1.0,
+      "src_syl": [
+        8,
+        10,
+        12,
+        12,
+        10
+      ],
+      "tgt_syl": [
+        8,
+        11,
+        11,
+        12,
+        11
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABBCD",
+      "match": "2/5",
+      "translations": [
+        "你将永远紧紧相伴",
+        "你得给她信任，紧紧拥抱她",
+        "多点温柔，你要好好对待她",
+        "她会一直陪着你，悉心照顾你",
+        "你真的得好好爱你的女人"
+      ],
+      "time_seconds": 55.08,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 55.083,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_072",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        13,
+        15,
+        14,
+        15
+      ],
+      "tgt_syl": [
+        6,
+        13,
+        15,
+        14,
+        15
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABBCD",
+      "match": "5/5",
+      "translations": [
+        "不来参与这场",
+        "我是谁你总问自己这样的问题",
+        "我是谁我总是生活在他人的期待里",
+        "我是谁那个未经权威定义我的人",
+        "你是谁只有不是自己的时候才安全"
+      ],
+      "time_seconds": 133.23,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 133.234,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_073",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        13,
+        5,
+        8,
+        10
+      ],
+      "tgt_syl": [
+        13,
+        13,
+        5,
+        8,
+        10
+      ],
+      "src_rhyme": "ABBCB",
+      "tgt_rhyme": "ABBCB",
+      "match": "5/5",
+      "translations": [
+        "你身上那香水最迷人让我痴迷",
+        "所有一切拿走我只需要你如故",
+        "我该如何处",
+        "别人的眼光如刺痛",
+        "我把一切献给你无所惧"
+      ],
+      "time_seconds": 201.22,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 115,
+        "rhyme-analyzer": 23,
+        "syllable-pattern-analyzer": 7
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 201.223,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_074",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        10,
+        11,
+        11,
+        10
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 89.59,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 89.586,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_075",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        6,
+        6,
+        13,
+        9
+      ],
+      "tgt_syl": [
+        4,
+        6,
+        6,
+        13,
+        9
+      ],
+      "src_rhyme": "ABACD",
+      "tgt_rhyme": "ABACD",
+      "match": "5/5",
+      "translations": [
+        "莫再后悔",
+        "因为生命很短",
+        "别浪费光年岁",
+        "迷彩遮住眼睛里诱人的眼影光",
+        "身上纹线在警告我们"
+      ],
+      "time_seconds": 125.6,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 115,
+        "rhyme-analyzer": 23,
+        "syllable-pattern-analyzer": 7
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 125.604,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_076",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.3518681318681319,
+      "ari": 1.0,
+      "src_syl": [
+        3,
+        7,
+        10,
+        13,
+        7
+      ],
+      "tgt_syl": [
+        6,
+        9,
+        11,
+        10,
+        8
+      ],
+      "src_rhyme": "AAABA",
+      "tgt_rhyme": "AAABA",
+      "match": "0/5",
+      "translations": [
+        "我的贝壳女孩",
+        "别害怕，我的贝壳女孩",
+        "神秘的身体，我的贝壳女孩",
+        "让所有的不安缓缓消散",
+        "缓缓消散，贝壳女孩"
+      ],
+      "time_seconds": 9.78,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 9.775,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_077",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        11,
+        10,
+        6,
+        5,
+        7
+      ],
+      "tgt_syl": [
+        11,
+        10,
+        6,
+        5,
+        7
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "伤痛渐渐平复，松开你手掌",
+        "数三二一，一切将会分明",
+        "千千次次失败",
+        "你怜悯仍存",
+        "若我再次跌倒呢"
+      ],
+      "time_seconds": 58.14,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 58.144,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_078",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.34500000000000003,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        8,
+        6,
+        5,
+        8
+      ],
+      "tgt_syl": [
+        3,
+        8,
+        9,
+        8,
+        9
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "1/5",
+      "translations": [
+        "长大了",
+        "若我逃脱能否得救?",
+        "无法估计你何时褪去",
+        "告诉我我等不及了",
+        "我学得很快无法回头"
+      ],
+      "time_seconds": 14.72,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 14.715,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_079",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        5,
+        6,
+        10,
+        14
+      ],
+      "tgt_syl": [
+        4,
+        5,
+        6,
+        10,
+        14
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "没有惊喜",
+        "我们都明白",
+        "记忆来去匆匆",
+        "在这个旧站躲避那场雨",
+        "回忆没有感情的生活握紧我的手"
+      ],
+      "time_seconds": 64.68,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 64.676,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_080",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        12,
+        5,
+        4,
+        13,
+        3
+      ],
+      "tgt_syl": [
+        12,
+        5,
+        4,
+        13,
+        3
+      ],
+      "src_rhyme": "ABCAD",
+      "tgt_rhyme": "ABCAD",
+      "match": "5/5",
+      "translations": [
+        "你站在那里不知道要怎样讲",
+        "但我知你脸",
+        "我在这儿",
+        "为我知道来临的那一切事都想",
+        "太浪费"
+      ],
+      "time_seconds": 137.8,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 100,
+        "rhyme-analyzer": 20,
+        "syllable-pattern-analyzer": 6
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 137.8,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_081",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.2866666666666666,
+      "ari": 0.0,
+      "src_syl": [
+        3,
+        6,
+        6,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        2,
+        7,
+        4,
+        6,
+        3
+      ],
+      "src_rhyme": "ABACD",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "别说",
+        "我们还能做朋友",
+        "这样不行",
+        "结束就是结束",
+        "别妄想"
+      ],
+      "time_seconds": 13.55,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 13.553,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_082",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        11,
+        8,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        5,
+        11,
+        8,
+        5,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "你别敢想象",
+        "我要把眼泪装好全带回家",
+        "一个人回家就在哭",
+        "我在此处泣",
+        "我此刻流泪"
+      ],
+      "time_seconds": 93.09,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 93.087,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_083",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        6,
+        4,
+        4,
+        4
+      ],
+      "tgt_syl": [
+        4,
+        6,
+        4,
+        4,
+        4
+      ],
+      "src_rhyme": "ABCDC",
+      "tgt_rhyme": "ABCDC",
+      "match": "5/5",
+      "translations": [
+        "我想游戏",
+        "我觉象棋最强",
+        "你爱他吗",
+        "马马虎虎",
+        "你要他吗"
+      ],
+      "time_seconds": 97.42,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 97.422,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_084",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        8,
+        3,
+        4,
+        4
+      ],
+      "tgt_syl": [
+        6,
+        8,
+        3,
+        4,
+        4
+      ],
+      "src_rhyme": "ABCBD",
+      "tgt_rhyme": "ABCBD",
+      "match": "5/5",
+      "translations": [
+        "有點難以描述",
+        "是的是的我覺得好",
+        "他裸體",
+        "他讓你高",
+        "他很凶殘"
+      ],
+      "time_seconds": 111.44,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 111.443,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_085",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        4,
+        4,
+        1,
+        6
+      ],
+      "tgt_syl": [
+        5,
+        4,
+        4,
+        1,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "她满身是汗",
+        "她很冷心",
+        "她好自我",
+        "谁?",
+        "让我变氛围吧"
+      ],
+      "time_seconds": 88.62,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 88.62,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_086",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        3,
+        4,
+        12,
+        15
+      ],
+      "tgt_syl": [
+        6,
+        3,
+        4,
+        12,
+        15
+      ],
+      "src_rhyme": "ABCCC",
+      "tgt_rhyme": "ABCCC",
+      "match": "5/5",
+      "translations": [
+        "吃完了肉骨头",
+        "摇摆尾",
+        "请来找我",
+        "亲爱总统先生走来拥抱了我",
+        "假装我们两个普通人并非你优于我"
+      ],
+      "time_seconds": 207.41,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 160,
+        "rhyme-analyzer": 32,
+        "syllable-pattern-analyzer": 10
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 207.409,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_087",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        16,
+        14,
+        13,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        16,
+        14,
+        13,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "我想问你问题如果我们可以坦白交谈",
+        "你看着镜子时的感受你很骄傲吗",
+        "你能看我眼睛说出所有原因来",
+        "让我讲讲苦的工作",
+        "最低薪资养着要来的孩子"
+      ],
+      "time_seconds": 104.65,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 104.649,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_088",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.1669047619047619,
+      "ari": 0.0,
+      "src_syl": [
+        8,
+        14,
+        2,
+        15,
+        4
+      ],
+      "tgt_syl": [
+        7,
+        16,
+        3,
+        14,
+        4
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABACD",
+      "match": "1/5",
+      "translations": [
+        "你怎样昂首阔步？",
+        "亲爱的总统先生，你永远不会和我散步",
+        "你会吗？",
+        "大力士也害怕，我不想与怪物战斗",
+        "表面之下"
+      ],
+      "time_seconds": 17.74,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 17.741,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_089",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        7,
+        8,
+        7,
+        8,
+        19
+      ],
+      "tgt_syl": [
+        7,
+        8,
+        7,
+        8,
+        19
+      ],
+      "src_rhyme": "AABCD",
+      "tgt_rhyme": "AABCD",
+      "match": "5/5",
+      "translations": [
+        "他笑看我造之时",
+        "造我者可曾造你时",
+        "坚我意志甲无缺",
+        "装满吾之智慧弹匣",
+        "我身方才启程踏步心已先抵达我心正在战斗"
+      ],
+      "time_seconds": 108.74,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 108.735,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_090",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.19549783549783548,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        14,
+        18,
+        11,
+        9,
+        10
+      ],
+      "tgt_syl": [
+        15,
+        14,
+        14,
+        8,
+        13
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCDC",
+      "match": "0/5",
+      "translations": [
+        "在这条不再喧闹的街上，我望着月亮",
+        "我忘了是雨还是泪突然滑过脸庞",
+        "我的心在低语，可我什么也听不见",
+        "早晨，我总是在微笑",
+        "为什么到了夜晚，我就无法入眠"
+      ],
+      "time_seconds": 9.19,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 9.186,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_091",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        11,
+        10,
+        4,
+        9
+      ],
+      "tgt_syl": [
+        6,
+        11,
+        10,
+        4,
+        9
+      ],
+      "src_rhyme": "ABCDC",
+      "tgt_rhyme": "ABCDC",
+      "match": "5/5",
+      "translations": [
+        "你送给我的花",
+        "我心中的颤动会逐渐释放",
+        "他是能讨好众人又坚强",
+        "星星生了",
+        "来吧各位齐声喊得响"
+      ],
+      "time_seconds": 93.07,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 93.068,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_092",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.2918803418803419,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        12,
+        9,
+        12,
+        12,
+        13
+      ],
+      "tgt_syl": [
+        7,
+        7,
+        9,
+        7,
+        11
+      ],
+      "src_rhyme": "ABACD",
+      "tgt_rhyme": "ABCAD",
+      "match": "0/5",
+      "translations": [
+        "我只怕会爱上你",
+        "我不敢靠你太近",
+        "我害怕给不了你足够",
+        "爱你也需要勇气",
+        "也许有朝一日我无法自控"
+      ],
+      "time_seconds": 34.2,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 34.199,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_093",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        5,
+        5,
+        16,
+        8
+      ],
+      "tgt_syl": [
+        6,
+        5,
+        5,
+        16,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "不是爱不是恨",
+        "这只是冷漠",
+        "我忘了你就",
+        "你在学校操场上我摔倒时你笑个不停",
+        "我本该为你守护你"
+      ],
+      "time_seconds": 100.51,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 115,
+        "rhyme-analyzer": 23,
+        "syllable-pattern-analyzer": 7
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 100.51,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_094",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.10675324675324675,
+      "ari": 0.0,
+      "src_syl": [
+        20,
+        7,
+        10,
+        11,
+        20
+      ],
+      "tgt_syl": [
+        19,
+        8,
+        10,
+        12,
+        15
+      ],
+      "src_rhyme": "ABACD",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "一日、一月，我们在一起已一年，这不正像\"永远\"吗？",
+        "在同一屋檐下，我们",
+        "正在谱写关于未来的诗",
+        "在这温暖的房间，我慢慢发现",
+        "相遇其实是一种缘分，多么值得纪念！"
+      ],
+      "time_seconds": 19.19,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 19.192,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_095",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        5,
+        6,
+        5,
+        4
+      ],
+      "tgt_syl": [
+        5,
+        5,
+        6,
+        5,
+        4
+      ],
+      "src_rhyme": "ABCBD",
+      "tgt_rhyme": "ABCBD",
+      "match": "5/5",
+      "translations": [
+        "生死永不归",
+        "掷骨断生死",
+        "冒着鲁莽危险",
+        "赌注无所知",
+        "半心之愿"
+      ],
+      "time_seconds": 116.48,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 105,
+        "rhyme-analyzer": 21,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 116.479,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_096",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.08555555555555555,
+      "ari": 1.0,
+      "src_syl": [
+        15,
+        4,
+        6,
+        6,
+        9
+      ],
+      "tgt_syl": [
+        14,
+        5,
+        6,
+        6,
+        8
+      ],
+      "src_rhyme": "ABBBC",
+      "tgt_rhyme": "ABBBC",
+      "match": "2/5",
+      "translations": [
+        "我从心底祝福你，但为什么我会哭？",
+        "我烹饪海鲜",
+        "煮海鲜，炸海鲜",
+        "我喜欢吃海鲜",
+        "喜欢做，喜欢炸小鱼"
+      ],
+      "time_seconds": 31.88,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 31.875,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_097",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.2935897435897436,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        12,
+        3,
+        10,
+        13
+      ],
+      "tgt_syl": [
+        8,
+        13,
+        6,
+        10,
+        13
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "2/5",
+      "translations": [
+        "抵达我意识的边界",
+        "我看见父亲坐在云的边缘吸烟",
+        "就像以前一样",
+        "那些来自山川湖海的人",
+        "如今被困在夜晚、厨房和性爱中"
+      ],
+      "time_seconds": 11.12,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 11.119,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_098",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.17927072927072926,
+      "ari": 0.0,
+      "src_syl": [
+        13,
+        7,
+        11,
+        11,
+        12
+      ],
+      "tgt_syl": [
+        16,
+        8,
+        10,
+        13,
+        15
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABAAA",
+      "match": "0/5",
+      "translations": [
+        "友谊像诺亚方舟一样是个坚固的承诺。",
+        "而我只是望着大海，",
+        "用模糊的眼眸等待永远。",
+        "这些年来，我买了车、手表和相机。",
+        "但我发现有些东西是金钱买不到的。"
+      ],
+      "time_seconds": 55.88,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 50,
+        "rhyme-analyzer": 10,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 55.88,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_099",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        11,
+        2,
+        8,
+        8
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 16.92,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 16.919,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_100",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        7,
+        16,
+        15,
+        5
+      ],
+      "tgt_syl": [
+        10,
+        7,
+        16,
+        15,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "我仅凭直觉去追逐梦想",
+        "追逐不为任何人",
+        "投一块石头静听水花飞溅的美妙声音",
+        "打破湖面上那平凡的宁静美妙时刻",
+        "提前的计划"
+      ],
+      "time_seconds": 70.66,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 70.662,
+        "phase0_calls": 1
+      }
+    }
+  ],
+  "skill_counts": {
+    "syllable-counter": 1500,
+    "rhyme-analyzer": 300,
+    "syllable-pattern-analyzer": 100
+  }
+}

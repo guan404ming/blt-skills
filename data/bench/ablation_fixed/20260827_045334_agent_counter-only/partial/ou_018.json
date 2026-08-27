@@ -1,0 +1,88 @@
+{
+  "id": "ou_018",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBBB",
+  "match": "5/5",
+  "translations": [
+    "我把青春投入她心中",
+    "我也曾拨动琴弦飞向盛夏的高度",
+    "若动心就让宇宙引力将你拉向彼处",
+    "逆行在光中让风雨击打我的身躯",
+    "短短路程起起伏伏"
+  ],
+  "time_seconds": 57.65,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 28,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.0743871,
+    "usage": {
+      "input_tokens": 107,
+      "cache_creation_input_tokens": 9601,
+      "cache_read_input_tokens": 393631,
+      "output_tokens": 3143,
+      "output_tokens_details": {
+        "thinking_tokens": 1697
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9601,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 130,
+          "cache_read_input_tokens": 32614,
+          "cache_creation_input_tokens": 396,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 396
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我把青春投入她心中\n2. 我也曾拨动琴弦飞向盛夏的高度\n3. 若动心就让宇宙引力将你拉向彼处\n4. 逆行在光中让风雨击打我的身躯\n5. 短短路程起起伏伏",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

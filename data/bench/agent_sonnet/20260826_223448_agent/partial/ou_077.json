@@ -1,0 +1,88 @@
+{
+  "id": "ou_077",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    10,
+    6,
+    5,
+    7
+  ],
+  "tgt_syl": [
+    11,
+    10,
+    6,
+    5,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "伤口将平息松开你的手掌",
+    "数三二一一切都将清晰",
+    "千次我曾失败",
+    "你仍怀慈悲",
+    "而我若再次跌倒"
+  ],
+  "time_seconds": 59.7,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.11727620000000001,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 13942,
+      "cache_read_input_tokens": 204391,
+      "output_tokens": 2061,
+      "output_tokens_details": {
+        "thinking_tokens": 869
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13942,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 78,
+          "cache_read_input_tokens": 44993,
+          "cache_creation_input_tokens": 336,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 336
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 伤口将平息松开你的手掌\n2. 数三二一一切都将清晰\n3. 千次我曾失败\n4. 你仍怀慈悲\n5. 而我若再次跌倒",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

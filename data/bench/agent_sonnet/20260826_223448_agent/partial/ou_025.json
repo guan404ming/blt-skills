@@ -1,0 +1,88 @@
+{
+  "id": "ou_025",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    3,
+    4,
+    3,
+    3
+  ],
+  "tgt_syl": [
+    14,
+    3,
+    4,
+    3,
+    3
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你要抓住每一個機會只要你能夠",
+    "我只要",
+    "活在當下",
+    "要滿足",
+    "我所求"
+  ],
+  "time_seconds": 64.46,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 17,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 11,
+    "cost_usd": 0.1478544,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 14466,
+      "cache_read_input_tokens": 338242,
+      "output_tokens": 2231,
+      "output_tokens_details": {
+        "thinking_tokens": 705
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14466,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 55,
+          "cache_read_input_tokens": 45368,
+          "cache_creation_input_tokens": 485,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 485
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "全過。\n\n1. 你要抓住每一個機會只要你能夠\n2. 我只要\n3. 活在當下\n4. 要滿足\n5. 我所求",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

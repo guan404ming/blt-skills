@@ -1,0 +1,88 @@
+{
+  "id": "ou_019",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "tgt_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我听说那有虎穴",
+    "我们从小到大都没提起过",
+    "我心是山里的人",
+    "这种刀耕火种很难",
+    "革命的风正吹过这座巍峨峰峦"
+  ],
+  "time_seconds": 79.16,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 10,
+    "cost_usd": 0.1465188,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 14950,
+      "cache_read_input_tokens": 296454,
+      "output_tokens": 2740,
+      "output_tokens_details": {
+        "thinking_tokens": 1085
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14950,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 84,
+          "cache_read_input_tokens": 46009,
+          "cache_creation_input_tokens": 328,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 328
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 我听说那有虎穴\n2. 我们从小到大都没提起过\n3. 我心是山里的人\n4. 这种刀耕火种很难\n5. 革命的风正吹过这座巍峨峰峦",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

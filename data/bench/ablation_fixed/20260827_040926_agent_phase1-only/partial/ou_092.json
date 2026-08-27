@@ -1,0 +1,89 @@
+{
+  "id": "ou_092",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "tgt_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "我只害怕我会不小心爱上你",
+    "我不敢让自己靠太近",
+    "我害怕没有足够的东西给你",
+    "爱你需要的勇气也同样足够",
+    "也许有天我会无法停止这热烈"
+  ],
+  "time_seconds": 105.12,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 22,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 3,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.101107,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 15545,
+      "cache_read_input_tokens": 248240,
+      "output_tokens": 9025,
+      "output_tokens_details": {
+        "thinking_tokens": 7162
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15545,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 358,
+          "cache_read_input_tokens": 37474,
+          "cache_creation_input_tokens": 1480,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1480
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我只害怕我会不小心爱上你\n2. 我不敢让自己靠太近\n3. 我害怕没有足够的东西给你\n4. 爱你需要的勇气也同样足够\n5. 也许有天我会无法停止这热烈",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

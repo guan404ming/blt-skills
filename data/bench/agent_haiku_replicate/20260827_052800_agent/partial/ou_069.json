@@ -1,0 +1,90 @@
+{
+  "id": "ou_069",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    7,
+    10,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    11,
+    7,
+    10,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我听见那远方雷鸣声在呼",
+    "如同生活中喊声",
+    "它化成了倾盆大雨冲洗",
+    "我斩灰暗的过往",
+    "还有美妙的酒"
+  ],
+  "time_seconds": 62.54,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0625858,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 11379,
+      "cache_read_input_tokens": 178708,
+      "output_tokens": 4381,
+      "output_tokens_details": {
+        "thinking_tokens": 2555
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11379,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 151,
+          "cache_read_input_tokens": 34365,
+          "cache_creation_input_tokens": 423,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 423
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我听见那远方雷鸣声在呼\n2. 如同生活中喊声\n3. 它化成了倾盆大雨冲洗\n4. 我斩灰暗的过往\n5. 还有美妙的酒",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ou_012",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.05,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "tgt_syl": [
+    11,
+    8,
+    11,
+    12,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "4/5",
+  "translations": [
+    "心に美しい雲",
+    "食べ飲みに君と",
+    "民謡歌い続ける",
+    "空の最高な姿勢ね",
+    "ヨラホラント"
+  ],
+  "time_seconds": 249.24,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 249.241,
+    "phase0_calls": 1
+  }
+}

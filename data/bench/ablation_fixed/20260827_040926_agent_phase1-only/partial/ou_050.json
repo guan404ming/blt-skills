@@ -1,0 +1,89 @@
+{
+  "id": "ou_050",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "tgt_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AAAAA",
+  "match": "5/5",
+  "translations": [
+    "很難相處卻易愛，我倆都試過。你是王，我非皇后。",
+    "我們去碧潭坐天鵝船旅遊，但你說你暈船了。",
+    "我們一起上陽明山看夜景，你說那風景真的非常漂亮。",
+    "我們看五月天演唱，你感動得流淚。",
+    "我們度過的日子彷彿昨天般，仍然清晰在眼前。"
+  ],
+  "time_seconds": 69.78,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 21,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0716649,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 8568,
+      "cache_read_input_tokens": 264579,
+      "output_tokens": 5599,
+      "output_tokens_details": {
+        "thinking_tokens": 4046
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8568,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 3906,
+          "cache_read_input_tokens": 31124,
+          "cache_creation_input_tokens": 853,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 853
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "**Constraints extracted:**\n\n| Line | Syllables | Rhyme | Pattern |\n|------|-----------|-------|---------|\n| 1 | 19 | A | [1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] |\n| 2 | 18 | B | [1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2] |\n| 3 | 22 | C | [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3] |\n| 4 | 14 | D | [1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1] |\n| 5 | 19 | E | [1, 1, 1, 1, 3, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1] |\n\n**Phase 1 Translation:**\n\n1. 很難相處卻易愛，我倆都試過。你是王，我非皇后。\n2. 我們去碧潭坐天鵝船旅遊，但你說你暈船了。\n3. 我們一起上陽明山看夜景，你說那風景真的非常漂亮。\n4. 我們看五月天演唱，你感動得流淚。\n5. 我們度過的日子彷彿昨天般，仍然清晰在眼前。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ou_032",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.0,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    6,
+    6,
+    6,
+    8
+  ],
+  "tgt_syl": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "AAAAA",
+  "match": "0/5",
+  "translations": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "time_seconds": 68.14,
+  "model": "opus",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 6,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 1
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1
+    },
+    "num_turns": 4,
+    "cost_usd": 0.049558000000000005,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 1369,
+      "cache_read_input_tokens": 59746,
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "thinking_tokens": 13
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1369,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 137,
+          "cache_read_input_tokens": 29873,
+          "cache_creation_input_tokens": 1369,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1369
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "API Error: Output blocked by content filtering policy",
+    "is_error": true
+  },
+  "failed": true,
+  "error": "API Error: Output blocked by content filtering policy"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ou_063",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    7,
+    7,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    7,
+    7,
+    15,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "幻化成呼嚎的暴雪",
+    "我心头的那荒野",
+    "像昔日般的誓言",
+    "融入光芒,从深不可测的深渊中浮现",
+    "睁眼看世界"
+  ],
+  "time_seconds": 81.6,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0643798,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 7810,
+      "cache_read_input_tokens": 142808,
+      "output_tokens": 6887,
+      "output_tokens_details": {
+        "thinking_tokens": 5630
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7810,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 5377,
+          "cache_read_input_tokens": 30797,
+          "cache_creation_input_tokens": 422,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 422
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Constraints Extracted\n\n**Syllable counts:**\n- Line 1: 8\n- Line 2: 7\n- Line 3: 7\n- Line 4: 15\n- Line 5: 5\n\n**Rhyme scheme:** ABCDE (no rhymes)\n\n**Word-level patterns:**\n- Line 1: [2, 2, 2, 2]\n- Line 2: [1, 3, 1, 1, 1]\n- Line 3: [1, 1, 1, 1, 1, 2]\n- Line 4: [2, 2, 1, 3, 1, 5, 1]\n- Line 5: [3, 1, 1]\n\n## Phase 1 Translation\n\n1. 幻化成呼嚎的暴雪\n2. 我心头的那荒野\n3. 像昔日般的誓言\n4. 融入光芒,从深不可测的深渊中浮现\n5. 睁眼看世界",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

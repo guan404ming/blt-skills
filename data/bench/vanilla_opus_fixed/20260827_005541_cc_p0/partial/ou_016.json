@@ -1,0 +1,44 @@
+{
+  "id": "ou_016",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.1917288267288267,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "tgt_syl": [
+    11,
+    10,
+    11,
+    12,
+    9
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "当所有人都已经把我遗忘",
+    "沙漠的黄昏也早已染红",
+    "有谁能解开我千年的孤独",
+    "我在追逐夜的双翼里看见你",
+    "绕着烛火的暖意盘旋"
+  ],
+  "time_seconds": 9.32,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 9.321,
+    "phase0_calls": 1
+  }
+}

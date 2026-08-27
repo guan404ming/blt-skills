@@ -1,0 +1,89 @@
+{
+  "id": "ou_081",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.03333333333333333,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    3,
+    6,
+    6,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    7,
+    6,
+    5,
+    5
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACB",
+  "match": "4/5",
+  "translations": [
+    "你別說",
+    "咱們還是朋友吧",
+    "行不通這樣做",
+    "完結就完了",
+    "別敢亂想啊"
+  ],
+  "time_seconds": 155.35,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 17,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 11,
+    "cost_usd": 0.1201706,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 19097,
+      "cache_read_input_tokens": 173346,
+      "output_tokens": 12918,
+      "output_tokens_details": {
+        "thinking_tokens": 11639
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 19097,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 239,
+          "cache_read_input_tokens": 31105,
+          "cache_creation_input_tokens": 11401,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11401
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "已提取约束条件。现在进行第一阶段翻译。\n\n```\n1. 你別說\n2. 咱們還是朋友吧\n3. 行不通這樣做\n4. 完結就完了\n5. 別敢亂想啊\n```",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

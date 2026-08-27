@@ -1,0 +1,44 @@
+{
+  "id": "ou_055",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.395,
+  "ari": 0.0,
+  "src_syl": [
+    4,
+    4,
+    8,
+    4,
+    10
+  ],
+  "tgt_syl": [
+    6,
+    7,
+    7,
+    6,
+    11
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "为你感到骄傲",
+    "如今你让我想起",
+    "我从未随风而去",
+    "就让它流淌吧",
+    "让它带我去它想去的地方"
+  ],
+  "time_seconds": 7.49,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 7.486,
+    "phase0_calls": 1
+  }
+}

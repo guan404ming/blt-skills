@@ -1,0 +1,44 @@
+{
+  "id": "ou_073",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "src_rhyme": "ABBCB",
+  "tgt_rhyme": "ABBCB",
+  "match": "5/5",
+  "translations": [
+    "你身上那香水最迷人让我痴迷",
+    "所有一切拿走我只需要你如故",
+    "我该如何处",
+    "别人的眼光如刺痛",
+    "我把一切献给你无所惧"
+  ],
+  "time_seconds": 201.22,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 115,
+    "rhyme-analyzer": 23,
+    "syllable-pattern-analyzer": 7
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 201.223,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "Tú vivirás en mi corazón",
+    "Mamá, te quiero cantar para ti",
+    "Nunca vi a mi madre",
+    "Pero quise amar",
+    "Nunca pude hablar"
+  ],
+  "time_seconds": 193.88,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 55,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 33
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 30,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 36,
+    "cost_usd": 0.1538078,
+    "usage": {
+      "input_tokens": 92,
+      "cache_creation_input_tokens": 22232,
+      "cache_read_input_tokens": 377618,
+      "output_tokens": 14298,
+      "output_tokens_details": {
+        "thinking_tokens": 10206
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22232,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 194,
+          "cache_read_input_tokens": 45132,
+          "cache_creation_input_tokens": 509,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 509
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Tú vivirás en mi corazón\n2. Mamá, te quiero cantar para ti\n3. Nunca vi a mi madre\n4. Pero quise amar\n5. Nunca pude hablar",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

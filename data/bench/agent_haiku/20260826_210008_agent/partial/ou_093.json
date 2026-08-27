@@ -1,0 +1,88 @@
+{
+  "id": "ou_093",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "不是爱也不恨",
+    "只是冷漠了",
+    "我完全忘你",
+    "学校摔倒他们笑摔倒摔倒摔倒那瞬间",
+    "我本来会为你停留"
+  ],
+  "time_seconds": 92.15,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 29,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.089245,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 13888,
+      "cache_read_input_tokens": 284930,
+      "output_tokens": 6580,
+      "output_tokens_details": {
+        "thinking_tokens": 4251
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13888,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 95,
+          "cache_read_input_tokens": 36939,
+          "cache_creation_input_tokens": 358,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 358
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不是爱也不恨\n2. 只是冷漠了\n3. 我完全忘你\n4. 学校摔倒他们笑摔倒摔倒摔倒那瞬间\n5. 我本来会为你停留",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

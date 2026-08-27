@@ -1,0 +1,85 @@
+{
+  "id": "ou_093",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.09166666666666666,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "tgt_syl": [
+    8,
+    5,
+    5,
+    16,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "3/5",
+  "translations": [
+    "这不是爱，这不是恨",
+    "那只是漠然",
+    "我已忘记你",
+    "在学校操场你笑我跌倒地上地上地上",
+    "而我本应该为你停留"
+  ],
+  "time_seconds": 27.01,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.028855600000000002,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5320,
+      "cache_read_input_tokens": 43456,
+      "output_tokens": 2770,
+      "output_tokens_details": {
+        "thinking_tokens": 2290
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5320,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 2554,
+          "cache_read_input_tokens": 24027,
+          "cache_creation_input_tokens": 722,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 722
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\n**Syllable counts:**\n1. It isn't love, it isn't hate = 8\n2. It's just indifference = 5\n3. I forgot that you- = 5\n4. Laughed on the school yard as soon as I tripped and hit the ground, ground, ground = 16\n5. And I would've stuck around for ya = 9\n\n**Rhyme scheme:** ABCDE (no rhymes—each line ends on a unique sound)\n\n## Phase 1: Initial Translation\n\n1. 这不是爱，这不是恨 (8 characters)\n2. 那只是漠然 (5 characters)\n3. 我已忘记你 (5 characters)\n4. 在学校操场你笑我跌倒地上地上地上 (16 characters)\n5. 而我本应该为你停留 (9 characters)\n\n## Phase 2 & Final Check\n\nRecount all lines—all match target counts. No rhyme scheme to maintain. Meaning and emotion preserved.\n\n---\n\n1. 这不是爱，这不是恨\n2. 那只是漠然\n3. 我已忘记你\n4. 在学校操场你笑我跌倒地上地上地上\n5. 而我本应该为你停留",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ou_058",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDB",
+  "tgt_rhyme": "ABCDB",
+  "match": "5/5",
+  "translations": [
+    "我手伸向蔚蓝天",
+    "却非天堂降落而来的风",
+    "却是我手心里的道光",
+    "她泪涟涟流落于眼",
+    "非是天地之间肆虐的狂风"
+  ],
+  "time_seconds": 159.6,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 18,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 9
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 2
+    },
+    "num_turns": 12,
+    "cost_usd": 0.1387296,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 20948,
+      "cache_read_input_tokens": 217286,
+      "output_tokens": 15009,
+      "output_tokens_details": {
+        "thinking_tokens": 13591
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20948,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 957,
+          "cache_read_input_tokens": 43726,
+          "cache_creation_input_tokens": 631,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 631
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我手伸向蔚蓝天\n2. 却非天堂降落而来的风\n3. 却是我手心里的道光\n4. 她泪涟涟流落于眼\n5. 非是天地之间肆虐的狂风",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

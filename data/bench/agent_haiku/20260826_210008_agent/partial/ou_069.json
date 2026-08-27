@@ -1,0 +1,88 @@
+{
+  "id": "ou_069",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    7,
+    10,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    11,
+    7,
+    10,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我听到远方的雷声在轰鸣",
+    "如同生活的呐喊",
+    "它化成大雨倾盆冲洗着",
+    "我斩断灰色旧事",
+    "还有美丽琼浆"
+  ],
+  "time_seconds": 69.02,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 25,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0652199,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 11322,
+      "cache_read_input_tokens": 210959,
+      "output_tokens": 4284,
+      "output_tokens_details": {
+        "thinking_tokens": 2357
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11322,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 129,
+          "cache_read_input_tokens": 34342,
+          "cache_creation_input_tokens": 389,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 389
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我听到远方的雷声在轰鸣\n2. 如同生活的呐喊\n3. 它化成大雨倾盆冲洗着\n4. 我斩断灰色旧事\n5. 还有美丽琼浆",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

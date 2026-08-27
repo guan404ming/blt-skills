@@ -1,0 +1,88 @@
+{
+  "id": "ou_085",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    4,
+    4,
+    1,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    4,
+    4,
+    1,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "她汗流得多",
+    "她无情吗",
+    "自恋的吗",
+    "谁",
+    "我想变换气氛"
+  ],
+  "time_seconds": 42.95,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 18,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.043371799999999995,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 8589,
+      "cache_read_input_tokens": 143248,
+      "output_tokens": 2365,
+      "output_tokens_details": {
+        "thinking_tokens": 1086
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8589,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 91,
+          "cache_read_input_tokens": 31632,
+          "cache_creation_input_tokens": 366,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 366
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 她汗流得多\n2. 她无情吗\n3. 自恋的吗\n4. 谁\n5. 我想变换气氛",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

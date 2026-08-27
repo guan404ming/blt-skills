@@ -1,0 +1,44 @@
+{
+  "id": "ou_047",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.08761904761904762,
+  "ari": -0.3157894736842105,
+  "src_syl": [
+    10,
+    10,
+    14,
+    6,
+    7
+  ],
+  "tgt_syl": [
+    9,
+    11,
+    15,
+    7,
+    7
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABBCB",
+  "match": "1/5",
+  "translations": [
+    "黑白思绪皆向我俯首",
+    "我曾走过它们黢黑的长廊",
+    "纵然我脆弱如斯 你如天使伴我身旁",
+    "当悲伤唤我之名",
+    "我知万物皆无常"
+  ],
+  "time_seconds": 5.96,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 5.958,
+    "phase0_calls": 1
+  }
+}

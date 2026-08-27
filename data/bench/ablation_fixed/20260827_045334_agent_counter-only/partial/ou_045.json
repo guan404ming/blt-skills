@@ -1,0 +1,88 @@
+{
+  "id": "ou_045",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "tgt_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCBA",
+  "match": "5/5",
+  "translations": [
+    "许多虚浮美好时光已然迅速流逝",
+    "我希望你在弹奏弦乐器时能拥有观众的掌声",
+    "希望你拥有朋友听你倾诉衷肠",
+    "我希望我们在下一生能够重新相逢",
+    "我愿化作你乌黑秀发中的轻丝"
+  ],
+  "time_seconds": 126.99,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 50,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 23
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 22,
+      "lyrics-validator": 1
+    },
+    "num_turns": 26,
+    "cost_usd": 0.1351965,
+    "usage": {
+      "input_tokens": 116,
+      "cache_creation_input_tokens": 17402,
+      "cache_read_input_tokens": 479965,
+      "output_tokens": 10456,
+      "output_tokens_details": {
+        "thinking_tokens": 7128
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17402,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 277,
+          "cache_read_input_tokens": 40225,
+          "cache_creation_input_tokens": 586,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 586
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 许多虚浮美好时光已然迅速流逝\n2. 我希望你在弹奏弦乐器时能拥有观众的掌声\n3. 希望你拥有朋友听你倾诉衷肠\n4. 我希望我们在下一生能够重新相逢\n5. 我愿化作你乌黑秀发中的轻丝",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

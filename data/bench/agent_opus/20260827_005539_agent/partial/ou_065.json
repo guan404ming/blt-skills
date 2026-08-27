@@ -1,0 +1,88 @@
+{
+  "id": "ou_065",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "tgt_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "你我之间美好",
+    "如今你却不舒畅",
+    "寂寞夜里我一人躺在床上",
+    "宝贝我要你",
+    "我苦苦寻你直到心变失明"
+  ],
+  "time_seconds": 67.64,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.30577699999999997,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 14062,
+      "cache_read_input_tokens": 210874,
+      "output_tokens": 2386,
+      "output_tokens_details": {
+        "thinking_tokens": 1261
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14062,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 72,
+          "cache_read_input_tokens": 33895,
+          "cache_creation_input_tokens": 334,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 334
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你我之间美好\n2. 如今你却不舒畅\n3. 寂寞夜里我一人躺在床上\n4. 宝贝我要你\n5. 我苦苦寻你直到心变失明",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

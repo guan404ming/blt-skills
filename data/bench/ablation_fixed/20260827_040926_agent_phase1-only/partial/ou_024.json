@@ -1,0 +1,89 @@
+{
+  "id": "ou_024",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    7,
+    13,
+    7,
+    7
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    13,
+    7,
+    7
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "男孩遇见男孩这样很好",
+    "那就是他的开场",
+    "这真的很俗气有时候让我发笑",
+    "那就是他讲的话",
+    "我皱眉摇头说呀"
+  ],
+  "time_seconds": 84.92,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0663666,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 7871,
+      "cache_read_input_tokens": 142656,
+      "output_tokens": 7263,
+      "output_tokens_details": {
+        "thinking_tokens": 6181
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7871,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 5731,
+          "cache_read_input_tokens": 30720,
+          "cache_creation_input_tokens": 560,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 560
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 男孩遇见男孩这样很好\n2. 那就是他的开场\n3. 这真的很俗气有时候让我发笑\n4. 那就是他讲的话\n5. 我皱眉摇头说呀",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

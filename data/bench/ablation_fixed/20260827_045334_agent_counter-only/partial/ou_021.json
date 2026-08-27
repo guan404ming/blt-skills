@@ -1,0 +1,89 @@
+{
+  "id": "ou_021",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    6,
+    5,
+    7,
+    6,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    5,
+    7,
+    6,
+    8
+  ],
+  "src_rhyme": "ABAAC",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你会不会陪我",
+    "你是我需要",
+    "这不是爱很清楚",
+    "亲爱的陪我吧",
+    "我为什么容易伤感"
+  ],
+  "time_seconds": 67.95,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 34,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15,
+      "Write": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "lyrics-validator": 1
+    },
+    "num_turns": 19,
+    "cost_usd": 0.0792616,
+    "usage": {
+      "input_tokens": 84,
+      "cache_creation_input_tokens": 11622,
+      "cache_read_input_tokens": 311286,
+      "output_tokens": 4961,
+      "output_tokens_details": {
+        "thinking_tokens": 1723
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11622,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 100,
+          "cache_read_input_tokens": 34699,
+          "cache_creation_input_tokens": 332,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 332
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你会不会陪我\n2. 你是我需要\n3. 这不是爱很清楚\n4. 亲爱的陪我吧\n5. 我为什么容易伤感",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

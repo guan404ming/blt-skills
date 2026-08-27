@@ -1,0 +1,88 @@
+{
+  "id": "ou_086",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "tgt_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "src_rhyme": "ABCCC",
+  "tgt_rhyme": "ABCCC",
+  "match": "5/5",
+  "translations": [
+    "肉骨頭吃光了",
+    "搖尾巴",
+    "向我點頭",
+    "親愛的總統先生跟我走一走",
+    "假裝我們只是兩個人你並不比我優"
+  ],
+  "time_seconds": 86.13,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 17,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 2,
+      "lyrics-validator": 1
+    },
+    "num_turns": 11,
+    "cost_usd": 0.1647498,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 16425,
+      "cache_read_input_tokens": 298759,
+      "output_tokens": 3927,
+      "output_tokens_details": {
+        "thinking_tokens": 2262
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16425,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 81,
+          "cache_read_input_tokens": 47470,
+          "cache_creation_input_tokens": 342,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 342
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 肉骨頭吃光了\n2. 搖尾巴\n3. 向我點頭\n4. 親愛的總統先生跟我走一走\n5. 假裝我們只是兩個人你並不比我優",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,90 @@
+{
+  "id": "ou_003",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    7,
+    9,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    7,
+    9,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "自由来探索",
+    "星星与晨光的海",
+    "别害怕睁开你的眼睛",
+    "有太多来发现了",
+    "深呼吸放松吧"
+  ],
+  "time_seconds": 62.87,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 19,
+    "cost_usd": 0.0656365,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 11042,
+      "cache_read_input_tokens": 241895,
+      "output_tokens": 3859,
+      "output_tokens_details": {
+        "thinking_tokens": 1730
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11042,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 121,
+          "cache_read_input_tokens": 33996,
+          "cache_creation_input_tokens": 455,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 455
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 自由来探索\n2. 星星与晨光的海\n3. 别害怕睁开你的眼睛\n4. 有太多来发现了\n5. 深呼吸放松吧",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

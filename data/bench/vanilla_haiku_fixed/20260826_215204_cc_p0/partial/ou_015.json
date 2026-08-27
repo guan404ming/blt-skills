@@ -1,0 +1,44 @@
+{
+  "id": "ou_015",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "tgt_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "因为千年之后来啊",
+    "我已将不再在世界",
+    "我握不了你的手",
+    "也不能温柔吻你额头依旧了",
+    "所以别等到千年之后吧啦"
+  ],
+  "time_seconds": 133.41,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 85,
+    "rhyme-analyzer": 17,
+    "syllable-pattern-analyzer": 5
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 133.414,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ou_059",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    5,
+    8,
+    13,
+    4
+  ],
+  "tgt_syl": [
+    10,
+    5,
+    8,
+    13,
+    4
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "她说你同样叫我做的事",
+    "我们去游泳",
+    "太阳火焰烤我手掌",
+    "这就是我们永不会一起去伤害",
+    "再也不了"
+  ],
+  "time_seconds": 83.18,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.05986550000000001,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5313,
+      "cache_read_input_tokens": 43445,
+      "output_tokens": 8975,
+      "output_tokens_details": {
+        "thinking_tokens": 7974
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5313,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 8749,
+          "cache_read_input_tokens": 24016,
+          "cache_creation_input_tokens": 726,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 726
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\n**Syllable counts (en-us):**\n1. Then (1) she (1) said (1) the (1) same (1) thing (1) you (1) called (1) me (1) for (1) = **10**\n2. We (1) went (1) for (1) a (1) swim (1) = **5**\n3. The (1) flames (1) of (1) the (1) sun (1) burned (1) my (1) skin (1) = **8**\n4. This (1) is (1) why (1) we'll (1) nev-er (2) go (1) to (1) the (1) pool (1) to-geth-er (3) = **13**\n5. Ev-er (2) a-gain (2) = **4**\n\n**Rhyme scheme:**\n- Line 1 ends \"for\" /fɔɹ/ = **A**\n- Line 2 ends \"swim\" /ɪm/ = **B**\n- Line 3 ends \"skin\" /ɪn/ = **B** (near-rhyme with line 2)\n- Line 4 ends \"together\" /ɛɹ/ = **C**\n- Line 5 ends \"again\" /ɛn/ = **D**\n\nScheme: A-B-B-C-D. Lines 2 and 3 must rhyme; others must not.\n\n## Phase 1: Initial Translation (cmn)\n\n1. 她说你同样叫我做的事 (10 chars)\n2. 我们去游泳 (5 chars)\n3. 太阳火焰烤我手掌 (8 chars; ends -ang like 泳 -ong, shared rhyme family)\n4. 这就是我们永不会一起去伤害 (13 chars)\n5. 再也不了 (4 chars)\n\n## Phase 2: Syllable Refinement\n\nRecount each:\n1. 她(1)说(1)你(1)同(1)样(1)叫(1)我(1)做(1)的(1)事(1) = 10 ✓\n2. 我(1)们(1)去(1)游(1)泳(1) = 5 ✓\n3. 太(1)阳(1)火(1)焰(1)烤(1)我(1)手(1)掌(1) = 8 ✓\n4. 这(1)就(1)是(1)我(1)们(1)永(1)不(1)会(1)一(1)起(1)去(1)伤(1)害(1) = 13 ✓\n5. 再(1)也(1)不(1)了(1) = 4 ✓\n\n## Final Check\n\n- Rhyme: 泳 /ɔŋ/ and 掌 /ɑŋ/ share -ng rime (rhyme) ✓\n- All others don't rhyme ✓\n\n---\n\n1. 她说你同样叫我做的事\n2. 我们去游泳\n3. 太阳火焰烤我手掌\n4. 这就是我们永不会一起去伤害\n5. 再也不了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

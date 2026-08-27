@@ -1,0 +1,90 @@
+{
+  "id": "ou_020",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "tgt_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "Lo bueno en los dos",
+    "No sientes armonía",
+    "En cama sola con melancolía",
+    "Te amo nene",
+    "Buscándote hasta no ver la razón"
+  ],
+  "time_seconds": 220.66,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 59,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 30
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 25,
+      "rhyme-analyzer": 3,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 33,
+    "cost_usd": 0.20436559999999998,
+    "usage": {
+      "input_tokens": 172,
+      "cache_creation_input_tokens": 23331,
+      "cache_read_input_tokens": 817366,
+      "output_tokens": 15159,
+      "output_tokens_details": {
+        "thinking_tokens": 11621
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23331,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 195,
+          "cache_read_input_tokens": 46405,
+          "cache_creation_input_tokens": 335,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 335
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Lo bueno en los dos\n2. No sientes armonía\n3. En cama sola con melancolía\n4. Te amo nene\n5. Buscándote hasta no ver la razón",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

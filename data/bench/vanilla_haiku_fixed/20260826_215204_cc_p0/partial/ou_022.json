@@ -1,0 +1,43 @@
+{
+  "id": "ou_022",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.21666666666666665,
+  "ari": 0.0,
+  "src_syl": [
+    3,
+    8,
+    7,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    3,
+    6,
+    7,
+    6,
+    2
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "静下来",
+    "我年轻，我天真",
+    "告诉我，我会相信",
+    "带我走，带我走",
+    "远方"
+  ],
+  "time_seconds": 11.11,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 11.109,
+    "phase0_calls": 1
+  }
+}

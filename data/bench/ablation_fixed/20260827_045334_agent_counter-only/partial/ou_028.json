@@ -1,0 +1,88 @@
+{
+  "id": "ou_028",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "永远会在我的心里面",
+    "妈妈我想为你唱我爱你",
+    "我从未见过母亲",
+    "但我一直爱她",
+    "我没和她聊过"
+  ],
+  "time_seconds": 51.38,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.050939399999999996,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 9666,
+      "cache_read_input_tokens": 144284,
+      "output_tokens": 3427,
+      "output_tokens_details": {
+        "thinking_tokens": 1978
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9666,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 106,
+          "cache_read_input_tokens": 32678,
+          "cache_creation_input_tokens": 397,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 397
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 永远会在我的心里面\n2. 妈妈我想为你唱我爱你\n3. 我从未见过母亲\n4. 但我一直爱她\n5. 我没和她聊过",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

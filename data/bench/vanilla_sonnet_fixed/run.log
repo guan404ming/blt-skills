@@ -1,0 +1,219 @@
+Sampling 100 songs from ou (seed=42)...
+Saved 100 songs to data/bench/vanilla_sonnet_fixed/20260826_223450_cc_p0/test_songs.json
+phases=0 workers=2 model=sonnet effort=medium max_iter_p2=10 p3_threshold=0.8
+[start ] ou_001 (ou-test) src_syl=[19, 12, 11, 6, 17]
+[start ] ou_002 (ou-test) src_syl=[10, 9, 6, 6, 5]
+[done  ] ou_001 SER=0.4000 SCRE=0.0535 ARI=0.0000 match=3/5 llm=1 skill=12 time=9.9s
+[start ] ou_003 (ou-test) src_syl=[5, 7, 9, 7, 6]
+[done  ] ou_003 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=12 time=72.2s
+[start ] ou_004 (ou-test) src_syl=[2, 4, 4, 12, 12]
+[done  ] ou_004 SER=0.8000 SCRE=0.3333 ARI=0.0000 match=1/5 llm=1 skill=12 time=7.1s
+[start ] ou_005 (ou-test) src_syl=[10, 10, 12, 8, 11]
+[done  ] ou_005 SER=1.0000 SCRE=0.1797 ARI=1.0000 match=0/5 llm=1 skill=12 time=8.0s
+[start ] ou_006 (ou-test) src_syl=[8, 6, 8, 6, 8]
+[done  ] ou_006 SER=0.4000 SCRE=0.0917 ARI=-0.1905 match=3/5 llm=1 skill=12 time=6.1s
+[start ] ou_007 (ou-test) src_syl=[5, 8, 6, 2, 8]
+[done  ] ou_002 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=107 time=113.5s
+[start ] ou_008 (ou-test) src_syl=[8, 7, 11, 7, 5]
+[done  ] ou_007 SER=0.8000 SCRE=0.3517 ARI=-0.1538 match=1/5 llm=1 skill=31 time=12.1s
+[start ] ou_009 (ou-test) src_syl=[10, 7, 9, 11, 15]
+[done  ] ou_008 SER=1.0000 SCRE=0.1653 ARI=0.0000 match=0/5 llm=1 skill=31 time=6.9s
+[start ] ou_010 (ou-test) src_syl=[15, 16, 19, 19, 18]
+[done  ] ou_009 SER=0.8000 SCRE=0.2134 ARI=1.0000 match=1/5 llm=1 skill=31 time=5.3s
+[start ] ou_011 (ou-test) src_syl=[14, 7, 9, 8, 11]
+[done  ] ou_010 SER=1.0000 SCRE=0.3142 ARI=1.0000 match=0/5 llm=1 skill=31 time=7.2s
+[start ] ou_012 (ou-test) src_syl=[8, 8, 11, 8, 10]
+[done  ] ou_012 SER=0.6000 SCRE=0.1100 ARI=0.0000 match=2/5 llm=1 skill=12 time=7.0s
+[start ] ou_013 (ou-test) src_syl=[10, 11, 12, 6, 11]
+[done  ] ou_013 SER=0.8000 SCRE=0.2376 ARI=0.0000 match=1/5 llm=1 skill=12 time=7.4s
+[start ] ou_014 (ou-test) src_syl=[9, 9, 14, 9, 10]
+[done  ] ou_014 SER=0.8000 SCRE=0.2146 ARI=0.0000 match=1/5 llm=1 skill=12 time=6.8s
+[start ] ou_015 (ou-test) src_syl=[8, 8, 7, 12, 11]
+[done  ] ou_011 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=88 time=93.7s
+[start ] ou_016 (ou-test) src_syl=[13, 11, 18, 10, 8]
+[done  ] ou_015 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=68.7s
+[start ] ou_017 (ou-test) src_syl=[11, 18, 10, 8, 11]
+[done  ] ou_016 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=74.3s
+[start ] ou_018 (ou-test) src_syl=[9, 14, 15, 14, 8]
+[done  ] ou_017 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=83.7s
+[start ] ou_019 (ou-test) src_syl=[7, 11, 7, 8, 13]
+[done  ] ou_019 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=12 time=69.0s
+[start ] ou_020 (ou-test) src_syl=[2, 3, 3, 2, 5]
+[done  ] ou_020 SER=0.8000 SCRE=0.4000 ARI=0.0000 match=1/5 llm=1 skill=12 time=8.8s
+[start ] ou_021 (ou-test) src_syl=[6, 5, 7, 6, 8]
+claude rc=1 (attempt 1): API Error: 400 Output blocked by content filtering policy
+[done  ] ou_021 SER=0.8000 SCRE=0.2419 ARI=0.2105 match=1/5 llm=1 skill=12 time=39.9s
+[start ] ou_022 (ou-test) src_syl=[3, 8, 7, 4, 3]
+[done  ] ou_018 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=88 time=132.6s
+[start ] ou_023 (ou-test) src_syl=[3, 7, 7, 8, 5]
+[done  ] ou_023 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=12 time=60.6s
+[start ] ou_024 (ou-test) src_syl=[10, 7, 13, 7, 7]
+[done  ] ou_024 SER=0.8000 SCRE=0.2066 ARI=0.0000 match=1/5 llm=1 skill=12 time=4.8s
+[start ] ou_025 (ou-test) src_syl=[14, 3, 4, 3, 3]
+[done  ] ou_022 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=69 time=98.3s
+[start ] ou_026 (ou-test) src_syl=[10, 8, 7, 8, 16]
+[done  ] ou_026 SER=0.6000 SCRE=0.1736 ARI=1.0000 match=1/5 llm=1 skill=12 time=5.3s
+[start ] ou_027 (ou-test) src_syl=[6, 13, 12, 8, 7]
+[done  ] ou_027 SER=0.6000 SCRE=0.2202 ARI=0.0000 match=2/5 llm=1 skill=12 time=5.9s
+[start ] ou_028 (ou-test) src_syl=[9, 10, 7, 6, 6]
+[done  ] ou_028 SER=0.8000 SCRE=0.1597 ARI=0.0000 match=1/5 llm=1 skill=12 time=6.8s
+[start ] ou_029 (ou-test) src_syl=[16, 8, 9, 8, 9]
+[done  ] ou_029 SER=1.0000 SCRE=0.2611 ARI=0.1379 match=0/5 llm=1 skill=12 time=6.6s
+[start ] ou_030 (ou-test) src_syl=[11, 8, 11, 12, 8]
+[fail  ] ou_030
+[done  ] ou_030 SER=1.0000 SCRE=1.0000 ARI=0.0000 match=0/5 llm=1 skill=12 time=8.4s
+[start ] ou_031 (ou-test) src_syl=[5, 5, 4, 4, 7]
+[done  ] ou_025 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=126 time=67.3s
+[start ] ou_032 (ou-test) src_syl=[5, 6, 6, 6, 8]
+[done  ] ou_031 SER=0.6000 SCRE=0.2400 ARI=0.0000 match=2/5 llm=1 skill=31 time=6.7s
+[start ] ou_033 (ou-test) src_syl=[6, 6, 6, 8, 8]
+[done  ] ou_033 SER=1.0000 SCRE=0.2500 ARI=0.0000 match=0/5 llm=1 skill=12 time=5.7s
+[start ] ou_034 (ou-test) src_syl=[5, 9, 6, 5, 9]
+[done  ] ou_034 SER=0.8000 SCRE=0.1622 ARI=0.0000 match=1/5 llm=1 skill=12 time=9.4s
+[start ] ou_035 (ou-test) src_syl=[12, 11, 9, 10, 9]
+claude rc=1 (attempt 1): API Error: 400 Output blocked by content filtering policy
+[done  ] ou_032 SER=0.4000 SCRE=0.1500 ARI=0.0000 match=3/5 llm=1 skill=69 time=37.7s
+[start ] ou_036 (ou-test) src_syl=[13, 1, 3, 4, 5]
+[done  ] ou_035 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=77.4s
+[start ] ou_037 (ou-test) src_syl=[4, 3, 5, 12, 12]
+[done  ] ou_036 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=70.6s
+[start ] ou_038 (ou-test) src_syl=[3, 5, 12, 12, 5]
+[done  ] ou_037 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=71.4s
+[start ] ou_039 (ou-test) src_syl=[10, 11, 11, 9, 17]
+[done  ] ou_039 SER=0.8000 SCRE=0.1879 ARI=1.0000 match=0/5 llm=1 skill=12 time=5.1s
+[start ] ou_040 (ou-test) src_syl=[4, 4, 9, 9, 8]
+[done  ] ou_038 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=50 time=69.0s
+[start ] ou_041 (ou-test) src_syl=[9, 5, 11, 12, 20]
+[done  ] ou_041 SER=0.8000 SCRE=0.1715 ARI=1.0000 match=1/5 llm=1 skill=12 time=5.1s
+[start ] ou_042 (ou-test) src_syl=[7, 8, 9, 9, 16]
+[done  ] ou_042 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=12 time=56.2s
+[start ] ou_043 (ou-test) src_syl=[11, 13, 12, 7, 9]
+[done  ] ou_040 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=69 time=90.6s
+[start ] ou_044 (ou-test) src_syl=[7, 12, 4, 6, 9]
+[done  ] ou_044 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=12 time=58.4s
+[start ] ou_045 (ou-test) src_syl=[14, 19, 13, 15, 13]
+[done  ] ou_045 SER=1.0000 SCRE=0.3303 ARI=0.0000 match=0/5 llm=1 skill=12 time=5.8s
+[start ] ou_046 (ou-test) src_syl=[19, 7, 15, 18, 10]
+[done  ] ou_043 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=69 time=88.7s
+[start ] ou_047 (ou-test) src_syl=[10, 10, 14, 6, 7]
+[done  ] ou_046 SER=0.8000 SCRE=0.2565 ARI=-0.1111 match=1/5 llm=1 skill=31 time=6.0s
+[start ] ou_048 (ou-test) src_syl=[4, 5, 8, 4, 6]
+[done  ] ou_047 SER=0.8000 SCRE=0.0876 ARI=-0.3158 match=1/5 llm=1 skill=31 time=6.0s
+[start ] ou_049 (ou-test) src_syl=[17, 11, 15, 14, 18]
+[done  ] ou_049 SER=0.4000 SCRE=0.0404 ARI=0.0000 match=3/5 llm=1 skill=12 time=6.6s
+[start ] ou_050 (ou-test) src_syl=[19, 18, 22, 14, 19]
+[done  ] ou_050 SER=1.0000 SCRE=0.1565 ARI=1.0000 match=0/5 llm=1 skill=12 time=7.4s
+[start ] ou_051 (ou-test) src_syl=[13, 12, 11, 13, 12]
+[done  ] ou_051 SER=1.0000 SCRE=0.1772 ARI=0.0000 match=0/5 llm=1 skill=12 time=5.7s
+[start ] ou_052 (ou-test) src_syl=[10, 16, 13, 7, 15]
+[done  ] ou_052 SER=1.0000 SCRE=0.4564 ARI=0.0000 match=0/5 llm=1 skill=12 time=5.0s
+[start ] ou_053 (ou-test) src_syl=[7, 15, 11, 14, 8]
+[done  ] ou_048 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=107 time=63.8s
+[start ] ou_054 (ou-test) src_syl=[10, 3, 11, 11, 10]
+[done  ] ou_054 SER=1.0000 SCRE=0.3158 ARI=1.0000 match=0/5 llm=1 skill=12 time=5.1s
+[start ] ou_055 (ou-test) src_syl=[4, 4, 8, 4, 10]
+[done  ] ou_055 SER=0.6000 SCRE=0.2250 ARI=-0.1111 match=2/5 llm=1 skill=12 time=9.0s
+[start ] ou_056 (ou-test) src_syl=[5, 10, 8, 6, 6]
+[done  ] ou_053 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=69 time=90.7s
+[start ] ou_057 (ou-test) src_syl=[9, 12, 8, 9, 9]
+claude rc=1 (attempt 1): API Error: 400 Output blocked by content filtering policy
+[done  ] ou_056 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=75.9s
+[start ] ou_058 (ou-test) src_syl=[7, 10, 9, 8, 11]
+claude rc=1 (attempt 2): API Error: Output blocked by content filtering policy
+[done  ] ou_057 SER=0.8000 SCRE=0.1361 ARI=0.0000 match=1/5 llm=1 skill=31 time=55.5s
+[start ] ou_059 (ou-test) src_syl=[10, 5, 8, 13, 4]
+[done  ] ou_058 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=73.0s
+[start ] ou_060 (ou-test) src_syl=[5, 8, 13, 4, 8]
+[done  ] ou_059 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=56.8s
+[start ] ou_061 (ou-test) src_syl=[13, 11, 9, 9, 12]
+claude rc=1 (attempt 1): API Error: 400 Output blocked by content filtering policy
+[done  ] ou_060 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=56.1s
+[start ] ou_062 (ou-test) src_syl=[4, 5, 13, 4, 3]
+[done  ] ou_062 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=12 time=54.3s
+[start ] ou_063 (ou-test) src_syl=[8, 7, 7, 15, 5]
+[done  ] ou_063 SER=0.6000 SCRE=0.0952 ARI=0.0000 match=2/5 llm=1 skill=12 time=10.1s
+[start ] ou_064 (ou-test) src_syl=[23, 27, 4, 5, 6]
+[done  ] ou_064 SER=1.0000 SCRE=0.2772 ARI=0.0000 match=0/5 llm=1 skill=12 time=5.8s
+[start ] ou_065 (ou-test) src_syl=[6, 7, 11, 5, 11]
+[done  ] ou_061 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=88 time=130.9s
+[start ] ou_066 (ou-test) src_syl=[10, 7, 9, 6, 9]
+[done  ] ou_065 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=76.4s
+[start ] ou_067 (ou-test) src_syl=[4, 4, 6, 6, 5]
+[done  ] ou_067 SER=0.6000 SCRE=0.2167 ARI=1.0000 match=2/5 llm=1 skill=12 time=7.6s
+[start ] ou_068 (ou-test) src_syl=[11, 13, 8, 2, 9]
+[done  ] ou_066 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=50 time=79.6s
+[start ] ou_069 (ou-test) src_syl=[11, 7, 10, 7, 6]
+[done  ] ou_069 SER=0.8000 SCRE=0.1716 ARI=1.0000 match=1/5 llm=1 skill=12 time=6.3s
+[start ] ou_070 (ou-test) src_syl=[9, 13, 10, 8, 5]
+[done  ] ou_070 SER=0.8000 SCRE=0.1376 ARI=1.0000 match=1/5 llm=1 skill=12 time=5.3s
+[start ] ou_071 (ou-test) src_syl=[8, 10, 12, 12, 10]
+[done  ] ou_071 SER=0.8000 SCRE=0.1500 ARI=-0.1765 match=1/5 llm=1 skill=12 time=6.7s
+[start ] ou_072 (ou-test) src_syl=[6, 13, 15, 14, 15]
+[done  ] ou_072 SER=0.8000 SCRE=0.2971 ARI=0.4118 match=1/5 llm=1 skill=12 time=5.4s
+[start ] ou_073 (ou-test) src_syl=[13, 13, 5, 8, 10]
+[done  ] ou_073 SER=0.8000 SCRE=0.1404 ARI=0.0000 match=1/5 llm=1 skill=12 time=5.0s
+[start ] ou_074 (ou-test) src_syl=[9, 10, 11, 11, 10]
+[done  ] ou_074 SER=0.6000 SCRE=0.1875 ARI=0.0000 match=2/5 llm=1 skill=12 time=6.7s
+[start ] ou_075 (ou-test) src_syl=[4, 6, 6, 13, 9]
+[done  ] ou_075 SER=0.8000 SCRE=0.1893 ARI=0.0000 match=1/5 llm=1 skill=12 time=6.1s
+[start ] ou_076 (ou-test) src_syl=[3, 7, 10, 13, 7]
+[done  ] ou_076 SER=0.8000 SCRE=0.3187 ARI=0.0000 match=1/5 llm=1 skill=12 time=5.6s
+[start ] ou_077 (ou-test) src_syl=[11, 10, 6, 5, 7]
+[done  ] ou_077 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=12 time=74.1s
+[start ] ou_078 (ou-test) src_syl=[2, 8, 6, 5, 8]
+[done  ] ou_068 SER=0.2000 SCRE=0.1000 ARI=1.0000 match=4/5 llm=1 skill=202 time=126.5s
+[start ] ou_079 (ou-test) src_syl=[4, 5, 6, 10, 14]
+[done  ] ou_078 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=56.3s
+[start ] ou_080 (ou-test) src_syl=[12, 5, 4, 13, 3]
+[done  ] ou_079 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=54.2s
+[start ] ou_081 (ou-test) src_syl=[3, 6, 6, 5, 5]
+[done  ] ou_081 SER=0.8000 SCRE=0.1800 ARI=0.0000 match=1/5 llm=1 skill=12 time=4.7s
+[start ] ou_082 (ou-test) src_syl=[5, 11, 8, 5, 5]
+[done  ] ou_082 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=12 time=70.0s
+[start ] ou_083 (ou-test) src_syl=[4, 6, 4, 4, 4]
+[done  ] ou_080 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=69 time=76.2s
+[start ] ou_084 (ou-test) src_syl=[6, 8, 3, 4, 4]
+[done  ] ou_084 SER=0.8000 SCRE=0.2500 ARI=-0.1765 match=1/5 llm=1 skill=12 time=5.1s
+[start ] ou_085 (ou-test) src_syl=[5, 4, 4, 1, 6]
+[done  ] ou_085 SER=0.4000 SCRE=0.0900 ARI=0.0000 match=3/5 llm=1 skill=12 time=7.2s
+[start ] ou_086 (ou-test) src_syl=[6, 3, 4, 12, 15]
+[done  ] ou_083 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=69 time=71.8s
+[start ] ou_087 (ou-test) src_syl=[16, 14, 13, 8, 11]
+[done  ] ou_087 SER=0.8000 SCRE=0.1865 ARI=0.0000 match=1/5 llm=1 skill=12 time=6.1s
+[start ] ou_088 (ou-test) src_syl=[8, 14, 2, 15, 4]
+[done  ] ou_086 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=50 time=151.6s
+[start ] ou_089 (ou-test) src_syl=[7, 8, 7, 8, 19]
+[done  ] ou_088 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=90.9s
+[start ] ou_090 (ou-test) src_syl=[14, 18, 11, 9, 10]
+[done  ] ou_090 SER=1.0000 SCRE=0.2049 ARI=-0.1111 match=0/5 llm=1 skill=12 time=5.2s
+[start ] ou_091 (ou-test) src_syl=[6, 11, 10, 4, 9]
+[done  ] ou_089 SER=0.8000 SCRE=0.2489 ARI=0.6154 match=1/5 llm=1 skill=50 time=11.3s
+[start ] ou_092 (ou-test) src_syl=[12, 9, 12, 12, 13]
+[done  ] ou_092 SER=0.8000 SCRE=0.2209 ARI=-0.1765 match=0/5 llm=1 skill=12 time=5.7s
+[start ] ou_093 (ou-test) src_syl=[6, 5, 5, 16, 8]
+[done  ] ou_093 SER=0.8000 SCRE=0.1383 ARI=1.0000 match=1/5 llm=1 skill=12 time=8.2s
+[start ] ou_094 (ou-test) src_syl=[20, 7, 10, 11, 20]
+[done  ] ou_091 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=69 time=76.7s
+[start ] ou_095 (ou-test) src_syl=[5, 5, 6, 5, 4]
+[done  ] ou_094 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=31 time=78.4s
+[start ] ou_096 (ou-test) src_syl=[15, 4, 6, 6, 9]
+[done  ] ou_096 SER=0.6000 SCRE=0.0822 ARI=1.0000 match=2/5 llm=1 skill=12 time=5.7s
+[start ] ou_097 (ou-test) src_syl=[13, 12, 3, 10, 13]
+[done  ] ou_097 SER=0.8000 SCRE=0.2244 ARI=1.0000 match=1/5 llm=1 skill=12 time=7.2s
+[start ] ou_098 (ou-test) src_syl=[13, 7, 11, 11, 12]
+[done  ] ou_095 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=69 time=62.1s
+[start ] ou_099 (ou-test) src_syl=[9, 11, 2, 8, 8]
+[fail  ] ou_099
+[done  ] ou_099 SER=1.0000 SCRE=1.0000 ARI=0.0000 match=0/5 llm=1 skill=12 time=5.5s
+[start ] ou_100 (ou-test) src_syl=[10, 7, 16, 15, 5]
+[done  ] ou_100 SER=1.0000 SCRE=0.3186 ARI=1.0000 match=0/5 llm=1 skill=12 time=7.1s
+[done  ] ou_098 SER=0.0000 SCRE=0.0000 ARI=1.0000 match=5/5 llm=1 skill=62 time=55.4s
+
+Saved data/bench/vanilla_sonnet_fixed/20260826_223450_cc_p0/results.json
+Saved data/bench/vanilla_sonnet_fixed/20260826_223450_cc_p0/report.md
+{
+  "avg_ser": 0.458,
+  "avg_scre": 0.137,
+  "avg_ari": 0.5685,
+  "avg_time": 38.2
+}

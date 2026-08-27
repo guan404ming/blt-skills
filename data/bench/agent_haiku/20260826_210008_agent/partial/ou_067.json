@@ -1,0 +1,88 @@
+{
+  "id": "ou_067",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.10666666666666666,
+  "ari": 0.4117647058823529,
+  "src_syl": [
+    4,
+    4,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    4,
+    4,
+    6,
+    8,
+    6
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCCC",
+  "match": "3/5",
+  "translations": [
+    "众人回首",
+    "夺取王冠",
+    "你说那河流来",
+    "寻找通往那大海来",
+    "如同那河流来"
+  ],
+  "time_seconds": 130.05,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 18
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 2,
+      "lyrics-validator": 1
+    },
+    "num_turns": 21,
+    "cost_usd": 0.10551160000000001,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 16634,
+      "cache_read_input_tokens": 252106,
+      "output_tokens": 9393,
+      "output_tokens_details": {
+        "thinking_tokens": 6900
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16634,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 135,
+          "cache_read_input_tokens": 39638,
+          "cache_creation_input_tokens": 405,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 405
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 众人回首\n2. 夺取王冠\n3. 你说那河流来\n4. 寻找通往那大海来\n5. 如同那河流来",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

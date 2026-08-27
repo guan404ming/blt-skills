@@ -1,0 +1,44 @@
+{
+  "id": "ou_071",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.07666666666666666,
+  "ari": -0.17647058823529413,
+  "src_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "tgt_syl": [
+    8,
+    13,
+    11,
+    12,
+    10
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABAAC",
+  "match": "3/5",
+  "translations": [
+    "你们永远会在一起，",
+    "你要给她一点信心，紧紧抱住她",
+    "一点点温柔，你得好好待她，",
+    "她会守在你身边，好好照顾你，",
+    "你真该好好爱你的女人……"
+  ],
+  "time_seconds": 11.74,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 11.744,
+    "phase0_calls": 1
+  }
+}

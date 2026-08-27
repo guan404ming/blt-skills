@@ -1,0 +1,88 @@
+{
+  "id": "ou_042",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我们发现得太晚",
+    "于是泪滴落向自己",
+    "我们的相遇如此完美",
+    "我仍记得分别那一刻",
+    "拉着彼此不放多么舍不得与对方离别"
+  ],
+  "time_seconds": 50.76,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.11301059999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 13673,
+      "cache_read_input_tokens": 204193,
+      "output_tokens": 1746,
+      "output_tokens_details": {
+        "thinking_tokens": 603
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13673,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 86,
+          "cache_read_input_tokens": 44719,
+          "cache_creation_input_tokens": 341,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 341
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All checks pass.\n\n1. 我们发现得太晚\n2. 于是泪滴落向自己\n3. 我们的相遇如此完美\n4. 我仍记得分别那一刻\n5. 拉着彼此不放多么舍不得与对方离别",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

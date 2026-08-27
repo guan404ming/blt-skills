@@ -1,0 +1,89 @@
+{
+  "id": "ou_071",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "tgt_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "你永远都在我身旁",
+    "给她信心好好拥抱她来",
+    "温柔对待她好好照顾她的爱",
+    "她永远陪伴你在身边照顾你",
+    "你要好好爱你女人的心"
+  ],
+  "time_seconds": 134.28,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 22,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 2
+    },
+    "num_turns": 11,
+    "cost_usd": 0.1105284,
+    "usage": {
+      "input_tokens": 74,
+      "cache_creation_input_tokens": 12848,
+      "cache_read_input_tokens": 271234,
+      "output_tokens": 11527,
+      "output_tokens_details": {
+        "thinking_tokens": 10501
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12848,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 621,
+          "cache_read_input_tokens": 31287,
+          "cache_creation_input_tokens": 10230,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10230
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Constraints extracted:\n- Syllable counts: 8, 10, 12, 12, 10\n- Rhyme scheme: ABBCD (together/tight-right/you/woman)\n- Word patterns documented\n\nTranslating with constraints applied:\n\n1. 你永远都在我身旁\n2. 给她信心好好拥抱她来\n3. 温柔对待她好好照顾她的爱\n4. 她永远陪伴你在身边照顾你\n5. 你要好好爱你女人的心",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

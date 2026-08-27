@@ -1,0 +1,90 @@
+{
+  "id": "ou_075",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "莫悔莫悲",
+    "因为人生很短",
+    "别把青春浪费",
+    "魅力眼影上罩着伪装的光影呀",
+    "身体纹路在发出警告"
+  ],
+  "time_seconds": 137.53,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 44,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 18
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 2,
+      "lyrics-validator": 1
+    },
+    "num_turns": 21,
+    "cost_usd": 0.1447496,
+    "usage": {
+      "input_tokens": 164,
+      "cache_creation_input_tokens": 16562,
+      "cache_read_input_tokens": 672816,
+      "output_tokens": 8836,
+      "output_tokens_details": {
+        "thinking_tokens": 6782
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16562,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 267,
+          "cache_read_input_tokens": 39353,
+          "cache_creation_input_tokens": 618,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 618
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 莫悔莫悲\n2. 因为人生很短\n3. 别把青春浪费\n4. 魅力眼影上罩着伪装的光影呀\n5. 身体纹路在发出警告",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

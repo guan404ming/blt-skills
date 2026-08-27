@@ -1,0 +1,90 @@
+{
+  "id": "ou_054",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    3,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    10,
+    3,
+    11,
+    11,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "看著千層層的冰冷世界",
+    "封時光",
+    "但新生命在靜靜被滋養著",
+    "最平凡的冬季雪景在人間",
+    "最偉大奇蹟此刻在發生"
+  ],
+  "time_seconds": 78.17,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 51,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 18
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 21,
+    "cost_usd": 0.1035459,
+    "usage": {
+      "input_tokens": 164,
+      "cache_creation_input_tokens": 11141,
+      "cache_read_input_tokens": 629449,
+      "output_tokens": 3631,
+      "output_tokens_details": {
+        "thinking_tokens": 1474
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11141,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 137,
+          "cache_read_input_tokens": 34187,
+          "cache_creation_input_tokens": 363,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 363
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 看著千層層的冰冷世界\n2. 封時光\n3. 但新生命在靜靜被滋養著\n4. 最平凡的冬季雪景在人間\n5. 最偉大奇蹟此刻在發生",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

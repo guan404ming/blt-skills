@@ -1,0 +1,87 @@
+{
+  "id": "ou_049",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    17,
+    11,
+    15,
+    14,
+    18
+  ],
+  "tgt_syl": [
+    17,
+    11,
+    15,
+    14,
+    18
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你搬进我这破房子里好几天没踏出门口",
+    "你学会洗衣服也学会做饭",
+    "你顺着我的脾气让我觉得像个男人",
+    "我生气把玻璃杯摔碎把房门撞破",
+    "让你哭了好几天不接电话就这样转身离开"
+  ],
+  "time_seconds": 71.05,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 17,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 4,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 10,
+    "cost_usd": 0.17571799999999996,
+    "usage": {
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 15912,
+      "cache_read_input_tokens": 388070,
+      "output_tokens": 3442,
+      "output_tokens_details": {
+        "thinking_tokens": 1344
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15912,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 119,
+          "cache_read_input_tokens": 46937,
+          "cache_creation_input_tokens": 362,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 362
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 你搬进我这破房子里好几天没踏出门口\n2. 你学会洗衣服也学会做饭\n3. 你顺着我的脾气让我觉得像个男人\n4. 我生气把玻璃杯摔碎把房门撞破\n5. 让你哭了好几天不接电话就这样转身离开",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

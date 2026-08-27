@@ -1,0 +1,88 @@
+{
+  "id": "ou_010",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    15,
+    16,
+    19,
+    19,
+    18
+  ],
+  "tgt_syl": [
+    15,
+    16,
+    19,
+    19,
+    18
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "不懂音乐并没什么值得羞愧的事情",
+    "那些真正懂音乐的人也未必就是神仙",
+    "很多歌曲说到底其实都只是由四个和弦组成",
+    "有些歌曲多年来已成为音乐学校的教学素材",
+    "在菜市场卖菜的阿姨也是位海外的音乐家"
+  ],
+  "time_seconds": 66.86,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 29,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.0824468,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 10657,
+      "cache_read_input_tokens": 398748,
+      "output_tokens": 4230,
+      "output_tokens_details": {
+        "thinking_tokens": 2591
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10657,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 164,
+          "cache_read_input_tokens": 33684,
+          "cache_creation_input_tokens": 382,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 382
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不懂音乐并没什么值得羞愧的事情\n2. 那些真正懂音乐的人也未必就是神仙\n3. 很多歌曲说到底其实都只是由四个和弦组成\n4. 有些歌曲多年来已成为音乐学校的教学素材\n5. 在菜市场卖菜的阿姨也是位海外的音乐家",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

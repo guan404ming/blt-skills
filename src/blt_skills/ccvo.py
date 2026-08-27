@@ -281,7 +281,7 @@ def ccvo_distance(
     src_lang: str,
     tgt_lang: str,
 ) -> float:
-    """Per-line Levenshtein(ccvo_src, ccvo_tgt) / min(len), averaged across lines."""
+    """Per-line Levenshtein(ccvo_src, ccvo_tgt) / len(ccvo_src), averaged across lines."""
     n = min(len(src_lines), len(tgt_lines))
     if n == 0:
         return 0.0
@@ -289,6 +289,6 @@ def ccvo_distance(
     for s, t in zip(src_lines[:n], tgt_lines[:n]):
         m1 = ccvo_string(s, src_lang)
         m2 = ccvo_string(t, tgt_lang)
-        denom = max(min(len(m1), len(m2)), 1)
+        denom = max(len(m1), 1)
         total += Levenshtein.distance(m1, m2) / denom
     return total / n

@@ -1,0 +1,275 @@
+Sampling 100 songs from ou (seed=42)...
+Saved 100 songs to data/bench/agent_opus/20260827_005539_agent/test_songs.json
+agent model=opus effort=medium workers=4 n=100
+[start ] ou_001
+[start ] ou_002
+[start ] ou_003
+[start ] ou_004
+[done  ] ou_004 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.321 time=61s
+[done  ] ou_003 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.309 time=64s
+[start ] ou_005
+[start ] ou_006
+[done  ] ou_001 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.359 time=73s
+[start ] ou_007
+[done  ] ou_002 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.343 time=73s
+[start ] ou_008
+[done  ] ou_008 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=3 cost=$0.251 time=57s
+[start ] ou_009
+[done  ] ou_005 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.295 time=67s
+[start ] ou_010
+[done  ] ou_006 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.358 time=87s
+[start ] ou_011
+[done  ] ou_007 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.349 time=93s
+[start ] ou_012
+[done  ] ou_009 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.306 time=63s
+[start ] ou_013
+[done  ] ou_010 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.301 time=64s
+[start ] ou_014
+[done  ] ou_011 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.296 time=58s
+[start ] ou_015
+[done  ] ou_012 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=7 cost=$0.326 time=64s
+[start ] ou_016
+[done  ] ou_013 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.332 time=71s
+[start ] ou_017
+[done  ] ou_014 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.308 time=70s
+[start ] ou_018
+[done  ] ou_015 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.307 time=62s
+[start ] ou_019
+[done  ] ou_016 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.357 time=83s
+[start ] ou_020
+[done  ] ou_017 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.295 time=64s
+[start ] ou_021
+[done  ] ou_019 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.286 time=62s
+[start ] ou_022
+[done  ] ou_018 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.305 time=70s
+[start ] ou_023
+[retry ] ou_021 attempt 1 failed: API Error: Output blocked by content filtering policy
+[retry ] ou_022 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_021 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_020 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.267 time=56s
+[start ] ou_024
+[retry ] ou_021 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_023 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=3 cost=$0.250 time=52s
+[start ] ou_025
+[retry ] ou_021 attempt 4 failed: API Error: 400 Output blocked by content filtering policy
+[fail  ] ou_021 parse failed: 
+[done  ] ou_021 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=1 cost=$0.036 time=60s
+[start ] ou_026
+[done  ] ou_022 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=6 cost=$0.207 time=86s
+[start ] ou_027
+[done  ] ou_024 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=6 cost=$0.314 time=61s
+[start ] ou_028
+[done  ] ou_025 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.261 time=54s
+[start ] ou_029
+[done  ] ou_026 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.294 time=70s
+[start ] ou_030
+[done  ] ou_027 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.287 time=59s
+[start ] ou_031
+[done  ] ou_028 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=6 cost=$0.327 time=70s
+[start ] ou_032
+[done  ] ou_029 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.296 time=66s
+[start ] ou_033
+[done  ] ou_030 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.287 time=60s
+[start ] ou_034
+[retry ] ou_032 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_033 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_031 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.262 time=49s
+[start ] ou_035
+[retry ] ou_032 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_033 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[start ] ou_036
+[error ] ou_032: list index out of range
+[retry ] ou_035 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_033 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_033 attempt 4 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_033 parse failed: 
+[done  ] ou_033 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=0 cost=$0.036 time=73s
+[start ] ou_037
+[retry ] ou_035 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_034 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.268 time=64s
+[start ] ou_038
+[done  ] ou_036 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=4 cost=$0.279 time=66s
+[start ] ou_039
+[done  ] ou_037 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=7 cost=$0.308 time=58s
+[start ] ou_040
+[done  ] ou_038 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=4 cost=$0.261 time=58s
+[start ] ou_041
+[done  ] ou_035 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.183 time=114s
+[start ] ou_042
+[done  ] ou_039 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=6 cost=$0.338 time=63s
+[start ] ou_043
+[done  ] ou_041 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.297 time=57s
+[start ] ou_044
+[done  ] ou_042 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.309 time=63s
+[start ] ou_045
+[retry ] ou_043 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_040 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.315 time=75s
+[start ] ou_046
+[retry ] ou_043 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_043 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_044 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.302 time=62s
+[start ] ou_047
+[retry ] ou_043 attempt 4 failed: API Error: 400 Output blocked by content filtering policy
+[fail  ] ou_043 parse failed: 
+[done  ] ou_043 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=1 cost=$0.036 time=79s
+[start ] ou_048
+[start ] ou_049
+[error ] ou_045: list index out of range
+[retry ] ou_047 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_046 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.339 time=72s
+[start ] ou_050
+[retry ] ou_047 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_048 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.276 time=55s
+[start ] ou_051
+[retry ] ou_047 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_047 attempt 4 failed: API Error: 400 Output blocked by content filtering policy
+[fail  ] ou_047 parse failed: 
+[done  ] ou_047 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=0 cost=$0.036 time=81s
+[start ] ou_052
+[done  ] ou_049 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.338 time=72s
+[start ] ou_053
+[done  ] ou_050 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.315 time=64s
+[start ] ou_054
+[done  ] ou_051 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=4 cost=$0.281 time=61s
+[start ] ou_055
+[done  ] ou_054 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=4 cost=$0.256 time=54s
+[start ] ou_056
+[done  ] ou_052 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=6 cost=$0.344 time=65s
+[start ] ou_057
+[done  ] ou_053 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.315 time=69s
+[start ] ou_058
+[retry ] ou_057 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_055 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=4 cost=$0.259 time=54s
+[start ] ou_059
+[retry ] ou_057 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_057 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_056 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=3 cost=$0.279 time=64s
+[start ] ou_060
+[done  ] ou_058 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.302 time=59s
+[start ] ou_061
+[retry ] ou_057 attempt 4 failed: API Error: 400 Output blocked by content filtering policy
+[fail  ] ou_057 parse failed: 
+[done  ] ou_057 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=1 cost=$0.036 time=80s
+[start ] ou_062
+[retry ] ou_061 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_059 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.279 time=59s
+[start ] ou_063
+[retry ] ou_061 attempt 2 failed: API Error: Output blocked by content filtering policy
+[done  ] ou_060 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.270 time=53s
+[start ] ou_064
+[retry ] ou_061 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_061 attempt 4 failed: API Error: 400 Output blocked by content filtering policy
+[fail  ] ou_061 parse failed: 
+[done  ] ou_061 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=0 cost=$0.035 time=69s
+[start ] ou_065
+[done  ] ou_063 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.290 time=62s
+[start ] ou_066
+[done  ] ou_062 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=7 cost=$0.340 time=76s
+[start ] ou_067
+[retry ] ou_066 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_064 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=7 cost=$0.345 time=69s
+[start ] ou_068
+[retry ] ou_066 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_066 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_068 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_065 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.306 time=68s
+[start ] ou_069
+[retry ] ou_066 attempt 4 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_066 parse failed: 
+[done  ] ou_066 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=1 cost=$0.035 time=63s
+[start ] ou_070
+[done  ] ou_067 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.279 time=59s
+[start ] ou_071
+[retry ] ou_068 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_070 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_071 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_068 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_071 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_070 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_068 attempt 4 failed: API Error: 400 Output blocked by content filtering policy
+[fail  ] ou_068 parse failed: 
+[done  ] ou_068 SER=1.000 ARI=0.000 match=0/5 turns=3 scripts=0 cost=$0.017 time=75s
+[start ] ou_072
+[done  ] ou_069 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.280 time=57s
+[start ] ou_073
+[retry ] ou_071 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_070 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_071 attempt 4 failed: API Error: Output blocked by content filtering policy
+[fail  ] ou_071 parse failed: 
+[done  ] ou_071 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=0 cost=$0.035 time=72s
+[start ] ou_074
+[retry ] ou_070 attempt 4 failed: API Error: 400 Output blocked by content filtering policy
+[fail  ] ou_070 parse failed: 
+[done  ] ou_070 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=1 cost=$0.048 time=85s
+[start ] ou_075
+[retry ] ou_074 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_074 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_073 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.298 time=67s
+[start ] ou_076
+[retry ] ou_074 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_072 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.350 time=81s
+[start ] ou_077
+[start ] ou_078
+[error ] ou_074: list index out of range
+[done  ] ou_076 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.284 time=60s
+[start ] ou_079
+[done  ] ou_077 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.275 time=56s
+[start ] ou_080
+[done  ] ou_075 SER=0.000 ARI=1.000 match=5/5 turns=12 scripts=9 cost=$0.430 time=118s
+[start ] ou_081
+[done  ] ou_078 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=4 cost=$0.244 time=66s
+[start ] ou_082
+[done  ] ou_079 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=4 cost=$0.252 time=56s
+[start ] ou_083
+[done  ] ou_080 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.281 time=58s
+[start ] ou_084
+[done  ] ou_082 SER=0.000 ARI=1.000 match=5/5 turns=12 scripts=8 cost=$0.359 time=63s
+[start ] ou_085
+[done  ] ou_081 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.330 time=82s
+[start ] ou_086
+[done  ] ou_083 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.285 time=65s
+[start ] ou_087
+[done  ] ou_085 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.293 time=66s
+[start ] ou_088
+[done  ] ou_084 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=6 cost=$0.361 time=98s
+[start ] ou_089
+[done  ] ou_086 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.279 time=60s
+[start ] ou_090
+[done  ] ou_087 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.310 time=59s
+[start ] ou_091
+[done  ] ou_088 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.280 time=58s
+[start ] ou_092
+[done  ] ou_090 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.306 time=64s
+[start ] ou_093
+[done  ] ou_091 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.265 time=57s
+[start ] ou_094
+[done  ] ou_089 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.378 time=101s
+[start ] ou_095
+[done  ] ou_092 SER=0.000 ARI=1.000 match=5/5 turns=7 scripts=4 cost=$0.264 time=54s
+[start ] ou_096
+[done  ] ou_093 SER=0.000 ARI=1.000 match=5/5 turns=9 scripts=5 cost=$0.294 time=61s
+[start ] ou_097
+[done  ] ou_094 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=6 cost=$0.362 time=73s
+[start ] ou_098
+[done  ] ou_095 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.282 time=61s
+[start ] ou_099
+[done  ] ou_096 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=5 cost=$0.279 time=57s
+[start ] ou_100
+[retry ] ou_099 attempt 1 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_097 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.273 time=54s
+[done  ] ou_098 SER=0.000 ARI=1.000 match=5/5 turns=8 scripts=4 cost=$0.288 time=56s
+[retry ] ou_099 attempt 2 failed: API Error: 400 Output blocked by content filtering policy
+[retry ] ou_099 attempt 3 failed: API Error: 400 Output blocked by content filtering policy
+[done  ] ou_100 SER=0.000 ARI=1.000 match=5/5 turns=10 scripts=7 cost=$0.315 time=64s
+[retry ] ou_099 attempt 4 failed: API Error: 400 Output blocked by content filtering policy
+[fail  ] ou_099 parse failed: 
+[done  ] ou_099 SER=1.000 ARI=0.000 match=0/5 turns=4 scripts=0 cost=$0.034 time=79s
+
+Saved data/bench/agent_opus/20260827_005539_agent/results.json
+Saved data/bench/agent_opus/20260827_005539_agent/report.md
+{
+  "avg_ser": 0.1134,
+  "avg_scre": 0.1134,
+  "avg_ari": 0.8866,
+  "avg_time": 66.93
+}

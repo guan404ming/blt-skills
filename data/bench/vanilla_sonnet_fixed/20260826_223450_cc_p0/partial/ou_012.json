@@ -1,0 +1,43 @@
+{
+  "id": "ou_012",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.11000000000000001,
+  "ari": 0.0,
+  "src_syl": [
+    8,
+    8,
+    11,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    11,
+    7,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "2/5",
+  "translations": [
+    "我試著忍受傷痛",
+    "卻仍放不下這份愛",
+    "你的心早已走遠不再回頭",
+    "來生願化一朵蓮",
+    "靜靜盛開在佛前"
+  ],
+  "time_seconds": 6.96,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 6.96,
+    "phase0_calls": 1
+  }
+}

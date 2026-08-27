@@ -1,0 +1,85 @@
+{
+  "id": "ou_002",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.06000000000000001,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    11,
+    9,
+    6,
+    6,
+    6
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "3/5",
+  "translations": [
+    "一种从未曾经历过的感受",
+    "云中的自由都开放着",
+    "世界与你同在",
+    "我世界因你在",
+    "多么难以置信"
+  ],
+  "time_seconds": 41.95,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.0385895,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5223,
+      "cache_read_input_tokens": 43385,
+      "output_tokens": 4757,
+      "output_tokens_details": {
+        "thinking_tokens": 4031
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5223,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 4545,
+          "cache_read_input_tokens": 23956,
+          "cache_creation_input_tokens": 696,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 696
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\nSyllable counts (en-us):\n1. An ex-pe-ri-ence we've nev-er felt be-fore = 11\n2. The free-dom in the clouds is o-pen = 9\n3. And the world is with you = 6\n4. My world is bright with you = 6\n5. How un-be-liev-a-ble = 6\n\nRhyme scheme:\n- Line 1 \"before\" → A\n- Line 2 \"open\" → B\n- Line 3 \"you\" → C\n- Line 4 \"you\" → C (rhymes with 3)\n- Line 5 \"unbelievable\" → D\n\n## Phase 1: Initial Translation\n\n1. 一种从未曾经历过的感受 (11 syllables)\n2. 云中的自由都开放着 (9 syllables)\n3. 世界与你同在 (6 syllables)\n4. 我世界因你在 (6 syllables, rhymes with 3 via 在)\n5. 多么难以置信 (6 syllables)\n\n## Phase 2: Syllable Refinement\n\nRecount:\n1. 一(1)种(1)从(1)未(1)曾(1)经(1)历(1)过(1)的(1)感(1)受(1) = 11 ✓\n2. 云(1)中(1)的(1)自(1)由(1)都(1)开(1)放(1)着(1) = 9 ✓\n3. 世(1)界(1)与(1)你(1)同(1)在(1) = 6 ✓\n4. 我(1)世(1)界(1)因(1)你(1)在(1) = 6 ✓\n5. 多(1)么(1)难(1)以(1)置(1)信(1) = 6 ✓\n\n## Final Check\n\nAll syllable counts match targets. Rhyme scheme maintained: A-B-C-C-D.\n\n```\n1. 一种从未曾经历过的感受\n2. 云中的自由都开放着\n3. 世界与你同在\n4. 我世界因你在\n5. 多么难以置信\n```",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

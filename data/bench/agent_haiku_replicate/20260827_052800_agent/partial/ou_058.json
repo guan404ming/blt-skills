@@ -1,0 +1,90 @@
+{
+  "id": "ou_058",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDB",
+  "tgt_rhyme": "ABCDB",
+  "match": "5/5",
+  "translations": [
+    "我双手伸向天开",
+    "要接住从天上落来的烟",
+    "但落下的非是寻常水",
+    "而眼泪滑落在空中",
+    "而那暴风雨非源于苍天烟"
+  ],
+  "time_seconds": 191.65,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 30,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.16768639999999999,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 24663,
+      "cache_read_input_tokens": 311594,
+      "output_tokens": 17425,
+      "output_tokens_details": {
+        "thinking_tokens": 15156
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24663,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 198,
+          "cache_read_input_tokens": 47722,
+          "cache_creation_input_tokens": 350,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 350
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我双手伸向天开\n2. 要接住从天上落来的烟\n3. 但落下的非是寻常水\n4. 而眼泪滑落在空中\n5. 而那暴风雨非源于苍天烟",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

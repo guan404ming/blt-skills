@@ -1,0 +1,88 @@
+{
+  "id": "ou_039",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "tgt_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我该怎样做？失你的前程",
+    "谁能代替你给我晚安之吻",
+    "你怎样忽然放开了我的手",
+    "你怎么能说不爱我呢",
+    "原来这一切都只是短暂幸福的一个承诺"
+  ],
+  "time_seconds": 83.92,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 27,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 14
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 17,
+    "cost_usd": 0.080543,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 13062,
+      "cache_read_input_tokens": 246710,
+      "output_tokens": 5936,
+      "output_tokens_details": {
+        "thinking_tokens": 3838
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13062,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 167,
+          "cache_read_input_tokens": 35959,
+          "cache_creation_input_tokens": 512,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 512
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我该怎样做？失你的前程\n2. 谁能代替你给我晚安之吻\n3. 你怎样忽然放开了我的手\n4. 你怎么能说不爱我呢\n5. 原来这一切都只是短暂幸福的一个承诺",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,90 @@
+{
+  "id": "ou_098",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "tgt_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "友誼如挪亞方舟般堅強的許諾",
+    "我靜看著那片海",
+    "等待永恆模糊的眼淚視線",
+    "多年來買了車手錶和相機",
+    "但我發現有些東西錢買不到"
+  ],
+  "time_seconds": 65.92,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 27,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 14
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 17,
+    "cost_usd": 0.0715283,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 11786,
+      "cache_read_input_tokens": 244633,
+      "output_tokens": 4685,
+      "output_tokens_details": {
+        "thinking_tokens": 2535
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11786,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 157,
+          "cache_read_input_tokens": 34828,
+          "cache_creation_input_tokens": 367,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 367
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 友誼如挪亞方舟般堅強的許諾\n2. 我靜看著那片海\n3. 等待永恆模糊的眼淚視線\n4. 多年來買了車手錶和相機\n5. 但我發現有些東西錢買不到",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

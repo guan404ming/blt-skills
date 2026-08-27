@@ -1,0 +1,90 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    16,
+    8,
+    9,
+    8,
+    9
+  ],
+  "tgt_syl": [
+    16,
+    8,
+    9,
+    8,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "山脚下连绵不绝的高山花朵绽放开来",
+    "哪种节奏最摇摆嘿",
+    "哪首歌儿最最快乐呢",
+    "蜿蜒河流从天上来",
+    "缤纷色彩流向大海边"
+  ],
+  "time_seconds": 62.6,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 25,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0652378,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 11281,
+      "cache_read_input_tokens": 209258,
+      "output_tokens": 4338,
+      "output_tokens_details": {
+        "thinking_tokens": 2384
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11281,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 171,
+          "cache_read_input_tokens": 34265,
+          "cache_creation_input_tokens": 425,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 425
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 山脚下连绵不绝的高山花朵绽放开来\n2. 哪种节奏最摇摆嘿\n3. 哪首歌儿最最快乐呢\n4. 蜿蜒河流从天上来\n5. 缤纷色彩流向大海边",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

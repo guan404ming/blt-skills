@@ -1,0 +1,90 @@
+{
+  "id": "ou_062",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    13,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    13,
+    4,
+    3
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "没衣没裳",
+    "只有我和你",
+    "没什么好对你讲的我的秘密呢",
+    "因为太冷",
+    "陪你哦"
+  ],
+  "time_seconds": 129.24,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 39,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 20
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 3
+    },
+    "num_turns": 23,
+    "cost_usd": 0.1260052,
+    "usage": {
+      "input_tokens": 100,
+      "cache_creation_input_tokens": 17610,
+      "cache_read_input_tokens": 406752,
+      "output_tokens": 10002,
+      "output_tokens_details": {
+        "thinking_tokens": 7428
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17610,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 155,
+          "cache_read_input_tokens": 40698,
+          "cache_creation_input_tokens": 321,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 321
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 没衣没裳\n2. 只有我和你\n3. 没什么好对你讲的我的秘密呢\n4. 因为太冷\n5. 陪你哦",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

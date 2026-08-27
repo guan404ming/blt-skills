@@ -1,0 +1,44 @@
+{
+  "id": "ou_069",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2866666666666667,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    7,
+    10,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    11,
+    9,
+    11,
+    12,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCC",
+  "match": "1/5",
+  "translations": [
+    "我听见它自远方轰隆作响——",
+    "就像生命发出的呐喊。",
+    "它化作滂沱大雨，冲刷而下。",
+    "我已斩断与灰色过往的牵连，",
+    "还有——那杯绚烂的酒，"
+  ],
+  "time_seconds": 10.97,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 10.972,
+    "phase0_calls": 1
+  }
+}

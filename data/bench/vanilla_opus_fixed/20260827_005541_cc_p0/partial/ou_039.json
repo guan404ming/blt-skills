@@ -1,0 +1,43 @@
+{
+  "id": "ou_039",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.16655971479500892,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "tgt_syl": [
+    12,
+    12,
+    12,
+    12,
+    15
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDA",
+  "match": "0/5",
+  "translations": [
+    "我该怎么办？你的未来被剥夺",
+    "谁能代替你，让我吻别道晚安",
+    "你怎能突然就放开了我的手",
+    "你怎能说出「我就是不爱你了」",
+    "原来那不过是一场短暂幸福的承诺"
+  ],
+  "time_seconds": 9.42,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 9.425,
+    "phase0_calls": 1
+  }
+}

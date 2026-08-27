@@ -1,0 +1,43 @@
+{
+  "id": "ou_028",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.15968253968253968,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    7,
+    11,
+    8,
+    6,
+    8
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "永遠留在我心中",
+    "媽媽我想為你唱歌，我愛你",
+    "我從未見過我母親",
+    "但我一直愛她",
+    "我從未跟她說過話"
+  ],
+  "time_seconds": 6.81,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 6.812,
+    "phase0_calls": 1
+  }
+}

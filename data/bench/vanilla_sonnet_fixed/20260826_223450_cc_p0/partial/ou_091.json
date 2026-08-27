@@ -1,0 +1,44 @@
+{
+  "id": "ou_091",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    11,
+    10,
+    4,
+    9
+  ],
+  "tgt_syl": [
+    6,
+    11,
+    10,
+    4,
+    9
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCDC",
+  "match": "5/5",
+  "translations": [
+    "你送給我的花",
+    "我心中的顫抖漸漸地釋放",
+    "他是能討好眾人的英豪",
+    "巨星誕生",
+    "來吧大家一起大聲嚎"
+  ],
+  "time_seconds": 76.73,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 76.725,
+    "phase0_calls": 1
+  }
+}

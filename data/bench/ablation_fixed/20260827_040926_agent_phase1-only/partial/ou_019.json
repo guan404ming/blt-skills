@@ -1,0 +1,89 @@
+{
+  "id": "ou_019",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "tgt_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我听闻曾有虎穴",
+    "我们从未自儿时起论此事",
+    "我心是山中之人",
+    "斫烧此生活太艰难",
+    "革命之风吹遍了山间各个地方"
+  ],
+  "time_seconds": 138.01,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.1324021,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 20353,
+      "cache_read_input_tokens": 217011,
+      "output_tokens": 13987,
+      "output_tokens_details": {
+        "thinking_tokens": 12210
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20353,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 249,
+          "cache_read_input_tokens": 43178,
+          "cache_creation_input_tokens": 584,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 584
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我听闻曾有虎穴\n2. 我们从未自儿时起论此事\n3. 我心是山中之人\n4. 斫烧此生活太艰难\n5. 革命之风吹遍了山间各个地方",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

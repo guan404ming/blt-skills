@@ -1,0 +1,88 @@
+{
+  "id": "ou_009",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    7,
+    9,
+    11,
+    15
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    9,
+    11,
+    15
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AABCD",
+  "match": "5/5",
+  "translations": [
+    "一加一算错了的那时刻",
+    "等于三这是对的",
+    "两个普通年轻人想法",
+    "这些歌词代表我们两个人",
+    "不懂音乐都没什么值得羞愧的地方"
+  ],
+  "time_seconds": 79.96,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 39,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 14,
+      "lyrics-validator": 1
+    },
+    "num_turns": 18,
+    "cost_usd": 0.09683479999999998,
+    "usage": {
+      "input_tokens": 140,
+      "cache_creation_input_tokens": 11063,
+      "cache_read_input_tokens": 528538,
+      "output_tokens": 4343,
+      "output_tokens_details": {
+        "thinking_tokens": 2522
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11063,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 144,
+          "cache_read_input_tokens": 34036,
+          "cache_creation_input_tokens": 436,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 436
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 一加一算错了的那时刻\n2. 等于三这是对的\n3. 两个普通年轻人想法\n4. 这些歌词代表我们两个人\n5. 不懂音乐都没什么值得羞愧的地方",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

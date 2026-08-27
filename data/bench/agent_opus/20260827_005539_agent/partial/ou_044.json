@@ -1,0 +1,88 @@
+{
+  "id": "ou_044",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    12,
+    4,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    7,
+    12,
+    4,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我想你想了整夜",
+    "现在我连你的模样都想不起",
+    "你是感觉",
+    "写在夏夜风中",
+    "青春是回不来的流水"
+  ],
+  "time_seconds": 61.9,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.3019004999999999,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 13619,
+      "cache_read_input_tokens": 243211,
+      "output_tokens": 1761,
+      "output_tokens_details": {
+        "thinking_tokens": 411
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13619,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 63,
+          "cache_read_input_tokens": 33327,
+          "cache_creation_input_tokens": 459,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 459
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想你想了整夜\n2. 现在我连你的模样都想不起\n3. 你是感觉\n4. 写在夏夜风中\n5. 青春是回不来的流水",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

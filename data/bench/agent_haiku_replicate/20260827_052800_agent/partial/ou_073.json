@@ -1,0 +1,90 @@
+{
+  "id": "ou_073",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "src_rhyme": "ABBCB",
+  "tgt_rhyme": "ABBCB",
+  "match": "5/5",
+  "translations": [
+    "你那香气最迷人让我为之着迷",
+    "拿走我一切别无所求别无他物",
+    "哦我怎么处",
+    "其他男人眼中的光",
+    "我愿把全部献给你去处"
+  ],
+  "time_seconds": 221.46,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 47,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 23
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 18,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 3
+    },
+    "num_turns": 26,
+    "cost_usd": 0.19159210000000002,
+    "usage": {
+      "input_tokens": 100,
+      "cache_creation_input_tokens": 27025,
+      "cache_read_input_tokens": 421821,
+      "output_tokens": 19052,
+      "output_tokens_details": {
+        "thinking_tokens": 15862
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27025,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 208,
+          "cache_read_input_tokens": 50091,
+          "cache_creation_input_tokens": 343,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 343
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你那香气最迷人让我为之着迷\n2. 拿走我一切别无所求别无他物\n3. 哦我怎么处\n4. 其他男人眼中的光\n5. 我愿把全部献给你去处",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

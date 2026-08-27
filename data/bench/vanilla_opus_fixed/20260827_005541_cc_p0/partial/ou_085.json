@@ -1,0 +1,43 @@
+{
+  "id": "ou_085",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.19,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    4,
+    4,
+    1,
+    6
+  ],
+  "tgt_syl": [
+    6,
+    6,
+    3,
+    1,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AAAAB",
+  "match": "2/5",
+  "translations": [
+    "她流很多汗嗎？",
+    "她冷酷無情嗎？",
+    "自戀嗎？",
+    "誰？",
+    "讓我換個心情"
+  ],
+  "time_seconds": 7.15,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 7.15,
+    "phase0_calls": 1
+  }
+}

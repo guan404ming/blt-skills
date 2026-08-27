@@ -1,0 +1,88 @@
+{
+  "id": "ou_017",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    11,
+    18,
+    10,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    11,
+    18,
+    10,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDC",
+  "match": "5/5",
+  "translations": [
+    "那时沙漠暮光已化为深红",
+    "有没有人能从这千年孤独中解救我出来呢",
+    "我在夜的翅膀中看见你",
+    "围绕那烛光的温暖",
+    "当两极旋转在风中听到你"
+  ],
+  "time_seconds": 83.54,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 33,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 12
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "lyrics-validator": 1
+    },
+    "num_turns": 15,
+    "cost_usd": 0.09975060000000001,
+    "usage": {
+      "input_tokens": 116,
+      "cache_creation_input_tokens": 12552,
+      "cache_read_input_tokens": 442706,
+      "output_tokens": 6052,
+      "output_tokens_details": {
+        "thinking_tokens": 4412
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12552,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 134,
+          "cache_read_input_tokens": 35468,
+          "cache_creation_input_tokens": 493,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 493
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 那时沙漠暮光已化为深红\n2. 有没有人能从这千年孤独中解救我出来呢\n3. 我在夜的翅膀中看见你\n4. 围绕那烛光的温暖\n5. 当两极旋转在风中听到你",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

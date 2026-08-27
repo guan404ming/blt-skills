@@ -1,0 +1,43 @@
+{
+  "id": "ou_027",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.2464102564102564,
+  "ari": 0.4117647058823529,
+  "src_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "tgt_syl": [
+    20,
+    11,
+    11,
+    21,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABAAC",
+  "match": "0/5",
+  "translations": [
+    "その場に立ってて何も言えない顔してる",
+    "でもその顔知ってるよ",
+    "そしてここに俺がいる",
+    "俺に来るのが分かってることに身構えてる",
+    "なんてもったいない"
+  ],
+  "time_seconds": 25.45,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 25.454,
+    "phase0_calls": 1
+  }
+}

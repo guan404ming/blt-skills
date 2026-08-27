@@ -1,0 +1,88 @@
+{
+  "id": "ou_070",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    13,
+    10,
+    8,
+    5
+  ],
+  "tgt_syl": [
+    9,
+    13,
+    10,
+    8,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "给她翅膀当她想飞时",
+    "当你发现自己无助躺在她怀中",
+    "你知道你很爱那个女人",
+    "当爱女人时告诉她",
+    "她真被想要"
+  ],
+  "time_seconds": 118.27,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 39,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.1059705,
+    "usage": {
+      "input_tokens": 130,
+      "cache_creation_input_tokens": 9480,
+      "cache_read_input_tokens": 524905,
+      "output_tokens": 6878,
+      "output_tokens_details": {
+        "thinking_tokens": 5001
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9480,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 203,
+          "cache_read_input_tokens": 37814,
+          "cache_creation_input_tokens": 330,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 330
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 给她翅膀当她想飞时\n2. 当你发现自己无助躺在她怀中\n3. 你知道你很爱那个女人\n4. 当爱女人时告诉她\n5. 她真被想要",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

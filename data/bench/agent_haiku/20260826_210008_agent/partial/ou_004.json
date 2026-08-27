@@ -1,0 +1,88 @@
+{
+  "id": "ou_004",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    4,
+    4,
+    12,
+    12
+  ],
+  "tgt_syl": [
+    2,
+    4,
+    4,
+    12,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "激动",
+    "命中注定",
+    "哦一起来",
+    "你累了吗会伸出两只手来吗",
+    "若你想拥抱为何紧紧握拳头"
+  ],
+  "time_seconds": 68.12,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0595373,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 10981,
+      "cache_read_input_tokens": 178333,
+      "output_tokens": 3938,
+      "output_tokens_details": {
+        "thinking_tokens": 2136
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10981,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 154,
+          "cache_read_input_tokens": 34019,
+          "cache_creation_input_tokens": 371,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 371
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 激动\n2. 命中注定\n3. 哦一起来\n4. 你累了吗会伸出两只手来吗\n5. 若你想拥抱为何紧紧握拳头",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

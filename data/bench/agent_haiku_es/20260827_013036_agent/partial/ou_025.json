@@ -1,0 +1,90 @@
+{
+  "id": "ou_025",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "tgt_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "src_rhyme": "AAABA",
+  "tgt_rhyme": "AAABA",
+  "match": "5/5",
+  "translations": [
+    "Mi concha",
+    "No tengas miedo, concha",
+    "Un cuerpo enigmático, concha",
+    "Deja que la desazón se vaya despacio",
+    "Anda despacio, concha"
+  ],
+  "time_seconds": 85.67,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 35,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.09406500000000001,
+    "usage": {
+      "input_tokens": 124,
+      "cache_creation_input_tokens": 11837,
+      "cache_read_input_tokens": 469370,
+      "output_tokens": 4666,
+      "output_tokens_details": {
+        "thinking_tokens": 3094
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11837,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 125,
+          "cache_read_input_tokens": 34917,
+          "cache_creation_input_tokens": 329,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 329
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Mi concha\n2. No tengas miedo, concha\n3. Un cuerpo enigmático, concha\n4. Deja que la desazón se vaya despacio\n5. Anda despacio, concha",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

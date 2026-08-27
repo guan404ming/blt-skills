@@ -1,0 +1,89 @@
+{
+  "id": "ou_069",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    7,
+    10,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    11,
+    7,
+    10,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我听闻远方的雷鸣隆隆声",
+    "就像生命的呐喊",
+    "化作滂沱大雨冲洗一切",
+    "我割断灰色往事",
+    "还有那美酒啊"
+  ],
+  "time_seconds": 75.73,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11,
+      "Agent": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 15,
+    "cost_usd": 0.09416770000000001,
+    "usage": {
+      "input_tokens": 118,
+      "cache_creation_input_tokens": 9274,
+      "cache_read_input_tokens": 423913,
+      "output_tokens": 2616,
+      "output_tokens_details": {
+        "thinking_tokens": 1008
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9274,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 113,
+          "cache_read_input_tokens": 32334,
+          "cache_creation_input_tokens": 349,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 349
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我听闻远方的雷鸣隆隆声\n2. 就像生命的呐喊\n3. 化作滂沱大雨冲洗一切\n4. 我割断灰色往事\n5. 还有那美酒啊",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

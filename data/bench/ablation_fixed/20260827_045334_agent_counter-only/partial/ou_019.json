@@ -1,0 +1,89 @@
+{
+  "id": "ou_019",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "tgt_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCAA",
+  "match": "5/5",
+  "translations": [
+    "听闻虎穴在那处",
+    "我们从小就未曾谈论此事",
+    "我自是山中人也",
+    "刀耕火种的日子苦",
+    "革命之风吹拂过了山岭的每处"
+  ],
+  "time_seconds": 75.52,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 28,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11,
+      "Agent": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 15,
+    "cost_usd": 0.09342844999999997,
+    "usage": {
+      "input_tokens": 86,
+      "cache_creation_input_tokens": 9191,
+      "cache_read_input_tokens": 296192,
+      "output_tokens": 2640,
+      "output_tokens_details": {
+        "thinking_tokens": 1102
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9191,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 139,
+          "cache_read_input_tokens": 32141,
+          "cache_creation_input_tokens": 459,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 459
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 听闻虎穴在那处\n2. 我们从小就未曾谈论此事\n3. 我自是山中人也\n4. 刀耕火种的日子苦\n5. 革命之风吹拂过了山岭的每处",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

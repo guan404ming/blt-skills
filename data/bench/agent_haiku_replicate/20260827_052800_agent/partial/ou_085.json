@@ -1,0 +1,90 @@
+{
+  "id": "ou_085",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    4,
+    4,
+    1,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    4,
+    4,
+    1,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "她出汗多吗",
+    "她很冷酷",
+    "自我中心",
+    "谁",
+    "让我变个心情"
+  ],
+  "time_seconds": 79.95,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 43,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 19,
+    "cost_usd": 0.1005896,
+    "usage": {
+      "input_tokens": 148,
+      "cache_creation_input_tokens": 11621,
+      "cache_read_input_tokens": 565546,
+      "output_tokens": 4129,
+      "output_tokens_details": {
+        "thinking_tokens": 2193
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11621,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 124,
+          "cache_read_input_tokens": 34722,
+          "cache_creation_input_tokens": 308,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 308
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 她出汗多吗\n2. 她很冷酷\n3. 自我中心\n4. 谁\n5. 让我变个心情",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

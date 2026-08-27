@@ -1,0 +1,88 @@
+{
+  "id": "ou_016",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "tgt_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "当每个人都早已将我彻底忘掉",
+    "那时沙漠黄昏已染成血红",
+    "有没有谁能把我从千年的孤独之中解开来",
+    "我见你在逐夜双翼之上",
+    "绕着烛火暖光回荡"
+  ],
+  "time_seconds": 83.43,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 10,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "skills": 1,
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.3571485,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 15177,
+      "cache_read_input_tokens": 243897,
+      "output_tokens": 3334,
+      "output_tokens_details": {
+        "thinking_tokens": 1817
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15177,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 97,
+          "cache_read_input_tokens": 33992,
+          "cache_creation_input_tokens": 1352,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1352
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 当每个人都早已将我彻底忘掉\n2. 那时沙漠黄昏已染成血红\n3. 有没有谁能把我从千年的孤独之中解开来\n4. 我见你在逐夜双翼之上\n5. 绕着烛火暖光回荡",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

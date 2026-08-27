@@ -1,0 +1,88 @@
+{
+  "id": "ou_051",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    12,
+    11,
+    13,
+    12
+  ],
+  "tgt_syl": [
+    13,
+    12,
+    11,
+    13,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "遗憾的空杯在月光下寂寞坐着",
+    "他们在那广大的春秋里漫步",
+    "被爱的人最快离开这世界",
+    "年轻无忧风吹入像霜的头发中",
+    "幸好有人穿越这寒冬和酷热"
+  ],
+  "time_seconds": 63.84,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 26,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.0810766,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 10467,
+      "cache_read_input_tokens": 398896,
+      "output_tokens": 4029,
+      "output_tokens_details": {
+        "thinking_tokens": 2686
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10467,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 160,
+          "cache_read_input_tokens": 33455,
+          "cache_creation_input_tokens": 421,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 421
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 遗憾的空杯在月光下寂寞坐着\n2. 他们在那广大的春秋里漫步\n3. 被爱的人最快离开这世界\n4. 年轻无忧风吹入像霜的头发中\n5. 幸好有人穿越这寒冬和酷热",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

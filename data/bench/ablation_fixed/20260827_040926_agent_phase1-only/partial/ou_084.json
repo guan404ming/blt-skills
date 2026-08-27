@@ -1,0 +1,89 @@
+{
+  "id": "ou_084",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    8,
+    3,
+    4,
+    4
+  ],
+  "tgt_syl": [
+    6,
+    8,
+    3,
+    4,
+    4
+  ],
+  "src_rhyme": "ABCBD",
+  "tgt_rhyme": "ABCBD",
+  "match": "5/5",
+  "translations": [
+    "有点难以形容",
+    "是啦是啦我很同意",
+    "他全裸",
+    "令你刺激",
+    "他很凶狠"
+  ],
+  "time_seconds": 215.53,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 21,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 2
+    },
+    "num_turns": 11,
+    "cost_usd": 0.16941889999999998,
+    "usage": {
+      "input_tokens": 84,
+      "cache_creation_input_tokens": 24073,
+      "cache_read_input_tokens": 293039,
+      "output_tokens": 18377,
+      "output_tokens_details": {
+        "thinking_tokens": 17411
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24073,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 986,
+          "cache_read_input_tokens": 31044,
+          "cache_creation_input_tokens": 16438,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 16438
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 有点难以形容\n2. 是啦是啦我很同意\n3. 他全裸\n4. 令你刺激\n5. 他很凶狠",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

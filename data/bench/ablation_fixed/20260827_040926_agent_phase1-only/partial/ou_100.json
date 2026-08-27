@@ -1,0 +1,89 @@
+{
+  "id": "ou_100",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    16,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    16,
+    15,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "仅凭内心的直觉去追爱",
+    "追逐不为任何人",
+    "投一块石头仔细听水花飞溅的回声波",
+    "打破平湖寂静的日常平凡空灵之生",
+    "提早的心想"
+  ],
+  "time_seconds": 106.38,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 22,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0986983,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 15698,
+      "cache_read_input_tokens": 212523,
+      "output_tokens": 9198,
+      "output_tokens_details": {
+        "thinking_tokens": 7370
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15698,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 185,
+          "cache_read_input_tokens": 38715,
+          "cache_creation_input_tokens": 392,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 392
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 仅凭内心的直觉去追爱\n2. 追逐不为任何人\n3. 投一块石头仔细听水花飞溅的回声波\n4. 打破平湖寂静的日常平凡空灵之生\n5. 提早的心想",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

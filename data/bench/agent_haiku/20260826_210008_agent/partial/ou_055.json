@@ -1,0 +1,88 @@
+{
+  "id": "ou_055",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    4,
+    8,
+    4,
+    10
+  ],
+  "tgt_syl": [
+    4,
+    4,
+    8,
+    4,
+    10
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "你该拥有",
+    "你让我想",
+    "我从不随着风而去",
+    "就让它流",
+    "让它带我去我想要拥有"
+  ],
+  "time_seconds": 179.37,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 18,
+    "cost_usd": 0.1387535,
+    "usage": {
+      "input_tokens": 66,
+      "cache_creation_input_tokens": 17378,
+      "cache_read_input_tokens": 281915,
+      "output_tokens": 15148,
+      "output_tokens_details": {
+        "thinking_tokens": 13235
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17378,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 92,
+          "cache_read_input_tokens": 45642,
+          "cache_creation_input_tokens": 384,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 384
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你该拥有\n2. 你让我想\n3. 我从不随着风而去\n4. 就让它流\n5. 让它带我去我想要拥有",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

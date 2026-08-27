@@ -1,0 +1,85 @@
+{
+  "id": "ou_071",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.045,
+  "ari": 0.0,
+  "src_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    12,
+    12,
+    9
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "3/5",
+  "translations": [
+    "你永远总是会在一起",
+    "你要给她信心紧拥抱想",
+    "一点温情你要好好对待她样",
+    "她用心照顾你好好爱你最好",
+    "你真的要爱你的女人"
+  ],
+  "time_seconds": 170.62,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.10865799999999999,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 6071,
+      "cache_read_input_tokens": 43460,
+      "output_tokens": 18430,
+      "output_tokens_details": {
+        "thinking_tokens": 17771
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6071,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 17481,
+          "cache_read_input_tokens": 24031,
+          "cache_creation_input_tokens": 1469,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1469
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\n1. \"that you'll always be together,\" = 8 syllables; rhyme: -er (A)\n2. \"You got to give her some faith, hold her tight\" = 10 syllables; rhyme: -ite (B)\n3. \"A little tenderness, you gotta treat her right,\" = 12 syllables; rhyme: -ite (B) [matches line 2]\n4. \"She will be there for you, takin' good care of you,\" = 12 syllables; rhyme: -oo (C)\n5. \"Ya really gotta love your woman...\" = 9 syllables; rhyme: -an (D)\n\n**Rhyme scheme:** A-B-B-C-D\n\nChinese target rhymes: -i (A), -ang (B), -ao (C), -en (D)\n\n---\n\n## Phase 1: Initial Translation\n\n1. 你永远总是会在一起 (8 characters, rhyme -i)\n2. 你要给她信心紧拥抱想 (10 characters, rhyme -ang)\n3. 一点温情你要好好对待她样 (12 characters, rhyme -ang)\n4. 她用心照顾你好好爱你最好 (12 characters, rhyme -ao)\n5. 你真的要爱你的女人 (9 characters, rhyme -en)\n\n---\n\n## Phase 2: Syllable Refinement\n\nAll line counts verified: 8, 10, 12, 12, 9 characters respectively ✓\nRhyme scheme check: -i / -ang / -ang / -ao / -en ✓\n\n---\n\n```\n1. 你永远总是会在一起\n2. 你要给她信心紧拥抱想\n3. 一点温情你要好好对待她样\n4. 她用心照顾你好好爱你最好\n5. 你真的要爱你的女人\n```",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

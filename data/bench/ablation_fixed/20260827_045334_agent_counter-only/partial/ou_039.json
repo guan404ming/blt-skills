@@ -1,0 +1,88 @@
+{
+  "id": "ou_039",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "tgt_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCD",
+  "match": "5/5",
+  "translations": [
+    "我怎么办？失去你的未来",
+    "谁能替我来吻你晚安好梦",
+    "你怎能突然松开我的手呢",
+    "你怎敢说你不爱我了",
+    "原来那只是一个短暂的快乐的承诺而已"
+  ],
+  "time_seconds": 57.2,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.056803900000000004,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 10487,
+      "cache_read_input_tokens": 145559,
+      "output_tokens": 4246,
+      "output_tokens_details": {
+        "thinking_tokens": 2667
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10487,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 132,
+          "cache_read_input_tokens": 33473,
+          "cache_creation_input_tokens": 423,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 423
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我怎么办？失去你的未来\n2. 谁能替我来吻你晚安好梦\n3. 你怎能突然松开我的手呢\n4. 你怎敢说你不爱我了\n5. 原来那只是一个短暂的快乐的承诺而已",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_008",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    8,
+    7,
+    11,
+    7,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    7,
+    11,
+    7,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AABCD",
+  "match": "5/5",
+  "translations": [
+    "每一滴雨成了歌声",
+    "从始至终的过程",
+    "结果超出我们掌控的范围",
+    "我们之爱的差异",
+    "仍无法穿过"
+  ],
+  "time_seconds": 57.34,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 30,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 17
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 16,
+      "lyrics-validator": 1
+    },
+    "num_turns": 20,
+    "cost_usd": 0.0586403,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 10075,
+      "cache_read_input_tokens": 209103,
+      "output_tokens": 3504,
+      "output_tokens_details": {
+        "thinking_tokens": 1336
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10075,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 108,
+          "cache_read_input_tokens": 33039,
+          "cache_creation_input_tokens": 445,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 445
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 每一滴雨成了歌声\n2. 从始至终的过程\n3. 结果超出我们掌控的范围\n4. 我们之爱的差异\n5. 仍无法穿过",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

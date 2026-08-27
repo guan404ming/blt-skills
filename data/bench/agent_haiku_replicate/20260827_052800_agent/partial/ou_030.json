@@ -1,0 +1,90 @@
+{
+  "id": "ou_030",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "tgt_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你是我心中最美的云彩呀",
+    "我珍你伴美食美酒",
+    "永远唱最灿烂最美的民谣",
+    "这是整个天空最美的姿态儿",
+    "呀啦啦呃啦呗呀哦"
+  ],
+  "time_seconds": 84.77,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 38,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.10677249999999999,
+    "usage": {
+      "input_tokens": 140,
+      "cache_creation_input_tokens": 12880,
+      "cache_read_input_tokens": 539275,
+      "output_tokens": 5389,
+      "output_tokens_details": {
+        "thinking_tokens": 3228
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12880,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 115,
+          "cache_read_input_tokens": 35947,
+          "cache_creation_input_tokens": 342,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 342
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你是我心中最美的云彩呀\n2. 我珍你伴美食美酒\n3. 永远唱最灿烂最美的民谣\n4. 这是整个天空最美的姿态儿\n5. 呀啦啦呃啦呗呀哦",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

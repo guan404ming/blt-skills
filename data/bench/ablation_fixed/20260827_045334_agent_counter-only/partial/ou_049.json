@@ -1,0 +1,88 @@
+{
+  "id": "ou_049",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    17,
+    11,
+    15,
+    14,
+    18
+  ],
+  "tgt_syl": [
+    17,
+    11,
+    15,
+    14,
+    18
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你搬进我破旧的房子没走出房门好几天",
+    "你学会了洗衣服和做饭菜",
+    "你顺着我脾气让我有了男人的感觉",
+    "我发怒砸了玻璃杯砸坏房间的门",
+    "让你哭了好几天没有接电话转身就离开了"
+  ],
+  "time_seconds": 56.75,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 19,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 9
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "lyrics-validator": 3
+    },
+    "num_turns": 12,
+    "cost_usd": 0.0611051,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 10320,
+      "cache_read_input_tokens": 208801,
+      "output_tokens": 3905,
+      "output_tokens_details": {
+        "thinking_tokens": 2115
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10320,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 275,
+          "cache_read_input_tokens": 33241,
+          "cache_creation_input_tokens": 488,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 488
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你搬进我破旧的房子没走出房门好几天\n2. 你学会了洗衣服和做饭菜\n3. 你顺着我脾气让我有了男人的感觉\n4. 我发怒砸了玻璃杯砸坏房间的门\n5. 让你哭了好几天没有接电话转身就离开了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

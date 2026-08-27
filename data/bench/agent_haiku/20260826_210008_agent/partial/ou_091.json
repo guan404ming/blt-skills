@@ -1,0 +1,88 @@
+{
+  "id": "ou_091",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    11,
+    10,
+    4,
+    9
+  ],
+  "tgt_syl": [
+    6,
+    11,
+    10,
+    4,
+    9
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCDC",
+  "match": "5/5",
+  "translations": [
+    "你送给我的花",
+    "我心中的颤动逐渐消散了",
+    "他是英雄能赢得众人爱",
+    "星辰诞生",
+    "来吧各位大声喊出来"
+  ],
+  "time_seconds": 113.22,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 18,
+    "cost_usd": 0.0688827,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 7605,
+      "cache_read_input_tokens": 251747,
+      "output_tokens": 5686,
+      "output_tokens_details": {
+        "thinking_tokens": 3495
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7605,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 156,
+          "cache_read_input_tokens": 35769,
+          "cache_creation_input_tokens": 491,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 491
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你送给我的花\n2. 我心中的颤动逐渐消散了\n3. 他是英雄能赢得众人爱\n4. 星辰诞生\n5. 来吧各位大声喊出来",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

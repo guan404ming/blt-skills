@@ -1,0 +1,87 @@
+{
+  "id": "ou_098",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "tgt_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "那份友情如方舟般坚固的诺言",
+    "而我只望着大海",
+    "用模糊的视线等待着永恒",
+    "这些年我买了车手表相机",
+    "我发现有些东西金钱买不到"
+  ],
+  "time_seconds": 55.73,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.2879485,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 13630,
+      "cache_read_input_tokens": 210707,
+      "output_tokens": 1849,
+      "output_tokens_details": {
+        "thinking_tokens": 564
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13630,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 81,
+          "cache_read_input_tokens": 33429,
+          "cache_creation_input_tokens": 368,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 368
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 那份友情如方舟般坚固的诺言\n2. 而我只望着大海\n3. 用模糊的视线等待着永恒\n4. 这些年我买了车手表相机\n5. 我发现有些东西金钱买不到",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

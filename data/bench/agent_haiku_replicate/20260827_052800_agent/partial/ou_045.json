@@ -1,0 +1,90 @@
+{
+  "id": "ou_045",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "tgt_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "好多表面快乐时光已经悄悄飞逝",
+    "我希望你弹奏弦乐器时有观众聆听你的音乐",
+    "我希望你拥有知心人倾诉烦恼",
+    "我希望我们在来世能相逢相伴同行",
+    "我愿化作你乌黑发丝中的几缕"
+  ],
+  "time_seconds": 98.24,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 36,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 19
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 22,
+    "cost_usd": 0.09995910000000001,
+    "usage": {
+      "input_tokens": 92,
+      "cache_creation_input_tokens": 14666,
+      "cache_read_input_tokens": 354851,
+      "output_tokens": 7010,
+      "output_tokens_details": {
+        "thinking_tokens": 4070
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14666,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 169,
+          "cache_read_input_tokens": 37571,
+          "cache_creation_input_tokens": 504,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 504
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 好多表面快乐时光已经悄悄飞逝\n2. 我希望你弹奏弦乐器时有观众聆听你的音乐\n3. 我希望你拥有知心人倾诉烦恼\n4. 我希望我们在来世能相逢相伴同行\n5. 我愿化作你乌黑发丝中的几缕",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

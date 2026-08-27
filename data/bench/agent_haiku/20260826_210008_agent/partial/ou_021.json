@@ -1,0 +1,88 @@
+{
+  "id": "ou_021",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    5,
+    7,
+    6,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    5,
+    7,
+    6,
+    8
+  ],
+  "src_rhyme": "ABAAC",
+  "tgt_rhyme": "ABAAC",
+  "match": "5/5",
+  "translations": [
+    "哦你就别离开",
+    "你是我全部",
+    "这不是爱清楚哉",
+    "但宝贝别离开",
+    "为什么我这样感伤"
+  ],
+  "time_seconds": 116.51,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 35,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.117376,
+    "usage": {
+      "input_tokens": 116,
+      "cache_creation_input_tokens": 15323,
+      "cache_read_input_tokens": 457440,
+      "output_tokens": 8174,
+      "output_tokens_details": {
+        "thinking_tokens": 6845
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15323,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 183,
+          "cache_read_input_tokens": 38554,
+          "cache_creation_input_tokens": 334,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 334
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 哦你就别离开\n2. 你是我全部\n3. 这不是爱清楚哉\n4. 但宝贝别离开\n5. 为什么我这样感伤",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_034",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "tgt_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "src_rhyme": "ABBAC",
+  "tgt_rhyme": "ABBAC",
+  "match": "5/5",
+  "translations": [
+    "我想告诉你",
+    "我所想的就是你明白",
+    "我牵起你手来",
+    "只是想要你",
+    "我们生来就在疑惑中"
+  ],
+  "time_seconds": 136.54,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 25,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.09668379999999999,
+    "usage": {
+      "input_tokens": 42,
+      "cache_creation_input_tokens": 11707,
+      "cache_read_input_tokens": 164278,
+      "output_tokens": 11360,
+      "output_tokens_details": {
+        "thinking_tokens": 9633
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11707,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 196,
+          "cache_read_input_tokens": 41889,
+          "cache_creation_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想告诉你\n2. 我所想的就是你明白\n3. 我牵起你手来\n4. 只是想要你\n5. 我们生来就在疑惑中",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

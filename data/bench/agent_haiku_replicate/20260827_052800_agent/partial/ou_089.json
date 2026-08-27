@@ -1,0 +1,90 @@
+{
+  "id": "ou_089",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABCD",
+  "match": "5/5",
+  "translations": [
+    "他笑看工作了吗",
+    "造福特者也造你吗",
+    "强化我意志的铠",
+    "装满我智慧的弹匣",
+    "我身体刚出发心已经到达我的心智在战斗中"
+  ],
+  "time_seconds": 101.91,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 41,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 19
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 16,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 22,
+    "cost_usd": 0.1088667,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 14611,
+      "cache_read_input_tokens": 432717,
+      "output_tokens": 7253,
+      "output_tokens_details": {
+        "thinking_tokens": 4579
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14611,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 214,
+          "cache_read_input_tokens": 37492,
+          "cache_creation_input_tokens": 528,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 528
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 他笑看工作了吗\n2. 造福特者也造你吗\n3. 强化我意志的铠\n4. 装满我智慧的弹匣\n5. 我身体刚出发心已经到达我的心智在战斗中",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

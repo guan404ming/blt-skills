@@ -1,0 +1,88 @@
+{
+  "id": "ou_055",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    4,
+    8,
+    4,
+    10
+  ],
+  "tgt_syl": [
+    4,
+    4,
+    8,
+    4,
+    10
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "为你而骄",
+    "此刻想起",
+    "我不曾随风飘远方",
+    "就让它流",
+    "就让它带着我随风去飘"
+  ],
+  "time_seconds": 121.4,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 16,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.18633239999999998,
+    "usage": {
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 16485,
+      "cache_read_input_tokens": 386032,
+      "output_tokens": 4315,
+      "output_tokens_details": {
+        "thinking_tokens": 2819
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16485,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 56,
+          "cache_read_input_tokens": 47541,
+          "cache_creation_input_tokens": 331,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 331
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 为你而骄\n2. 此刻想起\n3. 我不曾随风飘远方\n4. 就让它流\n5. 就让它带着我随风去飘",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

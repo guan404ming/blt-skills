@@ -1,0 +1,87 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "想要忘記可是終究還是無法忘記",
+    "只等到黑夜來臨",
+    "夢見曾經深愛的女孩",
+    "放手了我又牽你手",
+    "每一次我選擇原諒與包容"
+  ],
+  "time_seconds": 58.34,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 10,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.295744,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 13381,
+      "cache_read_input_tokens": 241858,
+      "output_tokens": 1637,
+      "output_tokens_details": {
+        "thinking_tokens": 392
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13381,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 82,
+          "cache_read_input_tokens": 33048,
+          "cache_creation_input_tokens": 500,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 500
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 想要忘記可是終究還是無法忘記\n2. 只等到黑夜來臨\n3. 夢見曾經深愛的女孩\n4. 放手了我又牽你手\n5. 每一次我選擇原諒與包容",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_062",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    13,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    13,
+    4,
+    3
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "无衣无装",
+    "只有你和我",
+    "没有什么我想真的要跟你说呀",
+    "太冷太冷",
+    "陪着你"
+  ],
+  "time_seconds": 79.64,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11,
+      "Agent": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "skills": 11
+    },
+    "num_turns": 15,
+    "cost_usd": 0.08749275000000001,
+    "usage": {
+      "input_tokens": 54,
+      "cache_creation_input_tokens": 9071,
+      "cache_read_input_tokens": 174805,
+      "output_tokens": 2527,
+      "output_tokens_details": {
+        "thinking_tokens": 735
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9071,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 87,
+          "cache_read_input_tokens": 32039,
+          "cache_creation_input_tokens": 441,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 441
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 无衣无装\n2. 只有你和我\n3. 没有什么我想真的要跟你说呀\n4. 太冷太冷\n5. 陪着你",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

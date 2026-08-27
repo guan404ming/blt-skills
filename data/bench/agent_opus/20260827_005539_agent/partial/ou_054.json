@@ -1,0 +1,87 @@
+{
+  "id": "ou_054",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    3,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    10,
+    3,
+    11,
+    11,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "望着那千层冰封的世界",
+    "锁时光",
+    "却有新生命静静地被孕育",
+    "冬日里最平凡不过的雪景",
+    "此时此刻最伟大的奇迹"
+  ],
+  "time_seconds": 54.48,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 8,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 4
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 7,
+    "cost_usd": 0.25643050000000006,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 13018,
+      "cache_read_input_tokens": 177731,
+      "output_tokens": 1493,
+      "output_tokens_details": {
+        "thinking_tokens": 580
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13018,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 76,
+          "cache_read_input_tokens": 32873,
+          "cache_creation_input_tokens": 312,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 312
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 望着那千层冰封的世界\n2. 锁时光\n3. 却有新生命静静地被孕育\n4. 冬日里最平凡不过的雪景\n5. 此时此刻最伟大的奇迹",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

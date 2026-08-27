@@ -1,0 +1,44 @@
+{
+  "id": "ou_072",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.20490842490842492,
+  "ari": 0.13793103448275862,
+  "src_syl": [
+    6,
+    13,
+    15,
+    14,
+    15
+  ],
+  "tgt_syl": [
+    8,
+    12,
+    12,
+    11,
+    12
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "AAAAB",
+  "match": "0/5",
+  "translations": [
+    "不陪你玩这场游戏",
+    "我是谁，你是否总这样问自己",
+    "我是谁，总活在别人的期待里",
+    "我是谁，谁无权却替你定义",
+    "你是谁，只有不做自己才安全"
+  ],
+  "time_seconds": 11.49,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 11.489,
+    "phase0_calls": 1
+  }
+}

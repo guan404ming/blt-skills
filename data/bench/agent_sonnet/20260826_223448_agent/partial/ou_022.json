@@ -1,0 +1,88 @@
+{
+  "id": "ou_022",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    8,
+    7,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    3,
+    8,
+    7,
+    4,
+    3
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "静下来",
+    "我還年輕愛說傻話",
+    "告訴我能信的話",
+    "帶我走吧",
+    "到遠方"
+  ],
+  "time_seconds": 89.36,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 15,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 7,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.14925080000000002,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 15652,
+      "cache_read_input_tokens": 251144,
+      "output_tokens": 3639,
+      "output_tokens_details": {
+        "thinking_tokens": 2352
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15652,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 53,
+          "cache_read_input_tokens": 46720,
+          "cache_creation_input_tokens": 319,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 319
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 静下来\n2. 我還年輕愛說傻話\n3. 告訴我能信的話\n4. 帶我走吧\n5. 到遠方",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

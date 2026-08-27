@@ -1,0 +1,44 @@
+{
+  "id": "ou_074",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.03636363636363636,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    10,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    10,
+    12,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABAAC",
+  "match": "3/5",
+  "translations": [
+    "我也是你心上人之一",
+    "若我此生能够重新来过",
+    "我仍会如往昔那样爱你",
+    "你的爱是无人能取代的东西",
+    "我想不出身边换作别人"
+  ],
+  "time_seconds": 17.24,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 17.242,
+    "phase0_calls": 1
+  }
+}

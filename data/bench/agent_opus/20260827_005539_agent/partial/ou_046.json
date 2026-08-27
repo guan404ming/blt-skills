@@ -1,0 +1,88 @@
+{
+  "id": "ou_046",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    7,
+    15,
+    18,
+    10
+  ],
+  "tgt_syl": [
+    19,
+    7,
+    15,
+    18,
+    10
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "这浊世让漂泊他乡的游子历尽多少艰难苦楚",
+    "泪痕让皱纹肆虐",
+    "我已不记得家在何方你却仍在等待",
+    "我的心愿是再见那书生和那练武功的女郎",
+    "我的心愿是再见那垂杨"
+  ],
+  "time_seconds": 72.38,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.33902150000000003,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 14736,
+      "cache_read_input_tokens": 245363,
+      "output_tokens": 2756,
+      "output_tokens_details": {
+        "thinking_tokens": 1136
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14736,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 110,
+          "cache_read_input_tokens": 34195,
+          "cache_creation_input_tokens": 708,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 708
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 这浊世让漂泊他乡的游子历尽多少艰难苦楚\n2. 泪痕让皱纹肆虐\n3. 我已不记得家在何方你却仍在等待\n4. 我的心愿是再见那书生和那练武功的女郎\n5. 我的心愿是再见那垂杨",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

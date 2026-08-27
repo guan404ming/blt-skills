@@ -1,0 +1,88 @@
+{
+  "id": "ou_075",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "未及时悔",
+    "因为人生太短",
+    "无时间可后悔",
+    "眼影下隐藏着迷人伪装的光芒",
+    "身体线条在发出警告"
+  ],
+  "time_seconds": 106.46,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 33,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 17
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 3
+    },
+    "num_turns": 20,
+    "cost_usd": 0.09889100000000002,
+    "usage": {
+      "input_tokens": 84,
+      "cache_creation_input_tokens": 14807,
+      "cache_read_input_tokens": 325530,
+      "output_tokens": 7328,
+      "output_tokens_details": {
+        "thinking_tokens": 4630
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14807,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 111,
+          "cache_read_input_tokens": 37881,
+          "cache_creation_input_tokens": 335,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 335
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 未及时悔\n2. 因为人生太短\n3. 无时间可后悔\n4. 眼影下隐藏着迷人伪装的光芒\n5. 身体线条在发出警告",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

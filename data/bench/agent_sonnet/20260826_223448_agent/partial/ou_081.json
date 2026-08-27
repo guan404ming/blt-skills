@@ -1,0 +1,88 @@
+{
+  "id": "ou_081",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    6,
+    6,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    6,
+    6,
+    5,
+    5
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "别再说",
+    "我们仍是朋友",
+    "这样做就是错",
+    "结束即结束",
+    "别再妄想了"
+  ],
+  "time_seconds": 74.88,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.128817,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 14794,
+      "cache_read_input_tokens": 205105,
+      "output_tokens": 2860,
+      "output_tokens_details": {
+        "thinking_tokens": 1663
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14794,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 58,
+          "cache_read_input_tokens": 45848,
+          "cache_creation_input_tokens": 333,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 333
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All check pass. Final:\n\n1. 别再说\n2. 我们仍是朋友\n3. 这样做就是错\n4. 结束即结束\n5. 别再妄想了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

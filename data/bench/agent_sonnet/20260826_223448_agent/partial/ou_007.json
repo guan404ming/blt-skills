@@ -1,0 +1,88 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    5,
+    8,
+    6,
+    2,
+    8
+  ],
+  "tgt_syl": [
+    5,
+    8,
+    6,
+    2,
+    8
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "恩典释我疑",
+    "恩典显得何等宝贵",
+    "正是我初信时",
+    "三节",
+    "主曾应许赐福给我"
+  ],
+  "time_seconds": 124.43,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 16,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 6,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.20223419999999998,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 17207,
+      "cache_read_input_tokens": 341721,
+      "output_tokens": 6503,
+      "output_tokens_details": {
+        "thinking_tokens": 5278
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17207,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 1394,
+          "cache_read_input_tokens": 47791,
+          "cache_creation_input_tokens": 803,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 803
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 恩典释我疑\n2. 恩典显得何等宝贵\n3. 正是我初信时\n4. 三节\n5. 主曾应许赐福给我",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

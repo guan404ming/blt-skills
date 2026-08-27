@@ -1,0 +1,90 @@
+{
+  "id": "ou_008",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    7,
+    11,
+    7,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    7,
+    11,
+    7,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "每滴雨珠都成为歌",
+    "从开始走向最后",
+    "结果是在我们的控制以外",
+    "我们的爱之差异",
+    "仍无法通过"
+  ],
+  "time_seconds": 78.45,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 30,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.083702,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 13028,
+      "cache_read_input_tokens": 279000,
+      "output_tokens": 5934,
+      "output_tokens_details": {
+        "thinking_tokens": 3709
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13028,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 204,
+          "cache_read_input_tokens": 36091,
+          "cache_creation_input_tokens": 346,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 346
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Validation passed. All constraints satisfied.\n\n1. 每滴雨珠都成为歌\n2. 从开始走向最后\n3. 结果是在我们的控制以外\n4. 我们的爱之差异\n5. 仍无法通过",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

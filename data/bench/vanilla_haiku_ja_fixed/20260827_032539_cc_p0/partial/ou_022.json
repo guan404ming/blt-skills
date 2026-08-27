@@ -1,0 +1,44 @@
+{
+  "id": "ou_022",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.0,
+  "ari": 0.0,
+  "src_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "tgt_syl": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "AAAAA",
+  "match": "0/5",
+  "translations": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "time_seconds": 373.72,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 373.715,
+    "phase0_calls": 1
+  }
+}

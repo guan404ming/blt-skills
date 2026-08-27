@@ -1,0 +1,90 @@
+{
+  "id": "ou_027",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "tgt_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "そこに立ってなんも言えず",
+    "けど知った",
+    "またここ",
+    "やってくるのを待ち受けしず",
+    "つまり"
+  ],
+  "time_seconds": 279.89,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 99,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 63
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 52,
+      "rhyme-analyzer": 5,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 5
+    },
+    "num_turns": 66,
+    "cost_usd": 0.2393214,
+    "usage": {
+      "input_tokens": 212,
+      "cache_creation_input_tokens": 27176,
+      "cache_read_input_tokens": 1013674,
+      "output_tokens": 16678,
+      "output_tokens_details": {
+        "thinking_tokens": 9729
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27176,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 397,
+          "cache_read_input_tokens": 49516,
+          "cache_creation_input_tokens": 1069,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1069
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Perfect! Validation passed without the rhyme flag.\n\n1. そこに立ってなんも言えず\n2. けど知った\n3. またここ\n4. やってくるのを待ち受けしず\n5. つまり",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

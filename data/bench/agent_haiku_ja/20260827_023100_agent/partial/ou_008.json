@@ -1,0 +1,90 @@
+{
+  "id": "ou_008",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "青い春を君に",
+    "弦を季夏の高さに弾きぬぞ",
+    "心ゆれば光君につなぐ",
+    "逆光歩きぬ雨打つ身へ",
+    "夜道や行き来る"
+  ],
+  "time_seconds": 519.92,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 107,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 59
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 48,
+      "rhyme-analyzer": 3,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 7
+    },
+    "num_turns": 62,
+    "cost_usd": 0.5566024000000002,
+    "usage": {
+      "input_tokens": 276,
+      "cache_creation_input_tokens": 56785,
+      "cache_read_input_tokens": 2112864,
+      "output_tokens": 46294,
+      "output_tokens_details": {
+        "thinking_tokens": 38915
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 56785,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 1118,
+          "cache_read_input_tokens": 79178,
+          "cache_creation_input_tokens": 1016,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1016
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "最後の検証 - 音節数と意味保持が確認できました。最終提出版:\n\n1. 青い春を君に\n2. 弦を季夏の高さに弾きぬぞ\n3. 心ゆれば光君につなぐ\n4. 逆光歩きぬ雨打つ身へ\n5. 夜道や行き来る",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

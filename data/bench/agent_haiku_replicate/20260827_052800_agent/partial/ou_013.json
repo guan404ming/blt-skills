@@ -1,0 +1,90 @@
+{
+  "id": "ou_013",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    11,
+    12,
+    6,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    11,
+    12,
+    6,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "静静盛开于佛前静放光",
+    "出淤泥而不被风尘睡污染",
+    "花开无言绽放花落无言飘零",
+    "你又三生世缘",
+    "来到你身不早不晚正好时"
+  ],
+  "time_seconds": 88.85,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 47,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 19
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 16,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 22,
+    "cost_usd": 0.11055169999999999,
+    "usage": {
+      "input_tokens": 172,
+      "cache_creation_input_tokens": 11696,
+      "cache_read_input_tokens": 668877,
+      "output_tokens": 4020,
+      "output_tokens_details": {
+        "thinking_tokens": 1749
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11696,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 140,
+          "cache_read_input_tokens": 34634,
+          "cache_creation_input_tokens": 471,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 471
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 静静盛开于佛前静放光\n2. 出淤泥而不被风尘睡污染\n3. 花开无言绽放花落无言飘零\n4. 你又三生世缘\n5. 来到你身不早不晚正好时",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

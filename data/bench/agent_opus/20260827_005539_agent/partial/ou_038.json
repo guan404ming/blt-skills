@@ -1,0 +1,87 @@
+{
+  "id": "ou_038",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    5,
+    12,
+    12,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    5,
+    12,
+    12,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "通向哪",
+    "每夜都前去",
+    "他有我爱的那种男孩子模样",
+    "我是建筑师正在描绘那图纸",
+    "没人能懂我"
+  ],
+  "time_seconds": 58.15,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 8,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 4
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 7,
+    "cost_usd": 0.26147,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 13141,
+      "cache_read_input_tokens": 177750,
+      "output_tokens": 1645,
+      "output_tokens_details": {
+        "thinking_tokens": 793
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13141,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 66,
+          "cache_read_input_tokens": 33008,
+          "cache_creation_input_tokens": 300,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 300
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 通向哪\n2. 每夜都前去\n3. 他有我爱的那种男孩子模样\n4. 我是建筑师正在描绘那图纸\n5. 没人能懂我",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

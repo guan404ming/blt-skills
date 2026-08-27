@@ -1,0 +1,90 @@
+{
+  "id": "ou_014",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "tgt_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "src_rhyme": "ABBAC",
+  "tgt_rhyme": "ABBAC",
+  "match": "5/5",
+  "translations": [
+    "愛してる",
+    "君を理解したい",
+    "手握りたい",
+    "君がいる",
+    "疑い世に生まれ"
+  ],
+  "time_seconds": 185.49,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 43,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 21
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 17,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 24,
+    "cost_usd": 0.1284248,
+    "usage": {
+      "input_tokens": 98,
+      "cache_creation_input_tokens": 14095,
+      "cache_read_input_tokens": 428118,
+      "output_tokens": 11465,
+      "output_tokens_details": {
+        "thinking_tokens": 8978
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14095,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 230,
+          "cache_read_input_tokens": 42276,
+          "cache_creation_input_tokens": 480,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 480
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 愛してる\n2. 君を理解したい\n3. 手握りたい\n4. 君がいる\n5. 疑い世に生まれ",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

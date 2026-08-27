@@ -38,18 +38,25 @@ uvx --from huggingface_hub hf download brunokreiner/genius-lyrics --repo-type da
 
 ## Benchmark
 
-Benchmark translation methods on random songs from genius-lyrics. All scripts share the same interface (`-n`, `--seed`, `--lines-per-song`, `-o`).
+Expose the skills to Claude Code, then run the agent benchmark on the Ou et al. (2023) en-zh test windows (`-n`, `--seed`, `--target-lang`, `-o`):
 
 ```bash
-# Run both methods and generate comparison
-uv run scripts/run_bench.py -n 5
-
-# Run individually
-uv run scripts/run_cc.py -n 5 --model sonnet
-uv run scripts/run_clt.py -n 5 --device cpu
+ln -s ../skills .claude/skills
+uv run scripts/run_agent.py -n 100 --model haiku --workers 4
+uv run scripts/run_agent.py -n 30 --model haiku --target-lang ja
+uv run scripts/run_cc.py -n 100 --model haiku --phases 0        # single-prompt baseline
+uv run scripts/run_agent.py -n 100 --model haiku --skill lyrics-translator-prompt-only --disallowed-tools Bash,Agent,Task
 ```
 
-Outputs `results.json` and `report.md` in the output directory (`data/bench/` by default).
+Each agent item is one `claude -p` call that receives only the source lines; the trace of every tool call is saved under `data/bench/<run>/traces/`. Evaluate and score with:
+
+```bash
+uv run scripts/eval_fixed.py --songs <run>/test_songs.json --out data/bench/final.json vanilla=<vanilla_run>/partial agent=<run>/partial
+uv run scripts/build_comet_payload.py --out /tmp/comet.json blt=<run>/partial vanilla=<vanilla_run>/partial
+modal run scripts/modal_comet.py --payload /tmp/comet.json --out data/bench/semantic_scores.json
+```
+
+The CLT baseline (`data/bench/clt_translations.json`) comes from `scripts/clt_infer_original.py`, run inside a checkout of [ControllableLyricTranslation](https://github.com/Sonata165/ControllableLyricTranslation) with our syllable targets (`data/bench/clt_lengths_fixed.json`).
 
 ## Dependencies
 

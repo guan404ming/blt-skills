@@ -1,0 +1,85 @@
+{
+  "id": "ou_019",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "tgt_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我听说有老虎窝",
+    "从小以来我们就没再提起",
+    "我本质是山里人",
+    "刀耕火种的日子难",
+    "革命的风正在吹过群山和河谷"
+  ],
+  "time_seconds": 39.72,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.0370042,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5297,
+      "cache_read_input_tokens": 43452,
+      "output_tokens": 4409,
+      "output_tokens_details": {
+        "thinking_tokens": 3846
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5297,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 4201,
+          "cache_read_input_tokens": 24023,
+          "cache_creation_input_tokens": 703,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 703
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "### Step 0: Extract Constraints\n\n**Syllable counts (en-us):**\n1. I hear there's a tiger's den = 1+1+1+1+2+1 = 7\n2. We haven't talked about it since we were kids = 1+2+1+2+1+1+1+1+1 = 11\n3. I'm a mountain man at heart = 1+1+2+1+1+1 = 7\n4. This slash and burn lifestyle is hard = 1+1+1+1+2+1+1 = 8\n5. The Revolution's wind is blowing through the mountain = 1+4+1+1+2+1+1+2 = 13\n\n**Rhyme scheme:** ABCDE (no lines rhyme in source)\n\n### Phase 1 & 2: Translation + Refinement\n\n1. 我听说有老虎窝 — Count: 7 ✓\n2. 从小以来我们就没再提起 — Count: 11 ✓\n3. 我本质是山里人 — Count: 7 ✓\n4. 刀耕火种的日子难 — Count: 8 ✓\n5. 革命的风正在吹过群山和河谷 — Count: 13 ✓\n\n### Final Check\n\nAll syllable counts match source. Rhyme scheme maintained (ABCDE).\n\n---\n\n1. 我听说有老虎窝\n2. 从小以来我们就没再提起\n3. 我本质是山里人\n4. 刀耕火种的日子难\n5. 革命的风正在吹过群山和河谷",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

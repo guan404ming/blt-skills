@@ -1,0 +1,43 @@
+{
+  "id": "ou_074",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.1874747474747475,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    10,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    14,
+    10,
+    11,
+    9,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "2/5",
+  "translations": [
+    "因为我也是你众多爱人中的一个",
+    "如果让我再活一次人生",
+    "我仍会像现在这样爱着你",
+    "你的爱无人能够取代",
+    "我无法想象与别人共度此生"
+  ],
+  "time_seconds": 6.74,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 6.738,
+    "phase0_calls": 1
+  }
+}

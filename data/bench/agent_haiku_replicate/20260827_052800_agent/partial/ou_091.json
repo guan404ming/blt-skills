@@ -1,0 +1,90 @@
+{
+  "id": "ou_091",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    11,
+    10,
+    4,
+    9
+  ],
+  "tgt_syl": [
+    6,
+    11,
+    10,
+    4,
+    9
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCDC",
+  "match": "5/5",
+  "translations": [
+    "你送给我的花",
+    "我心中的震颤逐渐的释放",
+    "他是英雄能令众人欢呼",
+    "星星降生",
+    "来吧各位都大声欢呼"
+  ],
+  "time_seconds": 87.37,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 25,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0856788,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 14117,
+      "cache_read_input_tokens": 211948,
+      "output_tokens": 7238,
+      "output_tokens_details": {
+        "thinking_tokens": 5395
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14117,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 231,
+          "cache_read_input_tokens": 37004,
+          "cache_creation_input_tokens": 522,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 522
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你送给我的花\n2. 我心中的震颤逐渐的释放\n3. 他是英雄能令众人欢呼\n4. 星星降生\n5. 来吧各位都大声欢呼",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

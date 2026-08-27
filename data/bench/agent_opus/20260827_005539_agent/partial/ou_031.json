@@ -1,0 +1,88 @@
+{
+  "id": "ou_031",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    5,
+    4,
+    4,
+    7
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    4,
+    4,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "俯瞰这一切",
+    "明亮蓝城灯",
+    "绝不等待",
+    "我们长留",
+    "嚎叫的鬼魂重现"
+  ],
+  "time_seconds": 49.02,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 10,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.261657,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 12736,
+      "cache_read_input_tokens": 209054,
+      "output_tokens": 1188,
+      "output_tokens_details": {
+        "thinking_tokens": 285
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12736,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 60,
+          "cache_read_input_tokens": 32605,
+          "cache_creation_input_tokens": 298,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 298
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 俯瞰这一切\n2. 明亮蓝城灯\n3. 绝不等待\n4. 我们长留\n5. 嚎叫的鬼魂重现",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

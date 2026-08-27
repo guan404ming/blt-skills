@@ -1,0 +1,88 @@
+{
+  "id": "ou_006",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    8,
+    6,
+    8,
+    6,
+    8
+  ],
+  "tgt_syl": [
+    8,
+    6,
+    8,
+    6,
+    8
+  ],
+  "src_rhyme": "ABABB",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "奇异恩典甜蜜声音",
+    "拯我如此的人",
+    "我曾迷失如今寻回",
+    "曾盲而今看见",
+    "我锁链已去得自由"
+  ],
+  "time_seconds": 69.26,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 29,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "lyrics-validator": 1
+    },
+    "num_turns": 19,
+    "cost_usd": 0.06795710000000002,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 11269,
+      "cache_read_input_tokens": 212291,
+      "output_tokens": 4826,
+      "output_tokens_details": {
+        "thinking_tokens": 2561
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11269,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 113,
+          "cache_read_input_tokens": 34225,
+          "cache_creation_input_tokens": 453,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 453
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 奇异恩典甜蜜声音\n2. 拯我如此的人\n3. 我曾迷失如今寻回\n4. 曾盲而今看见\n5. 我锁链已去得自由",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

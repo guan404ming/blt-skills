@@ -1,0 +1,43 @@
+{
+  "id": "ou_073",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.10500000000000001,
+  "ari": 0.4117647058823529,
+  "src_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    13,
+    13,
+    6,
+    7,
+    12
+  ],
+  "src_rhyme": "ABBCB",
+  "tgt_rhyme": "ABCDB",
+  "match": "2/5",
+  "translations": [
+    "你身上最迷人的香气让我沉醉",
+    "拿走我拥有的一切，我只需要你",
+    "哦，我该怎么办",
+    "其他男人的目光",
+    "我愿把我所有的一切都给你"
+  ],
+  "time_seconds": 8.7,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 8.699,
+    "phase0_calls": 1
+  }
+}

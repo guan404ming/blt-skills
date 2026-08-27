@@ -1,0 +1,88 @@
+{
+  "id": "ou_086",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "tgt_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "src_rhyme": "ABCCC",
+  "tgt_rhyme": "ABCCC",
+  "match": "5/5",
+  "translations": [
+    "吃肉骨头很香",
+    "摇尾巴",
+    "向我点好",
+    "总统先生来和我散步谈心好",
+    "假装我们是普通人你不高于我就好"
+  ],
+  "time_seconds": 139.39,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 28,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 19,
+    "cost_usd": 0.12011550000000001,
+    "usage": {
+      "input_tokens": 75,
+      "cache_creation_input_tokens": 18188,
+      "cache_read_input_tokens": 286245,
+      "output_tokens": 11008,
+      "output_tokens_details": {
+        "thinking_tokens": 9000
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 18188,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 200,
+          "cache_read_input_tokens": 41178,
+          "cache_creation_input_tokens": 419,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 419
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 吃肉骨头很香\n2. 摇尾巴\n3. 向我点好\n4. 总统先生来和我散步谈心好\n5. 假装我们是普通人你不高于我就好",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

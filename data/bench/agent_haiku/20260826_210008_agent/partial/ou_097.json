@@ -1,0 +1,88 @@
+{
+  "id": "ou_097",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "tgt_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "抵达我意识的最深层边界之处",
+    "我看见父亲正坐在云际吸烟",
+    "同从前",
+    "来自山川湖海的那些人",
+    "现在被困在夜晚厨房和欲望中"
+  ],
+  "time_seconds": 84.02,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.09472600000000002,
+    "usage": {
+      "input_tokens": 124,
+      "cache_creation_input_tokens": 11934,
+      "cache_read_input_tokens": 469540,
+      "output_tokens": 4756,
+      "output_tokens_details": {
+        "thinking_tokens": 3113
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11934,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 151,
+          "cache_read_input_tokens": 34994,
+          "cache_creation_input_tokens": 349,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 349
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 抵达我意识的最深层边界之处\n2. 我看见父亲正坐在云际吸烟\n3. 同从前\n4. 来自山川湖海的那些人\n5. 现在被困在夜晚厨房和欲望中",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

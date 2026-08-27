@@ -1,0 +1,44 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我想要忘記可是我終究無法忘記",
+    "只等到黑夜降臨",
+    "夢見曾經深愛的女孩",
+    "放手後我再牽你手",
+    "每次我都選擇原諒和忍讓"
+  ],
+  "time_seconds": 93.73,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 70,
+    "rhyme-analyzer": 14,
+    "syllable-pattern-analyzer": 4
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 93.726,
+    "phase0_calls": 1
+  }
+}

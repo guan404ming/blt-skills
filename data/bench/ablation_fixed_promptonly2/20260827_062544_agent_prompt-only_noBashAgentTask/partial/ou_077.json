@@ -1,0 +1,85 @@
+{
+  "id": "ou_077",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.04,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    10,
+    6,
+    5,
+    7
+  ],
+  "tgt_syl": [
+    11,
+    10,
+    6,
+    6,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCD",
+  "match": "4/5",
+  "translations": [
+    "伤痛逐渐平静，松开你的手",
+    "数三二一，一切都会明朗",
+    "我千次都失败",
+    "你慈悲仍然来",
+    "若我再次跌倒时"
+  ],
+  "time_seconds": 66.66,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.05073129999999999,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5781,
+      "cache_read_input_tokens": 43443,
+      "output_tokens": 6961,
+      "output_tokens_details": {
+        "thinking_tokens": 6445
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5781,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 6252,
+          "cache_read_input_tokens": 24014,
+          "cache_creation_input_tokens": 1196,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1196
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\nSyllable counts (en-us):\n1. The in-ju-ries will quell down, loos-en your palm = 11\n2. Count three two one, ev-ery-thing will be clear = 10\n3. A thou-sand times I've failed = 6\n4. Still your mer-cy re-mains = 6\n5. And should I stum-ble a-gain = 7\n\nRhyme scheme:\n- \"palm\" (A) / \"clear\" (B) / \"failed\" (C) / \"remains\" (C) / \"again\" (D)\n\n## Phase 1: Initial Translation\n\n1. 伤痛逐渐平静，松开你的手 (11)\n2. 数三二一，一切都会明朗 (10)\n3. 我千次都失败 (6)\n4. 你慈悲仍然来 (6)\n5. 若我再次跌倒时 (7)\n\n## Phase 2 & Final Check\n\nRhymes: 手(A) / 朗(B) / 败-来(C-C) / 时(D) ✓\nSyllables verified: 11-10-6-6-7 ✓\n\n---\n\n1. 伤痛逐渐平静，松开你的手\n2. 数三二一，一切都会明朗\n3. 我千次都失败\n4. 你慈悲仍然来\n5. 若我再次跌倒时",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

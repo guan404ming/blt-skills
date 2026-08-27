@@ -1,0 +1,44 @@
+{
+  "id": "ou_018",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.1765079365079365,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    8,
+    10,
+    18,
+    10,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "我把青春坠入了她",
+    "我也拨动琴弦投向盛夏",
+    "若这触动你的心，就让宇宙的牵引带你前往",
+    "逆光而行，让元素击打我",
+    "一条短路，起起停停"
+  ],
+  "time_seconds": 22.65,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 22.651,
+    "phase0_calls": 1
+  }
+}

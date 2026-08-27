@@ -1,0 +1,43 @@
+{
+  "id": "ou_030",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.1323076923076925,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "tgt_syl": [
+    19,
+    26,
+    7,
+    27,
+    26
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCB",
+  "match": "0/5",
+  "translations": [
+    "私の意識の境界に到達して",
+    "雲の縁に座る父が煙草を吸っているのが見える",
+    "いつものように",
+    "山から、川から、湖から、海からやってくる者たち",
+    "今は夜と台所とセックスに限定されている"
+  ],
+  "time_seconds": 18.04,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 18.039,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_062",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    13,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    13,
+    4,
+    3
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "无衫无衣",
+    "只我俩你懂",
+    "没什么我真的想要对你说的话",
+    "因为太冷",
+    "你在这"
+  ],
+  "time_seconds": 75.55,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 4,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.339717,
+    "usage": {
+      "input_tokens": 18,
+      "cache_creation_input_tokens": 14217,
+      "cache_read_input_tokens": 277564,
+      "output_tokens": 2347,
+      "output_tokens_details": {
+        "thinking_tokens": 780
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14217,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 55,
+          "cache_read_input_tokens": 34043,
+          "cache_creation_input_tokens": 341,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 341
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 无衫无衣\n2. 只我俩你懂\n3. 没什么我真的想要对你说的话\n4. 因为太冷\n5. 你在这",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

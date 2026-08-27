@@ -1,0 +1,85 @@
+{
+  "id": "ou_049",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.04892623716153128,
+  "ari": 0.0,
+  "src_syl": [
+    17,
+    11,
+    15,
+    14,
+    18
+  ],
+  "tgt_syl": [
+    19,
+    11,
+    15,
+    15,
+    19
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDC",
+  "match": "2/5",
+  "translations": [
+    "你搬进我破旧房子，几个夜晚都没踏出那扇窗",
+    "你学会了怎样洗衣和做菜",
+    "你顺着我脾气让我感觉像个真男人",
+    "我生气砸碎杯子砸坏房间拂袖而走",
+    "我让你哭了好多天没接电话转身就此离开人"
+  ],
+  "time_seconds": 89.04,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 5,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.09265849999999998,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5875,
+      "cache_read_input_tokens": 43485,
+      "output_tokens": 15308,
+      "output_tokens_details": {
+        "thinking_tokens": 14676
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5875,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 14613,
+          "cache_read_input_tokens": 24056,
+          "cache_creation_input_tokens": 1248,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1248
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "### Step 0: Extract Constraints\n\nCounting syllables (1 Han character = 1 syllable):\n\n1. \"You moved into my run-down house, didn't step out the door for a few days\" = 19\n2. \"You learned how to do laundry and how to cook\" = 11\n3. \"You went along with my temper and let me feel like a man\" = 15\n4. \"I got angry and shattered a glass and smashed the room's door\" = 15\n5. \"Made you cry for a few days and didn't answer the phone and left just like that\" = 19\n\nRhyme scheme: days(A)-cook(B)-man(C)-door(D)-that(C)\n\n### Phase 1: Initial Translation\n\nTranslating all lines maintaining syllable counts and rhyme scheme:\n\n1. (19 syl, rhyme A)\n2. (11 syl, rhyme B)\n3. (15 syl, rhyme C)\n4. (15 syl, rhyme D)\n5. (19 syl, rhyme C)\n\n### Phase 2: Syllable Refinement\n\nCounting each translated line's syllables and adjusting for accuracy.\n\n### Final Check\n\nRecounting all lines and verifying rhyme scheme.\n\n---\n\n1. 你搬进我破旧房子，几个夜晚都没踏出那扇窗\n2. 你学会了怎样洗衣和做菜\n3. 你顺着我脾气让我感觉像个真男人\n4. 我生气砸碎杯子砸坏房间拂袖而走\n5. 我让你哭了好多天没接电话转身就此离开人",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

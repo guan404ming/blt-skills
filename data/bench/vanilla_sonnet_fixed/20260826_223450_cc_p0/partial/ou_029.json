@@ -1,0 +1,43 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.26111111111111107,
+  "ari": 0.13793103448275862,
+  "src_syl": [
+    16,
+    8,
+    9,
+    8,
+    9
+  ],
+  "tgt_syl": [
+    8,
+    7,
+    6,
+    7,
+    7
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "AABAA",
+  "match": "0/5",
+  "translations": [
+    "连绵山脚下百花开",
+    "什么节奏最摇摆",
+    "哪首歌最欢快",
+    "蜿蜒江河自天来",
+    "缤纷色彩流向海"
+  ],
+  "time_seconds": 6.61,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 6.605,
+    "phase0_calls": 1
+  }
+}

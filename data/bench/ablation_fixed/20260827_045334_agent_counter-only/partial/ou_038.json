@@ -1,0 +1,88 @@
+{
+  "id": "ou_038",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    3,
+    5,
+    12,
+    12,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    5,
+    12,
+    12,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "去哪儿",
+    "每晚去那里",
+    "他有那种我喜欢的男孩气质",
+    "我是建筑师在画着设计方案",
+    "没有人能懂"
+  ],
+  "time_seconds": 48.14,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.049405199999999996,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 9445,
+      "cache_read_input_tokens": 144162,
+      "output_tokens": 3211,
+      "output_tokens_details": {
+        "thinking_tokens": 1767
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9445,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 96,
+          "cache_read_input_tokens": 32386,
+          "cache_creation_input_tokens": 468,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 468
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 去哪儿\n2. 每晚去那里\n3. 他有那种我喜欢的男孩气质\n4. 我是建筑师在画着设计方案\n5. 没有人能懂",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

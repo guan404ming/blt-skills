@@ -1,0 +1,87 @@
+{
+  "id": "ou_093",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "不是爱不是恨",
+    "只是种冷漠",
+    "我忘了你曾",
+    "在校园里笑我摔倒趴在地上地上地上",
+    "我本会一直守着你"
+  ],
+  "time_seconds": 60.93,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 10,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.29388249999999994,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 13397,
+      "cache_read_input_tokens": 243065,
+      "output_tokens": 1532,
+      "output_tokens_details": {
+        "thinking_tokens": 234
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13397,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 71,
+          "cache_read_input_tokens": 33232,
+          "cache_creation_input_tokens": 332,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 332
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不是爱不是恨\n2. 只是种冷漠\n3. 我忘了你曾\n4. 在校园里笑我摔倒趴在地上地上地上\n5. 我本会一直守着你",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

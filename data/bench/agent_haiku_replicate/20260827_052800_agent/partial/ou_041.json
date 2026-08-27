@@ -1,0 +1,90 @@
+{
+  "id": "ou_041",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    5,
+    11,
+    12,
+    20
+  ],
+  "tgt_syl": [
+    9,
+    5,
+    11,
+    12,
+    20
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你能否再说一遍你会",
+    "永远爱着我",
+    "如最爱我的你始终未改变",
+    "我依然记得曾经沿途的风景",
+    "越过这条路有多么难那记忆就有多么难以忘怀"
+  ],
+  "time_seconds": 68.17,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.070386,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 12082,
+      "cache_read_input_tokens": 210770,
+      "output_tokens": 5017,
+      "output_tokens_details": {
+        "thinking_tokens": 3025
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12082,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 145,
+          "cache_read_input_tokens": 35068,
+          "cache_creation_input_tokens": 423,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 423
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你能否再说一遍你会\n2. 永远爱着我\n3. 如最爱我的你始终未改变\n4. 我依然记得曾经沿途的风景\n5. 越过这条路有多么难那记忆就有多么难以忘怀",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_012",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    8,
+    11,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    8,
+    8,
+    11,
+    8,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我尝试忍受着伤痛",
+    "却仍无法放下此爱",
+    "你的心早已飞得太远不回",
+    "来生愿做一朵莲花",
+    "静静地盛开在佛祖面前"
+  ],
+  "time_seconds": 66.46,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 10,
+    "cost_usd": 0.146754,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 14957,
+      "cache_read_input_tokens": 296690,
+      "output_tokens": 2756,
+      "output_tokens_details": {
+        "thinking_tokens": 1160
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14957,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 86,
+          "cache_read_input_tokens": 46013,
+          "cache_creation_input_tokens": 331,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 331
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All checks pass.\n\n1. 我尝试忍受着伤痛\n2. 却仍无法放下此爱\n3. 你的心早已飞得太远不回\n4. 来生愿做一朵莲花\n5. 静静地盛开在佛祖面前",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_058",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.4117647058823529,
+  "src_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDB",
+  "tgt_rhyme": "ABBCB",
+  "match": "5/5",
+  "translations": [
+    "我的手伸向天空",
+    "双手接住从天而落的雨",
+    "但落在手中的不是雨",
+    "是她眼中落下的泪",
+    "天空所酝酿的不是暴风雨"
+  ],
+  "time_seconds": 64.12,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 29,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.0771176,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 9955,
+      "cache_read_input_tokens": 395496,
+      "output_tokens": 3510,
+      "output_tokens_details": {
+        "thinking_tokens": 2099
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9955,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 124,
+          "cache_read_input_tokens": 33017,
+          "cache_creation_input_tokens": 347,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 347
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我的手伸向天空\n2. 双手接住从天而落的雨\n3. 但落在手中的不是雨\n4. 是她眼中落下的泪\n5. 天空所酝酿的不是暴风雨",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

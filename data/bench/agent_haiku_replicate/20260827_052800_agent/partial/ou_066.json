@@ -1,0 +1,90 @@
+{
+  "id": "ou_066",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    9,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    9,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "有时要低着头走完一回",
+    "继续走完这一天",
+    "涂口红和眼影好看啊",
+    "卷头发的时刻",
+    "有时候在商街上逛逛"
+  ],
+  "time_seconds": 96.33,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 19,
+    "cost_usd": 0.08029599999999999,
+    "usage": {
+      "input_tokens": 66,
+      "cache_creation_input_tokens": 9384,
+      "cache_read_input_tokens": 256570,
+      "output_tokens": 7161,
+      "output_tokens_details": {
+        "thinking_tokens": 5073
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9384,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 154,
+          "cache_read_input_tokens": 37672,
+          "cache_creation_input_tokens": 358,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 358
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 有时要低着头走完一回\n2. 继续走完这一天\n3. 涂口红和眼影好看啊\n4. 卷头发的时刻\n5. 有时候在商街上逛逛",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

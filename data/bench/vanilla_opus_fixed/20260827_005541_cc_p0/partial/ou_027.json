@@ -1,0 +1,44 @@
+{
+  "id": "ou_027",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2343406593406593,
+  "ari": 0.0,
+  "src_syl": [
+    6,
+    13,
+    12,
+    8,
+    7
+  ],
+  "tgt_syl": [
+    9,
+    11,
+    12,
+    11,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCBD",
+  "match": "1/5",
+  "translations": [
+    "我好爱你，真的好爱你",
+    "直到此刻我才对你说出口",
+    "妈，我得告诉你，我找到了真爱",
+    "她的模样就像你年轻时候",
+    "你生下我的那一天"
+  ],
+  "time_seconds": 8.4,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 8.4,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,15 @@
+agent model=haiku effort=medium workers=3 n=30
+[start ] ou_014
+[start ] ou_022
+[retry ] ou_014 attempt 1 failed: API Error: Output blocked by content filtering policy
+[done  ] ou_014 SER=0.000 ARI=1.000 match=5/5 turns=24 scripts=21 cost=$0.128 time=185s
+[done  ] ou_022 SER=0.000 ARI=0.615 match=5/5 turns=81 scripts=78 cost=$0.402 time=374s
+
+Saved data/bench/agent_haiku_ja/20260827_023100_agent/results.json
+Saved data/bench/agent_haiku_ja/20260827_023100_agent/report.md
+{
+  "avg_ser": 0.0133,
+  "avg_scre": 0.0033,
+  "avg_ari": 0.6154,
+  "avg_time": 287.29
+}

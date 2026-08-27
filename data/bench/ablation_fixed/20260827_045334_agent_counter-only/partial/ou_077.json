@@ -1,0 +1,88 @@
+{
+  "id": "ou_077",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    10,
+    6,
+    5,
+    7
+  ],
+  "tgt_syl": [
+    11,
+    10,
+    6,
+    5,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBBC",
+  "match": "5/5",
+  "translations": [
+    "伤痛必缓解松开你的掌心",
+    "三二一数起所有会明白",
+    "千次我已失败",
+    "你的恩典在",
+    "倘若我再次跌倒"
+  ],
+  "time_seconds": 90.72,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 23,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11,
+      "Agent": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "skills": 11
+    },
+    "num_turns": 15,
+    "cost_usd": 0.08610095,
+    "usage": {
+      "input_tokens": 54,
+      "cache_creation_input_tokens": 10553,
+      "cache_read_input_tokens": 177718,
+      "output_tokens": 4048,
+      "output_tokens_details": {
+        "thinking_tokens": 2236
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10553,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 109,
+          "cache_read_input_tokens": 33500,
+          "cache_creation_input_tokens": 462,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 462
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 伤痛必缓解松开你的掌心\n2. 三二一数起所有会明白\n3. 千次我已失败\n4. 你的恩典在\n5. 倘若我再次跌倒",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

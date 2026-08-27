@@ -1,0 +1,88 @@
+{
+  "id": "ou_046",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    7,
+    15,
+    18,
+    10
+  ],
+  "tgt_syl": [
+    19,
+    7,
+    15,
+    18,
+    10
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "肉体的世界令离散游子在诸苦难中奋力挣扎",
+    "泪痕满布皮肤衰",
+    "我已忘却家在何处，你依然还在等候",
+    "我的愿望就是再遇那学生与那位受训的人",
+    "我的愿望是再看那柳根"
+  ],
+  "time_seconds": 166.1,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 48,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 19,
+    "cost_usd": 0.1627265,
+    "usage": {
+      "input_tokens": 148,
+      "cache_creation_input_tokens": 20001,
+      "cache_read_input_tokens": 610265,
+      "output_tokens": 12310,
+      "output_tokens_details": {
+        "thinking_tokens": 9830
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20001,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 198,
+          "cache_read_input_tokens": 43044,
+          "cache_creation_input_tokens": 366,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 366
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 肉体的世界令离散游子在诸苦难中奋力挣扎\n2. 泪痕满布皮肤衰\n3. 我已忘却家在何处，你依然还在等候\n4. 我的愿望就是再遇那学生与那位受训的人\n5. 我的愿望是再看那柳根",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

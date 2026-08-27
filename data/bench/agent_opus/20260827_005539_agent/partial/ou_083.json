@@ -1,0 +1,86 @@
+{
+  "id": "ou_083",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    6,
+    4,
+    4,
+    4
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    4,
+    4,
+    4
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCDC",
+  "match": "5/5",
+  "translations": [
+    "我想游戏",
+    "我想象棋最棒",
+    "你爱他吗",
+    "多少有点",
+    "你要他吗"
+  ],
+  "time_seconds": 65.37,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 4,
+      "rhyme-analyzer": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.28495400000000004,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 13528,
+      "cache_read_input_tokens": 211458,
+      "output_tokens": 1755,
+      "output_tokens_details": {
+        "thinking_tokens": 705
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13528,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 49,
+          "cache_read_input_tokens": 33265,
+          "cache_creation_input_tokens": 660,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 660
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想游戏\n2. 我想象棋最棒\n3. 你爱他吗\n4. 多少有点\n5. 你要他吗",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ou_046",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    19,
+    7,
+    15,
+    18,
+    10
+  ],
+  "tgt_syl": [
+    19,
+    7,
+    15,
+    18,
+    10
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "这肉欲世界让漂泊游子为无数的艰苦而奋斗",
+    "泪痕催皱纹遍布",
+    "我不再记得家在何处 而你仍在等待",
+    "我的愿望是再见到那位学生与强壮女孩啊",
+    "我想再看见那些柳树啊"
+  ],
+  "time_seconds": 122.23,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 130,
+    "rhyme-analyzer": 26,
+    "syllable-pattern-analyzer": 8
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 122.234,
+    "phase0_calls": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ou_082",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "你可别妄想",
+    "说我会收起眼泪全带回家",
+    "独自一人时再哭它",
+    "我就在这哭",
+    "我现在就哭"
+  ],
+  "time_seconds": 14.05,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 14.051,
+    "phase0_calls": 1
+  }
+}

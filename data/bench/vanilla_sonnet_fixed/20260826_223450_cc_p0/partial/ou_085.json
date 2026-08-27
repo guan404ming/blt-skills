@@ -1,0 +1,43 @@
+{
+  "id": "ou_085",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.09,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    4,
+    4,
+    1,
+    6
+  ],
+  "tgt_syl": [
+    6,
+    4,
+    3,
+    1,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AAAAB",
+  "match": "3/5",
+  "translations": [
+    "她流很多汗吗?",
+    "她无情吗?",
+    "自恋吗?",
+    "谁?",
+    "让我换个心情"
+  ],
+  "time_seconds": 7.2,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 7.201,
+    "phase0_calls": 1
+  }
+}

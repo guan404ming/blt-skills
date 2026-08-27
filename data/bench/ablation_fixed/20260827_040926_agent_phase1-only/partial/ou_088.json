@@ -1,0 +1,89 @@
+{
+  "id": "ou_088",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    14,
+    2,
+    15,
+    4
+  ],
+  "tgt_syl": [
+    8,
+    14,
+    2,
+    15,
+    4
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你怎样能挺胸走来",
+    "总统您永远不会陪我散步这样啦",
+    "可否",
+    "英雄也害怕怪兽我更害怕去搏斗儿",
+    "表面之下"
+  ],
+  "time_seconds": 251.27,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 21,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 6,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 11,
+    "cost_usd": 0.21199639999999997,
+    "usage": {
+      "input_tokens": 84,
+      "cache_creation_input_tokens": 30314,
+      "cache_read_input_tokens": 294394,
+      "output_tokens": 24369,
+      "output_tokens_details": {
+        "thinking_tokens": 23125
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 30314,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 634,
+          "cache_read_input_tokens": 31190,
+          "cache_creation_input_tokens": 22533,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 22533
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Constraints Extracted\n\n**Syllable counts:**\n- Line 1: 8\n- Line 2: 14\n- Line 3: 2\n- Line 4: 15\n- Line 5: 4\n\n**Rhyme scheme:** ABCDE (all different)\n\n**Syllable patterns:**\n- Line 1: [1, 1, 1, 1, 1, 1, 1, 1]\n- Line 2: [1, 2, 3, 1, 2, 1, 1, 1, 1, 1]\n- Line 3: [1, 1]\n- Line 4: [3, 1, 2, 2, 1, 1, 1, 1, 1, 2]\n- Line 5: [1, 1, 2]\n\n---\n\n1. 你怎样能挺胸走来\n2. 总统您永远不会陪我散步这样啦\n3. 可否\n4. 英雄也害怕怪兽我更害怕去搏斗儿\n5. 表面之下",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

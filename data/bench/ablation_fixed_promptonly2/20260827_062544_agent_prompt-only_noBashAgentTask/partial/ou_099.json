@@ -1,0 +1,85 @@
+{
+  "id": "ou_099",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    11,
+    2,
+    8,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    11,
+    2,
+    8,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你永远是我最好朋友",
+    "现在是时候建立三重联系",
+    "灯灭",
+    "在黑暗中在黑暗中",
+    "真的很难说很难说"
+  ],
+  "time_seconds": 107.42,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 5,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.0541385,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 883,
+      "cache_read_input_tokens": 24025,
+      "output_tokens": 9992,
+      "output_tokens_details": {
+        "thinking_tokens": 9923
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 883,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 9992,
+          "cache_read_input_tokens": 24025,
+          "cache_creation_input_tokens": 883,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 883
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你永远是我最好朋友\n2. 现在是时候建立三重联系\n3. 灯灭\n4. 在黑暗中在黑暗中\n5. 真的很难说很难说",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

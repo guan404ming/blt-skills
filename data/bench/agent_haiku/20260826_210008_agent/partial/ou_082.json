@@ -1,0 +1,88 @@
+{
+  "id": "ou_082",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你别这样想",
+    "我把眼泪都装起来带回家",
+    "独自一人时哭出来",
+    "我在这儿哭",
+    "我正在哭泣"
+  ],
+  "time_seconds": 77.7,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 27,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 14
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 17,
+    "cost_usd": 0.071588,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 12185,
+      "cache_read_input_tokens": 214180,
+      "output_tokens": 5148,
+      "output_tokens_details": {
+        "thinking_tokens": 3025
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12185,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 145,
+          "cache_read_input_tokens": 35255,
+          "cache_creation_input_tokens": 339,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 339
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你别这样想\n2. 我把眼泪都装起来带回家\n3. 独自一人时哭出来\n4. 我在这儿哭\n5. 我正在哭泣",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

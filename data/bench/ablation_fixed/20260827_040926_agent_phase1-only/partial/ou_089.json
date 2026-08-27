@@ -1,0 +1,89 @@
+{
+  "id": "ou_089",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABCD",
+  "match": "5/5",
+  "translations": [
+    "他看工作得满意",
+    "制造万物的可造奇",
+    "坚硬我意志盔甲",
+    "装满我心中的智慧",
+    "我身体刚出发时心已到战场我思想还在战斗"
+  ],
+  "time_seconds": 70.29,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0577449,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 7823,
+      "cache_read_input_tokens": 142699,
+      "output_tokens": 5557,
+      "output_tokens_details": {
+        "thinking_tokens": 4476
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7823,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 4084,
+          "cache_read_input_tokens": 30711,
+          "cache_creation_input_tokens": 521,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 521
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 他看工作得满意\n2. 制造万物的可造奇\n3. 坚硬我意志盔甲\n4. 装满我心中的智慧\n5. 我身体刚出发时心已到战场我思想还在战斗",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ou_034",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.1622222222222222,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "tgt_syl": [
+    6,
+    7,
+    7,
+    5,
+    11
+  ],
+  "src_rhyme": "ABBAC",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "只想说我爱你",
+    "我只求你能明白",
+    "当我牵起你的手",
+    "只因我想要",
+    "我们生来都活在疑惑世界"
+  ],
+  "time_seconds": 9.42,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 9.417,
+    "phase0_calls": 1
+  }
+}

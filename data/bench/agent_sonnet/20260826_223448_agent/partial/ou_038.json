@@ -1,0 +1,88 @@
+{
+  "id": "ou_038",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    5,
+    12,
+    12,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    5,
+    12,
+    12,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "去何方",
+    "每晚都前去",
+    "他有着我喜欢的男孩子气息",
+    "我是建筑师正在绘制的计划",
+    "没有人懂得"
+  ],
+  "time_seconds": 73.85,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 20,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 4
+    },
+    "num_turns": 14,
+    "cost_usd": 0.1917516,
+    "usage": {
+      "input_tokens": 22,
+      "cache_creation_input_tokens": 15826,
+      "cache_read_input_tokens": 479718,
+      "output_tokens": 3246,
+      "output_tokens_details": {
+        "thinking_tokens": 1313
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 73,
+          "cache_read_input_tokens": 46897,
+          "cache_creation_input_tokens": 316,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 316
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 去何方\n2. 每晚都前去\n3. 他有着我喜欢的男孩子气息\n4. 我是建筑师正在绘制的计划\n5. 没有人懂得",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

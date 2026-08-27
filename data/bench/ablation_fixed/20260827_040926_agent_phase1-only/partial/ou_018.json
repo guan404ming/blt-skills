@@ -1,0 +1,89 @@
+{
+  "id": "ou_018",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.013333333333333332,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    14,
+    16,
+    14,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "4/5",
+  "translations": [
+    "我曾将青春投入她心",
+    "我也曾将琴弦拨向夏天的最高处",
+    "若能动你心，宇宙连接就将你带去那边",
+    "逆光而行，让各样元素击打我身体",
+    "短短之路，开始停止"
+  ],
+  "time_seconds": 68.05,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 17,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.060247800000000004,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 8070,
+      "cache_read_input_tokens": 142988,
+      "output_tokens": 5953,
+      "output_tokens_details": {
+        "thinking_tokens": 4791
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8070,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 4382,
+          "cache_read_input_tokens": 30844,
+          "cache_creation_input_tokens": 635,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 635
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我曾将青春投入她心\n2. 我也曾将琴弦拨向夏天的最高处\n3. 若能动你心，宇宙连接就将你带去那边\n4. 逆光而行，让各样元素击打我身体\n5. 短短之路，开始停止",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

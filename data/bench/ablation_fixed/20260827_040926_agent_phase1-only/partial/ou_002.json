@@ -1,0 +1,89 @@
+{
+  "id": "ou_002",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "5/5",
+  "translations": [
+    "我们未曾体验过的感受",
+    "云中的自由敞开向前",
+    "世界与你同在",
+    "我心为你盛开",
+    "不可思议啊"
+  ],
+  "time_seconds": 67.51,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 15,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.061937900000000004,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 7670,
+      "cache_read_input_tokens": 142389,
+      "output_tokens": 6463,
+      "output_tokens_details": {
+        "thinking_tokens": 5315
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7670,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 5040,
+          "cache_read_input_tokens": 30616,
+          "cache_creation_input_tokens": 463,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 463
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "### Phase 1: Initial Translation\n\nConstraints extracted:\n- Syllable counts: 10, 9, 6, 6, 5\n- Rhyme scheme: ABCCD (lines 3 & 4 must rhyme)\n- Patterns: [1,4,1,2,1,1], [1,2,1,1,1,1,2], [1,1,1,1,1,1], [1,1,1,1,1,1], [1,4]\n\nTranslating with syllable counts and rhyme requirements:\n\n1. 我们未曾体验过的感受\n2. 云中的自由敞开向前\n3. 世界与你同在\n4. 我心为你盛开\n5. 不可思议啊",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

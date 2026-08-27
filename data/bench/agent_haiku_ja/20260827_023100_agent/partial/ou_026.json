@@ -1,0 +1,90 @@
+{
+  "id": "ou_026",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "tgt_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "伸び",
+    "逃げたら助かる?",
+    "君が消えた",
+    "待てません",
+    "学んで戻せず"
+  ],
+  "time_seconds": 99.18,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 34,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 19,
+    "cost_usd": 0.0737333,
+    "usage": {
+      "input_tokens": 74,
+      "cache_creation_input_tokens": 7826,
+      "cache_read_input_tokens": 290773,
+      "output_tokens": 5786,
+      "output_tokens_details": {
+        "thinking_tokens": 3740
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 813,
+          "cache_read_input_tokens": 35957,
+          "cache_creation_input_tokens": 525,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 525
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Validator flagging phonetic similarities in non-rhyming scheme. Syllables verified correct. Proceeding with translations:\n\n1. 伸び\n2. 逃げたら助かる?\n3. 君が消えた\n4. 待てません\n5. 学んで戻せず",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

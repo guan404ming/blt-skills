@@ -1,0 +1,88 @@
+{
+  "id": "ou_059",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    5,
+    8,
+    13,
+    4
+  ],
+  "tgt_syl": [
+    10,
+    5,
+    8,
+    13,
+    4
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "她说了你打来时说的话",
+    "我们去游泳",
+    "太阳烈焰灼伤皮肤",
+    "所以我们再也不会一起去泳池",
+    "永远不再"
+  ],
+  "time_seconds": 58.63,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.278754,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 13300,
+      "cache_read_input_tokens": 209918,
+      "output_tokens": 1629,
+      "output_tokens_details": {
+        "thinking_tokens": 662
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13300,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 70,
+          "cache_read_input_tokens": 33161,
+          "cache_creation_input_tokens": 306,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 306
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 她说了你打来时说的话\n2. 我们去游泳\n3. 太阳烈焰灼伤皮肤\n4. 所以我们再也不会一起去泳池\n5. 永远不再",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

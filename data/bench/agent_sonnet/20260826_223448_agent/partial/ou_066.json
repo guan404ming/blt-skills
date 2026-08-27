@@ -1,0 +1,87 @@
+{
+  "id": "ou_066",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    9,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    9,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "有没有时刻能低头不语",
+    "继续过你的一天",
+    "有没有时刻涂眼描唇",
+    "花时间烫卷发",
+    "有没有时刻去买东西"
+  ],
+  "time_seconds": 131.29,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 23,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 9
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 6,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 12,
+    "cost_usd": 0.13214360000000003,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 4633,
+      "cache_read_input_tokens": 440108,
+      "output_tokens": 2555,
+      "output_tokens_details": {
+        "thinking_tokens": 492
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 4633,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 79,
+          "cache_read_input_tokens": 45926,
+          "cache_creation_input_tokens": 414,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 414
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All check pass. Final:\n\n1. 有没有时刻能低头不语\n2. 继续过你的一天\n3. 有没有时刻涂眼描唇\n4. 花时间烫卷发\n5. 有没有时刻去买东西",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

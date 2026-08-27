@@ -1,0 +1,90 @@
+{
+  "id": "ou_042",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "但我们发觉太迟",
+    "泪水流淌向我心中",
+    "我们的相遇如此完美",
+    "我仍记得分别的时刻",
+    "彼此拉扯着如此多么舍不得彼此分开"
+  ],
+  "time_seconds": 99.98,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 46,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 24
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 20,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 27,
+    "cost_usd": 0.1090064,
+    "usage": {
+      "input_tokens": 124,
+      "cache_creation_input_tokens": 14082,
+      "cache_read_input_tokens": 489634,
+      "output_tokens": 6351,
+      "output_tokens_details": {
+        "thinking_tokens": 3214
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14082,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 206,
+          "cache_read_input_tokens": 36752,
+          "cache_creation_input_tokens": 739,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 739
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 但我们发觉太迟\n2. 泪水流淌向我心中\n3. 我们的相遇如此完美\n4. 我仍记得分别的时刻\n5. 彼此拉扯着如此多么舍不得彼此分开",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

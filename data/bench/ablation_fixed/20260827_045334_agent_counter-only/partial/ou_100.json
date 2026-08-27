@@ -1,0 +1,88 @@
+{
+  "id": "ou_100",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    7,
+    16,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    7,
+    16,
+    15,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "凭借我的直觉去追逐梦",
+    "追逐不为任何人",
+    "抛一块石头去倾听水花溅起时的声音",
+    "打破湖面上那平凡寂静的表面安宁",
+    "提前的计划"
+  ],
+  "time_seconds": 66.21,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.08134189999999997,
+    "usage": {
+      "input_tokens": 124,
+      "cache_creation_input_tokens": 9747,
+      "cache_read_input_tokens": 456689,
+      "output_tokens": 3211,
+      "output_tokens_details": {
+        "thinking_tokens": 1658
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9747,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 120,
+          "cache_read_input_tokens": 32675,
+          "cache_creation_input_tokens": 481,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 481
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 凭借我的直觉去追逐梦\n2. 追逐不为任何人\n3. 抛一块石头去倾听水花溅起时的声音\n4. 打破湖面上那平凡寂静的表面安宁\n5. 提前的计划",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

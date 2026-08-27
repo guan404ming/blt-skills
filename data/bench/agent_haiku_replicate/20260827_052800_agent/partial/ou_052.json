@@ -1,0 +1,90 @@
+{
+  "id": "ou_052",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    16,
+    13,
+    7,
+    15
+  ],
+  "tgt_syl": [
+    10,
+    16,
+    13,
+    7,
+    15
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "月是河流那浪漫的眼睛",
+    "我独自一人举杯，柳树的窗帘飘然打开",
+    "向这生命敬礼在春风吹拂外面",
+    "花儿还没有凋谢",
+    "啊，自从我们冒险开始已经好多年了"
+  ],
+  "time_seconds": 70.22,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 38,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 14
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 17,
+    "cost_usd": 0.0914357,
+    "usage": {
+      "input_tokens": 132,
+      "cache_creation_input_tokens": 11225,
+      "cache_read_input_tokens": 499287,
+      "output_tokens": 3785,
+      "output_tokens_details": {
+        "thinking_tokens": 1830
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11225,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 163,
+          "cache_read_input_tokens": 34162,
+          "cache_creation_input_tokens": 472,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 472
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 月是河流那浪漫的眼睛\n2. 我独自一人举杯，柳树的窗帘飘然打开\n3. 向这生命敬礼在春风吹拂外面\n4. 花儿还没有凋谢\n5. 啊，自从我们冒险开始已经好多年了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

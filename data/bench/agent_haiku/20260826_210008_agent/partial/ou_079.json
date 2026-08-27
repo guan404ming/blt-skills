@@ -1,0 +1,88 @@
+{
+  "id": "ou_079",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "没有惊喜",
+    "我俩都理解",
+    "记忆来去匆匆",
+    "躲在雨中的老站里停留",
+    "无感回忆生活中紧紧握住手指心"
+  ],
+  "time_seconds": 101.34,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 28,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 14
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 17,
+    "cost_usd": 0.084306,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 13503,
+      "cache_read_input_tokens": 247020,
+      "output_tokens": 6506,
+      "output_tokens_details": {
+        "thinking_tokens": 4582
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13503,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 140,
+          "cache_read_input_tokens": 36563,
+          "cache_creation_input_tokens": 349,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 349
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 没有惊喜\n2. 我俩都理解\n3. 记忆来去匆匆\n4. 躲在雨中的老站里停留\n5. 无感回忆生活中紧紧握住手指心",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

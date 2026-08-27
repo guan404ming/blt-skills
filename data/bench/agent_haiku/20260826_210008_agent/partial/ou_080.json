@@ -1,0 +1,88 @@
+{
+  "id": "ou_080",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "tgt_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "站那儿看似你不知说什么来",
+    "但我认识你",
+    "我还在这",
+    "为所有即将来的事做好准备来",
+    "太遗憾"
+  ],
+  "time_seconds": 122.21,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 45,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.12623099999999998,
+    "usage": {
+      "input_tokens": 140,
+      "cache_creation_input_tokens": 15304,
+      "cache_read_input_tokens": 558730,
+      "output_tokens": 7922,
+      "output_tokens_details": {
+        "thinking_tokens": 6032
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15304,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 252,
+          "cache_read_input_tokens": 38380,
+          "cache_creation_input_tokens": 333,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 333
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 站那儿看似你不知说什么来\n2. 但我认识你\n3. 我还在这\n4. 为所有即将来的事做好准备来\n5. 太遗憾",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

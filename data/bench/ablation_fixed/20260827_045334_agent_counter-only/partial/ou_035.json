@@ -1,0 +1,88 @@
+{
+  "id": "ou_035",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "tgt_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你装好行李箱,从墙上取照片",
+    "我问你想要多久才会回来",
+    "你说世界已经崩溃了",
+    "夏天已过树叶开始飘零",
+    "又一个冬天即将来临"
+  ],
+  "time_seconds": 48.46,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 21,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 14,
+    "cost_usd": 0.0380052,
+    "usage": {
+      "input_tokens": 34,
+      "cache_creation_input_tokens": 4627,
+      "cache_read_input_tokens": 121372,
+      "output_tokens": 3316,
+      "output_tokens_details": {
+        "thinking_tokens": 1931
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 4627,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 127,
+          "cache_read_input_tokens": 32863,
+          "cache_creation_input_tokens": 423,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 423
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你装好行李箱,从墙上取照片\n2. 我问你想要多久才会回来\n3. 你说世界已经崩溃了\n4. 夏天已过树叶开始飘零\n5. 又一个冬天即将来临",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

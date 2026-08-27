@@ -1,0 +1,43 @@
+{
+  "id": "ou_084",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.25,
+  "ari": -0.17647058823529413,
+  "src_syl": [
+    6,
+    8,
+    3,
+    4,
+    4
+  ],
+  "tgt_syl": [
+    5,
+    10,
+    4,
+    6,
+    4
+  ],
+  "src_rhyme": "ABCBD",
+  "tgt_rhyme": "ABCAA",
+  "match": "1/5",
+  "translations": [
+    "有点难描述？",
+    "是啊，是啊，我觉得那很对",
+    "他赤裸时-",
+    "他让你兴奋吗？",
+    "他凶狠吗？"
+  ],
+  "time_seconds": 5.06,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 5.06,
+    "phase0_calls": 1
+  }
+}

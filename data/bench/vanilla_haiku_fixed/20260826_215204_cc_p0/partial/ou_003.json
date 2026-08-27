@@ -1,0 +1,44 @@
+{
+  "id": "ou_003",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    7,
+    9,
+    7,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    7,
+    9,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "自由去探索",
+    "繁星与晨光之海",
+    "别害怕打开你的眼睛",
+    "有这么多要发现",
+    "深呼吸放松心"
+  ],
+  "time_seconds": 68.34,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 68.337,
+    "phase0_calls": 1
+  }
+}

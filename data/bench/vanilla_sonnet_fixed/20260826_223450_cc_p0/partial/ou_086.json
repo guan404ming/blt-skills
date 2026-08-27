@@ -1,0 +1,44 @@
+{
+  "id": "ou_086",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "tgt_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "src_rhyme": "ABCCC",
+  "tgt_rhyme": "ABCCC",
+  "match": "5/5",
+  "translations": [
+    "肉骨头啃干净",
+    "摇尾巴",
+    "对我点头",
+    "总统先生啊 陪我散步走一走",
+    "假装我们只是两人 你没比我更富有"
+  ],
+  "time_seconds": 151.6,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 151.597,
+    "phase0_calls": 1
+  }
+}

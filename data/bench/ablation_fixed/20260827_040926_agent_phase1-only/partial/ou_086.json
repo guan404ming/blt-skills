@@ -1,0 +1,89 @@
+{
+  "id": "ou_086",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "tgt_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "src_rhyme": "ABCCC",
+  "tgt_rhyme": "ABCCC",
+  "match": "5/5",
+  "translations": [
+    "吃肉骨头满意",
+    "摇尾巴",
+    "向我点头",
+    "亲爱的总统先生请来和我走",
+    "让我们就假装只是两个人一起牵手"
+  ],
+  "time_seconds": 164.97,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 16,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 2
+    },
+    "num_turns": 11,
+    "cost_usd": 0.1393973,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 22032,
+      "cache_read_input_tokens": 173763,
+      "output_tokens": 15581,
+      "output_tokens_details": {
+        "thinking_tokens": 14380
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22032,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 151,
+          "cache_read_input_tokens": 31186,
+          "cache_creation_input_tokens": 14255,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 14255
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 吃肉骨头满意\n2. 摇尾巴\n3. 向我点头\n4. 亲爱的总统先生请来和我走\n5. 让我们就假装只是两个人一起牵手",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ou_016",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "tgt_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "当所有人都已经彻底忘记了我",
+    "沙漠的黄昏就会变得通红",
+    "有没有人能从千年的孤独中彻底解救我呢",
+    "我在追逐月光的翅膀上",
+    "烛光温暖围绕光芒"
+  ],
+  "time_seconds": 85.09,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 18,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0780939,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 7953,
+      "cache_read_input_tokens": 263019,
+      "output_tokens": 7162,
+      "output_tokens_details": {
+        "thinking_tokens": 6181
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7953,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 5728,
+          "cache_read_input_tokens": 30768,
+          "cache_creation_input_tokens": 594,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 594
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 当所有人都已经彻底忘记了我\n2. 沙漠的黄昏就会变得通红\n3. 有没有人能从千年的孤独中彻底解救我呢\n4. 我在追逐月光的翅膀上\n5. 烛光温暖围绕光芒",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,90 @@
+{
+  "id": "ou_087",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    16,
+    14,
+    13,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    16,
+    14,
+    13,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我想問你些問題，如果我們能誠實相談",
+    "看著鏡子中的自己，你感到驕傲嗎",
+    "你能看著我眼睛說出為什麼呢",
+    "讓我說說辛勤工作",
+    "最低的薪水，寶寶就要來臨"
+  ],
+  "time_seconds": 99.43,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 44,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 19,
+    "cost_usd": 0.11826970000000002,
+    "usage": {
+      "input_tokens": 148,
+      "cache_creation_input_tokens": 13984,
+      "cache_read_input_tokens": 580787,
+      "output_tokens": 6415,
+      "output_tokens_details": {
+        "thinking_tokens": 4080
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13984,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 268,
+          "cache_read_input_tokens": 37028,
+          "cache_creation_input_tokens": 365,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 365
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想問你些問題，如果我們能誠實相談\n2. 看著鏡子中的自己，你感到驕傲嗎\n3. 你能看著我眼睛說出為什麼呢\n4. 讓我說說辛勤工作\n5. 最低的薪水，寶寶就要來臨",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

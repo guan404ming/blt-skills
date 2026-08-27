@@ -1,0 +1,43 @@
+{
+  "id": "ou_047",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.27714285714285714,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    10,
+    10,
+    14,
+    6,
+    7
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    13,
+    9,
+    12
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABBCD",
+  "match": "1/5",
+  "translations": [
+    "黑白思想都向我屈服",
+    "我走过他们无光的走廊",
+    "虽然我脆弱，你如天使伴我身旁",
+    "当悲伤呼唤我的名字",
+    "我知道没有什么会保持不变"
+  ],
+  "time_seconds": 24.15,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 24.149,
+    "phase0_calls": 1
+  }
+}

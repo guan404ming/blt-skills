@@ -1,0 +1,44 @@
+{
+  "id": "ou_017",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.2451010101010101,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    18,
+    10,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    13,
+    13,
+    13,
+    11,
+    12
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "那时沙漠的黄昏该已染成血红",
+    "有谁能将我从千年孤寂中解开",
+    "我在追逐夜色的双翼里看见你",
+    "绕着烛火的暖意盘旋不去",
+    "我在风里听见你，当两极旋转"
+  ],
+  "time_seconds": 8.64,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 8.645,
+    "phase0_calls": 1
+  }
+}

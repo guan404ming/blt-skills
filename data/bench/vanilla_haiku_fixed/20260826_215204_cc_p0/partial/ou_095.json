@@ -1,0 +1,44 @@
+{
+  "id": "ou_095",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    5,
+    6,
+    5,
+    4
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    6,
+    5,
+    4
+  ],
+  "src_rhyme": "ABCBD",
+  "tgt_rhyme": "ABCBD",
+  "match": "5/5",
+  "translations": [
+    "生死永不归",
+    "掷骨断生死",
+    "冒着鲁莽危险",
+    "赌注无所知",
+    "半心之愿"
+  ],
+  "time_seconds": 116.48,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 105,
+    "rhyme-analyzer": 21,
+    "syllable-pattern-analyzer": 5
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 116.479,
+    "phase0_calls": 1
+  }
+}

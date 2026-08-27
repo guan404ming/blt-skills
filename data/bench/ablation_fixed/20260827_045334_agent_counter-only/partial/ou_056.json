@@ -1,0 +1,88 @@
+{
+  "id": "ou_056",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    10,
+    8,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    10,
+    8,
+    6,
+    6
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你让我相信",
+    "宝贝你教我什么是生活",
+    "我不再想隐藏自己",
+    "越疯狂越疯狂",
+    "摇滚，金灰女人"
+  ],
+  "time_seconds": 58.63,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 27,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 14,
+      "lyrics-validator": 1
+    },
+    "num_turns": 18,
+    "cost_usd": 0.059635099999999996,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 10536,
+      "cache_read_input_tokens": 177911,
+      "output_tokens": 4144,
+      "output_tokens_details": {
+        "thinking_tokens": 2182
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10536,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 145,
+          "cache_read_input_tokens": 33498,
+          "cache_creation_input_tokens": 447,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 447
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你让我相信\n2. 宝贝你教我什么是生活\n3. 我不再想隐藏自己\n4. 越疯狂越疯狂\n5. 摇滚，金灰女人",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

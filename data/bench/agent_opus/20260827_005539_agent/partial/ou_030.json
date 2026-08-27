@@ -1,0 +1,87 @@
+{
+  "id": "ou_030",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "tgt_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你是我心中最美丽的云彩",
+    "我用美酒佳肴留你",
+    "永远唱着最耀眼的民谣风",
+    "那是整片天空中最美的模样",
+    "哟啦啦啦嘿啦啦贝"
+  ],
+  "time_seconds": 59.72,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.2870415,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 13575,
+      "cache_read_input_tokens": 210593,
+      "output_tokens": 1837,
+      "output_tokens_details": {
+        "thinking_tokens": 603
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13575,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 89,
+          "cache_read_input_tokens": 33391,
+          "cache_creation_input_tokens": 351,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 351
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你是我心中最美丽的云彩\n2. 我用美酒佳肴留你\n3. 永远唱着最耀眼的民谣风\n4. 那是整片天空中最美的模样\n5. 哟啦啦啦嘿啦啦贝",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ou_076",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "tgt_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "src_rhyme": "AAABA",
+  "tgt_rhyme": "AAABA",
+  "match": "5/5",
+  "translations": [
+    "貝殼娘",
+    "別害怕呀貝殼娘",
+    "神秘莫測的軀體貝殼娘",
+    "讓所有的不安都慢慢地走得遠",
+    "慢慢走遠貝殼娘"
+  ],
+  "time_seconds": 60.26,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 9,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.28404699999999994,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 13442,
+      "cache_read_input_tokens": 210264,
+      "output_tokens": 1777,
+      "output_tokens_details": {
+        "thinking_tokens": 598
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13442,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 85,
+          "cache_read_input_tokens": 33262,
+          "cache_creation_input_tokens": 347,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 347
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 貝殼娘\n2. 別害怕呀貝殼娘\n3. 神秘莫測的軀體貝殼娘\n4. 讓所有的不安都慢慢地走得遠\n5. 慢慢走遠貝殼娘",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

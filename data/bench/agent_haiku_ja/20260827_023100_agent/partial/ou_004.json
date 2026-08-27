@@ -1,0 +1,90 @@
+{
+  "id": "ou_004",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    10,
+    12,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    10,
+    12,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "できるかな？戻ったな",
+    "理由もなく飛ぶのね",
+    "孤独で果てまで世界へ",
+    "ずっとそばにいる",
+    "前に言った、広くても"
+  ],
+  "time_seconds": 262.86,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 80,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 38
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 28,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 8
+    },
+    "num_turns": 41,
+    "cost_usd": 0.2520969,
+    "usage": {
+      "input_tokens": 252,
+      "cache_creation_input_tokens": 25286,
+      "cache_read_input_tokens": 1228329,
+      "output_tokens": 15688,
+      "output_tokens_details": {
+        "thinking_tokens": 10331
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25286,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 212,
+          "cache_read_input_tokens": 48351,
+          "cache_creation_input_tokens": 344,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 344
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. できるかな？戻ったな\n2. 理由もなく飛ぶのね\n3. 孤独で果てまで世界へ\n4. ずっとそばにいる\n5. 前に言った、広くても",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

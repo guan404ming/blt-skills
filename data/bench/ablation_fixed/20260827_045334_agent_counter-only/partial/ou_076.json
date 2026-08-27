@@ -1,0 +1,88 @@
+{
+  "id": "ou_076",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "tgt_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "src_rhyme": "AAABA",
+  "tgt_rhyme": "AABBB",
+  "match": "5/5",
+  "translations": [
+    "我贝女",
+    "别害怕我贝壳女",
+    "神秘的身躯我贝壳女孩",
+    "让所有的不安和焦虑慢慢走开",
+    "慢慢走开贝女孩"
+  ],
+  "time_seconds": 52.21,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 21,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0521652,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 9450,
+      "cache_read_input_tokens": 176182,
+      "output_tokens": 3119,
+      "output_tokens_details": {
+        "thinking_tokens": 1491
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9450,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 137,
+          "cache_read_input_tokens": 32399,
+          "cache_creation_input_tokens": 460,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 460
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我贝女\n2. 别害怕我贝壳女\n3. 神秘的身躯我贝壳女孩\n4. 让所有的不安和焦虑慢慢走开\n5. 慢慢走开贝女孩",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

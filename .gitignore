@@ -1,16 +1,23 @@
-# Python-generated files
 __pycache__/
 *.py[oc]
 build/
 dist/
 wheels/
 *.egg-info
-
-# Virtual environments
-.venv
-
-# project specific
-/data/lyric-trans
-
-# source lyrics (Ou et al. 2023, third-party licensed)
-data/bench/**/test_songs.json
+.venv*/
+.DS_Store
+data/lyric-trans/
+data/genius-lyrics/
+data/archive_pre_fix/
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+reference/
+rebuttal.md
+REVIEW.md
+texput.log
+data/human_eval/archive_haiku/

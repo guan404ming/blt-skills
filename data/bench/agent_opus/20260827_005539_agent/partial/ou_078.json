@@ -1,0 +1,87 @@
+{
+  "id": "ou_078",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "tgt_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "长大",
+    "若我逃开能否得救",
+    "难料你何时散",
+    "说我等不及",
+    "我学得快回不了头"
+  ],
+  "time_seconds": 66.15,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 8,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 4
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 7,
+    "cost_usd": 0.243658,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 12652,
+      "cache_read_input_tokens": 177306,
+      "output_tokens": 1137,
+      "output_tokens_details": {
+        "thinking_tokens": 321
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12652,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 51,
+          "cache_read_input_tokens": 32533,
+          "cache_creation_input_tokens": 286,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 286
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 长大\n2. 若我逃开能否得救\n3. 难料你何时散\n4. 说我等不及\n5. 我学得快回不了头",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

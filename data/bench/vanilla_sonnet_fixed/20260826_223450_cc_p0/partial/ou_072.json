@@ -1,0 +1,43 @@
+{
+  "id": "ou_072",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2971428571428571,
+  "ari": 0.4117647058823529,
+  "src_syl": [
+    6,
+    13,
+    15,
+    14,
+    15
+  ],
+  "tgt_syl": [
+    10,
+    13,
+    12,
+    10,
+    10
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBBC",
+  "match": "1/5",
+  "translations": [
+    "不会是你游戏的一部分",
+    "我是谁 你是否总问自己这问题",
+    "我是谁 总活在别人的期待里",
+    "我是谁 谁无权替你定义",
+    "你是谁 除了自己才安全"
+  ],
+  "time_seconds": 5.38,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 5.382,
+    "phase0_calls": 1
+  }
+}

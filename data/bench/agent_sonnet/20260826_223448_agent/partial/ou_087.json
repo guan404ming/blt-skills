@@ -1,0 +1,88 @@
+{
+  "id": "ou_087",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    16,
+    14,
+    13,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    16,
+    14,
+    13,
+    8,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我想問你幾個問題如果我們坦誠相待",
+    "你看鏡子裡的自己你感覺驕傲嗎",
+    "你敢看我的雙眼告訴我為什麼",
+    "讓我說說何謂辛苦",
+    "最低工資養著待產的孩子"
+  ],
+  "time_seconds": 70.17,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.1427264,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 15322,
+      "cache_read_input_tokens": 251322,
+      "output_tokens": 3115,
+      "output_tokens_details": {
+        "thinking_tokens": 1442
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15322,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 113,
+          "cache_read_input_tokens": 46346,
+          "cache_creation_input_tokens": 363,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 363
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All check pass. Final:\n\n1. 我想問你幾個問題如果我們坦誠相待\n2. 你看鏡子裡的自己你感覺驕傲嗎\n3. 你敢看我的雙眼告訴我為什麼\n4. 讓我說說何謂辛苦\n5. 最低工資養著待產的孩子",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_035",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "tgt_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "你收拾行李，取下墙上的照片",
+    "当我问你要多久才会回来",
+    "你说这世界已经疯狂",
+    "夏天离去，树叶飘落身边",
+    "又一个冬天即将来临"
+  ],
+  "time_seconds": 80.4,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.09213439999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 4243,
+      "cache_read_input_tokens": 218662,
+      "output_tokens": 3141,
+      "output_tokens_details": {
+        "thinking_tokens": 2102
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 4243,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 94,
+          "cache_read_input_tokens": 46762,
+          "cache_creation_input_tokens": 375,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 375
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Validated. All constraints pass.\n\n1. 你收拾行李，取下墙上的照片\n2. 当我问你要多久才会回来\n3. 你说这世界已经疯狂\n4. 夏天离去，树叶飘落身边\n5. 又一个冬天即将来临",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

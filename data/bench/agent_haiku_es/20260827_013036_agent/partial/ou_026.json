@@ -1,0 +1,90 @@
+{
+  "id": "ou_026",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "tgt_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "Vuela",
+    "¿Si escapo seré feliz?",
+    "No sé cuando irás",
+    "Que no espero",
+    "Aprendo sin volver al fin"
+  ],
+  "time_seconds": 227.26,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 52,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 25
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 16,
+      "rhyme-analyzer": 5,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 3
+    },
+    "num_turns": 28,
+    "cost_usd": 0.14983159999999998,
+    "usage": {
+      "input_tokens": 130,
+      "cache_creation_input_tokens": 15035,
+      "cache_read_input_tokens": 599466,
+      "output_tokens": 11937,
+      "output_tokens_details": {
+        "thinking_tokens": 8827
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15035,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 146,
+          "cache_read_input_tokens": 43299,
+          "cache_creation_input_tokens": 392,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 392
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Vuela\n2. ¿Si escapo seré feliz?\n3. No sé cuando irás\n4. Que no espero\n5. Aprendo sin volver al fin",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

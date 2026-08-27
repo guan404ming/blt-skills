@@ -57,7 +57,7 @@ IPA_VOWEL_PATTERN = (
 )
 
 IPA_DIPHTHONG_PATTERN = (
-    r"(?:aɪ|eɪ|ɔɪ|aʊ|oʊ|ɪə|eə|ʊə|aɪə|aʊə|"
+    r"(?:aɪə|aʊə|aɪ|eɪ|ɔɪ|aʊ|oʊ|əʊ|ɪə|eə|ɛə|ʊə|"
     r"[iɪeɛæaäɑɒɔoʊuʉɨəɜɞʌyøœɶɐɚɝɯ]"
     r"[\u0300-\u036F\u1AB0-\u1AFF\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]*ː?)"
 )
@@ -68,8 +68,8 @@ def normalize_language_code(lang: str) -> str:
     lang = lang.lower().strip()
     if lang in ("zh", "zh-cn", "zh-tw", "zh-hant", "chinese"):
         return "cmn"
-    if lang in ("en", "en-us", "english"):
-        return "en-gb"
+    if lang in ("en", "english"):
+        return "en-us"
     if lang in ("jp", "japanese"):
         return "ja"
     return lang

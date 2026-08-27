@@ -1,0 +1,88 @@
+{
+  "id": "ou_057",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    12,
+    8,
+    9,
+    9
+  ],
+  "tgt_syl": [
+    9,
+    12,
+    8,
+    9,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你懂规矩啊没人在乎",
+    "只是个可怜孩子手握辛酸事",
+    "藏好你秘密藏藏藏",
+    "我们不需要再剪剪剪",
+    "你藏不住玻璃做的心"
+  ],
+  "time_seconds": 68.26,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 16,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.13739780000000001,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 14069,
+      "cache_read_input_tokens": 294219,
+      "output_tokens": 2225,
+      "output_tokens_details": {
+        "thinking_tokens": 862
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14069,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 87,
+          "cache_read_input_tokens": 45498,
+          "cache_creation_input_tokens": 350,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 350
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你懂规矩啊没人在乎\n2. 只是个可怜孩子手握辛酸事\n3. 藏好你秘密藏藏藏\n4. 我们不需要再剪剪剪\n5. 你藏不住玻璃做的心",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

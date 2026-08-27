@@ -1,0 +1,88 @@
+{
+  "id": "ou_063",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.02857142857142857,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    7,
+    7,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    7,
+    6,
+    15,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "4/5",
+  "translations": [
+    "化作呼嘯的暴風雪",
+    "我心中那片荒野",
+    "像過去的誓言",
+    "融化成光從深不可測的深淵中浮現",
+    "睜開你的眸"
+  ],
+  "time_seconds": 82.25,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.1300198,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 14376,
+      "cache_read_input_tokens": 249009,
+      "output_tokens": 2269,
+      "output_tokens_details": {
+        "thinking_tokens": 972
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14376,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 81,
+          "cache_read_input_tokens": 44920,
+          "cache_creation_input_tokens": 843,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 843
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All constraints pass.\n\n1. 化作呼嘯的暴風雪\n2. 我心中那片荒野\n3. 像過去的誓言\n4. 融化成光從深不可測的深淵中浮現\n5. 睜開你的眸",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

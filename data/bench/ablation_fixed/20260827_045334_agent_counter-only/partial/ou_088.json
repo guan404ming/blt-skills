@@ -1,0 +1,92 @@
+{
+  "id": "ou_088",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    14,
+    2,
+    15,
+    4
+  ],
+  "tgt_syl": [
+    8,
+    14,
+    2,
+    15,
+    4
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "你昂首挺胸怎样走",
+    "亲爱的总统先生你永不会陪我行",
+    "你愿",
+    "赫拉克勒斯也害怕我真不想斗怪物",
+    "表面以下"
+  ],
+  "time_seconds": 158.02,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 45,
+    "tool_calls": {
+      "Skill": 2,
+      "Bash": 35,
+      "Agent": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1,
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 29,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 4
+    },
+    "num_turns": 15,
+    "cost_usd": 0.1269219,
+    "usage": {
+      "input_tokens": 54,
+      "cache_creation_input_tokens": 3718,
+      "cache_read_input_tokens": 179841,
+      "output_tokens": 2525,
+      "output_tokens_details": {
+        "thinking_tokens": 800
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 3718,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 141,
+          "cache_read_input_tokens": 31956,
+          "cache_creation_input_tokens": 414,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 414
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你昂首挺胸怎样走\n2. 亲爱的总统先生你永不会陪我行\n3. 你愿\n4. 赫拉克勒斯也害怕我真不想斗怪物\n5. 表面以下",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

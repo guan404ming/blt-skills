@@ -1,19 +1,26 @@
 """CLI for lyrics validation."""
 
+import argparse
 import json
-import sys
 
 from blt_skills import verify_all_constraints
 
 if __name__ == "__main__":
-    if len(sys.argv) < 4:
-        print("Usage: python validate.py <language> <target_syllables_json> <line1> [line2] ...")
-        print("Example: python validate.py cmn '[5,7,5]' line1 line2 line3")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description="Validate translated lines against syllable, rhyme, and pattern constraints."
+    )
+    parser.add_argument("language")
+    parser.add_argument("target_syllables", help="JSON list, e.g. '[5,7,5]'")
+    parser.add_argument("lines", nargs="+")
+    parser.add_argument("--rhyme", default="", help="Rhyme scheme, e.g. AABB")
+    parser.add_argument("--patterns", default="", help="JSON list of lists, e.g. '[[2,1],[1,1,1]]'")
+    args = parser.parse_args()
 
-    lang = sys.argv[1]
-    target = json.loads(sys.argv[2])
-    lines = sys.argv[3:]
-
-    result = verify_all_constraints(lines, lang, target)
+    result = verify_all_constraints(
+        args.lines,
+        args.language,
+        json.loads(args.target_syllables),
+        rhyme_scheme=args.rhyme,
+        target_patterns=json.loads(args.patterns) if args.patterns else None,
+    )
     print(json.dumps(result, ensure_ascii=False, indent=2))

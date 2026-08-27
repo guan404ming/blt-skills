@@ -1,0 +1,88 @@
+{
+  "id": "ou_016",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "tgt_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDD",
+  "match": "5/5",
+  "translations": [
+    "当所有人都已经将我彻底遗忘",
+    "那时沙漠黄昏便已染成红",
+    "是否有人能为我解开我这千年的孤独寂寞",
+    "我在追夜的羽翼中见你",
+    "萦绕烛光的温暖里"
+  ],
+  "time_seconds": 68.89,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 17,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 8,
+      "rhyme-analyzer": 2,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 11,
+    "cost_usd": 0.17097260000000003,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 14883,
+      "cache_read_input_tokens": 428053,
+      "output_tokens": 2579,
+      "output_tokens_details": {
+        "thinking_tokens": 738
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14883,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 105,
+          "cache_read_input_tokens": 45901,
+          "cache_creation_input_tokens": 369,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 369
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "All checks pass.\n\n1. 当所有人都已经将我彻底遗忘\n2. 那时沙漠黄昏便已染成红\n3. 是否有人能为我解开我这千年的孤独寂寞\n4. 我在追夜的羽翼中见你\n5. 萦绕烛光的温暖里",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

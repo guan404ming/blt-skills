@@ -1,0 +1,88 @@
+{
+  "id": "ou_019",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "tgt_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我听闻虎的山洞",
+    "自从还是小孩就没再提起",
+    "我的心底是山人",
+    "刀耕火种的生活苦",
+    "革命的风儿轻轻吹过了那山间"
+  ],
+  "time_seconds": 82.47,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 33,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.0934054,
+    "usage": {
+      "input_tokens": 124,
+      "cache_creation_input_tokens": 11777,
+      "cache_read_input_tokens": 470924,
+      "output_tokens": 4527,
+      "output_tokens_details": {
+        "thinking_tokens": 2943
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11777,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 134,
+          "cache_read_input_tokens": 34824,
+          "cache_creation_input_tokens": 362,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 362
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我听闻虎的山洞\n2. 自从还是小孩就没再提起\n3. 我的心底是山人\n4. 刀耕火种的生活苦\n5. 革命的风儿轻轻吹过了那山间",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

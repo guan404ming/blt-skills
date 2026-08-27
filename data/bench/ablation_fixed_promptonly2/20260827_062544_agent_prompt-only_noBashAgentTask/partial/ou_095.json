@@ -1,0 +1,85 @@
+{
+  "id": "ou_095",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.08333333333333333,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    5,
+    6,
+    5,
+    4
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    7,
+    5,
+    5
+  ],
+  "src_rhyme": "ABCBD",
+  "tgt_rhyme": "ABCBD",
+  "match": "3/5",
+  "translations": [
+    "死亡永远留",
+    "投掷骰子来",
+    "冒着傻又莽又蛮",
+    "代价太高来",
+    "半梦半希缘"
+  ],
+  "time_seconds": 55.51,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.0458259,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5239,
+      "cache_read_input_tokens": 43429,
+      "output_tokens": 6197,
+      "output_tokens_details": {
+        "thinking_tokens": 5250
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5239,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 6002,
+          "cache_read_input_tokens": 24000,
+          "cache_creation_input_tokens": 668,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 668
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\nSyllable counts:\n- Line 1: Dead (1) is (1) for-ev-er (3) = **5 syllables**\n- Line 2: Cast-ing (2) out (1) the (1) die (1) = **5 syllables**\n- Line 3: Tak-ing (2) fool-har-dy (3) chan-ces (2) = **7 syllables**\n- Line 4: Stakes (1) that (1) are (1) too (1) high (1) = **5 syllables**\n- Line 5: Half (1) hopes (1) and (1) wish-es (2) = **5 syllables**\n\nRhyme scheme:\n- Line 1: \"forever\" (∂r) = **A**\n- Line 2: \"die\" (aɪ) = **B**\n- Line 3: \"chances\" (ɪz) = **C**\n- Line 4: \"high\" (aɪ) = **B** (rhymes with line 2)\n- Line 5: \"wishes\" (ɪz) = **C** (rhymes with line 3)\n\nPattern: **A B C B C**\n\n## Phase 1: Initial Translation\n\nTranslating with target syllables and rhyme preservation (B = -ai sound, C = -an sound):\n\n1. 死亡永远留 (5 chars = 5 syllables, rhyme A)\n2. 投掷骰子来 (5 chars = 5 syllables, rhyme B: -ai)\n3. 冒着傻又莽又蛮 (7 chars = 7 syllables, rhyme C: -an)\n4. 代价太高来 (5 chars = 5 syllables, rhyme B: -ai)\n5. 半梦半希缘 (5 chars = 5 syllables, rhyme C: -an)\n\n## Phase 2: Syllable Refinement\n\nVerifying each line:\n- Line 1: 死(1) 亡(1) 永(1) 远(1) 留(1) = 5 ✓\n- Line 2: 投(1) 掷(1) 骰(1) 子(1) 来(1) = 5 ✓\n- Line 3: 冒(1) 着(1) 傻(1) 又(1) 莽(1) 又(1) 蛮(1) = 7 ✓\n- Line 4: 代(1) 价(1) 太(1) 高(1) 来(1) = 5 ✓\n- Line 5: 半(1) 梦(1) 半(1) 希(1) 缘(1) = 5 ✓\n\n## Final Check\n\nRhyme verification (A B C B C):\n- Lines 2 & 4 both end in 来 (lai) ✓\n- Lines 3 & 5 both end in -an sound (蛮/缘) ✓\n\n---\n\n1. 死亡永远留\n2. 投掷骰子来\n3. 冒着傻又莽又蛮\n4. 代价太高来\n5. 半梦半希缘",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

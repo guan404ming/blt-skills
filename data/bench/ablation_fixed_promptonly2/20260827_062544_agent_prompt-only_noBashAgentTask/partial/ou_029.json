@@ -1,0 +1,85 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.04444444444444444,
+  "ari": -0.17647058823529413,
+  "src_syl": [
+    16,
+    8,
+    9,
+    8,
+    9
+  ],
+  "tgt_syl": [
+    16,
+    8,
+    8,
+    8,
+    10
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCBB",
+  "match": "3/5",
+  "translations": [
+    "在连绵山脚下鲜花都绽放开来阵阵香",
+    "什么样节奏最摇摆",
+    "哪一首歌是最欢乐",
+    "弯曲河水自苍天来",
+    "缤纷色彩一起流向大海"
+  ],
+  "time_seconds": 36.83,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.0356036,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5272,
+      "cache_read_input_tokens": 43446,
+      "output_tokens": 4139,
+      "output_tokens_details": {
+        "thinking_tokens": 3433
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5272,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 3951,
+          "cache_read_input_tokens": 24017,
+          "cache_creation_input_tokens": 684,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 684
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\nSyllable counts:\n1. At-the-foot-of-the-con-tin-u-ous-moun-tains-the-flow-ers-o-pen = 16\n2. What-kind-of-rhy-thm-is-most-swing = 8\n3. Which-song-is-the-hap-pi-est-one = 8\n4. The-curved-riv-er-comes-from-heav-en = 8\n5. A-ri-ot-of-col-our-flows-to-the-sea = 10\n\nRhyme scheme: ABCDE (no rhymes—each line ends in different sound)\n\n## Phase 1: Initial Translation\n\n1. (16) 在连绵山脚下鲜花都绽放开来阵阵香\n2. (8) 什么样节奏最摇摆\n3. (8) 哪一首歌是最欢乐\n4. (8) 弯曲河水自苍天来\n5. (10) 缤纷色彩一起流向大海\n\n## Phase 2: Syllable Refinement\n\nRecount all:\n1. 在连绵山脚下鲜花都绽放开来阵阵香 = 16 ✓\n2. 什么样节奏最摇摆 = 8 ✓\n3. 哪一首歌是最欢乐 = 8 ✓\n4. 弯曲河水自苍天来 = 8 ✓\n5. 缤纷色彩一起流向大海 = 10 ✓\n\n## Final Check\n\nRhyme ends: 香(A) / 摆(B) / 乐(C) / 来(D) / 海(E)—all different ✓\n\n---\n\n1. 在连绵山脚下鲜花都绽放开来阵阵香\n2. 什么样节奏最摇摆\n3. 哪一首歌是最欢乐\n4. 弯曲河水自苍天来\n5. 缤纷色彩一起流向大海",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

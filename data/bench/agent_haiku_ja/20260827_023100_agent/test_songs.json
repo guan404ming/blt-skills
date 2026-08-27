@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ou_001",
+    "source_lines": [
+      "An experience we've never felt before",
+      "The freedom in the clouds is open",
+      "And the world is with you",
+      "My world is bright with you",
+      "How unbelievable"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 102
+    }
+  },
+  {
+    "id": "ou_002",
+    "source_lines": [
+      "Free to explore in",
+      "A sea of stars and mornings",
+      "(Don't be afraid to open your eyes)",
+      "There's so much to discover",
+      "(Take a deep breath and relax)"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 108
+    }
+  },
+  {
+    "id": "ou_003",
+    "source_lines": [
+      "Stirring",
+      "It's meant to be",
+      "Oh, together",
+      "Are you tired yet? Would you reach out both your hands",
+      "If you want to embrace, why do you clench your fists?"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 122
+    }
+  },
+  {
+    "id": "ou_004",
+    "source_lines": [
+      "Are you ready yet? Time doesn't turn back",
+      "I want to fly without any reason",
+      "No matter how lonely the ends of the world are",
+      "You'll have me, for certain, by your side",
+      "We've said before, that no matter how wide the world"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 130
+    }
+  },
+  {
+    "id": "ou_005",
+    "source_lines": [
+      "I want to forget, but I cannot forget after all.",
+      "Just wait until the dark night,",
+      "to dream about the girl (I) once loved.",
+      "Let go, I hold your hand again",
+      "every time I choose to forgive and endure"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 356
+    }
+  },
+  {
+    "id": "ou_006",
+    "source_lines": [
+      "Jing Jing Sheng kai in front of the Buddha",
+      "Out of silt mud not stained by the wind and sleep",
+      "Flowers bloom without words, flowers fall without words",
+      "And you again three life",
+      "Come to you neither too early nor too late"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 383
+    }
+  },
+  {
+    "id": "ou_007",
+    "source_lines": [
+      "Then the dusk of the desert would have turned red",
+      "Is there somebody who can untie me from thousand years of loneliness?",
+      "I see you in the wings that chase the night",
+      "Circling the warmth of candlelight",
+      "I hear you in the wind as the two poles spin"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 419
+    }
+  },
+  {
+    "id": "ou_008",
+    "source_lines": [
+      "I had tumbled my youth into her",
+      "I had also plucked my strings into the height of summer",
+      "If it moves your heart, then let cosmic connection take you there",
+      "Walking against the light, letting the elements hit me",
+      "A short road, starting and stopping"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 456
+    }
+  },
+  {
+    "id": "ou_009",
+    "source_lines": [
+      "But if",
+      "You can still",
+      "Stop and think",
+      "Of me",
+      "Think of all the things"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 571
+    }
+  },
+  {
+    "id": "ou_010",
+    "source_lines": [
+      "(You gotta seize the opportunity whenever you can)",
+      "All I want",
+      "To be present",
+      "To be full",
+      "All I need"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 814
+    }
+  },
+  {
+    "id": "ou_011",
+    "source_lines": [
+      "will always stay with me in my heart",
+      "Mum I want to sing for you, I love you.",
+      "I've never seen my mother",
+      "But I've always loved her",
+      "I never talked to her"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 895
+    }
+  },
+  {
+    "id": "ou_012",
+    "source_lines": [
+      "You are the most beautiful clouds in my heart",
+      "I keep you with the food and wine",
+      "to sing the most-dazzle folk style forever",
+      "It's the most beautiful posture of the whole sky",
+      "( Chorus ) Yo La la he la bei"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 914
+    }
+  },
+  {
+    "id": "ou_013",
+    "source_lines": [
+      "In the dark of night",
+      "The stars light up the sky",
+      "We see them flying free",
+      "That's just like you and me",
+      "Everyone is lonely sometimes"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 952
+    }
+  },
+  {
+    "id": "ou_014",
+    "source_lines": [
+      "To say I love yo.u",
+      "All I want is you to understand",
+      "That when I take your hand",
+      "It's 'cause I want to.",
+      "We are all born in a world of doubt."
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 1003
+    }
+  },
+  {
+    "id": "ou_015",
+    "source_lines": [
+      "And If my boss fired me or my cat ran up a",
+      "tree",
+      "Sticks and stones",
+      "Won't break my bones",
+      "Oh, Emma-Lee, oh"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 1126
+    }
+  },
+  {
+    "id": "ou_016",
+    "source_lines": [
+      "The moon is the river's romantic eye.",
+      "I lift a cup alone, the curtains of the willow tree open,",
+      "Paying respects to this life and outside in the spring breeze,",
+      "The flowers have not withered.",
+      "Ah, it's been years since the beginnings of our adventures."
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 1728
+    }
+  },
+  {
+    "id": "ou_017",
+    "source_lines": [
+      "You knew the deal, no one gives a damn",
+      "just another needy kid, sob story in hand",
+      "keep your secrets covered up up up",
+      "we don’t need another cut cut cut",
+      "But you couldn’t hide a heart made of glass"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2069
+    }
+  },
+  {
+    "id": "ou_018",
+    "source_lines": [
+      "We went for a swim",
+      "The flames of the sun burned my skin.",
+      "This is why we'll never go to the pool together",
+      "Ever again.",
+      "In the place there are countless rows"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2233
+    }
+  },
+  {
+    "id": "ou_019",
+    "source_lines": [
+      "No shirts, no blouse",
+      "Just us, you find out",
+      "Nothing I really wanna tell you about no",
+      "Cos it's too cold",
+      "For you here"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2298
+    }
+  },
+  {
+    "id": "ou_020",
+    "source_lines": [
+      "Something good what's between us.",
+      "Now you're not feeling alright.",
+      "Lying in my bed on a loneliness night.",
+      "I need you baby.",
+      "I've been looking for you till my heart's gone blind."
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2418
+    }
+  },
+  {
+    "id": "ou_021",
+    "source_lines": [
+      "Is there a time for keeping your head down",
+      "For getting on with your day",
+      "Is there a time for kohl and lipstick",
+      "A time for curling hair",
+      "Is there a time for high street shopping"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2465
+    }
+  },
+  {
+    "id": "ou_022",
+    "source_lines": [
+      "that you'll always be together,",
+      "You got to give her some faith, hold her tight",
+      "A little tenderness, you gotta treat her right,",
+      "She will be there for you, takin' good care of you,",
+      "Ya really gotta love your woman..."
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2619
+    }
+  },
+  {
+    "id": "ou_023",
+    "source_lines": [
+      "Won't be part of your game",
+      "Who am I, do you always ask yourself this question",
+      "Who am I, is always living in others' expectation",
+      "Who am I, who has helped you define without authority",
+      "Who are you, it can only be safe if it is not yourself"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2661
+    }
+  },
+  {
+    "id": "ou_024",
+    "source_lines": [
+      "For I'm also one of your sweethearts",
+      "If I would have to live my life again",
+      "I'd stay in love with you the way I've been",
+      "Your love is something no one ever can replace",
+      "I can't imagine life with someone else"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2771
+    }
+  },
+  {
+    "id": "ou_025",
+    "source_lines": [
+      "My shell girl",
+      "Don't be afraid, my shell girl",
+      "A mysterious body, my shell girl",
+      "Let all of the uneasiness slowly walk away",
+      "Slowly walk away, shell girl"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2872
+    }
+  },
+  {
+    "id": "ou_026",
+    "source_lines": [
+      "Grows up.",
+      "If I escape will I be saved?",
+      "Can't estimate when you'll fade",
+      "Tell me I can't wait",
+      "I'm learning fast I can't turn back"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 2932
+    }
+  },
+  {
+    "id": "ou_027",
+    "source_lines": [
+      "Standing there lookin like you don’t know what to say,",
+      "But I know that face.",
+      "And here I am,",
+      "Bracing myself for what I know is coming my way",
+      "What a waste."
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 3016
+    }
+  },
+  {
+    "id": "ou_028",
+    "source_lines": [
+      "Don’t you say",
+      "That we can still be friends,",
+      "It doesn’t work that way,",
+      "The end is the end.",
+      "And don’t you dare think"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 3033
+    }
+  },
+  {
+    "id": "ou_029",
+    "source_lines": [
+      "And don’t you dare think",
+      "That I'll pack up all my tears and take them home,",
+      "And cry them out when I’m alone",
+      "I'll Do it right here",
+      "I'm crying right now"
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 3037
+    }
+  },
+  {
+    "id": "ou_030",
+    "source_lines": [
+      "Arriving at the boundaries of my consciousness",
+      "I see my father seated on a cloud's rim, smoking.",
+      "just as before.\"",
+      "Those who come from mountains, streams, lakes and seas",
+      "are now confined to the night, the kitchen and to sex."
+    ],
+    "source_lang": "en-us",
+    "target_lang": "ja",
+    "metadata": {
+      "artist": "ou-test",
+      "test_start_line": 3654
+    }
+  }
+]

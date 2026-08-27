@@ -1,0 +1,89 @@
+{
+  "id": "ou_013",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    11,
+    12,
+    6,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    11,
+    12,
+    6,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "静静之音开在佛陀前殿",
+    "出淤泥而不被风梦沾污染",
+    "花开无言花落无言如梦幻去",
+    "你我三生轮回",
+    "来见你恰好不早不晚相思"
+  ],
+  "time_seconds": 115.48,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 15,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0837512,
+    "usage": {
+      "input_tokens": 44,
+      "cache_creation_input_tokens": 8322,
+      "cache_read_input_tokens": 143732,
+      "output_tokens": 10538,
+      "output_tokens_details": {
+        "thinking_tokens": 9310
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8322,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 8609,
+          "cache_read_input_tokens": 31201,
+          "cache_creation_input_tokens": 530,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 530
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "运行音节模式分析后，我现在有所有约束。进行 Phase 1 初始翻译。\n\n目标音节数：10、11、12、6、11\n押韵方案：ABCDE（无重复）\n音节模式已提取\n\n中文翻译（10、11、12、6、11个字）：\n\n1. 静静之音开在佛陀前殿\n2. 出淤泥而不被风梦沾污染\n3. 花开无言花落无言如梦幻去\n4. 你我三生轮回\n5. 来见你恰好不早不晚相思",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

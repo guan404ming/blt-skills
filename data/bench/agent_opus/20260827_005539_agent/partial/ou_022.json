@@ -1,0 +1,87 @@
+{
+  "id": "ou_022",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    8,
+    7,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    3,
+    8,
+    7,
+    4,
+    3
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "静下来",
+    "我还年轻我太天真",
+    "说点话我会当真",
+    "带我带我",
+    "去远方"
+  ],
+  "time_seconds": 86.41,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 10,
+    "cost_usd": 0.20652449999999997,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 3689,
+      "cache_read_input_tokens": 254609,
+      "output_tokens": 1690,
+      "output_tokens_details": {
+        "thinking_tokens": 772
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 3689,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 47,
+          "cache_read_input_tokens": 33456,
+          "cache_creation_input_tokens": 328,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 328
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 静下来\n2. 我还年轻我太天真\n3. 说点话我会当真\n4. 带我带我\n5. 去远方",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,90 @@
+{
+  "id": "ou_006",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    11,
+    12,
+    6,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    11,
+    12,
+    6,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "Buda puro brilla ante verdad",
+    "Lodo puro brota libre sin mancha",
+    "Flores hablan mudas caen sin sonido",
+    "Y tú renacer ser",
+    "Vienes a mí ni temprano ni tardar"
+  ],
+  "time_seconds": 326.69,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 97,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 57
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 51,
+      "rhyme-analyzer": 4,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 60,
+    "cost_usd": 0.29630150000000005,
+    "usage": {
+      "input_tokens": 252,
+      "cache_creation_input_tokens": 30330,
+      "cache_read_input_tokens": 1329245,
+      "output_tokens": 20493,
+      "output_tokens_details": {
+        "thinking_tokens": 14054
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 30330,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 138,
+          "cache_read_input_tokens": 53377,
+          "cache_creation_input_tokens": 362,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 362
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Buda puro brilla ante verdad\n2. Lodo puro brota libre sin mancha\n3. Flores hablan mudas caen sin sonido\n4. Y tú renacer ser\n5. Vienes a mí ni temprano ni tardar",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

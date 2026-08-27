@@ -1,0 +1,88 @@
+{
+  "id": "ou_072",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    13,
+    15,
+    14,
+    15
+  ],
+  "tgt_syl": [
+    6,
+    13,
+    15,
+    14,
+    15
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "不入你的游戏",
+    "我是谁，你总在问自己这疑问中",
+    "我是谁，永远活在他人期待的深渊中",
+    "我是谁，谁能凭何权就定义了你呢",
+    "你是谁，只有否定自己才能感到安全"
+  ],
+  "time_seconds": 110.93,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 23,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.09720329999999999,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 15737,
+      "cache_read_input_tokens": 214593,
+      "output_tokens": 8842,
+      "output_tokens_details": {
+        "thinking_tokens": 6890
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15737,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 250,
+          "cache_read_input_tokens": 38723,
+          "cache_creation_input_tokens": 423,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 423
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不入你的游戏\n2. 我是谁，你总在问自己这疑问中\n3. 我是谁，永远活在他人期待的深渊中\n4. 我是谁，谁能凭何权就定义了你呢\n5. 你是谁，只有否定自己才能感到安全",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

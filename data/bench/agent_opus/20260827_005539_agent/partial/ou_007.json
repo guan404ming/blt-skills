@@ -1,0 +1,87 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    8,
+    6,
+    2,
+    8
+  ],
+  "tgt_syl": [
+    5,
+    8,
+    6,
+    2,
+    8
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABACC",
+  "match": "5/5",
+  "translations": [
+    "恩典解我惧",
+    "恩典显现何等宝贵",
+    "初信那刻欢愉",
+    "第三",
+    "主已应许赐我福安"
+  ],
+  "time_seconds": 93.02,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.3492985,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 14796,
+      "cache_read_input_tokens": 244417,
+      "output_tokens": 3162,
+      "output_tokens_details": {
+        "thinking_tokens": 2015
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14796,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 59,
+          "cache_read_input_tokens": 34671,
+          "cache_creation_input_tokens": 292,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 292
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 恩典解我惧\n2. 恩典显现何等宝贵\n3. 初信那刻欢愉\n4. 第三\n5. 主已应许赐我福安",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

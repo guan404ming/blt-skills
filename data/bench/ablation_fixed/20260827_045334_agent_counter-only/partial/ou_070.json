@@ -1,0 +1,88 @@
+{
+  "id": "ou_070",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    13,
+    10,
+    8,
+    5
+  ],
+  "tgt_syl": [
+    9,
+    13,
+    10,
+    8,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "给她翅膀当她想飞翔",
+    "然后当你无力躺在她温暖怀里",
+    "你明白真心爱那个女人",
+    "当你爱她就告诉她",
+    "她真的被爱"
+  ],
+  "time_seconds": 77.64,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 12
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "lyrics-validator": 1
+    },
+    "num_turns": 15,
+    "cost_usd": 0.0642554,
+    "usage": {
+      "input_tokens": 42,
+      "cache_creation_input_tokens": 7883,
+      "cache_read_input_tokens": 159774,
+      "output_tokens": 6494,
+      "output_tokens_details": {
+        "thinking_tokens": 4969
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7883,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 116,
+          "cache_read_input_tokens": 36081,
+          "cache_creation_input_tokens": 457,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 457
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 给她翅膀当她想飞翔\n2. 然后当你无力躺在她温暖怀里\n3. 你明白真心爱那个女人\n4. 当你爱她就告诉她\n5. 她真的被爱",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

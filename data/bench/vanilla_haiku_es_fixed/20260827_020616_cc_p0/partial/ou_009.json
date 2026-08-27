@@ -1,0 +1,44 @@
+{
+  "id": "ou_009",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    3,
+    3,
+    2,
+    5
+  ],
+  "tgt_syl": [
+    2,
+    3,
+    3,
+    2,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "Si no",
+    "Tú puedes",
+    "Y piensa",
+    "De mí",
+    "Todas mis cosas"
+  ],
+  "time_seconds": 142.34,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 142.337,
+    "phase0_calls": 1
+  }
+}

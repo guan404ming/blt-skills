@@ -1,0 +1,85 @@
+{
+  "id": "ou_040",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.2857142857142857,
+  "src_syl": [
+    4,
+    4,
+    9,
+    9,
+    8
+  ],
+  "tgt_syl": [
+    4,
+    4,
+    9,
+    9,
+    8
+  ],
+  "src_rhyme": "AABAA",
+  "tgt_rhyme": "AABCC",
+  "match": "5/5",
+  "translations": [
+    "怎么办呢",
+    "我该咋呢",
+    "周游世界还有七个海",
+    "我想用你然后虐待你",
+    "我想知道真实的你"
+  ],
+  "time_seconds": 70.79,
+  "model": "haiku",
+  "skill": "lyrics-translator-prompt-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task",
+  "agent": {
+    "assistant_turns": 4,
+    "tool_calls": {
+      "Skill": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-prompt-only": 1
+    },
+    "script_calls": {},
+    "num_turns": 3,
+    "cost_usd": 0.056817200000000005,
+    "usage": {
+      "input_tokens": 20,
+      "cache_creation_input_tokens": 5929,
+      "cache_read_input_tokens": 43442,
+      "output_tokens": 8119,
+      "output_tokens_details": {
+        "thinking_tokens": 7373
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5929,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 7255,
+          "cache_read_input_tokens": 24013,
+          "cache_creation_input_tokens": 1345,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1345
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "## Step 0: Extract Constraints\n\nSyllable counts (source):\n1. Damn (1) what (1) to (1) do (1) = 4\n2. What (1) will (1) I (1) do (1) = 4\n3. Trav-el (2) the (1) world (1) and (1) the (1) sev-en (2) seas (1) = 9\n4. I (1) wan-na (2) use (1) you (1) and (1) a-buse (2) you (1) = 9\n5. I (1) wan-na (2) know (1) what's (1) in-side (2) you (1) = 8\n\nRhyme scheme:\n- Line 1: \"do\" /duː/ = A\n- Line 2: \"do\" /duː/ = A\n- Line 3: \"seas\" /siːz/ = B\n- Line 4: \"you\" /juː/ = C\n- Line 5: \"you\" /juː/ = C\n\nScheme: AABCC\n\n## Phase 1: Initial Translation\n\n1. 怎么办呢 (how-to-do + particle) = 4 chars\n2. 我该咋呢 (I-should-how + particle) = 4 chars\n3. 周游世界还有七个海 (travel-world + still-have + seven-seas) = 9 chars\n4. 我想用你然后虐待你 (I-want-use-you + then-abuse-you) = 9 chars\n5. 我想知道真实的你 (I-want-know-true-real-you) = 8 chars\n\n## Phase 2: Syllable Refinement\n\nAll lines match target counts exactly. No adjustments needed.\n\n## Final Check\n\n- Line 1: 4 syllables, ends 呢 (A) ✓\n- Line 2: 4 syllables, ends 呢 (A) ✓\n- Line 3: 9 syllables, ends 海 (B) ✓\n- Line 4: 9 syllables, ends 你 (C) ✓\n- Line 5: 8 syllables, ends 你 (C) ✓\n\n---\n\n1. 怎么办呢\n2. 我该咋呢\n3. 周游世界还有七个海\n4. 我想用你然后虐待你\n5. 我想知道真实的你",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

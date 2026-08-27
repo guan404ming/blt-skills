@@ -1,0 +1,44 @@
+{
+  "id": "ou_036",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    1,
+    3,
+    4,
+    5
+  ],
+  "tgt_syl": [
+    13,
+    1,
+    3,
+    4,
+    5
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "5/5",
+  "translations": [
+    "如果老板炒我或我猫爬树上面",
+    "树",
+    "木棍石",
+    "伤不了皮",
+    "噢艾玛丽噢"
+  ],
+  "time_seconds": 94.85,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 94.853,
+    "phase0_calls": 1
+  }
+}

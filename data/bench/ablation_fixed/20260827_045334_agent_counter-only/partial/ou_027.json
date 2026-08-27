@@ -1,0 +1,89 @@
+{
+  "id": "ou_027",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    13,
+    12,
+    8,
+    7
+  ],
+  "tgt_syl": [
+    6,
+    13,
+    12,
+    8,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我深爱你很多",
+    "我从未向你说过直到这一刻呀",
+    "妈我想告诉你我找到了真爱",
+    "她很像年轻时的你",
+    "你生我的那一天"
+  ],
+  "time_seconds": 79.52,
+  "model": "haiku",
+  "skill": "lyrics-translator-counter-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 27,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 11,
+      "Agent": 1
+    },
+    "skill_loads": {
+      "lyrics-translator-counter-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "lyrics-validator": 1
+    },
+    "num_turns": 15,
+    "cost_usd": 0.08613350000000002,
+    "usage": {
+      "input_tokens": 86,
+      "cache_creation_input_tokens": 9612,
+      "cache_read_input_tokens": 296331,
+      "output_tokens": 3014,
+      "output_tokens_details": {
+        "thinking_tokens": 1427
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9612,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 114,
+          "cache_read_input_tokens": 32554,
+          "cache_creation_input_tokens": 467,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 467
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我深爱你很多\n2. 我从未向你说过直到这一刻呀\n3. 妈我想告诉你我找到了真爱\n4. 她很像年轻时的你\n5. 你生我的那一天",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

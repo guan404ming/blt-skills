@@ -1,0 +1,90 @@
+{
+  "id": "ou_074",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    10,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    11,
+    11,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我也是你最情深的人",
+    "要再活一遍人生的日子",
+    "我会永远爱你似曾相识样",
+    "你的爱是谁都无法替代的",
+    "我无法想象没有你的活"
+  ],
+  "time_seconds": 116.21,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 25,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.06991339999999999,
+    "usage": {
+      "input_tokens": 49,
+      "cache_creation_input_tokens": 8760,
+      "cache_read_input_tokens": 189144,
+      "output_tokens": 6686,
+      "output_tokens_details": {
+        "thinking_tokens": 4957
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8760,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 166,
+          "cache_read_input_tokens": 36983,
+          "cache_creation_input_tokens": 431,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 431
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我也是你最情深的人\n2. 要再活一遍人生的日子\n3. 我会永远爱你似曾相识样\n4. 你的爱是谁都无法替代的\n5. 我无法想象没有你的活",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

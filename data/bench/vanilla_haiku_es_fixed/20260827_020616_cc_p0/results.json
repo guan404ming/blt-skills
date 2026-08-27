@@ -1,0 +1,1329 @@
+{
+  "method": "cc-skills-p0",
+  "date": "2026-08-27T02:31:00.275548",
+  "n": 30,
+  "seed": 42,
+  "avg_ser": 0.29333333333333333,
+  "avg_scre": 0.19678986753986752,
+  "avg_ari": 0.6962962962962963,
+  "avg_time": 144.37833333333336,
+  "results": [
+    {
+      "id": "ou_001",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        9,
+        6,
+        6,
+        5
+      ],
+      "tgt_syl": [
+        10,
+        9,
+        6,
+        6,
+        5
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "Sensación que nunca fue vivida",
+        "Libertad en nubes que vuelan",
+        "El mundo es mejor",
+        "Mi mundo es amor",
+        "Nada es igual"
+      ],
+      "time_seconds": 191.11,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 191.106,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_002",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        7,
+        9,
+        7,
+        6
+      ],
+      "tgt_syl": [
+        5,
+        7,
+        9,
+        7,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Explorar sin fin",
+        "Estrellas y mañanas",
+        "Sin miedo de abrir los ojos",
+        "Hay mucho que descubrir",
+        "Respira profundo"
+      ],
+      "time_seconds": 118.04,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 118.043,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_003",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        2,
+        4,
+        4,
+        12,
+        12
+      ],
+      "tgt_syl": [
+        2,
+        4,
+        4,
+        12,
+        12
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Mueve",
+        "Será así",
+        "Oh, sin cerrar",
+        "¿Ya estás cansado? ¿Me das ambas manos?",
+        "Quieres abrir pero cierras tu corazón"
+      ],
+      "time_seconds": 208.99,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 208.985,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_004",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        10,
+        12,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        10,
+        10,
+        12,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "¿Estás listo? Tiempo no regresa",
+        "Quiero volar sin causa ni razón",
+        "No importa cuán solo esté el mundo",
+        "Siempre conmigo estarás",
+        "Dijimos que el ancho no es verdad"
+      ],
+      "time_seconds": 149.85,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 149.848,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_005",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        14,
+        7,
+        9,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        14,
+        7,
+        9,
+        8,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Quiero poder olvidar pero no lo haré más",
+        "Espera por la noche",
+        "soñar de una niña que vi",
+        "Tomo tu mano otra vez",
+        "cada vez que debo perdonar tanto"
+      ],
+      "time_seconds": 159.14,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 159.142,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_006",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.37242424242424244,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        11,
+        12,
+        6,
+        11
+      ],
+      "tgt_syl": [
+        14,
+        16,
+        17,
+        9,
+        12
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCD",
+      "match": "0/5",
+      "translations": [
+        "Silenciosamente abierto ante el Buda",
+        "Del lodo surgido, no manchado por viento ni sueño",
+        "Flores florecen sin palabras, flores caen sin palabras",
+        "Te veo de nuevo, tres vidas",
+        "Llego a ti ni muy pronto ni muy tarde"
+      ],
+      "time_seconds": 21.13,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 21.13,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_007",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.5595454545454546,
+      "ari": 0.0,
+      "src_syl": [
+        11,
+        18,
+        10,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        20,
+        18,
+        14,
+        17,
+        16
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "Entonces el crepúsculo del desierto se habría vuelto rojo",
+        "¿Hay alguien que pueda desatarme de mil años de soledad?",
+        "Te veo en las alas que persiguen la noche",
+        "Girando alrededor del calor de la luz de las velas",
+        "Te escucho en el viento mientras los dos polos giran"
+      ],
+      "time_seconds": 10.8,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 10.802,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_008",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        9,
+        14,
+        15,
+        14,
+        8
+      ],
+      "tgt_syl": [
+        9,
+        14,
+        15,
+        14,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Volqué mi juventud en ella",
+        "Arranqué mis cuerdas en la cima del verano",
+        "Si toca tu corazón, que lo cósmico te lleve",
+        "Caminando contra la luz, dejando que toquen",
+        "Vía breve, ir y parar"
+      ],
+      "time_seconds": 85.09,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 85.085,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_009",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        2,
+        3,
+        3,
+        2,
+        5
+      ],
+      "tgt_syl": [
+        2,
+        3,
+        3,
+        2,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Si no",
+        "Tú puedes",
+        "Y piensa",
+        "De mí",
+        "Todas mis cosas"
+      ],
+      "time_seconds": 142.34,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 142.337,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_010",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        14,
+        3,
+        4,
+        3,
+        3
+      ],
+      "tgt_syl": [
+        14,
+        3,
+        4,
+        3,
+        3
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Debes coger la oportunidad cuando puedas",
+        "Ilusión",
+        "Estar aquí",
+        "Plenitud",
+        "Me basta"
+      ],
+      "time_seconds": 148.24,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 148.239,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_011",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        9,
+        10,
+        7,
+        6,
+        6
+      ],
+      "tgt_syl": [
+        9,
+        10,
+        7,
+        6,
+        6
+      ],
+      "src_rhyme": "ABCDD",
+      "tgt_rhyme": "ABCDD",
+      "match": "5/5",
+      "translations": [
+        "Siempre voy a recordarte",
+        "Mamá quiero cantarte, te amo",
+        "Nunca la pude mirar",
+        "Pero la quería",
+        "Nunca la podría"
+      ],
+      "time_seconds": 161.91,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 161.91,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_012",
+      "artist": "ou-test",
+      "ser": 0.2,
+      "scre": 0.05,
+      "ari": 1.0,
+      "src_syl": [
+        11,
+        8,
+        11,
+        12,
+        8
+      ],
+      "tgt_syl": [
+        11,
+        8,
+        11,
+        12,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "4/5",
+      "translations": [
+        "Nube bella de mi corazón puro",
+        "Contigo van vino y pan",
+        "Cantar el folk más brillante siempre ya",
+        "Es la postura bella de cielo azul",
+        "Yo la la he la bei"
+      ],
+      "time_seconds": 181.02,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 181.024,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_013",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 101.91,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 101.912,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_014",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        9,
+        6,
+        5,
+        9
+      ],
+      "tgt_syl": [
+        5,
+        9,
+        6,
+        5,
+        9
+      ],
+      "src_rhyme": "ABBAC",
+      "tgt_rhyme": "ABBAC",
+      "match": "5/5",
+      "translations": [
+        "Que te amo, yo",
+        "Solo quiero que lo entiendas",
+        "Sostengo tus palmas",
+        "Porque yo quiero",
+        "Nacemos en mundo de duda"
+      ],
+      "time_seconds": 242.04,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 242.037,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_015",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        1,
+        3,
+        4,
+        5
+      ],
+      "tgt_syl": [
+        13,
+        1,
+        3,
+        4,
+        5
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "5/5",
+      "translations": [
+        "Si jefe me corre o gato corrió ya",
+        "sí",
+        "Palos más",
+        "No duelen más",
+        "Mi Emma hoy"
+      ],
+      "time_seconds": 249.19,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 85,
+        "rhyme-analyzer": 17,
+        "syllable-pattern-analyzer": 5
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 249.194,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_016",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.45834249084249085,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        16,
+        13,
+        7,
+        15
+      ],
+      "tgt_syl": [
+        14,
+        23,
+        22,
+        10,
+        20
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "0/5",
+      "translations": [
+        "La luna es el ojo romántico del río.",
+        "Levanto una taza en soledad, se abren las cortinas del árbol sauce,",
+        "Rindiendo respetos a esta vida, afuera en la brisa primaveral,",
+        "Las flores no se han marchitado.",
+        "Ah, han pasado años desde el comienzo de nuestras aventuras."
+      ],
+      "time_seconds": 10.61,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 10.609,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_017",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.6944444444444444,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        12,
+        8,
+        9,
+        9
+      ],
+      "tgt_syl": [
+        17,
+        21,
+        12,
+        14,
+        16
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCD",
+      "match": "0/5",
+      "translations": [
+        "Sabías las reglas, a nadie le importa un carajo",
+        "Solo otro niño necesitado, historia de llanto en la mano",
+        "Guarda tus secretos tapados bien bien bien",
+        "No necesitamos otro corte corte corte",
+        "Pero no podías esconder un corazón de cristal"
+      ],
+      "time_seconds": 49.41,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 49.41,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_018",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        5,
+        8,
+        13,
+        4,
+        8
+      ],
+      "tgt_syl": [
+        5,
+        8,
+        13,
+        4,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Fuimos de baño",
+        "Las llamas me quemaron bien",
+        "Por eso nunca iremos a nadar juntos",
+        "Nunca, jamás",
+        "Allí, las filas sin parar"
+      ],
+      "time_seconds": 147.41,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 147.411,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_019",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        4,
+        5,
+        13,
+        4,
+        3
+      ],
+      "tgt_syl": [
+        4,
+        5,
+        13,
+        4,
+        3
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Sin ropa ya",
+        "Solo tú y yo",
+        "Nada, nada que quiero decirte siempre bien",
+        "Muy frío, sí",
+        "Tu lugar"
+      ],
+      "time_seconds": 154.09,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 55,
+        "rhyme-analyzer": 11,
+        "syllable-pattern-analyzer": 3
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 154.086,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_020",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        7,
+        11,
+        5,
+        11
+      ],
+      "tgt_syl": [
+        6,
+        7,
+        11,
+        5,
+        11
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABBCD",
+      "match": "5/5",
+      "translations": [
+        "Algo que nos une",
+        "No tienes compañía",
+        "En cama, la noche larga es fría",
+        "Te necesito",
+        "Te busqué hasta perder mi corazón"
+      ],
+      "time_seconds": 176.48,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 70,
+        "rhyme-analyzer": 14,
+        "syllable-pattern-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 176.475,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_021",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        7,
+        9,
+        6,
+        9
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 71.65,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 71.65,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_022",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.11166666666666666,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        8,
+        10,
+        12,
+        12,
+        10
+      ],
+      "tgt_syl": [
+        9,
+        10,
+        13,
+        15,
+        9
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "1/5",
+      "translations": [
+        "que siempre estaremos juntos,",
+        "Dale fe y abrázala fuerte",
+        "Un poco de ternura, debes tratarla bien,",
+        "Ella estará ahí para ti, cuidándote bien,",
+        "Tienes que amar a tu mujer..."
+      ],
+      "time_seconds": 11.88,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 11.876,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_023",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        6,
+        13,
+        15,
+        14,
+        15
+      ],
+      "tgt_syl": [
+        6,
+        13,
+        15,
+        14,
+        15
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABBCD",
+      "match": "5/5",
+      "translations": [
+        "No seré tu juego",
+        "¿Quién soy, siempre te haces la misma cuestión",
+        "¿Quién soy, siempre vivo en la ajena condición",
+        "¿Quién soy, quien te ayuda sin tu autoridad",
+        "¿Quién eres tú, solo es seguro si no eres tú"
+      ],
+      "time_seconds": 574.06,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 135,
+        "rhyme-analyzer": 27,
+        "syllable-pattern-analyzer": 7
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 574.06,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_024",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        10,
+        11,
+        11,
+        10
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 97.89,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 97.891,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_025",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        3,
+        7,
+        10,
+        13,
+        7
+      ],
+      "tgt_syl": [
+        3,
+        7,
+        10,
+        13,
+        7
+      ],
+      "src_rhyme": "AAABA",
+      "tgt_rhyme": "AAABA",
+      "match": "5/5",
+      "translations": [
+        "Mi perla",
+        "No tengas miedo, perla",
+        "Cuerpo misterioso, bella perla",
+        "Que vaya lentamente toda la ansiedad",
+        "Camina lento, perla"
+      ],
+      "time_seconds": 110.76,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 110.757,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_026",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        2,
+        8,
+        6,
+        5,
+        8
+      ],
+      "tgt_syl": [
+        2,
+        8,
+        6,
+        5,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Crece.",
+        "¿Si escapo seré feliz?",
+        "No sé cuándo irás.",
+        "Dime corazón.",
+        "Aprendo veloz no vuelvo."
+      ],
+      "time_seconds": 163.62,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 163.617,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_027",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        12,
+        5,
+        4,
+        13,
+        3
+      ],
+      "tgt_syl": [
+        12,
+        5,
+        4,
+        13,
+        3
+      ],
+      "src_rhyme": "ABCAD",
+      "tgt_rhyme": "ABCAD",
+      "match": "5/5",
+      "translations": [
+        "Mirando sin saber qué voy a decir",
+        "Sé esa cara",
+        "Heme aquí",
+        "Preparando para lo que sé va a venir",
+        "Solo mal"
+      ],
+      "time_seconds": 235.16,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 25,
+        "rhyme-analyzer": 5,
+        "syllable-pattern-analyzer": 1
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 235.159,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_028",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        3,
+        6,
+        6,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        3,
+        6,
+        6,
+        5,
+        5
+      ],
+      "src_rhyme": "ABACD",
+      "tgt_rhyme": "ABACD",
+      "match": "5/5",
+      "translations": [
+        "Qué dirás",
+        "Aún podemos ser",
+        "Eso no va atrás",
+        "El fin es el fin",
+        "No oses pensar"
+      ],
+      "time_seconds": 202.56,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 40,
+        "rhyme-analyzer": 8,
+        "syllable-pattern-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 202.555,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_029",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.6572727272727272,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        11,
+        8,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        9,
+        18,
+        10,
+        7,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABBCC",
+      "match": "0/5",
+      "translations": [
+        "Y no te atrevas a pensar",
+        "Que empaque todas mis lágrimas y me las lleve a casa,",
+        "Y las llore cuando esté sola",
+        "Lo haré aquí mismo",
+        "Estoy llorando ahora mismo"
+      ],
+      "time_seconds": 10.75,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 10,
+        "rhyme-analyzer": 2
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 10.752,
+        "phase0_calls": 1
+      }
+    },
+    {
+      "id": "ou_030",
+      "artist": "ou-test",
+      "ser": 0.0,
+      "scre": 0.0,
+      "ari": 1.0,
+      "src_syl": [
+        13,
+        12,
+        3,
+        10,
+        13
+      ],
+      "tgt_syl": [
+        13,
+        12,
+        3,
+        10,
+        13
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDE",
+      "match": "5/5",
+      "translations": [
+        "Llegando a los límites de mi consciencia",
+        "Veo mi padre en la nube fumando",
+        "de antes.",
+        "Quienes vienen de ríos y lagos",
+        "Confinados a noche, cocina y pasión."
+      ],
+      "time_seconds": 144.22,
+      "phases": 0,
+      "model": "haiku",
+      "skill_calls": {
+        "syllable-counter": 20,
+        "rhyme-analyzer": 4
+      },
+      "llm_calls": 1,
+      "phase_metrics": {
+        "phase0_time_s": 144.223,
+        "phase0_calls": 1
+      }
+    }
+  ],
+  "skill_counts": {
+    "syllable-counter": 450,
+    "rhyme-analyzer": 90,
+    "syllable-pattern-analyzer": 30
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ou_071",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "tgt_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "你们永远真在一起",
+    "你要给她信心紧紧抱爱",
+    "温柔对待好好照顾爱护她来",
+    "她会一直陪你身边细心关心",
+    "你真的要好好爱女人啊"
+  ],
+  "time_seconds": 155.58,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 42,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 11,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.14710930000000003,
+    "usage": {
+      "input_tokens": 132,
+      "cache_creation_input_tokens": 18793,
+      "cache_read_input_tokens": 532513,
+      "output_tokens": 11228,
+      "output_tokens_details": {
+        "thinking_tokens": 9159
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 18793,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 214,
+          "cache_read_input_tokens": 42007,
+          "cache_creation_input_tokens": 353,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 353
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你们永远真在一起\n2. 你要给她信心紧紧抱爱\n3. 温柔对待好好照顾爱护她来\n4. 她会一直陪你身边细心关心\n5. 你真的要好好爱女人啊",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

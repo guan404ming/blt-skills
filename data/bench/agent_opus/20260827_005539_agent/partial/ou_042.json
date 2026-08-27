@@ -1,0 +1,87 @@
+{
+  "id": "ou_042",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "tgt_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "但我们发现太迟",
+    "于是泪水滴落心间",
+    "我们的相遇如此完美",
+    "我仍记得分别那一刻",
+    "互相拉扯着多么舍不得就此分开两端"
+  ],
+  "time_seconds": 63.35,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 12,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "2>": 1,
+      "syllable-counter": 4,
+      "rhyme-analyzer": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.3086945,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 13851,
+      "cache_read_input_tokens": 243359,
+      "output_tokens": 1937,
+      "output_tokens_details": {
+        "thinking_tokens": 488
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13851,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 79,
+          "cache_read_input_tokens": 33405,
+          "cache_creation_input_tokens": 613,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 613
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 但我们发现太迟\n2. 于是泪水滴落心间\n3. 我们的相遇如此完美\n4. 我仍记得分别那一刻\n5. 互相拉扯着多么舍不得就此分开两端",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

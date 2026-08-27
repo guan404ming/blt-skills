@@ -1,0 +1,88 @@
+{
+  "id": "ou_092",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "tgt_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "我唯一害怕的是我会爱上你",
+    "我不敢让自己太靠近",
+    "我害怕没有足够的东西给你",
+    "爱你也需要一份很强的决断",
+    "也许有一天我无法控制的感情"
+  ],
+  "time_seconds": 127.6,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 47,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 19
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 3
+    },
+    "num_turns": 22,
+    "cost_usd": 0.13942870000000002,
+    "usage": {
+      "input_tokens": 172,
+      "cache_creation_input_tokens": 15847,
+      "cache_read_input_tokens": 691827,
+      "output_tokens": 7676,
+      "output_tokens_details": {
+        "thinking_tokens": 4984
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15847,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 191,
+          "cache_read_input_tokens": 38931,
+          "cache_creation_input_tokens": 325,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 325
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我唯一害怕的是我会爱上你\n2. 我不敢让自己太靠近\n3. 我害怕没有足够的东西给你\n4. 爱你也需要一份很强的决断\n5. 也许有一天我无法控制的感情",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

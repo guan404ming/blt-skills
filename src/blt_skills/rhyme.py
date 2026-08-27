@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 
-from .phonetics import IPA_VOWEL_PATTERN, normalize_language_code, phonemize_text
+from .phonetics import IPA_DIPHTHONG_PATTERN, normalize_language_code, phonemize_text
 
 
 def extract_rhyme_ending(text: str, language: str) -> str:
@@ -34,7 +34,7 @@ def extract_rhyme_ending(text: str, language: str) -> str:
         return text
 
     ipa_text = phonemize_text(text, language)
-    vowel_matches = list(re.finditer(IPA_VOWEL_PATTERN, ipa_text))
+    vowel_matches = list(re.finditer(IPA_DIPHTHONG_PATTERN, ipa_text))
     if not vowel_matches:
         return ""
 
@@ -57,7 +57,7 @@ def check_rhyme(text1: str, text2: str, language: str) -> bool:
     rhyme2 = extract_rhyme_ending(text2, language)
     if not rhyme1 or not rhyme2:
         return False
-    return rhyme1 == rhyme2 or rhyme1 in rhyme2 or rhyme2 in rhyme1
+    return rhyme1 == rhyme2
 
 
 def detect_rhyme_scheme(lines: list[str], language: str) -> str:

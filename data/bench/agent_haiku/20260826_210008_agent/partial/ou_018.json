@@ -1,0 +1,88 @@
+{
+  "id": "ou_018",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我已把青春倾倒给她",
+    "我曾把琴弦拨向盛夏炎炎的时刻",
+    "若能打动你心宇宙力把你送向远方",
+    "逆光而行，让各元素击打在我心间",
+    "短短的路开始停止"
+  ],
+  "time_seconds": 175.25,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 56,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 36
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 31,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 3
+    },
+    "num_turns": 39,
+    "cost_usd": 0.16229390000000002,
+    "usage": {
+      "input_tokens": 148,
+      "cache_creation_input_tokens": 16363,
+      "cache_read_input_tokens": 645999,
+      "output_tokens": 12964,
+      "output_tokens_details": {
+        "thinking_tokens": 8455
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 16363,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 165,
+          "cache_read_input_tokens": 44663,
+          "cache_creation_input_tokens": 374,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 374
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我已把青春倾倒给她\n2. 我曾把琴弦拨向盛夏炎炎的时刻\n3. 若能打动你心宇宙力把你送向远方\n4. 逆光而行，让各元素击打在我心间\n5. 短短的路开始停止",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ou_062",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    13,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    13,
+    4,
+    3
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "無衣無衫",
+    "只有你和我",
+    "沒有我真的想說的都關於無了",
+    "因太冷故",
+    "給你吧"
+  ],
+  "time_seconds": 133.13,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 16,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.09250630000000001,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 7593,
+      "cache_read_input_tokens": 172333,
+      "output_tokens": 12007,
+      "output_tokens_details": {
+        "thinking_tokens": 11185
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7593,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 10729,
+          "cache_read_input_tokens": 30622,
+          "cache_creation_input_tokens": 380,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 380
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "Extracting rhyme scheme and word-level patterns now.\n\nAll constraints extracted. Translating to Mandarin Chinese with exact syllable counts and pattern preservation.\n\n```\n1. 無衣無衫\n2. 只有你和我\n3. 沒有我真的想說的都關於無了\n4. 因太冷故\n5. 給你吧\n```",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

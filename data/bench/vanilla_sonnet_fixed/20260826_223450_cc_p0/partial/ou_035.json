@@ -1,0 +1,44 @@
+{
+  "id": "ou_035",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "tgt_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAD",
+  "match": "5/5",
+  "translations": [
+    "你收拾行李取下墙上的画像",
+    "当我问你你打算离开多久",
+    "你说世界已经崩坏了",
+    "夏天已过秋叶飘落满墙",
+    "又一个冬天将要来临"
+  ],
+  "time_seconds": 77.38,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 77.384,
+    "phase0_calls": 1
+  }
+}

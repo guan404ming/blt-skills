@@ -1,0 +1,44 @@
+{
+  "id": "ou_042",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.17023809523809524,
+  "ari": 0.0,
+  "src_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "tgt_syl": [
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AABCA",
+  "match": "0/5",
+  "translations": [
+    "但我们发现得太迟",
+    "于是眼泪只落给自己",
+    "我们的相遇曾那么完美",
+    "我仍记得，我们分开那一刻",
+    "彼此拉扯着，多么舍不得分离"
+  ],
+  "time_seconds": 10.73,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 10.734,
+    "phase0_calls": 1
+  }
+}

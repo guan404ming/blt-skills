@@ -1,0 +1,44 @@
+{
+  "id": "ou_079",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "没有惊喜",
+    "我们都明白",
+    "记忆来去匆匆",
+    "在这个旧站躲避那场雨",
+    "回忆没有感情的生活握紧我的手"
+  ],
+  "time_seconds": 64.68,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 40,
+    "rhyme-analyzer": 8,
+    "syllable-pattern-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 64.676,
+    "phase0_calls": 1
+  }
+}

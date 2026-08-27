@@ -1,0 +1,88 @@
+{
+  "id": "ou_047",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    10,
+    14,
+    6,
+    7
+  ],
+  "tgt_syl": [
+    10,
+    10,
+    14,
+    6,
+    7
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABACC",
+  "match": "5/5",
+  "translations": [
+    "黑白思绪全都向我俯首",
+    "走过他们未点灯的长廊",
+    "纵然我软弱你却像天使将我守候",
+    "悲伤呼唤我名",
+    "我知世事总不停"
+  ],
+  "time_seconds": 67.6,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 13,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 5
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 8,
+    "cost_usd": 0.12237240000000002,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 13561,
+      "cache_read_input_tokens": 208042,
+      "output_tokens": 2650,
+      "output_tokens_details": {
+        "thinking_tokens": 1813
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13561,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 84,
+          "cache_read_input_tokens": 46146,
+          "cache_creation_input_tokens": 344,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 344
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "全通过。\n\n1. 黑白思绪全都向我俯首\n2. 走过他们未点灯的长廊\n3. 纵然我软弱你却像天使将我守候\n4. 悲伤呼唤我名\n5. 我知世事总不停",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

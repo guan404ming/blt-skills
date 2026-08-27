@@ -1,0 +1,87 @@
+{
+  "id": "ou_092",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "tgt_syl": [
+    12,
+    9,
+    12,
+    12,
+    13
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABACD",
+  "match": "5/5",
+  "translations": [
+    "我只是害怕自己会爱上了你",
+    "不敢让自己靠得太近",
+    "我怕我没有足够的东西给你",
+    "爱你同样需要非常多的胆量",
+    "也许某天我再也无法阻止自我"
+  ],
+  "time_seconds": 54.32,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 8,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 4
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 2,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 7,
+    "cost_usd": 0.2644005,
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 13296,
+      "cache_read_input_tokens": 178211,
+      "output_tokens": 1691,
+      "output_tokens_details": {
+        "thinking_tokens": 693
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13296,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 87,
+          "cache_read_input_tokens": 33143,
+          "cache_creation_input_tokens": 320,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 320
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我只是害怕自己会爱上了你\n2. 不敢让自己靠得太近\n3. 我怕我没有足够的东西给你\n4. 爱你同样需要非常多的胆量\n5. 也许某天我再也无法阻止自我",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

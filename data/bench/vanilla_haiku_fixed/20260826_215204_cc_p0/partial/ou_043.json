@@ -1,0 +1,43 @@
+{
+  "id": "ou_043",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.2127983127983128,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    13,
+    12,
+    7,
+    9
+  ],
+  "tgt_syl": [
+    9,
+    7,
+    10,
+    8,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "长如大道，丑如癞蛤蟆",
+    "美如墙上的画框",
+    "强如家庭，坚强如我所愿",
+    "明如白昼，轻如游戏",
+    "坚如钉子，壮如鲸鱼"
+  ],
+  "time_seconds": 13.02,
+  "phases": 0,
+  "model": "haiku",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 13.019,
+    "phase0_calls": 1
+  }
+}

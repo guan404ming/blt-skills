@@ -1,0 +1,89 @@
+{
+  "id": "ou_095",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    5,
+    6,
+    5,
+    4
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    6,
+    5,
+    4
+  ],
+  "src_rhyme": "ABCBD",
+  "tgt_rhyme": "ABCBD",
+  "match": "5/5",
+  "translations": [
+    "死亡是永恒",
+    "掷骰博未来",
+    "做傻事太冒险",
+    "赌注最凄哀",
+    "半梦期许"
+  ],
+  "time_seconds": 117.39,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 18,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 11,
+    "cost_usd": 0.09510740000000001,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 15175,
+      "cache_read_input_tokens": 202074,
+      "output_tokens": 8898,
+      "output_tokens_details": {
+        "thinking_tokens": 7917
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15175,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 170,
+          "cache_read_input_tokens": 30751,
+          "cache_creation_input_tokens": 7833,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7833
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "```\n1. 死亡是永恒\n2. 掷骰博未来\n3. 做傻事太冒险\n4. 赌注最凄哀\n5. 半梦期许\n```",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

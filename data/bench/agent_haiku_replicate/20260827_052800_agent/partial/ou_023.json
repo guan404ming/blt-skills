@@ -1,0 +1,90 @@
+{
+  "id": "ou_023",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    7,
+    7,
+    8,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    7,
+    7,
+    8,
+    5
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABCD",
+  "match": "5/5",
+  "translations": [
+    "如太阳",
+    "你温暖普照四方",
+    "我问你人何故逝",
+    "你说我们各有使命",
+    "缓缓滑向海"
+  ],
+  "time_seconds": 109.78,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 24,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.09881820000000001,
+    "usage": {
+      "input_tokens": 60,
+      "cache_creation_input_tokens": 15969,
+      "cache_read_input_tokens": 214452,
+      "output_tokens": 9075,
+      "output_tokens_details": {
+        "thinking_tokens": 7159
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15969,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 165,
+          "cache_read_input_tokens": 38963,
+          "cache_creation_input_tokens": 415,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 415
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 如太阳\n2. 你温暖普照四方\n3. 我问你人何故逝\n4. 你说我们各有使命\n5. 缓缓滑向海",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,90 @@
+{
+  "id": "ou_003",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 0.0,
+  "src_syl": [
+    2,
+    4,
+    4,
+    12,
+    12
+  ],
+  "tgt_syl": [
+    2,
+    4,
+    4,
+    12,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "5/5",
+  "translations": [
+    "揺れ",
+    "定めよ",
+    "二人で",
+    "もう疲れた？両手を出す？",
+    "抱きたいのに、なぜ握るの？"
+  ],
+  "time_seconds": 104.54,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 35,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 17
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 14,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 20,
+    "cost_usd": 0.09464020000000001,
+    "usage": {
+      "input_tokens": 84,
+      "cache_creation_input_tokens": 14041,
+      "cache_read_input_tokens": 319592,
+      "output_tokens": 6903,
+      "output_tokens_details": {
+        "thinking_tokens": 4571
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14041,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 224,
+          "cache_read_input_tokens": 36975,
+          "cache_creation_input_tokens": 475,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 475
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 揺れ\n2. 定めよ\n3. 二人で\n4. もう疲れた？両手を出す？\n5. 抱きたいのに、なぜ握るの？",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

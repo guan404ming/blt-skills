@@ -1,0 +1,88 @@
+{
+  "id": "ou_078",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "tgt_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "生长",
+    "若我逃离能得救呢",
+    "你褪去的时候",
+    "告诉我别等",
+    "我学得快回不了家"
+  ],
+  "time_seconds": 115.59,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 30,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 15
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 13,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 18,
+    "cost_usd": 0.08941990000000001,
+    "usage": {
+      "input_tokens": 66,
+      "cache_creation_input_tokens": 10605,
+      "cache_read_input_tokens": 261589,
+      "output_tokens": 8397,
+      "output_tokens_details": {
+        "thinking_tokens": 6184
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10605,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 84,
+          "cache_read_input_tokens": 38938,
+          "cache_creation_input_tokens": 320,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 320
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 生长\n2. 若我逃离能得救呢\n3. 你褪去的时候\n4. 告诉我别等\n5. 我学得快回不了家",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

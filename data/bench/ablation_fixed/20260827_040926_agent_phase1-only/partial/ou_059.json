@@ -1,0 +1,89 @@
+{
+  "id": "ou_059",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    5,
+    8,
+    13,
+    4
+  ],
+  "tgt_syl": [
+    10,
+    5,
+    8,
+    13,
+    4
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "她說了你叫我的那件事",
+    "我們去游泳",
+    "陽光火焰燒我皮膚",
+    "所以我們永遠都不會一起去游",
+    "再也不會"
+  ],
+  "time_seconds": 79.0,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 18,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 7
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 5,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 10,
+    "cost_usd": 0.0722127,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 7690,
+      "cache_read_input_tokens": 262517,
+      "output_tokens": 6101,
+      "output_tokens_details": {
+        "thinking_tokens": 5221
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7690,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 4839,
+          "cache_read_input_tokens": 30689,
+          "cache_creation_input_tokens": 410,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 410
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 她說了你叫我的那件事\n2. 我們去游泳\n3. 陽光火焰燒我皮膚\n4. 所以我們永遠都不會一起去游\n5. 再也不會",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

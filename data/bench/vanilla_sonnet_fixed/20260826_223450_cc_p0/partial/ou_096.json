@@ -1,0 +1,43 @@
+{
+  "id": "ou_096",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.08222222222222222,
+  "ari": 1.0,
+  "src_syl": [
+    15,
+    4,
+    6,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    13,
+    4,
+    6,
+    5,
+    8
+  ],
+  "src_rhyme": "ABBBC",
+  "tgt_rhyme": "ABBBC",
+  "match": "2/5",
+  "translations": [
+    "我从心底祝福你，但为何我哭了？",
+    "我煮海鲜",
+    "煮海鲜，炸海鲜",
+    "我爱吃海鲜",
+    "喜欢做，喜欢炸小鱼"
+  ],
+  "time_seconds": 5.66,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 10,
+    "rhyme-analyzer": 2
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 5.663,
+    "phase0_calls": 1
+  }
+}

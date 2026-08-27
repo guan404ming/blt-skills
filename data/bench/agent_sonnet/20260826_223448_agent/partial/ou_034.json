@@ -1,0 +1,85 @@
+{
+  "id": "ou_034",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "tgt_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "src_rhyme": "ABBAC",
+  "tgt_rhyme": "ABBAC",
+  "match": "5/5",
+  "translations": [
+    "只想说爱你",
+    "我只是多想要你明白",
+    "当我伸手牵来",
+    "只因我愿意",
+    "我们都生在疑惑之中"
+  ],
+  "time_seconds": 139.02,
+  "model": "sonnet",
+  "agent": {
+    "assistant_turns": 14,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      ".claude": 6
+    },
+    "num_turns": 9,
+    "cost_usd": 0.12179500000000001,
+    "usage": {
+      "input_tokens": 14,
+      "cache_creation_input_tokens": 5928,
+      "cache_read_input_tokens": 303125,
+      "output_tokens": 3743,
+      "output_tokens_details": {
+        "thinking_tokens": 2371
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5928,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 71,
+          "cache_read_input_tokens": 46397,
+          "cache_creation_input_tokens": 1157,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1157
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "都过。给最终结果。\n\n1. 只想说爱你\n2. 我只是多想要你明白\n3. 当我伸手牵来\n4. 只因我愿意\n5. 我们都生在疑惑之中",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

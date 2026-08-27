@@ -1,0 +1,90 @@
+{
+  "id": "ou_065",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "tgt_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBCD",
+  "match": "5/5",
+  "translations": [
+    "好就在我们中",
+    "你现在不开心啦",
+    "躺在我床上孤单的夜晚啦",
+    "我要你宝贝",
+    "我找你找到我的心都瞎了"
+  ],
+  "time_seconds": 100.21,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 32,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 17
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 14,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 20,
+    "cost_usd": 0.0972156,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 14844,
+      "cache_read_input_tokens": 285766,
+      "output_tokens": 7775,
+      "output_tokens_details": {
+        "thinking_tokens": 5560
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14844,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 237,
+          "cache_read_input_tokens": 37891,
+          "cache_creation_input_tokens": 362,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 362
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 好就在我们中\n2. 你现在不开心啦\n3. 躺在我床上孤单的夜晚啦\n4. 我要你宝贝\n5. 我找你找到我的心都瞎了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

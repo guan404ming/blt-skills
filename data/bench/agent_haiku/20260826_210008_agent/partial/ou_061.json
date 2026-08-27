@@ -1,0 +1,88 @@
+{
+  "id": "ou_061",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    11,
+    9,
+    9,
+    12
+  ],
+  "tgt_syl": [
+    13,
+    11,
+    9,
+    9,
+    12
+  ],
+  "src_rhyme": "ABBBC",
+  "tgt_rhyme": "ABBBC",
+  "match": "5/5",
+  "translations": [
+    "眼见非真实物，知者缄口不言语",
+    "全失矣，灵魂卖勇敢新世界",
+    "勇敢新世界，入新世界",
+    "于勇敢新世界，新世界",
+    "龙王陨落皇后亡，救赎何处现"
+  ],
+  "time_seconds": 125.24,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 34,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 13
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 10,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 16,
+    "cost_usd": 0.11251440000000001,
+    "usage": {
+      "input_tokens": 116,
+      "cache_creation_input_tokens": 10786,
+      "cache_read_input_tokens": 468014,
+      "output_tokens": 8805,
+      "output_tokens_details": {
+        "thinking_tokens": 6847
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10786,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 245,
+          "cache_read_input_tokens": 39217,
+          "cache_creation_input_tokens": 395,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 395
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 眼见非真实物，知者缄口不言语\n2. 全失矣，灵魂卖勇敢新世界\n3. 勇敢新世界，入新世界\n4. 于勇敢新世界，新世界\n5. 龙王陨落皇后亡，救赎何处现",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

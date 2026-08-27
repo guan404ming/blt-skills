@@ -1,0 +1,90 @@
+{
+  "id": "ou_015",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "tgt_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "因為到了千年以後",
+    "我已不再在人世間",
+    "我無法緊緊牽你",
+    "也不能再溫柔地親吻你的嘴",
+    "請你不要等待到千年之後"
+  ],
+  "time_seconds": 106.06,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 52,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 19
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 15,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 22,
+    "cost_usd": 0.12895650000000003,
+    "usage": {
+      "input_tokens": 172,
+      "cache_creation_input_tokens": 14184,
+      "cache_read_input_tokens": 680815,
+      "output_tokens": 6467,
+      "output_tokens_details": {
+        "thinking_tokens": 4060
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14184,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 197,
+          "cache_read_input_tokens": 37238,
+          "cache_creation_input_tokens": 355,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 355
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 因為到了千年以後\n2. 我已不再在人世間\n3. 我無法緊緊牽你\n4. 也不能再溫柔地親吻你的嘴\n5. 請你不要等待到千年之後",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

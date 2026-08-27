@@ -1,0 +1,89 @@
+{
+  "id": "ou_096",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    15,
+    4,
+    6,
+    6,
+    9
+  ],
+  "tgt_syl": [
+    15,
+    4,
+    6,
+    6,
+    9
+  ],
+  "src_rhyme": "ABBBC",
+  "tgt_rhyme": "ABBBC",
+  "match": "5/5",
+  "translations": [
+    "我衷心祝福你，但为什么我会哭泣呢",
+    "我煮海鲜",
+    "煮海鲜炸海鲜",
+    "我最爱吃海鲜",
+    "喜欢做喜欢炸小鱼儿"
+  ],
+  "time_seconds": 104.02,
+  "model": "haiku",
+  "skill": "lyrics-translator-phase1-only",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "agent": {
+    "assistant_turns": 21,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 8
+    },
+    "skill_loads": {
+      "lyrics-translator-phase1-only": 1
+    },
+    "script_calls": {
+      "syllable-counter": 9,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1
+    },
+    "num_turns": 11,
+    "cost_usd": 0.09355089999999999,
+    "usage": {
+      "input_tokens": 84,
+      "cache_creation_input_tokens": 13730,
+      "cache_read_input_tokens": 293619,
+      "output_tokens": 7329,
+      "output_tokens_details": {
+        "thinking_tokens": 6191
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13730,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 210,
+          "cache_read_input_tokens": 31182,
+          "cache_creation_input_tokens": 5957,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5957
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我衷心祝福你，但为什么我会哭泣呢\n2. 我煮海鲜\n3. 煮海鲜炸海鲜\n4. 我最爱吃海鲜\n5. 喜欢做喜欢炸小鱼儿",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

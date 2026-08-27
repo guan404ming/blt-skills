@@ -1,0 +1,90 @@
+{
+  "id": "ou_064",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    23,
+    27,
+    4,
+    5,
+    6
+  ],
+  "tgt_syl": [
+    23,
+    27,
+    4,
+    5,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "5/5",
+  "translations": [
+    "我想每天早晨和夜晚都看到你所有的真摯表情和聲音",
+    "我想在每個平行世界和你緊密相連跨越時光過去未來永遠相伴",
+    "你失心智",
+    "我做了這樣",
+    "寶貝我已離開"
+  ],
+  "time_seconds": 108.09,
+  "model": "haiku",
+  "skill": "lyrics-translator",
+  "allowed_tools": "Skill,Read",
+  "agent": {
+    "assistant_turns": 42,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 16
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 12,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 19,
+    "cost_usd": 0.12969290000000003,
+    "usage": {
+      "input_tokens": 148,
+      "cache_creation_input_tokens": 15521,
+      "cache_read_input_tokens": 594129,
+      "output_tokens": 7818,
+      "output_tokens_details": {
+        "thinking_tokens": 5567
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 15521,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 170,
+          "cache_read_input_tokens": 38559,
+          "cache_creation_input_tokens": 371,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 371
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想每天早晨和夜晚都看到你所有的真摯表情和聲音\n2. 我想在每個平行世界和你緊密相連跨越時光過去未來永遠相伴\n3. 你失心智\n4. 我做了這樣\n5. 寶貝我已離開",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

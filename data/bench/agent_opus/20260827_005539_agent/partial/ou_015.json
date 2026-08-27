@@ -1,0 +1,88 @@
+{
+  "id": "ou_015",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "tgt_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "因为千年之后那天",
+    "我已不在这个世界",
+    "无法紧握你的手",
+    "也不能再轻轻亲吻你的眉心",
+    "请别等到千年之后的那天"
+  ],
+  "time_seconds": 61.63,
+  "model": "opus",
+  "agent": {
+    "assistant_turns": 11,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 6
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "skills": 1,
+      "syllable-counter": 3,
+      "rhyme-analyzer": 1,
+      "lyrics-validator": 1
+    },
+    "num_turns": 9,
+    "cost_usd": 0.30726549999999997,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 13661,
+      "cache_read_input_tokens": 242851,
+      "output_tokens": 1966,
+      "output_tokens_details": {
+        "thinking_tokens": 707
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13661,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 73,
+          "cache_read_input_tokens": 33493,
+          "cache_creation_input_tokens": 335,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 335
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 因为千年之后那天\n2. 我已不在这个世界\n3. 无法紧握你的手\n4. 也不能再轻轻亲吻你的眉心\n5. 请别等到千年之后的那天",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

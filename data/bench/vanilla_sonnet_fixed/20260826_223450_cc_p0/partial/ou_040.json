@@ -1,0 +1,44 @@
+{
+  "id": "ou_040",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    4,
+    9,
+    9,
+    8
+  ],
+  "tgt_syl": [
+    4,
+    4,
+    9,
+    9,
+    8
+  ],
+  "src_rhyme": "AABAA",
+  "tgt_rhyme": "AABAA",
+  "match": "5/5",
+  "translations": [
+    "该怎么处",
+    "我该怎处",
+    "环游世界与七大海洋",
+    "我要利用你视你如奴",
+    "我想知道你的深腹"
+  ],
+  "time_seconds": 90.61,
+  "phases": 0,
+  "model": "sonnet",
+  "skill_calls": {
+    "syllable-counter": 55,
+    "rhyme-analyzer": 11,
+    "syllable-pattern-analyzer": 3
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 90.611,
+    "phase0_calls": 1
+  }
+}

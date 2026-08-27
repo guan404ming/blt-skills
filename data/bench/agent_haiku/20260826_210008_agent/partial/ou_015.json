@@ -1,0 +1,88 @@
+{
+  "id": "ou_015",
+  "artist": "ou-test",
+  "ser": 0.0,
+  "scre": 0.0,
+  "ari": 1.0,
+  "src_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "tgt_syl": [
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDA",
+  "match": "5/5",
+  "translations": [
+    "因为过了千年之后",
+    "我不再在这个世间",
+    "无法深深缠你心",
+    "也不能再温柔亲吻你的脸庞",
+    "请千万不要等到千年之后"
+  ],
+  "time_seconds": 100.22,
+  "model": "haiku",
+  "agent": {
+    "assistant_turns": 37,
+    "tool_calls": {
+      "Skill": 1,
+      "Bash": 20
+    },
+    "skill_loads": {
+      "lyrics-translator": 1
+    },
+    "script_calls": {
+      "syllable-counter": 16,
+      "rhyme-analyzer": 1,
+      "syllable-pattern-analyzer": 1,
+      "lyrics-validator": 2
+    },
+    "num_turns": 23,
+    "cost_usd": 0.0893374,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 14153,
+      "cache_read_input_tokens": 284354,
+      "output_tokens": 6504,
+      "output_tokens_details": {
+        "thinking_tokens": 3749
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 14153,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 8,
+          "output_tokens": 96,
+          "cache_read_input_tokens": 37221,
+          "cache_creation_input_tokens": 341,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 341
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 因为过了千年之后\n2. 我不再在这个世间\n3. 无法深深缠你心\n4. 也不能再温柔亲吻你的脸庞\n5. 请千万不要等到千年之后",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

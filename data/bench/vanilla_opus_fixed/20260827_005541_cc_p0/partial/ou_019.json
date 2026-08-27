@@ -1,0 +1,44 @@
+{
+  "id": "ou_019",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.1818681318681319,
+  "ari": 1.0,
+  "src_syl": [
+    7,
+    11,
+    7,
+    8,
+    13
+  ],
+  "tgt_syl": [
+    8,
+    11,
+    9,
+    10,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "听说那里有个虎穴",
+    "从小到大我们从没提起过",
+    "我骨子里是个山里人",
+    "刀耕火种的日子太难熬",
+    "革命之风正吹过这座山"
+  ],
+  "time_seconds": 7.19,
+  "phases": 0,
+  "model": "opus",
+  "skill_calls": {
+    "syllable-counter": 25,
+    "rhyme-analyzer": 5,
+    "syllable-pattern-analyzer": 1
+  },
+  "llm_calls": 1,
+  "phase_metrics": {
+    "phase0_time_s": 7.186,
+    "phase0_calls": 1
+  }
+}
