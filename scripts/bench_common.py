@@ -280,6 +280,12 @@ def save_results(results, method_name, songs, seed, outdir):
     )
 
 
+STAGE_DIRECTION = re.compile(
+    r"[\(（]\s*(?:副歌|合唱|間奏|间奏|前奏|尾奏|重複|重复|chorus|verse|bridge|intro|outro|repeat|x\s?\d+|\d+x)[^\)）]*[\)）]",
+    re.IGNORECASE,
+)
+
+
 def parse_translations(text, expected_count):
     translations: list[str] = []
     for line in text.strip().split("\n"):
@@ -290,8 +296,7 @@ def parse_translations(text, expected_count):
                 val.startswith("'") and val.endswith("'")
             ):
                 val = val[1:-1]
-            stripped = re.sub(r"[\(（][^\)）]*[\)）]", "", val).strip()
-            stripped = re.split(r"\s*[\(（]", stripped)[0].strip()
+            stripped = STAGE_DIRECTION.sub("", val).strip()
             stripped = re.split(r"\s+[-—]\s+", stripped)[0].strip()
             translations.append(stripped or val)
     if len(translations) >= expected_count:

@@ -8,6 +8,7 @@ source windows do not overlap, randomizes left/right per case, and writes two fi
 
 Usage:
     uv run scripts/make_human_eval.py -n 10 --seed 7
+    uv run scripts/make_human_eval.py --manifest data/human_eval/human_eval_key.csv   # reproduce the published sheet
 """
 
 import argparse
@@ -56,6 +57,11 @@ def main():
     ap.add_argument("-n", type=int, default=25, help="number of cases to sample")
     ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("-o", "--out-dir", default="data/human_eval")
+    ap.add_argument(
+        "--manifest",
+        default=None,
+        help="existing human_eval_key.csv to reproduce its items and A/B sides",
+    )
     args = ap.parse_args()
 
     songs, van = load_run(VANILLA)
@@ -74,6 +80,11 @@ def main():
         if len(chosen) == args.n:
             break
     ids = sorted(chosen)
+    manifest = {}
+    if args.manifest:
+        with open(args.manifest, encoding="utf-8") as f:
+            manifest = {r["case"]: r for r in csv.DictReader(f)}
+        ids = sorted(manifest)
 
     out = REPO / args.out_dir
     out.mkdir(parents=True, exist_ok=True)
@@ -82,7 +93,10 @@ def main():
     for sid in ids:
         src = songs[sid]["source_lines"]
         # randomize which side is which
-        if rng.random() < 0.5:
+        side_a = (
+            manifest[sid]["version_A"] if manifest else ("vanilla" if rng.random() < 0.5 else "blt")
+        )
+        if side_a == "vanilla":
             a_cond, b_cond = "vanilla", "blt"
             a_lines, b_lines = to_traditional(van[sid]), to_traditional(blt[sid])
         else:
