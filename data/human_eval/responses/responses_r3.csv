@@ -1,0 +1,11 @@
+rater,case,more_singable_A_or_B,MOS_A_singability_1to5,MOS_B_singability_1to5,MOS_A_naturalness_1to5,MOS_B_naturalness_1to5,MOS_A_meaning_1to5,MOS_B_meaning_1to5
+r3,ou_001,B,4,4,3,5,4,5
+r3,ou_018,B,3,4,3,4,3,4
+r3,ou_033,A,5,4,5,4,4,3
+r3,ou_038,B,3,3,4,3,5,4
+r3,ou_048,B,5,5,5,5,5,5
+r3,ou_051,B,3,4,3,4,3,4
+r3,ou_056,A,5,4,5,4,4,4
+r3,ou_058,A,4,4,4,4,4,4
+r3,ou_072,A,4,3,4,4,4,3
+r3,ou_077,A,5,4,4,4,4,5
