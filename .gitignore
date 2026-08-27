@@ -7,7 +7,6 @@ wheels/
 .venv*/
 .DS_Store
 data/lyric-trans/
-data/genius-lyrics/
 data/archive_pre_fix/
 paper/*.aux
 paper/*.bbl
