@@ -480,9 +480,9 @@ BLT ($n{=}30$)     & \textbf{0.013} & \textbf{0.003} & \textbf{0.615} & \textbf{
 \label{sec:human-eval}
 
 The structural metrics do not directly measure perceived singability.
-We run a blind A/B study on $n{=}10$ en$\rightarrow$zh items with six fluent-Mandarin raters (60 judgments) on the Opus~5 outputs of Table~\ref{tab:orchestrator}, choosing items that both systems completed and whose source windows do not overlap: raters pick the more \emph{singable} of two anonymized versions (Vanilla vs.\ BLT, side randomized) and rate each 1--5 on singability, naturalness, and meaning preservation.
+We run a blind A/B study on $n{=}10$ en$\rightarrow$zh items with six fluent-Mandarin raters (60 judgments) on the Opus~5 outputs of Table~\ref{tab:orchestrator}, on items both systems completed with non-overlapping windows: raters pick the more \emph{singable} of two anonymized versions (Vanilla vs.\ BLT, side randomized) and rate each 1--5 on singability, naturalness, and meaning preservation.
 BLT is preferred in 93\% of judgments (56/60) and wins all 10 items by majority (sign test $p{=}0.002$), and it scores higher on singability (MOS 4.38 vs.\ 3.00), naturalness (4.17 vs.\ 3.42), and meaning (4.23 vs.\ 3.27); two-way cluster bootstrap 95\% CIs over raters and items exclude zero for all three differences ($[+0.85, +1.97]$, $[+0.08, +1.45]$, $[+0.30, +1.68]$).
-Agreement is moderate on singability (Krippendorff's $\alpha{=}0.46$) and low on the other scales ($0.13$--$0.16$), and raters judged text only, so the study measures perceived textual singability; the meaning ratings suggest that the 0.02 COMET cost of Opus BLT is not perceived as a loss of sense.
+Agreement is moderate on singability (Krippendorff's $\alpha{=}0.46$) and low elsewhere ($0.13$--$0.16$); raters judged text only, and the meaning ratings suggest the 0.02 COMET cost of Opus BLT is not perceived as lost sense.
 
 \section{Conclusion}
 
