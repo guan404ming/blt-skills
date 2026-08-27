@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Build a blind A/B human-evaluation sheet for singability.
 
-Pairs Vanilla vs Phase 1+2 (Opus, en->zh) translations for a sample of cases,
-randomizes left/right per case, and writes two files:
+Pairs Vanilla vs BLT (Opus 5, en->zh) translations for a sample of cases whose
+source windows do not overlap, randomizes left/right per case, and writes two files:
   - human_eval_sheet.csv : what raters see (no condition labels)
   - human_eval_key.csv   : A/B -> condition mapping + case ids (kept separate)
 
 Usage:
-    uv run scripts/make_human_eval.py -n 25 --seed 7
+    uv run scripts/make_human_eval.py -n 10 --seed 7
 """
 
 import argparse
@@ -18,8 +18,17 @@ import random
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-VANILLA = "data/bench/ou_opus_vanilla_v2"
-P1P2 = "data/bench/ou_opus_p1p2_v2"
+VANILLA = "data/bench/vanilla_opus"
+BLT = "data/bench/agent_opus"
+
+
+def to_traditional(lines):
+    try:
+        from opencc import OpenCC
+    except ImportError:
+        return lines
+    cc = OpenCC("s2twp")
+    return [cc.convert(x) for x in lines]
 
 
 def load_run(pat):
@@ -28,7 +37,8 @@ def load_run(pat):
     trans = {}
     for p in glob.glob(f"{run_dir}/partial/*.json"):
         r = json.load(open(p))
-        trans[r["id"]] = r.get("translations", [])
+        if not r.get("failed"):
+            trans[r["id"]] = r.get("translations", [])
     return songs, trans
 
 
@@ -44,13 +54,21 @@ def main():
     args = ap.parse_args()
 
     songs, van = load_run(VANILLA)
-    _, p12 = load_run(P1P2)
+    _, blt = load_run(BLT)
 
-    # cases where both conditions produced full non-empty translations
-    ids = [sid for sid in songs if nonempty(van.get(sid)) and nonempty(p12.get(sid))]
+    ids = [sid for sid in songs if nonempty(van.get(sid)) and nonempty(blt.get(sid))]
     rng = random.Random(args.seed)
     rng.shuffle(ids)
-    ids = sorted(ids[: args.n])
+    chosen, used = [], set()
+    for sid in ids:
+        lines = set(songs[sid]["source_lines"])
+        if lines & used:
+            continue
+        chosen.append(sid)
+        used |= lines
+        if len(chosen) == args.n:
+            break
+    ids = sorted(chosen)
 
     out = REPO / args.out_dir
     out.mkdir(parents=True, exist_ok=True)
@@ -60,11 +78,11 @@ def main():
         src = songs[sid]["source_lines"]
         # randomize which side is which
         if rng.random() < 0.5:
-            a_cond, b_cond = "vanilla", "p1p2"
-            a_lines, b_lines = van[sid], p12[sid]
+            a_cond, b_cond = "vanilla", "blt"
+            a_lines, b_lines = to_traditional(van[sid]), to_traditional(blt[sid])
         else:
-            a_cond, b_cond = "p1p2", "vanilla"
-            a_lines, b_lines = p12[sid], van[sid]
+            a_cond, b_cond = "blt", "vanilla"
+            a_lines, b_lines = to_traditional(blt[sid]), to_traditional(van[sid])
         sheet_rows.append(
             {
                 "case": sid,
@@ -76,6 +94,8 @@ def main():
                 "MOS_B_singability_1to5": "",
                 "MOS_A_naturalness_1to5": "",
                 "MOS_B_naturalness_1to5": "",
+                "MOS_A_meaning_1to5": "",
+                "MOS_B_meaning_1to5": "",
             }
         )
         key_rows.append({"case": sid, "version_A": a_cond, "version_B": b_cond})
@@ -97,7 +117,8 @@ def main():
     print("- Judge each pair as a singable Chinese version of the English source,")
     print("  imagining both sung to the original melody (same number of notes).")
     print("- Pick the more singable version (A or B), then rate each 1-5 on")
-    print("  singability (fits the melody) and naturalness (reads as fluent Chinese).")
+    print("  singability (fits the melody), naturalness (fluent Chinese), and")
+    print("  meaning (keeps the sense and feeling of the English).")
 
 
 if __name__ == "__main__":

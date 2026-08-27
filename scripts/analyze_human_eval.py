@@ -3,11 +3,12 @@
 
 Reads per-rater CSVs from data/human_eval/responses/*.csv plus the answer key
 (human_eval_key.csv), decodes the A/B labels back to conditions (vanilla vs
-p1p2), and reports:
-  - preference rate for Phase 1+2 (% of rater x case judgments) with a
-    bootstrap CI and a two-sided sign test,
-  - mean MOS per condition for singability and naturalness, with the paired
-    difference and a bootstrap CI,
+blt), and reports:
+  - preference rate for BLT over all rater x case judgments and at the case
+    level (majority vote, sign test),
+  - mean MOS per condition for singability, naturalness, and meaning, with the
+    paired difference, a judgment-level bootstrap CI, and a two-way cluster
+    bootstrap CI over raters and cases,
   - inter-rater agreement via Krippendorff's alpha (nominal for the forced
     choice, ordinal for the MOS scales).
 
@@ -44,6 +45,26 @@ def bootstrap_ci(values, *, n_iter=5000, alpha=0.05, seed=0):
     lo = means[int(alpha / 2 * n_iter)]
     hi = means[int((1 - alpha / 2) * n_iter)]
     return (mean(values), lo, hi)
+
+
+def cluster_bootstrap_ci(records, stat, *, n_iter=5000, alpha=0.05, seed=0):
+    """Two-way cluster bootstrap over raters and cases; records are (rater, case, value)."""
+    raters = sorted({r for r, _, _ in records})
+    cases = sorted({c for _, c, _ in records})
+    rng = random.Random(seed)
+    stats = []
+    for _ in range(n_iter):
+        rc = defaultdict(int)
+        for r in rng.choices(raters, k=len(raters)):
+            rc[r] += 1
+        cc = defaultdict(int)
+        for c in rng.choices(cases, k=len(cases)):
+            cc[c] += 1
+        sample = [v for r, c, v in records for _ in range(rc[r] * cc[c])]
+        if sample:
+            stats.append(stat(sample))
+    stats.sort()
+    return stats[int(alpha / 2 * n_iter)], stats[int((1 - alpha / 2) * n_iter)]
 
 
 def sign_test_p(wins, losses):
@@ -113,13 +134,13 @@ def main():
         raise SystemExit(f"No response CSVs found in {args.responses}")
 
     # decoded judgments
-    prefs = []  # 1 if p1p2 preferred, else 0
-    pref_by_case = defaultdict(list)  # case -> [chosen condition] for alpha
-    mos = {"singability": defaultdict(list), "naturalness": defaultdict(list)}
-    mos_by_case = {
-        "singability": defaultdict(list),
-        "naturalness": defaultdict(list),
-    }  # (metric) -> "case::condition" -> [scores]
+    metrics = ("singability", "naturalness", "meaning")
+    prefs = []
+    pref_records = []
+    pref_by_case = defaultdict(list)
+    mos = {m: defaultdict(list) for m in metrics}
+    mos_by_case = {m: defaultdict(list) for m in metrics}
+    diff_records = {m: [] for m in metrics}
     raters = []
 
     for fp in files:
@@ -134,17 +155,21 @@ def main():
             cond_A = key[case]["version_A"]
             cond_B = key[case]["version_B"]
             chosen = cond_A if r["more_singable_A_or_B"] == "A" else cond_B
-            prefs.append(1 if chosen == "p1p2" else 0)
+            win = 1 if chosen == "blt" else 0
+            prefs.append(win)
+            pref_records.append((rater, case, win))
             pref_by_case[case].append(chosen)
-            for metric, (ca, cb) in {
-                "singability": ("MOS_A_singability_1to5", "MOS_B_singability_1to5"),
-                "naturalness": ("MOS_A_naturalness_1to5", "MOS_B_naturalness_1to5"),
-            }.items():
+            for metric in metrics:
+                ca, cb = f"MOS_A_{metric}_1to5", f"MOS_B_{metric}_1to5"
+                if ca not in r or not r[ca]:
+                    continue
                 sa, sb = int(r[ca]), int(r[cb])
                 mos[metric][cond_A].append(sa)
                 mos[metric][cond_B].append(sb)
                 mos_by_case[metric][f"{case}::{cond_A}"].append(sa)
                 mos_by_case[metric][f"{case}::{cond_B}"].append(sb)
+                blt_score, van_score = (sa, sb) if cond_A == "blt" else (sb, sa)
+                diff_records[metric].append((rater, case, blt_score - van_score))
 
     n_judg = len(prefs)
     print(f"Raters: {len(raters)} ({', '.join(raters)})")
@@ -155,28 +180,42 @@ def main():
     rate, lo, hi = bootstrap_ci([float(p) for p in prefs])
     p = sign_test_p(wins, n_judg - wins)
     a_pref = krippendorff_alpha(pref_by_case, level="nominal")
-    print("== Preference (Phase 1+2 vs Vanilla) ==")
+    case_wins = sum(1 for vs in pref_by_case.values() if vs.count("blt") > len(vs) / 2)
+    case_losses = sum(1 for vs in pref_by_case.values() if vs.count("blt") < len(vs) / 2)
+    clo, chi = cluster_bootstrap_ci(pref_records, mean)
+    print("== Preference (BLT vs Vanilla) ==")
     print(
-        f"  P1+2 preferred: {wins}/{n_judg} = {rate * 100:.0f}%  "
-        f"(95% CI {lo * 100:.0f}-{hi * 100:.0f}%)"
+        f"  BLT preferred: {wins}/{n_judg} = {rate * 100:.0f}%  "
+        f"(judgment bootstrap 95% CI {lo * 100:.0f}-{hi * 100:.0f}%; "
+        f"rater x case cluster bootstrap {clo * 100:.0f}-{chi * 100:.0f}%)"
     )
-    print(f"  sign test p = {p:.4g}")
+    print(f"  judgment-level sign test p = {p:.4g}")
+    print(
+        f"  case-level majority: {case_wins} wins / {case_losses} losses / "
+        f"{len(pref_by_case) - case_wins - case_losses} ties, sign test p = "
+        f"{sign_test_p(case_wins, case_losses):.3g}"
+    )
     print(f"  Krippendorff alpha (nominal): {a_pref:.2f}\n")
 
     # 2. MOS
-    for metric in ("singability", "naturalness"):
+    for metric in metrics:
         van = mos[metric]["vanilla"]
-        p12 = mos[metric]["p1p2"]
+        blt = mos[metric]["blt"]
+        if not van:
+            continue
         mv, lv, hv = bootstrap_ci([float(x) for x in van])
-        mp, lp, hp = bootstrap_ci([float(x) for x in p12])
-        # paired diff per (rater x case)
-        diff = [a - b for a, b in zip(p12, van)]
-        md, ld, hd = bootstrap_ci([float(x) for x in diff])
+        mp, lp, hp = bootstrap_ci([float(x) for x in blt])
+        diff = [float(v) for _, _, v in diff_records[metric]]
+        md, ld, hd = bootstrap_ci(diff)
+        dlo, dhi = cluster_bootstrap_ci(diff_records[metric], mean)
         a_mos = krippendorff_alpha(mos_by_case[metric], level="ordinal")
         print(f"== MOS {metric} ==")
         print(f"  Vanilla : {mv:.2f}  (95% CI {lv:.2f}-{hv:.2f})")
-        print(f"  P1+2    : {mp:.2f}  (95% CI {lp:.2f}-{hp:.2f})")
-        print(f"  diff P1+2 - Vanilla: {md:+.2f}  (95% CI {ld:+.2f}-{hd:+.2f})")
+        print(f"  BLT     : {mp:.2f}  (95% CI {lp:.2f}-{hp:.2f})")
+        print(
+            f"  diff BLT - Vanilla: {md:+.2f}  (judgment bootstrap 95% CI {ld:+.2f}-{hd:+.2f}; "
+            f"cluster bootstrap {dlo:+.2f}-{dhi:+.2f})"
+        )
         print(f"  Krippendorff alpha (ordinal): {a_mos:.2f}\n")
 
 

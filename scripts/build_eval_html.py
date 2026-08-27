@@ -84,11 +84,12 @@ TEMPLATE = r"""<!DOCTYPE html>
   </div>
   <ul>
     <li>Pick the <b>more singable</b> version (A or B).</li>
-    <li>Rate each version 1-5 on <b>singability</b> (fits the melody) and
-        <b>naturalness</b> (reads as fluent Chinese).</li>
+    <li>Rate each version 1-5 on <b>singability</b> (fits the melody),
+        <b>naturalness</b> (reads as fluent Chinese), and <b>meaning</b>
+        (keeps the sense and feeling of the English).</li>
   </ul>
   <p>Your name (used only in the exported filename):
-     <input id="rater" type="text" placeholder="rater name"></p>
+     <input id="rater" type="text" placeholder="rater id (e.g. r1)"></p>
   <button class="primary" onclick="start()">Start</button>
 </div>
 
@@ -110,6 +111,8 @@ TEMPLATE = r"""<!DOCTYPE html>
     <div class="q scale" id="sb"></div>
     <div class="q scale" id="na"></div>
     <div class="q scale" id="nb"></div>
+    <div class="q scale" id="ma"></div>
+    <div class="q scale" id="mb"></div>
   </fieldset>
 
   <div class="warn" id="warn"></div>
@@ -129,7 +132,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 const CASES = __CASES__;
 let rater = "";
 let i = 0;
-const ans = CASES.map(() => ({pick:"", sa:"", sb:"", na:"", nb:""}));
+const ans = CASES.map(() => ({pick:"", sa:"", sb:"", na:"", nb:"", ma:"", mb:""}));
 
 function start() {
   rater = (document.getElementById("rater").value || "").trim();
@@ -159,6 +162,8 @@ function render() {
   document.getElementById("sb").innerHTML = "Singability B: " + radios("sb", scale, a.sb);
   document.getElementById("na").innerHTML = "Naturalness A: " + radios("na", scale, a.na);
   document.getElementById("nb").innerHTML = "Naturalness B: " + radios("nb", scale, a.nb);
+  document.getElementById("ma").innerHTML = "Meaning A: " + radios("ma", scale, a.ma);
+  document.getElementById("mb").innerHTML = "Meaning B: " + radios("mb", scale, a.mb);
   document.getElementById("prevBtn").disabled = (i === 0);
   document.getElementById("nextBtn").textContent =
     (i === CASES.length - 1) ? "Finish" : "Next →";
@@ -167,10 +172,10 @@ function render() {
 
 function collect() {
   const get = n => (document.querySelector(`input[name="${n}"]:checked`) || {}).value || "";
-  ans[i] = {pick:get("pick"), sa:get("sa"), sb:get("sb"), na:get("na"), nb:get("nb")};
+  ans[i] = {pick:get("pick"), sa:get("sa"), sb:get("sb"), na:get("na"), nb:get("nb"), ma:get("ma"), mb:get("mb")};
 }
 
-function complete(a) { return a.pick && a.sa && a.sb && a.na && a.nb; }
+function complete(a) { return a.pick && a.sa && a.sb && a.na && a.nb && a.ma && a.mb; }
 
 function prev() { collect(); if (i > 0) { i--; render(); } }
 
@@ -190,11 +195,12 @@ function next() {
 function exportCsv() {
   const head = ["rater","case","more_singable_A_or_B",
     "MOS_A_singability_1to5","MOS_B_singability_1to5",
-    "MOS_A_naturalness_1to5","MOS_B_naturalness_1to5"];
+    "MOS_A_naturalness_1to5","MOS_B_naturalness_1to5",
+    "MOS_A_meaning_1to5","MOS_B_meaning_1to5"];
   const rows = [head.join(",")];
   CASES.forEach((c, k) => {
     const a = ans[k];
-    rows.push([rater, c.case, a.pick, a.sa, a.sb, a.na, a.nb].join(","));
+    rows.push([rater, c.case, a.pick, a.sa, a.sb, a.na, a.nb, a.ma, a.mb].join(","));
   });
   const blob = new Blob([rows.join("\n")], {type:"text/csv;charset=utf-8"});
   const url = URL.createObjectURL(blob);
