@@ -3,7 +3,7 @@
 
 Usage:
     uv run scripts/build_comet_payload.py --out /tmp/comet_payload.json \
-        blt=data/bench/agent_haiku/<run>/partial vanilla=data/bench/vanilla_haiku_fixed/<run>/partial \
+        blt=data/bench/agent_haiku/<run>/partial vanilla=data/bench/vanilla_haiku/<run>/partial \
         clt=data/bench/clt_fork_translations.json
 """
 
