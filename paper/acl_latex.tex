@@ -55,7 +55,7 @@ A translated song lyric must conform to the musical structure of the original so
 This requires satisfying hard structural constraints: syllable counts must match melodic phrases, rhyme schemes should be preserved, and word-level syllable distributions should mirror the original phrasing.
 Despite theoretical grounding \citep{low-2005-pentathlon,franzon-2008-choices}, computational approaches remain scarce.
 Neural MT systems have no mechanism for phonetic constraints, and constrained decoding methods \citep{hokamp-liu-2017-lexically,post-vilar-2018-fast} address lexical but not phonetic constraints.
-A fundamental obstacle is that \emph{counting syllables, detecting rhyme, and analyzing phonetic patterns are not tasks that LLMs perform reliably through text generation alone} \citep{gao-etal-2023-pal}.
+A fundamental obstacle is that \emph{counting syllables, detecting rhyme, and analyzing phonetic patterns are not tasks that LLMs perform reliably through text generation alone} (\S\ref{sec:orchestrator-ablation}); following program-aided reasoning \citep{gao-etal-2023-pal}, we offload them to deterministic scripts.
 
 \begin{figure}[t]
 \centering
@@ -97,7 +97,7 @@ A fundamental obstacle is that \emph{counting syllables, detecting rhyme, and an
 \label{fig:framework}
 \end{figure}
 
-We address this by exposing IPA-based phonetic analysis as a suite of Agent Skills, where each capability is packaged as a directory of natural-language instructions plus deterministic scripts that the orchestrating LLM discovers and invokes during translation \citep{yao-etal-2023-react}.
+We address this by exposing IPA-based phonetic analysis as a suite of Agent Skills, where each capability is packaged as a directory of natural-language instructions plus deterministic scripts that the orchestrating LLM discovers and invokes during translation.\footnote{\url{https://agentskills.io/specification}}
 Unlike supervised approaches, the framework requires no parallel lyric corpora, supports any language pair via eSpeak-NG, and scales with LLM capability.
 Our framework is open-source for reproducibility and practical use.\footnote{Code and Skills available at \url{https://github.com/guan404ming/blt-skills}.}
 
@@ -114,7 +114,7 @@ To our knowledge, this is the first framework to package IPA-based phonetic anal
 \subsection{Song Translation}
 
 Theoretical accounts treat song translation as balancing singability, sense, naturalness, rhythm, and rhyme \citep{low-2005-pentathlon,franzon-2008-choices,low-2022-translating}.
-Computationally, prior work spans constrained sequence-to-sequence learning \citep{ou-etal-2023-songs}, tonal-language constraints \citep{guo-etal-2022-automatic}, constrained decoding for poetry \citep{ghazvininejad-etal-2018-neural}, musical-feature modeling \citep{ye-etal-2024-sing}, curriculum reinforcement learning \citep{ren-etal-2025-lyricar}, melody-constrained editing \citep{zhao-etal-2025-reffly}, melody-to-lyric generation \citep{ou-etal-2023-loaf}, joint lyric--melody generation \citep{ding-etal-2025-songcomposer}, multilingual datasets and evaluation \citep{cho-etal-2025-mavl,kim-etal-2023-computational,kim-etal-2024-kpop}, scansion- and prosody-aware generation \citep{chen-teufel-2024-scansion,liang-etal-2024-xai,yu-etal-2025-songglm}, and multimodal singability \citep{yoo-etal-2025-elmi}.
+Computationally, prior work spans constrained sequence-to-sequence learning \citep{ou-etal-2023-songs}, tonal-language constraints \citep{guo-etal-2022-automatic}, constrained decoding for poetry \citep{ghazvininejad-etal-2018-neural}, musical-feature modeling \citep{ye-etal-2024-sing}, curriculum reinforcement learning \citep{ren-etal-2025-lyricar}, melody-constrained editing \citep{zhao-etal-2025-reffly}, melody-to-lyric generation \citep{ou-etal-2023-loaf}, joint lyric--melody generation \citep{ding-etal-2025-songcomposer}, multilingual datasets and evaluation \citep{cho-etal-2025-mavl,kim-etal-2023-computational,kim-etal-2024-kpop}, scansion- and prosody-aware generation \citep{chen-teufel-2024-scansion,liang-etal-2024-xai,yu-etal-2025-songglm}, and interactive sign-language translation for song signing \citep{yoo-etal-2025-elmi}.
 Closest to our setting, \citet{liu-etal-2026-towards} compare zero-shot prompting strategies for singable lyric translation, including verification-guided and multi-round refinement.
 Their refinement step asks the LLM to count syllables \emph{within} the prompt; we instead expose syllable counting as a deterministic external skill, which keeps line-level counts exact rather than approximate (\S\ref{sec:orchestrator-ablation}).
 These approaches rely on fine-tuning, constrained decoding, reinforcement learning, or prompt-only verification; we instead augment a general-purpose LLM with \emph{external} IPA-verification skills and compare to the supervised constraint-token baseline closest in task setting (\citealp{ou-etal-2023-songs}; \S\ref{sec:experiments}).
@@ -219,7 +219,7 @@ For phonetic distance computation, we use PanPhon \citep{mortensen-etal-2016-pan
 \label{sec:tools}
 
 The orchestrator has access to a suite of Agent Skills (Table~\ref{tab:tools}), each packaged as a \texttt{SKILL.md} description plus a deterministic verification script.
-Four of them are IPA-based analytic skills that wrap functions providing capabilities the LLM cannot reliably perform through text generation alone \citep{gao-etal-2023-pal}; \texttt{lyrics-validator} and \texttt{lyrics-translator} sit on top to compose them.
+Four of them are IPA-based analytic skills that wrap deterministic computations the LLM cannot perform reliably in text (\S\ref{sec:orchestrator-ablation}), in the spirit of program-aided reasoning \citep{gao-etal-2023-pal}; \texttt{lyrics-validator} and \texttt{lyrics-translator} sit on top to compose them.
 
 \begin{table}[t]
 \centering
@@ -241,7 +241,7 @@ Four of them are IPA-based analytic skills that wrap functions providing capabil
 \end{table}
 
 The \texttt{syllable-counter} skill is the most frequently invoked: given a text string and language code, it converts to IPA and returns an integer syllable count (\S\ref{sec:syllable-count}).
-The \texttt{phonetic-analyzer} skill exposes the raw IPA transcription, letting the orchestrator inspect phonetic realizations and reason about which syllables to modify \citep{wei-etal-2022-chain}.
+The \texttt{phonetic-analyzer} skill exposes the raw IPA transcription, letting the orchestrator inspect phonetic realizations and reason about which syllables to modify.
 The \texttt{rhyme-analyzer} skill analyzes the IPA endings of a set of lines and returns the rhyme scheme (e.g., ``$AABB$''), ensuring judgments are phonetic rather than orthographic.
 The \texttt{syllable-pattern-analyzer} skill compares a target syllable pattern against the current one, returning the similarity score (Equation~\ref{eq:patsim}), per-word differences, and natural-language suggestions for improvement.
 All skills are discovered by the orchestrating LLM through their \texttt{SKILL.md} descriptions and invoked via the host's tool-use interface.
@@ -277,7 +277,7 @@ Table~\ref{tab:constraints-example} shows an example.
 \label{sec:loop}
 
 Translation proceeds through two phases, encoded as procedural instructions in the top-level \texttt{lyrics-translator} \texttt{SKILL.md} that the orchestrating LLM follows, invoking the sub-skills at each step.
-The design reflects the priority ordering identified by \citet{low-2005-pentathlon}: semantic content and rhythm (syllable counts) take precedence, with rhyme considered throughout but not given a dedicated rewrite phase.
+Prioritizing syllable counts is our engineering choice, informed by \citet{low-2005-pentathlon}, who balances singability, sense, naturalness, rhythm, and rhyme and treats rhyme as the most negotiable: rhyme is considered throughout but has no dedicated rewrite phase.
 
 \paragraph{Phase 1: Initial Translation with Skill-Guided Reasoning.}
 The orchestrator receives the source lyrics, target language, and all extracted constraints from the \texttt{lyrics-translator} skill instructions.
@@ -295,7 +295,7 @@ This phase is critical because even a single syllable mismatch can make a line u
 
 \paragraph{Priority, rhyme handling, and termination.}
 The two-phase design prioritizes syllable counts (the hardest constraint), then exits.
-Rhyme is monitored throughout via \texttt{rhyme-analyzer} and \texttt{lyrics-validator} but receives no dedicated refinement phase, only post-validation rewrites of lines that break the detected scheme, constrained to keep their syllable counts and repeated until validation passes or the agent gives up (median one validator pass, at most four in our runs): rhyme violations are generally less disruptive to singability than syllable mismatches \citep{low-2005-pentathlon}.
+Rhyme is monitored throughout via \texttt{rhyme-analyzer} and \texttt{lyrics-validator} but receives no dedicated refinement phase, only post-validation rewrites of lines that break the detected scheme, constrained to keep their syllable counts and repeated until validation passes or the agent gives up (median one validator pass, at most four in our runs): we treat rhyme as the more negotiable constraint, following the flexibility \citet{low-2005-pentathlon} allows it.
 The process terminates after Phase~2 with a final \texttt{lyrics-validator} pass that checks syllable counts and the rhyme scheme (lines that share a label must rhyme; lines with different labels must not).
 
 \subsection{Worked Example}
@@ -437,7 +437,7 @@ The lower Japanese ARI is a property of the language: Japanese rhyme endings red
 Japanese also costs the most agent effort (median 44 turns, 265\,s), because kanji readings cannot be counted in-prompt and every line goes through the counter.
 
 \paragraph{Component ablation.}
-To isolate each gain, we run three skill variants with Haiku on the same items (Figure~\ref{fig:ablation}): a \emph{prompt-only} variant with all tools denied, whose \texttt{SKILL.md} tells the agent to count syllables and judge rhyme in its own reasoning, reproducing the verification-guided prompting of \citet{liu-etal-2026-towards}; a \emph{counter-only} variant that keeps \texttt{syllable-counter} but never extracts or checks the rhyme scheme; and the \emph{Phase~1 only} variant of the next paragraph.
+To isolate each gain, we run three skill variants with Haiku on the same items (Figure~\ref{fig:ablation}): a \emph{prompt-only} variant with all tools denied, whose \texttt{SKILL.md} tells the agent to count syllables and judge rhyme in its own reasoning, analogous to the verification-guided prompting of \citet{liu-etal-2026-towards}; a \emph{counter-only} variant that keeps \texttt{syllable-counter} but never extracts or checks the rhyme scheme; and the \emph{Phase~1 only} variant of the next paragraph.
 Prompt-only self-verification leaves 66 of 100 items imperfect and rhyme well short of BLT because the model's own counts are wrong; the deterministic counter alone drives SER to 0.006 (counter-only, 98 of 100 exact).
 Withholding the rhyme scheme costs nothing on syllables but collapses ARI to 0.250 (0.048 on rhymed sources), so exposing the detected scheme and validating against it is what preserves rhyme.
 
@@ -490,9 +490,8 @@ Agreement is moderate on singability (Krippendorff's $\alpha{=}0.46$) and low el
 \section{Conclusion}
 
 We presented BLT Skills, a training-free framework that packages IPA-based phonetic analysis as composable Agent Skills that an LLM agent invokes to extract, verify, and refine constraints.
-On English-to-Chinese ($n{=}100$) it cuts syllable error by 99\% over single-prompt translation on completed items (SER 0.008; 87--98\% with all lost items counted as failures) and lifts rhyme-scheme preservation to ARI 0.99, far above a supervised baseline (0.42), and transfers to Spanish and Japanese.
-Ablations show that the deterministic counter fixes syllables and the exposed, validated rhyme scheme fixes rhyme.
-Offloading verifiable subtasks to deterministic, composable skills is a general recipe for constraint-bound generation.
+On English-to-Chinese ($n{=}100$) it cuts syllable error by 99\% over single-prompt translation on completed items (SER 0.008; 87--98\% counting lost items as failures) and lifts rhyme-scheme preservation to ARI 0.99, far above a supervised baseline (0.42), and transfers to Spanish and Japanese.
+Ablations show that the deterministic counter fixes syllables and the validated rhyme scheme fixes rhyme; offloading verifiable subtasks to composable skills is a general recipe for constraint-bound generation.
 
 \section*{Limitations}
 
