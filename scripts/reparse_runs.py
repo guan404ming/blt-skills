@@ -23,7 +23,7 @@ def main():
             trace = run / "traces" / f"{d['id']}.jsonl"
             if not trace.exists():
                 continue
-            events = [json.loads(l) for l in open(trace, encoding="utf-8") if l.strip()]
+            events = [json.loads(line) for line in open(trace, encoding="utf-8") if line.strip()]
             summary = summarize(events)
             n = len(songs[d["id"]]["source_lines"])
             translations = (

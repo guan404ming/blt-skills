@@ -360,8 +360,8 @@ We adopt it because \citet{liu-etal-2026-towards} find it the strongest automati
 Per-language syllabification follows \S\ref{sec:syllable-count}.
 
 \paragraph{Validity of SER, SCRE, and ARI.}
-Within a single strong system these metrics have almost no variance, so we validate them across systems: pooling item-level scores of Vanilla, CLT, and BLT on en$\rightarrow$zh (Haiku, $n{=}296$ completed items) against CCVO, all three correlate in the expected direction, SCRE most strongly (Pearson $r{=}0.71$, Spearman $\rho{=}0.56$), then SER ($r{=}0.47$, $\rho{=}0.49$), then ARI ($r{=}{-}0.19$, $\rho{=}{-}0.24$; higher ARI, lower distance).
-Item-cluster bootstrap 95\% CIs for Pearson $r$ (the 100 items recur across systems): SCRE $[0.61, 0.80]$, SER $[0.39, 0.55]$, ARI $[-0.30, -0.08]$.
+Within a single strong system these metrics have almost no variance, so we validate them across systems: pooling item-level scores of Vanilla, CLT, and BLT on en$\rightarrow$zh (Haiku, $n{=}296$ completed items) against CCVO, all three correlate in the expected direction, SCRE most strongly (Pearson $r{=}0.71$, Spearman $\rho{=}0.56$), then SER ($r{=}0.47$, $\rho{=}0.48$), then ARI ($r{=}{-}0.20$, $\rho{=}{-}0.25$; higher ARI, lower distance).
+Item-cluster bootstrap 95\% CIs for Pearson $r$ (the 100 items recur across systems): SCRE $[0.61, 0.80]$, SER $[0.39, 0.55]$, ARI $[-0.31, -0.09]$.
 SER and SCRE measure syllable structure, which CCVO encodes; ARI measures rhyme, which CCVO captures only indirectly.
 
 \section{Experiments}
@@ -445,7 +445,7 @@ Rhyme is split: Phase~1 alone lifts ARI from 0.343 (Vanilla) to 0.612 by draftin
 
 \paragraph{Semantic cost.}
 Table~\ref{tab:semantic} (Appendix~\ref{app:analysis}) scores all systems with COMET-22 \citep{rei-etal-2022-comet} and BLEU \citep{papineni-etal-2002-bleu} against the gold translations of \citet{ou-etal-2023-songs}.
-Meeting the constraints costs Haiku 0.064 COMET relative to Vanilla (paired over the 96 items both completed, 95\% CI $[0.053, 0.075]$) and 8.9 BLEU; stronger orchestrators pay less: 0.027 for Sonnet (CI $[0.019, 0.035]$) and 0.022 for Opus (CI $[0.013, 0.031]$).
+Meeting the constraints costs Haiku 0.064 COMET relative to Vanilla (paired over the 96 items both completed, 95\% CI $[0.053, 0.075]$) and 9.0 BLEU; stronger orchestrators pay less: 0.027 for Sonnet (CI $[0.019, 0.035]$) and 0.022 for Opus (CI $[0.013, 0.031]$).
 Among the constrained systems, BLT beats CLT on COMET ($+0.045$, CI $[0.032, 0.059]$) as well as on SER, SCRE, and ARI, while their CCVO is nearly identical (0.320 vs.\ 0.318); CLT scores higher on BLEU but lower on COMET, reflecting n-gram overlap with the references it was trained on.
 
 \begin{figure}[t]
