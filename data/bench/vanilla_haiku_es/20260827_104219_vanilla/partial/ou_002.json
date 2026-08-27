@@ -1,9 +1,9 @@
 {
   "id": "ou_002",
   "artist": "ou-test",
-  "ser": 1.0,
-  "scre": 1.0,
-  "ari": 0.0,
+  "ser": 0.8,
+  "scre": 0.4168253968253969,
+  "ari": 1.0,
   "src_syl": [
     5,
     7,
@@ -12,21 +12,21 @@
     6
   ],
   "tgt_syl": [
-    0,
-    0,
-    0,
-    0,
-    0
+    8,
+    10,
+    11,
+    7,
+    11
   ],
   "src_rhyme": "ABCDE",
-  "tgt_rhyme": "AAAAA",
-  "match": "0/5",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
   "translations": [
-    "",
-    "",
-    "",
-    "",
-    ""
+    "Libre para explorar en",
+    "Un mar de estrellas y mañanas",
+    "(No tengas miedo de abrir tus ojos)",
+    "Hay tanto por descubrir",
+    "(Respira profundo y relájate)"
   ],
   "time_seconds": 10.99,
   "model": "claude-haiku-4-5-20251001",
@@ -39,6 +39,8 @@
     "tool_calls": {},
     "skill_loads": {},
     "script_calls": {},
+    "counter_runs": 0,
+    "validator_runs": 0,
     "num_turns": 1,
     "cost_usd": 0.019551100000000002,
     "usage": {
@@ -77,6 +79,7 @@
     "final_text": "1. Libre para explorar en\n2. Un mar de estrellas y mañanas\n3. (No tengas miedo de abrir tus ojos)\n4. Hay tanto por descubrir\n5. (Respira profundo y relájate)",
     "is_error": false
   },
-  "failed": true,
-  "error": ""
+  "failed": false,
+  "error": "",
+  "failure_reason": ""
 }

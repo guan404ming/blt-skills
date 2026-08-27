@@ -106,6 +106,20 @@ def summarize(events):
                         tail = part.split("skills/", 1)[1].split()
                         if tail:
                             scripts[tail[0].split("/")[0]] += 1
+    counter_runs = 0
+    validator_runs = 0
+    for ev in events:
+        if ev.get("type") != "user":
+            continue
+        for block in ev.get("message", {}).get("content", []):
+            if not isinstance(block, dict) or block.get("type") != "tool_result":
+                continue
+            content = block.get("content")
+            if isinstance(content, list):
+                content = " ".join(x.get("text", "") for x in content if isinstance(x, dict))
+            content = str(content or "")
+            counter_runs += content.count("Syllables:")
+            validator_runs += content.count('"syllables_match"')
     result = next((ev for ev in events if ev.get("type") == "result"), {})
     model_id = next(
         (ev["message"].get("model") for ev in events if ev.get("type") == "assistant"), None
@@ -116,12 +130,40 @@ def summarize(events):
         "tool_calls": dict(tools),
         "skill_loads": dict(skills),
         "script_calls": dict(scripts),
+        "counter_runs": counter_runs,
+        "validator_runs": validator_runs,
         "num_turns": result.get("num_turns"),
         "cost_usd": result.get("total_cost_usd"),
         "usage": result.get("usage"),
         "final_text": result.get("result", ""),
         "is_error": result.get("is_error", False),
     }
+
+
+REFUSAL_PATTERNS = (
+    "copyright",
+    "版權",
+    "版权",
+    "cannot translate",
+    "can't translate",
+    "unable to",
+    "無法",
+    "无法",
+    "no can do",
+    "derivative",
+    "song lyrics",
+)
+
+
+def classify_failure(summary, translations):
+    if any(t.strip() for t in translations):
+        return ""
+    if summary["is_error"]:
+        return "api_error"
+    text = summary["final_text"].lower()
+    if any(p in text for p in REFUSAL_PATTERNS):
+        return "model_refusal"
+    return "parse_failure"
 
 
 def process_song(song, args, partial_dir, trace_dir):
@@ -172,6 +214,7 @@ def process_song(song, args, partial_dir, trace_dir):
     r["disallowed_tools"] = args.disallowed_tools
     r["agent"] = summary
     r["failed"] = not any(t.strip() for t in translations)
+    r["failure_reason"] = classify_failure(summary, translations)
     r["error"] = summary["final_text"][:200] if summary["is_error"] else ""
 
     with open(partial_path, "w", encoding="utf-8") as f:

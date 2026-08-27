@@ -154,7 +154,7 @@ For other languages, we convert text to IPA via Phonemizer \citep{bernard-titeux
 \end{equation}
 where $\text{nuclei}(\cdot)$ matches a predefined set of IPA vowel symbols and diphthongs (e.g., \textipa{a, i, u, @, aI, eI, oU}), with adjacent vowels forming diphthongs counted as single nuclei.
 For example, ``\emph{Let it go}'' yields IPA /\textipa{lEt It g@U}/ with three vowel nuclei [\textipa{E}, \textipa{I}, \textipa{@U}], giving a count of 3.
-The resulting sequence $\mathbf{s} = (s_1, \ldots, s_n)$ serves as the hard constraint for translation.\footnote{We validate this vowel-nuclei counting against independent references in Appendix~\ref{app:tools-validation} (within-$\pm1$ agreement of 97.5\% vs.\ CMUdict for English, 90.0\% vs.\ \texttt{pyphen} for Spanish); Chinese counts one syllable per Han character. Throughout, ``exact'' syllable matching is defined relative to this eSpeak-NG counting convention rather than to citation-form syllabification.}
+The resulting sequence $\mathbf{s} = (s_1, \ldots, s_n)$ serves as the hard constraint for translation.\footnote{We validate this vowel-nuclei counting against independent references in Appendix~\ref{app:tools-validation} (within-$\pm1$ agreement of 97.5\% vs.\ CMUdict for English, 92.0\% vs.\ \texttt{pyphen} for Spanish); Chinese counts one syllable per Han character. Throughout, ``exact'' syllable matching is defined relative to this eSpeak-NG counting convention rather than to citation-form syllabification.}
 
 \subsection{Rhyme Scheme Constraint}
 \label{sec:rhyme-scheme}
@@ -360,8 +360,8 @@ We adopt it because \citet{liu-etal-2026-towards} find it the strongest automati
 Per-language syllabification follows \S\ref{sec:syllable-count}.
 
 \paragraph{Validity of SER, SCRE, and ARI.}
-Within a single strong system these metrics have almost no variance, so we validate them across systems: pooling item-level scores of Vanilla, CLT, and BLT on en$\rightarrow$zh (Haiku, $n{=}295$ completed items) against CCVO, all three correlate in the expected direction, SCRE most strongly (Pearson $r{=}0.71$, Spearman $\rho{=}0.56$), then SER ($r{=}0.47$, $\rho{=}0.48$), then ARI ($r{=}{-}0.20$, $\rho{=}{-}0.24$; higher ARI, lower distance).
-Item-cluster bootstrap 95\% CIs for Pearson $r$ (the 100 items recur across systems): SCRE $[0.61, 0.80]$, SER $[0.39, 0.55]$, ARI $[-0.31, -0.09]$.
+Within a single strong system these metrics have almost no variance, so we validate them across systems: pooling item-level scores of Vanilla, CLT, and BLT on en$\rightarrow$zh (Haiku, $n{=}296$ completed items) against CCVO, all three correlate in the expected direction, SCRE most strongly (Pearson $r{=}0.71$, Spearman $\rho{=}0.56$), then SER ($r{=}0.47$, $\rho{=}0.49$), then ARI ($r{=}{-}0.19$, $\rho{=}{-}0.24$; higher ARI, lower distance).
+Item-cluster bootstrap 95\% CIs for Pearson $r$ (the 100 items recur across systems): SCRE $[0.61, 0.80]$, SER $[0.39, 0.55]$, ARI $[-0.30, -0.08]$.
 SER and SCRE measure syllable structure, which CCVO encodes; ARI measures rhyme, which CCVO captures only indirectly.
 
 \section{Experiments}
@@ -376,16 +376,16 @@ SER and SCRE measure syllable structure, which CCVO encodes; ARI measures rhyme,
 \midrule
 CLT (supervised) & --     & 100 & 0.284 & 0.033 & 0.422 & \textbf{0.318} & -- & 1.4 \\
 \midrule
-Vanilla & Haiku 4.5  & 99 & 0.792 & 0.217 & 0.346 & 0.414 & 1 & 14.8 \\
-Vanilla & Sonnet 5   & 98 & 0.790 & 0.221 & 0.266 & 0.418 & 1 & 7.3 \\
-Vanilla & Opus 5     & 85 & 0.809 & 0.211 & 0.285 & 0.411 & 1 & 10.6 \\
+Vanilla & Haiku 4.5  & 100 & 0.792 & 0.218 & 0.353 & 0.415 & 1 & 14.8 \\
+Vanilla & Sonnet 5   & 100 & 0.788 & 0.221 & 0.271 & 0.417 & 1 & 7.3 \\
+Vanilla & Opus 5     & 87 & 0.802 & 0.209 & 0.279 & 0.409 & 1 & 10.6 \\
 \midrule
 BLT & Haiku 4.5  & 96 & 0.008 & 0.003 & 0.990 & 0.320 & 18 & 106.6 \\
 BLT & Sonnet 5   & 99 & 0.008 & 0.002 & 0.996 & 0.325 & 9 & 71.0 \\
 BLT & Opus 5     & 89 & \textbf{0.000} & \textbf{0.000} & \textbf{1.000} & 0.314 & 8 & 63.4 \\
 \bottomrule
 \end{tabular}
-\caption{Main results on the Ou 2023 en$\rightarrow$zh test windows ($n{=}100$ items, 5 lines each; orchestrators \texttt{claude-haiku-4-5-20251001}, \texttt{claude-sonnet-5}, \texttt{claude-opus-5}). $n$ is the number of items that produced output: the API content filter refused 1 / 2 / 15 Vanilla items and 4 / 1 / 11 BLT items (Haiku / Sonnet / Opus) on every attempt; scoring refused items as fully unmatched gives BLT SER 0.048 / 0.018 / 0.110 and ARI 0.950 / 0.986 / 0.890 (Vanilla SER 0.794 / 0.794 / 0.838). Vanilla runs through the same traced harness with every tool denied. CLT \citep{ou-etal-2023-songs} receives the same per-line syllable targets as BLT as its length tokens, plus the dataset's own rhyme and boundary tokens. \textbf{Turns}: median assistant turns per item; \textbf{Time}: median wall-clock seconds per item (CLT on Apple Silicon MPS, LLMs via API). Human A/B study (\S\ref{sec:human-eval}, Opus, $n{=}10$): BLT preferred in 93\% of 60 judgments, 10 of 10 items.}
+\caption{Main results on the Ou 2023 en$\rightarrow$zh test windows ($n{=}100$ items, 5 lines each; orchestrators \texttt{claude-haiku-4-5-20251001}, \texttt{claude-sonnet-5}, \texttt{claude-opus-5}). $n$ is the number of items that produced output: BLT lost 3 / 1 / 11 items (Haiku / Sonnet / Opus) to the API content filter after three attempts and one Haiku item to an unparsable final message; Opus Vanilla declined 13 items in text as copyrighted lyrics. Scoring lost items as fully unmatched gives BLT SER 0.048 / 0.018 / 0.110 and ARI 0.950 / 0.986 / 0.890 (Vanilla SER 0.792 / 0.788 / 0.828). Vanilla runs through the same traced harness with tools disallowed; no trace contains a tool call. CLT \citep{ou-etal-2023-songs} receives the same per-line syllable targets as BLT as its length tokens, plus the dataset's own rhyme and boundary tokens. \textbf{Turns}: median assistant turns per item; \textbf{Time}: median wall-clock seconds per item (CLT on Apple Silicon MPS, LLMs via API). Human A/B study (\S\ref{sec:human-eval}, Opus, $n{=}10$): BLT preferred in 93\% of 60 judgments, 10 of 10 items.}
 \label{tab:orchestrator}
 \end{table*}
 
@@ -400,12 +400,12 @@ Our open-source release (Apache-2.0) ships the full Skill suite (six \texttt{SKI
 The framework is implemented as Agent Skills: each phase is encoded as procedural instructions in the orchestrating \texttt{lyrics-translator} \texttt{SKILL.md}, which references the five sub-skills (\S\ref{sec:tools}) and tells the agent which verification script to run at each step (Appendix~\ref{app:prompts}).
 The harness sends one prompt per test item through the Claude Code CLI (\texttt{claude -p}, \texttt{--effort medium}) containing only the source lines and the instruction to use the \texttt{lyrics-translator} skill; the agent discovers the skills from their \texttt{SKILL.md} descriptions, extracts the constraints itself by running the scripts, translates, and verifies, with \texttt{Skill}, \texttt{Read}, and \texttt{Bash} as the only allowed tools.
 Every run is logged as a \texttt{stream-json} trace, from which we count skill loads, script invocations, turns, tokens, and cost (Appendix~\ref{app:analysis}); the harness never counts syllables or injects targets into the prompt.
-An API-side content filter refuses some lyric inputs deterministically; we retry up to three times and otherwise score the item as a failure (all lines unmatched).
+Items can fail in three ways, all scored as fully unmatched: an API-side content filter rejects the request (retried up to three attempts), the model declines in text to translate copyrighted lyrics (not retried), or the final message cannot be parsed into $n$ lines; Table~\ref{tab:orchestrator} reports the counts per category.
 
 \paragraph{Conditions.}
 We compare four conditions on the Ou 2023 en$\rightarrow$zh test split (seed=42, $n{=}100$):
 \begin{itemize}
-    \item \textbf{Vanilla}: One plain translation prompt through the same traced harness with every tool denied, providing a baseline for what a frontier LLM produces without IPA-based verification.
+    \item \textbf{Vanilla}: One plain translation prompt through the same traced harness with tools disallowed (no tool was invoked in any trace), providing a baseline for what a frontier LLM produces without IPA-based verification.
     \item \textbf{Prompt-only}: The same agent and workflow with every tool denied, so the orchestrator counts syllables and judges rhyme in its own reasoning, reproducing the verification-guided prompting of \citet{liu-etal-2026-towards} (Haiku only; Figure~\ref{fig:ablation}).
     \item \textbf{BLT}: The agent-driven two-phase pipeline (constraint extraction, Phase~1 initial translation, Phase~2 line-by-line syllable-count refinement with up to 10 attempts per line, final validation of counts and rhyme), with the agent invoking the skills itself. We refer to this condition as BLT throughout, mirroring the supervised CLT baseline.
     \item \textbf{CLT} \citep{ou-etal-2023-songs}: A supervised mBART baseline fine-tuned with explicit length, rhyme, and word-boundary constraint tokens, representing a strongly length-controlled task-specific training approach (reproduction details in Appendix~\ref{app:clt}).
@@ -416,20 +416,20 @@ We report SER, SCRE, ARI, and CCVO as defined in \S\ref{sec:eval}.
 \label{sec:orchestrator-ablation}
 
 \paragraph{Findings.}
-Without tools, all three orchestrators leave about four lines in five off-count (SER 0.79--0.81) and preserve almost no rhyme on rhymed sources (ARI 0.09--0.15), confirming that syllable counting and rhyme matching are unreliable in-prompt even for frontier models.
+Without tools, all three orchestrators leave about four lines in five off-count (SER 0.79--0.80) and preserve almost no rhyme on rhymed sources (ARI 0.09--0.15), confirming that syllable counting and rhyme matching are unreliable in-prompt even for frontier models.
 BLT cuts SER by 99\% to 0.008 / 0.008 / 0.000 (Haiku / Sonnet / Opus; 476 of 480 Haiku lines exact) and lifts ARI to 0.990 / 0.996 / 1.000, because the agent runs \texttt{lyrics-validator} on its draft and rewrites lines that break the detected scheme (Table~\ref{tab:orchestrator}).
-On the completed items whose source actually rhymes (at least one repeated label; 42 for Haiku BLT, 43 for Vanilla and CLT), Haiku BLT scores ARI 0.977 versus 0.099 for Vanilla and 0.029 for CLT; the remaining unrhymed items are trivially satisfiable and all three score higher there (1.000, 0.536, 0.719).
+On the completed items whose source actually rhymes (at least one repeated label; 42 for Haiku BLT, 43 for Vanilla and CLT), Haiku BLT scores ARI 0.977 versus 0.099 for Vanilla and 0.029 for CLT; the remaining unrhymed items are trivially satisfiable and all three score higher there (1.000, 0.544, 0.719).
 Sonnet reaches the same accuracy in half the turns by batching lines into single script calls, and Opus completes every one of its 89 items perfectly; the cost is 18 / 9 / 8 assistant turns and a median 107 / 71 / 63\,s per item versus one call and 7--15\,s for Vanilla (Appendices~\ref{app:examples} and~\ref{app:analysis}).
 
 \paragraph{Comparison with CLT.}
 CLT, given the same syllable targets as length tokens, matches 72\% of lines exactly and overshoots by one syllable on most of the rest (SER 0.284, SCRE 0.033), so its length control is approximate rather than exact; its ARI of 0.422 (0.029 on rhymed items) shows that its rhyme token does not transfer the source scheme. BLT beats it on SER, SCRE, and ARI without task-specific training and ties it on CCVO.
 
 \paragraph{CCVO cross-validates the gain.}
-On the external CCVO distance (\S\ref{sec:ccvo}) BLT scores 0.320 and CLT 0.318, both a 23\% reduction over Vanilla (0.414); CCVO encodes consonant clusters and vowel openness, which both constrained systems improve equally, whereas rhyme, where they differ most, is outside its scope.
+On the external CCVO distance (\S\ref{sec:ccvo}) BLT scores 0.320 and CLT 0.318, both a 23\% reduction over Vanilla (0.415); CCVO encodes consonant clusters and vowel openness, which both constrained systems improve equally, whereas rhyme, where they differ most, is outside its scope.
 
 \paragraph{Cross-lingual generalization.}
 The unchanged pipeline transfers to two further target languages with Haiku (Table~\ref{tab:cross-lingual}), requiring only an eSpeak-NG language-code swap for Spanish and a \texttt{pykakasi} mora counter for Japanese.
-On Spanish, BLT reaches $\text{SER}{=}\text{SCRE}{=}0$ and $\text{ARI}{=}1.0$ on all 30 items (Vanilla: SER 0.914, ARI 0.062); on Japanese, SER falls from 0.980 to 0.013 (28 of 30 items perfect) and ARI rises from $-0.022$ to 0.615.
+On Spanish, BLT reaches $\text{SER}{=}\text{SCRE}{=}0$ and $\text{ARI}{=}1.0$ on all 30 items (Vanilla: SER 0.913, ARI 0.091); on Japanese, SER falls from 0.980 to 0.013 (28 of 30 items perfect) and ARI rises from $-0.022$ to 0.615.
 The lower Japanese ARI is a property of the language: Japanese rhyme endings reduce to one of five vowels, so a five-line window whose source has no repeated label often cannot avoid a repeated vowel in the translation (ARI 0.444 on unrhymed sources versus 0.872 on rhymed ones, Appendix~\ref{app:analysis}).
 Japanese also costs the most agent effort (median 44 turns, 265\,s), because kanji readings cannot be counted in-prompt and every line goes through the counter.
 
@@ -441,12 +441,12 @@ Withholding the rhyme scheme costs nothing on syllables but collapses ARI to 0.2
 \paragraph{Phase ablation.}
 A \texttt{phase1-only} skill variant extracts the constraints with the scripts and translates once, with no re-counting, refinement, or validation (Haiku, same items).
 It already reaches SER 0.040 (81 of 96 items perfect), so skill-extracted targets carry most of the syllable gain; the full pipeline removes the rest (paired SER difference $0.030$, 95\% CI $[0.013, 0.052]$, better on 13 items, worse on 2).
-Rhyme is split: Phase~1 alone lifts ARI from 0.346 (Vanilla) to 0.612 by drafting against the extracted scheme, and the jump to 0.990 comes from the final \texttt{lyrics-validator} pass and the rhyme rewrites it triggers (48 of 96 items re-validated at least once), so verified refinement, not constraint-aware drafting, is what preserves the scheme.
+Rhyme is split: Phase~1 alone lifts ARI from 0.353 (Vanilla) to 0.612 by drafting against the extracted scheme, and the jump to 0.990 comes from the final \texttt{lyrics-validator} pass and the rhyme rewrites it triggers (49 of 96 items re-validated at least once), so verified refinement, not constraint-aware drafting, is what preserves the scheme.
 
 \paragraph{Semantic cost.}
 Table~\ref{tab:semantic} (Appendix~\ref{app:analysis}) scores all systems with COMET-22 \citep{rei-etal-2022-comet} and BLEU \citep{papineni-etal-2002-bleu} against the gold translations of \citet{ou-etal-2023-songs}.
-Meeting the constraints costs Haiku 0.064 COMET relative to Vanilla (paired over the 95 items both completed, 95\% CI $[0.054, 0.075]$) and 9.1 BLEU; stronger orchestrators pay less: 0.028 for Sonnet (CI $[0.019, 0.036]$) and 0.022 for Opus (CI $[0.013, 0.032]$).
-Among the constrained systems, BLT beats CLT on COMET ($+0.045$, CI $[0.032, 0.059]$) as well as on SER, SCRE, and ARI, while the two tie on CCVO; CLT scores higher on BLEU but lower on COMET, reflecting n-gram overlap with the references it was trained on.
+Meeting the constraints costs Haiku 0.064 COMET relative to Vanilla (paired over the 96 items both completed, 95\% CI $[0.054, 0.075]$) and 9.0 BLEU; stronger orchestrators pay less: 0.027 for Sonnet (CI $[0.019, 0.035]$) and 0.022 for Opus (CI $[0.013, 0.031]$).
+Among the constrained systems, BLT beats CLT on COMET ($+0.045$, CI $[0.032, 0.059]$) as well as on SER, SCRE, and ARI, while their CCVO is nearly identical (0.320 vs.\ 0.318); CLT scores higher on BLEU but lower on COMET, reflecting n-gram overlap with the references it was trained on.
 
 \begin{figure}[t]
 \centering
@@ -464,7 +464,7 @@ Among the constrained systems, BLT beats CLT on COMET ($+0.045$, CI $[0.032, 0.0
 \textbf{Condition} & \textbf{SER} $\downarrow$ & \textbf{SCRE} $\downarrow$ & \textbf{ARI} $\uparrow$ & \textbf{CCVO} $\downarrow$ & \textbf{Time} \\
 \midrule
 \multicolumn{6}{@{}l}{\emph{English-to-Spanish (en$\rightarrow$es)}} \\
-Vanilla ($n{=}28$) & 0.914 & 0.477 & 0.062 & 0.502 & 11.2 \\
+Vanilla ($n{=}30$) & 0.913 & 0.482 & 0.091 & 0.509 & 10.9 \\
 BLT ($n{=}30$)     & \textbf{0.000} & \textbf{0.000} & \textbf{1.000} & \textbf{0.291} & 195.8 \\
 \midrule
 \multicolumn{6}{@{}l}{\emph{English-to-Japanese (en$\rightarrow$ja)}} \\
@@ -472,7 +472,7 @@ Vanilla ($n{=}30$) & 0.980 & 1.002 & -0.022 & 0.971 & 15.3 \\
 BLT ($n{=}30$)     & \textbf{0.013} & \textbf{0.003} & \textbf{0.615} & \textbf{0.287} & 265.2 \\
 \bottomrule
 \end{tabular}
-\caption{Cross-lingual generalization (Haiku, 30 items each, the same English source windows retargeted; $n$ is the number of items that produced output, the rest were refused by the API content filter). Japanese SER and SCRE are mora-count errors. \textbf{Time}: median wall-clock seconds per item.}
+\caption{Cross-lingual generalization (Haiku, 30 items each, the same English source windows retargeted; all items produced output). Japanese SER and SCRE are mora-count errors. \textbf{Time}: median wall-clock seconds per item.}
 \label{tab:cross-lingual}
 \end{table}
 
@@ -494,7 +494,7 @@ Offloading verifiable subtasks to deterministic, composable skills is a general 
 \section*{Limitations}
 
 Our approach has several limitations.
-First, the framework's correctness depends on Phonemizer / eSpeak-NG for IPA transcription, which has uneven quality across languages; Appendix~\ref{app:tools-validation} reports an intrinsic check (within-$\pm1$ agreement of 97.5\% for English and 90.0\% for Spanish against independent references), but absolute syllable counts remain calibrated to eSpeak-NG rather than to citation-form syllabification. Language coverage is bounded by eSpeak-NG, and Japanese mora counting relies on \texttt{pykakasi}; dialect-level and non-standard varieties are untested. Empty outputs in our runs came from API content-filter refusals on some lyrics, which we retry and otherwise score as failures.
+First, the framework's correctness depends on Phonemizer / eSpeak-NG for IPA transcription, which has uneven quality across languages; Appendix~\ref{app:tools-validation} reports an intrinsic check (within-$\pm1$ agreement of 97.5\% for English and 92.0\% for Spanish against independent references), but absolute syllable counts remain calibrated to eSpeak-NG rather than to citation-form syllabification. Language coverage is bounded by eSpeak-NG, and Japanese mora counting relies on \texttt{pykakasi}; dialect-level and non-standard varieties are untested. Items that produced no translation are scored as failures; they come from API content-filter rejections (retried up to three attempts), from the model declining in text to translate copyrighted lyrics (Opus Vanilla, not retried), and in three cases from unparsable final messages.
 Second, the framework has no dedicated rhyme refinement phase: rhyme is only rewritten when the final validation fails, and the counter-only ablation (ARI 0.990 to 0.250 when the scheme is withheld) shows how much rests on that check. Phase~2 also never feeds its corrections back into a global re-draft of Phase~1; the phase ablation (\S\ref{sec:orchestrator-ablation}) shows the current split already saturates the syllable constraint in both languages, but a global re-drafting loop could trade latency for rhyme.
 Third, our main evaluation is English-to-Chinese ($n{=}100$ five-line windows, not 100 independent songs, \S\ref{sec:experiments}) with three Claude orchestrators; cross-lingual validation covers en$\rightarrow$es and en$\rightarrow$ja ($n{=}30$ each, Haiku only), and broader coverage across language pairs and orchestrators is left to future work.
 The seed (42) fixes only the test-window sample; LLM decoding is not seeded, so repeated runs vary, and multi-seed runs would better characterize that variance, which we leave to future work.
@@ -623,7 +623,7 @@ For the languages actually counted through eSpeak-NG vowel nuclei, we measure ag
 \textbf{Language} & \textbf{Reference} & \textbf{Exact} & \textbf{Within $\pm1$} \\
 \midrule
 English & CMUdict & 77.9\% & 97.5\% \\
-Spanish & \texttt{pyphen} & 58.7\% & 90.0\% \\
+Spanish & \texttt{pyphen} & 58.7\% & 92.0\% \\
 \bottomrule
 \end{tabular}
 \caption{eSpeak-NG vowel-nuclei syllable counts vs.\ independent references (English: 475 CMUdict-covered source lines vs.\ CMUdict vowel-phoneme counts; Spanish: 150 output lines vs.\ \texttt{pyphen} syllabification).}
@@ -655,7 +655,7 @@ Model & Interface & Claude Code CLI \\
 Model & Reasoning effort & \texttt{medium} \\
 \midrule
 Agent & Allowed tools & \texttt{Skill}, \texttt{Read}, \texttt{Bash} \\
-Agent & API retries & 3 \\
+Agent & Max attempts & 3 \\
 \midrule
 Phase~2 & Max attempts / line & 10 \\
 \midrule
@@ -779,8 +779,8 @@ The trade-off is that CLT runs far faster once trained, while BLT matches or exc
 \label{app:analysis}
 
 \paragraph{Phase~2 trigger rate and skill usage.}
-From the agent traces of the Haiku en$\rightarrow$zh run (96 completed items), every item loaded \texttt{lyrics-translator} and ran the three extraction scripts on the source; the agent then called \texttt{syllable-counter} 12.2 times per item on average (10 are the mandatory source and target checks, so 2.2 are Phase~2 re-counts), entered Phase~2 on 60 of 96 items, and ran \texttt{lyrics-validator} 1.6 times per item, re-running it after a rhyme rewrite on 48 items.
-The median Haiku item takes 18 assistant turns and 107\,s wall-clock, and costs \$0.108 (8.1k output tokens, 393k input tokens including cache reads); Sonnet needs only 9 turns and 71\,s because it batches several lines into one script call (4.0 counter calls per item), at \$0.149 per item, and Opus batches further (2.6 counter calls, 8 turns, 63\,s) at \$0.297 per item (Table~\ref{tab:tool-usage}).
+From the agent traces of the Haiku en$\rightarrow$zh run (96 completed items), every item loaded \texttt{lyrics-translator} and ran the three extraction scripts on the source; counting script executions in the tool results, the agent then ran \texttt{syllable-counter} 12.4 times per item on average (10 are the mandatory source and target checks, so 2.4 are Phase~2 re-counts), re-counted at least one line on 61 of 96 items, and ran \texttt{lyrics-validator} 1.6 times per item, re-running it after a rhyme rewrite on 49 items.
+The median Haiku item takes 18 assistant turns and 107\,s wall-clock, and costs \$0.108 (8.1k output tokens, 393k input tokens including cache reads); Sonnet needs only 9 turns and 71\,s because it batches several script executions into one tool call (11.9 counter runs, 1.4 validator runs per item), at \$0.149 per item, and Opus batches further (10.8 counter runs, 1.3 validator runs, 8 turns, 63\,s) at \$0.297 per item (Table~\ref{tab:tool-usage}).
 
 A second Haiku run of the full pipeline on the same items (a configuration mistake that left the scripts enabled during a prompt-only attempt) reproduced the result: SER 0.004, ARI 0.990 on 98 completed items, which bounds the run-to-run variance of the unseeded orchestrator.
 
@@ -793,11 +793,11 @@ A second Haiku run of the full pipeline on the same items (a configuration mista
 \textbf{Condition} & \textbf{Turns} & \textbf{Cnt.} & \textbf{Val.} & \textbf{\$} & \textbf{Time} \\
 \midrule
 Vanilla (Haiku) & 1 & 0 & 0 & 0.013 & 14.8 \\
-BLT (Haiku) & 18 & 12.2 & 1.6 & 0.108 & 107 \\
-BLT (Sonnet) & 9 & 4.0 & 1.2 & 0.149 & 71 \\
-BLT (Opus) & 8 & 2.6 & 1.0 & 0.297 & 63 \\
+BLT (Haiku) & 18 & 12.4 & 1.6 & 0.108 & 107 \\
+BLT (Sonnet) & 9 & 11.9 & 1.4 & 0.149 & 71 \\
+BLT (Opus) & 8 & 10.8 & 1.3 & 0.297 & 63 \\
 \end{tabular}
-\caption{Per-item cost of the en$\rightarrow$zh runs, from the agent traces: median assistant turns, mean \texttt{syllable-counter} (Cnt.) and \texttt{lyrics-validator} (Val.) calls, mean API cost in USD, and median wall-clock seconds.}
+\caption{Per-item cost of the en$\rightarrow$zh runs, from the agent traces: median assistant turns, mean \texttt{syllable-counter} (Cnt.) and \texttt{lyrics-validator} (Val.) script executions counted from tool results, mean API cost in USD, and median wall-clock seconds.}
 \label{tab:tool-usage}
 \end{table}
 
@@ -810,15 +810,15 @@ BLT (Opus) & 8 & 2.6 & 1.0 & 0.297 & 63 \\
 \textbf{System} & \textbf{COMET-22} $\uparrow$ & \textbf{BLEU} $\uparrow$ & \textbf{SER} $\downarrow$ & \textbf{ARI} $\uparrow$ \\
 \midrule
 CLT              & 0.706 & 17.7 & 0.284 & 0.422 \\
-Vanilla (Haiku)  & \textbf{0.812} & \textbf{24.1} & 0.792 & 0.346 \\
+Vanilla (Haiku)  & \textbf{0.815} & \textbf{24.0} & 0.792 & 0.353 \\
 BLT (Haiku)      & 0.741 & 15.0 & \textbf{0.008} & 0.990 \\
-Vanilla (Sonnet) & 0.804 & 23.0 & 0.790 & 0.266 \\
+Vanilla (Sonnet) & 0.811 & 22.8 & 0.788 & 0.271 \\
 BLT (Sonnet)     & 0.779 & 18.7 & 0.008 & 0.996 \\
-Vanilla (Opus)   & 0.758 & 17.5 & 0.809 & 0.285 \\
+Vanilla (Opus)   & 0.764 & 17.7 & 0.802 & 0.279 \\
 BLT (Opus)       & 0.752 & 16.6 & \textbf{0.000} & \textbf{1.000} \\
 \bottomrule
 \end{tabular}
-\caption{Semantic fidelity vs.\ structural constraints (en$\rightarrow$zh, 100 items / 500 lines, gold references from \citet{ou-etal-2023-songs}). COMET and BLEU are over all 500 lines with refused items scored as empty (Haiku: 5 Vanilla and 20 BLT lines; Sonnet: 10 and 5; Opus: 75 and 55); SER and ARI are over completed items as in Table~\ref{tab:orchestrator}. BLEU uses \texttt{sacrebleu} with the \texttt{zh} tokenizer.}
+\caption{Semantic fidelity vs.\ structural constraints (en$\rightarrow$zh, 100 items / 500 lines, gold references from \citet{ou-etal-2023-songs}). COMET and BLEU are over all 500 lines with refused items scored as empty (Haiku: 0 Vanilla and 20 BLT lines; Sonnet: 0 and 5; Opus: 65 and 55); SER and ARI are over completed items as in Table~\ref{tab:orchestrator}. BLEU uses \texttt{sacrebleu} with the \texttt{zh} tokenizer.}
 \label{tab:semantic}
 \end{table}
 

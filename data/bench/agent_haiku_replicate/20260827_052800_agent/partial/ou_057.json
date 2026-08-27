@@ -33,10 +33,13 @@
   "skill": "lyrics-translator",
   "allowed_tools": "Skill,Read",
   "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
     "assistant_turns": 2,
     "tool_calls": {},
     "skill_loads": {},
     "script_calls": {},
+    "counter_runs": 0,
+    "validator_runs": 0,
     "num_turns": 1,
     "cost_usd": 0,
     "usage": {
@@ -64,5 +67,6 @@
     "is_error": true
   },
   "failed": true,
-  "error": "API Error: Output blocked by content filtering policy"
+  "error": "API Error: Output blocked by content filtering policy",
+  "failure_reason": "api_error"
 }

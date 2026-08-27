@@ -39,6 +39,8 @@
     "tool_calls": {},
     "skill_loads": {},
     "script_calls": {},
+    "counter_runs": 0,
+    "validator_runs": 0,
     "num_turns": 1,
     "cost_usd": 0.0436075,
     "usage": {
@@ -78,5 +80,6 @@
     "is_error": false
   },
   "failed": false,
-  "error": ""
+  "error": "",
+  "failure_reason": ""
 }

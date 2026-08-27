@@ -33,6 +33,7 @@
   "skill": "lyrics-translator",
   "allowed_tools": "Skill,Read",
   "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
     "assistant_turns": 65,
     "tool_calls": {
       "Skill": 1,
@@ -47,6 +48,8 @@
       "syllable-pattern-analyzer": 1,
       "lyrics-validator": 1
     },
+    "counter_runs": 18,
+    "validator_runs": 1,
     "num_turns": 26,
     "cost_usd": 0.17410090000000003,
     "usage": {
@@ -86,5 +89,6 @@
     "is_error": false
   },
   "failed": false,
-  "error": ""
+  "error": "",
+  "failure_reason": ""
 }

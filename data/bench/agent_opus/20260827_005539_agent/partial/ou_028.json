@@ -31,6 +31,7 @@
   "time_seconds": 69.51,
   "model": "opus",
   "agent": {
+    "model_id": "claude-opus-5",
     "assistant_turns": 12,
     "tool_calls": {
       "Skill": 1,
@@ -43,6 +44,8 @@
       "syllable-counter": 5,
       "rhyme-analyzer": 1
     },
+    "counter_runs": 14,
+    "validator_runs": 1,
     "num_turns": 10,
     "cost_usd": 0.32740549999999996,
     "usage": {
@@ -82,5 +85,6 @@
     "is_error": false
   },
   "failed": false,
-  "error": ""
+  "error": "",
+  "failure_reason": ""
 }

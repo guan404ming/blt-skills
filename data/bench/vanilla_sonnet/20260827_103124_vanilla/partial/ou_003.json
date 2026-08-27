@@ -1,8 +1,8 @@
 {
   "id": "ou_003",
   "artist": "ou-test",
-  "ser": 1.0,
-  "scre": 1.0,
+  "ser": 0.6,
+  "scre": 0.13999999999999999,
   "ari": 0.0,
   "src_syl": [
     5,
@@ -12,21 +12,21 @@
     6
   ],
   "tgt_syl": [
-    0,
-    0,
-    0,
-    0,
-    0
+    4,
+    7,
+    6,
+    7,
+    7
   ],
   "src_rhyme": "ABCDE",
-  "tgt_rhyme": "AAAAA",
-  "match": "0/5",
+  "tgt_rhyme": "ABCDC",
+  "match": "2/5",
   "translations": [
-    "",
-    "",
-    "",
-    "",
-    ""
+    "自由探索",
+    "星辰与晨曦之海",
+    "(别怕睁开双眼)",
+    "有太多等待发现",
+    "(深吸一口气, 放松)"
   ],
   "time_seconds": 7.62,
   "model": "claude-sonnet-5",
@@ -39,6 +39,8 @@
     "tool_calls": {},
     "skill_loads": {},
     "script_calls": {},
+    "counter_runs": 0,
+    "validator_runs": 0,
     "num_turns": 1,
     "cost_usd": 0.0184244,
     "usage": {
@@ -77,6 +79,7 @@
     "final_text": "1. 自由探索\n2. 星辰与晨曦之海\n3. (别怕睁开双眼)\n4. 有太多等待发现\n5. (深吸一口气, 放松)",
     "is_error": false
   },
-  "failed": true,
-  "error": ""
+  "failed": false,
+  "error": "",
+  "failure_reason": ""
 }

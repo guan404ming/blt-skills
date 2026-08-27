@@ -1,8 +1,8 @@
 {
   "id": "ou_003",
   "artist": "ou-test",
-  "ser": 1.0,
-  "scre": 1.0,
+  "ser": 0.8,
+  "scre": 0.17968253968253967,
   "ari": 0.0,
   "src_syl": [
     5,
@@ -12,21 +12,21 @@
     6
   ],
   "tgt_syl": [
-    0,
-    0,
-    0,
-    0,
-    0
+    6,
+    7,
+    7,
+    8,
+    8
   ],
   "src_rhyme": "ABCDE",
-  "tgt_rhyme": "AAAAA",
-  "match": "0/5",
+  "tgt_rhyme": "ABCDC",
+  "match": "1/5",
   "translations": [
-    "",
-    "",
-    "",
-    "",
-    ""
+    "自由地去探索",
+    "一片星海與晨光",
+    "(別害怕睜開雙眼)",
+    "還有好多等你發現",
+    "(深深吸口氣 放輕鬆)"
   ],
   "time_seconds": 10.16,
   "model": "claude-opus-5",
@@ -39,6 +39,8 @@
     "tool_calls": {},
     "skill_loads": {},
     "script_calls": {},
+    "counter_runs": 0,
+    "validator_runs": 0,
     "num_turns": 1,
     "cost_usd": 0.0425725,
     "usage": {
@@ -77,6 +79,7 @@
     "final_text": "1. 自由地去探索\n2. 一片星海與晨光\n3. (別害怕睜開雙眼)\n4. 還有好多等你發現\n5. (深深吸口氣 放輕鬆)",
     "is_error": false
   },
-  "failed": true,
-  "error": ""
+  "failed": false,
+  "error": "",
+  "failure_reason": ""
 }

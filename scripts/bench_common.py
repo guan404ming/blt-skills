@@ -290,11 +290,10 @@ def parse_translations(text, expected_count):
                 val.startswith("'") and val.endswith("'")
             ):
                 val = val[1:-1]
-            val = re.sub(r"[\(（][^\)）]*[\)）]", "", val).strip()
-            val = re.split(r"\s*[\(（]", val)[0].strip()
-            val = re.split(r"\s+[-—]\s+", val)[0].strip()
-            if val:
-                translations.append(val)
+            stripped = re.sub(r"[\(（][^\)）]*[\)）]", "", val).strip()
+            stripped = re.split(r"\s*[\(（]", stripped)[0].strip()
+            stripped = re.split(r"\s+[-—]\s+", stripped)[0].strip()
+            translations.append(stripped or val)
     if len(translations) >= expected_count:
         return translations[-expected_count:]
     return None

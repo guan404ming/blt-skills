@@ -33,6 +33,7 @@
   "skill": "lyrics-translator",
   "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
   "agent": {
+    "model_id": "claude-opus-5",
     "assistant_turns": 3,
     "tool_calls": {
       "Skill": 1,
@@ -42,6 +43,8 @@
       "lyrics-translator": 1
     },
     "script_calls": {},
+    "counter_runs": 0,
+    "validator_runs": 0,
     "num_turns": 4,
     "cost_usd": 0.046444,
     "usage": {
@@ -81,5 +84,6 @@
     "is_error": true
   },
   "failed": true,
-  "error": "API Error: 400 Output blocked by content filtering policy"
+  "error": "API Error: 400 Output blocked by content filtering policy",
+  "failure_reason": "api_error"
 }

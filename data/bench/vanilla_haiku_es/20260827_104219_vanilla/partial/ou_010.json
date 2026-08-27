@@ -2,7 +2,7 @@
   "id": "ou_010",
   "artist": "ou-test",
   "ser": 1.0,
-  "scre": 1.0,
+  "scre": 0.6928571428571428,
   "ari": 0.0,
   "src_syl": [
     14,
@@ -12,21 +12,21 @@
     3
   ],
   "tgt_syl": [
-    0,
-    0,
-    0,
-    0,
-    0
+    17,
+    6,
+    5,
+    4,
+    8
   ],
   "src_rhyme": "ABCDE",
-  "tgt_rhyme": "AAAAA",
+  "tgt_rhyme": "ABCBB",
   "match": "0/5",
   "translations": [
-    "",
-    "",
-    "",
-    "",
-    ""
+    "(Tienes que aprovechar la oportunidad cuando puedas)",
+    "Todo lo que quiero",
+    "Estar presente",
+    "Estar lleno",
+    "Todo lo que necesito"
   ],
   "time_seconds": 8.39,
   "model": "claude-haiku-4-5-20251001",
@@ -39,6 +39,8 @@
     "tool_calls": {},
     "skill_loads": {},
     "script_calls": {},
+    "counter_runs": 0,
+    "validator_runs": 0,
     "num_turns": 1,
     "cost_usd": 0.0090373,
     "usage": {
@@ -77,6 +79,7 @@
     "final_text": "1. (Tienes que aprovechar la oportunidad cuando puedas)\n2. Todo lo que quiero\n3. Estar presente\n4. Estar lleno\n5. Todo lo que necesito",
     "is_error": false
   },
-  "failed": true,
-  "error": ""
+  "failed": false,
+  "error": "",
+  "failure_reason": ""
 }

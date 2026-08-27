@@ -31,6 +31,7 @@
   "time_seconds": 96.21,
   "model": "haiku",
   "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
     "assistant_turns": 10,
     "tool_calls": {
       "Skill": 1,
@@ -42,6 +43,8 @@
     "script_calls": {
       "syllable-counter": 5
     },
+    "counter_runs": 5,
+    "validator_runs": 0,
     "num_turns": 5,
     "cost_usd": 0.0167545,
     "usage": {
@@ -81,5 +84,6 @@
     "is_error": true
   },
   "failed": true,
-  "error": "API Error: Output blocked by content filtering policy"
+  "error": "API Error: Output blocked by content filtering policy",
+  "failure_reason": "api_error"
 }

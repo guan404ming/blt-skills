@@ -31,6 +31,7 @@
   "time_seconds": 134.25,
   "model": "haiku",
   "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
     "assistant_turns": 36,
     "tool_calls": {
       "Skill": 1,
@@ -45,6 +46,8 @@
       "syllable-pattern-analyzer": 1,
       "lyrics-validator": 3
     },
+    "counter_runs": 13,
+    "validator_runs": 3,
     "num_turns": 21,
     "cost_usd": 0.11736570000000002,
     "usage": {
@@ -84,5 +87,6 @@
     "is_error": false
   },
   "failed": false,
-  "error": ""
+  "error": "",
+  "failure_reason": ""
 }

@@ -31,6 +31,7 @@
   "time_seconds": 64.26,
   "model": "sonnet",
   "agent": {
+    "model_id": "claude-sonnet-5",
     "assistant_turns": 12,
     "tool_calls": {
       "Skill": 1,
@@ -42,6 +43,8 @@
     "script_calls": {
       ".claude": 5
     },
+    "counter_runs": 10,
+    "validator_runs": 1,
     "num_turns": 8,
     "cost_usd": 0.1439182,
     "usage": {
@@ -81,5 +84,6 @@
     "is_error": false
   },
   "failed": false,
-  "error": ""
+  "error": "",
+  "failure_reason": ""
 }
