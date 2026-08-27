@@ -1,0 +1,82 @@
+{
+  "id": "ou_030",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.374871794871795,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    12,
+    3,
+    10,
+    13
+  ],
+  "tgt_syl": [
+    17,
+    26,
+    12,
+    24,
+    26
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AABBA",
+  "match": "0/5",
+  "translations": [
+    "我が意識の境界に到達する",
+    "雲の縁に座る父がタバコを吸っているのが見える",
+    "ちょうど前と同じように",
+    "山や川や湖や海からやってきた者たち",
+    "今は夜と台所とセックスに限定されている"
+  ],
+  "time_seconds": 13.06,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0114373,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1818,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 828,
+      "output_tokens_details": {
+        "thinking_tokens": 729
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1818,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 828,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1818,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1818
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我が意識の境界に到達する\n2. 雲の縁に座る父がタバコを吸っているのが見える\n3. ちょうど前と同じように\n4. 山や川や湖や海からやってきた者たち\n5. 今は夜と台所とセックスに限定されている",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

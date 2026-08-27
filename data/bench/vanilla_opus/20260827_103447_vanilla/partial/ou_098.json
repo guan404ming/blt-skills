@@ -1,0 +1,82 @@
+{
+  "id": "ou_098",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.1088911088911089,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "tgt_syl": [
+    14,
+    9,
+    10,
+    12,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "友情曾是諾亞方舟般堅固的承諾",
+    "而我只是望著那片海",
+    "用模糊的視線等待永恆",
+    "這些年我買了車、手錶和相機",
+    "卻發現有些東西金錢買不到"
+  ],
+  "time_seconds": 9.98,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0437525,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1898,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "thinking_tokens": 128
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1898,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 218,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1898,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1898
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 友情曾是諾亞方舟般堅固的承諾\n2. 而我只是望著那片海\n3. 用模糊的視線等待永恆\n4. 這些年我買了車、手錶和相機\n5. 卻發現有些東西金錢買不到",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

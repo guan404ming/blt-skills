@@ -1,0 +1,82 @@
+{
+  "id": "ou_042",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.16746031746031745,
+  "ari": 0.0,
+  "src_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "tgt_syl": [
+    8,
+    9,
+    10,
+    12,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AAAAA",
+  "match": "0/5",
+  "translations": [
+    "但我們發現得太遲。",
+    "於是淚水只落給自己。",
+    "我們的相遇曾如此完美。",
+    "我仍記得，我們分別的那一刻。",
+    "互相拉住對方，我們多捨不得分開。"
+  ],
+  "time_seconds": 7.6,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0404375,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1889,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 89,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1889,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 89,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1889,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1889
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 但我們發現得太遲。\n2. 於是淚水只落給自己。\n3. 我們的相遇曾如此完美。\n4. 我仍記得，我們分別的那一刻。\n5. 互相拉住對方，我們多捨不得分開。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

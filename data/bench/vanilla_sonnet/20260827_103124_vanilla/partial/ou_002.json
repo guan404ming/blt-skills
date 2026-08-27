@@ -1,0 +1,82 @@
+{
+  "id": "ou_002",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.1488888888888889,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    11,
+    8,
+    6,
+    8,
+    4
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "一種我們從未有過的感受",
+    "雲中的自由敞開了",
+    "世界與你同在",
+    "有你,我的世界明亮",
+    "難以置信"
+  ],
+  "time_seconds": 10.92,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.18546,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 46209,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 62,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 46209,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 62,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 46209,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 46209
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 一種我們從未有過的感受\n2. 雲中的自由敞開了\n3. 世界與你同在\n4. 有你,我的世界明亮\n5. 難以置信",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

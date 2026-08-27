@@ -1,0 +1,82 @@
+{
+  "id": "ou_098",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.08160173160173159,
+  "ari": 1.0,
+  "src_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "tgt_syl": [
+    13,
+    8,
+    10,
+    12,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "这段友谊是承诺，坚如诺亚方舟",
+    "我只是凝望这片海",
+    "用模糊的目光等待永恒",
+    "这些年，我买了车、手表和相机",
+    "但我发现有些东西金钱买不到"
+  ],
+  "time_seconds": 13.4,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.011653799999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1826,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 885,
+      "output_tokens_details": {
+        "thinking_tokens": 792
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 885,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1826,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1826
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 这段友谊是承诺，坚如诺亚方舟\n2. 我只是凝望这片海\n3. 用模糊的目光等待永恒\n4. 这些年，我买了车、手表和相机\n5. 但我发现有些东西金钱买不到",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

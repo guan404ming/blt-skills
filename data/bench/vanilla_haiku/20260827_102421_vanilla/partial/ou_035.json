@@ -1,0 +1,82 @@
+{
+  "id": "ou_035",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.15858585858585858,
+  "ari": 0.0,
+  "src_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "tgt_syl": [
+    14,
+    9,
+    13,
+    10,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "你收拾行李，从墙上取下一张照片",
+    "我问你觉得还要多久",
+    "你说这个疯狂的世界已经崩裂",
+    "夏天已过，叶子开始飘零",
+    "又一个冬天就要来了"
+  ],
+  "time_seconds": 14.18,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0119298,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1819,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 943,
+      "output_tokens_details": {
+        "thinking_tokens": 851
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1819,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 943,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1819,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1819
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你收拾行李，从墙上取下一张照片\n2. 我问你觉得还要多久\n3. 你说这个疯狂的世界已经崩裂\n4. 夏天已过，叶子开始飘零\n5. 又一个冬天就要来了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

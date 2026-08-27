@@ -1,0 +1,82 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.911010101010101,
+  "ari": 0.13793103448275862,
+  "src_syl": [
+    11,
+    18,
+    10,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    19,
+    32,
+    18,
+    18,
+    22
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABAAA",
+  "match": "0/5",
+  "translations": [
+    "砂漠の薄暮は赤く染まったであろう",
+    "千年の孤独から私を解放できる誰かはいるのだろうか",
+    "夜を追う翼の中にあなたを見る",
+    "ろうそくの光の温もりを巡る",
+    "二つの極が回る風の中にあなたを聞く"
+  ],
+  "time_seconds": 13.26,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0111353,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1827,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 764,
+      "output_tokens_details": {
+        "thinking_tokens": 648
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1827,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 764,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1827,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1827
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 砂漠の薄暮は赤く染まったであろう\n2. 千年の孤独から私を解放できる誰かはいるのだろうか\n3. 夜を追う翼の中にあなたを見る\n4. ろうそくの光の温もりを巡る\n5. 二つの極が回る風の中にあなたを聞く",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_043",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.12647352647352647,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    13,
+    12,
+    7,
+    9
+  ],
+  "tgt_syl": [
+    9,
+    9,
+    12,
+    8,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCA",
+  "match": "2/5",
+  "translations": [
+    "长如一条路，丑如蟾蜍",
+    "美如挂在灯具上的画",
+    "强如家族，强如我想要的样子",
+    "亮如白昼，轻如嬉戏",
+    "硬如钉子，伟大如鲸鱼"
+  ],
+  "time_seconds": 21.12,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0152108,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1822,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1598,
+      "output_tokens_details": {
+        "thinking_tokens": 1503
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1822,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1598,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1822,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1822
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 长如一条路，丑如蟾蜍\n2. 美如挂在灯具上的画\n3. 强如家族，强如我想要的样子\n4. 亮如白昼，轻如嬉戏\n5. 硬如钉子，伟大如鲸鱼",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

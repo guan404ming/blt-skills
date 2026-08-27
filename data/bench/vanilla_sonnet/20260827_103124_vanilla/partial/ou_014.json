@@ -1,0 +1,82 @@
+{
+  "id": "ou_014",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.18031746031746032,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    9,
+    14,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    9,
+    8,
+    9,
+    6,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABACC",
+  "match": "1/5",
+  "translations": [
+    "过这村子就没这店了。",
+    "你知道,你懂我意思,",
+    "我真的很想亲你的脸。",
+    "就在深圳街角;",
+    "那时的我们,随风飘荡;"
+  ],
+  "time_seconds": 7.77,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018612399999999998,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2266,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 75,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2266,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 75,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2266,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2266
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 过这村子就没这店了。\n2. 你知道,你懂我意思,\n3. 我真的很想亲你的脸。\n4. 就在深圳街角;\n5. 那时的我们,随风飘荡;",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

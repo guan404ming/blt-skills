@@ -1,0 +1,82 @@
+{
+  "id": "ou_047",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.33714285714285713,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    10,
+    10,
+    14,
+    6,
+    7
+  ],
+  "tgt_syl": [
+    11,
+    13,
+    17,
+    9,
+    11
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABCDC",
+  "match": "0/5",
+  "translations": [
+    "黑白的思想都向我屈服了",
+    "当我走过那些未被点亮的走廊",
+    "虽然我如此软弱，你就像天使站在我身边",
+    "当悲伤呼唤我的名字",
+    "我知道没什么能保持不变"
+  ],
+  "time_seconds": 12.71,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0115188,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1816,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 862,
+      "output_tokens_details": {
+        "thinking_tokens": 765
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1816,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 862,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1816,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1816
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 黑白的思想都向我屈服了\n2. 当我走过那些未被点亮的走廊\n3. 虽然我如此软弱，你就像天使站在我身边\n4. 当悲伤呼唤我的名字\n5. 我知道没什么能保持不变",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_039",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.14326797385620915,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "tgt_syl": [
+    12,
+    11,
+    11,
+    11,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "我该怎么办，失去了你的未来",
+    "还有谁能代替你让我吻别",
+    "你怎么能突然松开我的手",
+    "你怎么能说\"我根本不爱你\"",
+    "原来这只是短暂幸福的承诺"
+  ],
+  "time_seconds": 16.93,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0138748,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1829,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1328,
+      "output_tokens_details": {
+        "thinking_tokens": 1235
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1829,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1328,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1829,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1829
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我该怎么办，失去了你的未来\n2. 还有谁能代替你让我吻别\n3. 你怎么能突然松开我的手\n4. 你怎么能说\"我根本不爱你\"\n5. 原来这只是短暂幸福的承诺",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

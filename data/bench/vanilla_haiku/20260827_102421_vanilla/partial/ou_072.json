@@ -1,0 +1,82 @@
+{
+  "id": "ou_072",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2517216117216117,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    6,
+    13,
+    15,
+    14,
+    15
+  ],
+  "tgt_syl": [
+    11,
+    15,
+    13,
+    13,
+    14
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCBD",
+  "match": "0/5",
+  "translations": [
+    "不会成为你游戏的一部分",
+    "我是谁，你是否总在问自己这个问题",
+    "我是谁，总是活在他人的期待中",
+    "我是谁，谁未经授权就为你定义",
+    "你是谁，只有不是你自己才能安全"
+  ],
+  "time_seconds": 12.91,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0116118,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1825,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 877,
+      "output_tokens_details": {
+        "thinking_tokens": 777
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1825,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 877,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1825,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1825
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不会成为你游戏的一部分\n2. 我是谁，你是否总在问自己这个问题\n3. 我是谁，总是活在他人的期待中\n4. 我是谁，谁未经授权就为你定义\n5. 你是谁，只有不是你自己才能安全",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_041",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.21595959595959596,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    5,
+    11,
+    12,
+    20
+  ],
+  "tgt_syl": [
+    11,
+    4,
+    12,
+    10,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBBB",
+  "match": "0/5",
+  "translations": [
+    "你可不可以再說一次你會",
+    "永遠愛我。",
+    "像最愛我的那個你,從未變過。",
+    "我還記得,一路上的風景。",
+    "路有多難走,回憶就有多難忘。"
+  ],
+  "time_seconds": 6.99,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0186864,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2267,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 82,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2267,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 82,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2267,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2267
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你可不可以再說一次你會\n2. 永遠愛我。\n3. 像最愛我的那個你,從未變過。\n4. 我還記得,一路上的風景。\n5. 路有多難走,回憶就有多難忘。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

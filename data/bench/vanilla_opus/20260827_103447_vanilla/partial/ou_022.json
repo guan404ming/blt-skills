@@ -1,0 +1,82 @@
+{
+  "id": "ou_022",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.3619047619047619,
+  "ari": 0.0,
+  "src_syl": [
+    3,
+    8,
+    7,
+    4,
+    3
+  ],
+  "tgt_syl": [
+    4,
+    8,
+    8,
+    8,
+    4
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "安靜下來",
+    "我還年輕 我還天真",
+    "說些什麼 讓我相信",
+    "帶我走吧 帶我走吧",
+    "到遠方去"
+  ],
+  "time_seconds": 10.11,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.043897,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1856,
+      "cache_read_input_tokens": 38604,
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "thinking_tokens": 176
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1856,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 241,
+          "cache_read_input_tokens": 38604,
+          "cache_creation_input_tokens": 1856,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1856
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 安靜下來\n2. 我還年輕 我還天真\n3. 說些什麼 讓我相信\n4. 帶我走吧 帶我走吧\n5. 到遠方去",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

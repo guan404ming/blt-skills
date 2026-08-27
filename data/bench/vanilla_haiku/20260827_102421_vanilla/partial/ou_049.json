@@ -1,0 +1,82 @@
+{
+  "id": "ou_049",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.09629573041337747,
+  "ari": 0.0,
+  "src_syl": [
+    17,
+    11,
+    15,
+    14,
+    18
+  ],
+  "tgt_syl": [
+    16,
+    10,
+    17,
+    16,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABAAC",
+  "match": "0/5",
+  "translations": [
+    "你搬进我破旧的房子，好几天没踏出门",
+    "你学会了洗衣服和做饭",
+    "你迁就我的脾气，让我觉得自己像个男人",
+    "我生气了，砸碎玻璃杯，砸烂了房间的门",
+    "让你哭了好几天，没接电话就这样离开了"
+  ],
+  "time_seconds": 11.12,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0103278,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1848,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 611,
+      "output_tokens_details": {
+        "thinking_tokens": 489
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1848,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 611,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1848,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1848
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你搬进我破旧的房子，好几天没踏出门\n2. 你学会了洗衣服和做饭\n3. 你迁就我的脾气，让我觉得自己像个男人\n4. 我生气了，砸碎玻璃杯，砸烂了房间的门\n5. 让你哭了好几天，没接电话就这样离开了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

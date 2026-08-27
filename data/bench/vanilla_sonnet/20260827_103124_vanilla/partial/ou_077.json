@@ -1,0 +1,82 @@
+{
+  "id": "ou_077",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2000865800865801,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    10,
+    6,
+    5,
+    7
+  ],
+  "tgt_syl": [
+    12,
+    10,
+    5,
+    8,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCD",
+  "match": "1/5",
+  "translations": [
+    "伤痛终会平息，松开你的手掌",
+    "数三二一，一切终将明晰",
+    "我失败千次",
+    "你的仁慈依然还在",
+    "若我再次跌倒"
+  ],
+  "time_seconds": 8.8,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018518400000000004,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2249,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 72,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2249,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 72,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2249,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2249
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 伤痛终会平息，松开你的手掌\n2. 数三二一，一切终将明晰\n3. 我失败千次\n4. 你的仁慈依然还在\n5. 若我再次跌倒",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_005",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.11303030303030304,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    10,
+    12,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    13,
+    10,
+    11,
+    8,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "你准备好了吗？时光一去不复返",
+    "我想飞翔，无需任何理由",
+    "无论世界的尽头有多孤独",
+    "我必然会在你身边",
+    "我们曾说过，无论世界有多宽广"
+  ],
+  "time_seconds": 11.54,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.010294600000000001,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1820,
+      "cache_read_input_tokens": 35646,
+      "output_tokens": 616,
+      "output_tokens_details": {
+        "thinking_tokens": 527
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1820,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 616,
+          "cache_read_input_tokens": 35646,
+          "cache_creation_input_tokens": 1820,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1820
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你准备好了吗？时光一去不复返\n2. 我想飞翔，无需任何理由\n3. 无论世界的尽头有多孤独\n4. 我必然会在你身边\n5. 我们曾说过，无论世界有多宽广",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

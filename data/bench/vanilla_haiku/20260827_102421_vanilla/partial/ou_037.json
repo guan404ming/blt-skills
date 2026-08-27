@@ -1,0 +1,82 @@
+{
+  "id": "ou_037",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.2733333333333333,
+  "ari": 0.0,
+  "src_syl": [
+    4,
+    3,
+    5,
+    12,
+    12
+  ],
+  "tgt_syl": [
+    5,
+    4,
+    6,
+    18,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "0/5",
+  "translations": [
+    "在人行道上",
+    "通往何处",
+    "每晚都去那儿",
+    "他有那男孩气的样子，是我喜欢的男人气质",
+    "我是建筑师，我在绘制蓝图"
+  ],
+  "time_seconds": 15.77,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0130698,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1804,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1177,
+      "output_tokens_details": {
+        "thinking_tokens": 1098
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1804,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1177,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1804,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1804
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 在人行道上\n2. 通往何处\n3. 每晚都去那儿\n4. 他有那男孩气的样子，是我喜欢的男人气质\n5. 我是建筑师，我在绘制蓝图",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

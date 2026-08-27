@@ -1,0 +1,82 @@
+{
+  "id": "ou_023",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.23714285714285716,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    6,
+    13,
+    15,
+    14,
+    15
+  ],
+  "tgt_syl": [
+    9,
+    13,
+    18,
+    18,
+    18
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCDA",
+  "match": "1/5",
+  "translations": [
+    "No seré parte de tu juego",
+    "Quién soy, ¿siempre te haces esta pregunta?",
+    "Quién soy, siempre viviendo en las expectativas de otros",
+    "Quién soy, quién te ayudó a definirte sin autoridad",
+    "Quién eres, solo puede ser seguro si no eres tú mismo"
+  ],
+  "time_seconds": 17.15,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0131243,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1824,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 1163,
+      "output_tokens_details": {
+        "thinking_tokens": 1062
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1824,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1163,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1824,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1824
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. No seré parte de tu juego\n2. Quién soy, ¿siempre te haces esta pregunta?\n3. Quién soy, siempre viviendo en las expectativas de otros\n4. Quién soy, quién te ayudó a definirte sin autoridad\n5. Quién eres, solo puede ser seguro si no eres tú mismo",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

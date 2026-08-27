@@ -1,0 +1,82 @@
+{
+  "id": "ou_016",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.4881959706959707,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    16,
+    13,
+    7,
+    15
+  ],
+  "tgt_syl": [
+    16,
+    19,
+    21,
+    11,
+    22
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "0/5",
+  "translations": [
+    "月は川のロマンティックな瞳",
+    "一人杯を上げ、柳の樹の簾開く",
+    "この人生に敬礼して、春風の中へ",
+    "花はまだ枯れていない",
+    "ああ、冒険の始まりからもう年月が経つ"
+  ],
+  "time_seconds": 15.0,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0126133,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1831,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 1058,
+      "output_tokens_details": {
+        "thinking_tokens": 958
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1831,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1058,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1831,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1831
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 月は川のロマンティックな瞳\n2. 一人杯を上げ、柳の樹の簾開く\n3. この人生に敬礼して、春風の中へ\n4. 花はまだ枯れていない\n5. ああ、冒険の始まりからもう年月が経つ",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

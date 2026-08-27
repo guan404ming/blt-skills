@@ -1,0 +1,82 @@
+{
+  "id": "ou_070",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.3126068376068376,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    13,
+    10,
+    8,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    14,
+    14,
+    11,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "给她翅膀，让她飞翔",
+    "当你发现自己无助地躺在她怀里",
+    "你就知道你真的爱上了一个女人",
+    "当你爱一个女人时，告诉她",
+    "她真的是被渴望的"
+  ],
+  "time_seconds": 8.53,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018710400000000002,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2257,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 88,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2257,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 88,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2257,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2257
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 给她翅膀，让她飞翔\n2. 当你发现自己无助地躺在她怀里\n3. 你就知道你真的爱上了一个女人\n4. 当你爱一个女人时，告诉她\n5. 她真的是被渴望的",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

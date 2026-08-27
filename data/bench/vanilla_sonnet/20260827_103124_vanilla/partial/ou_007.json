@@ -1,0 +1,82 @@
+{
+  "id": "ou_007",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.15833333333333333,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    5,
+    8,
+    6,
+    2,
+    8
+  ],
+  "tgt_syl": [
+    5,
+    7,
+    5,
+    3,
+    8
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABCDB",
+  "match": "2/5",
+  "translations": [
+    "恩典解我懼；",
+    "那恩典何等珍貴,",
+    "我初信之時!",
+    "第三節:",
+    "主曾應許賜福於我,"
+  ],
+  "time_seconds": 6.95,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018380399999999998,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2243,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 61,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2243,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 61,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2243,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2243
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 恩典解我懼；\n2. 那恩典何等珍貴,\n3. 我初信之時!\n4. 第三節:\n5. 主曾應許賜福於我,",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_079",
+  "artist": "ou-test",
+  "ser": 0.4,
+  "scre": 0.12285714285714286,
+  "ari": 0.0,
+  "src_syl": [
+    4,
+    5,
+    6,
+    10,
+    14
+  ],
+  "tgt_syl": [
+    4,
+    5,
+    6,
+    6,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AABCD",
+  "match": "3/5",
+  "translations": [
+    "沒有意外",
+    "我們都明白",
+    "回憶來了又走",
+    "在老車站躲雨",
+    "無感地回想人生，握緊手指"
+  ],
+  "time_seconds": 9.4,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.042887499999999995,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1874,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 193,
+      "output_tokens_details": {
+        "thinking_tokens": 134
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1874,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 193,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1874,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1874
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 沒有意外\n2. 我們都明白\n3. 回憶來了又走\n4. 在老車站躲雨\n5. 無感地回想人生，握緊手指",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

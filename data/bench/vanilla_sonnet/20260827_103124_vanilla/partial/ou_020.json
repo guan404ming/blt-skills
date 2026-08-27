@@ -1,0 +1,82 @@
+{
+  "id": "ou_020",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.4666666666666666,
+  "ari": 0.0,
+  "src_syl": [
+    2,
+    3,
+    3,
+    2,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    5,
+    5,
+    3,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "1/5",
+  "translations": [
+    "但如果",
+    "你仍然可以",
+    "停下来想想",
+    "想着我",
+    "想想那些事"
+  ],
+  "time_seconds": 6.37,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0180964,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2217,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 43,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2217,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 43,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2217,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2217
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 但如果\n2. 你仍然可以\n3. 停下来想想\n4. 想着我\n5. 想想那些事",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_050",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.16087947140578718,
+  "ari": 0.0,
+  "src_syl": [
+    19,
+    18,
+    22,
+    14,
+    19
+  ],
+  "tgt_syl": [
+    21,
+    15,
+    15,
+    17,
+    19
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCD",
+  "match": "1/5",
+  "translations": [
+    "相處比相愛更難，我們都努力過；你是王，我卻不是后",
+    "我們去碧潭划天鵝船，你卻說你暈船",
+    "我們去陽明山看夜景，你說真的好美",
+    "我們去看五月天的演唱會，你感動到落淚",
+    "一起走過的日子彷彿就在昨天，依然歷歷在目"
+  ],
+  "time_seconds": 12.79,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0494625,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1949,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 426,
+      "output_tokens_details": {
+        "thinking_tokens": 294
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1949,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 426,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1949,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1949
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 相處比相愛更難，我們都努力過；你是王，我卻不是后\n2. 我們去碧潭划天鵝船，你卻說你暈船\n3. 我們去陽明山看夜景，你說真的好美\n4. 我們去看五月天的演唱會，你感動到落淚\n5. 一起走過的日子彷彿就在昨天，依然歷歷在目",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

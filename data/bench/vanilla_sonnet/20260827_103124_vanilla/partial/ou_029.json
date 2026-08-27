@@ -1,0 +1,82 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.24861111111111106,
+  "ari": 0.13793103448275862,
+  "src_syl": [
+    16,
+    8,
+    9,
+    8,
+    9
+  ],
+  "tgt_syl": [
+    9,
+    9,
+    6,
+    7,
+    7
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "AABAA",
+  "match": "0/5",
+  "translations": [
+    "连绵群山脚下百花开",
+    "什么样的节奏最摇摆",
+    "哪首歌最快乐",
+    "蜿蜒江河自天来",
+    "缤纷色彩流向海"
+  ],
+  "time_seconds": 6.82,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018574399999999998,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2259,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 74,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2259,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 74,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2259,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2259
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 连绵群山脚下百花开\n2. 什么样的节奏最摇摆\n3. 哪首歌最快乐\n4. 蜿蜒江河自天来\n5. 缤纷色彩流向海",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

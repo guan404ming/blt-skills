@@ -1,0 +1,82 @@
+{
+  "id": "ou_030",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.1712121212121212,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    10,
+    12,
+    11,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "你是我心中最美的云",
+    "与你共饮共食,常伴身旁",
+    "永远传唱最绚丽的民族风情",
+    "那是整片天空最美的姿态",
+    "哟啦啦嘿啦呗"
+  ],
+  "time_seconds": 10.0,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0187624,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2271,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 88,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2271,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 88,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2271,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2271
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你是我心中最美的云\n2. 与你共饮共食,常伴身旁\n3. 永远传唱最绚丽的民族风情\n4. 那是整片天空最美的姿态\n5. (副歌)哟啦啦嘿啦呗",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

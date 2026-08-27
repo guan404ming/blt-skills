@@ -1,0 +1,82 @@
+{
+  "id": "ou_018",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.27076923076923076,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    8,
+    13,
+    4,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    10,
+    15,
+    3,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "0/5",
+  "translations": [
+    "Nos fuimos a nadar",
+    "Las llamas del sol quemaron mi piel.",
+    "Por eso nunca iremos a la piscina juntos",
+    "Nunca más.",
+    "En el lugar hay innumerables filas"
+  ],
+  "time_seconds": 12.59,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0106493,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1804,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 676,
+      "output_tokens_details": {
+        "thinking_tokens": 610
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1804,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 676,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1804,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1804
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Nos fuimos a nadar\n2. Las llamas del sol quemaron mi piel.\n3. Por eso nunca iremos a la piscina juntos\n4. Nunca más.\n5. En el lugar hay innumerables filas",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

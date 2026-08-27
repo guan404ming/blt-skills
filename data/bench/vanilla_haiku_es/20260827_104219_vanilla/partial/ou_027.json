@@ -1,0 +1,82 @@
+{
+  "id": "ou_027",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.4894871794871795,
+  "ari": 0.0,
+  "src_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "tgt_syl": [
+    15,
+    9,
+    6,
+    16,
+    5
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "Parado ahí como si no supieras qué decir,",
+    "Pero conozco esa cara.",
+    "Y aquí estoy,",
+    "Preparándome para lo que sé que viene hacia mí",
+    "Qué desperdicio."
+  ],
+  "time_seconds": 9.69,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0099393,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1809,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 532,
+      "output_tokens_details": {
+        "thinking_tokens": 460
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1809,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 532,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1809,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1809
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Parado ahí como si no supieras qué decir,\n2. Pero conozco esa cara.\n3. Y aquí estoy,\n4. Preparándome para lo que sé que viene hacia mí\n5. Qué desperdicio.",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

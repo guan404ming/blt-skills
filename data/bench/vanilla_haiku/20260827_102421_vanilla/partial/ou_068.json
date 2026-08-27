@@ -1,0 +1,82 @@
+{
+  "id": "ou_068",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.1365773115773116,
+  "ari": 1.0,
+  "src_syl": [
+    11,
+    13,
+    8,
+    2,
+    9
+  ],
+  "tgt_syl": [
+    13,
+    11,
+    9,
+    2,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "我拿粉单，我的车全无钥匙启动",
+    "康普顿，我马上拿城市钥匙",
+    "百达翡丽如海，原谅我",
+    "[第2段]",
+    "哈哈，我一直在赶他们出去"
+  ],
+  "time_seconds": 20.09,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.014777799999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1828,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1509,
+      "output_tokens_details": {
+        "thinking_tokens": 1419
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1828,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1509,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1828,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1828
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我拿粉单，我的车全无钥匙启动\n2. 康普顿，我马上拿城市钥匙\n3. 百达翡丽如海，原谅我\n4. [第2段]\n5. 哈哈，我一直在赶他们出去",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

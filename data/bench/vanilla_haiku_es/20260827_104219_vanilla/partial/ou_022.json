@@ -1,0 +1,82 @@
+{
+  "id": "ou_022",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.16333333333333333,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "tgt_syl": [
+    8,
+    11,
+    14,
+    15,
+    13
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "1/5",
+  "translations": [
+    "que siempre estarán juntos,",
+    "Tienes que darle fe, mantenla cerca",
+    "Un poco de ternura, tienes que tratarla bien,",
+    "Ella estará ahí para ti, cuidándote bien,",
+    "Realmente tienes que amar a tu mujer..."
+  ],
+  "time_seconds": 12.2,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.010885299999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1822,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 716,
+      "output_tokens_details": {
+        "thinking_tokens": 631
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1822,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 716,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1822,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1822
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. que siempre estarán juntos,\n2. Tienes que darle fe, mantenla cerca\n3. Un poco de ternura, tienes que tratarla bien,\n4. Ella estará ahí para ti, cuidándote bien,\n5. Realmente tienes que amar a tu mujer...",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

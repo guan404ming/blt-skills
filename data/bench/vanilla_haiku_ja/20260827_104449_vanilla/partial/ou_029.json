@@ -1,0 +1,82 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.021818181818182,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    18,
+    21,
+    16,
+    7,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDC",
+  "match": "0/5",
+  "translations": [
+    "そして絶対に考えるんじゃないわ",
+    "涙をぜんぶ詰めて家に持ち帰るなんて",
+    "そして一人きりの時に泣き出す",
+    "ここでやるのよ",
+    "今泣いてる"
+  ],
+  "time_seconds": 19.39,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.014230299999999998,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1807,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 1391,
+      "output_tokens_details": {
+        "thinking_tokens": 1302
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1807,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1391,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1807,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1807
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. そして絶対に考えるんじゃないわ\n2. 涙をぜんぶ詰めて家に持ち帰るなんて\n3. そして一人きりの時に泣き出す\n4. ここでやるのよ\n5. 今泣いてる",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

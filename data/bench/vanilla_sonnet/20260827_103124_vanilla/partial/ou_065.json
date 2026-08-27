@@ -1,0 +1,82 @@
+{
+  "id": "ou_065",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.24432900432900434,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "tgt_syl": [
+    8,
+    6,
+    7,
+    6,
+    9
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "AABCD",
+  "match": "0/5",
+  "translations": [
+    "我们之间 有些美好",
+    "你现在 不太好",
+    "躺在床上 孤独夜",
+    "我需要你 宝贝",
+    "我一直找你 直到心盲"
+  ],
+  "time_seconds": 6.45,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018502400000000002,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2255,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 68,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2255,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 68,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2255,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2255
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我们之间 有些美好\n2. 你现在 不太好\n3. 躺在床上 孤独夜\n4. 我需要你 宝贝\n5. 我一直找你 直到心盲",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

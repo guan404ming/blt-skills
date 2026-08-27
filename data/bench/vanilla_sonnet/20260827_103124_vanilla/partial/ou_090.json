@@ -1,0 +1,82 @@
+{
+  "id": "ou_090",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.12412698412698413,
+  "ari": 0.0,
+  "src_syl": [
+    14,
+    18,
+    11,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    12,
+    15,
+    11,
+    8,
+    12
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "不再喧闹的街上，我望着月亮",
+    "忘了那忽然滑落脸上的，是雨还是泪",
+    "心在低语，却什么也听不见",
+    "早晨，我总是微笑着",
+    "为何一到夜晚，我就无法入睡"
+  ],
+  "time_seconds": 8.04,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0189304,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2287,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 98,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2287,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 98,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2287,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2287
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不再喧闹的街上，我望着月亮\n2. 忘了那忽然滑落脸上的，是雨还是泪\n3. 心在低语，却什么也听不见\n4. 早晨，我总是微笑着\n5. 为何一到夜晚，我就无法入睡",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

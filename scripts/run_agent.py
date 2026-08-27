@@ -29,8 +29,19 @@ def log(msg):
         print(msg, file=sys.stderr, flush=True)
 
 
+VANILLA_TOOLS = "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit"
+
+
 def build_prompt(song, skill):
     src = "\n".join(f"{i + 1}. {line}" for i, line in enumerate(song["source_lines"]))
+    if skill == "none":
+        return (
+            f"Translate the following {len(song['source_lines'])} song lyric lines "
+            f"from {song['source_lang']} to {song['target_lang']}.\n\n"
+            f"Source lines:\n{src}\n\n"
+            f"Output exactly {len(song['source_lines'])} translated lines, numbered 1-{len(song['source_lines'])}. "
+            "No explanations, no annotations."
+        )
     return (
         f"Use the {skill} skill to translate these {len(song['source_lines'])} lines "
         f"from {song['source_lang']} to {song['target_lang']}.\n\n"
@@ -96,7 +107,11 @@ def summarize(events):
                         if tail:
                             scripts[tail[0].split("/")[0]] += 1
     result = next((ev for ev in events if ev.get("type") == "result"), {})
+    model_id = next(
+        (ev["message"].get("model") for ev in events if ev.get("type") == "assistant"), None
+    )
     return {
+        "model_id": model_id,
         "assistant_turns": turns,
         "tool_calls": dict(tools),
         "skill_loads": dict(skills),
@@ -178,18 +193,26 @@ def main():
     parser.add_argument("--workers", type=int, default=1)
     parser.add_argument("--timeout", type=int, default=1200)
     parser.add_argument("--retries", type=int, default=2)
-    parser.add_argument("--skill", default="lyrics-translator")
+    parser.add_argument(
+        "--skill",
+        default="lyrics-translator",
+        help="skill name, or 'none' for the tool-free single-prompt baseline",
+    )
     parser.add_argument("--allowed-tools", default=ALLOWED_TOOLS)
     parser.add_argument("--disallowed-tools", default="")
     parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
-    args.bench_method = (
-        "agent"
-        if args.skill == "lyrics-translator"
-        else f"agent_{args.skill.replace('lyrics-translator-', '')}"
-    )
-    if args.disallowed_tools:
-        args.bench_method += "_no" + args.disallowed_tools.replace(",", "")
+    if args.skill == "none":
+        args.bench_method = "vanilla"
+        args.disallowed_tools = args.disallowed_tools or VANILLA_TOOLS
+    else:
+        args.bench_method = (
+            "agent"
+            if args.skill == "lyrics-translator"
+            else f"agent_{args.skill.replace('lyrics-translator-', '')}"
+        )
+        if args.disallowed_tools:
+            args.bench_method += "_no" + args.disallowed_tools.replace(",", "")
 
     if args.resume and (Path(args.output_dir) / "test_songs.json").exists():
         outdir = Path(args.output_dir)

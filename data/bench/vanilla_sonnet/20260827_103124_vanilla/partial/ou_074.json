@@ -1,0 +1,82 @@
+{
+  "id": "ou_074",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.3202020202020202,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    10,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    14,
+    7,
+    9,
+    7,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "因为我也是你众多甜心中的一个",
+    "若我能重活一次",
+    "我仍会这样爱你如初",
+    "你的爱无可取代",
+    "我无法想象与他人共度余生"
+  ],
+  "time_seconds": 6.61,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0185704,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2257,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 74,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2257,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 74,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2257,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2257
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 因为我也是你众多甜心中的一个\n2. 若我能重活一次\n3. 我仍会这样爱你如初\n4. 你的爱无可取代\n5. 我无法想象与他人共度余生",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

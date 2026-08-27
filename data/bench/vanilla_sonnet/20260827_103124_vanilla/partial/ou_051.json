@@ -1,0 +1,82 @@
+{
+  "id": "ou_051",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.3599067599067599,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    12,
+    11,
+    13,
+    12
+  ],
+  "tgt_syl": [
+    9,
+    8,
+    7,
+    7,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDB",
+  "match": "0/5",
+  "translations": [
+    "空杯静置月光下，惜哉",
+    "徘徊于浩渺春秋间",
+    "情深者，去世最速",
+    "少年扇风入霜鬓",
+    "幸有人穿行寒暑间"
+  ],
+  "time_seconds": 7.94,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018738400000000002,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2289,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 78,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2289,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 78,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2289,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2289
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 空杯静置月光下，惜哉\n2. 徘徊于浩渺春秋间\n3. 情深者，去世最速\n4. 少年扇风入霜鬓\n5. 幸有人穿行寒暑间",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

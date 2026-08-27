@@ -1,0 +1,82 @@
+{
+  "id": "ou_024",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.16725274725274725,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    7,
+    13,
+    7,
+    7
+  ],
+  "tgt_syl": [
+    9,
+    7,
+    9,
+    9,
+    6
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "男孩遇见男孩，真美好",
+    "那是他的开场白",
+    "有点老套，有时逗我笑",
+    "那是他说的第一句话",
+    "我只皱眉摇头"
+  ],
+  "time_seconds": 6.65,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0185284,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2255,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 71,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2255,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 71,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2255,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2255
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 男孩遇见男孩，真美好\n2. 那是他的开场白\n3. 有点老套，有时逗我笑\n4. 那是他说的第一句话\n5. 我只皱眉摇头",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_075",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.23504273504273504,
+  "ari": 0.0,
+  "src_syl": [
+    4,
+    6,
+    6,
+    13,
+    9
+  ],
+  "tgt_syl": [
+    6,
+    7,
+    7,
+    10,
+    8
+  ],
+  "src_rhyme": "ABACD",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "在你后悔之前",
+    "因为生活太短暂",
+    "没有时间去浪费",
+    "迷人眼影上笼罩着伪装",
+    "身体的线条在警告"
+  ],
+  "time_seconds": 10.96,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0099578,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1808,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 553,
+      "output_tokens_details": {
+        "thinking_tokens": 483
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1808,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 553,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1808,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1808
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 在你后悔之前\n2. 因为生活太短暂\n3. 没有时间去浪费\n4. 迷人眼影上笼罩着伪装\n5. 身体的线条在警告",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

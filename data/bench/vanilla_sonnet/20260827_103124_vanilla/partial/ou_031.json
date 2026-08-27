@@ -1,0 +1,82 @@
+{
+  "id": "ou_031",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.36,
+  "ari": 1.0,
+  "src_syl": [
+    5,
+    5,
+    4,
+    4,
+    7
+  ],
+  "tgt_syl": [
+    5,
+    9,
+    6,
+    6,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "俯瞰这一切",
+    "明亮蓝色的城市灯光",
+    "他们不会等待",
+    "我们留下不走",
+    "嚎叫的鬼魂再现"
+  ],
+  "time_seconds": 6.8,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0184124,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2236,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 67,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2236,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 67,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2236,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2236
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 俯瞰这一切\n2. 明亮蓝色的城市灯光\n3. 他们不会等待\n4. 我们留下不走\n5. 嚎叫的鬼魂再现",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_018",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.1472222222222222,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    8,
+    11,
+    15,
+    10,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "我把青春倾注于她",
+    "我也拨响琴弦入盛夏之巅",
+    "若触动你心，就让宇宙相连托你远航",
+    "逆光而行，任苍穹击打我",
+    "短暂的路，始与终"
+  ],
+  "time_seconds": 15.77,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0118227,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1821,
+      "cache_read_input_tokens": 35657,
+      "output_tokens": 921,
+      "output_tokens_details": {
+        "thinking_tokens": 830
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1821,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 921,
+          "cache_read_input_tokens": 35657,
+          "cache_creation_input_tokens": 1821,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1821
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我把青春倾注于她\n2. 我也拨响琴弦入盛夏之巅\n3. 若触动你心，就让宇宙相连托你远航\n4. 逆光而行，任苍穹击打我\n5. 短暂的路，始与终",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

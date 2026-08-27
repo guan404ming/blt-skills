@@ -1,0 +1,82 @@
+{
+  "id": "ou_055",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.24500000000000002,
+  "ari": 0.0,
+  "src_syl": [
+    4,
+    4,
+    8,
+    4,
+    10
+  ],
+  "tgt_syl": [
+    4,
+    7,
+    7,
+    3,
+    11
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "为你骄傲",
+    "现在你让我想起",
+    "我从未随风摇摆",
+    "让它流",
+    "让它带我去它想去的地方"
+  ],
+  "time_seconds": 17.36,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0125798,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1799,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1081,
+      "output_tokens_details": {
+        "thinking_tokens": 1021
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1799,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1081,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1799,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1799
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 为你骄傲\n2. 现在你让我想起\n3. 我从未随风摇摆\n4. 让它流\n5. 让它带我去它想去的地方",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

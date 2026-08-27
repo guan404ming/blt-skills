@@ -1,0 +1,82 @@
+{
+  "id": "ou_004",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.5834848484848485,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    10,
+    12,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    18,
+    10,
+    16,
+    15,
+    21
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AABCB",
+  "match": "1/5",
+  "translations": [
+    "もう準備はできた？時間は戻らない",
+    "理由もなく飛びたい",
+    "世界の果てがどんなに孤独でも",
+    "きっと君のそばに私がいる",
+    "前に言ったけど、世界がどんなに広くても"
+  ],
+  "time_seconds": 13.11,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0111393,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1819,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 768,
+      "output_tokens_details": {
+        "thinking_tokens": 676
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1819,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 768,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1819,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1819
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. もう準備はできた？時間は戻らない\n2. 理由もなく飛びたい\n3. 世界の果てがどんなに孤独でも\n4. きっと君のそばに私がいる\n5. 前に言ったけど、世界がどんなに広くても",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

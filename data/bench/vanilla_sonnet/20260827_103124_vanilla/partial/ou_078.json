@@ -1,0 +1,82 @@
+{
+  "id": "ou_078",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.24500000000000002,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "tgt_syl": [
+    2,
+    8,
+    9,
+    8,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "长大",
+    "若我逃离,能否得救?",
+    "无法预料你何时消散",
+    "告诉我,我等不及了",
+    "学得快,回不了头"
+  ],
+  "time_seconds": 7.23,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0184004,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2247,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 61,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2247,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 61,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2247
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 长大\n2. 若我逃离,能否得救?\n3. 无法预料你何时消散\n4. 告诉我,我等不及了\n5. 学得快,回不了头",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

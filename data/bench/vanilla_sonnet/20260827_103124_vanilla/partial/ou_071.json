@@ -1,0 +1,82 @@
+{
+  "id": "ou_071",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.13166666666666665,
+  "ari": -0.17647058823529413,
+  "src_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "tgt_syl": [
+    9,
+    11,
+    10,
+    10,
+    9
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABAAC",
+  "match": "0/5",
+  "translations": [
+    "你会永远和她在一起，",
+    "你要给她信心，紧紧抱住她",
+    "一点温柔，你要好好待她，",
+    "她会陪着你，好好照顾你，",
+    "你真的要爱你的女人……"
+  ],
+  "time_seconds": 7.29,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0186944,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2263,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 84,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2263,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 84,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2263,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2263
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你会永远和她在一起，\n2. 你要给她信心，紧紧抱住她\n3. 一点温柔，你要好好待她，\n4. 她会陪着你，好好照顾你，\n5. 你真的要爱你的女人……",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

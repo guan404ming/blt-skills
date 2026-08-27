@@ -1,0 +1,82 @@
+{
+  "id": "ou_045",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.33595912859070753,
+  "ari": 1.0,
+  "src_syl": [
+    14,
+    19,
+    13,
+    15,
+    13
+  ],
+  "tgt_syl": [
+    13,
+    9,
+    9,
+    8,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "太多肤浅的美好时光转瞬即逝",
+    "愿你弹琴时有人聆听",
+    "愿你有可以倾诉的人",
+    "愿我们来生再相见",
+    "我愿化作你青丝几缕"
+  ],
+  "time_seconds": 8.44,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018768400000000005,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2279,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 85,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2279,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 85,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2279,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2279
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 太多肤浅的美好时光转瞬即逝\n2. 愿你弹琴时有人聆听\n3. 愿你有可以倾诉的人\n4. 愿我们来生再相见\n5. 我愿化作你青丝几缕",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

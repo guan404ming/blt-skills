@@ -1,0 +1,82 @@
+{
+  "id": "ou_012",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.34545454545454546,
+  "ari": 0.0,
+  "src_syl": [
+    11,
+    8,
+    11,
+    12,
+    8
+  ],
+  "tgt_syl": [
+    14,
+    12,
+    16,
+    15,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCBD",
+  "match": "0/5",
+  "translations": [
+    "Eres las nubes más hermosas en mi corazón",
+    "Te guardo con la comida y el vino",
+    "cantar el estilo folk más deslumbrante para siempre",
+    "Es la postura más hermosa de todo el cielo",
+    "Yo La la he la bei"
+  ],
+  "time_seconds": 9.5,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0096693,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1819,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 474,
+      "output_tokens_details": {
+        "thinking_tokens": 394
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1819,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 474,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1819,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1819
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Eres las nubes más hermosas en mi corazón\n2. Te guardo con la comida y el vino\n3. cantar el estilo folk más deslumbrante para siempre\n4. Es la postura más hermosa de todo el cielo\n5. Yo La la he la bei",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_032",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.09833333333333334,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    6,
+    6,
+    6,
+    8
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    7,
+    6,
+    7
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "夜色深沉",
+    "星光点亮夜空",
+    "见它们自由飞翔",
+    "就像你我一样",
+    "每人皆有孤独时"
+  ],
+  "time_seconds": 6.33,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0183364,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2237,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 59,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2237,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 59,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2237,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2237
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 夜色深沉\n2. 星光点亮夜空\n3. 见它们自由飞翔\n4. 就像你我一样\n5. 每人皆有孤独时",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

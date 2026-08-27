@@ -1,0 +1,82 @@
+{
+  "id": "ou_005",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.12,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    10,
+    12,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    9,
+    9,
+    10,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "准备好了没?时光不倒流",
+    "我想毫无理由地飞翔",
+    "世界尽头无论多孤独",
+    "你终会拥有我,在你身旁",
+    "我们说过,无论世界多宽广"
+  ],
+  "time_seconds": 8.27,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018678399999999998,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2265,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 82,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2265,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 82,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2265,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2265
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 准备好了没?时光不倒流\n2. 我想毫无理由地飞翔\n3. 世界尽头无论多孤独\n4. 你终会拥有我,在你身旁\n5. 我们说过,无论世界多宽广",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

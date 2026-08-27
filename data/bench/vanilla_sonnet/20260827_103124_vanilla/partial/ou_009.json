@@ -1,0 +1,82 @@
+{
+  "id": "ou_009",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.18230880230880234,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    7,
+    9,
+    11,
+    15
+  ],
+  "tgt_syl": [
+    7,
+    6,
+    10,
+    10,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDA",
+  "match": "0/5",
+  "translations": [
+    "一加一,你算错了",
+    "却等于三,才对",
+    "两个平凡少年的真心话",
+    "歌词只代表我们两个人",
+    "不懂音乐,没什么好丢脸的"
+  ],
+  "time_seconds": 7.2,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0186104,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2268,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 74,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2268,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 74,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2268,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2268
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 一加一,你算错了\n2. 却等于三,才对\n3. 两个平凡少年的真心话\n4. 歌词只代表我们两个人\n5. 不懂音乐,没什么好丢脸的",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

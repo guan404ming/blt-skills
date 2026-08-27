@@ -1,0 +1,82 @@
+{
+  "id": "ou_017",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.1101010101010101,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    11,
+    18,
+    10,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    13,
+    13,
+    10,
+    8,
+    12
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDD",
+  "match": "2/5",
+  "translations": [
+    "那时沙漠的暮色便会转为深红",
+    "有谁能把我从千年孤寂中解救？",
+    "我在逐暗翅膀中看到你",
+    "环绕在烛光的温暖",
+    "我在风中听到你，当两极旋转"
+  ],
+  "time_seconds": 18.6,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0135117,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1828,
+      "cache_read_input_tokens": 35657,
+      "output_tokens": 1256,
+      "output_tokens_details": {
+        "thinking_tokens": 1160
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1828,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1256,
+          "cache_read_input_tokens": 35657,
+          "cache_creation_input_tokens": 1828,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1828
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 那时沙漠的暮色便会转为深红\n2. 有谁能把我从千年孤寂中解救？\n3. 我在逐暗翅膀中看到你\n4. 环绕在烛光的温暖\n5. 我在风中听到你，当两极旋转",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

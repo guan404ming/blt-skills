@@ -1,0 +1,82 @@
+{
+  "id": "ou_071",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.13166666666666665,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    8,
+    10,
+    12,
+    12,
+    10
+  ],
+  "tgt_syl": [
+    7,
+    11,
+    9,
+    11,
+    9
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABBAC",
+  "match": "0/5",
+  "translations": [
+    "你们永远在一起",
+    "你要给她信心，紧紧拥抱她",
+    "一点温柔，好好对待她",
+    "她会在你身边，细心照顾你",
+    "你真的得爱你的女人"
+  ],
+  "time_seconds": 14.95,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.011372799999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1823,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 830,
+      "output_tokens_details": {
+        "thinking_tokens": 749
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1823,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 830,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1823,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1823
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你们永远在一起\n2. 你要给她信心，紧紧拥抱她\n3. 一点温柔，好好对待她\n4. 她会在你身边，细心照顾你\n5. 你真的得爱你的女人",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

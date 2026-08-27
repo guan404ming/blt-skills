@@ -1,0 +1,82 @@
+{
+  "id": "ou_090",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.1843867243867244,
+  "ari": 0.0,
+  "src_syl": [
+    14,
+    18,
+    11,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    15,
+    15,
+    14,
+    8,
+    13
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "在那条不再喧闹的街上，我望向月亮",
+    "我忘了流下脸颊的究竟是雨还是泪",
+    "我的心在低声诉说，但我一无所闻",
+    "早晨我总是在微笑",
+    "为什么一到夜晚，我就无法入眠"
+  ],
+  "time_seconds": 16.73,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0126388,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1831,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1080,
+      "output_tokens_details": {
+        "thinking_tokens": 972
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1831,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1080,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1831,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1831
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 在那条不再喧闹的街上，我望向月亮\n2. 我忘了流下脸颊的究竟是雨还是泪\n3. 我的心在低声诉说，但我一无所闻\n4. 早晨我总是在微笑\n5. 为什么一到夜晚，我就无法入眠",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

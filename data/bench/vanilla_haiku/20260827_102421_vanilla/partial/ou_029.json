@@ -1,0 +1,82 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.16944444444444445,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    16,
+    8,
+    9,
+    8,
+    9
+  ],
+  "tgt_syl": [
+    8,
+    9,
+    8,
+    8,
+    8
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCAB",
+  "match": "1/5",
+  "translations": [
+    "连绵山脚鲜花绽放",
+    "什么样的节奏最摇摆",
+    "哪一首歌是最欢乐",
+    "弯曲河流来自天堂",
+    "色彩缤纷流向大海"
+  ],
+  "time_seconds": 14.88,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0107348,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1809,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 708,
+      "output_tokens_details": {
+        "thinking_tokens": 625
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1809,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 708,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1809,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1809
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 连绵山脚鲜花绽放\n2. 什么样的节奏最摇摆\n3. 哪一首歌是最欢乐\n4. 弯曲河流来自天堂\n5. 色彩缤纷流向大海",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

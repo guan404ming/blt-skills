@@ -1,0 +1,82 @@
+{
+  "id": "ou_038",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.27,
+  "ari": 1.0,
+  "src_syl": [
+    3,
+    5,
+    12,
+    12,
+    5
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    15,
+    10,
+    3
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "通向何方",
+    "每晚都去那里",
+    "他有种男孩气,正是我喜欢那种男人",
+    "我是建筑师,正在画蓝图",
+    "没人懂"
+  ],
+  "time_seconds": 7.36,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0184524,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2241,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 69,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2241,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 69,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2241,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2241
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 通向何方\n2. 每晚都去那里\n3. 他有种男孩气,正是我喜欢那种男人\n4. 我是建筑师,正在画蓝图\n5. 没人懂",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

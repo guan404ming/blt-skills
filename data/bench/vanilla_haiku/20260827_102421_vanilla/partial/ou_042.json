@@ -1,0 +1,82 @@
+{
+  "id": "ou_042",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.23908730158730157,
+  "ari": 0.0,
+  "src_syl": [
+    7,
+    8,
+    9,
+    9,
+    16
+  ],
+  "tgt_syl": [
+    9,
+    6,
+    9,
+    11,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "1/5",
+  "translations": [
+    "但我们发现时已太晚",
+    "泪水为己而落",
+    "我们的相遇如此完美",
+    "我还记得我们分别的那刻",
+    "互相挽留却难以割舍"
+  ],
+  "time_seconds": 18.16,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0137938,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1816,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1317,
+      "output_tokens_details": {
+        "thinking_tokens": 1243
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1816,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1317,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1816,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1816
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 但我们发现时已太晚\n2. 泪水为己而落\n3. 我们的相遇如此完美\n4. 我还记得我们分别的那刻\n5. 互相挽留却难以割舍",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

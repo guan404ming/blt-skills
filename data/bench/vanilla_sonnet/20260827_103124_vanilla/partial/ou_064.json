@@ -1,0 +1,82 @@
+{
+  "id": "ou_064",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.3586634460547504,
+  "ari": 0.0,
+  "src_syl": [
+    23,
+    27,
+    4,
+    5,
+    6
+  ],
+  "tgt_syl": [
+    18,
+    20,
+    5,
+    7,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AAAAA",
+  "match": "0/5",
+  "translations": [
+    "我想每天早晚都看到你,想看你每一个表情。",
+    "我想穿越每个平行世界,与你过去未来紧紧相连。",
+    "你已经疯了。",
+    "这就是我做的事。",
+    "宝贝,现在我已经离开了。"
+  ],
+  "time_seconds": 6.74,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018850400000000003,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2272,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 96,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2272,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 96,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2272,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2272
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想每天早晚都看到你,想看你每一个表情。\n2. 我想穿越每个平行世界,与你过去未来紧紧相连。\n3. 你已经疯了。\n4. 这就是我做的事。\n5. 宝贝,现在我已经离开了。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

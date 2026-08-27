@@ -1,0 +1,2472 @@
+{
+  "method": "agent-skills",
+  "date": "2026-08-27T10:48:09.823652",
+  "n": 30,
+  "seed": 42,
+  "avg_ser": 0.9800000000000001,
+  "avg_scre": 1.002327293077293,
+  "avg_ari": -0.021833084840184234,
+  "avg_time": 19.151666666666664,
+  "results": [
+    {
+      "id": "ou_001",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.117777777777778,
+      "ari": -0.15384615384615385,
+      "src_syl": [
+        10,
+        9,
+        6,
+        6,
+        5
+      ],
+      "tgt_syl": [
+        18,
+        14,
+        17,
+        18,
+        7
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABBAC",
+      "match": "0/5",
+      "translations": [
+        "今までに感じたことのない経験",
+        "雲の自由は開かれている",
+        "そして世界はあなたと一緒にいる",
+        "あなたとともに輝く私の世界",
+        "信じられない"
+      ],
+      "time_seconds": 13.83,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0110963,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1800,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 767,
+          "output_tokens_details": {
+            "thinking_tokens": 691
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1800,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 767,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1800,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1800
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 今までに感じたことのない経験\n2. 雲の自由は開かれている\n3. そして世界はあなたと一緒にいる\n4. あなたとともに輝く私の世界\n5. 信じられない",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_002",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.7396825396825397,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        7,
+        9,
+        7,
+        6
+      ],
+      "tgt_syl": [
+        10,
+        8,
+        14,
+        14,
+        12
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABBCA",
+      "match": "0/5",
+      "translations": [
+        "自由に探索して",
+        "星と朝の海",
+        "目を開くことを恐れないで",
+        "発見できることがたくさん",
+        "深呼吸して落ち着いて"
+      ],
+      "time_seconds": 21.23,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0156913,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1805,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1684,
+          "output_tokens_details": {
+            "thinking_tokens": 1616
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1805,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1684,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1805,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1805
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 自由に探索して\n2. 星と朝の海\n3. 目を開くことを恐れないで\n4. 発見できることがたくさん\n5. 深呼吸して落ち着いて",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_003",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.55,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        4,
+        4,
+        12,
+        12
+      ],
+      "tgt_syl": [
+        3,
+        7,
+        6,
+        19,
+        17
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDD",
+      "match": "0/5",
+      "translations": [
+        "揺らぐ",
+        "運命なんだ",
+        "ああ、一緒に",
+        "もう疲れた？両手を伸ばしてくれないか",
+        "抱きたいなら、なぜ拳を握るのか"
+      ],
+      "time_seconds": 22.53,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.016020299999999998,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1807,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1749,
+          "output_tokens_details": {
+            "thinking_tokens": 1667
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1807,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1749,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1807,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1807
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 揺らぐ\n2. 運命なんだ\n3. ああ、一緒に\n4. もう疲れた？両手を伸ばしてくれないか\n5. 抱きたいなら、なぜ拳を握るのか",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_004",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.5834848484848485,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        10,
+        12,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        18,
+        10,
+        16,
+        15,
+        21
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCB",
+      "match": "1/5",
+      "translations": [
+        "もう準備はできた？時間は戻らない",
+        "理由もなく飛びたい",
+        "世界の果てがどんなに孤独でも",
+        "きっと君のそばに私がいる",
+        "前に言ったけど、世界がどんなに広くても"
+      ],
+      "time_seconds": 13.11,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0111393,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1819,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 768,
+          "output_tokens_details": {
+            "thinking_tokens": 676
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1819,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 768,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1819,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1819
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. もう準備はできた？時間は戻らない\n2. 理由もなく飛びたい\n3. 世界の果てがどんなに孤独でも\n4. きっと君のそばに私がいる\n5. 前に言ったけど、世界がどんなに広くても",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_005",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.7702741702741702,
+      "ari": 0.0,
+      "src_syl": [
+        14,
+        7,
+        9,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        18,
+        14,
+        19,
+        16,
+        16
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABABA",
+      "match": "0/5",
+      "translations": [
+        "忘れたいのに、結局忘れられない。",
+        "ただ暗い夜が来るまで待つ、",
+        "かつて愛した少女を夢に見るために。",
+        "手放して、またあなたの手を握る",
+        "許して耐えることを選ぶたびに"
+      ],
+      "time_seconds": 15.76,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0119303,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1817,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 927,
+          "output_tokens_details": {
+            "thinking_tokens": 829
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1817,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 927,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1817,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1817
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 忘れたいのに、結局忘れられない。\n2. ただ暗い夜が来るまで待つ、\n3. かつて愛した少女を夢に見るために。\n4. 手放して、またあなたの手を握る\n5. 許して耐えることを選ぶたびに",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_006",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.7242424242424242,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        11,
+        12,
+        6,
+        11
+      ],
+      "tgt_syl": [
+        15,
+        19,
+        20,
+        12,
+        19
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABACB",
+      "match": "0/5",
+      "translations": [
+        "静かに静かに仏前に咲く",
+        "泥より出でて風と睡眠に染まらず",
+        "花は言葉なく咲き、花は言葉なく散る",
+        "そしてあなたまた三生に",
+        "あなたのもとへ来る、早からず遅からず"
+      ],
+      "time_seconds": 15.42,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0121783,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1821,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 975,
+          "output_tokens_details": {
+            "thinking_tokens": 873
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1821,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 975,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1821,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1821
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 静かに静かに仏前に咲く\n2. 泥より出でて風と睡眠に染まらず\n3. 花は言葉なく咲き、花は言葉なく散る\n4. そしてあなたまた三生に\n5. あなたのもとへ来る、早からず遅からず",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_007",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.911010101010101,
+      "ari": 0.13793103448275862,
+      "src_syl": [
+        11,
+        18,
+        10,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        19,
+        32,
+        18,
+        18,
+        22
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABAAA",
+      "match": "0/5",
+      "translations": [
+        "砂漠の薄暮は赤く染まったであろう",
+        "千年の孤独から私を解放できる誰かはいるのだろうか",
+        "夜を追う翼の中にあなたを見る",
+        "ろうそくの光の温もりを巡る",
+        "二つの極が回る風の中にあなたを聞く"
+      ],
+      "time_seconds": 13.26,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0111353,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1827,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 764,
+          "output_tokens_details": {
+            "thinking_tokens": 648
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1827,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 764,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1827,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1827
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 砂漠の薄暮は赤く染まったであろう\n2. 千年の孤独から私を解放できる誰かはいるのだろうか\n3. 夜を追う翼の中にあなたを見る\n4. ろうそくの光の温もりを巡る\n5. 二つの極が回る風の中にあなたを聞く",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_008",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.586111111111111,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        14,
+        15,
+        14,
+        8
+      ],
+      "tgt_syl": [
+        14,
+        13,
+        30,
+        20,
+        15
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCC",
+      "match": "0/5",
+      "translations": [
+        "青春を彼女に打ち込んだ",
+        "真夏に弦を高く弾いた",
+        "心が揺さぶられたら、宇宙の絆がお前をそこへ導く",
+        "光に逆らい歩き、自然が俺を打つ",
+        "短い道、始まっては止まる"
+      ],
+      "time_seconds": 33.27,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0218913,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1820,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 2918,
+          "output_tokens_details": {
+            "thinking_tokens": 2809
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1820,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 2918,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1820,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1820
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 青春を彼女に打ち込んだ\n2. 真夏に弦を高く弾いた\n3. 心が揺さぶられたら、宇宙の絆がお前をそこへ導く\n4. 光に逆らい歩き、自然が俺を打つ\n5. 短い道、始まっては止まる",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_009",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.5533333333333332,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        3,
+        3,
+        2,
+        5
+      ],
+      "tgt_syl": [
+        3,
+        6,
+        11,
+        6,
+        13
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDC",
+      "match": "0/5",
+      "translations": [
+        "でもし",
+        "お前はまだ",
+        "立ち止まって考えて",
+        "俺のことを",
+        "すべてのことを思い出して"
+      ],
+      "time_seconds": 11.76,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0106743,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1784,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 689,
+          "output_tokens_details": {
+            "thinking_tokens": 635
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1784,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 689,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1784,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1784
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. でもし\n2. お前はまだ\n3. 立ち止まって考えて\n4. 俺のことを\n5. すべてのことを思い出して",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_010",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.454761904761905,
+      "ari": 0.0,
+      "src_syl": [
+        14,
+        3,
+        4,
+        3,
+        3
+      ],
+      "tgt_syl": [
+        9,
+        8,
+        9,
+        10,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABAAC",
+      "match": "0/5",
+      "translations": [
+        "機会をつかまえろ",
+        "欲しいのは全部",
+        "今ここにいること",
+        "充実していること",
+        "必要な全て"
+      ],
+      "time_seconds": 14.24,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0111573,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1793,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 782,
+          "output_tokens_details": {
+            "thinking_tokens": 725
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1793,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 782,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1793,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1793
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 機会をつかまえろ\n2. 欲しいのは全部\n3. 今ここにいること\n4. 充実していること\n5. 必要な全て",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_011",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.3263492063492062,
+      "ari": -0.15384615384615385,
+      "src_syl": [
+        9,
+        10,
+        7,
+        6,
+        6
+      ],
+      "tgt_syl": [
+        14,
+        21,
+        15,
+        18,
+        17
+      ],
+      "src_rhyme": "ABCDD",
+      "tgt_rhyme": "AABCB",
+      "match": "0/5",
+      "translations": [
+        "ずっと私の心に留まる",
+        "ママ、あなたのために歌いたい、愛しています",
+        "私は母に会ったことがない",
+        "でも彼女のことはいつも愛してきた",
+        "私は彼女と話したことがない"
+      ],
+      "time_seconds": 14.96,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.011737299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1808,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 892,
+          "output_tokens_details": {
+            "thinking_tokens": 804
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1808,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 892,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1808,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1808
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. ずっと私の心に留まる\n2. ママ、あなたのために歌いたい、愛しています\n3. 私は母に会ったことがない\n4. でも彼女のことはいつも愛してきた\n5. 私は彼女と話したことがない",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_012",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.9325757575757574,
+      "ari": 0.0,
+      "src_syl": [
+        11,
+        8,
+        11,
+        12,
+        8
+      ],
+      "tgt_syl": [
+        25,
+        18,
+        24,
+        22,
+        7
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABAAC",
+      "match": "0/5",
+      "translations": [
+        "あなたは私の心の最も美しい雲です",
+        "食べ物とワインであなたを大切に",
+        "永遠に最も輝く民族の歌を歌う",
+        "それは全天で最も美しき姿勢です",
+        "ヨ ラ ラ ヘ ラ ベー"
+      ],
+      "time_seconds": 18.48,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0142393,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1819,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1388,
+          "output_tokens_details": {
+            "thinking_tokens": 1277
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1819,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1388,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1819,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1819
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. あなたは私の心の最も美しい雲です\n2. 食べ物とワインであなたを大切に\n3. 永遠に最も輝く民族の歌を歌う\n4. それは全天で最も美しき姿勢です\n5. （コーラス）ヨ ラ ラ ヘ ラ ベー",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_013",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.3233333333333335,
+      "ari": -0.15384615384615385,
+      "src_syl": [
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "tgt_syl": [
+        11,
+        12,
+        19,
+        15,
+        14
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABBCA",
+      "match": "0/5",
+      "translations": [
+        "夜の暗闇の中で",
+        "星々は空を光らす",
+        "僕たちは彼らが自由に舞うのを見る",
+        "それはまるで君と僕のように",
+        "誰もが時々孤独なんだ"
+      ],
+      "time_seconds": 15.04,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.012368299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1796,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1023,
+          "output_tokens_details": {
+            "thinking_tokens": 939
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1796,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1023,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1796,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1796
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 夜の暗闇の中で\n2. 星々は空を光らす\n3. 僕たちは彼らが自由に舞うのを見る\n4. それはまるで君と僕のように\n5. 誰もが時々孤独なんだ",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_014",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.1377777777777776,
+      "ari": 0.375,
+      "src_syl": [
+        5,
+        9,
+        6,
+        5,
+        9
+      ],
+      "tgt_syl": [
+        11,
+        19,
+        10,
+        13,
+        19
+      ],
+      "src_rhyme": "ABBAC",
+      "tgt_rhyme": "ABBCA",
+      "match": "0/5",
+      "translations": [
+        "君を愛してると言う",
+        "君が理解してくれることだけが欲しい",
+        "君の手を握るとき",
+        "それは僕が望んでるから",
+        "誰もが疑いの世界に生まれてくる"
+      ],
+      "time_seconds": 13.81,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.012082299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1808,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 961,
+          "output_tokens_details": {
+            "thinking_tokens": 879
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1808,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 961,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1808,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1808
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 君を愛してると言う\n2. 君が理解してくれることだけが欲しい\n3. 君の手を握るとき\n4. それは僕が望んでるから\n5. 誰もが疑いの世界に生まれてくる",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_015",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.5971794871794872,
+      "ari": -0.15384615384615385,
+      "src_syl": [
+        13,
+        1,
+        3,
+        4,
+        5
+      ],
+      "tgt_syl": [
+        23,
+        1,
+        5,
+        7,
+        9
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABBCA",
+      "match": "1/5",
+      "translations": [
+        "ボスにクビにされても、猫が木に登ったりしても",
+        "木",
+        "棒と石",
+        "骨は折れない",
+        "オー、エマ・リー、オー"
+      ],
+      "time_seconds": 74.01,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0420993,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1799,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 6968,
+          "output_tokens_details": {
+            "thinking_tokens": 6901
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1799,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 6968,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1799,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1799
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. ボスにクビにされても、猫が木に登ったりしても\n2. 木\n3. 棒と石\n4. 骨は折れない\n5. オー、エマ・リー、オー",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_016",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.4881959706959707,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        16,
+        13,
+        7,
+        15
+      ],
+      "tgt_syl": [
+        16,
+        19,
+        21,
+        11,
+        22
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDB",
+      "match": "0/5",
+      "translations": [
+        "月は川のロマンティックな瞳",
+        "一人杯を上げ、柳の樹の簾開く",
+        "この人生に敬礼して、春風の中へ",
+        "花はまだ枯れていない",
+        "ああ、冒険の始まりからもう年月が経つ"
+      ],
+      "time_seconds": 15.0,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0126133,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1831,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1058,
+          "output_tokens_details": {
+            "thinking_tokens": 958
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1831,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1058,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1831,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1831
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 月は川のロマンティックな瞳\n2. 一人杯を上げ、柳の樹の簾開く\n3. この人生に敬礼して、春風の中へ\n4. 花はまだ枯れていない\n5. ああ、冒険の始まりからもう年月が経つ",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_017",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.663888888888889,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        12,
+        8,
+        9,
+        9
+      ],
+      "tgt_syl": [
+        16,
+        18,
+        11,
+        13,
+        20
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABAC",
+      "match": "0/5",
+      "translations": [
+        "お前は知ってた、誰も気にしない",
+        "ただの甘えた子供、悲い話を手に",
+        "秘密を隠し続けろ",
+        "もう一つの傷は要らない",
+        "でも君はガラスの心を隠せなかった"
+      ],
+      "time_seconds": 32.16,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0208643,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1814,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 2715,
+          "output_tokens_details": {
+            "thinking_tokens": 2624
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1814,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 2715,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1814,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1814
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. お前は知ってた、誰も気にしない\n2. ただの甘えた子供、悲い話を手に\n3. 秘密を隠し続けろ\n4. もう一つの傷は要らない\n5. でも君はガラスの心を隠せなかった",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_018",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.9342307692307692,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        8,
+        13,
+        4,
+        8
+      ],
+      "tgt_syl": [
+        11,
+        18,
+        24,
+        3,
+        17
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCD",
+      "match": "0/5",
+      "translations": [
+        "僕らは泳ぎに行った",
+        "太陽の炎が僕の肌を焼いた",
+        "これだから僕たちはもう一緒にプールへ行かない",
+        "二度と",
+        "その場所に数え切れない列がある"
+      ],
+      "time_seconds": 16.98,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0126643,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1804,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1079,
+          "output_tokens_details": {
+            "thinking_tokens": 990
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1804,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1079,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1804,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1804
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 僕らは泳ぎに行った\n2. 太陽の炎が僕の肌を焼いた\n3. これだから僕たちはもう一緒にプールへ行かない\n4. 二度と\n5. その場所に数え切れない列がある",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_019",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.6035897435897435,
+      "ari": 0.0,
+      "src_syl": [
+        4,
+        5,
+        13,
+        4,
+        3
+      ],
+      "tgt_syl": [
+        12,
+        14,
+        18,
+        10,
+        10
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCB",
+      "match": "0/5",
+      "translations": [
+        "シャツもなく、ブラウスもなく",
+        "俺たちだけだ、お前が気づく",
+        "本当にお前に言いたいことはない",
+        "だって寒すぎるから",
+        "ここであなたのために"
+      ],
+      "time_seconds": 15.33,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.012049299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1799,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 958,
+          "output_tokens_details": {
+            "thinking_tokens": 878
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1799,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 958,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1799,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1799
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. シャツもなく、ブラウスもなく\n2. 俺たちだけだ、お前が気づく\n3. 本当にお前に言いたいことはない\n4. だって寒すぎるから\n5. ここであなたのために",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_020",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.015064935064935,
+      "ari": 0.0,
+      "src_syl": [
+        6,
+        7,
+        11,
+        5,
+        11
+      ],
+      "tgt_syl": [
+        12,
+        13,
+        20,
+        12,
+        22
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "僕らの間にあるいいもの",
+        "今君は気分がよくない",
+        "寂しい夜、僕のベッドで横たわってる",
+        "ベイビー、君が必要だ",
+        "心が盲目になるまで君を探してきた"
+      ],
+      "time_seconds": 12.76,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.011754299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1814,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 893,
+          "output_tokens_details": {
+            "thinking_tokens": 803
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1814,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 893,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1814,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1814
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 僕らの間にあるいいもの\n2. 今君は気分がよくない\n3. 寂しい夜、僕のベッドで横たわってる\n4. ベイビー、君が必要だ\n5. 心が盲目になるまで君を探してきた",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_021",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.1596825396825396,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        7,
+        9,
+        6,
+        9
+      ],
+      "tgt_syl": [
+        21,
+        15,
+        20,
+        12,
+        21
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABABA",
+      "match": "0/5",
+      "translations": [
+        "頭を低くしていられる時間があるのか",
+        "日常をこなすための時間が",
+        "コールとリップスティックの時間があるのか",
+        "髪をカールする時間が",
+        "ハイストリートショッピングの時間があるのか"
+      ],
+      "time_seconds": 14.98,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.011789299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1809,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 902,
+          "output_tokens_details": {
+            "thinking_tokens": 813
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1809,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 902,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1809,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1809
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 頭を低くしていられる時間があるのか\n2. 日常をこなすための時間が\n3. コールとリップスティックの時間があるのか\n4. 髪をカールする時間が\n5. ハイストリートショッピングの時間があるのか",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_022",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.9333333333333333,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        8,
+        10,
+        12,
+        12,
+        10
+      ],
+      "tgt_syl": [
+        12,
+        18,
+        21,
+        29,
+        22
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCAD",
+      "match": "0/5",
+      "translations": [
+        "ずっと一緒にいるだろう",
+        "彼女に信じさせて、ぎゅっと抱きしめろ",
+        "優しさを持って、彼女を大切に扱え",
+        "彼女はいつもあなたのそばにいて、ちゃんと面倒を見てくれる",
+        "本当にあなたの女性を愛さなきゃいけない"
+      ],
+      "time_seconds": 19.86,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0153303,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1822,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1605,
+          "output_tokens_details": {
+            "thinking_tokens": 1476
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1822,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1605,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1822,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1822
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. ずっと一緒にいるだろう\n2. 彼女に信じさせて、ぎゅっと抱きしめろ\n3. 優しさを持って、彼女を大切に扱え\n4. 彼女はいつもあなたのそばにいて、ちゃんと面倒を見てくれる\n5. 本当にあなたの女性を愛さなきゃいけない",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_023",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.1991941391941392,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        6,
+        13,
+        15,
+        14,
+        15
+      ],
+      "tgt_syl": [
+        17,
+        27,
+        26,
+        32,
+        31
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCDC",
+      "match": "0/5",
+      "translations": [
+        "あなたのゲームの一部にはならない",
+        "私は誰か、あなたはいつも自分にそう問いかけるのか",
+        "私は誰か、常に他人の期待の中で生きている",
+        "私は誰か、権限なしにあなたを定義するのを手伝った者",
+        "あなたは誰か、自分自身でなければ初めて安全でいられる"
+      ],
+      "time_seconds": 16.15,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0128943,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1824,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1117,
+          "output_tokens_details": {
+            "thinking_tokens": 986
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1824,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1117,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1824,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1824
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. あなたのゲームの一部にはならない\n2. 私は誰か、あなたはいつも自分にそう問いかけるのか\n3. 私は誰か、常に他人の期待の中で生きている\n4. 私は誰か、権限なしにあなたを定義するのを手伝った者\n5. あなたは誰か、自分自身でなければ初めて安全でいられる",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_024",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0585858585858585,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        10,
+        11,
+        11,
+        10
+      ],
+      "tgt_syl": [
+        19,
+        19,
+        25,
+        21,
+        21
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCD",
+      "match": "0/5",
+      "translations": [
+        "私もあなたの恋人の一人だから",
+        "もし人生をもう一度生きなおすなら",
+        "これまでと同じようにあなたを愛し続けるだろう",
+        "あなたの愛は誰にも代わることはできない",
+        "他の人との人生は想像できません"
+      ],
+      "time_seconds": 19.28,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0147053,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1817,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1482,
+          "output_tokens_details": {
+            "thinking_tokens": 1380
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1817,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1482,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1817,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1817
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 私もあなたの恋人の一人だから\n2. もし人生をもう一度生きなおすなら\n3. これまでと同じようにあなたを愛し続けるだろう\n4. あなたの愛は誰にも代わることはできない\n5. 他の人との人生は想像できません",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_025",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.1013919413919413,
+      "ari": 0.0,
+      "src_syl": [
+        3,
+        7,
+        10,
+        13,
+        7
+      ],
+      "tgt_syl": [
+        10,
+        15,
+        18,
+        16,
+        14
+      ],
+      "src_rhyme": "AAABA",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "わたしのシェル・ガール",
+        "怖れるな、わたしのシェル・ガール",
+        "謎めく体よ、わたしのシェル・ガール",
+        "すべての不安がそっと歩み去る",
+        "そっと歩み去れ、シェル・ガール"
+      ],
+      "time_seconds": 14.53,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.012159299999999998,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1804,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 978,
+          "output_tokens_details": {
+            "thinking_tokens": 879
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1804,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 978,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1804,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1804
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. わたしのシェル・ガール\n2. 怖れるな、わたしのシェル・ガール\n3. 謎めく体よ、わたしのシェル・ガール\n4. すべての不安がそっと歩み去る\n5. そっと歩み去れ、シェル・ガール",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_026",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.175,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        8,
+        6,
+        5,
+        8
+      ],
+      "tgt_syl": [
+        6,
+        13,
+        15,
+        10,
+        14
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDC",
+      "match": "0/5",
+      "translations": [
+        "成長する",
+        "もし逃げたら救われるのか",
+        "あなたが消える時が分からない",
+        "待てないと言ってくれ",
+        "速く学んで振り返れない"
+      ],
+      "time_seconds": 24.68,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0175023,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1803,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 2047,
+          "output_tokens_details": {
+            "thinking_tokens": 1979
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1803,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 2047,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1803,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1803
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 成長する\n2. もし逃げたら救われるのか\n3. あなたが消える時が分からない\n4. 待てないと言ってくれ\n5. 速く学んで振り返れない",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_027",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.4397435897435897,
+      "ari": -0.17647058823529413,
+      "src_syl": [
+        12,
+        5,
+        4,
+        13,
+        3
+      ],
+      "tgt_syl": [
+        19,
+        15,
+        12,
+        21,
+        9
+      ],
+      "src_rhyme": "ABCAD",
+      "tgt_rhyme": "ABBBC",
+      "match": "0/5",
+      "translations": [
+        "そこに立ってて何も言えない顔をして",
+        "でも私はその顔を知ってる",
+        "そしてここに私がいる",
+        "やってくるって分かってることに身構えてる",
+        "なんてもったいない"
+      ],
+      "time_seconds": 14.48,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0111493,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1809,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 774,
+          "output_tokens_details": {
+            "thinking_tokens": 695
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1809,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 774,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1809,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1809
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. そこに立ってて何も言えない顔をして\n2. でも私はその顔を知ってる\n3. そしてここに私がいる\n4. やってくるって分かってることに身構えてる\n5. なんてもったいない",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_028",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.5933333333333333,
+      "ari": -0.15384615384615385,
+      "src_syl": [
+        3,
+        6,
+        6,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        3,
+        14,
+        11,
+        7,
+        7
+      ],
+      "src_rhyme": "ABACD",
+      "tgt_rhyme": "ABCCA",
+      "match": "1/5",
+      "translations": [
+        "言うな",
+        "まだ友達でいられるなんて",
+        "そんなふうにはいかない",
+        "終わりは終わり",
+        "そして思うな"
+      ],
+      "time_seconds": 15.2,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.011909300000000001,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1799,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 930,
+          "output_tokens_details": {
+            "thinking_tokens": 871
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1799,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 930,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1799,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1799
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 言うな\n2. まだ友達でいられるなんて\n3. そんなふうにはいかない\n4. 終わりは終わり\n5. そして思うな",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_029",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.021818181818182,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        11,
+        8,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        18,
+        21,
+        16,
+        7,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDC",
+      "match": "0/5",
+      "translations": [
+        "そして絶対に考えるんじゃないわ",
+        "涙をぜんぶ詰めて家に持ち帰るなんて",
+        "そして一人きりの時に泣き出す",
+        "ここでやるのよ",
+        "今泣いてる"
+      ],
+      "time_seconds": 19.39,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.014230299999999998,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1807,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1391,
+          "output_tokens_details": {
+            "thinking_tokens": 1302
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1807,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1391,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1807,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1807
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. そして絶対に考えるんじゃないわ\n2. 涙をぜんぶ詰めて家に持ち帰るなんて\n3. そして一人きりの時に泣き出す\n4. ここでやるのよ\n5. 今泣いてる",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_030",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.374871794871795,
+      "ari": 0.0,
+      "src_syl": [
+        13,
+        12,
+        3,
+        10,
+        13
+      ],
+      "tgt_syl": [
+        17,
+        26,
+        12,
+        24,
+        26
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABBA",
+      "match": "0/5",
+      "translations": [
+        "我が意識の境界に到達する",
+        "雲の縁に座る父がタバコを吸っているのが見える",
+        "ちょうど前と同じように",
+        "山や川や湖や海からやってきた者たち",
+        "今は夜と台所とセックスに限定されている"
+      ],
+      "time_seconds": 13.06,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0114373,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1818,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 828,
+          "output_tokens_details": {
+            "thinking_tokens": 729
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1818,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 828,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1818,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1818
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. 我が意識の境界に到達する\n2. 雲の縁に座る父がタバコを吸っているのが見える\n3. ちょうど前と同じように\n4. 山や川や湖や海からやってきた者たち\n5. 今は夜と台所とセックスに限定されている",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    }
+  ]
+}

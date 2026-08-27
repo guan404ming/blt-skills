@@ -1,0 +1,82 @@
+{
+  "id": "ou_016",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2243162393162393,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "tgt_syl": [
+    9,
+    11,
+    11,
+    13,
+    9
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "当所有人都已遗忘我",
+    "那沙漠的黄昏会化为赤红",
+    "可有人能解我千年的寂寞？",
+    "我在追逐夜晚的翅膀中看见你",
+    "在烛火的温暖中盘旋"
+  ],
+  "time_seconds": 26.55,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.011533700000000001,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1824,
+      "cache_read_input_tokens": 35657,
+      "output_tokens": 862,
+      "output_tokens_details": {
+        "thinking_tokens": 765
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1824,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 862,
+          "cache_read_input_tokens": 35657,
+          "cache_creation_input_tokens": 1824,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1824
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 当所有人都已遗忘我\n2. 那沙漠的黄昏会化为赤红\n3. 可有人能解我千年的寂寞？\n4. 我在追逐夜晚的翅膀中看见你\n5. 在烛火的温暖中盘旋",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

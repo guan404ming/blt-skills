@@ -1,0 +1,82 @@
+{
+  "id": "ou_063",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.0838095238095238,
+  "ari": 0.0,
+  "src_syl": [
+    8,
+    7,
+    7,
+    15,
+    5
+  ],
+  "tgt_syl": [
+    8,
+    6,
+    6,
+    13,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBAB",
+  "match": "2/5",
+  "translations": [
+    "化作呼嘯的暴風雪。",
+    "我心中的荒野，",
+    "如往昔的誓言，",
+    "融入光中，浮現於深不可測之處。",
+    "睜開你的眼，"
+  ],
+  "time_seconds": 7.79,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018586400000000003,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2256,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 76,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2256,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 76,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2256,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2256
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 化作呼嘯的暴風雪。\n2. 我心中的荒野，\n3. 如往昔的誓言，\n4. 融入光中，浮現於深不可測之處。\n5. 睜開你的眼，",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_080",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.16205128205128205,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    12,
+    5,
+    4,
+    13,
+    3
+  ],
+  "tgt_syl": [
+    13,
+    7,
+    5,
+    14,
+    3
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCDD",
+  "match": "1/5",
+  "translations": [
+    "站在那儿，看上去不知道说什么",
+    "但我认得那张脸",
+    "我就在这里",
+    "为我知道即将来临的事做好准备",
+    "真浪费"
+  ],
+  "time_seconds": 28.45,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0191968,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1810,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 2400,
+      "output_tokens_details": {
+        "thinking_tokens": 2330
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1810,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 2400,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1810,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1810
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 站在那儿，看上去不知道说什么\n2. 但我认得那张脸\n3. 我就在这里\n4. 为我知道即将来临的事做好准备\n5. 真浪费",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

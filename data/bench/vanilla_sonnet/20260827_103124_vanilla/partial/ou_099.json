@@ -1,0 +1,82 @@
+{
+  "id": "ou_099",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.0,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    11,
+    2,
+    8,
+    8
+  ],
+  "tgt_syl": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AAAAA",
+  "match": "0/5",
+  "translations": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "time_seconds": 6.63,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0100442,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 46251,
+      "output_tokens": 79,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 79,
+          "cache_read_input_tokens": 46251,
+          "cache_creation_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 看啊,你是我患难与共的挚友\n2. (现在该建立三重连接了)\n3. 关灯!\n4. 就在黑暗中(就在黑暗中)\n5. 很难说清(真的很难说清)",
+    "is_error": false
+  },
+  "failed": true,
+  "error": ""
+}

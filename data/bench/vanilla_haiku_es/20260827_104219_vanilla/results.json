@@ -1,0 +1,2472 @@
+{
+  "method": "agent-skills",
+  "date": "2026-08-27T10:44:29.044284",
+  "n": 30,
+  "seed": 42,
+  "avg_ser": 0.9200000000000002,
+  "avg_scre": 0.5119775224775224,
+  "avg_ari": 0.057444894286999545,
+  "avg_time": 12.584,
+  "results": [
+    {
+      "id": "ou_001",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.4422222222222222,
+      "ari": 1.0,
+      "src_syl": [
+        10,
+        9,
+        6,
+        6,
+        5
+      ],
+      "tgt_syl": [
+        16,
+        13,
+        9,
+        10,
+        5
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "1/5",
+      "translations": [
+        "Una experiencia que nunca hemos sentido antes",
+        "La libertad en las nubes está abierta",
+        "Y el mundo está contigo",
+        "Mi mundo es brillante contigo",
+        "Qué increíble"
+      ],
+      "time_seconds": 10.14,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0184661,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6892,
+          "cache_read_input_tokens": 31421,
+          "output_tokens": 306,
+          "output_tokens_details": {
+            "thinking_tokens": 246
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 6892,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 306,
+              "cache_read_input_tokens": 31421,
+              "cache_creation_input_tokens": 6892,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 6892
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Una experiencia que nunca hemos sentido antes\n2. La libertad en las nubes está abierta\n3. Y el mundo está contigo\n4. Mi mundo es brillante contigo\n5. Qué increíble",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_002",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        7,
+        9,
+        7,
+        6
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 10.99,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.019551100000000002,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6897,
+          "cache_read_input_tokens": 31421,
+          "output_tokens": 521,
+          "output_tokens_details": {
+            "thinking_tokens": 453
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 6897,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 521,
+              "cache_read_input_tokens": 31421,
+              "cache_creation_input_tokens": 6897,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 6897
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Libre para explorar en\n2. Un mar de estrellas y mañanas\n3. (No tengas miedo de abrir tus ojos)\n4. Hay tanto por descubrir\n5. (Respira profundo y relájate)",
+        "is_error": false
+      },
+      "failed": true,
+      "error": ""
+    },
+    {
+      "id": "ou_003",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.55,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        4,
+        4,
+        12,
+        12
+      ],
+      "tgt_syl": [
+        4,
+        9,
+        3,
+        14,
+        13
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCC",
+      "match": "0/5",
+      "translations": [
+        "Agitando",
+        "Estaba escrito que fuera",
+        "Oh, juntos",
+        "¿Ya estás cansado? ¿Extenderías tus manos?",
+        "Si quieres abrazar, ¿por qué cierras los puños?"
+      ],
+      "time_seconds": 18.16,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.021695100000000002,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6899,
+          "cache_read_input_tokens": 31421,
+          "output_tokens": 949,
+          "output_tokens_details": {
+            "thinking_tokens": 871
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 6899,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 949,
+              "cache_read_input_tokens": 31421,
+              "cache_creation_input_tokens": 6899,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 6899
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Agitando\n2. Estaba escrito que fuera\n3. Oh, juntos\n4. ¿Ya estás cansado? ¿Extenderías tus manos?\n5. Si quieres abrazar, ¿por qué cierras los puños?",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_004",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.33878787878787875,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        10,
+        12,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        13,
+        10,
+        17,
+        10,
+        19
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDC",
+      "match": "1/5",
+      "translations": [
+        "¿Ya estás listo? El tiempo no vuelve atrás",
+        "Quiero volar sin razón alguna",
+        "No importa lo solo que sean los confines del mundo",
+        "Me tendrás, sin duda, junto a ti",
+        "Hemos dicho antes que, sin importar cuán vasto sea el mundo"
+      ],
+      "time_seconds": 13.14,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.010804300000000001,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1819,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 701,
+          "output_tokens_details": {
+            "thinking_tokens": 611
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1819,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 701,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1819,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1819
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. ¿Ya estás listo? El tiempo no vuelve atrás\n2. Quiero volar sin razón alguna\n3. No importa lo solo que sean los confines del mundo\n4. Me tendrás, sin duda, junto a ti\n5. Hemos dicho antes que, sin importar cuán vasto sea el mundo",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_005",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.4692279942279942,
+      "ari": 0.0,
+      "src_syl": [
+        14,
+        7,
+        9,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        18,
+        13,
+        14,
+        11,
+        14
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "0/5",
+      "translations": [
+        "Quiero olvidar, pero no puedo olvidar después de todo.",
+        "Solo espera hasta la noche oscura,",
+        "para soñar con la chica que una vez amé.",
+        "Suelta, vuelvo a sostener tu mano.",
+        "cada vez que elijo perdonar y soportar."
+      ],
+      "time_seconds": 25.26,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0168553,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1817,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1912,
+          "output_tokens_details": {
+            "thinking_tokens": 1823
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1817,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1912,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1817,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1817
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Quiero olvidar, pero no puedo olvidar después de todo.\n2. Solo espera hasta la noche oscura,\n3. para soñar con la chica que una vez amé.\n4. Suelta, vuelvo a sostener tu mano.\n5. cada vez que elijo perdonar y soportar.",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_006",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.27303030303030307,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        11,
+        12,
+        6,
+        11
+      ],
+      "tgt_syl": [
+        9,
+        13,
+        19,
+        9,
+        11
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCD",
+      "match": "1/5",
+      "translations": [
+        "Jing Jing Sheng kai frente al Buda",
+        "Del lodo sin mancha del viento y del sueño",
+        "Las flores florecen sin palabras, las flores caen sin palabras",
+        "Y tú de nuevo en tres vidas",
+        "Vengo a ti ni temprano ni tarde"
+      ],
+      "time_seconds": 17.16,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0134133,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1821,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1222,
+          "output_tokens_details": {
+            "thinking_tokens": 1138
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1821,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1222,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1821,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1821
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Jing Jing Sheng kai frente al Buda\n2. Del lodo sin mancha del viento y del sueño\n3. Las flores florecen sin palabras, las flores caen sin palabras\n4. Y tú de nuevo en tres vidas\n5. Vengo a ti ni temprano ni tarde",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_007",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.4595454545454546,
+      "ari": 0.0,
+      "src_syl": [
+        11,
+        18,
+        10,
+        8,
+        11
+      ],
+      "tgt_syl": [
+        20,
+        18,
+        14,
+        13,
+        16
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCDE",
+      "match": "1/5",
+      "translations": [
+        "Entonces el anochecer del desierto se habría vuelto rojo",
+        "¿Hay alguien que pueda desatarme de mil años de soledad?",
+        "Te veo en las alas que persiguen la noche",
+        "Circulando el calor de la luz de vela",
+        "Te oigo en el viento mientras los dos polos giran"
+      ],
+      "time_seconds": 13.14,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0112503,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1827,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 787,
+          "output_tokens_details": {
+            "thinking_tokens": 686
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1827,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 787,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1827,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1827
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Entonces el anochecer del desierto se habría vuelto rojo\n2. ¿Hay alguien que pueda desatarme de mil años de soledad?\n3. Te veo en las alas que persiguen la noche\n4. Circulando el calor de la luz de vela\n5. Te oigo en el viento mientras los dos polos giran",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_008",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.5268253968253969,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        14,
+        15,
+        14,
+        8
+      ],
+      "tgt_syl": [
+        14,
+        20,
+        21,
+        21,
+        14
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABACB",
+      "match": "0/5",
+      "translations": [
+        "Había derrochado mi juventud en ella",
+        "También había pulsado mis cuerdas en el corazón del verano",
+        "Si conmueve tu corazón, que la conexión cósmica te lleve allá",
+        "Caminando contra la luz, dejando que los elementos me golpeen",
+        "Un camino breve, comenzando y parando"
+      ],
+      "time_seconds": 10.62,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.010231299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1820,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 586,
+          "output_tokens_details": {
+            "thinking_tokens": 489
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1820,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 586,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1820,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1820
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Había derrochado mi juventud en ella\n2. También había pulsado mis cuerdas en el corazón del verano\n3. Si conmueve tu corazón, que la conexión cósmica te lleve allá\n4. Caminando contra la luz, dejando que los elementos me golpeen\n5. Un camino breve, comenzando y parando",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_009",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.62,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        3,
+        3,
+        2,
+        5
+      ],
+      "tgt_syl": [
+        3,
+        6,
+        6,
+        2,
+        8
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "1/5",
+      "translations": [
+        "Pero si",
+        "Todavía puedes",
+        "Detente y piensa",
+        "En mí",
+        "Piensa en todas las cosas"
+      ],
+      "time_seconds": 7.31,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0086143,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1784,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 277,
+          "output_tokens_details": {
+            "thinking_tokens": 231
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1784,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 277,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1784,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1784
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Pero si\n2. Todavía puedes\n3. Detente y piensa\n4. En mí\n5. Piensa en todas las cosas",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_010",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 1.0,
+      "ari": 0.0,
+      "src_syl": [
+        14,
+        3,
+        4,
+        3,
+        3
+      ],
+      "tgt_syl": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AAAAA",
+      "match": "0/5",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "time_seconds": 8.39,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0090373,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1793,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 358,
+          "output_tokens_details": {
+            "thinking_tokens": 305
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1793,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 358,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1793,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1793
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. (Tienes que aprovechar la oportunidad cuando puedas)\n2. Todo lo que quiero\n3. Estar presente\n4. Estar lleno\n5. Todo lo que necesito",
+        "is_error": false
+      },
+      "failed": true,
+      "error": ""
+    },
+    {
+      "id": "ou_011",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.3638095238095238,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        9,
+        10,
+        7,
+        6,
+        6
+      ],
+      "tgt_syl": [
+        15,
+        12,
+        9,
+        9,
+        7
+      ],
+      "src_rhyme": "ABCDD",
+      "tgt_rhyme": "ABCBD",
+      "match": "0/5",
+      "translations": [
+        "siempre permanecerá conmigo en mi corazón",
+        "Mamá quiero cantar para ti, te amo.",
+        "Nunca he visto a mi madre",
+        "Pero siempre la he amado",
+        "Nunca hablé con ella"
+      ],
+      "time_seconds": 7.66,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0087423,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1808,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 293,
+          "output_tokens_details": {
+            "thinking_tokens": 218
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1808,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 293,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1808,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1808
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. siempre permanecerá conmigo en mi corazón\n2. Mamá quiero cantar para ti, te amo.\n3. Nunca he visto a mi madre\n4. Pero siempre la he amado\n5. Nunca hablé con ella",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_012",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.34545454545454546,
+      "ari": 0.0,
+      "src_syl": [
+        11,
+        8,
+        11,
+        12,
+        8
+      ],
+      "tgt_syl": [
+        14,
+        12,
+        16,
+        15,
+        6
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCBD",
+      "match": "0/5",
+      "translations": [
+        "Eres las nubes más hermosas en mi corazón",
+        "Te guardo con la comida y el vino",
+        "cantar el estilo folk más deslumbrante para siempre",
+        "Es la postura más hermosa de todo el cielo",
+        "Yo La la he la bei"
+      ],
+      "time_seconds": 9.5,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0096693,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1819,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 474,
+          "output_tokens_details": {
+            "thinking_tokens": 394
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1819,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 474,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1819,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1819
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Eres las nubes más hermosas en mi corazón\n2. Te guardo con la comida y el vino\n3. cantar el estilo folk más deslumbrante para siempre\n4. Es la postura más hermosa de todo el cielo\n5. Yo La la he la bei",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_013",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.5833333333333333,
+      "ari": -0.15384615384615385,
+      "src_syl": [
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "tgt_syl": [
+        10,
+        11,
+        7,
+        10,
+        10
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCBC",
+      "match": "0/5",
+      "translations": [
+        "En la oscuridad de la noche",
+        "Las estrellas iluminan el cielo",
+        "Los vemos volar libres",
+        "Eso es justo como tú y yo",
+        "Todos se sienten solos a veces"
+      ],
+      "time_seconds": 9.16,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0094533,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1796,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 440,
+          "output_tokens_details": {
+            "thinking_tokens": 374
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1796,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 440,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1796,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1796
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. En la oscuridad de la noche\n2. Las estrellas iluminan el cielo\n3. Los vemos volar libres\n4. Eso es justo como tú y yo\n5. Todos se sienten solos a veces",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_014",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.21777777777777776,
+      "ari": 0.21052631578947367,
+      "src_syl": [
+        5,
+        9,
+        6,
+        5,
+        9
+      ],
+      "tgt_syl": [
+        6,
+        11,
+        8,
+        5,
+        12
+      ],
+      "src_rhyme": "ABBAC",
+      "tgt_rhyme": "ABAAC",
+      "match": "1/5",
+      "translations": [
+        "Decir que te amo",
+        "Todo lo que quiero es que entiendas",
+        "Que cuando tomo tu mano",
+        "Es porque quiero",
+        "Todos nacemos en un mundo de duda"
+      ],
+      "time_seconds": 17.16,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.011107299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1808,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 766,
+          "output_tokens_details": {
+            "thinking_tokens": 706
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1808,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 766,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1808,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1808
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Decir que te amo\n2. Todo lo que quiero es que entiendas\n3. Que cuando tomo tu mano\n4. Es porque quiero\n5. Todos nacemos en un mundo de duda",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_015",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.8002564102564103,
+      "ari": 0.0,
+      "src_syl": [
+        13,
+        1,
+        3,
+        4,
+        5
+      ],
+      "tgt_syl": [
+        18,
+        3,
+        5,
+        7,
+        6
+      ],
+      "src_rhyme": "ABCCD",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "Y si mi jefe me despidiera o mi gato subiera a",
+        "un árbol",
+        "Palos y piedras",
+        "No romperán mis huesos",
+        "Oh, Emma-Lee, oh"
+      ],
+      "time_seconds": 10.83,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0104793,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1799,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 644,
+          "output_tokens_details": {
+            "thinking_tokens": 585
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1799,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 644,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1799,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1799
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Y si mi jefe me despidiera o mi gato subiera a\n2. un árbol\n3. Palos y piedras\n4. No romperán mis huesos\n5. Oh, Emma-Lee, oh",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_016",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.4612271062271063,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        16,
+        13,
+        7,
+        15
+      ],
+      "tgt_syl": [
+        14,
+        22,
+        23,
+        10,
+        20
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCAD",
+      "match": "0/5",
+      "translations": [
+        "La luna es el ojo romántico del río.",
+        "Levanto una copa solo, se abren las cortinas del árbol de sauce,",
+        "Rindiendo respeto a esta vida y afuera en la brisa primaveral,",
+        "Las flores no se han marchitado.",
+        "Ah, han pasado años desde los comienzos de nuestras aventuras."
+      ],
+      "time_seconds": 9.47,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0096883,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1831,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 473,
+          "output_tokens_details": {
+            "thinking_tokens": 374
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1831,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 473,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1831,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1831
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. La luna es el ojo romántico del río.\n2. Levanto una copa solo, se abren las cortinas del árbol de sauce,\n3. Rindiendo respeto a esta vida y afuera en la brisa primaveral,\n4. Las flores no se han marchitado.\n5. Ah, han pasado años desde los comienzos de nuestras aventuras.",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_017",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.7916666666666667,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        12,
+        8,
+        9,
+        9
+      ],
+      "tgt_syl": [
+        17,
+        21,
+        15,
+        14,
+        17
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCA",
+      "match": "0/5",
+      "translations": [
+        "Sabías el trato, a nadie le importa un carajo",
+        "Solo otro niño necesitado, historia de lágrimas en mano",
+        "Guarda tus secretos ocultos ocultos ocultos",
+        "No necesitamos otro corte corte corte",
+        "Pero no podías ocultar un corazón de vidrio"
+      ],
+      "time_seconds": 10.11,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.009949300000000001,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1814,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 532,
+          "output_tokens_details": {
+            "thinking_tokens": 438
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1814,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 532,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1814,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1814
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Sabías el trato, a nadie le importa un carajo\n2. Solo otro niño necesitado, historia de lágrimas en mano\n3. Guarda tus secretos ocultos ocultos ocultos\n4. No necesitamos otro corte corte corte\n5. Pero no podías ocultar un corazón de vidrio",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_018",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.27076923076923076,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        8,
+        13,
+        4,
+        8
+      ],
+      "tgt_syl": [
+        6,
+        10,
+        15,
+        3,
+        12
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDD",
+      "match": "0/5",
+      "translations": [
+        "Nos fuimos a nadar",
+        "Las llamas del sol quemaron mi piel.",
+        "Por eso nunca iremos a la piscina juntos",
+        "Nunca más.",
+        "En el lugar hay innumerables filas"
+      ],
+      "time_seconds": 12.59,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0106493,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1804,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 676,
+          "output_tokens_details": {
+            "thinking_tokens": 610
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1804,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 676,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1804,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1804
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Nos fuimos a nadar\n2. Las llamas del sol quemaron mi piel.\n3. Por eso nunca iremos a la piscina juntos\n4. Nunca más.\n5. En el lugar hay innumerables filas",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_019",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.7487179487179486,
+      "ari": 0.0,
+      "src_syl": [
+        4,
+        5,
+        13,
+        4,
+        3
+      ],
+      "tgt_syl": [
+        7,
+        10,
+        14,
+        9,
+        5
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABBC",
+      "match": "0/5",
+      "translations": [
+        "Sin camisas, sin blusas",
+        "Solo nosotros, lo descubrirás",
+        "Nada que realmente quisiera contarte, no",
+        "Porque es demasiado frío",
+        "Para ti aquí"
+      ],
+      "time_seconds": 8.29,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0092393,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1799,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 396,
+          "output_tokens_details": {
+            "thinking_tokens": 330
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1799,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 396,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1799,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1799
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Sin camisas, sin blusas\n2. Solo nosotros, lo descubrirás\n3. Nada que realmente quisiera contarte, no\n4. Porque es demasiado frío\n5. Para ti aquí",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_020",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.5297835497835498,
+      "ari": 0.0,
+      "src_syl": [
+        6,
+        7,
+        11,
+        5,
+        11
+      ],
+      "tgt_syl": [
+        11,
+        8,
+        17,
+        7,
+        19
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "Algo bueno que hay entre nosotros.",
+        "Ahora no te sientes bien.",
+        "Acostado en mi cama en una noche de soledad.",
+        "Te necesito, amor.",
+        "Te he estado buscando hasta que mi corazón quedó ciego."
+      ],
+      "time_seconds": 9.33,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.009914300000000001,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1814,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 525,
+          "output_tokens_details": {
+            "thinking_tokens": 446
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1814,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 525,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1814,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1814
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Algo bueno que hay entre nosotros.\n2. Ahora no te sientes bien.\n3. Acostado en mi cama en una noche de soledad.\n4. Te necesito, amor.\n5. Te he estado buscando hasta que mi corazón quedó ciego.",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_021",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.5873015873015873,
+      "ari": 0.0,
+      "src_syl": [
+        10,
+        7,
+        9,
+        6,
+        9
+      ],
+      "tgt_syl": [
+        15,
+        12,
+        14,
+        11,
+        12
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "AABCD",
+      "match": "0/5",
+      "translations": [
+        "¿Hay un tiempo para mantener la cabeza baja?",
+        "Para seguir adelante con tu día",
+        "¿Hay un tiempo para el kohl y el lápiz labial?",
+        "Un tiempo para rizar el cabello",
+        "¿Hay un tiempo para comprar en la ciudad?"
+      ],
+      "time_seconds": 12.84,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0108493,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1809,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 714,
+          "output_tokens_details": {
+            "thinking_tokens": 629
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1809,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 714,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1809,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1809
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. ¿Hay un tiempo para mantener la cabeza baja?\n2. Para seguir adelante con tu día\n3. ¿Hay un tiempo para el kohl y el lápiz labial?\n4. Un tiempo para rizar el cabello\n5. ¿Hay un tiempo para comprar en la ciudad?",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_022",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.16333333333333333,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        8,
+        10,
+        12,
+        12,
+        10
+      ],
+      "tgt_syl": [
+        8,
+        11,
+        14,
+        15,
+        13
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCCD",
+      "match": "1/5",
+      "translations": [
+        "que siempre estarán juntos,",
+        "Tienes que darle fe, mantenla cerca",
+        "Un poco de ternura, tienes que tratarla bien,",
+        "Ella estará ahí para ti, cuidándote bien,",
+        "Realmente tienes que amar a tu mujer..."
+      ],
+      "time_seconds": 12.2,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.010885299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1822,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 716,
+          "output_tokens_details": {
+            "thinking_tokens": 631
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1822,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 716,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1822,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1822
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. que siempre estarán juntos,\n2. Tienes que darle fe, mantenla cerca\n3. Un poco de ternura, tienes que tratarla bien,\n4. Ella estará ahí para ti, cuidándote bien,\n5. Realmente tienes que amar a tu mujer...",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_023",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.23714285714285716,
+      "ari": -0.1111111111111111,
+      "src_syl": [
+        6,
+        13,
+        15,
+        14,
+        15
+      ],
+      "tgt_syl": [
+        9,
+        13,
+        18,
+        18,
+        18
+      ],
+      "src_rhyme": "ABBCD",
+      "tgt_rhyme": "ABCDA",
+      "match": "1/5",
+      "translations": [
+        "No seré parte de tu juego",
+        "Quién soy, ¿siempre te haces esta pregunta?",
+        "Quién soy, siempre viviendo en las expectativas de otros",
+        "Quién soy, quién te ayudó a definirte sin autoridad",
+        "Quién eres, solo puede ser seguro si no eres tú mismo"
+      ],
+      "time_seconds": 17.15,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0131243,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1824,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1163,
+          "output_tokens_details": {
+            "thinking_tokens": 1062
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1824,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1163,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1824,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1824
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. No seré parte de tu juego\n2. Quién soy, ¿siempre te haces esta pregunta?\n3. Quién soy, siempre viviendo en las expectativas de otros\n4. Quién soy, quién te ayudó a definirte sin autoridad\n5. Quién eres, solo puede ser seguro si no eres tú mismo",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_024",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.46121212121212124,
+      "ari": 0.0,
+      "src_syl": [
+        9,
+        10,
+        11,
+        11,
+        10
+      ],
+      "tgt_syl": [
+        12,
+        13,
+        19,
+        17,
+        14
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABBCD",
+      "match": "0/5",
+      "translations": [
+        "Pues también soy uno de tus amores",
+        "Si tuviera que vivir mi vida de nuevo",
+        "Me mantendría enamorado de ti como lo he estado",
+        "Tu amor es algo que nadie jamás puede reemplazar",
+        "No puedo imaginar la vida con alguien más"
+      ],
+      "time_seconds": 11.5,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0103303,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1817,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 607,
+          "output_tokens_details": {
+            "thinking_tokens": 525
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1817,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 607,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1817,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1817
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Pues también soy uno de tus amores\n2. Si tuviera que vivir mi vida de nuevo\n3. Me mantendría enamorado de ti como lo he estado\n4. Tu amor es algo que nadie jamás puede reemplazar\n5. No puedo imaginar la vida con alguien más",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_025",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.4612454212454212,
+      "ari": 1.0,
+      "src_syl": [
+        3,
+        7,
+        10,
+        13,
+        7
+      ],
+      "tgt_syl": [
+        5,
+        10,
+        12,
+        15,
+        13
+      ],
+      "src_rhyme": "AAABA",
+      "tgt_rhyme": "AAABA",
+      "match": "0/5",
+      "translations": [
+        "Mi chica concha",
+        "No tengas miedo, mi chica concha",
+        "Un cuerpo misterioso, mi chica concha",
+        "Que toda la inquietud se aleje lentamente",
+        "Camina lentamente lejos, chica concha"
+      ],
+      "time_seconds": 17.98,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0145593,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1804,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 1458,
+          "output_tokens_details": {
+            "thinking_tokens": 1384
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1804,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 1458,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1804,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1804
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Mi chica concha\n2. No tengas miedo, mi chica concha\n3. Un cuerpo misterioso, mi chica concha\n4. Que toda la inquietud se aleje lentamente\n5. Camina lentamente lejos, chica concha",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_026",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.71,
+      "ari": 0.0,
+      "src_syl": [
+        2,
+        8,
+        6,
+        5,
+        8
+      ],
+      "tgt_syl": [
+        2,
+        9,
+        15,
+        9,
+        17
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCDC",
+      "match": "1/5",
+      "translations": [
+        "Crece",
+        "¿Si escapo seré salvado?",
+        "No puedo adivinar cuándo te desvanecerás",
+        "Dime que no puedo esperar",
+        "Estoy aprendiendo rápido, no puedo volver atrás"
+      ],
+      "time_seconds": 26.51,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0183173,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1803,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 2210,
+          "output_tokens_details": {
+            "thinking_tokens": 2135
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1803,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 2210,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1803,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1803
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Crece\n2. ¿Si escapo seré salvado?\n3. No puedo adivinar cuándo te desvanecerás\n4. Dime que no puedo esperar\n5. Estoy aprendiendo rápido, no puedo volver atrás",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_027",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.4894871794871795,
+      "ari": 0.0,
+      "src_syl": [
+        12,
+        5,
+        4,
+        13,
+        3
+      ],
+      "tgt_syl": [
+        15,
+        9,
+        6,
+        16,
+        5
+      ],
+      "src_rhyme": "ABCAD",
+      "tgt_rhyme": "ABCDE",
+      "match": "0/5",
+      "translations": [
+        "Parado ahí como si no supieras qué decir,",
+        "Pero conozco esa cara.",
+        "Y aquí estoy,",
+        "Preparándome para lo que sé que viene hacia mí",
+        "Qué desperdicio."
+      ],
+      "time_seconds": 9.69,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0099393,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1809,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 532,
+          "output_tokens_details": {
+            "thinking_tokens": 460
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1809,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 532,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1809,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1809
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Parado ahí como si no supieras qué decir,\n2. Pero conozco esa cara.\n3. Y aquí estoy,\n4. Preparándome para lo que sé que viene hacia mí\n5. Qué desperdicio.",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_028",
+      "artist": "ou-test",
+      "ser": 0.6,
+      "scre": 0.24,
+      "ari": 0.0,
+      "src_syl": [
+        3,
+        6,
+        6,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        4,
+        10,
+        6,
+        5,
+        6
+      ],
+      "src_rhyme": "ABACD",
+      "tgt_rhyme": "ABCDE",
+      "match": "2/5",
+      "translations": [
+        "No lo digas",
+        "Que aún podemos ser amigos,",
+        "No funciona así,",
+        "El fin es el fin.",
+        "Y no oses pensar"
+      ],
+      "time_seconds": 10.01,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0098993,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1799,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 528,
+          "output_tokens_details": {
+            "thinking_tokens": 477
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1799,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 528,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1799,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1799
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. No lo digas\n2. Que aún podemos ser amigos,\n3. No funciona así,\n4. El fin es el fin.\n5. Y no oses pensar",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_029",
+      "artist": "ou-test",
+      "ser": 1.0,
+      "scre": 0.5840909090909092,
+      "ari": 0.0,
+      "src_syl": [
+        5,
+        11,
+        8,
+        5,
+        5
+      ],
+      "tgt_syl": [
+        9,
+        17,
+        11,
+        7,
+        9
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCB",
+      "match": "0/5",
+      "translations": [
+        "Y no te atrevas a pensar",
+        "Que empaco todas mis lágrimas y las llevo a casa,",
+        "Y las lloraré cuando esté solo",
+        "Lo haré aquí mismo",
+        "Estoy llorando ahora"
+      ],
+      "time_seconds": 11.56,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.010540299999999999,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1807,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 653,
+          "output_tokens_details": {
+            "thinking_tokens": 586
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1807,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 653,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1807,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1807
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Y no te atrevas a pensar\n2. Que empaco todas mis lágrimas y las llevo a casa,\n3. Y las lloraré cuando esté solo\n4. Lo haré aquí mismo\n5. Estoy llorando ahora",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    },
+    {
+      "id": "ou_030",
+      "artist": "ou-test",
+      "ser": 0.8,
+      "scre": 0.6330769230769231,
+      "ari": 0.0,
+      "src_syl": [
+        13,
+        12,
+        3,
+        10,
+        13
+      ],
+      "tgt_syl": [
+        13,
+        21,
+        6,
+        18,
+        21
+      ],
+      "src_rhyme": "ABCDE",
+      "tgt_rhyme": "ABCCB",
+      "match": "1/5",
+      "translations": [
+        "Llegando a los límites de mi conciencia",
+        "Veo a mi padre sentado en el borde de una nube, fumando.",
+        "justo como antes.",
+        "Aquellos que vienen de montañas, arroyos, lagos y mares",
+        "ahora están confinados a la noche, la cocina y al sexo."
+      ],
+      "time_seconds": 9.67,
+      "model": "claude-haiku-4-5-20251001",
+      "skill": "none",
+      "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+      "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+      "agent": {
+        "model_id": "claude-haiku-4-5-20251001",
+        "assistant_turns": 2,
+        "tool_calls": {},
+        "skill_loads": {},
+        "script_calls": {},
+        "num_turns": 1,
+        "cost_usd": 0.0099623,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 1818,
+          "cache_read_input_tokens": 36513,
+          "output_tokens": 533,
+          "output_tokens_details": {
+            "thinking_tokens": 437
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1818,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 10,
+              "output_tokens": 533,
+              "cache_read_input_tokens": 36513,
+              "cache_creation_input_tokens": 1818,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1818
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard"
+        },
+        "final_text": "1. Llegando a los límites de mi conciencia\n2. Veo a mi padre sentado en el borde de una nube, fumando.\n3. justo como antes.\n4. Aquellos que vienen de montañas, arroyos, lagos y mares\n5. ahora están confinados a la noche, la cocina y al sexo.",
+        "is_error": false
+      },
+      "failed": false,
+      "error": ""
+    }
+  ]
+}

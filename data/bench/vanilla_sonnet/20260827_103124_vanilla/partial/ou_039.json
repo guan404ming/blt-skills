@@ -1,0 +1,82 @@
+{
+  "id": "ou_039",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.22604872251931077,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    11,
+    11,
+    9,
+    17
+  ],
+  "tgt_syl": [
+    14,
+    9,
+    10,
+    11,
+    13
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "我该怎么办？我被剥夺了你的未来",
+    "谁能替你让我吻晚安？",
+    "你怎能突然放开我的手",
+    "你怎能说\"我只是不爱你了\"",
+    "原来只是一场暂时幸福的承诺"
+  ],
+  "time_seconds": 8.09,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0188264,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2272,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 94,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2272,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 94,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2272,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2272
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我该怎么办？我被剥夺了你的未来\n2. 谁能替你让我吻晚安？\n3. 你怎能突然放开我的手\n4. 你怎能说\"我只是不爱你了\"\n5. 原来只是一场暂时幸福的承诺",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

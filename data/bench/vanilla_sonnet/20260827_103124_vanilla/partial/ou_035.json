@@ -1,0 +1,82 @@
+{
+  "id": "ou_035",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.1919191919191919,
+  "ari": 0.0,
+  "src_syl": [
+    12,
+    11,
+    9,
+    10,
+    9
+  ],
+  "tgt_syl": [
+    16,
+    9,
+    13,
+    10,
+    9
+  ],
+  "src_rhyme": "ABCAD",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "你收拾好行李箱,从墙上取下一张照片",
+    "我问你觉得还要多久",
+    "你说,这疯狂的世界已分崩离析",
+    "夏天结束,树叶开始飘落",
+    "又一个冬天即将来临"
+  ],
+  "time_seconds": 7.66,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0187704,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2263,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 92,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2263,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 92,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2263,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2263
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你收拾好行李箱,从墙上取下一张照片\n2. 我问你觉得还要多久\n3. 你说,这疯狂的世界已分崩离析\n4. 夏天结束,树叶开始飘落\n5. 又一个冬天即将来临",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

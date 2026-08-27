@@ -1,0 +1,82 @@
+{
+  "id": "ou_084",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.325,
+  "ari": -0.17647058823529413,
+  "src_syl": [
+    6,
+    8,
+    3,
+    4,
+    4
+  ],
+  "tgt_syl": [
+    6,
+    9,
+    6,
+    6,
+    4
+  ],
+  "src_rhyme": "ABCBD",
+  "tgt_rhyme": "ABCAA",
+  "match": "2/5",
+  "translations": [
+    "有点难以形容？",
+    "是啊,是啊,我觉得很对",
+    "他赤裸的时候-",
+    "他让你兴奋吗？",
+    "他狠毒吗？"
+  ],
+  "time_seconds": 6.46,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018460400000000002,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2242,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 69,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2242,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 69,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2242,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2242
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 有点难以形容？\n2. 是啊,是啊,我觉得很对\n3. 他赤裸的时候-\n4. 他让你兴奋吗？\n5. 他狠毒吗？",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

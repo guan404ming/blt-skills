@@ -1,0 +1,82 @@
+{
+  "id": "ou_020",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.4466666666666666,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    3,
+    3,
+    2,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    5,
+    5,
+    2,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "但如果",
+    "你仍然可以",
+    "停下来想想",
+    "想我",
+    "想想所有的事情"
+  ],
+  "time_seconds": 8.75,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0172811,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 6032,
+      "cache_read_input_tokens": 31421,
+      "output_tokens": 413,
+      "output_tokens_details": {
+        "thinking_tokens": 366
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6032,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 413,
+          "cache_read_input_tokens": 31421,
+          "cache_creation_input_tokens": 6032,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6032
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 但如果\n2. 你仍然可以\n3. 停下来想想\n4. 想我\n5. 想想所有的事情",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

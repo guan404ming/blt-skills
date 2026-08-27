@@ -1,0 +1,82 @@
+{
+  "id": "ou_024",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.46121212121212124,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    10,
+    11,
+    11,
+    10
+  ],
+  "tgt_syl": [
+    12,
+    13,
+    19,
+    17,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCD",
+  "match": "0/5",
+  "translations": [
+    "Pues también soy uno de tus amores",
+    "Si tuviera que vivir mi vida de nuevo",
+    "Me mantendría enamorado de ti como lo he estado",
+    "Tu amor es algo que nadie jamás puede reemplazar",
+    "No puedo imaginar la vida con alguien más"
+  ],
+  "time_seconds": 11.5,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0103303,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1817,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 607,
+      "output_tokens_details": {
+        "thinking_tokens": 525
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1817,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 607,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1817,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1817
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Pues también soy uno de tus amores\n2. Si tuviera que vivir mi vida de nuevo\n3. Me mantendría enamorado de ti como lo he estado\n4. Tu amor es algo que nadie jamás puede reemplazar\n5. No puedo imaginar la vida con alguien más",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

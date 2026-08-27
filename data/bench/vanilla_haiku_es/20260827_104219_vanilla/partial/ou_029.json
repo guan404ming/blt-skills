@@ -1,0 +1,82 @@
+{
+  "id": "ou_029",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.5840909090909092,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    9,
+    17,
+    11,
+    7,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCB",
+  "match": "0/5",
+  "translations": [
+    "Y no te atrevas a pensar",
+    "Que empaco todas mis lágrimas y las llevo a casa,",
+    "Y las lloraré cuando esté solo",
+    "Lo haré aquí mismo",
+    "Estoy llorando ahora"
+  ],
+  "time_seconds": 11.56,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.010540299999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1807,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 653,
+      "output_tokens_details": {
+        "thinking_tokens": 586
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1807,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 653,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1807,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1807
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Y no te atrevas a pensar\n2. Que empaco todas mis lágrimas y las llevo a casa,\n3. Y las lloraré cuando esté solo\n4. Lo haré aquí mismo\n5. Estoy llorando ahora",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

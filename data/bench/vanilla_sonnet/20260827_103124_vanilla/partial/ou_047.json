@@ -1,0 +1,82 @@
+{
+  "id": "ou_047",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.2066666666666667,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    10,
+    10,
+    14,
+    6,
+    7
+  ],
+  "tgt_syl": [
+    11,
+    11,
+    13,
+    8,
+    10
+  ],
+  "src_rhyme": "ABACC",
+  "tgt_rhyme": "ABBCD",
+  "match": "0/5",
+  "translations": [
+    "黑与白的思绪都向我俯首",
+    "我走过它们未点灯的走廊",
+    "我虽脆弱 你却如天使伴我身旁",
+    "当悲伤呼唤我名字",
+    "我知没有什么永远不变"
+  ],
+  "time_seconds": 7.87,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0187444,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2263,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 89,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2263,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 89,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2263,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2263
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 黑与白的思绪都向我俯首\n2. 我走过它们未点灯的走廊\n3. 我虽脆弱 你却如天使伴我身旁\n4. 当悲伤呼唤我名字\n5. 我知没有什么永远不变",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

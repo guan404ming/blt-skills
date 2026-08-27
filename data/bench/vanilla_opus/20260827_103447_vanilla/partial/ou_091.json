@@ -1,0 +1,82 @@
+{
+  "id": "ou_091",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2215151515151515,
+  "ari": 0.0,
+  "src_syl": [
+    6,
+    11,
+    10,
+    4,
+    9
+  ],
+  "tgt_syl": [
+    7,
+    10,
+    9,
+    7,
+    9
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "你送我的那些花",
+    "我心中的顫抖漸漸鬆開",
+    "他是討人歡心的英雄",
+    "一顆新星誕生了",
+    "大家一起放聲吶喊吧"
+  ],
+  "time_seconds": 10.0,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0436075,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1876,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "thinking_tokens": 144
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1876,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 221,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1876,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1876
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你送我的那些花\n2. 我心中的顫抖漸漸鬆開\n3. 他是討人歡心的英雄\n4. 一顆新星誕生了\n5. 大家一起放聲吶喊吧",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

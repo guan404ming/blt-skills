@@ -1,0 +1,82 @@
+{
+  "id": "ou_023",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.23285714285714282,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    3,
+    7,
+    7,
+    8,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    10,
+    9,
+    10,
+    4
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "1/5",
+  "translations": [
+    "像太阳",
+    "把你的温暖传给每个人",
+    "我问你人为什么会死",
+    "你说我们都有一个设计",
+    "滑入大海"
+  ],
+  "time_seconds": 11.34,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0101178,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1798,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 589,
+      "output_tokens_details": {
+        "thinking_tokens": 525
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1798,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 589,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1798,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1798
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 像太阳\n2. 把你的温暖传给每个人\n3. 我问你人为什么会死\n4. 你说我们都有一个设计\n5. 滑入大海",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

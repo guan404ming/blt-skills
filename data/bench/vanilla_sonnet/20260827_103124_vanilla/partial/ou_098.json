@@ -1,0 +1,82 @@
+{
+  "id": "ou_098",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.06993006993006994,
+  "ari": 0.0,
+  "src_syl": [
+    13,
+    7,
+    11,
+    11,
+    12
+  ],
+  "tgt_syl": [
+    14,
+    7,
+    10,
+    13,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABACD",
+  "match": "2/5",
+  "translations": [
+    "這段友情如挪亞方舟般堅定不移。",
+    "我只是望著大海，",
+    "帶著模糊視線，等待永恆。",
+    "這些年來，我買了車、手錶和相機",
+    "但我發現有些東西，錢買不到"
+  ],
+  "time_seconds": 9.28,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018816400000000004,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2271,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 93,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2271,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 93,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2271,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2271
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 這段友情如挪亞方舟般堅定不移。\n2. 我只是望著大海，\n3. 帶著模糊視線，等待永恆。\n4. 這些年來，我買了車、手錶和相機\n5. 但我發現有些東西，錢買不到",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

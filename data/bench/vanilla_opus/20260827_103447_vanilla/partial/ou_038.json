@@ -1,0 +1,82 @@
+{
+  "id": "ou_038",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.16333333333333333,
+  "ari": 0.0,
+  "src_syl": [
+    3,
+    5,
+    12,
+    12,
+    5
+  ],
+  "tgt_syl": [
+    4,
+    6,
+    11,
+    12,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCD",
+  "match": "1/5",
+  "translations": [
+    "通往何方",
+    "每晚都去那里",
+    "他有我喜欢的那种少年感",
+    "我是建筑师，画着未来的图案",
+    "没有人能看穿"
+  ],
+  "time_seconds": 18.77,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.37653,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 35622,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 812,
+      "output_tokens_details": {
+        "thinking_tokens": 746
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 35622,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 812,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 35622,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 35622
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 通往何方\n2. 每晚都去那里\n3. 他有我喜欢的那种少年感\n4. 我是建筑师，画着未来的图案\n5. 没有人能看穿",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

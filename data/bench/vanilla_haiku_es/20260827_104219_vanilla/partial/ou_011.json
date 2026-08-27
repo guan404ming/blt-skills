@@ -1,0 +1,82 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.3638095238095238,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    9,
+    10,
+    7,
+    6,
+    6
+  ],
+  "tgt_syl": [
+    15,
+    12,
+    9,
+    9,
+    7
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCBD",
+  "match": "0/5",
+  "translations": [
+    "siempre permanecerá conmigo en mi corazón",
+    "Mamá quiero cantar para ti, te amo.",
+    "Nunca he visto a mi madre",
+    "Pero siempre la he amado",
+    "Nunca hablé con ella"
+  ],
+  "time_seconds": 7.66,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0087423,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1808,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "thinking_tokens": 218
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1808,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 293,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1808,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1808
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. siempre permanecerá conmigo en mi corazón\n2. Mamá quiero cantar para ti, te amo.\n3. Nunca he visto a mi madre\n4. Pero siempre la he amado\n5. Nunca hablé con ella",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_055",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.22000000000000003,
+  "ari": 0.0,
+  "src_syl": [
+    4,
+    4,
+    8,
+    4,
+    10
+  ],
+  "tgt_syl": [
+    4,
+    7,
+    8,
+    5,
+    11
+  ],
+  "src_rhyme": "ABCDA",
+  "tgt_rhyme": "ABCDE",
+  "match": "2/5",
+  "translations": [
+    "为你骄傲",
+    "现在你让我想起",
+    "我绝不会随风而去",
+    "就让它流动",
+    "让它带我去它想去的地方"
+  ],
+  "time_seconds": 7.34,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018344400000000004,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2238,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 59,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2238,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 59,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2238,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2238
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 为你骄傲\n2. 现在你让我想起\n3. 我绝不会随风而去\n4. 就让它流动\n5. 让它带我去它想去的地方",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

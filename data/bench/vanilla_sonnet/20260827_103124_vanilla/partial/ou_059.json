@@ -1,0 +1,82 @@
+{
+  "id": "ou_059",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.28076923076923077,
+  "ari": 0.0,
+  "src_syl": [
+    10,
+    5,
+    8,
+    13,
+    4
+  ],
+  "tgt_syl": [
+    13,
+    6,
+    12,
+    15,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCBB",
+  "match": "0/5",
+  "translations": [
+    "她说的话跟你叫我的原因一样",
+    "我们去游泳了",
+    "太阳的火焰灼伤了我的皮肤",
+    "所以我们再也不会一起去游泳池了",
+    "再也不会了"
+  ],
+  "time_seconds": 6.89,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0186104,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2247,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 82,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2247,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 82,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2247
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 她说的话跟你叫我的原因一样\n2. 我们去游泳了\n3. 太阳的火焰灼伤了我的皮肤\n4. 所以我们再也不会一起去游泳池了\n5. 再也不会了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

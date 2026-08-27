@@ -1,0 +1,82 @@
+{
+  "id": "ou_014",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2692063492063492,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    9,
+    14,
+    9,
+    10
+  ],
+  "tgt_syl": [
+    13,
+    11,
+    9,
+    7,
+    9
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABACC",
+  "match": "0/5",
+  "translations": [
+    "过了这个村子就没有这家店了。",
+    "你知道，你清楚我在说什么，",
+    "我真的好想亲你的脸。",
+    "就在深圳的街角；",
+    "那时的我们，随风飘然；"
+  ],
+  "time_seconds": 13.93,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0193901,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 6064,
+      "cache_read_input_tokens": 31421,
+      "output_tokens": 822,
+      "output_tokens_details": {
+        "thinking_tokens": 737
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6064,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 822,
+          "cache_read_input_tokens": 31421,
+          "cache_creation_input_tokens": 6064,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6064
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 过了这个村子就没有这家店了。\n2. 你知道，你清楚我在说什么，\n3. 我真的好想亲你的脸。\n4. 就在深圳的街角；\n5. 那时的我们，随风飘然；",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

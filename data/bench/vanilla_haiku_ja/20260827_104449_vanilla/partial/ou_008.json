@@ -1,0 +1,82 @@
+{
+  "id": "ou_008",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.586111111111111,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    14,
+    15,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    14,
+    13,
+    30,
+    20,
+    15
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCC",
+  "match": "0/5",
+  "translations": [
+    "青春を彼女に打ち込んだ",
+    "真夏に弦を高く弾いた",
+    "心が揺さぶられたら、宇宙の絆がお前をそこへ導く",
+    "光に逆らい歩き、自然が俺を打つ",
+    "短い道、始まっては止まる"
+  ],
+  "time_seconds": 33.27,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0218913,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1820,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 2918,
+      "output_tokens_details": {
+        "thinking_tokens": 2809
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1820,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 2918,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1820,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1820
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 青春を彼女に打ち込んだ\n2. 真夏に弦を高く弾いた\n3. 心が揺さぶられたら、宇宙の絆がお前をそこへ導く\n4. 光に逆らい歩き、自然が俺を打つ\n5. 短い道、始まっては止まる",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

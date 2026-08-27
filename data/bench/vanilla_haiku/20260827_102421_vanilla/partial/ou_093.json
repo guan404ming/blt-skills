@@ -1,0 +1,82 @@
+{
+  "id": "ou_093",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.14416666666666667,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "tgt_syl": [
+    8,
+    4,
+    5,
+    17,
+    7
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "这不是爱也不是恨",
+    "只是冷漠",
+    "我遗忘了你-",
+    "当我在校园绊倒砸地时，你笑了，笑了，笑了",
+    "我本应为你留下"
+  ],
+  "time_seconds": 22.28,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.015614800000000002,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1819,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1680,
+      "output_tokens_details": {
+        "thinking_tokens": 1599
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1819,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1680,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1819,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1819
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 这不是爱也不是恨\n2. 只是冷漠\n3. 我遗忘了你-\n4. 当我在校园绊倒砸地时，你笑了，笑了，笑了\n5. 我本应为你留下",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

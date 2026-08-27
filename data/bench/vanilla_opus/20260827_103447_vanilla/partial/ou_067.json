@@ -1,0 +1,82 @@
+{
+  "id": "ou_067",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.16666666666666666,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    4,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    5,
+    7,
+    5
+  ],
+  "src_rhyme": "ABCDC",
+  "tgt_rhyme": "ABCDC",
+  "match": "1/5",
+  "translations": [
+    "众人回头望",
+    "来夺她王冠",
+    "你说那河流",
+    "会找到入海的路",
+    "而如同河流"
+  ],
+  "time_seconds": 10.59,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0451525,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1858,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "thinking_tokens": 240
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1858,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 290,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1858,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1858
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 众人回头望\n2. 来夺她王冠\n3. 你说那河流\n4. 会找到入海的路\n5. 而如同河流",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

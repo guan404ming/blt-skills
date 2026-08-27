@@ -1,0 +1,82 @@
+{
+  "id": "ou_040",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.2638888888888889,
+  "ari": 0.13793103448275862,
+  "src_syl": [
+    4,
+    4,
+    9,
+    9,
+    8
+  ],
+  "tgt_syl": [
+    5,
+    5,
+    8,
+    6,
+    11
+  ],
+  "src_rhyme": "AABAA",
+  "tgt_rhyme": "AABCD",
+  "match": "0/5",
+  "translations": [
+    "该死,怎么办?",
+    "我该怎么办?",
+    "走遍世界,踏遍七海",
+    "我想用你,虐你",
+    "我想知道你心里藏着什么"
+  ],
+  "time_seconds": 6.43,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0184504,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2243,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 68,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2243,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 68,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2243,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2243
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 该死,怎么办?\n2. 我该怎么办?\n3. 走遍世界,踏遍七海\n4. 我想用你,虐你\n5. 我想知道你心里藏着什么",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

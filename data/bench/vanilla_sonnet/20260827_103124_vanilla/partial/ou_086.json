@@ -1,0 +1,82 @@
+{
+  "id": "ou_086",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.07666666666666666,
+  "ari": -0.3157894736842105,
+  "src_syl": [
+    6,
+    3,
+    4,
+    12,
+    15
+  ],
+  "tgt_syl": [
+    7,
+    3,
+    4,
+    13,
+    17
+  ],
+  "src_rhyme": "ABCCC",
+  "tgt_rhyme": "ABABC",
+  "match": "2/5",
+  "translations": [
+    "吃完肉骨頭之後",
+    "搖尾巴",
+    "對我點頭",
+    "親愛的總統先生，跟我散個步吧",
+    "假裝我們只是兩個普通人，你並不比我強"
+  ],
+  "time_seconds": 8.29,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018602399999999998,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2250,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 80,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2250,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 80,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2250,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2250
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 吃完肉骨頭之後\n2. 搖尾巴\n3. 對我點頭\n4. 親愛的總統先生，跟我散個步吧\n5. 假裝我們只是兩個普通人，你並不比我強",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

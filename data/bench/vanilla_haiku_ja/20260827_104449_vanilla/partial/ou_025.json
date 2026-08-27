@@ -1,0 +1,82 @@
+{
+  "id": "ou_025",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.1013919413919413,
+  "ari": 0.0,
+  "src_syl": [
+    3,
+    7,
+    10,
+    13,
+    7
+  ],
+  "tgt_syl": [
+    10,
+    15,
+    18,
+    16,
+    14
+  ],
+  "src_rhyme": "AAABA",
+  "tgt_rhyme": "AAAAA",
+  "match": "0/5",
+  "translations": [
+    "わたしのシェル・ガール",
+    "怖れるな、わたしのシェル・ガール",
+    "謎めく体よ、わたしのシェル・ガール",
+    "すべての不安がそっと歩み去る",
+    "そっと歩み去れ、シェル・ガール"
+  ],
+  "time_seconds": 14.53,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.012159299999999998,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1804,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 978,
+      "output_tokens_details": {
+        "thinking_tokens": 879
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1804,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 978,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1804,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1804
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. わたしのシェル・ガール\n2. 怖れるな、わたしのシェル・ガール\n3. 謎めく体よ、わたしのシェル・ガール\n4. すべての不安がそっと歩み去る\n5. そっと歩み去れ、シェル・ガール",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

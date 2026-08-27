@@ -1,0 +1,82 @@
+{
+  "id": "ou_049",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.10019183430948138,
+  "ari": 0.0,
+  "src_syl": [
+    17,
+    11,
+    15,
+    14,
+    18
+  ],
+  "tgt_syl": [
+    18,
+    13,
+    17,
+    15,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABAAC",
+  "match": "0/5",
+  "translations": [
+    "你搬进我那破旧的屋子，好几天没踏出过门",
+    "你学会了洗衣服，也学会了做饭",
+    "你顺着我的脾气，让我觉得自己像个男人",
+    "我发火摔碎了杯子，砸坏了房间的门",
+    "让你哭了好几天，也不接电话，就这样走了"
+  ],
+  "time_seconds": 14.28,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0506975,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1920,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 487,
+      "output_tokens_details": {
+        "thinking_tokens": 364
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1920,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 487,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1920,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1920
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你搬进我那破旧的屋子，好几天没踏出过门\n2. 你学会了洗衣服，也学会了做饭\n3. 你顺着我的脾气，让我觉得自己像个男人\n4. 我发火摔碎了杯子，砸坏了房间的门\n5. 让你哭了好几天，也不接电话，就这样走了",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

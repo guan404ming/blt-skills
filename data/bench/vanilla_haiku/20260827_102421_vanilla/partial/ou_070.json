@@ -1,0 +1,82 @@
+{
+  "id": "ou_070",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.47876068376068376,
+  "ari": 1.0,
+  "src_syl": [
+    9,
+    13,
+    10,
+    8,
+    5
+  ],
+  "tgt_syl": [
+    10,
+    17,
+    14,
+    11,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "给她翅膀，让她想飞就飞",
+    "然后当你发现自己无助地躺在她的怀里",
+    "那时你就知道你真的爱一个女人",
+    "当你爱一个女人时，告诉她",
+    "她真的是被想要被需要的"
+  ],
+  "time_seconds": 20.73,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0125268,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1815,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1064,
+      "output_tokens_details": {
+        "thinking_tokens": 965
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1815,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1064,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1815,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1815
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 给她翅膀，让她想飞就飞\n2. 然后当你发现自己无助地躺在她的怀里\n3. 那时你就知道你真的爱一个女人\n4. 当你爱一个女人时，告诉她\n5. 她真的是被想要被需要的",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

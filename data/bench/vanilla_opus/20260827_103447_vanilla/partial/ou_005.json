@@ -1,0 +1,82 @@
+{
+  "id": "ou_005",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.16151515151515153,
+  "ari": 1.0,
+  "src_syl": [
+    10,
+    10,
+    12,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    12,
+    11,
+    10,
+    10,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "你準備好了嗎？時間不會倒流",
+    "我想飛翔，不需要任何理由",
+    "無論天涯海角有多寂寞",
+    "你一定會有我，在你身邊",
+    "我們說過，無論世界有多寬廣"
+  ],
+  "time_seconds": 12.52,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.044882,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1892,
+      "cache_read_input_tokens": 38604,
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "thinking_tokens": 175
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1892,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 266,
+          "cache_read_input_tokens": 38604,
+          "cache_creation_input_tokens": 1892,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1892
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你準備好了嗎？時間不會倒流\n2. 我想飛翔，不需要任何理由\n3. 無論天涯海角有多寂寞\n4. 你一定會有我，在你身邊\n5. 我們說過，無論世界有多寬廣",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

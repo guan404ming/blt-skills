@@ -1,0 +1,82 @@
+{
+  "id": "ou_014",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.1377777777777776,
+  "ari": 0.375,
+  "src_syl": [
+    5,
+    9,
+    6,
+    5,
+    9
+  ],
+  "tgt_syl": [
+    11,
+    19,
+    10,
+    13,
+    19
+  ],
+  "src_rhyme": "ABBAC",
+  "tgt_rhyme": "ABBCA",
+  "match": "0/5",
+  "translations": [
+    "君を愛してると言う",
+    "君が理解してくれることだけが欲しい",
+    "君の手を握るとき",
+    "それは僕が望んでるから",
+    "誰もが疑いの世界に生まれてくる"
+  ],
+  "time_seconds": 13.81,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.012082299999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1808,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 961,
+      "output_tokens_details": {
+        "thinking_tokens": 879
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1808,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 961,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1808,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1808
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 君を愛してると言う\n2. 君が理解してくれることだけが欲しい\n3. 君の手を握るとき\n4. それは僕が望んでるから\n5. 誰もが疑いの世界に生まれてくる",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

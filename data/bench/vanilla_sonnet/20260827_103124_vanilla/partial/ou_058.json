@@ -1,0 +1,82 @@
+{
+  "id": "ou_058",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.11397546897546898,
+  "ari": 0.13793103448275862,
+  "src_syl": [
+    7,
+    10,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    8,
+    9,
+    10,
+    9,
+    12
+  ],
+  "src_rhyme": "ABCDB",
+  "tgt_rhyme": "ABBBB",
+  "match": "0/5",
+  "translations": [
+    "我的双手伸向天空",
+    "想接住从天而降的雨,",
+    "但落在我手中的不是雨,",
+    "是从她眼中滑落的泪,",
+    "而天空中酝酿的也不是风暴,"
+  ],
+  "time_seconds": 6.96,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018690400000000003,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2267,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 82,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2267,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 82,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2267,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2267
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我的双手伸向天空\n2. 想接住从天而降的雨,\n3. 但落在我手中的不是雨,\n4. 是从她眼中滑落的泪,\n5. 而天空中酝酿的也不是风暴,",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

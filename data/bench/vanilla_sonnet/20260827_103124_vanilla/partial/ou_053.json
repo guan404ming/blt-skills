@@ -1,0 +1,82 @@
+{
+  "id": "ou_053",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.14651515151515151,
+  "ari": 0.0,
+  "src_syl": [
+    7,
+    15,
+    11,
+    14,
+    8
+  ],
+  "tgt_syl": [
+    7,
+    11,
+    10,
+    14,
+    5
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "AAABA",
+  "match": "2/5",
+  "translations": [
+    "花儿还没有凋谢。",
+    "啊，冒险开始已经好多年了。",
+    "房间四周的蜡烛熄灭了。",
+    "醉了还是梦里，忽然忘了要说什么，",
+    "在柳树岸边。"
+  ],
+  "time_seconds": 8.02,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018808400000000003,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2274,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 91,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2274,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 91,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2274,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2274
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 花儿还没有凋谢。\n2. 啊，冒险开始已经好多年了。\n3. 房间四周的蜡烛熄灭了。\n4. 醉了还是梦里，忽然忘了要说什么，\n5. 在柳树岸边。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

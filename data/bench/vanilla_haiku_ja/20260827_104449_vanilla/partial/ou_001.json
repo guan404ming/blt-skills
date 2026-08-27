@@ -1,0 +1,82 @@
+{
+  "id": "ou_001",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.117777777777778,
+  "ari": -0.15384615384615385,
+  "src_syl": [
+    10,
+    9,
+    6,
+    6,
+    5
+  ],
+  "tgt_syl": [
+    18,
+    14,
+    17,
+    18,
+    7
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABBAC",
+  "match": "0/5",
+  "translations": [
+    "今までに感じたことのない経験",
+    "雲の自由は開かれている",
+    "そして世界はあなたと一緒にいる",
+    "あなたとともに輝く私の世界",
+    "信じられない"
+  ],
+  "time_seconds": 13.83,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0110963,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1800,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 767,
+      "output_tokens_details": {
+        "thinking_tokens": 691
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1800,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 767,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1800,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1800
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 今までに感じたことのない経験\n2. 雲の自由は開かれている\n3. そして世界はあなたと一緒にいる\n4. あなたとともに輝く私の世界\n5. 信じられない",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

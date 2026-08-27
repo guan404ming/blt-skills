@@ -1,0 +1,82 @@
+{
+  "id": "ou_073",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.125,
+  "ari": 0.047619047619047616,
+  "src_syl": [
+    13,
+    13,
+    5,
+    8,
+    10
+  ],
+  "tgt_syl": [
+    13,
+    13,
+    6,
+    7,
+    13
+  ],
+  "src_rhyme": "ABBCB",
+  "tgt_rhyme": "AABCA",
+  "match": "2/5",
+  "translations": [
+    "你身上最迷人的香水令我着迷",
+    "拿走我拥有的一切,我只需要你",
+    "哦,我该怎么办?",
+    "其他男人的目光",
+    "我愿意把我所有的一切都给你"
+  ],
+  "time_seconds": 8.23,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0186644,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2258,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 83,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2258,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 83,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2258,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2258
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你身上最迷人的香水令我着迷\n2. 拿走我拥有的一切,我只需要你\n3. 哦,我该怎么办?\n4. 其他男人的目光\n5. 我愿意把我所有的一切都给你",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

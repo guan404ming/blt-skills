@@ -1,0 +1,82 @@
+{
+  "id": "ou_005",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.4692279942279942,
+  "ari": 0.0,
+  "src_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    18,
+    13,
+    14,
+    11,
+    14
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCAD",
+  "match": "0/5",
+  "translations": [
+    "Quiero olvidar, pero no puedo olvidar después de todo.",
+    "Solo espera hasta la noche oscura,",
+    "para soñar con la chica que una vez amé.",
+    "Suelta, vuelvo a sostener tu mano.",
+    "cada vez que elijo perdonar y soportar."
+  ],
+  "time_seconds": 25.26,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0168553,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1817,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 1912,
+      "output_tokens_details": {
+        "thinking_tokens": 1823
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1817,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1912,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1817,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1817
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Quiero olvidar, pero no puedo olvidar después de todo.\n2. Solo espera hasta la noche oscura,\n3. para soñar con la chica que una vez amé.\n4. Suelta, vuelvo a sostener tu mano.\n5. cada vez que elijo perdonar y soportar.",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

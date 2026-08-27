@@ -1,0 +1,82 @@
+{
+  "id": "ou_089",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.3415413533834587,
+  "ari": 0.6153846153846154,
+  "src_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "tgt_syl": [
+    12,
+    12,
+    7,
+    7,
+    12
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABCC",
+  "match": "1/5",
+  "translations": [
+    "祂看見自己的作品會微笑嗎?",
+    "造福特車的那位,也造了你嗎?",
+    "硬化我意志之甲,",
+    "填滿智慧之彈匣。",
+    "身未動,心已至;意念已在交戰。"
+  ],
+  "time_seconds": 9.67,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0187904,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2267,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 92,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2267,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 92,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2267,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2267
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 祂看見自己的作品會微笑嗎?\n2. 造福特車的那位,也造了你嗎?\n3. 硬化我意志之甲,\n4. 填滿智慧之彈匣。\n5. 身未動,心已至;意念已在交戰。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

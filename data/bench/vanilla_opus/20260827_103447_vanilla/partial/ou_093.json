@@ -1,0 +1,82 @@
+{
+  "id": "ou_093",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.21083333333333334,
+  "ari": 1.0,
+  "src_syl": [
+    6,
+    5,
+    5,
+    16,
+    8
+  ],
+  "tgt_syl": [
+    7,
+    4,
+    5,
+    23,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "1/5",
+  "translations": [
+    "不是爱，也不是恨",
+    "只是漠然",
+    "我忘了你曾——",
+    "在校园里大笑，就在我绊倒摔在地上、地上、地上的那一刻",
+    "而我本来愿意为你留下"
+  ],
+  "time_seconds": 13.38,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0304925,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 40515,
+      "output_tokens": 409,
+      "output_tokens_details": {
+        "thinking_tokens": 323
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 409,
+          "cache_read_input_tokens": 40515,
+          "cache_creation_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不是爱，也不是恨\n2. 只是漠然\n3. 我忘了你曾——\n4. 在校园里大笑，就在我绊倒摔在地上、地上、地上的那一刻\n5. 而我本来愿意为你留下",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

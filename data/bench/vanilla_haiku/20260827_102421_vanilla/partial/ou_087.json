@@ -1,0 +1,82 @@
+{
+  "id": "ou_087",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.2356393606393606,
+  "ari": 0.0,
+  "src_syl": [
+    16,
+    14,
+    13,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    18,
+    18,
+    15,
+    10,
+    15
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABBCA",
+  "match": "0/5",
+  "translations": [
+    "如果我们能够坦诚相待，我想问你一些问题",
+    "你照镜子时感受如何？你为自己感到骄傲吗？",
+    "你能直视我的眼睛告诉我为什么吗？",
+    "让我告诉你什么叫辛苦",
+    "最低工资，还要养个即将出生的孩子"
+  ],
+  "time_seconds": 14.71,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0125578,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1828,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1065,
+      "output_tokens_details": {
+        "thinking_tokens": 945
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1828,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1065,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1828,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1828
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 如果我们能够坦诚相待，我想问你一些问题\n2. 你照镜子时感受如何？你为自己感到骄傲吗？\n3. 你能直视我的眼睛告诉我为什么吗？\n4. 让我告诉你什么叫辛苦\n5. 最低工资，还要养个即将出生的孩子",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

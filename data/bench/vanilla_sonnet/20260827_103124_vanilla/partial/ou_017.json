@@ -1,0 +1,82 @@
+{
+  "id": "ou_017",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.17691919191919192,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    11,
+    18,
+    10,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    11,
+    13,
+    13,
+    7,
+    13
+  ],
+  "src_rhyme": "ABCCD",
+  "tgt_rhyme": "ABCDC",
+  "match": "1/5",
+  "translations": [
+    "那时沙漠的暮色本会转红",
+    "有没有谁能解开我千年的孤独?",
+    "我在追逐夜色的羽翼中看见你",
+    "环绕烛光的温暖",
+    "我在风中听见你，两极旋转之时"
+  ],
+  "time_seconds": 6.91,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018824399999999998,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2274,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 93,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2274,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 93,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2274,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2274
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 那时沙漠的暮色本会转红\n2. 有没有谁能解开我千年的孤独?\n3. 我在追逐夜色的羽翼中看见你\n4. 环绕烛光的温暖\n5. 我在风中听见你，两极旋转之时",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

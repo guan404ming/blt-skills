@@ -1,0 +1,82 @@
+{
+  "id": "ou_004",
+  "artist": "ou-test",
+  "ser": 0.2,
+  "scre": 0.05,
+  "ari": 1.0,
+  "src_syl": [
+    2,
+    4,
+    4,
+    12,
+    12
+  ],
+  "tgt_syl": [
+    2,
+    4,
+    5,
+    12,
+    12
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "4/5",
+  "translations": [
+    "悸动",
+    "命中注定",
+    "噢，我们一起",
+    "你累了吗？愿不愿伸出你双手",
+    "若想要拥抱，为何还紧握拳头？"
+  ],
+  "time_seconds": 8.83,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.409325,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 40479,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 181,
+      "output_tokens_details": {
+        "thinking_tokens": 111
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 40479,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 181,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 40479,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 40479
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 悸动\n2. 命中注定\n3. 噢，我们一起\n4. 你累了吗？愿不愿伸出你双手\n5. 若想要拥抱，为何还紧握拳头？",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

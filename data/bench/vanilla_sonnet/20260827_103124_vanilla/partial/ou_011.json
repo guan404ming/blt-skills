@@ -1,0 +1,82 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.09642857142857142,
+  "ari": 0.0,
+  "src_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    11,
+    6,
+    9,
+    9,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDD",
+  "match": "2/5",
+  "translations": [
+    "我想遗忘，却终究无法遗忘",
+    "只等黑夜降临",
+    "梦见曾经爱过的女孩",
+    "放手，我又牵起你的手",
+    "每次我都选择原谅与忍受"
+  ],
+  "time_seconds": 8.42,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0186624,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2261,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 82,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2261,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 82,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2261,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2261
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想遗忘，却终究无法遗忘\n2. 只等黑夜降临\n3. 梦见曾经爱过的女孩\n4. 放手，我又牵起你的手\n5. 每次我都选择原谅与忍受",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

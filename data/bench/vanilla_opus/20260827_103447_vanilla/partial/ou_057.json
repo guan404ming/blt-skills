@@ -1,0 +1,82 @@
+{
+  "id": "ou_057",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.20833333333333331,
+  "ari": 0.0,
+  "src_syl": [
+    9,
+    12,
+    8,
+    9,
+    9
+  ],
+  "tgt_syl": [
+    12,
+    15,
+    9,
+    11,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDA",
+  "match": "0/5",
+  "translations": [
+    "你早就懂這套，沒人真的在乎",
+    "又一個討愛的孩子，手裡攥著苦情戲",
+    "把秘密捂好捂好捂好",
+    "我們不需要再割再割再割",
+    "但玻璃做的心，你藏不住"
+  ],
+  "time_seconds": 13.54,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.049007499999999996,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1891,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "thinking_tokens": 334
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1891,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 431,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1891,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1891
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 你早就懂這套，沒人真的在乎\n2. 又一個討愛的孩子，手裡攥著苦情戲\n3. 把秘密捂好捂好捂好\n4. 我們不需要再割再割再割\n5. 但玻璃做的心，你藏不住",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

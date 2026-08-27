@@ -49,6 +49,7 @@ def main():
         }
         rh = [i for i in ne if len(set(ev[i]["src_rhyme"])) < len(ev[i]["src_rhyme"])]
         nr = [i for i in ne if i not in rh]
+
         def m(ids_, k):
             return round(st.mean(ev[i][k] for i in ids_), 4) if ids_ else None
 

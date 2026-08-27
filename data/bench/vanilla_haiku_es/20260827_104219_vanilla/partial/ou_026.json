@@ -1,0 +1,82 @@
+{
+  "id": "ou_026",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.71,
+  "ari": 0.0,
+  "src_syl": [
+    2,
+    8,
+    6,
+    5,
+    8
+  ],
+  "tgt_syl": [
+    2,
+    9,
+    15,
+    9,
+    17
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDC",
+  "match": "1/5",
+  "translations": [
+    "Crece",
+    "¿Si escapo seré salvado?",
+    "No puedo adivinar cuándo te desvanecerás",
+    "Dime que no puedo esperar",
+    "Estoy aprendiendo rápido, no puedo volver atrás"
+  ],
+  "time_seconds": 26.51,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0183173,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1803,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 2210,
+      "output_tokens_details": {
+        "thinking_tokens": 2135
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1803,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 2210,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1803,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1803
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Crece\n2. ¿Si escapo seré salvado?\n3. No puedo adivinar cuándo te desvanecerás\n4. Dime que no puedo esperar\n5. Estoy aprendiendo rápido, no puedo volver atrás",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

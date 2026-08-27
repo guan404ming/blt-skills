@@ -1,0 +1,82 @@
+{
+  "id": "ou_011",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.13571428571428573,
+  "ari": 0.0,
+  "src_syl": [
+    14,
+    7,
+    9,
+    8,
+    11
+  ],
+  "tgt_syl": [
+    10,
+    6,
+    9,
+    10,
+    11
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABAAA",
+  "match": "2/5",
+  "translations": [
+    "我想忘记，可终究忘不了。",
+    "只等黑夜降临，",
+    "梦见我曾爱过的女孩。",
+    "放开吧，我又紧握你的手。",
+    "每次我都选择原谅与承受。"
+  ],
+  "time_seconds": 14.52,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.012385599999999998,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1818,
+      "cache_read_input_tokens": 35646,
+      "output_tokens": 1035,
+      "output_tokens_details": {
+        "thinking_tokens": 947
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1818,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1035,
+          "cache_read_input_tokens": 35646,
+          "cache_creation_input_tokens": 1818,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1818
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我想忘记，可终究忘不了。\n2. 只等黑夜降临，\n3. 梦见我曾爱过的女孩。\n4. 放开吧，我又紧握你的手。\n5. 每次我都选择原谅与承受。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

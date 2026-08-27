@@ -1,0 +1,82 @@
+{
+  "id": "ou_060",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.2919230769230769,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    8,
+    13,
+    4,
+    8
+  ],
+  "tgt_syl": [
+    6,
+    11,
+    18,
+    5,
+    10
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCBD",
+  "match": "0/5",
+  "translations": [
+    "我們去游了泳",
+    "太陽的烈焰灼傷我的皮膚。",
+    "這就是為什麼我們永遠不會再一起去泳池",
+    "永遠不會了。",
+    "那地方有數不盡的行列"
+  ],
+  "time_seconds": 12.23,
+  "model": "claude-opus-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-opus-5",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.048007499999999995,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1871,
+      "cache_read_input_tokens": 38625,
+      "output_tokens": 399,
+      "output_tokens_details": {
+        "thinking_tokens": 313
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1871,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 399,
+          "cache_read_input_tokens": 38625,
+          "cache_creation_input_tokens": 1871,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1871
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我們去游了泳\n2. 太陽的烈焰灼傷我的皮膚。\n3. 這就是為什麼我們永遠不會再一起去泳池\n4. 永遠不會了。\n5. 那地方有數不盡的行列",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

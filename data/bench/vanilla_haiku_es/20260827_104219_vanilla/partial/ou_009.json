@@ -1,0 +1,82 @@
+{
+  "id": "ou_009",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.62,
+  "ari": 0.0,
+  "src_syl": [
+    2,
+    3,
+    3,
+    2,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    6,
+    6,
+    2,
+    8
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCAD",
+  "match": "1/5",
+  "translations": [
+    "Pero si",
+    "Todavía puedes",
+    "Detente y piensa",
+    "En mí",
+    "Piensa en todas las cosas"
+  ],
+  "time_seconds": 7.31,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0086143,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1784,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "thinking_tokens": 231
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1784,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 277,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1784,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1784
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. Pero si\n2. Todavía puedes\n3. Detente y piensa\n4. En mí\n5. Piensa en todas las cosas",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

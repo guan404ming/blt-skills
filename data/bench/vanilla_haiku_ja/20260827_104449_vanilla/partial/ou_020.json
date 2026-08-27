@@ -1,0 +1,82 @@
+{
+  "id": "ou_020",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 1.015064935064935,
+  "ari": 0.0,
+  "src_syl": [
+    6,
+    7,
+    11,
+    5,
+    11
+  ],
+  "tgt_syl": [
+    12,
+    13,
+    20,
+    12,
+    22
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "僕らの間にあるいいもの",
+    "今君は気分がよくない",
+    "寂しい夜、僕のベッドで横たわってる",
+    "ベイビー、君が必要だ",
+    "心が盲目になるまで君を探してきた"
+  ],
+  "time_seconds": 12.76,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.011754299999999999,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1814,
+      "cache_read_input_tokens": 36513,
+      "output_tokens": 893,
+      "output_tokens_details": {
+        "thinking_tokens": 803
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1814,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 893,
+          "cache_read_input_tokens": 36513,
+          "cache_creation_input_tokens": 1814,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1814
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 僕らの間にあるいいもの\n2. 今君は気分がよくない\n3. 寂しい夜、僕のベッドで横たわってる\n4. ベイビー、君が必要だ\n5. 心が盲目になるまで君を探してきた",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

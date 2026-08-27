@@ -1,0 +1,82 @@
+{
+  "id": "ou_072",
+  "artist": "ou-test",
+  "ser": 1.0,
+  "scre": 0.2591941391941392,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    6,
+    13,
+    15,
+    14,
+    15
+  ],
+  "tgt_syl": [
+    8,
+    12,
+    11,
+    10,
+    10
+  ],
+  "src_rhyme": "ABBCD",
+  "tgt_rhyme": "ABCCD",
+  "match": "0/5",
+  "translations": [
+    "不做你游戏一部分",
+    "我是谁,你总问自己这问题吗",
+    "我是谁,总活在别人期待里",
+    "我是谁,谁无权替你定义",
+    "你是谁,不是自己才安全"
+  ],
+  "time_seconds": 7.28,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0187004,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2267,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 83,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2267,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 83,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2267,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2267
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 不做你游戏一部分\n2. 我是谁,你总问自己这问题吗\n3. 我是谁,总活在别人期待里\n4. 我是谁,谁无权替你定义\n5. 你是谁,不是自己才安全",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_082",
+  "artist": "ou-test",
+  "ser": 0.6,
+  "scre": 0.24,
+  "ari": 0.0,
+  "src_syl": [
+    5,
+    11,
+    8,
+    5,
+    5
+  ],
+  "tgt_syl": [
+    3,
+    11,
+    8,
+    8,
+    6
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCCD",
+  "match": "2/5",
+  "translations": [
+    "别妄想",
+    "我会打包所有眼泪带回家",
+    "一个人时再哭出来",
+    "我就在这里哭出来",
+    "我现在正在哭"
+  ],
+  "time_seconds": 7.3,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0184244,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2248,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 63,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2248,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 63,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2248,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2248
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 别妄想\n2. 我会打包所有眼泪带回家\n3. 一个人时再哭出来\n4. 我就在这里哭出来\n5. 我现在正在哭",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ou_048",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2816666666666666,
+  "ari": 1.0,
+  "src_syl": [
+    4,
+    5,
+    8,
+    4,
+    6
+  ],
+  "tgt_syl": [
+    5,
+    6,
+    7,
+    6,
+    4
+  ],
+  "src_rhyme": "ABCDE",
+  "tgt_rhyme": "ABCDE",
+  "match": "0/5",
+  "translations": [
+    "我需要改变",
+    "等待一个机会",
+    "我知道我忍不住",
+    "睁开你的眼睛",
+    "我愿移山"
+  ],
+  "time_seconds": 7.25,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.018274400000000003,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2233,
+      "cache_read_input_tokens": 43992,
+      "output_tokens": 54,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2233,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 54,
+          "cache_read_input_tokens": 43992,
+          "cache_creation_input_tokens": 2233,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2233
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 我需要改变\n2. 等待一个机会\n3. 我知道我忍不住\n4. 睁开你的眼睛\n5. 我愿移山",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

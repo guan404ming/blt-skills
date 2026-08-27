@@ -1,0 +1,82 @@
+{
+  "id": "ou_016",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.20893162393162396,
+  "ari": -0.1111111111111111,
+  "src_syl": [
+    13,
+    11,
+    18,
+    10,
+    8
+  ],
+  "tgt_syl": [
+    10,
+    11,
+    11,
+    13,
+    9
+  ],
+  "src_rhyme": "ABCDD",
+  "tgt_rhyme": "ABCCD",
+  "match": "1/5",
+  "translations": [
+    "当所有人都已把我遗忘",
+    "那时荒漠的黄昏将会转红",
+    "有谁能解开我千年的孤寂",
+    "我在追逐夜色的羽翼中看见你",
+    "绕着烛光的暖意盘旋"
+  ],
+  "time_seconds": 7.9,
+  "model": "claude-sonnet-5",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-sonnet-5",
+    "assistant_turns": 1,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0188124,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2271,
+      "cache_read_input_tokens": 43972,
+      "output_tokens": 93,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2271,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 93,
+          "cache_read_input_tokens": 43972,
+          "cache_creation_input_tokens": 2271,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2271
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 当所有人都已把我遗忘\n2. 那时荒漠的黄昏将会转红\n3. 有谁能解开我千年的孤寂\n4. 我在追逐夜色的羽翼中看见你\n5. 绕着烛光的暖意盘旋",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}

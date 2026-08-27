@@ -1,0 +1,82 @@
+{
+  "id": "ou_089",
+  "artist": "ou-test",
+  "ser": 0.8,
+  "scre": 0.2780075187969925,
+  "ari": 0.2857142857142857,
+  "src_syl": [
+    7,
+    8,
+    7,
+    8,
+    19
+  ],
+  "tgt_syl": [
+    12,
+    10,
+    8,
+    7,
+    16
+  ],
+  "src_rhyme": "AABCD",
+  "tgt_rhyme": "AABBB",
+  "match": "0/5",
+  "translations": [
+    "他会微笑着看到他的作品吗？",
+    "造福特的他，也造了你吗？",
+    "强硬我的意志之甲。",
+    "装填智慧的弹匣。",
+    "身体才迈出，心已先至；我的思想在战斗。"
+  ],
+  "time_seconds": 20.83,
+  "model": "claude-haiku-4-5-20251001",
+  "skill": "none",
+  "allowed_tools": "Skill,Read,Bash(python skills/*),Bash(uv run *)",
+  "disallowed_tools": "Bash,Agent,Task,Skill,Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,ToolSearch,Monitor,NotebookEdit",
+  "agent": {
+    "model_id": "claude-haiku-4-5-20251001",
+    "assistant_turns": 2,
+    "tool_calls": {},
+    "skill_loads": {},
+    "script_calls": {},
+    "num_turns": 1,
+    "cost_usd": 0.0155598,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 1819,
+      "cache_read_input_tokens": 35668,
+      "output_tokens": 1669,
+      "output_tokens_details": {
+        "thinking_tokens": 1574
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1819,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 10,
+          "output_tokens": 1669,
+          "cache_read_input_tokens": 35668,
+          "cache_creation_input_tokens": 1819,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1819
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "final_text": "1. 他会微笑着看到他的作品吗？\n2. 造福特的他，也造了你吗？\n3. 强硬我的意志之甲。\n4. 装填智慧的弹匣。\n5. 身体才迈出，心已先至；我的思想在战斗。",
+    "is_error": false
+  },
+  "failed": false,
+  "error": ""
+}
