@@ -45,7 +45,7 @@ Translating song lyrics while preserving singability requires satisfying musical
 We present a framework that exposes IPA-based phonetic analysis as a suite of composable Agent Skills, each defined by a natural-language description plus deterministic verification scripts that the orchestrating LLM invokes on demand.
 The agent extracts constraints from source lyrics, then translates through a multi-phase process, calling skills to verify syllable counts and rhyme and iteratively refine syllable-count mismatches.
 We formalize the three musical constraints, describe the IPA skill suite and agent architecture, and propose three evaluation metrics: Syllable Error Rate (SER), Syllable Count Relative Error (SCRE), and Adjusted Rand Index (ARI).
-Experiments with three Claude orchestrators show that the agent-invoked skills cut syllable error by 99\% and lift rhyme-scheme preservation to near-perfect (ARI 0.99) on completed items (87--98\% and ARI 0.89--0.99 on all items, with API refusals scored as failures), substantially above both single-prompt translation and a supervised baseline, while requiring no task-specific training and no parallel corpora, and transferring to Spanish and Japanese targets with only a small language-specific syllabification adapter.
+Experiments with three Claude orchestrators show that the agent-invoked skills cut syllable error by 99\% and lift rhyme-scheme preservation to near-perfect (ARI 0.99) on completed items (87--98\% and ARI 0.89--0.99 on all items, with all lost items scored as failures), substantially above both single-prompt translation and a supervised baseline, while requiring no task-specific training and no parallel corpora, and transferring to Spanish and Japanese targets with only a small language-specific syllabification adapter.
 \end{abstract}
 
 \section{Introduction}
@@ -487,7 +487,7 @@ Agreement is moderate on singability (Krippendorff's $\alpha{=}0.46$) and low el
 \section{Conclusion}
 
 We presented BLT Skills, a training-free framework that packages IPA-based phonetic analysis as composable Agent Skills that an LLM agent invokes to extract, verify, and refine constraints.
-On English-to-Chinese ($n{=}100$) it cuts syllable error by 99\% over single-prompt translation on completed items (SER 0.008; 87--98\% with API refusals counted as failures) and lifts rhyme-scheme preservation to ARI 0.99, far above a supervised baseline (0.42), and transfers to Spanish and Japanese.
+On English-to-Chinese ($n{=}100$) it cuts syllable error by 99\% over single-prompt translation on completed items (SER 0.008; 87--98\% with all lost items counted as failures) and lifts rhyme-scheme preservation to ARI 0.99, far above a supervised baseline (0.42), and transfers to Spanish and Japanese.
 Ablations show that the deterministic counter fixes syllables and the exposed, validated rhyme scheme fixes rhyme.
 Offloading verifiable subtasks to deterministic, composable skills is a general recipe for constraint-bound generation.
 
@@ -779,7 +779,7 @@ The trade-off is that CLT runs far faster once trained, while BLT matches or exc
 \label{app:analysis}
 
 \paragraph{Phase~2 trigger rate and skill usage.}
-From the agent traces of the Haiku en$\rightarrow$zh run (96 completed items), every item loaded \texttt{lyrics-translator} and ran the three extraction scripts on the source; counting script executions in the tool results, the agent then ran \texttt{syllable-counter} 12.4 times per item on average (the workflow prescribes 10 baseline source and target checks, so roughly 2.4 are Phase~2 re-counts), re-counted at least one line on 61 of 96 items, and ran \texttt{lyrics-validator} 1.6 times per item, re-running it after a rhyme rewrite on 49 items.
+From the agent traces of the Haiku en$\rightarrow$zh run (96 completed items), every item loaded \texttt{lyrics-translator} and ran the three extraction scripts on the source; counting script executions in the tool results, the agent then ran \texttt{syllable-counter} 12.4 times per item on average, where the workflow prescribes 10 baseline source and target checks: 61 of 96 items exceeded that baseline, and the agent ran \texttt{lyrics-validator} 1.6 times per item, re-running it after a rhyme rewrite on 49 items.
 The median Haiku item takes 18 assistant turns and 107\,s wall-clock, and costs \$0.108 (8.1k output tokens, 393k input tokens including cache reads); Sonnet needs only 9 turns and 71\,s because it batches several script executions into one tool call (11.9 counter runs, 1.4 validator runs per item), at \$0.149 per item, and Opus batches further (10.8 counter runs, 1.3 validator runs, 8 turns, 63\,s) at \$0.297 per item (Table~\ref{tab:tool-usage}).
 
 A second Haiku run of the full pipeline on the same items (a configuration mistake that left the scripts enabled during a prompt-only attempt) reproduced the result: SER 0.004, ARI 0.990 on 98 completed items, which bounds the run-to-run variance of the unseeded orchestrator.
@@ -818,7 +818,7 @@ Vanilla (Opus)   & 0.764 & 17.7 & 0.802 & 0.279 \\
 BLT (Opus)       & 0.752 & 16.6 & \textbf{0.000} & \textbf{1.000} \\
 \bottomrule
 \end{tabular}
-\caption{Semantic fidelity vs.\ structural constraints (en$\rightarrow$zh, 100 items / 500 lines, gold references from \citet{ou-etal-2023-songs}). COMET and BLEU are over all 500 lines with refused items scored as empty (Haiku: 0 Vanilla and 20 BLT lines; Sonnet: 0 and 5; Opus: 65 and 55); SER and ARI are over completed items as in Table~\ref{tab:orchestrator}. BLEU uses \texttt{sacrebleu} with the \texttt{zh} tokenizer.}
+\caption{Semantic fidelity vs.\ structural constraints (en$\rightarrow$zh, 100 items / 500 lines, gold references from \citet{ou-etal-2023-songs}). COMET and BLEU are over all 500 lines with lost items scored as empty (Haiku: 0 Vanilla and 20 BLT lines; Sonnet: 0 and 5; Opus: 65 and 55); SER and ARI are over completed items as in Table~\ref{tab:orchestrator}. BLEU uses \texttt{sacrebleu} with the \texttt{zh} tokenizer.}
 \label{tab:semantic}
 \end{table}
 
