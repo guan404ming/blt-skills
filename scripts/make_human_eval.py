@@ -47,10 +47,7 @@ def main():
     _, p12 = load_run(P1P2)
 
     # cases where both conditions produced full non-empty translations
-    ids = [
-        sid for sid in songs
-        if nonempty(van.get(sid)) and nonempty(p12.get(sid))
-    ]
+    ids = [sid for sid in songs if nonempty(van.get(sid)) and nonempty(p12.get(sid))]
     rng = random.Random(args.seed)
     rng.shuffle(ids)
     ids = sorted(ids[: args.n])
@@ -68,17 +65,19 @@ def main():
         else:
             a_cond, b_cond = "p1p2", "vanilla"
             a_lines, b_lines = p12[sid], van[sid]
-        sheet_rows.append({
-            "case": sid,
-            "english_source": " / ".join(src),
-            "version_A": " / ".join(a_lines),
-            "version_B": " / ".join(b_lines),
-            "more_singable_A_or_B": "",
-            "MOS_A_singability_1to5": "",
-            "MOS_B_singability_1to5": "",
-            "MOS_A_naturalness_1to5": "",
-            "MOS_B_naturalness_1to5": "",
-        })
+        sheet_rows.append(
+            {
+                "case": sid,
+                "english_source": " / ".join(src),
+                "version_A": " / ".join(a_lines),
+                "version_B": " / ".join(b_lines),
+                "more_singable_A_or_B": "",
+                "MOS_A_singability_1to5": "",
+                "MOS_B_singability_1to5": "",
+                "MOS_A_naturalness_1to5": "",
+                "MOS_B_naturalness_1to5": "",
+            }
+        )
         key_rows.append({"case": sid, "version_A": a_cond, "version_B": b_cond})
 
     sheet_path = out / "human_eval_sheet.csv"

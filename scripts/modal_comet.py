@@ -49,5 +49,7 @@ def main(payload: str = "/tmp/comet_payload.json", out: str = "data/bench/semant
     res = score.remote(p)
     json.dump(res, open(out, "w"), ensure_ascii=False, indent=1)
     for name, r in res.items():
-        print(f"{name:8s} BLEU={r['bleu_zh']:6.2f} chrF={r['chrf']:6.2f} COMET={r['comet22']:.4f} empty={r['empty']}")
+        print(
+            f"{name:8s} BLEU={r['bleu_zh']:6.2f} chrF={r['chrf']:6.2f} COMET={r['comet22']:.4f} empty={r['empty']}"
+        )
     print("saved", out)

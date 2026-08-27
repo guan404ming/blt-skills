@@ -42,9 +42,14 @@ def build_prompt(song, skill):
 
 def run_claude(prompt, model, effort, timeout, allowed_tools, disallowed_tools):
     cmd = [
-        "claude", "-p", prompt,
-        "--output-format", "stream-json", "--verbose",
-        "--allowedTools", allowed_tools,
+        "claude",
+        "-p",
+        prompt,
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--allowedTools",
+        allowed_tools,
     ]
     if disallowed_tools:
         cmd += ["--disallowedTools", disallowed_tools]
@@ -117,12 +122,21 @@ def process_song(song, args, partial_dir, trace_dir):
     events, stderr = [], ""
     for attempt in range(args.retries + 1):
         try:
-            events, stderr = run_claude(build_prompt(song, args.skill), args.model, args.effort, args.timeout, args.allowed_tools, args.disallowed_tools)
+            events, stderr = run_claude(
+                build_prompt(song, args.skill),
+                args.model,
+                args.effort,
+                args.timeout,
+                args.allowed_tools,
+                args.disallowed_tools,
+            )
         except subprocess.TimeoutExpired:
             events, stderr = [], "timeout"
         if events and not summarize(events)["is_error"]:
             break
-        log(f"[retry ] {sid} attempt {attempt + 1} failed: {summarize(events)['final_text'][:80] if events else stderr[:80]}")
+        log(
+            f"[retry ] {sid} attempt {attempt + 1} failed: {summarize(events)['final_text'][:80] if events else stderr[:80]}"
+        )
     elapsed = time.time() - t0
 
     with open(trace_dir / f"{sid}.jsonl", "w", encoding="utf-8") as f:
@@ -158,7 +172,9 @@ def process_song(song, args, partial_dir, trace_dir):
 def main():
     parser = make_parser("Benchmark agent-invoked Skills translation")
     parser.add_argument("--model", default=None)
-    parser.add_argument("--effort", choices=("low", "medium", "high", "xhigh", "max"), default="medium")
+    parser.add_argument(
+        "--effort", choices=("low", "medium", "high", "xhigh", "max"), default="medium"
+    )
     parser.add_argument("--workers", type=int, default=1)
     parser.add_argument("--timeout", type=int, default=1200)
     parser.add_argument("--retries", type=int, default=2)
@@ -167,7 +183,11 @@ def main():
     parser.add_argument("--disallowed-tools", default="")
     parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
-    args.bench_method = "agent" if args.skill == "lyrics-translator" else f"agent_{args.skill.replace('lyrics-translator-', '')}"
+    args.bench_method = (
+        "agent"
+        if args.skill == "lyrics-translator"
+        else f"agent_{args.skill.replace('lyrics-translator-', '')}"
+    )
     if args.disallowed_tools:
         args.bench_method += "_no" + args.disallowed_tools.replace(",", "")
 
@@ -185,7 +205,9 @@ def main():
     if not (REPO / ".claude" / "skills").exists():
         sys.exit("missing .claude/skills symlink; run: ln -s ../skills .claude/skills")
 
-    log(f"agent model={args.model or 'default'} effort={args.effort} workers={args.workers} n={len(songs)}")
+    log(
+        f"agent model={args.model or 'default'} effort={args.effort} workers={args.workers} n={len(songs)}"
+    )
     results_by_id = {}
     if args.workers <= 1:
         for song in songs:

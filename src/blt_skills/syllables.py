@@ -21,6 +21,7 @@ def _count_ja_mora(text: str) -> int:
     global _kakasi
     if _kakasi is None:
         import pykakasi
+
         _kakasi = pykakasi.kakasi()
     kana = "".join(item["kana"] for item in _kakasi.convert(text))
     return sum(1 for c in kana if c not in _JA_SMALL_KANA and not c.isspace())

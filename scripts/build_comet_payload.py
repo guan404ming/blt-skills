@@ -39,7 +39,11 @@ def main():
             hyps.extend(t)
         systems[name] = hyps
 
-    json.dump({"refs": refs, "srcs": srcs, "ids": ids, "systems": systems}, open(args.out, "w"), ensure_ascii=False)
+    json.dump(
+        {"refs": refs, "srcs": srcs, "ids": ids, "systems": systems},
+        open(args.out, "w"),
+        ensure_ascii=False,
+    )
     print("saved", args.out, {k: len(v) for k, v in systems.items()})
 
 

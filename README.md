@@ -44,7 +44,7 @@ Expose the skills to Claude Code, then run the agent benchmark on the Ou et al. 
 ln -s ../skills .claude/skills
 uv run scripts/run_agent.py -n 100 --model haiku --workers 4
 uv run scripts/run_agent.py -n 30 --model haiku --target-lang ja
-uv run scripts/run_cc.py -n 100 --model haiku --phases 0        # single-prompt baseline
+uv run scripts/run_vanilla.py -n 100 --model haiku --workers 4   # single-prompt baseline
 uv run scripts/run_agent.py -n 100 --model haiku --skill lyrics-translator-prompt-only --disallowed-tools Bash,Agent,Task
 ```
 

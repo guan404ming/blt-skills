@@ -52,7 +52,7 @@ def sign_test_p(wins, losses):
     if n == 0:
         return 1.0
     k = min(wins, losses)
-    tail = sum(math.comb(n, j) for j in range(0, k + 1)) / (2 ** n)
+    tail = sum(math.comb(n, j) for j in range(0, k + 1)) / (2**n)
     return min(1.0, 2 * tail)
 
 
@@ -113,7 +113,7 @@ def main():
         raise SystemExit(f"No response CSVs found in {args.responses}")
 
     # decoded judgments
-    prefs = []                       # 1 if p1p2 preferred, else 0
+    prefs = []  # 1 if p1p2 preferred, else 0
     pref_by_case = defaultdict(list)  # case -> [chosen condition] for alpha
     mos = {"singability": defaultdict(list), "naturalness": defaultdict(list)}
     mos_by_case = {
@@ -156,8 +156,10 @@ def main():
     p = sign_test_p(wins, n_judg - wins)
     a_pref = krippendorff_alpha(pref_by_case, level="nominal")
     print("== Preference (Phase 1+2 vs Vanilla) ==")
-    print(f"  P1+2 preferred: {wins}/{n_judg} = {rate*100:.0f}%  "
-          f"(95% CI {lo*100:.0f}-{hi*100:.0f}%)")
+    print(
+        f"  P1+2 preferred: {wins}/{n_judg} = {rate * 100:.0f}%  "
+        f"(95% CI {lo * 100:.0f}-{hi * 100:.0f}%)"
+    )
     print(f"  sign test p = {p:.4g}")
     print(f"  Krippendorff alpha (nominal): {a_pref:.2f}\n")
 
