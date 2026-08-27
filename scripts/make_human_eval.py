@@ -42,8 +42,13 @@ def load_run(pat):
     return songs, trans
 
 
+REFUSAL_MARKERS = ("略過", "版權", "copyright", "[", "]")
+
+
 def nonempty(lines):
-    return lines and all(str(x).strip() for x in lines)
+    return bool(lines) and all(
+        str(x).strip() and not any(m in str(x) for m in REFUSAL_MARKERS) for x in lines
+    )
 
 
 def main():
