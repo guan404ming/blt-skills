@@ -36,6 +36,8 @@ English lyrics from [brunokreiner/genius-lyrics](https://huggingface.co/datasets
 uvx --from huggingface_hub hf download brunokreiner/genius-lyrics --repo-type dataset --local-dir data/genius-lyrics
 ```
 
+The sampled Ou et al. (2023) evaluation windows and associated generated benchmark artifacts under `data/bench/` are distributed under the source dataset's [CC BY-NC-SA 4.0 license](https://huggingface.co/datasets/LongshenOu/lyric-trans-en2zh-data). They are not covered by the repository's Apache-2.0 software license; see `data/bench/README.md`.
+
 ## Benchmark
 
 Expose the skills to Claude Code, then run the agent benchmark on the Ou et al. (2023) en-zh test windows (`-n`, `--seed`, `--target-lang`, `-o`):
@@ -67,3 +69,7 @@ The CLT baseline (`data/bench/clt_translations.json`) comes from `scripts/clt_in
 - `pydantic` - data models
 - `torch`, `transformers`, `sentencepiece` - CLT baseline only (optional, `uv sync --extra clt`)
 - `ruff` - linting and formatting (optional, `uv sync --extra dev`)
+
+## License
+
+The software and original documentation are licensed under Apache-2.0. Third-party lyric excerpts and derived benchmark artifacts under `data/bench/` retain the dataset license described above.

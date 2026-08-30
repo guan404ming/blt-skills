@@ -11,7 +11,7 @@
 | Appendices | pages 12-16 |
 | LaTeX | 0 overfull boxes, 0 undefined citations or references |
 | Authors | Guan-Ming Chiu (gmchiu@arbor.ee.ntu.edu.tw), Chiao-Chih Cheng (r14921040@ntu.edu.tw), Kuan-Wei Lee (r14921101@ntu.edu.tw), all National Taiwan University |
-| License | Apache-2.0 (`LICENSE`), code at https://github.com/guan404ming/blt-skills |
+| License | Software: Apache-2.0 (`LICENSE`); sampled lyric windows and benchmark artifacts: CC BY-NC-SA 4.0 |
 
 ## References
 
@@ -22,8 +22,7 @@ proceedings page. 36 citations = 36 bibliography entries, no undefined or missin
 - Chen et al. (2025) pages `23431--23446` -> `23420--23435` (per the Anthology PDF)
 - Added verified DOIs to 7 entries and missing page ranges to 5
 
-Three entries remain in `custom.bib` but are not cited, so they do not appear in the PDF:
-`jiao-etal-2023-chatgpt`, `ren-etal-2020-deepsinger`, `wei-etal-2022-chain`.
+The bibliography now contains exactly the 36 cited entries: there are no missing, duplicate, or unused keys.
 
 ## Section numbers for the Responsible NLP Checklist
 

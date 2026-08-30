@@ -24,15 +24,15 @@ and PanPhon (Mortensen et al., 2016); §6.1 and Appendix E cite the dataset and 
 (Ou et al., 2023).
 
 **B2 Discuss The License For Artifacts:** Yes
-**B2 Elaboration** (CHANGED): §6.1 states the open-source release is Apache-2.0; the "Ethical
-considerations" paragraph states the en-zh test split is redistributed under the terms of its
-original release.
+**B2 Elaboration** (CHANGED): §6.1 states that the open-source software is Apache-2.0; the "Ethical
+considerations" paragraph states that sampled en-zh evaluation windows and associated benchmark
+artifacts are distributed separately under the source dataset's CC BY-NC-SA 4.0 license.
 
 **B3 Artifact Use Consistent With Intended Use:** Yes
 **B3 Elaboration** (CHANGED: line numbers removed): The "Ethical considerations" paragraph explains
-that the dataset is used only for research evaluation, consistent with its release terms; the
-open-source code bundles no lyric corpora, and users supply their own input and bear the rights
-responsibility.
+that the sampled dataset windows are used for research evaluation and redistributed under the source
+license; the complete corpus is not bundled, and users applying the software to new lyrics supply
+their own input and bear the rights responsibility.
 
 **B4 Data Contains Personally Identifying Info Or Offensive Content:** No
 **B4 Elaboration** (unchanged): The evaluation data is published commercial song lyrics (the public

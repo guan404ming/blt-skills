@@ -40,7 +40,7 @@ colors = [NPG["blue"], NPG["cyan"], NPG["teal"], NPG["coral"], NPG["brown"]]
 groups = ["zh SER↓", "zh ARI↑"]
 # values[condition][group]; np.nan = no data (sc-only on ja)
 values = {
-    "Vanilla": [0.425, 0.688],
+    "Vanilla": [0.790, 0.343],
     "Prompt-only": [0.234, 0.518],
     "Phase 1 only": [0.040, 0.612],
     "Counter-only": [0.006, 0.250],
